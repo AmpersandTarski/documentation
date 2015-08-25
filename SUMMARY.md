@@ -1,8 +1,7 @@
 # Summary
 
 * [Contents](README.md)
-* [Installation](installation.md)
-   * [Introduction](installation/README.md)
+* [Installation](installation/installation.md)
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
