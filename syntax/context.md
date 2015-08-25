@@ -1,10 +1,11 @@
-== Purpose ==
+# The CONTEXT statement
+## Purpose
 Contexts exist in Ampersand for the purpose of dealing with truth. Within one context there can be no contradictions. The Ampersand way of dealing with a contradiction is either to resolve it or to separate them in different contexts.
 
-== Ampersand Definition ==
-A context is a set of [[Statement|statements]] in the language of this context, which are true within the context.
+## Ampersand Definition
+A context is a set of Statement in the language of this context, which are true within the context.
 
-== Explanation ==
+## Explanation
 The world is full of contradictions. Examples:
 * Bob's personal income over March 2013 according to Bob's employer differs from Bob's personal income over March 2013 according to the National Tax Authority.
 * The police can be convinced that Peter X commited the crime, yet his attorney is convinced he is innocent.
@@ -19,25 +20,5 @@ In language philosopy, the idea of a context was invented to give truth a place.
 Ampersand uses contexts to organize truth.
 Within one context, there is a single truth and there are no contradictions.
 For this reason, a context defines a language by means of concepts and relations, in which utterances can be made.
-We say that these utterances ''make sense'' in that context.
+We say that these utterances *make sense* in that context.
 
-=={{syntaxHeader|version=1}}==
-
-[[File:V1 Context.JPG|right]]
-The context consists of the name of the context being modeled, followed by a list of several kind of context elements. 
-* {{syntax|production=Pattern|version=1}}
-* {{syntax|production=Declaration|version=1}}
-* {{syntax|production=ConceptDef|version=1}}
-* {{syntax|production=KeyDef|version=1}}
-* {{syntax|production=Service|version=1}}
-* {{syntax|production=Plug|version=1}}
-* {{syntax|production=Explain|version=1}}
-* {{syntax|production=Population|version=1}}
-
- 
-
-
-
-
-
-[[Category:SyntaxV1]]
