@@ -5,5 +5,5 @@
 * [Ampersand Syntax](.syntax/syntaxmd.md)
    * [The synax of Ampersand](.syntax/thesynax_of_ampersand_md.md)
    * [CONTEXT](syntax/context.md)
-   * PATTERN
+   * [PATTERN](syntax/pattern.md)
 
