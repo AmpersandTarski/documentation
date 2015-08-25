@@ -19,46 +19,23 @@ Outside its scope, a rule has no meaning.
 For example a rule may be valid in downtown St. Catharines, Ontario, but totally meaningless in Smalltown, NY that does not even have a St. Paul street.
 
 
-Formally, a rule r can be seen as an **expression** that is valid within a [Context](syntax/context.md).
-Valid means that every [[Population|population]] of a [[Context|context]] satisfies the [[Expression|expression]] r, (i.e. it is true for any population).
+Formally, a rule r can be seen as an [expression](syntax/expression.md) that is valid within a [Context](syntax/context.md).
+Valid means that every [Population](sytntax/population.md) of a [Context](syntax/context.md) satisfies the [expression](syntax/expression.md) r, (i.e. it is true for any population).
 For every rule r, it is:  <nowiki>V |- r</nowiki>
 
-=={{syntaxHeader|version=1}}==
-
-[[File:V1 Rule.JPG|600px|right|click image for full size]]
-=== links ===
-* {{syntax|production=Expression|version=1}}
-<br clear="right" />
-=== Example ===
-<syntaxhighlight lang="ampersand">
-RULE "order based delivery" MAINTAINS  provided  |- accepted;of~
-EXPLANATION "For every delivery a provider has made, there exists an accepted order."
-</syntaxhighlight>
-
-=={{syntaxHeader|version=2}}==
-
-[[File:V2 Rule.JPG|600px|right|click image for full size]]
-
-<br clear="right" />
-=== Example ===
-<syntaxhighlight lang="ampersand">
+### Example
+```
 RULE "order based delivery":  provided  |- accepted;of~
 PHRASE IN ENGLISH "For every delivery a provider has made, there exists an accepted order."
-</syntaxhighlight>
-
-=== How to specify the purpose of a rule ===
+```
+### How to specify the purpose of a rule
 A requirements engineer should be aware of the purpose of each and every rule he proposes to capture a specific agreement (of the stakeholders).
 He can describe the purpose as follows:
-<syntaxhighlight lang="ampersand">
+
+```
 PURPOSE RULE "order based delivery" IN ENGLISH
 {+In this context, providers only deliver when there is an order.
 So, if a delivery is made by a provider, we assume the existence
 of an order that is accepted by that provider.-}
-</syntaxhighlight>
+```
 
-
-
-
-
-
-[[Category:SyntaxV1]]
