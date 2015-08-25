@@ -2,5 +2,5 @@
 
 * [Contents](README.md)
 * [Installation](installation.md)
-* Ampersand Syntax
+* [Ampersand Syntax](ampersand_syntax.md)
 
