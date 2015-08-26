@@ -5,10 +5,7 @@ This is the documentation for Ampersand. The focus of this site is primarily on 
 ## Summary
 {% include "./SUMMARY.md" %}
 
-## Contents
 
-- [Troubleshooting](troubleshooting/README.md)
-    - Got a problem with using Ampersand? Start here
 
 ## Contributions
 
