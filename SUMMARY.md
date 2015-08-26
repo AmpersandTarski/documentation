@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](intro.md)
-* [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Installation](installation/installation.md)
+* [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
