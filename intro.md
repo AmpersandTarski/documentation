@@ -2,6 +2,9 @@
 
 This is the documentation for Ampersand. The focus of this site is primarily on how to use it.
 
+## Summary
+{% include "./SUMMARY.md" %}
+
 ## Contents
 
 - [Installation / Quickstart](installation/README.md)
