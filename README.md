@@ -7,4 +7,7 @@ We have an automatic toolchain in use, that generates the online documentation e
 
 ## How to add/modify this documentation
 
-Of course, you could use your own way of working with markdown. However, there is a great editor that goes with Gitbook. How to use it and how to get going with it can be found in the [this document](https://www.gitbook.com/book/ampersandtarski/the-tools-we-use-for-ampersand/details)
+By far the easiest way is to use the online editor that goes with Gitbook. How to use it and how to get going with it can be found in the [this document](https://www.gitbook.com/book/ampersandtarski/the-tools-we-use-for-ampersand/details)
+
+If you are in doubt on how to use it, or you would like a demo, ask Han!
+
