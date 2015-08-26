@@ -29,7 +29,7 @@ Print the version number of ampersand to the standard output stream. This versio
 
 ### Other options
 
-## TODO: stuff below:
+## TODO: Layout and organize stuff below:
 
 List of options:
   --altGraphics
