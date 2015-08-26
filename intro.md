@@ -1,4 +1,4 @@
-# *&* Documentation
+# Welcome 
 
 This is the documentation for Ampersand. The focus of this site is primarily on how to use it.
 
