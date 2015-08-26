@@ -9,4 +9,5 @@
    * [RULE](syntax/rule.md)
 * [The Command Line Tool](commandLineTool/commandlinetool.md)
 * [Prototypes](prototypes/prototypes.md)
+* Troubleshooting
 
