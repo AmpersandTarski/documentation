@@ -5,4 +5,4 @@ With ampersand, you can generate a working prototype of your ampersand model. To
 ```
 ampersand --proto <myModel.adl>
 ```
-For complete syntax, see the chapter about the command line tool
+For complete syntax, see the chapter about the [command line tool](commandLineTool/commandlinetool.md#Syntax)
