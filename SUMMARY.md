@@ -7,6 +7,6 @@
    * [PATTERN](syntax/pattern.md)
    * [RULE](syntax/rule.md)
 * [The Command Line Tool](commandLineTool/commandlinetool.md)
-* [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Prototypes](prototypes/prototypes.md)
+* [Troubleshooting](troubleshooting/troubleshooting.md)
 
