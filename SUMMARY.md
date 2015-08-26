@@ -8,5 +8,5 @@
    * [PATTERN](syntax/pattern.md)
    * [RULE](syntax/rule.md)
 * [The Command Line Tool](the_command_line_tool.md)
-   * Switches
+   * [Switches](commandLineTool/switches.md)
 
