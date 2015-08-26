@@ -7,6 +7,6 @@
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
    * [RULE](syntax/rule.md)
-* [The Command Line Tool](commandLineTool.md)
+* [The Command Line Tool](commandLineTool/commandLineTool.md)
    * [Switches](commandLineTool/switches.md)
 
