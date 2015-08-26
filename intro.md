@@ -7,8 +7,6 @@ This is the documentation for Ampersand. The focus of this site is primarily on 
 
 ## Contents
 
-- [Customizing the look and feel of the application](frontend/README.md)
-    - The frontend is highly customizable. Read all about it.
 - [Troubleshooting](troubleshooting/README.md)
     - Got a problem with using Ampersand? Start here
 
