@@ -7,12 +7,6 @@ This is the documentation for Ampersand. The focus of this site is primarily on 
 
 ## Contents
 
-- [Installation / Quickstart](installation/README.md)
-    - Getting started with Ampersand, including what you need and how to build your first prototype.
-- [Ampersand Syntax](syntax/README.md)
-    - Complete syntax definition of the & - language
-- [Usage Guide](usage/README.md)
-    - Explore the possibilities of the command line tool
 - [Customizing the look and feel of the application](frontend/README.md)
     - The frontend is highly customizable. Read all about it.
 - [Troubleshooting](troubleshooting/README.md)
