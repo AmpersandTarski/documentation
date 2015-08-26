@@ -88,3 +88,8 @@ The behavior of **ampersand** is affected by the following environment variables
 * **CCdbName**  Sets the name of the database that is to be generated. Can be overruled by --dbName
 * **CCdirOutput** Sets the default output directory for generated assets. Can be overruled by --outputDir 
 * **CCdirPrototype** Sets the default directory where functional prototypes are being generated. Can be overruled by --proto
+
+## Exit status
+
+## Bugs
+ We are happy to recieve [bug reports at AmpersandTarski](https://github.com/AmpersandTarski/ampersand/issues) . However, please try to help us by first checking that it has not been reported allready. You can do so by searching the issues. When in doubt however, don't hesitate to [create a new issue](https://github.com/AmpersandTarski/ampersand/issues). 
