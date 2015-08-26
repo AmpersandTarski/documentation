@@ -8,5 +8,5 @@
    * [PATTERN](syntax/pattern.md)
    * [RULE](syntax/rule.md)
 * [The Command Line Tool](commandLineTool/commandlinetool.md)
-* Prototypes
+* [Prototypes](prototypes/prototypes.md)
 
