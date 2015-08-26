@@ -1,34 +1,13 @@
-# *&* Documentation
+# Documentation of Ampersand
 
-This is the documentation for Ampersand. The focus of this site is primarily on how to use it.
+This repository contains the documentation of Ampersand. Currently, it is far from complete. However, since we use GitBook, it has become easier to add to it. 
 
-## Contents
+## Read it online
+We have an automatic toolchain in use, that generates the online documentation each time a modification is done to the master branch of the book. 
 
-- [Installation / Quickstart](installation/README.md)
-    - Getting started with Ampersand, including what you need and how to build your first prototype.
-- [Ampersand Syntax](syntax/README.md)
-    - Complete syntax definition of the & - language
-- [Usage Guide](usage/README.md)
-    - Explore the possibilities of the command line tool
-- [Customizing the look and feel of the application](frontend/README.md)
-    - The frontend is highly customizable. Read all about it.
-- [Troubleshooting](troubleshooting/README.md)
-    - Got a problem with using Ampersand? Start here
+## How to add/modify this documentation
 
-## Contributions
+By far the easiest way is to use the online editor that goes with Gitbook. How to use it and how to get going with it can be found in the [this document](https://www.gitbook.com/book/ampersandtarski/the-tools-we-use-for-ampersand/details)
 
-If you have anything to fix or details to add, first [file an issue](http://github.com/AmpersandTarski/documentation/issues) on GitHub to see if it is likely to be accepted, then file a pull request with your change (one PR per issue).
+If you are in doubt on how to use it, or you would like a demo, ask Han!
 
-This is not intended to be an open wiki; we want to keep it concise and minimal but will accept fixes and suitable additions.
-
-See our [contributing policy](CONTRIBUTING.md).
-
-## Licence
-
-Unless otherwise specified, everything in this repository is covered by the following licence:
-
-[![Creative Commons Attribution-ShareAlike 4.0 International](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
-
-***Ampersand Documentation*** by the [the Ampersand team](http://tarski.nl/) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
-
-Based on a work at https://github.com/AmpersandTarski/documentation
