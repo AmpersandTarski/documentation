@@ -3,7 +3,7 @@
 This repository contains the documentation of Ampersand. Currently, it is far from complete. However, since we use GitBook, it has become easier to add to it. 
 
 ## Read it online
-We have an automatic toolchain in use, that generates the online documentation each time a modification is done to the master branch of the book. 
+We have an automatic toolchain in use, that updates a [site with the documentation](https://www.gitbook.com/book/ampersandtarski/documentation/details) each time a modification is done to the master branch of the book. 
 
 ## How to add/modify this documentation
 
