@@ -22,8 +22,13 @@ Rules may be provided with a VIOLATION statement, that helps users to know what 
      RULE "Every person must have a DOB": I[Person] |- personDOB;personDOB~
      VIOLATION (TXT "The DOB of ", SRC persronName, " must still be registered.")
 
+## The `ExecEngine` role
+`ExecEngine` is a special role, that is capable of resolving violations automatically. Whenever this role is assigned to a rule, the `VIOLATION` statement of that rule must contain the working instruction for it to operate. In its most basic form, the `VIOLATION` statement must produce a message of the form
+
+     functionname;arglist
 
 
-`ExecEngine` is a special role, in the sense that it 
+
+
 
  
