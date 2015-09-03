@@ -1,7 +1,7 @@
 # The RULE statement
 
 ## Purpose
-Rules are used as a concrete reason for people to act, feel or believe. In philosophy, this is called a [norm (philosophy)](https://en.wikipedia.org/wiki/Norm_(philosophy)).
+Rules are used as a concrete reason for people to act, feel or believe. In philosophy, this is called a [norm (philosophy)](https://en.wikipedia.org/wiki/Norm_(philosophy).
 
 ## Ampersand Definition
 A rule is a [[Statement|statement]] that must be true in each [[Context|context]] in which it is valid.
