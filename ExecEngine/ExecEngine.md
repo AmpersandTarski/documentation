@@ -25,9 +25,9 @@ Rules may be provided with a VIOLATION statement, that helps users to know what 
 ## The `ExecEngine` role
 `ExecEngine` is a special role, that is capable of resolving violations automatically. Whenever this role is assigned to a rule, the `VIOLATION` statement of that rule must contain the working instruction for it to operate. In its most basic form, the `VIOLATION` statement must produce a message of the form
 
-     functionname;arglist
+     violationmessage = functionname ; arglist
 
-
+where `functionname` is the name of a PHP-function, and `arglist` is a list of ';'-separted arguments for the function. 
 
 
 
