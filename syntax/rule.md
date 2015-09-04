@@ -19,9 +19,9 @@ Outside its scope, a rule has no meaning.
 For example a rule may be valid in downtown St. Catharines, Ontario, but totally meaningless in Smalltown, NY that does not even have a St. Paul street.
 
 
-Formally, a rule r can be seen as an [expression](syntax/expression.md) that is valid within a [Context](syntax/context.md).
-Valid means that every [Population](sytntax/population.md) of a [Context](syntax/context.md) satisfies the [expression](syntax/expression.md) r, (i.e. it is true for any population).
-For every rule r, it is:  <nowiki>V |- r</nowiki>
+Formally, a rule r can be seen as an [expression](expression.md) that is valid within a [Context](syntax/context.md).
+Valid means that every [Population](population.md) of a [Context](context.md) satisfies the [expression](expression.md) r, (i.e. it is true for any population).
+For every rule r, it is:  $$V |- r$$
 
 ### Example
 ```
