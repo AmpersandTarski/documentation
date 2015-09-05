@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/AmpersandTarski/documentation.svg?branch=master)](https://travis-ci.org/AmpersandTarski/documentation)
 # Documentation of Ampersand
 
 This repository contains the documentation of Ampersand. Currently, it is far from complete. However, since we use GitBook, it has become easier to add to it. 
