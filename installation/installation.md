@@ -49,36 +49,4 @@ The version number is important to specify, whenever you have a question of like
 
 ## Quick start
 
-Running Ampersand<br>Suppose you have an Ampersand script you want to compile. The result will be a PDF file, which contains a functional  specification generated from your script. 
-##Open a [http://www.c3scripts.com/tutorials/msdos/open-window.html MS-DOS Window] in order to get a command prompt. ([http://www.c3scripts.com/tutorials/msdos/ more on Windows' DOS-commands])
-##[http://www.c3scripts.com/tutorials/msdos/cd.html Navigate to the directory] where you store your Ampersand script:<br><code>cd D:\myAmpersandScripts</code><br>Let us assume your Ampersand script is in a file called "<code>permits.adl</code>".
-##type the command<br><code>Ampersand permits.adl -f latex --verbose</code>
-##Watch as Ampersand compiles and analyzes your script.<br>Remarks:
-##*Without <code>--verbose</code>, the Ampersand Prototype Generator will work silently, so long as no mistakes occur.
-##*If the file "<code>ampersand.exe</code>" cannot be found, Windows will tell you that it did not recognize Ampersand as an internal or external command.
-##*If LaTeX or GraphViz cannot be found, the compilation will abort halfway. Inspect the error message to see which is the case.
-##*If the Ampersand Prototype Generator cannot find a file called "<code>permits.adl</code>", it will produce an error message.
-##*If your installation is correct, the only error messages you get originate from the mistakes in your script. Consult your textbook, your teacher, or [http://ampersand.sourceforge.net the Ampersand wiki] for help.
-##*Any error message that starts with "fatal" is a major bug in the system and should be reported directly to [[Ampersand contact | one of the Ampersand contacts]]. As long as Ampersand is under development, we cannot exclude the possibility that fatal-messages occur.
-##Upon success, the file "<code>permits.pdf</code>" is added to the output directory
-##If you want to generate to a different location, use the switch -o, for example:<br><code>Ampersand permits.adl -f latex -o D:\htdocs\myFirstPrototype\perm.pdf --verbose</code>
-
-== Generating prototypes in Windows ==
-This feature is for advanced users.
-# The prototype generator is part of the full installation of ampersand ({{URL of Ampersand}})
-# Running the Ampersand Prototype Generator<br>Suppose you have an Ampersand script, for which you want to generate a prototype. This prototype is a web application, so you will need a HTTP/PHP server. If you don't already have one, [http://www.apachefriends.org/en/xampp-windows.html install XAMPP], which is both popular and easy to install. In the sequel, I assume that you have a directory  that your HTTP/PHP server uses to look for web-applications (such as the prototype you are about to generate).
-##[http://www.c3scripts.com/tutorials/msdos/open-window.html Open a MS-DOS Window] in order to get a command prompt. ([http://www.c3scripts.com/tutorials/msdos/ more on Windows' DOS-commands])
-##[http://www.c3scripts.com/tutorials/msdos/cd.html Navigate to the directory] where you store your Ampersand script. Let us assume your Ampersand script is in a file called "applications.adl".
-##type the command<br><code>prototype applications.adl -pD:\htdocs\myFirstPrototype\ --verbose</code>
-##Watch as the Ampersand Prototype Generator puts all the necessary files in place.<br>Remarks:
-##*Without <code>--verbose</code>, the Ampersand Prototype Generator will work silently, so long as no mistakes occur.
-##*If the file "<code>prototype.exe</code>" cannot be found, Windows will tell you that it did not recognize prototype as an internal or external command.
-##*If the path "<code>D:\htdocs\myFirstPrototype\</code>" does not exist, the Ampersand Prototype Generator will create it.
-##*If the Ampersand Prototype Generator cannot find a file called "<code>applications.adl</code>", it will produce an error message.
-##Your web application is in place, ready to run<br>Remarks:
-##*If you want to move the application, simply move the whole directory tree, for example:<br><code>copy D:\htdocs\myFirstPrototype "C:\Program files\web\htdocs\demo"</code>
-#Running your application<br>Your application requires access to a MySQL database. If you don't already have a MySQL database, [http://www.apachefriends.org/en/xampp-windows.html install XAMPP], which is both popular and easy to install.
-##Open a browser. The the Ampersand Prototype Generator has been tested with [http://support.mozilla.org/en-US/kb/install-firefox-windows Firefox]. The behaviour on other browsers may be unpredictable, as Ampersand is still under development.
-##type the URL of your generated application. If it is on your laptop, use <br><code><nowiki>http://localhost/myFirstPrototype/</nowiki></code>
-##Now you should see the Open University logo, together with things that have been generated from your Ampersand script.<br>Remarks:
-##*If your MySQL server requires a different login than "<code>root</code>" with an empty password, you will get error messages from the MySQL server. Generate your application again, adding the missing information on the command line:<br><code>prototype applications.adl -pD:\htdocs\myFirstPrototype\ --verbose  --sqlHost=jupiter --sqlLogin=dbadmin --sqlPwd=secret</code>
+TODO
