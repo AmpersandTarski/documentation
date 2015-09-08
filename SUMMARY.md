@@ -6,7 +6,7 @@
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
    * [RULE](syntax/rule.md)
-* [The Command Line Tool](commandLineTool/commandlinetool.md)
+* [The Command Line Interface](command-line-interface/command-line-interface.md)
 * [Prototypes](prototypes/prototypes.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 
