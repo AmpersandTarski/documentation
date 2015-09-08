@@ -4,5 +4,4 @@ node_js:
 before_script:
   - npm install -g grunt-cli
 notifications:
-  email:
-  - han.joosten.han@gmail.com
+  email: false
