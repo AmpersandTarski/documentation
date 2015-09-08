@@ -32,9 +32,9 @@ After you have installed ampersand, make sure to follow the steps below, to get 
 ### Setting your path
 Make sure ampersand.exe can be found, by putting it somewhere in you path. [See how you set Windows $PATH variable](http://youtu.be/9UFNdFw9KHs)
 
-== Other environment variables ==
+### Other environment variables
 Optionally, you can configure some environment variables, so you do not have to tell ampersand the location of these paths:
-# ''The output directory for ampersand:'' the environment variable <code>CCdirOutput</code> can be set to hold the output directory for ampersand. alternatively, you can use a command-line swich: --outputDir=<dir>. If none are used, the current directory will we the output directory.
+ * **The output directory for ampersand:** the environment variable <code>CCdirOutput</code> can be set to hold the output directory for ampersand. alternatively, you can use a command-line swich: --outputDir=<dir>. If none are used, the current directory will we the output directory.
 # ''The output directory for prototype:'' the environment variable <code>CCdirPrototype</code> can be set to hold the output directory for prototype. 
 
 == Testing your installation ==
