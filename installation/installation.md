@@ -25,18 +25,24 @@ Of course, when you are familiar with Git, you could clone the [ampersand reposi
 
 * 
 
+## Configuration
+
+After you have installed ampersand, make sure to follow the steps below, to get you on your way:
+
+### Setting your path
+Make sure ampersand.exe can be found, by putting it somewhere in you path. [See how you set Windows $PATH variable](http://youtu.be/9UFNdFw9KHs)
+
+== Other environment variables ==
+Optionally, you can configure some environment variables, so you do not have to tell ampersand the location of these paths:
+# ''The output directory for ampersand:'' the environment variable <code>CCdirOutput</code> can be set to hold the output directory for ampersand. alternatively, you can use a command-line swich: --outputDir=<dir>. If none are used, the current directory will we the output directory.
+# ''The output directory for prototype:'' the environment variable <code>CCdirPrototype</code> can be set to hold the output directory for prototype. 
+
+== Testing your installation ==
+#Open a [http://www.c3scripts.com/tutorials/msdos/open-window.html MS-DOS Window] in order to get a command prompt. ([http://www.c3scripts.com/tutorials/msdos/ more on Windows' DOS-commands])
+#Type "Ampersand --help"<ENTER><br>The expected behaviour is that Ampersand replies with a list of options you can use. If the system says it does not know any command named Ampersand, this means it cannot find the file Ampersand.exe. You should fix the PATH settings.
 
 
 
-
-
-
-
-
-# Required other software<br>Ampersand assumes that MiKTex and Graphviz are installed on your computer (Click on the following hyperlinks to install). 
-##[http://miktex.org/2.9/setup MiKTex] is a popular LaTeX compiler, which Ampersand uses for the purpose of generating documents.
-##[http://www.graphviz.org/Download.php Graphviz] is a popular graph drawing tool, which Ampersand uses for generating pictures.
-# Download {{URL of Ampersand}} and run it to install the Ampersand software.
 # Follow the [[PostInstallation | post-install instructions]]
 # Running Ampersand<br>Suppose you have an Ampersand script you want to compile. The result will be a PDF file, which contains a functional  specification generated from your script. 
 ##Open a [http://www.c3scripts.com/tutorials/msdos/open-window.html MS-DOS Window] in order to get a command prompt. ([http://www.c3scripts.com/tutorials/msdos/ more on Windows' DOS-commands])
