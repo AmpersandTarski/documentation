@@ -21,9 +21,8 @@ Of course, when you are familiar with Git, you could clone the [ampersand reposi
 
 ##Other software you will need
 * In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend [MiKTeX](http://miktex.org/). Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)!
-* All graphical output is created using [GraphViz](http://www.graphviz.org/). You need to install it. Make sure dot and neato are in your path.
-
-* 
+* All graphical output is created using [GraphViz](http://www.graphviz.org/). You need to install it. Make sure *dot* and *neato* are in your path.
+* In order to run prototypes, you need a database and a web server. We suggest [XAMPP](https://www.apachefriends.org/download.html) which is both popular and easy to install.
 
 ## Configuration
 
