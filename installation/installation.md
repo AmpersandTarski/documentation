@@ -33,18 +33,23 @@ After you have installed ampersand, make sure to follow the steps below, to get 
 Make sure ampersand.exe can be found, by putting it somewhere in you path. [See how you set Windows $PATH variable](http://youtu.be/9UFNdFw9KHs)
 
 ### Other environment variables
-Optionally, you can configure some environment variables, so you do not have to tell ampersand the location of these paths:
- * **The output directory for ampersand:** the environment variable <code>CCdirOutput</code> can be set to hold the output directory for ampersand. alternatively, you can use a command-line swich: --outputDir=<dir>. If none are used, the current directory will we the output directory.
-# ''The output directory for prototype:'' the environment variable <code>CCdirPrototype</code> can be set to hold the output directory for prototype. 
-
-== Testing your installation ==
-#Open a [http://www.c3scripts.com/tutorials/msdos/open-window.html MS-DOS Window] in order to get a command prompt. ([http://www.c3scripts.com/tutorials/msdos/ more on Windows' DOS-commands])
-#Type "Ampersand --help"<ENTER><br>The expected behaviour is that Ampersand replies with a list of options you can use. If the system says it does not know any command named Ampersand, this means it cannot find the file Ampersand.exe. You should fix the PATH settings.
+Optionally, you may want to set some other environment variables. Have a look at the section [*Environment Variables* of the command line interface](../command-line-interface/command-line-interface) to see what variables exist.
 
 
+## Testing your installation
+ * Open a [command prompt](http://www.c3scripts.com/tutorials/msdos/open-window.html).
+ * Type "Ampersand --version". The expected behaviour is that Ampersand replies with the version of Ampersand. It will look something like:
+```.bash
+C:> ampersand.exe --version
+Ampersand v3.1.0[master:2fa348f*], build time: 08-Sep-15 14:04:58 West-Europa (z
+omertijd)
+```
+The version number is important to specify, whenever you have a question of like to report an issue. It **really** helps us when you add the version number, **including everything between the brackets** when you contact us.
 
-# Follow the [[PostInstallation | post-install instructions]]
-# Running Ampersand<br>Suppose you have an Ampersand script you want to compile. The result will be a PDF file, which contains a functional  specification generated from your script. 
+
+## Quick start
+
+Running Ampersand<br>Suppose you have an Ampersand script you want to compile. The result will be a PDF file, which contains a functional  specification generated from your script. 
 ##Open a [http://www.c3scripts.com/tutorials/msdos/open-window.html MS-DOS Window] in order to get a command prompt. ([http://www.c3scripts.com/tutorials/msdos/ more on Windows' DOS-commands])
 ##[http://www.c3scripts.com/tutorials/msdos/cd.html Navigate to the directory] where you store your Ampersand script:<br><code>cd D:\myAmpersandScripts</code><br>Let us assume your Ampersand script is in a file called "<code>permits.adl</code>".
 ##type the command<br><code>Ampersand permits.adl -f latex --verbose</code>
