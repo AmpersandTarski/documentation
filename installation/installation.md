@@ -22,7 +22,11 @@ Of course, when you are familiar with Git, you could clone the [ampersand reposi
 ##Other software you will need
 * In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend [MiKTeX](http://miktex.org/). Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)!
 * All graphical output is created using [GraphViz](http://www.graphviz.org/). You need to install it. Make sure *dot* and *neato* are in your path.
-* In order to run prototypes, you need a database and a web server. We suggest [XAMPP](https://www.apachefriends.org/download.html) which is both popular and easy to install.
+* In order to run the generated prototype, you need the following on the computer that you are using:
+ * a working SQL database server. You must ensure that this server has an account that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents.
+ * a working (configured) web server that can run PHP (5.6 or higher). The webserver must run on `localhost` and listen on port 80, which is pretty default.
+A practical way to arrange for this is to install [XAMPP](https://www.apachefriends.org/download.html), and create the `ampersand` database account.
+
 
 ## Configuration
 
@@ -45,13 +49,28 @@ omertijd)
 ```
 The version number is important to specify, whenever you have a question of like to report an issue. It **really** helps us when you add the version number, **including everything between the brackets** when you contact us.
 
-## Quick start: Prototypes
-## Generating a prototype (website)
+## Quick start: Build your first prototype
 
-In order to generate the prototype, you need (as a minimum):
-* (a version of) the Ampersand.exe executable;
-* an ampersand script/model (in a file);
-* a DOS box (command prompt), where the executable is in the search path, and the script is in the current directory.
+Suppose you have an ampersand script called myModel.adl with the following content:
+
+```
+CONTEXT HelloWorld IN ENGLISH
+
+  CONCEPT Greeting "Something that is said"
+  RELATION reply [Greeting*Answer] 
+  
+  RULE bePolite : I[Greeting] |- reply;reply~
+  ROLE Friend MAINTAINS bePolite
+
+  POPULATION Greeting CONTAINS
+     [ "Hello!"]
+
+  INTERFACE Welcome (reply) FOR Friend : '_SESSION'[SESSION];V[SESSION*Greeting]
+  BOX [ greeting: I
+      , reply   : reply
+      ]
+ENDCONTEXT
+```
 
 You can generate the prototype website for the script in file `myModel.adl` by typing the command:
 
@@ -61,11 +80,6 @@ This creates a directory `myModel.proto` (in the current directory), that contai
 
 Usually, you would have some demands regarding particulars of the generation. For example, you may want to generate the website in a specific directory, specify a particular CSS file for this website, etc. For the complete syntax of the Ampersand executable, see the chapter about the [command line tool](commandLineTool/commandlinetool.md)
 
-## Prerequisites for running prototypes
-In order to run the generated prototype, you need the following on the computer that you are using:
-* a working SQL database server. You must ensure that this server has an account that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents.
-* a working (configured) web server that can run PHP (5.6 or higher). The webserver must run on `localhost` and listen on port 80, which is pretty default.
-A practical way to arrange for this is to install [XAMPP](https://www.apachefriends.org/download.html), and create the `ampersand` database account.
 
 ## Installing and running a prototype website
 Installing a prototype consists of copying the generated contents into the `htdocs` directory of the webserver. 
