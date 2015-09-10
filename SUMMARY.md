@@ -8,5 +8,6 @@
    * [RULE](syntax/rule.md)
 * [The Command Line Interface](command-line-interface/command-line-interface.md)
 * [Prototypes](prototypes/prototypes.md)
+   * The ExecEngine
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 
