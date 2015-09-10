@@ -10,6 +10,5 @@
 * [Prototypes](prototypes/prototypes.md)
    * The ExecEngine(prototypes/execengine.md)
    * The Excel Importer(prototypes/excelimporter.md)
-   * [Hopseflops](hopseflops.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 
