@@ -10,3 +10,4 @@ This is ment to become a list that helps users with frequent asked questions
 -->
  1. The documentation is far from complete. We are working on it though.
 
+### Using the command line interface
