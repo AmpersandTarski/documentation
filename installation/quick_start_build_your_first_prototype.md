@@ -23,7 +23,7 @@ CONTEXT HelloWorld IN ENGLISH
 ENDCONTEXT
 ```
 
-You can generate the prototype website for the script in file `myModel.adl` by typing the command:
+Don't worry if you do not understand what everything in this script means. That isn't important for now. You can generate the prototype website for the script in file `myModel.adl` by typing the command:
 
      ampersand --proto myModel.adl
 
