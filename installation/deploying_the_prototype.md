@@ -11,3 +11,4 @@ This should be the easy part. Depending on your webserver, find the directory wh
 ## Make sure you have the right authorization in SQL
 Ampersand will need the right to create a database and manipulate with tables and so on. By default, it will use as username/password combination ampersand / ampersand (both lowercase). Make sure, your sql installation has a user configured that way, or have a look at [configuration](configuration) to setup other credentials
 
+## Open a browser, and navigate to your website. 
