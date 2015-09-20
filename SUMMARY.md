@@ -4,6 +4,7 @@
 * [Installation](installation/installation.md)
    * [Installing Ampersand](installation/installing_ampersand.md)
    * [Testing your installation](installation/testing_your_installation.md)
+   * Configuration
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
