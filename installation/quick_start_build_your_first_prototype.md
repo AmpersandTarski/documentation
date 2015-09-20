@@ -27,7 +27,7 @@ You can generate the prototype website for the script in file `myModel.adl` by t
 
      ampersand --proto myModel.adl
 
-This creates a directory `myModel.proto` (in the current directory), that contains the prototype website. Obviously, you will need a web server and a database server to run the prototype. This is discussed in the chapter [Installing Ampersand](installing_ampersand.md)`.
+This creates a directory `myModel.proto` (in the current directory), that contains the prototype website. Obviously, you will need a web server and a database server to run the prototype. This is discussed at [Installing Ampersand](installing_ampersand.md)`.
 
 Usually, you would have some demands regarding particulars of the generation. For example, you may want to generate the website in a specific directory, specify a particular CSS file for this website, etc. For the complete syntax of the Ampersand executable, see the chapter about the [command line tool](commandLineTool/commandlinetool.md)
 
