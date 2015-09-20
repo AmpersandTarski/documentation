@@ -12,3 +12,4 @@ This should be the easy part. Depending on your webserver, find the directory wh
 Ampersand will need the right to create a database and manipulate with tables and so on. By default, it will use as username/password combination ampersand / ampersand (both lowercase). Make sure, your sql installation has a user configured that way, or have a look at [configuration](configuration) to setup other credentials
 
 ## Open a browser, and navigate to your website. 
+Running a prototype consists of making sure that the webserver and database server are running, and then calling (this directory on) the webserver from any web browser such as firefox, or chrome. Other browsers may also  work.
