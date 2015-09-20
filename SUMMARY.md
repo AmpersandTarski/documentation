@@ -2,8 +2,8 @@
 
 * [Introduction](intro.md)
 * [Installation](installation/installation.md)
-   * Testing your installation
    * Installing Ampersand
+   * Testing your installation
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
