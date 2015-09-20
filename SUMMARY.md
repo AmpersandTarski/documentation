@@ -13,8 +13,8 @@
    * [RULE](syntax/rule.md)
 * [The Command Line Interface](command-line-interface/command-line-interface.md)
 * [Prototypes](prototypes/prototypes.md)
-   * [Extentions] 
-      * The ExecEngine(prototypes/extentions/execengine.md)
-      * The Excel Importer(prototypes/extentions/excelimporter.md)
+   * [Extentions](prototypes/extensions.md
+      * The ExecEngine(prototypes/extensions/execengine.md)
+      * The Excel Importer(prototypes/extensions/excelimporter.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 
