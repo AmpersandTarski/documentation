@@ -22,6 +22,6 @@ Of course, when you are familiar with Git, you could clone the [ampersand reposi
 * All graphical output is created using [GraphViz](http://www.graphviz.org/). You need to install it. Make sure *dot* and *neato* are in your path.
 * In order to run the generated prototype, you need the following on the computer that you are using:
  * a working SQL database server. You must ensure that this server has an account that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents.
- * a working (configured) web server that can run PHP (5.6 or higher). The webserver must run on `localhost` and listen on port 80, which is pretty default.
+ * a working (configured) web server that can run PHP (5.5 or higher). The webserver must run on `localhost` and listen on port 80, which is pretty default.
 A practical way to arrange for this is to install [XAMPP](https://www.apachefriends.org/download.html), and create the `ampersand` database account.
 
