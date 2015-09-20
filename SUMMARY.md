@@ -2,7 +2,7 @@
 
 * [Introduction](intro.md)
 * [Installation](installation/installation.md)
-   * Installing Ampersand
+   * [Installing Ampersand](installation/installing_ampersand.md)
    * Testing your installation
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
