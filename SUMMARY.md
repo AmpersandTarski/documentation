@@ -13,6 +13,7 @@
    * [RULE](syntax/rule.md)
 * [The Command Line Interface](command-line-interface/command-line-interface.md)
    * [switches](command-line-interface/switches.md)
+   * Environment variables
 * [Prototypes](prototypes/prototypes.md)
    * [[Extentions](prototypes/extensions.md](prototypes/extensions/extensions.md)
        * [The ExecEngine](prototypes/extensions/execengine.md)
