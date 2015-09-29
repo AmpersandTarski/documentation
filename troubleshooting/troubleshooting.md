@@ -8,6 +8,6 @@ Whenever you run into problems with Ampersand, and you cannot find what you are 
 <!---
 This is ment to become a list that helps users with frequent asked questions
 -->
- 1. The documentation is far from complete. We are working on it though.
+ 1. The documentation is far from complete. We are working on it though. If you are stuck, please create an issue! You are more than welcome!
 
 ### Using the command line interface
