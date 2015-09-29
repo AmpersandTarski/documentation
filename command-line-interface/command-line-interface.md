@@ -9,7 +9,7 @@ ampersand.exe
 ## Synopsis
 
 ```.bash
-ampersand [OPTIONS] [FILE]
+ampersand [SWITCHES] [FILE]
 ```
 
 ## Description
