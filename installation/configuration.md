@@ -6,5 +6,5 @@ After you have installed ampersand, make sure to follow the steps below, to get 
 Make sure ampersand.exe can be found, by putting it somewhere in you path. [See how you set Windows $PATH variable](http://youtu.be/9UFNdFw9KHs)
 
 ### Other environment variables
-Optionally, you may want to set some other environment variables. Have a look at the section [*Environment Variables* of the command line interface](../command-line-interface/command-line-interface) to see what variables exist.
+Optionally, you may want to set some other environment variables. Have a look at the section [Environment Variables](../command-line-interface/environment_variables.md) to see what variables exist.
 
