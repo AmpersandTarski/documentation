@@ -1,5 +1,17 @@
 
-## Installing and running a prototype website
+## Using Xampp
+You are free to use any webserver you like, but for your convenience, here are some words to help you out if you hardly know any of this kind of stuff. Here, we assume you use [xampp](https://www.apachefriends.org/index.html).
+
+  1. Download and install xampp is explained at their site.
+  2. Start the xampp control panel. It should be somewhere in the windows start menu. 
+  3. Make sure you start both modules **apache** and **MySQL**. Notice the ports mentioned in the control panel for apache. It is **80** by default.
+  4. Use phpMyAdmin (press the Admin button on the XAMPP Control pannel) to create the default ampersand user:
+     * user: ampersand
+     * password: ampersand
+     * Machine: localhost
+     * privilages: all privilages
+  5. find your *htdocs* directory (Default is *c:\xampp\htdocs*). This is the place where the generated prototype directorie has to be. You could also create a subfolder for this purpose. I use *C:\xampp\htdocs\ampersandPrototypes* for my prototypes. In this way, they do not interfere with other applications. But that's totally up to yourself.
+
 Installing a prototype consists of copying the generated contents into the `htdocs` directory of the webserver. (you will find the proto directory at the same location as where you have _myModel.adl_. This can be configured using a switch or using the environment variables)
 
 Running a prototype consists of making sure that the webserver and database server are running, and then calling (this directory on) the webserver from any web browser such as firefox, or chrome. Other browsers may also work.
