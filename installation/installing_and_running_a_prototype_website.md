@@ -11,6 +11,10 @@ You are free to use any webserver you like, but for your convenience, here are s
      * Machine: localhost
      * privilages: all privilages
   5. find your *htdocs* directory (Default is *c:\xampp\htdocs*). This is the place where the generated prototype directorie has to be. You could also create a subfolder for this purpose. I use *C:\xampp\htdocs\ampersandPrototypes* for my prototypes. In this way, they do not interfere with other applications. But that's totally up to yourself.
+  6. Open a browser and go to *http://localhost:80/ampersandPrototypes/myModel* This should start the prototype in your browser. Note:
+     * :80 is the port number of your web server. This defaults to :80, so if it is 80, you can leave it out.
+     * ampersandPrototypes is only if you use a subfolder as suggested. You could use other name, or leave it out all together. You can set an environment variable, so you do not have the fuss of copying to this location.
+     * myModel is the name of your context. If you are unsure, it is also the exact name of the generated folder of your prototype.
 
 Installing a prototype consists of copying the generated contents into the `htdocs` directory of the webserver. (you will find the proto directory at the same location as where you have _myModel.adl_. This can be configured using a switch or using the environment variables)
 
