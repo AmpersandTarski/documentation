@@ -9,13 +9,12 @@ You are free to use any webserver you like, but for your convenience, here are s
      * user: ampersand
      * password: ampersand
      * Machine: localhost
-     * privilages: all privilages
+     * privileges: all privileges
   5. find your *htdocs* directory (Default is *c:\xampp\htdocs*). This is the place where the generated prototype directorie has to be. You could also create a subfolder for this purpose. I use *C:\xampp\htdocs\ampersandPrototypes* for my prototypes. In this way, they do not interfere with other applications. But that's totally up to yourself.
-  6. Open a browser and go to *http://localhost:80/ampersandPrototypes/myModel* This should start the prototype in your browser. Note:
+  6. Open a browser (make sure you have a recent one!) and go to *http://localhost:80/ampersandPrototypes/myModel* This should start the prototype in your browser. Note:
      * :80 is the port number of your web server. This defaults to :80, so if it is 80, you can leave it out.
      * ampersandPrototypes is only if you use a subfolder as suggested. You could use other name, or leave it out all together. You can set an [environment variable](../command-line-interface/environment_variables.md), so you do not have the fuss of copying to this location.
      * myModel is the name of your context. If you are unsure, it is also the exact name of the generated folder of your prototype.
+  7. The first time, there is no database installed. You will see an error message. Fortunately, there is a button to install it for you. 
 
-Installing a prototype consists of copying the generated contents into the `htdocs` directory of the webserver. (you will find the proto directory at the same location as where you have _myModel.adl_. This can be configured using a switch or using the environment variables)
 
-Running a prototype consists of making sure that the webserver and database server are running, and then calling (this directory on) the webserver from any web browser such as firefox, or chrome. Other browsers may also work.
