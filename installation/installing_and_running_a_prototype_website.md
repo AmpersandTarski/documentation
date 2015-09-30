@@ -15,6 +15,6 @@ You are free to use any webserver you like, but for your convenience, here are s
      * :80 is the port number of your web server. This defaults to :80, so if it is 80, you can leave it out.
      * ampersandPrototypes is only if you use a subfolder as suggested. You could use other name, or leave it out all together. You can set an [environment variable](../command-line-interface/environment_variables.md), so you do not have the fuss of copying to this location.
      * myModel is the name of your context. If you are unsure, it is also the exact name of the generated folder of your prototype.
-  7. The first time, there is no database installed. You will see an error message. Fortunately, there is a button to install it for you. 
+  7. The first time, there is no database installed. You will see an error message. Fortunately, there is a button to install it for you. If you want to be sure a database is created you could use phpMyAdmin
 
 
