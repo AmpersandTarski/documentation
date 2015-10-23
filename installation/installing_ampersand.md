@@ -4,10 +4,16 @@
 A pretty recent windows binary can be **[downloaded for windows](https://cdn.rawgit.com/AmpersandTarski/webFiles/master/executables/windows/ampersand.zip)** . We try to update it frequently, using a git repository for that purpose. 
 
 ## Installing from Source
+
+Ampersand can be build easily using the haskell platform 2014.2.0.0, which is the version previous to the current version.
+The reason that we cannot use the latest version is because of a bug in the toolchain for Windows for ghc 7.10.  As soon as ghc 7.10.3 or higher is published, we will conform to the newest version again.
+
+Until that time, we have a branch that we use for this upgrade. 
+
 If for some reason a binary package is not available for your platform, you can install from source:
 
- * First, install the [Haskell platform](https://www.haskell.org/platform/)
- * then use the cabal tool to get the latest release of pandoc:
+ * First, install the [Haskell platform 2014.2.0.0](https://www.haskell.org/platform/prior.html)
+ * Then use the cabal tool to get the latest release of ampersand:
 
 ```
 cabal update
