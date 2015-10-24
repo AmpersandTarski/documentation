@@ -5,22 +5,23 @@ A pretty recent windows binary can be **[downloaded for windows](https://cdn.raw
 
 ## Installing from Source
 
-Ampersand can be build easily using the haskell platform 2014.2.0.0, which is the version previous to the current version.
+Because of an issue with the latest version of GHC (versions 7.10.1 and 7.10.2) on windows, you need ghc ***7.8.4*** . An easy way to do so is by downloading the haskell platform ***2014.2.0.0***, which is the version previous to the current version.
 The reason that we cannot use the latest version is because of a bug in the toolchain for Windows for ghc 7.10.  As soon as ghc 7.10.3 or higher is published, we will conform to the newest version again.
 
-Until that time, we have a branch that we use for this upgrade. 
+If you allready have Haskell 7.10 running, and you are not using Windows, you could use the ampersand sourcecode in the branch called *upgrade_to_haskell_7.10*. With ghc 7.8.4 you can use the master branch.
 
-If for some reason a binary package is not available for your platform, you can install from source:
+The source for Ampersand can be found on Github:
 
- * First, install the [Haskell platform 2014.2.0.0](https://www.haskell.org/platform/prior.html)
- * Then use the cabal tool to get the latest release of ampersand:
+>  https://github.com/AmpersandTarski/ampersand
 
+You need a recent Haskell compiler. [www.haskell.org](https://www.haskell.org/)
+
+Go to the directory where you have your clone of the source files: (this is the directory where you find the file _ampersand.cabal_ 
 ```
 cabal update
-cabal install ampersand
+cabal install
 ```
-
-Of course, when you are familiar with Git, you could clone the [ampersand repository](https://github.com/AmpersandTarski/ampersand) to get the current development version.  
+Note: Do not use Hackage to get ampersand. It does not contain all non-haskell files. (See [issue #213](https://github.com/AmpersandTarski/ampersand/issues/213))
 
 
 ##Other software you will need
