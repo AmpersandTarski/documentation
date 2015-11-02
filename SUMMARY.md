@@ -19,7 +19,7 @@
    * [switches](command-line-interface/switches.md)
    * [Environment variables](command-line-interface/environment_variables.md)
 * [Prototypes](prototypes/prototypes.md)
-   * [Extentions](prototypes/extensions/extensions.md)
+   * [Extensions](prototypes/extensions/extensions.md)
        * [The ExecEngine](prototypes/extensions/execengine.md)
        * [The Excel Importer](prototypes/extensions/excelimporter.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
