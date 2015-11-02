@@ -10,6 +10,7 @@
    * [deploying the prototype](installation/deploying_the_prototype.md)
 * [Modelling in Ampersand](modelling-in-ampersand.md)
    * [Rules](rules.md)
+   * Relations and Concepts
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
