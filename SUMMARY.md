@@ -11,7 +11,7 @@
 * [Modeling in Ampersand](modeling/modeling_in_ampersand.md)
    * [Relations & Concepts](modeling/relations_and_concepts.md)
    * [Rules](modeling/rules.md)
-   * Interfaces
+   * [Interfaces](modeling/interfaces.md)
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
