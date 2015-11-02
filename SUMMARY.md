@@ -9,7 +9,7 @@
    * [Installing and running a prototype website](installation/installing_and_running_a_prototype_website.md)
    * [deploying the prototype](installation/deploying_the_prototype.md)
 * [Modeling in Ampersand](modeling/modeling_in_ampersand.md)
-   * [Relations and Concepts](modeling/relations_and_concepts.md)
+   * [Relations & Concepts](modeling/relations_and_concepts.md)
    * [Rules](modeling/rules.md)
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
