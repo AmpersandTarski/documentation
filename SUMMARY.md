@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](intro.md)
+   * Modeling in Ampesand
 * [Installation](installation/installation.md)
    * [Installing Ampersand](installation/installing_ampersand.md)
    * [Configuration](installation/configuration.md)
