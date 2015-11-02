@@ -8,7 +8,7 @@
    * [Quick start: Build your first prototype](installation/quick_start_build_your_first_prototype.md)
    * [Installing and running a prototype website](installation/installing_and_running_a_prototype_website.md)
    * [deploying the prototype](installation/deploying_the_prototype.md)
-* Modelling in Ampersand
+* [Modelling in Ampersand](modelling-in-ampersand)
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
