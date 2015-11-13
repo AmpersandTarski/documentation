@@ -21,7 +21,7 @@
    * [Environment variables](command-line-interface/environment_variables.md)
 * [Prototypes](prototypes/prototypes.md)
    * [Backend fw](prototypes/fw/fw.md)
-       * Hooks
+       * [Hooks](prototypes/fw/hooks.md)
    * [Extensions](prototypes/extensions/extensions.md)
        * [The ExecEngine](prototypes/extensions/execengine.md)
        * [The Excel Importer](prototypes/extensions/excelimporter.md)
