@@ -109,3 +109,5 @@ To delete the atom "J.Lovell", add a CRUD denotation to the interface. It consis
 | R | read      |
 | U | update    |
 | D | delete    |
+
+The following code fragment specifies 
