@@ -131,8 +131,11 @@ This does the following: Whenever `newA` is populated with pair `("b","c")`, the
 You may want to consider habituating yourself to *always* use {EX} before any function.
 
 # Example (`_;`)
-When you try to create or delete pairs with atoms that contain texts, you may find that some texts contain the semi-colon. When such a text is used in a violation statement, this will be interpreted as an argument separator, causing all sorts of unexpected results.
-TO BE ELABORATED
+When you try to create or delete pairs with atoms that contain texts, you may find that some texts contain the semi-colon. When such a text is used in a violation statement, this will be interpreted as an argument separator, causing all sorts of unexpected results. This can be prevented by using `_;` rather than `;` as an argument separator. However, the ExecEngine must be made aware that this alternative argument separator is used. This is done by mentioning it immediately at the beginning of a function call, as in the below example:
+
+    VIOLATION (TXT "{EX}_;InsPair_;r1_;A_;", SRC I, TXT "_;B_;", TGT I)
+
+Of course, if the SRC or TGT atom is a text that contains the characters `_;`, the problem still remain
 
 # Example (`TransitiveClosure`)
 TO BE DONE
