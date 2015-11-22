@@ -102,12 +102,14 @@ BOX
 The following figure shows the effect on the user interface that displays "J. Lovell". The fields `Name` and `Email` have become editable.
 ![interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/Interfacing/Figures/InterfaceLovellEditable.jpg?raw=true "Example of a user interface")
 
-To delete the atom "J.Lovell", add a CRUD denotation to the interface. It consists of the letters c, r, u, d (in that order) each of which is either in lowercase or uppercase. The lowercase letter means No and the uppercase letter means Yes for doing the function represented by the letter.
+##CRUD-functionality
+To create, read, update or delete the atom "J.Lovell", add a CRUD denotation to the interface. It consists of the letters `c`, `r`, `u`, `d` (in that order) each of which is either in lowercase or uppercase. The lowercase letter means "No, you cannot!" and the uppercase letter means "Yes, you can!" for each function `c`, `r`, `u`, and `d`.
 
-| C | create    |
-| --|---------- |
-| R | read      |
-| U | update    |
-| D | delete    |
+Let us append, for example, the word `CRuD` to the header of the interface, as in:
+```ampersand
+INTERFACE "Project"  : I[Project] ROWS CRuD
+```
+The word `CRuD` specifies that the user can create and delete projects, but updating will not be possible.
 
-The following code fragment specifies 
+##Experiment on your own.
+Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above. It is quite likely that you will be trying out your own ideas before you get to the end... Have fun!
