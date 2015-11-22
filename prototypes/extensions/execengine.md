@@ -135,7 +135,7 @@ When you try to create or delete pairs with atoms that contain texts, you may fi
 
     VIOLATION (TXT "{EX}_;InsPair_;r1_;A_;", SRC I, TXT "_;B_;", TGT I)
 
-Of course, if the SRC or TGT atom is a text that contains the characters `_;`, the problem still remain
+Of course, if the SRC or TGT atom is a text that contains the characters `_;`, the problem still remains...
 
 # Example (`TransitiveClosure`)
 TO BE DONE
