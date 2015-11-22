@@ -99,7 +99,7 @@ BOX
   , "Works with" : workswith 
   ]
 ```
-The following figure shows the effect on the user interface that displays "J. Lovell". The fields `Name` and `Email` have become editable.
+The following figure shows the effect on the user interface that displays "J. Lovell". The fields `Name` and `Email` have become editable. You should actually try this out for yourself, because in this book all you see is a different look for the editable fields. In the actual application you will find that these fields have now become editable.
 ![interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceLovellEditable.jpg?raw=true "Example of a user interface")
 
 ##CRUD-functionality
