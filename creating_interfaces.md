@@ -3,7 +3,7 @@ This chapter explains how to specify interfaces. The introduction specifies an i
 
 ##Introduction
 The following figure is an example of a user interface, which shows the name, status, e-mail and co-workers of a person called "J. Lovell".
-![Interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/Interfacing/Figures/InterfaceLovellRaw.jpg?raw=true "Example of a user interface")
+![Interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceLovellRaw.jpg?raw=true "Example of a user interface")
 
 The specification of this interface is given in the following code fragment
 ```ampersand
@@ -31,7 +31,7 @@ RELATION workswith :: Person * Person
 
 ##Nesting
 You can create structure in an interface by nesting. Here is an example:
-![Interface of project "Alpha Board"](https://github.com/AmpersandTarski/documentation/blob/Interfacing/Figures/InterfaceAlphaBoardNested.jpg?raw=true "Example of a nested user interface")
+![Interface of project "Alpha Board"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceAlphaBoardNested.jpg?raw=true "Example of a nested user interface")
 
 The specification of this interface is given in the following code fragment.
 ```ampersand
@@ -81,7 +81,7 @@ INTERFACE "Project"  : I[Project] ROWS
   ]
 ```
 Notice the effect that these changes have on the user interface.
-![Interface of project "Alpha Board"](https://github.com/AmpersandTarski/documentation/blob/Interfacing/Figures/InterfaceAlphaBoardFormatted.jpg?raw=true "Example of formatting by COLS, ROWS, or TABS")
+![Interface of project "Alpha Board"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceAlphaBoardFormatted.jpg?raw=true "Example of formatting by COLS, ROWS, or TABS")
 
 Notice the following features:
 1. The keyword `TABS` turns the box into a tabulated layout.
@@ -100,7 +100,7 @@ BOX
   ]
 ```
 The following figure shows the effect on the user interface that displays "J. Lovell". The fields `Name` and `Email` have become editable.
-![interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/Interfacing/Figures/InterfaceLovellEditable.jpg?raw=true "Example of a user interface")
+![interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceLovellEditable.jpg?raw=true "Example of a user interface")
 
 ##CRUD-functionality
 To create, read, update or delete the atom "J.Lovell", add a CRUD denotation to the interface. It consists of the letters `c`, `r`, `u`, `d` (in that order) each of which is either in lowercase or uppercase. The lowercase letter means "No, you cannot!" and the uppercase letter means "Yes, you can!" for each function `c`, `r`, `u`, and `d`.
