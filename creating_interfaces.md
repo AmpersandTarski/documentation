@@ -3,6 +3,7 @@ This chapter explains how to specify interfaces. The introduction specifies an i
 
 ##Introduction
 The following figure is an example of a user interface, which shows the name, status, e-mail and co-workers of a person called "J. Lovell".
+
 ![Interface of "J. Lovell"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceLovellRaw.jpg?raw=true "Example of a user interface")
 
 The specification of this interface is given in the following code fragment
@@ -31,6 +32,7 @@ RELATION workswith :: Person * Person
 
 ##Nesting
 You can create structure in an interface by nesting. Here is an example:
+
 ![Interface of project "Alpha Board"](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceAlphaBoardNested.jpg?raw=true "Example of a nested user interface")
 
 The specification of this interface is given in the following code fragment.
