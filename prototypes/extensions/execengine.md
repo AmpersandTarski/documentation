@@ -1,7 +1,7 @@
 # Automated rules
 This chapter is about prototypes that Ampersand generates. In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping one rule satisfied happens in one of the following ways:
 1. The rule is imposed by the system. Violations are not tolerated. Any change you make to the data that violates the rule is not accepted by the system, making sure that the rule will never be violated. This rule is called *invariant*.
-2. Each violation of the rule is signalled to a role. That signal does not go away until the violation has been corrected. This rule is called *process rule*. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
+2. Each violation of the rule is signaled to a role. That signal does not go away until the violation has been corrected. This rule is called *process rule*. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
 3. Each violation of a rule is restored by a robot, which we call the Exec-Engine. Such rules are called *automated*.
 4. The rule cannot be violated because of the way Ampersand is built. These rules are called *law*. No effort is needed to maintain them, because they are always true.
 
