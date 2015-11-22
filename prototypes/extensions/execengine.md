@@ -55,6 +55,9 @@ TO BE DONE
 # Creating e-mails (another example)
 TO BE DONE
 
+##Experiment on your own.
+Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above.
+
 ## Pitfalls
 As an Ampersand user, you are used to getting error messages from the compiler. Yet, errors in rules for the Exec-engine are not signalled by the compiler. Instead, you get run-time error message that tend to be incomprehensible. For the time that researchers are working on this problem, you will have to live with that. It make programming of automated rules error-prone and time consuming. The only piece of advice we can give here is:
 - Keep automated rules simple.
