@@ -1,11 +1,11 @@
 # Automated rules
 This chapter is about prototypes that Ampersand generates. In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping one rule satisfied happens in one of the following ways:
-1. A rule is imposed by the system. Violations are not tolerated. Any change you make to the data that violates the rule is not accepted by the system, making sure that the rule will never be violated. This rule is called *invariant*.
-2. Each violation of a rule is signalled to a role. That signal does not go away until the violation has been corrected. This rule is called *process rule*. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
+1. The rule is imposed by the system. Violations are not tolerated. Any change you make to the data that violates the rule is not accepted by the system, making sure that the rule will never be violated. This rule is called *invariant*.
+2. Each violation of the rule is signalled to a role. That signal does not go away until the violation has been corrected. This rule is called *process rule*. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
 3. Each violation of a rule is restored by a robot, which we call the Exec-Engine. Such rules are called *automated*.
 4. The rule cannot be violated because of the way Ampersand is built. These rules are called *law*. No effort is needed to maintain them, because they are always true.
 
-This chapter is about automated rules. The Exec-Engine is meant to restore rule violations. This is nice for your users, who are relieved from worrying about those rules. As an extra, the Exec-Engine creates an opportunity to make prototype call other programs. This can be useful, for instance to send e-mails or SMS-messages.
+This chapter is about automated rules. The Exec-Engine is meant to restore rule violations. This is nice for your users, who have no concern with those violations. As an extra, the Exec-Engine creates an opportunity to make prototype call other programs. This can be useful, for instance to send e-mails or SMS-messages.
 
 This chapter introduces automated rules by example. We will first create a rule, which a user must keep satisfied. We will then automate that process by adding instructions for the Exec-Engine.
 
@@ -47,6 +47,8 @@ Note that the violations of rule `r1` are precisely the pairs the Exec-Engine mu
 The function `InsPair` is a predefined ExecEngine function, that adds to the population of a relation. The corresponding function `DelPair` removes pairs from the population of a relation. In the example, it is used to removed people from `coworker` that no longer share a project.
 
 # Example (`NewStruct`)
+TO BE DONE
+# Example (`DelAtom`)
 TO BE DONE
 # Example (`TransitiveClosure`)
 TO BE DONE
