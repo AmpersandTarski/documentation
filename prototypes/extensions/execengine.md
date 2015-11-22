@@ -110,8 +110,25 @@ The function 'DelAtom' is predefined, and takes two arguments:
 Note that when an atom is deleted, also every pair (in any relation) is deleted if either its source atom or target atom is the deleted atom.
 
 # Example (`{EX}`)
-Sometimes, resolving a violation may require more than a single `DelPair` or `InsPair` to resolve. 
-TO BE ELABORATED
+Sometimes, resolving a violation may require multiple function calls, e.g. multiple `InsPair`s, combinations of `InsPair`s and `DelPair`s, etc.
+
+Inserting the tag `{EX}` before each function will do the trick. Here is an example:
+
+    r1 :: A * B
+    r2 :: A * C
+    newA :: B * C
+    
+    ROLE ExecEngine MAINTAINS "Create an A"
+    RULE "Create an A": newA |- (r1~;r2)-newA
+    VIOLATION (TXT "{EX} NewStruct;A"
+                         , TXT ";r1;A;_NEW;B;", SRC I
+                         , TXT ";r2;A;_NEW;C;", TGT I
+               TXT "{EX} DelPair;newA;B;", SRC I, TXT ";C;", TGT I
+              )
+
+This does the following: Whenever `newA` is populated with pair `("b","c")`, the rule is violated (as the rule is only true when `newA` has an empty population). The ExecEngine then creates a new atom in concept A (say, `a`), and uses it to populate relations `r1` and `r2` with pairs `("a","b")` and `("a","c")` respectively. Then, the pair `("b","c")` is removed from relation `newA`, thus reverting the violation.
+
+You may want to consider habituating yourself to *always* use {EX} before any function.
 
 # Example (`_;`)
 When you try to create or delete pairs with atoms that contain texts, you may find that some texts contain the semi-colon. When such a text is used in a violation statement, this will be interpreted as an argument separator, causing all sorts of unexpected results.
