@@ -1,5 +1,13 @@
-# The ExecEngine
-The ExecEngine ('Exec'ution 'Engine') enables the automated resolution of violations (as well as the execution of any other PHP code for violations). Putting it differently: it provides ampersand prototypes with the capability of doing computations, sending emails, and so on.
+# Automated rules
+This chapter is about prototypes that Ampersand generates. In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping one rule satisfied happens in one of the following ways:
+1. A rule is imposed by the system. Violations are not tolerated. Any change you make to the data that violates the rule is not accepted by the system, making sure that the rule will never be violated. This rule is called *invariant*.
+2. Each violation of a rule is signalled to a role. That signal does not go away until the violation has been corrected. This rule is called *process rule*
+3. Each violation of a rule is restored by a robot, which we call the Exec-Engine. Such rules are called *automated*.
+4. The rule cannot be violated because of the way Ampersand is built. These rules are called *law*. No effort is needed to maintain them, because they are always true.
+
+This chapter is about automated rules. Primarily, the Exec-Engine is meant to restore rule violations. This is comfortable for users, who has no worries about resolving those violations. As a side-effect, the Exec-Engine creates an opportunity to make prototype call other programs. This can be useful, for instance to send e-mails or SMS-messages.
+
+This chapter introduces automated rules by example. We will first create a rule, which a user must keep satisfied. We will then automate that process by adding instructions for the Exec-Engine.
 
 
 ## (Process) rules
@@ -13,7 +21,7 @@ A basic idea in Ampersand is that invariant rules may not be violated while proc
      
      RULE "Every person must have a DOB": I[Person] |- personDOB;personDOB~
 
-A violation of a process rule indicates that work has to be done, the result of which is that the violation disappears. In the example, we may allow the DOB of a person not to be administered, but that would constitute work, consisting of obtaining and registering the DOB. This work must be assigned to one (or more) actors that are made responsible for this. Such actor(s) are represented by a role (name), as follows:
+A violation of a process rule indicates that work has to be done, the result of which is that the violation disappears. In the example, we may allow the date of birth (DOB) of a person not to be administered, but that would constitute work, consisting of obtaining and registering the DOB. This work must be assigned to one (or more) actors that are made responsible for this. Such actor(s) are represented by a role (name), as follows:
 
      ROLE RegistrationOfficer MAINTAINS "Every person must have a DOB"
 
