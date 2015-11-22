@@ -16,7 +16,7 @@ BOX
   ]
 ```
 Notice the following features:
-1. The interface has a name, which identifies that interface throughout the context.
+1. The interface has a name, `"Person"`, which identifies that interface throughout the context.
 2. The expression `I[Person]` on the first line determines which atoms may be represented. In this example, only atoms of concept `Person` are displayed in the interface.
 3. The example displays J. Lovell, an atom of concept `Person`. This atom is called the root atom. Every interface is displayed with one root atom.
 4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.
