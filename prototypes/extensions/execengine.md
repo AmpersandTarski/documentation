@@ -174,15 +174,21 @@ What this does is the following. Any time that `r` is being (de)populated, the r
 
 Note that if you want to use (the equivalent of) `r*` somewhere in an expression, the most practical way is to use the expression `(I \/ rPlus)` at that spot.
 
-# Creating e-mails (another example)
-TO BE DONE
 
 ##Experiment on your own.
-Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above.
+Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing several of the examples shown above.
 
-## Pitfalls
-As an Ampersand user, you are used to getting error messages from the compiler. Yet, errors in rules for the Exec-engine are not signalled by the compiler. Instead, you get run-time error message that tend to be incomprehensible. For the time that researchers are working on this problem, you will have to live with that. It make programming of automated rules error-prone and time consuming. The only piece of advice we can give here is:
+## HELP! I got errors!
+As an Ampersand user, you are used to getting error messages from the compiler. Yet, errors in rules for the Exec-engine are not signalled by the compiler. Instead, you get run-time error message that some inexperienced users find hard to work with, as it requires some knowledge of the backgrounds.
+
+Here are some tips.
+1. Most (all?) predefined functions check for a valid number of arguments. If the error message relates to the number of arguments, 
+    1. you have missed out on a `;`. The function `NewStruct` is well-known to produce this error, because of the wealth of arguments allowed. Learning and maintaining a strict discipline regarding how you write such (e.g. `NewStruct`) statements is a big help in preventing this error from occurring.
+    2. you may have to many `;`s. Of course, you may just mistakenly having written too many `;`s. Another, less known cause is where a violation occurs on an atom that happens to be a text containing one or more `;` characters. This will cause the Exec-Engine to interpret the text as multiple arguments, which (usually) results in an illegal number of arguments error. The cure is to use the `_;` separator rather than the `;` separator (see the appropriate section above).
+2. Most (all?) predefined functions that have arguments to specify a relation definition, will check (at run-time) whether or not this relation is actually defined (at define-time). Misspellings in relation or concept names (e.g. capitalizations) often cause this error.
+3. Look at the log window to get more information on what is actually happening when the Exec-Engine executes. You can turn it on by clicking on the left-most icon of the icon-list that is at the right hand side in the menu bar. There, you turn on the 'Show log window'. In the log window, you can select what you do and do not see. Options you may want to select include 'ExecEngine', 'RuleEngine' and 'Database'. 
+3. If everything else fails, read the error messages and log lines slowly and carefully, as they do provide information that may help you resolve the issue at hand.
+
+For the time that researchers are working on this problem, you will have to live with all this. It makes programming of automated rules initially error-prone and time consuming, but when you get the hang of it, it gets better. Still, the best piece of advice we can currently give here is:
 - Keep automated rules simple.
 - Test thoroughly.
-- If it doesn't work as you expect, you are pretty much on your own. There are but few tools to help out.
-
