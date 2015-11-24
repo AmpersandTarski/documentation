@@ -138,7 +138,41 @@ When you try to create or delete pairs with atoms that contain texts, you may fi
 Of course, if the SRC or TGT atom is a text that contains the characters `_;`, the problem still remains...
 
 # Example (`TransitiveClosure`)
-TO BE DONE
+Consider the `r :: A * A [IRF,ASY]`. In relation algebra, expressions such as `r+` or `r*` are allowed, designating the transitive closure of `r`. The `+` and `*` operators are currently not supported in Ampersand. 
+
+This section describes a workaround that allows you to use transitive closures.To do so, we simply define a relation `rPlus :: A * A` and/or `rStar :: A * A`, and define the following automated rules to populate these relations:
+
+     ROLE ExecEngine MAINTAINS "Grow rPlus"
+     RULE "Grow rPlus": r;rPlus \/ rPlus;r |- rPlus
+     VIOLATION (TXT "{EX} InsPair;rPlus;A;", SRC I, TXT ";A;", TGT I)
+     
+     ROLE ExecEngine MAINTAINS "Shrink rPlus"
+     RULE "Shrink rPlus": rPlus |- r;rPlus \/ rPlus;r
+     VIOLATION (TXT "{EX} DelPair;rPlus;A;", SRC I, TXT ";A;", TGT I)
+
+     ROLE ExecEngine MAINTAINS "Grow rStar"
+     RULE "Grow rStar": r \/ r;rStar \/ rStar;r |- rStar
+     VIOLATION (TXT "{EX} InsPair;rStar;A;", SRC I, TXT ";A;", TGT I)
+
+     ROLE ExecEngine MAINTAINS "Shrink rStar"
+     RULE "Shrink rStar": rStar |- r \/ r;rStar \/ rStar;r
+     VIOLATION (TXT "{EX} DelPair;rStar;A;", SRC I, TXT ";A;", TGT I)
+
+While this works (certainly in theory), a practical issue is that it quickly becomes very timeconsuming as the population of `r` grows, up to an unacceptable level. Also,  Ampersand prototypes have a time limit (30 or 60 seconds) for an Exec-Engine run. In order to make transitive closures a bit more practicable (but certainly not workable for 'real' software), we can use the predefined Exec-Engine function `TransitiveClosure`, as follows:
+
+     rCopy :: A * A
+     MEANING "a copy of the relation `r`, needed to detect deletions in `r`"
+     
+     rPlus :: A * A 
+     ROLE ExecEngine MAINTAINS "Warshall on r"
+     RULE "Warshall on r": rCopy = r
+     VIOLATION (TXT "{EX} TransitiveClosure;r;A;rCopy;rPlus")
+
+What this does is the following. Any time that `r` is being (de)populated, the rule `Warshall on r` is violated. This calls the (predefined) function `TransitiveClosure` with its four arguments, the result of which is that
+1. the relation `rPlus` is computed as the (smallest) transitive closure of `r` (using the Warshall algorithm);
+2. the relation `rCopy` is made to have the same population as `r`, thereby resolving all violations of the rule.
+
+Note that if you want to use (the equivalent of) `r*` somewhere in an expression, the most practical way is to use the expression `(I \/ rPlus)` at that spot.
 
 # Creating e-mails (another example)
 TO BE DONE
