@@ -1,13 +1,15 @@
+Before studying this chapter, make sure you know how to predict violations. You need to understand how Ampersand computes violations, given a certain population.
 # Automated rules
-This chapter tells you how to specify automated manipulations for populations by prototypes that Ampersand generates (and as a side-effect, you can do all sorts of other neat things). 
+Did you ever wonder how you can make your computer prevent rules from being violated? For that purpose, you must specify what your prototype will do the moment it signals a violation.
+This chapter tells you how. As a bonus, you can make your prototype perform all sorts of neat things, even sending e-mails or SMS-messages... 
 
-In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping one rule satisfied happens in one of the following ways:
-1. The rule is imposed by the system. Violations are not tolerated. Any change you make to the data that violates the rule is not accepted by the system, making sure that the rule will never be violated. Such rules are called *invariants*.
-2. Each violation of the rule is signaled to a role. That signal does not go away until the violation has been corrected. Such rules are called *process rules*. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
-3. Each violation of a rule is restored by a robot, which we call the Exec-Engine. Such rules are called *automated*.
+In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping a rule satisfied happens in one of the following ways:
+1. Your prototype imposes a rule. Violations are not tolerated. The prototype does not accept any change of data that violates the rule. As a result, the rule remains satisfied all the time. Such rules are called *invariants*.
+2. Your prototype signals each violation to a designated role. The signal does not go away until the user has eliminated the violation. The rule is called *process rule* because it prompts users to do some work. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
+3. Your prototype restores a violation the moment it occurs. It does so by means of a built-in robot, which we call the Exec-Engine. Such rules are called *automated*.
 4. The rule cannot be violated because of the way Ampersand is built. These rules are called *laws*. No effort is needed to maintain them, because they are always true.
 
-This chapter is about automated rules. The Exec-Engine is meant to restore violations of automated rules. This is nice for your users, who have no concern with those violations. As an extra, the Exec-Engine creates an opportunity to make prototypes call other programs, e.g. to send e-mails or SMS-messages.
+This chapter is about the third category: automated rules. The idea is to prevent violations by acting in time, to satisfy the violated rule. This is nice for your users, who have no concern with those violations.
 
 This chapter introduces automated rules by example. We will first create a rule, which a user must keep satisfied. We will then automate that process by adding instructions for the Exec-Engine.
 
@@ -57,11 +59,11 @@ Consider the following example:
     RELATION project[Assignment*Project] [UNI,TOT]  MEANING "Every Assignment must apply to one project"
     RELATION assignee[Assignment*Person] [UNI,TOT]  MEANING "Every Assignment must apply to one person"
 
-The following rule states that for every project leader, an `Assignment` must exist that applies to one `Person` and one `Project`, basically assigning that `Person` to be a project leader for the `Project`.
+The following rule states that for every project leader, an assignment must exist that applies to one person and one project, basically assigning that person to be a project leader for the Project.
 
     RULE "Require Assignment" : pl |- project~;assignee
 
-This calls for the automated creation of an atom in the concept `Assignment`, and the subsequent population of relations `project` and `assignee` using this newly created atom. This is specified as follows:
+This calls for the automated creation of an atom in the concept `Assignment`, followed by the population of relations `project` and `assignee` using this newly created atom. This is specified as follows:
 
     ROLE "ExecEngine" MAINTAINS "Create Assignment"
     RULE "Create Assignment" : pl |- project~;assignee
@@ -70,10 +72,10 @@ This calls for the automated creation of an atom in the concept `Assignment`, an
                  , TXT ";assignee;Assignment;_NEW;Person;", TGT I
               )
 
-First, we assign the rule `Create Assignment` to the ExecEngine so that it is automated, and we define the rule. In the `VIOLATION`, we use the (predefined) function `NewStruct`, which is followed by a wealth of arguments (separated by semi-colons). 
+The first statement assigns the rule `Create Assignment` to the Exec-Engine. The prototype will send all violations of this rule to the Exec-Engine. The rule says that for every project with a project leader, there must be an assignment. Without that assignment, the rule is violated. The `VIOLATION` statement specifies that a new `Assignment` must be made for each violation. For that purpose, we use the predefined function `NewStruct`. Its arguments are separated by semicolons. 
 
 The first argument specifies the concept in which a new atom must be generated (`Assignment` in the example).
-The first argument is followed by any number of 5-tuples (a 5-tuple is a sequence of 5 arguments). This means that the total number of arguments of `NewStruct` is 5k+1, where k is the number of 5-tuples. We make this explicit here because it is our experience that lacking or superfluous semi-colons are often causing erroneous calls `to NewStruct`.
+The first argument is followed by any number of 5-tuples (a 5-tuple is a sequence of 5 arguments). This means that the total number of arguments of `NewStruct` is 5k+1, where k is the number of 5-tuples. We make this explicit here because it is our experience that lacking or superfluous semicolons are often causing erroneous calls `to NewStruct`.
 
 Every 5-tuple consists of the following elements:
 
