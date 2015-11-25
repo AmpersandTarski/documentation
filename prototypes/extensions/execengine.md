@@ -54,7 +54,7 @@ The function `InsPair` is a predefined ExecEngine function, that adds to the pop
 
 **Notes**: 
 * The examples use `SRC I` or `TGT I` to produce atoms that are to be inserted or deleted. However, `I` may be any expression whose source concept is the same as that of the preceeding `SRC` or `TGT`. 
-* The `SRC <expression>` and `TGT <expression>` is a set of pairs (a,b), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<expression>`. In the examples given, this set of atoms has cardinality 1 (which is most often the case). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality > 1, then all atoms are usedprocessed by `InsPair` or `DelPair`. 
+* The `SRC <expression>` and `TGT <expression>` is a set of pairs (a,b), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<expression>`. In the examples given, this set of atoms has cardinality 1 (which is most often the case). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality > 1, then `InsPair` will insert them all whereas `DelPair` will produce an error. 
 
 # Example (`NewStruct`)
 Consider the following example:
