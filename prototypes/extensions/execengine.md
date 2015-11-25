@@ -52,6 +52,10 @@ Elaborating on this example, just which violations will the Exec-Engine resolve?
 Note that the violations of rule `r1` are precisely the pairs the Exec-Engine must add to `coworker` to satisfy rule `r1`.
 The function `InsPair` is a predefined ExecEngine function, that adds to the population of a relation. The corresponding function `DelPair` removes pairs from the population of a relation. In the example, it is used to remove people from `coworker` that no longer share a project.
 
+**Notes**: 
+* The examples use `SRC I` or `TGT I` to produce atoms that are to be inserted or deleted. However, `I` may be any expression whose source concept is the same as that of the preceeding `SRC` or `TGT`. 
+* The `SRC <expression>` and `TGT <expression>` is a set of pairs (a,b), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<expression>`. In the examples given, this set of atoms has cardinality 1 (which is most often the case). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality > 1, then all atoms are usedprocessed by `InsPair` or `DelPair`. 
+
 # Example (`NewStruct`)
 Consider the following example:
 
@@ -86,7 +90,7 @@ Every 5-tuple consists of the following elements:
 5. the target-atom of the pair to be added.
 
 Note that
-- a 5-tuple has the same structure as that of `InsPair` (and `DelPair`);
+- a 5-tuple has the same structure as that of `InsPair` (and `DelPair`), and indeed, internally the function `InsPair` is called. This implies that the notes provided in the `InsPair` section also apply to these 5-tuples.
 - the source-atom or the target-atom (or both) can be the keyword `_NEW`, which refers to the atom created by `NewStruct`; in this case, the corresponding concept (obviously) MUST be the same as the first argument in `NewStruct`.
 
 Here is how it works. Suppose the pair `("Zeus-III", "Rhea")` is added to the relation `pl`, meaning that `Rhea` is being made a project leader of project `Zeus-III`. This produces a violation `("Zeus-III", "Rhea")` of the rule `Create Assignment`. The associated VIOLATION statement produces the text
@@ -140,17 +144,57 @@ When you try to create or delete pairs with atoms that contain texts, you may fi
 Of course, if the SRC or TGT atom is a text that contains the characters `_;`, the problem still remains...
 
 # Example (`TransitiveClosure`)
-TO BE DONE
+Consider the `r :: A * A [IRF,ASY]`. In relation algebra, expressions such as `r+` or `r*` are allowed, designating the transitive closure of `r`. The `+` and `*` operators are currently not supported in Ampersand. 
 
-# Creating e-mails (another example)
-TO BE DONE
+This section describes a workaround that allows you to use transitive closures.To do so, we simply define a relation `rPlus :: A * A` and/or `rStar :: A * A`, and define the following automated rules to populate these relations:
+
+     ROLE ExecEngine MAINTAINS "Grow rPlus"
+     RULE "Grow rPlus": r;rPlus \/ rPlus;r |- rPlus
+     VIOLATION (TXT "{EX} InsPair;rPlus;A;", SRC I, TXT ";A;", TGT I)
+     
+     ROLE ExecEngine MAINTAINS "Shrink rPlus"
+     RULE "Shrink rPlus": rPlus |- r;rPlus \/ rPlus;r
+     VIOLATION (TXT "{EX} DelPair;rPlus;A;", SRC I, TXT ";A;", TGT I)
+
+     ROLE ExecEngine MAINTAINS "Grow rStar"
+     RULE "Grow rStar": r \/ r;rStar \/ rStar;r |- rStar
+     VIOLATION (TXT "{EX} InsPair;rStar;A;", SRC I, TXT ";A;", TGT I)
+
+     ROLE ExecEngine MAINTAINS "Shrink rStar"
+     RULE "Shrink rStar": rStar |- r \/ r;rStar \/ rStar;r
+     VIOLATION (TXT "{EX} DelPair;rStar;A;", SRC I, TXT ";A;", TGT I)
+
+While this works (certainly in theory), a practical issue is that it quickly becomes very timeconsuming as the population of `r` grows, up to an unacceptable level. Also,  Ampersand prototypes have a time limit (30 or 60 seconds) for an Exec-Engine run. In order to make transitive closures a bit more practicable (but certainly not workable for 'real' software), we can use the predefined Exec-Engine function `TransitiveClosure`, as follows:
+
+     rCopy :: A * A
+     MEANING "a copy of the relation `r`, needed to detect deletions in `r`"
+     
+     rPlus :: A * A 
+     ROLE ExecEngine MAINTAINS "Warshall on r"
+     RULE "Warshall on r": rCopy = r
+     VIOLATION (TXT "{EX} TransitiveClosure;r;A;rCopy;rPlus")
+
+What this does is the following. Any time that `r` is being (de)populated, the rule `Warshall on r` is violated. This calls the (predefined) function `TransitiveClosure` with its four arguments, the result of which is that
+1. the relation `rPlus` is computed as the (smallest) transitive closure of `r` (using the Warshall algorithm);
+2. the relation `rCopy` is made to have the same population as `r`, thereby resolving all violations of the rule.
+
+Note that if you want to use (the equivalent of) `r*` somewhere in an expression, the most practical way is to use the expression `(I \/ rPlus)` at that spot.
+
 
 ##Experiment on your own.
-Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above.
+Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing several of the examples shown above.
 
-## Pitfalls
-As an Ampersand user, you are used to getting error messages from the compiler. Yet, errors in rules for the Exec-engine are not signalled by the compiler. Instead, you get run-time error message that tend to be incomprehensible. For the time that researchers are working on this problem, you will have to live with that. It make programming of automated rules error-prone and time consuming. The only piece of advice we can give here is:
+## HELP! I got errors!
+As an Ampersand user, you are used to getting error messages from the compiler. Yet, errors in rules for the Exec-engine are not signalled by the compiler. Instead, you get run-time error message that some inexperienced users find hard to work with, as it requires some knowledge of the backgrounds.
+
+Here are some tips.
+1. Most (all?) predefined functions check for a valid number of arguments. If the error message relates to the number of arguments, 
+    1. you have missed out on a `;`. The function `NewStruct` is well-known to produce this error, because of the wealth of arguments allowed. Learning and maintaining a strict discipline regarding how you write such (e.g. `NewStruct`) statements is a big help in preventing this error from occurring.
+    2. you may have to many `;`s. Of course, you may just mistakenly having written too many `;`s. Another, less known cause is where a violation occurs on an atom that happens to be a text containing one or more `;` characters. This will cause the Exec-Engine to interpret the text as multiple arguments, which (usually) results in an illegal number of arguments error. The cure is to use the `_;` separator rather than the `;` separator (see the appropriate section above).
+2. Most (all?) predefined functions that have arguments to specify a relation definition, will check (at run-time) whether or not this relation is actually defined (at define-time). Misspellings in relation or concept names (e.g. capitalizations) often cause this error.
+3. Look at the log window to get more information on what is actually happening when the Exec-Engine executes. You can turn it on by clicking on the left-most icon of the icon-list that is at the right hand side in the menu bar. There, you turn on the 'Show log window'. In the log window, you can select what you do and do not see. Options you may want to select include 'ExecEngine', 'RuleEngine' and 'Database'. 
+3. If everything else fails, read the error messages and log lines slowly and carefully, as they do provide information that may help you resolve the issue at hand.
+
+For the time that researchers are working on this problem, you will have to live with all this. It makes programming of automated rules initially error-prone and time consuming, but when you get the hang of it, it gets better. Still, the best piece of advice we can currently give here is:
 - Keep automated rules simple.
 - Test thoroughly.
-- If it doesn't work as you expect, you are pretty much on your own. There are but few tools to help out.
-
