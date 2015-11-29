@@ -6,11 +6,6 @@ An ampersand model describes the rules, relations and concepts that define a bus
 
 In an Ampersand model, interfaces can be defined too, enabling the definition of changes to the set of facts.
 
-## Relations & Concepts
-## Rules
-## Interfaces
-An interface is a mechanism to add or remove facts to the set of facts that is hold by the business system. 
-
 
  
  
