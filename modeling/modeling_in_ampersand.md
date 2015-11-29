@@ -7,11 +7,6 @@ An ampersand model describes the rules, relations and concepts that define a bus
 In an Ampersand model, interfaces can be defined too, enabling the definition of changes to the set of facts.
 
 ## Relations & Concepts
-A fact is a statement that is True. *Joe Smith lives in New York* could be a fact. In this example, *Joe Smith* could be seen as an instance of a **Person** and *New York* as an instance of **City**. 
-
-We can define the **relation** *lives in* between the **concepts** *Person* and *City* to hold facts about persons living in cities.  
-
-
 ## Rules
 Every rule is denoted both as a statement in natural language (i.e. free text) as well as a formal expression. The Ampersand modeler is responsible that the semantics of both ways to express a rule is equivalent.
 
