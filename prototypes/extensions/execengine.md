@@ -198,3 +198,35 @@ Here are some tips.
 For the time that researchers are working on this problem, you will have to live with all this. It makes programming of automated rules initially error-prone and time consuming, but when you get the hang of it, it gets better. Still, the best piece of advice we can currently give here is:
 - Keep automated rules simple.
 - Test thoroughly.
+
+## Running the Exec-Engine multiple times
+The ExecEngine can run itself again, which is particularly useful for fixing violations that arose from ExecEngine functions executing. Since all execution must terminate, a limit has been set on the maximum number of reruns that is allowed, which defaults to 10 (decimal). You can modify this setting in `LocalSettings.php`, , by (including and/or) modifying the following texts: 
+
+     Config::set('maxRunCount', 'execEngine', 10);
+
+Whether or not the ExecEngine does reruns can be controlled in three ways:
+
+1. Automatically, which is the default behaviour. This setting can be adjusted in `LocalSettings.php`, by (including and/or) modifying the following texts: 
+
+     `Config::set('autoRerun', 'execEngine', true);`
+
+2. Manually. This is when you, as a user, clik on the `refresh/reset options` icon in a prototype, and the select `Run execution engine`. Note that if you also use logins, you must have been assigned a role that allows you to do this, or you won't see this option.
+ 
+3. By using the ExecEngine function `RerunExecEngine`, which takes one argument (an explanatory text, that is used for logging - see the example below). Whenever the ExecEngine calls this function, a flag is set requesting a rerun. When, at the end of an ExecEngine run, this flag is set, the ExecEngine will run itself again.
+
+Here is an example of how `RerunExecEngine` can be used to create a transitive closure:
+
+     r :: A * A [ASY]
+     rStar :: A * A -- This will contain a transitive closure
+     
+     ROLE ExecEngine MAINTAINS "InsPair on rStar"
+     RULE "InsPair on rStar": r \/ r;rStar \/ rStar;r |- rStar
+     VIOLATION (TXT "{EX} InsPair;rStar;A;", SRC I, TXT ";A;", TGT I
+               ,TXT "{EX} RerunExecEngine;InsPair on rStar"
+               )
+     ROLE ExecEngine MAINTAINS "DelPair on rStar"
+     RULE "DelPair on rStar": rStar |- r \/ r;rStar \/ rStar;r
+     VIOLATION (TXT "{EX} DelPair;rStar;A;", SRC I, TXT ";A;", TGT I
+               ,TXT "{EX} RerunExecEngine;DelPair on rStar"
+               )
+
