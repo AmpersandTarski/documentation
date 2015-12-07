@@ -1,7 +1,9 @@
 
 
 ## Windows
-A pretty recent windows binary can be **[downloaded for windows](https://cdn.rawgit.com/AmpersandTarski/webFiles/master/executables/windows/ampersand.zip)** . We try to update it frequently, using a git repository for that purpose. 
+A pretty recent windows binary can be **[downloaded for windows](https://github.com/AmpersandTarski/webFiles/blob/master/executables/windows/ampersand.zip?raw=true)** . We try to update it frequently, using a git repository for that purpose. 
+
+If you use the binary, you can skip the next section (Installing from Source), and continue at `Other software you will need`
 
 ## Installing from Source
 
