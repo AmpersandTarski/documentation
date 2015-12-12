@@ -13,7 +13,8 @@ This chapter is about the third category: automated rules. The idea is to preven
 
 This chapter introduces automated rules by example. We will first create a rule, which a user must keep satisfied. We will then automate that process by adding instructions for the ExecEngine.
 
-MostThe examples are taken from the demo script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"), that you can run to reproduce everything that is shown below.
+##Learn by experimenting
+Most of the examples are taken from the demo script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). You can compile and run this script, and reproduce several of the examples that follow.
 
 ## Example (`InsPair` and `DelPair`)
 Consider the following example:
@@ -180,9 +181,6 @@ What this does is the following. Any time that `r` is being (de)populated, the r
 
 Note that if you want to use (the equivalent of) `r*` somewhere in an expression, the most practical way is to use the expression `(I \/ rPlus)` at that spot.
 
-
-##Experiment on your own.
-Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing several of the examples shown above.
 
 ## HELP! I got errors!
 As an Ampersand user, you are used to getting error messages from the compiler. Yet, errors in rules for the Exec-engine are not signalled by the compiler. Instead, you get run-time error message that some inexperienced users find hard to work with, as it requires some knowledge of the backgrounds.
