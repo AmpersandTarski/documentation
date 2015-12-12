@@ -1,7 +1,7 @@
 Before studying this chapter, make sure you know how to predict violations. You need to understand how Ampersand computes violations, given a certain population.
 # Automated rules
 Did you ever wonder how you can make your computer prevent rules from being violated? For that purpose, you must specify what your prototype will do the moment it signals a violation.
-This chapter tells you how. As a bonus, you can make your prototype perform all sorts of neat things, even sending e-mails or SMS-messages... 
+This chapter tells you how. 
 
 In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping a rule satisfied happens in one of the following ways:
 1. Your prototype imposes a rule. Violations are not tolerated. The prototype does not accept any change of data that violates the rule. As a result, the rule remains satisfied all the time. Such rules are called *invariants*.
