@@ -3,7 +3,7 @@ Before studying this chapter, make sure you know how to predict violations. You 
 Did you ever wonder how you can make your computer prevent rules from being violated? For that purpose, you must specify what your prototype will do the moment it signals a violation.
 This chapter tells you how. 
 
-In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping a rule satisfied happens in one of the following ways:
+In essence, an Ampersand prototype is a database application that helps its users to keep rules satisfied. Keeping a rule satisfied happens in one of the following ways:
 1. Your prototype imposes a rule. Violations are not tolerated. The prototype does not accept any change of data that violates the rule. As a result, the rule remains satisfied all the time. Such rules are called *invariants*.
 2. Your prototype signals each violation to a designated role. The signal does not go away until the user has eliminated the violation. The rule is called *process rule* because it prompts users to do some work. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
 3. Your prototype restores a violation the moment it occurs. It does so by means of a built-in robot, which we call the ExecEngine. Such rules are called *automated*.
