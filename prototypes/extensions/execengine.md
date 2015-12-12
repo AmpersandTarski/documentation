@@ -6,14 +6,14 @@ This chapter tells you how.
 In essence, an Ampersand-prototype is a database application that helps its users to keep rules satisfied. Keeping a rule satisfied happens in one of the following ways:
 1. Your prototype imposes a rule. Violations are not tolerated. The prototype does not accept any change of data that violates the rule. As a result, the rule remains satisfied all the time. Such rules are called *invariants*.
 2. Your prototype signals each violation to a designated role. The signal does not go away until the user has eliminated the violation. The rule is called *process rule* because it prompts users to do some work. Notice that a violation of a process rule may persist. That is because it is meant to be resolved by persons rather than a computer.
-3. Your prototype restores a violation the moment it occurs. It does so by means of a built-in robot, which we call the Exec-Engine. Such rules are called *automated*.
+3. Your prototype restores a violation the moment it occurs. It does so by means of a built-in robot, which we call the ExecEngine. Such rules are called *automated*.
 4. The rule cannot be violated because of the way Ampersand is built. These rules are called *laws*. No effort is needed to maintain them, because they are always true.
 
 This chapter is about the third category: automated rules. The idea is to prevent violations by acting in time, to satisfy the violated rule. This is nice for your users, who have no concern with those violations.
 
-This chapter introduces automated rules by example. We will first create a rule, which a user must keep satisfied. We will then automate that process by adding instructions for the Exec-Engine.
+This chapter introduces automated rules by example. We will first create a rule, which a user must keep satisfied. We will then automate that process by adding instructions for the ExecEngine.
 
-The examples are taken from the demo script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"), that you can run to reproduce everything that is shown below.
+MostThe examples are taken from the demo script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"), that you can run to reproduce everything that is shown below.
 
 ## Example (`InsPair` and `DelPair`)
 Consider the following example:
@@ -40,16 +40,16 @@ We have to consider that whenever a person is added to the project, that person 
     RULE r2:  coworker |- (pl\/member)~;(pl\/member)-I
     VIOLATION (TXT "DelPair;coworker;Person;", SRC I, TXT ";Person;", TGT I)
 
-Let us discuss both rules, starting with the first one. The `ROLE` statement assigns rule `r1` to the Exec-Engine. The instruction for the Exec-Engine is given in the `VIOLATION` string. It will be executed for each violation of rule `r1`.
+Let us discuss both rules, starting with the first one. The `ROLE` statement assigns rule `r1` to the ExecEngine. The instruction for the ExecEngine is given in the `VIOLATION` string. It will be executed for each violation of rule `r1`.
 
-Elaborating on this example, just which violations will the Exec-Engine resolve? Suppose the project has Alfred and Bob on the team before Harry is assigned. This means that the relation `coworker` contains `("Alfred", "Bob")` and `("Bob", "Alfred")` for starters. When the pair `("Zeus-III", "Harry")` is added to the relation `member`, we get the following violations: `("Alfred", "Harry")`, `("Harry", "Alfred")`, `("Bob", "Harry")`, and `("Harry", "Bob")`. So, the following instructions will be given to the Exec-Engine:
+Elaborating on this example, just which violations will the ExecEngine resolve? Suppose the project has Alfred and Bob on the team before Harry is assigned. This means that the relation `coworker` contains `("Alfred", "Bob")` and `("Bob", "Alfred")` for starters. When the pair `("Zeus-III", "Harry")` is added to the relation `member`, we get the following violations: `("Alfred", "Harry")`, `("Harry", "Alfred")`, `("Bob", "Harry")`, and `("Harry", "Bob")`. So, the following instructions will be given to the ExecEngine:
 
     "InsPair;coworker;Person;Alfred;Person;Harry"
     "InsPair;coworker;Person;Harry;Person;Alfred"
     "InsPair;coworker;Person;Bob;Person;Harry"
     "InsPair;coworker;Person;Harry;Person;Bob"
 
-Note that the violations of rule `r1` are precisely the pairs the Exec-Engine must add to `coworker` to satisfy rule `r1`.
+Note that the violations of rule `r1` are precisely the pairs the ExecEngine must add to `coworker` to satisfy rule `r1`.
 The function `InsPair` is a predefined ExecEngine function, that adds to the population of a relation. The corresponding function `DelPair` removes pairs from the population of a relation. In the example, it is used to remove people from `coworker` that no longer share a project.
 
 **Notes**: 
@@ -76,7 +76,7 @@ This calls for the automated creation of an atom in the concept `Assignment`, fo
                  , TXT ";assignee;Assignment;_NEW;Person;", TGT I
               )
 
-The first statement assigns the rule `Create Assignment` to the Exec-Engine. The prototype will send all violations of this rule to the Exec-Engine. The rule says that for every project with a project leader, there must be an assignment. Without that assignment, the rule is violated. The `VIOLATION` statement specifies that a new `Assignment` must be made for each violation. For that purpose, we use the predefined function `NewStruct`. Its arguments are separated by semicolons. 
+The first statement assigns the rule `Create Assignment` to the ExecEngine. The prototype will send all violations of this rule to the ExecEngine. The rule says that for every project with a project leader, there must be an assignment. Without that assignment, the rule is violated. The `VIOLATION` statement specifies that a new `Assignment` must be made for each violation. For that purpose, we use the predefined function `NewStruct`. Its arguments are separated by semicolons. 
 
 The first argument specifies the concept in which a new atom must be generated (`Assignment` in the example).
 The first argument is followed by any number of 5-tuples (a 5-tuple is a sequence of 5 arguments). This means that the total number of arguments of `NewStruct` is 5k+1, where k is the number of 5-tuples. We make this explicit here because it is our experience that lacking or superfluous semicolons are often causing erroneous calls `to NewStruct`.
@@ -97,7 +97,7 @@ Here is how it works. Suppose the pair `("Zeus-III", "Rhea")` is added to the re
 
      NewStruct;Assignment;project;Assignment;_New;Project;Zeus-III;assignee;Assignment;_NEW;Person;Rhea
      
-which is passed to the Exec-Engine, which executes the function `NewStruct`, the result of which is that
+which is passed to the ExecEngine, which executes the function `NewStruct`, the result of which is that
 
 - a new atom in concept `Assignment` is created (let's say it is `Assignment_3495812395`;
 - every 5-tuple is preprocessed, meaning that any keyword `_NEW` is replaced with the value of the newly created atom. Then, the result is passed to the function `InsPair`, as defined above, which means (for the given example) that `("Assignment_3495812395", "Zeus-III")` is inserted into relation `project[Assignment*Project]`, and  `("Assignment_3495812395", "Rhea")` is inserted into relation `assignee[Assignment*Person]`.
@@ -164,7 +164,7 @@ This section describes a workaround that allows you to use transitive closures.T
      RULE "Shrink rStar": rStar |- r \/ r;rStar \/ rStar;r
      VIOLATION (TXT "{EX} DelPair;rStar;A;", SRC I, TXT ";A;", TGT I)
 
-While this works (certainly in theory), a practical issue is that it quickly becomes very timeconsuming as the population of `r` grows, up to an unacceptable level. Also,  Ampersand prototypes have a time limit (30 or 60 seconds) for an Exec-Engine run. In order to make transitive closures a bit more practicable (but certainly not workable for 'real' software), we can use the predefined Exec-Engine function `TransitiveClosure`, as follows:
+While this works (certainly in theory), a practical issue is that it quickly becomes very timeconsuming as the population of `r` grows, up to an unacceptable level. Also,  Ampersand prototypes have a time limit (30 or 60 seconds) for an ExecEngine run. In order to make transitive closures a bit more practicable (but certainly not workable for 'real' software), we can use the predefined ExecEngine function `TransitiveClosure`, as follows:
 
      rCopy :: A * A
      MEANING "a copy of the relation `r`, needed to detect deletions in `r`"
@@ -190,23 +190,29 @@ As an Ampersand user, you are used to getting error messages from the compiler. 
 Here are some tips.
 1. Most (all?) predefined functions check for a valid number of arguments. If the error message relates to the number of arguments, 
     1. you have missed out on a `;`. The function `NewStruct` is well-known to produce this error, because of the wealth of arguments allowed. Learning and maintaining a strict discipline regarding how you write such (e.g. `NewStruct`) statements is a big help in preventing this error from occurring.
-    2. you may have to many `;`s. Of course, you may just mistakenly having written too many `;`s. Another, less known cause is where a violation occurs on an atom that happens to be a text containing one or more `;` characters. This will cause the Exec-Engine to interpret the text as multiple arguments, which (usually) results in an illegal number of arguments error. The cure is to use the `_;` separator rather than the `;` separator (see the appropriate section above).
+    2. you may have to many `;`s. Of course, you may just mistakenly having written too many `;`s. Another, less known cause is where a violation occurs on an atom that happens to be a text containing one or more `;` characters. This will cause the ExecEngine to interpret the text as multiple arguments, which (usually) results in an illegal number of arguments error. The cure is to use the `_;` separator rather than the `;` separator (see the appropriate section above).
 2. Most (all?) predefined functions that have arguments to specify a relation definition, will check (at run-time) whether or not this relation is actually defined (at define-time). Misspellings in relation or concept names (e.g. capitalizations) often cause this error.
-3. Look at the log window to get more information on what is actually happening when the Exec-Engine executes. You can turn it on by clicking on the left-most icon of the icon-list that is at the right hand side in the menu bar. There, you turn on the 'Show log window'. In the log window, you can select what you do and do not see. Options you may want to select include 'ExecEngine', 'RuleEngine' and 'Database'. 
-3. If everything else fails, read the error messages and log lines slowly and carefully, as they do provide information that may help you resolve the issue at hand.
+3. You should specify a relation just with its name, e.g. `project` (not: `project[Assignment*Project]`). The reason for this is that it (currently) is the ExecEngine itself that parses the violation string (rather than the Ampersand compiler). This very simple parser does not handle `[Assignment*Project]`-like constructs.
+4. For the same reason (simple ExecEngine parser), there is no type checking for the ExecEngine functions. This means that you must check yourself whether or not the type of atom(s) you want to insert or delete match with the source or target atom of the relation you try to (de)populate. 
+5. Look at the log window to get more information on what is actually happening when the ExecEngine executes. You can turn it on by clicking on the left-most icon of the icon-list that is at the right hand side in the menu bar. There, you turn on the 'Show log window'. In the log window, you can select what you do and do not see. Options you may want to select include 'ExecEngine', 'RuleEngine' and 'Database'. 
+6. If everything else fails, read the error messages and log lines slowly and carefully, as they (sometimes unexpectedly) do provide information that may actually help you to resolve the issue at hand.
 
 For the time that researchers are working on this problem, you will have to live with all this. It makes programming of automated rules initially error-prone and time consuming, but when you get the hang of it, it gets better. Still, the best piece of advice we can currently give here is:
 - Keep automated rules simple.
 - Test thoroughly.
 
-## Running the Exec-Engine multiple times
-The ExecEngine can run itself again, which is particularly useful for fixing violations that arose from ExecEngine functions executing. Since all execution must terminate, a limit has been set on the maximum number of reruns that is allowed, which defaults to 10 (decimal). You can modify this setting in `LocalSettings.php`, , by (including and/or) modifying the following texts: 
+## Ways to run the ExecEngine (one or more times)
+The ExecEngine currently is a simple one. Whenever it executes, it evaluates the automated rules one after another. Whenever an automated rule produces violations, the associated violation text is executed for every such violation. 
+
+While rules are most often evaluated in the order in which they are defined, you really should not make any assumptions about the evaluation order (nor about the order in which violations of a rule are processed). Hence, it may happen that the violations are processed 'out of order', resulting in violations of automated rules that could 'easily' have been fixed.
+
+To overcome this issue, the ExecEngine (by default) simply runs itself again, until all automated rules have no violations any more, or until the maximum amount of such reruns has been reached - this limit is set to guarantee that execution terminates. The default number of maximum reruns is 10 (decimal). You can modify this setting in `LocalSettings.php`, , by (including and/or) modifying the following texts: 
 
      Config::set('maxRunCount', 'execEngine', 10);
 
-Whether or not the ExecEngine does reruns can be controlled in three ways:
+For research or debugging purposes, it may sometimes be neccesary to have further control over the manner in which the ExecEngine does. There are three possibilities for running the ExecEngine:
 
-1. Automatically, which is the default behaviour. This setting can be adjusted in `LocalSettings.php`, by (including and/or) modifying the following texts: 
+1. Automatically. This is the default behaviour. Turning the autoRerun feature off means that the ExecEngine will always run only once when called. You can specify this in the file `LocalSettings.php`, by replacing the text `true` by `false` in the line that  contains the text: 
 
      `Config::set('autoRerun', 'execEngine', true);`
 
