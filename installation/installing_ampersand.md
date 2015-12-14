@@ -1,11 +1,28 @@
 
+## Installation instructions
 
-## Windows
-A pretty recent windows binary can be **[downloaded for windows](https://github.com/AmpersandTarski/webFiles/blob/master/executables/windows/ampersand.zip?raw=true)** . We try to update it frequently, using a git repository for that purpose. 
+There are several ways to install Ampersand on your machine.
 
-If you use the binary, you can skip the next section (Installing from Source), and continue at `Other software you will need`
+###  1) Use a prebuilt binary
 
-## Installing from Source
+The easiest way is by use of binaries. We try to update it frequently, using a [repository](https://github.com/AmpersandTarski/webFiles/tree/master/executables) for that purpose.
+
+Currently, a binary is available for:
+
+  * **Windows**. 
+    * [Download binary](https://github.com/AmpersandTarski/webFiles/blob/master/executables/windows/ampersand.zip?raw=true)
+    * unzip the binary, and put ampersand.exe in a directory that is in your path.
+    * Also make sure you install the required other software that you need (see below)
+
+  * **OS X**
+    * Sorry, not available yet, but `Coming soon`
+
+    
+
+### 2) Installing from Source
+
+If there is no binary for your operating system, or if you prefer to build it for yourself, this can be done 
+
 
 Because of an issue with the latest version of GHC (versions 7.10.1 and 7.10.2) on windows, you need ghc ***7.8.4*** . An easy way to do so is by downloading the haskell platform ***2014.2.0.0***, which is the version previous to the current version.
 The reason that we cannot use the latest version is because of a bug in the toolchain for Windows for ghc 7.10.  As soon as ghc 7.10.3 or higher is published, we will conform to the newest version again.
