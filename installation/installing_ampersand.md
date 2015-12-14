@@ -35,7 +35,7 @@ This will build you the executable named ampersand.exe
 
 **Notes:**
   * : Do **not** use Hackage to get ampersand. It does not contain all non-haskell files. (See [issue #213](https://github.com/AmpersandTarski/ampersand/issues/213))
-  * for windows users, there is a more elaborate instruction, at the [next page]()
+  * for windows users, there is a more elaborate instruction, at the [next page](ReInstallHaskellOnWindowsMachines.md)
 
 ### 2) Other software you will need
 * In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend [MiKTeX](http://miktex.org/). Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
