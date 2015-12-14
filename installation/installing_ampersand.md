@@ -20,7 +20,10 @@ Currently, a binary is available for:
 
 ### 2) Installing from Source
 
-If there is no binary for your operating system, or if you prefer to build it for yourself, this can be done 
+If there is no binary for your operating system, or if you prefer to build it for yourself, this can be done by following these steps:
+
+1. Download and install the most recent [Haskell Platform](https://www.haskell.org/platform/)
+1. use [git](https://git-scm.com/) to clone the [latest version of ampersand](git@github.com:AmpersandTarski/ampersand.git)
 
 
 Because of an issue with the latest version of GHC (versions 7.10.1 and 7.10.2) on windows, you need ghc ***7.8.4*** . An easy way to do so is by downloading the haskell platform ***2014.2.0.0***, which is the version previous to the current version.
