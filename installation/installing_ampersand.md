@@ -13,8 +13,7 @@ Currently, a binary is available for:
     * [Download binary](https://github.com/AmpersandTarski/webFiles/blob/master/executables/windows/ampersand.zip?raw=true)
     * unzip the binary, and put ampersand.exe in a directory that is in your path.
     * Also make sure you install the required other software that you need (see below)
-
-  * **OS X**
+  * **Mac OS X**
     * Sorry, not available yet, but `Coming soon`
 
     
