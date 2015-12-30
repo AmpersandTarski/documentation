@@ -1,5 +1,5 @@
 # Modeling in Ampersand
-To specify an information system, most teams will adhere to the following steps:
+To specify an information system, the following steps are necessary:
 1. Agreement on the domain language
 2. Agreement on rules
 3. Validate rules
