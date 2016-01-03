@@ -22,14 +22,15 @@ Currently, a binary is available for:
 
 If there is no binary for your operating system, or if you prefer to build it for yourself, this can be done by following these steps:
 
-> 1. Download and install the most recent [Haskell Platform](https://www.haskell.org/platform/)
+> 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install_and_upgrade.html)
+> 1. Then, install GHC 7.10.3 using stack:
+      ```$ stack setup 7.10.3```
+
 > 1. use [git](https://git-scm.com/) to clone the latest version of ampersand:  https://github.com/AmpersandTarski/ampersand.git
 > 1. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
-> 1. Issue the following commands:
->  * cabal update
->  * cabal sandbox init
->  * cabal install
-   
+> 1. Issue the following command:
+    ````$ stack instal```` 
+
 This will build you the executable named ampersand.exe
 
 
