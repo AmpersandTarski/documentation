@@ -93,6 +93,7 @@ Every 5-tuple consists of the following elements:
 Note that
 - a 5-tuple has the same structure as that of `InsPair` (and `DelPair`), and indeed, internally the function `InsPair` is called. This implies that the notes provided in the `InsPair` section also apply to these 5-tuples.
 - the source-atom or the target-atom (or both) can be the keyword `_NEW`, which refers to the atom created by `NewStruct`; in this case, the corresponding concept (obviously) MUST be the same as the first argument in `NewStruct`.
+- if you use a relation that has a (source or target) concept that is a specialization or generalization of the concept of the `_NEW`ly generated atom, you MUST use the concept of the `NEW`ly generated atom as concept-argument, rather than the concept by which the (source or target) of the to-be-populated relation was defined.
 
 Here is how it works. Suppose the pair `("Zeus-III", "Rhea")` is added to the relation `pl`, meaning that `Rhea` is being made a project leader of project `Zeus-III`. This produces a violation `("Zeus-III", "Rhea")` of the rule `Create Assignment`. The associated VIOLATION statement produces the text
 
