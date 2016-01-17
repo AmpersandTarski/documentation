@@ -7,13 +7,25 @@ The purpose of the include here below is that the summary is printed at the fron
 -->
 {% include "./SUMMARY.md" %}
 
-
-
 ## Contributions
 
 If you have anything to fix or details to add, first [file an issue](http://github.com/AmpersandTarski/documentation/issues) on GitHub to see if it is likely to be accepted, then file a pull request with your change (one PR per issue).
 
 This is not intended to be an open wiki; we want to keep it concise and minimal but will accept fixes and suitable additions.
+
+
+
+## About Ampersand
+The purpose of Ampersand is to develop information systems by means of business rules. In this way, it becomes easier to explain to business-stakeholders how the information system supports compliance to their very own business rules.
+
+The design of the Ampersand language has a particular philosophy. It consists of the following elements:
+1. The language is strongly and statically typed. This helps a programmer to write correct code and enables an efficient implementation of that code.
+2. The language is based on relation algebra, because relation algebra has two useful interpretations. One interpretation is in natural language. That helps to involve business stakeholders. The other interpretation is working software. That is necessary to generate a web application and its database directly from an Ampersand script.
+3. The language is declarative. This yields clarity in the semantics, which do not rely on side effects.
+4. The language offers incremental development. The programmer makes progress by adding restrictions. At any point he can generate software and use that as a working prototype for the definitive information system.
+5. The language offers compositionality. Each system is a composition of design patterns. As a result, larger systems can be assembled from parts. Each part can be developed independently and reused.
+6. Documentation can be embedded in the code.
+
 
 
 ## Licence
