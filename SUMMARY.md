@@ -3,7 +3,7 @@
 * [Introduction](intro.md)
 * [Installation](installation/installation.md)
    * [Installing Ampersand](installation/installing_ampersand.md)
-      * [(Re)Installing Haskell on Windows Machines](installation/ReInstallHaskellOnWindowsMachines.md)
+       * [(Re)Installing Haskell on Windows Machines](installation/ReInstallHaskellOnWindowsMachines.md)
    * [Configuration](installation/configuration.md)
    * [Testing your installation](installation/testing_your_installation.md)
    * [Quick start: Build your first prototype](installation/quick_start_build_your_first_prototype.md)
@@ -13,6 +13,7 @@
    * [Relations & Concepts](modeling/relationsand_concepts_md.md)
    * [Rules](modeling/rules.md)
    * [Interfaces](modeling/interfaces.md)
+       * Transactions
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
