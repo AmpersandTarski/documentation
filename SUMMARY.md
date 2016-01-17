@@ -13,7 +13,7 @@
    * [Relations & Concepts](modeling/relationsand_concepts_md.md)
    * [Rules](modeling/rules.md)
    * [Interfaces](modeling/interfaces.md)
-       * Transactions
+* Transactions
 * [Ampersand Syntax](syntax/syntax.md)
    * [CONTEXT](syntax/context.md)
    * [PATTERN](syntax/pattern.md)
