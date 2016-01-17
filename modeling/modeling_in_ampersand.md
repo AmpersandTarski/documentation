@@ -1,4 +1,4 @@
-# Modeling in Ampersand
+# Modeling in Ampersand (under construction by Stef)
 To specify an information system, the following steps are necessary:
 1. Agreement on the domain language;
 2. Agreement on rules;
@@ -10,6 +10,10 @@ An ampersand model describes the rules, relations and concepts that define a bus
 
 In an Ampersand model, interfaces can be defined too, enabling the definition of changes to the set of facts.
 
+## Define relations and concepts
 
+## Define rules
+## Define interfaces
+## Define transactions
  
- 
+Ampersand can cope with relations and concepts to define a data-space. It also allows the definition of rules to delimit the data-space and to define business processes. It allows the definition of interfaces and it employs the front-end to embody the interfaces as user-interfaces in a webapplication in a standardized manner. 
