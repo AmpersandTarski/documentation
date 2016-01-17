@@ -81,13 +81,26 @@ A question that needs to be answered is: what kind of things are "Push" and "Pop
 I'll leave finding out how the RUD part of CRUD translates to these types of rules as an exercise for the reader (meaning: I think it is possible, but it's too involved for me right now and I want to focus on something else instead.)
 
 # General case
+Rules of the form ``post(relation) = pre(..)`` can  be translated into automatic functionality, as such rules describe the new value of ``relation`` exactly. The ampersand engine can try to rewrite the rules to that form as much as possible.
+
+## Comparison with the execEngine
+Note that this approach is so general, that the current execEngine rules could be neatly expressed in this form:
+``post(someRelation) = pre(someRelation) - stuffThatNeedsToBeDeleted \/ stuffThatNeedsToBeInserted``
+There are two exceptions to this:
+
+1. execEngine rules that caused a chain of events cannot be expressed this way, or rather: this new approach does not take steps recursively. You should express everything in one step.
+2. execEngine rules that used to change pairs that are not visible in the interface, may not work. I'm not sure about this one, since it is very implementation dependent. In any case, if there is any non-determinism outside of what you can see, there is a problem (although we might consider showing relations that fall outside of the visible region in such cases)
+
 
 # Implementation details
 
 ## Runtime
+On runtime, we might consider using some sort of SAT-solving techniques to determine whether ``post(relation)`` is uniquely determined by the rules and by what the user already entered about ``post(otherstuff)``.
+
 Currently, we check all rules after each transaction. If a rule is violated, it needs to be restored. For these new types of rules, we can do the same kind of check, but we will need to remember the `pre` state of the database as well.
 
 Regular rules are checked by just looking at the `post` state, so we don't need any separate code to check the regular (invariant) rules.
+The SAT-based implementation would also implement most of the AMBER ideas.
 
 ## Compile time
 A problem for the type checker is that ``pre(I[A])`` and ``post(I[A])`` can be different. I propose that for each concept ``A``, four types are added:
