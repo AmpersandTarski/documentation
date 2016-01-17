@@ -4,7 +4,7 @@ When specifying an information system, the first three steps are:
 2. to define rules, and
 3. to define interfaces.
 
-The fourth step is the topic of this chapter: the definition of transactions. That is what this chapter is about. However, this is not yet part of the Ampersand language. We still have to invent that.
+The fourth step is the topic of this chapter: the definition of transactions. That is what this chapter is about. However, this is not yet part of the Ampersand language. We still have to invent that. A discussion on this topic is held on issue #279.
 
 The current language lacks transactions for the following reasons:
 1. Ampersand does not allow the specification of a button in such an interface, to invoke a transaction. Examples are buttons such as "print a report", analyze the case file, and compute the mortgage-offering for this customer.
