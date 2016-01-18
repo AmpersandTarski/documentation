@@ -26,11 +26,11 @@ RELATION item :: NonEmptySubstack -> Item
 RELATION substack :: NonEmptySubstack -> Stack
 RULE 'EmptyStack' = I[Stack] - I[NonEmptyStack]
 -- implicit rule: element EmptyStack exists
-RULE 'TopStack';V[Stack] = 'TopStack';substack*
--- implicit rule: element TopStack exists
+RELATION topStack :: ONE -> Stack
+RULE topStack;V[Stack] = topStack;substack*
 ```
 
-Both relations are functions, so every nonempty stack has an item and a substack. The first rule states that there is precisely one stack that is not nonempty, and it is the EmptyStack. Typing ensures that the EmptyStack can have no substacks. The second rule states that every stack is (transitively) a substack of the 'TopStack'. Consequently, the empty stack is (transitively) a substack of the 'TopStack', hence all stacks are free of cycles.
+Both relations are functions, so every nonempty stack has an item and a substack. The first rule states that there is precisely one stack that is not nonempty, and it is the EmptyStack. Typing ensures that the EmptyStack can have no substacks. The second rule states that every stack is (transitively) a substack of the topStack. Consequently, the empty stack is (transitively) a substack of the topStack, hence all stacks are free of cycles.
 
 If we add an interface to this example, we will be able to describe stacks at run-time. They do not necessarily behave as stacks. For instance, we can change items that are not at the head of a stack.
 
@@ -44,14 +44,14 @@ We first focus on allowing just one type of transaction. When this is done, we w
 
 Here is how I could express that only pushing a single element is allowed:
 ```
-RULE pre(substack) \/ post('TopStack';V);pre('TopStack') = post('TopStack')
-RULE pre(item) = post(item - 'TopStack';item)
+RULE pre(substack) \/ post(topStack~);pre(topStack) = post(subtack)
+RULE pre(item) = post(item - V;topStack;item)
 ```
 The first rule preserves the structure of substack. The second preserves the structure of item. Note that all expressions in the rules are either inside a ``pre`` or inside a ``post``.
 
 Popping an element is very similar. In fact, we can just switch `pre` and `post` and we are done:
 ```
-RULE post(substack) \/ pre('TopStack';V);post('TopStack') = pre('TopStack')
+RULE post(substack) \/ pre(topStack~);post(topStack) = pre(subtack)
 RULE post(item) = pre(item - 'TopStack';item)
 ```
 We could rewrite the rules a little, to see what happens with a `pop` more clearly, but I'll leave them as they are for now.
@@ -60,11 +60,11 @@ Unfortunately, we cannot add both the rules for popping and pushing: that would 
 
 ```
 TRANSACTION Push
-  RULE pre(substack) \/ post('TopStack';V);pre('TopStack') = post('TopStack')
-  RULE pre(item) = post(item - 'TopStack';item)
+  RULE pre(substack) \/ post(topStack~);pre(topStack) = post(subtack)
+  RULE pre(item) = post(item - V;topStack;item)
 ENDTRANSACTION
 TRANSACTION Pop
-  RULE post(substack) \/ pre('TopStack';V);post('TopStack') = pre('TopStack')
+  RULE post(substack) \/ pre(topStack~);post(topStack) = pre(subtack)
   RULE post(item) = pre(item - 'TopStack';item)
 ENDTRANSACTION
 ```
@@ -72,7 +72,7 @@ ENDTRANSACTION
 Or we could annotate each rule separately:
 
 ```
-RULE post(substack) \/ pre('TopStack';V);post('TopStack') = pre('TopStack') INTRANSACTION Pop
+RULE post(substack) \/ pre(topStack~);post(topStack) = pre(subtack) INTRANSACTION Pop
 ```
 
 This way of annotating rules reminds me of how we add roles to rules.
