@@ -8,7 +8,7 @@ The fourth step is the topic of this chapter: the definition of transactions. Th
 
 The current language lacks transactions for the following reasons:
 1. Ampersand does not allow the specification of a button in such an interface, to invoke a transaction. Examples are buttons such as "print a report", analyze the case file, and compute the mortgage-offering for this customer.
-2. Currently, automated transactions are driven by the Exec-engine, which has shown to be a necessary ingredient in making a viable demonstration for almost any application. At the same time, this exec-engine has proven difficult to use and it does not conform to Ampersand's philosophy.
+2. Currently, automated transactions are driven by the ExecEngine, which has shown to be a necessary ingredient in making a viable demonstration for almost any application. At the same time, this ExecEngine has proven difficult to use and it does not conform to Ampersand's philosophy.
 
 At the moment we are using this chapter to develop the required theory. We want to incorporate transactions in Ampersand. Over the time to come, this chapter should evolve to the specification and documentation of Ampersand's transaction mechanism. 
 
@@ -20,19 +20,19 @@ Suppose we want to define buttons in some Ampersand-interface for pushing and po
 ```
 CONCEPT Stack -- set of all stacks
 CONCEPT NonEmptyStack -- all stacks that are non-empty
-CLASSIFY NonEmptySubstack ISA Stack
+CLASSIFY NonEmptyStack ISA Stack
 CONCEPT Item -- items for in the stack
-RELATION item :: NonEmptySubstack -> Item
-RELATION substack :: NonEmptySubstack -> Stack
+RELATION item :: NonEmptyStack -> Item
+RELATION substack :: NonEmptyStack -> Stack
 RULE 'EmptyStack' = I[Stack] - I[NonEmptyStack]
--- implicit rule: element EmptyStack exists
+-- implicit rule: element EmptyStack exists in Stack
 RELATION topStack :: ONE -> Stack
 RULE topStack;V[Stack] = topStack;substack*
 ```
 
-Both relations are functions, so every nonempty stack has an item and a substack. The first rule states that there is precisely one stack that is not nonempty, and it is the EmptyStack. Typing ensures that the EmptyStack can have no substacks. The second rule states that every stack is (transitively) a substack of the topStack. Consequently, the empty stack is (transitively) a substack of the topStack, hence all stacks are free of cycles.
+Since relations `item` and `substack` are functions, every nonempty stack has an item and a substack. The first rule states that there is precisely one stack that is not nonempty, which we call the EmptyStack. Typing ensures that the EmptyStack can have no substacks. The second rule states that every stack is (transitively) a substack of the topStack. Consequently, the empty stack is (transitively) a substack of the topStack, hence all stacks are free of cycles.
 
-If we add an interface to this example, we will be able to describe stacks at run-time. They do not necessarily behave as stacks. For instance, we can change items that are not at the head of a stack.
+If we add an interface to this example, we will be able to describe stacks at run-time. They do not necessarily behave as stacks. For instance, we can change items that are not at the top of a stack.
 
 How do we want to specify this problem in a future version of Ampersand? I want it to fit in the philosophy of Ampersand, especially:
 1. strongly and statically typed;
