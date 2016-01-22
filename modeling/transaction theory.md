@@ -15,7 +15,7 @@ At the moment we are using this chapter to develop the required theory. We want 
 # Example: stacks
 Let us develop the theory on the basis of a toy problem.
 
-Suppose we want to define buttons in some Ampersand-interface for pushing and popping items from a stack. First we define what stacks are.
+Suppose we want to define buttons in some Ampersand-interface for pushing and popping items from a stack. First we define one stack are.
 
 ```
 CONCEPT Stack -- set of all stacks
