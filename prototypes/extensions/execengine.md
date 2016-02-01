@@ -1,3 +1,5 @@
+This chapter is meant for Ampersand users, who want to make rules that fix violations automatically. Please be warned that this part of Ampersand is difficult in practice. Use it only if you really need to make your prototype do more than checking and signalling of violations.
+
 Before studying this chapter, make sure you know how to predict violations. You need to understand how Ampersand computes violations, given a certain population.
 # Automated rules
 Did you ever wonder how you can make your computer prevent rules from being violated? For that purpose, you must specify what your prototype will do the moment it signals a violation.
