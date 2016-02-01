@@ -23,7 +23,7 @@
 * [Prototypes](prototypes/prototypes.md)
    * [Backend fw](prototypes/fw/fw.md)
        * [Hooks](prototypes/fw/hooks.md)
-       * Architecture of an Ampersand Application
+       * [Architecture of an Ampersand Application](prototypes/fw/architecture_of_an_ampersand_application.md)
    * [Extensions](prototypes/extensions/extensions.md)
        * [The ExecEngine](prototypes/extensions/execengine.md)
        * [The Excel Importer](prototypes/extensions/excelimporter.md)
