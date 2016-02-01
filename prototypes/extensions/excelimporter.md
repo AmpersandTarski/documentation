@@ -1,5 +1,5 @@
 # The Excel Importer
-The Excel Importer allows you to import data from an Excel file, effectively adding it to the population of a running prototype. 
+The Excel Importer allows you to import data from an Excel file, effectively adding it to the population of a running prototype. This chapter is meant for the Ampersand user who has more population than can be dealt with by `POPULATION` statements. It is also useful if you have existing spreadsheets filled with tables, which you want to use as population in your Ampersand-script. Please note that some editing of your Excel-file may be required, to make Ampersand understand how columns match Ampersand-relations.
 
 ## Installation
 Nothing special is required for installation; this extension is enabled by default 
@@ -19,7 +19,7 @@ For illustration purposes, assume we have defined the following small (useless) 
 
 If you want to specify data elements in an Excel file in order to populate such a model, you must define so called 'blocks' that contain this data. Here is an example of such a 'block':
 
-| [A's] |  rAA  |  rAB  |  rAC  |  rAC  |  rAC  |  sAB  |
+| [A] |  rAA  |  rAB  |  rAC  |  rAC  |  rAC  |  sAB  |
 | -- | -- | -- | -- | -- | -- | -- |
 |   A   |   A   |   B   |   C   |   C   |   C   |   B   |
 | alfa1 | alfa1 | beta1 | char1 | char2 | char3 | beta2 |
