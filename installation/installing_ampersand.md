@@ -23,20 +23,18 @@ Currently, a binary is available for:
 If there is no binary for your operating system, or if you prefer to build it for yourself, this can be done by following these steps:
 
 > 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install_and_upgrade.html)
-> 1. Then, install GHC 7.10.3 using stack:
-      ```$ stack setup 7.10.3```
-
+> 1. Then, have stack install everything you need to compile:
+      ```$ stack setup```
 > 1. use [git](https://git-scm.com/) to clone the latest version of ampersand:  https://github.com/AmpersandTarski/ampersand.git
 > 1. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
 > 1. Issue the following command:
     ````$ stack instal```` 
 
-This will build you the executable named ampersand.exe
+This will build you the executable named ampersand.exe and install it into your path.
 
 
 **Notes:**
   1. Do **not** use Hackage to get ampersand. It does not contain all non-haskell files. (See [issue #213](https://github.com/AmpersandTarski/ampersand/issues/213))
-  1. For windows users, there is a more elaborate instruction, at the [next page](ReInstallHaskellOnWindowsMachines.md)
 
 ### 2) Other software you will need
 * In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend [MiKTeX](http://miktex.org/). Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
