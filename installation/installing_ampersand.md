@@ -28,7 +28,7 @@ If there is no executable for your operating system, or if you prefer to build o
 > 1. use [git](https://git-scm.com/) to clone the latest version of Ampersand:  https://github.com/AmpersandTarski/ampersand.git
 > 1. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
 > 1. Issue the following command:
-    ````$ stack instal```` 
+    ````$ stack install```` 
 
 This will build an Ampersand-compiler named "ampersand.exe" and install it into your path.
 
@@ -42,5 +42,5 @@ This will build an Ampersand-compiler named "ampersand.exe" and install it into 
 * In order to run the generated prototype, you need the following on the computer that you are using:
  * a working SQL database server. You must ensure that this server has an account for localhost, that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents.![](databaseuserconfig.jpg)
  * a working (configured) web server that can run PHP (5.5 or higher). The webserver must run on `localhost` and listen on port 80, which is pretty default.
-A practical way to arrange for this is to install [XAMPP](https://www.apachefriends.org/download.html), and create the `ampersand` database account.
+A practical way to arrange for this in Windows is to install [XAMPP](https://www.apachefriends.org/download.html), and create the `ampersand` database account.
 
