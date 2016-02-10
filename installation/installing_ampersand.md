@@ -1,17 +1,17 @@
 
 ## Installation instructions
 
-There are several ways to install Ampersand on your machine.
+There are several ways to install an Ampersand compiler on your machine.
 
-###  1a) Use a prebuilt binary
+###  1a) Use a prebuilt executable file
 
-The easiest way is by use of binaries. We try to update it frequently, using a [repository](https://github.com/AmpersandTarski/webFiles/tree/master/executables) for that purpose.
+The easiest way is by use of available executables. We try to update them frequently, using a [repository](https://github.com/AmpersandTarski/webFiles/tree/master/executables) for that purpose.
 
-Currently, a binary is available for:
+Currently, an executable is available for:
 
   * **Windows**. 
     * [Download binary](https://github.com/AmpersandTarski/webFiles/blob/master/executables/windows/ampersand.zip?raw=true)
-    * unzip the binary, and put ampersand.exe in a directory that is in your path.
+    * unzip it, and put ampersand.exe in a directory that is in your path.
     * Also make sure you install the required other software that you need (see below)
   * **Mac OS X**
     * Sorry, not available yet, but `Coming soon`
@@ -20,7 +20,7 @@ Currently, a binary is available for:
 
 ### 1b) Installing from Source
 
-If there is no binary for your operating system, or if you prefer to build it for yourself, this can be done by following these steps:
+If there is no executable for your operating system, or if you prefer to build one yourself, follow these steps:
 
 > 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install_and_upgrade.html)
 > 1. Then, have stack install everything you need to compile:
@@ -30,7 +30,7 @@ If there is no binary for your operating system, or if you prefer to build it fo
 > 1. Issue the following command:
     ````$ stack instal```` 
 
-This will build you the executable named ampersand.exe and install it into your path.
+This will build an Ampersand-compiler named "ampersand.exe" and install it into your path.
 
 
 **Notes:**
