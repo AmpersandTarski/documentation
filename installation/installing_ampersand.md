@@ -25,7 +25,7 @@ If there is no binary for your operating system, or if you prefer to build it fo
 > 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install_and_upgrade.html)
 > 1. Then, have stack install everything you need to compile:
       ```$ stack setup```
-> 1. use [git](https://git-scm.com/) to clone the latest version of ampersand:  https://github.com/AmpersandTarski/ampersand.git
+> 1. use [git](https://git-scm.com/) to clone the latest version of Ampersand:  https://github.com/AmpersandTarski/ampersand.git
 > 1. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
 > 1. Issue the following command:
     ````$ stack instal```` 
