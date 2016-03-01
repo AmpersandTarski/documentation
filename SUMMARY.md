@@ -29,4 +29,5 @@
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Creating interfaces](creating_interfaces.md)
 * Semantics
+   * Translation to tables (n-ary relations)
 
