@@ -28,4 +28,5 @@
        * [The Excel Importer](prototypes/extensions/excelimporter.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Creating interfaces](creating_interfaces.md)
+* Semantics
 
