@@ -13,7 +13,7 @@ Let us look at an example to get a feeling for this translation. Consider the fo
 | 3 | Calvin | Coolidge | July 4, 1872 |
 | 4 | Dwight | Eisenhower | October 14, 1890 |
 
-This table can be seen as a representation of the following three relations:
+Since Ampersand works with relations, it must represent this table as relations. Three relations can do the job in the following manner:
 
     POPULATION firstname[President*Name] CONTAINS
       [ ("1", "Abraham")
@@ -21,16 +21,25 @@ This table can be seen as a representation of the following three relations:
       , ("3", "Calvin")
       , ("4", "Dwight")
       ]
+
     POPULATION lastname[President*Surname] CONTAINS
       [ ("1", "Lincoln")
       , ("2", "Obama")
       , ("3", "Coolidge")
       , ("4", "Eisenhower")
       ]
+
     POPULATION birth[President*Date] CONTAINS
       [ ("1", "February 12, 1809")
       , ("2", "August 4, 1961")
       , ("3", "July 4, 1872")
       , ("4", "October 14, 1890")
       ]
-    
+
+Notice that the column names in the table correspond with the relation names in Ampersand. In the table we call them "attributes". So it makes sense to say that a relation in Ampersand can correspond with an attribute in a table.
+
+## Specification
+Given:
+1. a set of concepts `C`
+2. a set of relations `R`
+3. 
