@@ -11,5 +11,26 @@ Let us look at an example to get a feeling for this translation. Consider the fo
 | 1 | Abraham | Lincoln | February 12, 1809 |
 | 2 | Barack | Obama | August 4, 1961 |
 | 3 | Calvin | Coolidge | July 4, 1872 |
+| 4 | Dwight | Eisenhower | October 14, 1890 |
 
-This table can be seen as the representation of the following three relations:
+This table can be seen as a representation of the following three relations:
+
+    POPULATION firstname[President*Name] CONTAINS
+      [ ("1", "Abraham")
+      , ("2", "Barack")
+      , ("3", "Calvin")
+      , ("4", "Dwight")
+      ]
+    POPULATION lastname[President*Surname] CONTAINS
+      [ ("1", "Lincoln")
+      , ("2", "Obama")
+      , ("3", "Coolidge")
+      , ("4", "Eisenhower")
+      ]
+    POPULATION birth[President*Date] CONTAINS
+      [ ("1", "February 12, 1809")
+      , ("2", "August 4, 1961")
+      , ("3", "July 4, 1872")
+      , ("4", "October 14, 1890")
+      ]
+    
