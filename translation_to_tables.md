@@ -41,5 +41,9 @@ Notice that the column names in the table correspond with the relation names in 
 ## Specification
 Given:
 1. a set of concepts `C`
-2. a set of relations `R`
-3. 
+2. a set of relations `R`. Every element of `R` has shape `r[P*Q]`, in which `r` is called the *name*, `P` is called the *source*, and `Q` is called the *target*.
+3. `r[P*Q]` in `R` implies that `P` in `C` and `Q` in `C`.
+4. four predicates on relations, `uni`, `inj`, `tot`, `sur`.
+5. a set of tables `T`
+6. a set of attributes `A`. Every element of `A` has shape `a<t,c>`, in which `a` is called the *name*, `t` is called the *table*, and `c` is called the *type*.
+7. `a<t,c>` in `A` implies that `t` in `T` and `c` in `C`.
