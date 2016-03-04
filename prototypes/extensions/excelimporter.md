@@ -26,12 +26,14 @@ If you want to specify data elements in an Excel file in order to populate such 
 
 Here is an example of such a 'block' (note: all blocks must start in the leftmost column; if not, they are disregarded):
 
-	| [A's] |  rAA  |  rAB  |  rAC  |  rAC  |  rAC  |  sAB  |   tAD    |  uBA~ |
-	|   A   |   A   |   B   |   C   |   C   |   C   |   B   | [Delta;] |   B   |
-	| alfa1 | alfa1 | beta1 | char1 | char2 | char3 | beta2 | d1;d2;d3 | beta1 |
-	|       |  CMT  |       |       |       |       |       |          | beta2 |
-	| alfa2 |       | beta2 |       | char2 |       |       | d2 ;  d3 | beta3 |
-	| alfa3 |       |       | char4 | char3 | char2 | beta1 |   d1     |       |
+| [A's] |  rAA  |  rAB  |  rAC  |  rAC  |  rAC  |  sAB  |   tAD    |  uBA~ |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- |
+|   A   |   A   |   B   |   C   |   C   |   C   |   B   | [Delta;] |   B   |
+| alfa1 | alfa1 | beta1 | char1 | char2 | char3 | beta2 | d1;d2;d3 | beta1 |
+|       |  CMT  |       |       |       |       |       |          | beta2 |
+| alfa2 |       | beta2 |       | char2 |       |       | d2 ;  d3 | beta3 |
+| alfa3 |       |       | char4 | char3 | char2 | beta1 |   d1     |       |
+
 
 Here is the specification of a block:
 1. A 'block' consists of 2 header rows followed by lines of data. A 'block' terminates whenever a next block starts or the end of file is reached. Empty lines are disregarded.
