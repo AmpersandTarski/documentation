@@ -7,12 +7,9 @@ The purpose of the include here below is that the summary is printed at the fron
 -->
 {% include "./SUMMARY.md" %}
 
-## Contributions
+## Contributions to the documentation
 
-If you have anything to fix or details to add, first [file an issue](http://github.com/AmpersandTarski/documentation/issues) on GitHub to see if it is likely to be accepted, then file a pull request with your change (one PR per issue).
-
-This is not intended to be an open wiki; we want to keep it concise and minimal but will accept fixes and suitable additions.
-
+If you have anything to fix or details to add, just post a comment next to the paragraph. You can do that by clicking the '+' icon that appears when you hover above the paragraph. Don't be shy! Try it out!
 
 
 ## About Ampersand
