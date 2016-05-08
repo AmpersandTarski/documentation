@@ -13,6 +13,7 @@
    * [Rules](modeling/rules.md)
    * [Interfaces](modeling/interfaces.md)
 * [Ampersand Syntax](syntax/syntax.md)
+   * [Structure of a model](structureOfModel.md)
 * [The Command Line Interface](command-line-interface/command-line-interface.md)
    * [switches](command-line-interface/switches.md)
    * [Environment variables](command-line-interface/environment_variables.md)
