@@ -9,7 +9,7 @@ RULE Label? Expression Meaning* Message* Violation?
 ## Semantics
 A rule statement defines something that should be true. It does not define the enforcement. 
 
-### Label
+### Label?
 The optional label can be a single word or a string (enclosed by double brackets) followed by a colon (`:`). 
 ### Expression
 An expression consists of terms and operators. 
@@ -34,7 +34,7 @@ The following operators are available to build expressions from terms:
 * conversion (flip): `~`
 * complement: `-`
 
-### Meaning
+### Meaning*
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement:
 
 ```
@@ -46,6 +46,9 @@ The `<text>` part is where the the meaning is written down. We support both:
 
 If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. 
 
-### Message
-
+### Message*
+Messages may be defined to give feedback whenever the rule is violated. Every message for a rule should be for another Language.
+```
+MESSAGE Markup
+```
 ### Violation
