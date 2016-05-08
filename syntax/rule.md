@@ -35,7 +35,17 @@ The following operators are available to build expressions from terms:
 * complement: `-`
 
 ### Meaning
-The meaning of a rule 
+The meaning of a rule can be written in natural language in the Meaning part of the RULE statement:
+
+```
+MEANING Language? Markup? <text>
+```
+The `<text>` part is where the the meaning is written down. We support both:
+* a simple string, enclosed by double quotes
+* any text, starting with `{+` and ending with `-}` 
+
+If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. 
+
 ### Message
 
 ### Violation
