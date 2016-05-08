@@ -51,4 +51,13 @@ Messages may be defined to give feedback whenever the rule is violated. Every me
 ```
 MESSAGE Markup
 ```
-### Violation
+### Violation?
+A violation message can be constructed for the case that a specific violation is to be signaled:
+
+```
+VIOLATION (Segment1,Segment2,... )
+```
+Every segment must be of one of the following forms:
+* TXT String
+* SRC Expression
+* TGT Expression
