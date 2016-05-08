@@ -15,7 +15,7 @@
 * [Ampersand Syntax](syntax/syntax.md)
    * [Structure of a model](syntax/structureOfModel.md)
    * [The CONCEPT statement](syntax/concept.md)
-   * The RELATION statement
+   * [The RELATION statement](syntax.relation.md)
 * [The Command Line Interface](command-line-interface/command-line-interface.md)
    * [switches](command-line-interface/switches.md)
    * [Environment variables](command-line-interface/environment_variables.md)
