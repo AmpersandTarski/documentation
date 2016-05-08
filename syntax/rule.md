@@ -34,9 +34,8 @@ The following operators are available to build expressions from terms:
 * conversion (flip): `~`
 * complement: `-`
 
-
 ### Meaning
-
+The meaning of a rule 
 ### Message
 
 ### Violation
