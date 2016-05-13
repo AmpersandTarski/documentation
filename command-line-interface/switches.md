@@ -24,7 +24,7 @@ Custom.css file to customize the style of the prototype.
 database name (overrules environment variable CCdbName, defaults
 to filename)
 ####  --diagnosis
-diagnose your Ampersand script (generates a .pdf file).
+Only used in combination with --fspec. Diagnose your Ampersand script (generates a .pdf file).
 ####  --export[=file] (-e)
 export as plain Ampersand script.
 ####  --fspec=FORMAT (-f)
