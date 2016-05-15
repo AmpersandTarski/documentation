@@ -1,5 +1,7 @@
 ## Switches
 
+Switches are used at the command line as parameters to ampersand.exe Some of the switches are stil experimental, while others are very usefull. 
+
 ### Generic Program Information
 
 #### -h, -?, --help
@@ -37,7 +39,7 @@ generate interfaces.
 ####  --language=LANG
 Pick 'NL' for Dutch or 'EN' for English, as the language to be
 used in your output. Without this option, output is written in
-the language of your context.
+the language of your context. Note that this switch is about the output language. If you use multiple languages (using `IN DUTCH` or `IN ENGLISH` at the appropriate places in your scipt), this is the way to select the language in which the output document is written.
 ####  --namespace=NAMESPACE
 prefix database identifiers with this namespace, in order to
 isolate namspaces.
