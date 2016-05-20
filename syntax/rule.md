@@ -12,27 +12,38 @@ A rule statement defines something that should be true. It does not define the e
 ### Label?
 The optional label can be a single word or a string (enclosed by double brackets) followed by a colon (`:`). 
 ### Expression
-An expression consists of terms and operators. 
-#### Terms
-A term can be a relation or an expression enclosed in brackets.  
-#### Operators
-The following operators are available to build expressions from terms:
+An expression can be any of:
+* Expression BinaryOperator Expression
+* UnaryOpPre Expression
+* Expression UnaryOpPost
+* a (reference to a) relation (including an optional signature, when required to disambiguate):
+ * A relation by name 
+ * `I` (the Identity relation)
+ * `V` (carthesian product) 
+ * A singleton expression (the value of an atom in between single quotes)
+* an expression enclosed in brackets.
 
-* equivalence: `=`
-* inclusion: `|-`
-* intersection: `/\`
-* union: `\/`
-* difference: `-`
-* left residual: `/`
-* right residual: `\`
-* diamond: `<>`
-* composition: `;`
-* relative addition: `!`
-* cartesian product: `#`
-* Reflexive, transitive closure: `*` (Kleene star) --currently not implemented
-* transitive closure: `+` (Kleene plus) --currently not implemented
-* conversion (flip): `~`
-* complement: `-`
+#### Operators
+The following operators are available to build expressions:
+
+* Binary operators
+  * equivalence: `=`
+  * inclusion: `|-`
+  * intersection: `/\`
+  * union: `\/`
+  * difference: `-`
+  * left residual: `/`
+  * right residual: `\`
+  * diamond: `<>`
+  * composition: `;`
+  * relative addition: `!`
+  * cartesian product: `#`
+* Unary operators (post-operator)
+  * Reflexive, transitive closure: `*` (Kleene star) --currently not implemented
+  * transitive closure: `+` (Kleene plus) --currently not implemented
+  * conversion (flip): `~`
+* Unary operator (pre-operator)
+  * complement: `-`
 
 ### Meaning*
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement:
