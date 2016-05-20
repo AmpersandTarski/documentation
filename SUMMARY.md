@@ -17,6 +17,7 @@
    * [The CONCEPT statement](syntax/concept.md)
    * [The RELATION statement](syntax/relation.md)
    * [The RULE statement](syntax/rule.md)
+   * The INTERFACE statement
 * [The Command Line Interface](command-line-interface/command-line-interface.md)
    * [switches](command-line-interface/switches.md)
    * [Environment variables](command-line-interface/environment_variables.md)
