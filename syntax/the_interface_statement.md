@@ -2,5 +2,5 @@
 
 [test link][link_id]
 
-[Link_id]: ../../installing_ampersand.md
+[Link_id]: ../../../installing_ampersand.md
 
