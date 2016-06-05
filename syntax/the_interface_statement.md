@@ -2,5 +2,5 @@
 
 [test link][link_id]
 
-[link_id]: ../../installation/installing_ampersand.md
+
 
