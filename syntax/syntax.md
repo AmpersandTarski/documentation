@@ -64,7 +64,7 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
    * `LATEX`
    * `MARKDOWN`
  * Keywords for interfaces
-   * `INTERFACE`
+   * [INTERFACE] (the_interface_statement.md)
    * `FOR`
    * `LINKTO`
    * `BOX`
