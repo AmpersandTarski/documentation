@@ -1,5 +1,3 @@
 # The INTERFACE statement
 
-[test link][link_id]
-
-[link_id]:installing_ampersand.md
+[test link](installing_ampersand.md)
