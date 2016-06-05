@@ -27,7 +27,7 @@ The properties of a relation may be defined as a comma separated list (in betwee
 * `PROP` (property)
 
 ### Pragma
-The optional PRAGMA keyword is followd by a couple of strings, that can be used to construct a sentence for this relation, based on actual population.
+The optional PRAGMA keyword is followed by a couple of strings, that can be used to construct a sentence for this relation, based on actual population.
 
 ### Meaning
 The meaning of a relation can be written in natural language in the Meaning part of the RELATION statement:
