@@ -37,8 +37,8 @@ There are additional relations that can be specified on endo relations. An endo 
 
 | & | property | semantics |
 | -- | -- | -- |
-| SYM | symmetric | For each (`a`,`b`) in `r`, (`b`, `a`) is in `r`.| 
-| ASY | asymmetric | For each (`a`,`b`) in `r`, (`b`, `a`) is *not* in `r`. | 
+| SYM | symmetric | For each (`a`,`b`) in `r`, (`b`,`a`) is in `r`.| 
+| ASY | antisymmetric | If (`a`,`b`) and (`b`,`a`) are both in `r`, then `a` = `b` | 
 | TRN | transitive | If (`a`,`b`) and (`b`,`c`) are both in `r`, then (`a`,`c`) is in `r`. | 
 | RFX | reflexive | For each `a` in `A`, the pair (`a`,`a`) is in the population of `r`  | 
 | IRF | irreflexive | For each `a` in `A`, the pair (`a`,`a`) is *not* in the population of `r` | 
