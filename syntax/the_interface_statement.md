@@ -2,4 +2,4 @@
 
 [test link][link_id]
 
-[link_id]:installation.md
+[link_id]:installing_ampersand.md
