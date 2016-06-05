@@ -2,4 +2,4 @@
 
 [test link][link_id]
 
-[link_id]:(.../installation/installation)
+[link_id]:(.../installation/installation.md)
