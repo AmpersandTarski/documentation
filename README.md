@@ -11,3 +11,5 @@ By far the easiest way is to use the online editor that goes with Gitbook. How t
 
 If you are in doubt on how to use it, or you would like a demo, ask Han!
 
+
+[link_id]: installation/installing_ampersand.md
