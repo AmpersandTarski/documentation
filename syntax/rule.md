@@ -28,6 +28,7 @@ The following operators are available to build expressions:
 
 * Binary operators
   * equivalence: `=`
+  * composition: `;`
   * inclusion: `|-`
   * intersection: `/\`
   * union: `\/`
@@ -35,7 +36,6 @@ The following operators are available to build expressions:
   * left residual: `/`
   * right residual: `\`
   * diamond: `<>`
-  * composition: `;`
   * relative addition: `!`
   * cartesian product: `#`
 * Unary operators (post-operator)
