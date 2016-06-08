@@ -5,16 +5,6 @@ A fact is a statement that is True. *Joe Smith lives in New York* could be a fac
 * *Joe Smith* is an **atom** of the concept *Person*
 * *lives in* is the **relation name** of a **relation** with the **sign** [Person, City] 
 
-
-## Example
-
-    RELATION lives[Person*City]
-    MEANING "A person can live in a city."
-
-Every relation has a `name`, which is a single word, starting with a lower case character.
-The name is followed by the `sign`. The sign holds the source concept and the target concept. 
-The `meaning` is optional, and gives the semantics of the relation in natural language. It is a good habit to specify the meaning!
-
 ## Properties of relations
 In many cases, there can be restrictions on the population of a relation. These restrictions can be specified directly after the sign.
 
