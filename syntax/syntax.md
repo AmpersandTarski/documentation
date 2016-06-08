@@ -110,5 +110,6 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
    * `EDITS`
  * Depreciated keywords:
    * `SPEC`
+   * `KEY`
    * `PROCESS`
    * `ENDPROCESS`
