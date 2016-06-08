@@ -6,9 +6,7 @@ A fact is a statement that is True. *Joe Smith lives in New York* could be a fac
 * *lives in* is the **relation name** of a **relation** with the **sign** [Person, City] 
 
 ## Properties of relations
-In many cases, there can be restrictions on the population of a relation. These restrictions can be specified directly after the sign or as a rule.
-
-The following properties can be specified on any relation `r[A*B]`
+In many cases, there can be restrictions on the population of a relation, called properties. The following properties can be specified on any relation `r[A*B]`
 
 | & | property | semantics |
 | -- | -- | -- |
