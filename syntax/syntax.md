@@ -28,7 +28,7 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
    * `PATTERN`
    * `ENDPATTERN`
    * `CONCEPT`
- * Keywords for Relation-statements
+ * Keywords for [Relation-statement](relation.md)
    * `RELATION`
    * `PRAGMA`
    * `MEANING`
