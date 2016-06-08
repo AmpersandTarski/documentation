@@ -9,6 +9,7 @@
    * [Testing your installation](installation/testing_your_installation.md)
    * [Quick start: Build your first prototype](installation/quick_start_build_your_first_prototype.md)
 * [Modeling in Ampersand](modeling/modeling_in_ampersand.md)
+   * [Context](modeling/context.md)
    * [Relations & Concepts](modeling/relationsand_concepts_md.md)
    * [Rules](modeling/rules.md)
    * [Interfaces](modeling/interfaces.md)
