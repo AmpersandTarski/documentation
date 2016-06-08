@@ -44,7 +44,7 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
    * `PROP`
    * `POPULATION`
    * `CONTAINS`
- * Keywords for rules
+ * Keywords for [rules](rule.md)
    * `RULE`
    * `MESSAGE`
    * `VIOLATION`
