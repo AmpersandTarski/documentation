@@ -38,12 +38,14 @@ The following operators are available to build expressions:
   * diamond: `<>`
   * relative addition: `!`
   * cartesian product: `#`
-* Unary operators (post-operator)
-  * Reflexive, transitive closure: `*` (Kleene star) --currently not implemented
-  * transitive closure: `+` (Kleene plus) --currently not implemented
-  * conversion (flip): `~`
 * Unary operator (pre-operator)
   * complement: `-`
+* Unary operators (post-operator)
+  * conversion (flip): `~`
+  * Reflexive, transitive closure: `*` (Kleene star) --currently not implemented
+  * transitive closure: `+` (Kleene plus) --currently not implemented
+
+
 
 ### Meaning*
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement:
