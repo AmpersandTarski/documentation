@@ -16,7 +16,7 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
 ### Keywords
 
 
- * Keywords
+ * Keywords for the [main structure](structureOfModel.md)
    * `CONTEXT`
    * `ENDCONTEXT`
    * `IN`
