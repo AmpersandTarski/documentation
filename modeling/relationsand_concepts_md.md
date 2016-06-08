@@ -8,13 +8,6 @@ A fact is a statement that is True. *Joe Smith lives in New York* could be a fac
 ## Properties of relations
 In many cases, there can be restrictions on the population of a relation. These restrictions can be specified directly after the sign or as a rule.
 
-Let's assume that we want to express that any person can only live at one city. ie, *Joe Smith lives in New York* and *Joe Smith lives in Denver* cannot both be true (at the same time). 
-
-In relation algebra, we say that the relation is univalent. (every atom in the source concept can only be paired with a single atom in the target concept). This is modeled as
-
-    RELATION lives[Person*City][UNI]
-    MEANING "A person can live in a city."
-
 The following properties can be specified on any relation `r[A*B]`
 
 | & | property | semantics |
