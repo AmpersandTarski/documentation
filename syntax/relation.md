@@ -28,7 +28,7 @@ The properties of a relation may be defined as a comma separated list (in betwee
 
 Let's assume that we want to express that any person can only live in one city. ie, *Joe Smith lives in New York* and *Joe Smith lives in Denver* cannot both be true at the same time. 
 
-In relation algebra, we say that the relation is univalent. (every atom in the source concept can only be paired with a single atom in the target concept). This is modeled as
+In relation algebra, we say that the relation is univalent, which means that every atom in the source concept can only be paired with a single atom in the target concept. This is modeled as
 
     RELATION lives[Person*City][UNI]
     MEANING "A person can live in a city."
