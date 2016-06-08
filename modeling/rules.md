@@ -11,7 +11,7 @@ The word *must* implies that there is someone who says so.
 * Outside its scope, a rule has no meaning.
 For example a rule may be valid in downtown St. Catharines, Ontario, but totally meaningless in Smalltown, NY that does not even have a St. Paul street.
 
-Every rule is denoted both as a statement in natural language (i.e. free text) as well as a formal expression. The Ampersand modeler is responsible that the semantics of both ways to express a rule is equivalent.
+Every rule is denoted in Ampersand both as a statement in natural language (i.e. free text) as well as a formal expression. The Ampersand modeler is responsible that the semantics of both ways to express a rule is equivalent.
 
 The formal expression of a rule uses relations that must be declared in the model. Ampersand will make sure that the types of the relations used in a rule are logically correct. Whenever the relations are populated with data, Ampersand will detect violations of any rule in the model. 
 
