@@ -14,7 +14,7 @@ Foo\* | Zero or more occurrences of Foo
 To keep this chapter as readable as possible, we have chosen to omit some details that are irrelevant for practically all &-modelers. In the very rare case that these technicalaties are of interest, the reader could have a look in [the sourcecode of the parser](https://github.com/AmpersandTarski/Ampersand/blob/master/src/Database/Design/Ampersand/Input/ADL1/Parser.hs), where all EBNF statements are in comments.
 
 ### Keywords
-
+Keywords in Ampersand are always CAPITAL words. 
 
  * Keywords for the [main structure](structureOfModel.md)
    * `CONTEXT`
