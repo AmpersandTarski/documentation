@@ -24,6 +24,3 @@ Let us append, for example, the word `CRuD` to the header of the interface, as i
 INTERFACE "Project"  : I[Project] ROWS CRuD
 ```
 The word `CRuD` specifies that the user can create, read, and delete projects, but updating will not be possible.
-
-##Experiment on your own.
-Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above. It is quite likely that you will be trying out your own ideas before you get to the end... Have fun!
