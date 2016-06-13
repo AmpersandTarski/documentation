@@ -51,7 +51,7 @@ You can create structure in an interface by nesting. Here is an example:
 
 The specification of this interface is given in the following code fragment.
 ```ampersand
-INTERFACE "Project"  : I[Project] ROWS
+INTERFACE "Project"  : V[SESSION*Project] ROWS
   [ "Project"     : I[Project]
   , "Name"        : projectName
   , "Current PL"  : pl
