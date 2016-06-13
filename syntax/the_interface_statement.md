@@ -78,7 +78,7 @@ Notice the following features:
 ##Formatting
 Especially in more complicated interfaces, you will find it nice to adapt the layout of the fields of your interface. For this purpose, you can substitute the word `BOX` by `COLS`, `ROWS`, or `TABS`, as in the following code fragment.
 ```ampersand
-INTERFACE "Project"  : I[Project] ROWS
+INTERFACE "Project"  : V[SESSION*Project] ROWS
   [ "Project"     : I[Project]
   , "Name"        : projectName
   , "Current PL"  : pl
