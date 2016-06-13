@@ -1,5 +1,6 @@
 # Interfaces
 
+Specifies the user interface to read and manipulate data in the population. The interface shows atoms in concepts. Rules are applied to the data.
 
-An interface is a mechanism to add or remove facts to the set of facts that is hold by the business system. 
+
 
