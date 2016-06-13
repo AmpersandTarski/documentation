@@ -4,10 +4,10 @@ Specifies the user interface to read and manipulate data in the population. The 
 
 Each INTERFACE is declared with a name that is used throughout the context. In the prototype each interface gets a clickable icon. 
 
-To initiate the INTERFACE the standard concept SESSION must be called. This concept has relations to all concepts defined in the model. The code below is the declaration of an interface "Person" that shows all atoms in the concept Person:
+To initiate the INTERFACE the standard concept SESSION must be called. This concept has relations to all concepts defined in the model. The code below is the declaration of an interface "People" that shows all atoms in the concept Person:
 
 ```ampersand
-INTERFACE "Person" : V[SESSION*Person]
+INTERFACE "People" : V[SESSION*Person]
 ```
 The concept Person is the root-concept for this interface. The fields in the interface can show the atom and all atoms it is related to. These relations can be specified using relation algebra. This code shows the target of the relation personName from Person to Name.
 
