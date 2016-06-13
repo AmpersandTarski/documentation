@@ -9,7 +9,7 @@ To initiate the INTERFACE the standard concept SESSION must be called. This conc
 ```ampersand
 INTERFACE "People" : V[SESSION*Person]
 ```
-The concept Person is the root-concept for this interface. The fields in the interface can show the atom and all atoms it is related to. These relations can be specified using relation algebra. This code shows the target of the relation personName from Person to Name.
+The concept Person is the root-concept for this interface. The fields in the interface can show each atom in this concept and all atoms they are related to. These relations can be specified using relation algebra. The code below shows the target of the relation personName from Person to Name:
 
 ```ampersand
 “Name” : personName
@@ -24,7 +24,7 @@ The following figure is an example of a user interface, which shows the name, st
 
 The specification of this interface is given in the following code fragment
 ```ampersand
-INTERFACE "Person" : I[Person]
+INTERFACE "People" : V[SESSION*Person]
 BOX
   [ "Name"       : personName
   , "Status"     : personStatus
@@ -33,12 +33,10 @@ BOX
   ]
 ```
 Notice the following features:
-1. The interface has a name, `"Person"`, which identifies that interface throughout the context.
-2. The expression `I[Person]` on the first line determines which atoms may be represented. In this example, only atoms of concept `Person` are displayed in the interface.
-3. The example displays J. Lovell, an atom of concept `Person`. This atom is called the root atom. Every interface is displayed with one root atom.
-4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.
-5. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the *field expression* for that field. The field expression is evaluated with the root atom on the left. All atoms at the right are displayed in the field.
-6. The interface is subject to type checking. The following relations provide an example for getting a type-correct interface:
+1. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.
+2. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the *field expression* for that field. The field expression is evaluated with the root atom on the left. All atoms at the right are displayed in the field.
+3. The interface is subject to type checking. The following relations provide an example for getting a type-correct interface:
+
 ```
 RELATION personName :: Person * PersonName [UNI]
 RELATION personStatus :: Person * PersonStatus [UNI]
