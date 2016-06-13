@@ -12,7 +12,7 @@ CONTEXT MyModel IN ENGLISH
 ENDCONTEXT
 ```
 
-Keywords in Ampersand are always CAPITAL words. Note that any context has a name. 
+Note that any context has a name. 
 
 
 
