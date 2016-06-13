@@ -14,7 +14,7 @@ ENDCONTEXT
 ## INCLUDE
 Specifies files that need to be included before compiling.
 
-Possible files to invlude are:
+Possible files to include are:
 -	other adl-files 
 -	the xlsx-file with the standard population 
 
