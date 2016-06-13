@@ -14,7 +14,6 @@ The concept Person is the root-concept for this interface. The fields in the int
 ```
 “Name” is printed on screen as the field prompt. It is a temporary variable and must be unique within the interface.
 
-
 ##An Example
 The following figure is an example of a user interface, which shows the name, status, e-mail and co-workers of a person called "J. Lovell".
 
