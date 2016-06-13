@@ -19,10 +19,10 @@ Possible files to invlude are:
 -	the xlsx-file with the standard population 
 
 Make sure to include the adl-files before including xls-files.
-
 The filename is given in double quotes, including a path that is relative to the position of the main adl-file. The main adl-file is the file that is called with the command Ampersand.
+Files can be nested. Nested adl-files can have their own xlsx-files included. 
 
-Files can be nested. All code in the included adl-files will become part of the CONTEXT of the mail adl-file. Nested adl-files can have their own xlsx-files included. 
+Note that all code in the included adl-files will become part of the CONTEXT of the main adl-file. 
 
 
 Other elements in a context will be defined on the following pages.
