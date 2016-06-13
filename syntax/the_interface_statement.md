@@ -1,7 +1,5 @@
 # The INTERFACE statement
 
-Specifies the user interface to read and manipulate data in the population. The interface shows atoms in concepts. Rules are applied to the data.
-
 Each INTERFACE is declared with a name that is used throughout the context. In the prototype each interface gets a clickable icon. 
 
 To initiate the INTERFACE the standard concept SESSION must be called. This concept has relations to all concepts defined in the model. The code below is the declaration of an interface "People" that shows all atoms in the concept Person:
