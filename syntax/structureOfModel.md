@@ -1,8 +1,7 @@
 # The structure of an Ampersand model
 
-## Context
-An Ampersand model has the following structure:
-
+## CONTEXT
+Any Ampersand model has a context. The model is specified between the keywords CONTEXT and ENDCONTEXT. Any context has a name. 
 
 ```
 CONTEXT MyModel IN ENGLISH
@@ -12,8 +11,18 @@ CONTEXT MyModel IN ENGLISH
 ENDCONTEXT
 ```
 
-Note that any context has a name. 
+## INCLUDE
+Specifies files that need to be included before compiling.
 
+Possible files to invlude are:
+-	other adl-files 
+-	the xlsx-file with the standard population 
+
+Make sure to include the adl-files before including xls-files.
+
+The filename is given in double quotes, including a path that is relative to the position of the main adl-file. The main adl-file is the file that is called with the command Ampersand.
+
+Files can be nested. All code in the included adl-files will become part of the CONTEXT of the mail adl-file. Nested adl-files can have their own xlsx-files included. 
 
 
 Other elements in a context will be defined on the following pages.
