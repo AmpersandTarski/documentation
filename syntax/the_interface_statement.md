@@ -5,15 +5,17 @@ Specifies the user interface to read and manipulate data in the population. The 
 Each INTERFACE is declared with a name that is used throughout the context. In the prototype each interface gets a clickable icon. 
 
 To initiate the INTERFACE the standard concept SESSION must be called. This concept has relations to all concepts defined in the model.
-The INTERFACE is build on one of the concepts you have defined (the root-concept for this interface) and shows for each atom in this concept the atoms in other concepts that this root-atom forms tuples with.
 
-Basic syntax within an interface:
+```ampersand
+INTERFACE "Person" : V[SESSION*Person]
+```
+This interface shows all atoms in the concept Person. The concept Person is the root-concept for this interface. The fields in the interface can show the atom and all atoms it is related to. These relations can be specified using relation algebra. This code shows the target of the relation personName from Person to Name.
+
+```ampersand
 “Name” : personName
-
+```
 “Name” is printed on screen as the field prompt. It is a temporary variable and must be unique within the interface.
-personName is the relation followed from the root-atom to the target atom which is printed on screen.
 
-For formatting keywords BOX, COLS, ROWS, TABS can be used.
 
 ##An Example
 The following figure is an example of a user interface, which shows the name, status, e-mail and co-workers of a person called "J. Lovell".
