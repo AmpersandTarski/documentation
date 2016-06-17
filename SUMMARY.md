@@ -30,7 +30,7 @@
        * [The ExecEngine](prototypes/extensions/execengine.md)
        * [The Excel Importer](prototypes/extensions/excelimporter.md)
    * [Modules](prototypes/modules.md)
-       * SIAM (Sessions, Identity and Access Management) Module
+       * [SIAM (Sessions, Identity and Access Management) Module](prototypes/siam_module.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * Semantics
    * [Translation to tables (n-ary relations)](translation_to_tables.md)
