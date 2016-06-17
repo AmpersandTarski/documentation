@@ -1,4 +1,4 @@
-This chapter is meant for Ampersand users, who want to make rules that fix violations automatically. Please be warned that this part of Ampersand is difficult in practice. Use it only if you really need to make your prototype do more than checking and signalling of violations.
+This chapter is meant for Ampersand users that want to build prototypes that automatically fix violations for specific rules. The idea behind this is quite simple: all it takes is another way of specifying violation texts. In practice, however, it takes some effort to learn how to do this correctly. Therefore, we only encourage you to do this if you are sufficiently motivated to spend this effort, i.e. if you are convinced it is worth your while.
 
 Before studying this chapter, make sure you know how to predict violations. You need to understand how Ampersand computes violations, given a certain population.
 # Automated rules
