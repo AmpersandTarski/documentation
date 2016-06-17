@@ -29,7 +29,7 @@
    * [Extensions](prototypes/extensions/extensions.md)
        * [The ExecEngine](prototypes/extensions/execengine.md)
        * [The Excel Importer](prototypes/extensions/excelimporter.md)
-   * Modules
+   * [Modules](prototypes/modules.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * Semantics
    * [Translation to tables (n-ary relations)](translation_to_tables.md)
