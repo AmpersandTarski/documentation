@@ -21,7 +21,7 @@
    * [The INTERFACE statement](syntax/the_interface_statement.md)
 * [The Command Line tool](command-line-interface/command-line-interface.md)
    * [switches](command-line-interface/switches.md)
-   * [Environment variables](command-line-interface/environment_variables.md)
+   * [Configuration](command-line-interface/environment_variables.md)
 * [Prototypes](prototypes/prototypes.md)
    * [Backend fw](prototypes/fw/fw.md)
        * [Architecture of an Ampersand Application](prototypes/fw/architecture_of_an_ampersand_application.md)
