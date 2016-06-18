@@ -19,7 +19,7 @@
    * [The RELATION statement](syntax/relation.md)
    * [The RULE statement](syntax/rule.md)
    * [The INTERFACE statement](syntax/the_interface_statement.md)
-* [The Command Line Interface](command-line-interface/command-line-interface.md)
+* [The Command Line tool](command-line-interface/command-line-interface.md)
    * [switches](command-line-interface/switches.md)
    * [Environment variables](command-line-interface/environment_variables.md)
 * [Prototypes](prototypes/prototypes.md)
