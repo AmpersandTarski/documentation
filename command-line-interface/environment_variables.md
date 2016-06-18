@@ -1,5 +1,5 @@
 ## Configuration of Ampersand  
-ampersand.exe can be configured in several ways. [Switches](switches.md) can be used to tell what artifacts to generate, and all kinds of other useful things. 
+ampersand.exe can be configured in several ways. [Switches](switches.md) can be used to tell what artifacts to generate, and all kinds of other useful things. You can add a configuration file in the the same directory as your model, so you don't have to remember all these switches each time you call ampersand.exe. 
 
 ### Environment Variables
 The behavior of **ampersand** is affected by the following environment variables.
