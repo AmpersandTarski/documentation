@@ -1,6 +1,6 @@
 ## Switches
 
-Switches are used at the command line as parameters to ampersand.exe Some of the switches are stil experimental, while others are very usefull. 
+Switches are used at the command line as parameters to ampersand.exe Some of the switches are still experimental, while others are very useful. 
 
 ### Generic Program Information
 
