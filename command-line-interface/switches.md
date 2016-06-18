@@ -1,6 +1,7 @@
 ## Switches
 
 Switches are used at the command line as parameters to ampersand.exe Some of the switches are still experimental, while others are very useful. 
+Since Ampersand-v3.5.3, it is possible to use a configuration file, reducing the need to have a lot of switches every time you use ampersand.exe. A configuration file can be used using the `--config` switch.  
 
 ### Generic Program Information
 
@@ -18,6 +19,8 @@ generate graphics in an alternate way. (you may experiment with
 this option to see the differences for yourself)
 ####  --blackWhite
 do not use colours in generated graphics
+####  --config=config.yaml
+Use a specified config file (*.yaml). See `--sampleConfigFile` to get a template
 ####  --crowfoot
 generate crowfoot notation in graphics.
 ####  --css=file
@@ -59,5 +62,7 @@ CCdirPrototype).
 ####  --reference-table
 generate a table of references in the Natural Language chapter,
 for instance for legal traceability.
+####  --sampleConfigFile
+write a sample configuration file (sampleconfig.yaml)
 ####  --verbose (-V)
 verbose error message format.
