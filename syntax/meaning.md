@@ -7,13 +7,17 @@ It is a good habit to specify the meaning! The meaning will be printed in the fu
 
 
 ## Syntax
-
+ 
 ```
 MEANING Language? Markup? <text>
 ```
 The `<text>` part is where the the meaning is written down. We support both:
 * a simple string, enclosed by double quotes
 * any text, starting with `{+` and ending with `-}` 
+
+The optional language is specified as 
+* `IN ENGLISH` or 
+* `IN DUTCH`.
 
 The optional Markup is one of :
  * `REST` (Restructured text)
