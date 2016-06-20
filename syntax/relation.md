@@ -34,10 +34,11 @@ In relation algebra, we say that the relation is univalent, which means that eve
     MEANING "A person can live in a city."
 
 
-### Pragma
+### PRAGMA
 The optional PRAGMA keyword is followed by a couple of strings, that can be used to construct a sentence for this relation that will be printed as example in the functional specification. The sentence will be based on the actual population.
 
-### Meaning
+
+### MEANING
 
 The meaning of a relation can be written in natural language in the Meaning part of the RELATION statement:
 
