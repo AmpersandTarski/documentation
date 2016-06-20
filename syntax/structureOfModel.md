@@ -5,6 +5,7 @@ Any Ampersand model has a context. The model is specified between the keywords C
 
 ```
 CONTEXT MyModel IN ENGLISH
+INCLUDE*
 
 <all kind of elements in the model>
 
@@ -21,6 +22,7 @@ Possible files to include are:
 Make sure to include the adl-files before including xlsx-files.
 The filename is given in double quotes, including a path that is relative to the position of the main adl-file. The main adl-file is the file that is called with the command Ampersand.
 Files can be nested. Nested adl-files can have their own xlsx-files included. 
+
 For formatting your excel-file see the text on [the Excel Importer](../prototypes/extensions/excelimporter.md).
 
 Note that all code in the included adl-files will become part of the context of the main adl-file. 
