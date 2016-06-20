@@ -46,6 +46,7 @@ PRAGMA "" " lives in " ""
 
 The meaning of a relation can be written in natural language in the MEANING part of the RELATION statement
 
+
 ### Population
 You can define an initial population for the relation. This is still in the syntax for historical reasons. Today it is more common to define your population in .xlsx files. 
 
