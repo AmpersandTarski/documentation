@@ -1,6 +1,6 @@
 # The structure of an Ampersand model
 
-## CONTEXT
+## CONTEXT - ENDCONTEXT
 Any Ampersand model has a context. The model is specified between the keywords CONTEXT and ENDCONTEXT. Any context has a name. 
 
 ```
