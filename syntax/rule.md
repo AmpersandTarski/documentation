@@ -5,6 +5,12 @@
 ```
 RULE Label? Expression Meaning* Message* Violation?
 ```
+or
+
+```
+ROLE <role name> MAINTAINS <rule label>
+RULE Label? Expression Meaning* Message* Violation? 
+```
 
 ## Semantics
 A rule statement defines something that should be true. It does not define the enforcement. 
