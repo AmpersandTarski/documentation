@@ -48,15 +48,15 @@ The following operators are available to build expressions:
 
 
 
-### MEANING*
+### MEANING
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. For more details see [MEANING](meaning.md).
 
-### Message*
+### MESSAGE
 Messages may be defined to give feedback whenever the rule is violated. Every message for a rule should be for another Language.
 ```
 MESSAGE Markup
 ```
-### VIOLATION?
+### VIOLATION
 A violation message can be constructed for the case that a specific violation is to be signaled:
 
 ```
