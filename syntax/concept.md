@@ -7,3 +7,4 @@
 
 ## Semantics
 This statement lets you define a Concept, i.e. a set of things. A concept has a name that starts with an uppercase, and a description.  Optionally a reference may be supplied.
+A concept can be defined anywhere within the context. 
