@@ -15,6 +15,9 @@ RULE Label? Expression Meaning* Message* Violation?
 ## Semantics
 A rule statement defines something that should be true. It does not define the enforcement. 
 
+By default rules are invariant rules. 
+By preceeding the rule statement with a role specification for this rule, the rule becomes a process rule.
+
 ### Label?
 The optional label can be a single word or a string (enclosed by double brackets) followed by a colon (`:`). 
 
