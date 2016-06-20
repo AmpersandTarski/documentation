@@ -2,7 +2,7 @@
 
 ## Syntax:
 ```
-'CONCEPT' ConceptName String String?
+'CONCEPT' <Uppercase identifier> String String?
 ```
 
 ## Semantics
