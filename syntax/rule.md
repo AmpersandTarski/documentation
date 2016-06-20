@@ -1,4 +1,9 @@
 # The RULE statement
+## Semantics
+A rule statement defines something that should be true. It does not define the enforcement. 
+
+By default rules are invariant rules. 
+By preceding the rule statement with a role specification for this rule, the rule becomes a process rule.
 
 ## Syntax
 
@@ -8,15 +13,9 @@ RULE Label? Expression Meaning* Message* Violation?
 or
 
 ```
-ROLE <role name> MAINTAINS <rule label>
+ROLE Name MAINTAINS <rule label>
 RULE Label? Expression Meaning* Message* Violation? 
 ```
-
-## Semantics
-A rule statement defines something that should be true. It does not define the enforcement. 
-
-By default rules are invariant rules. 
-By preceeding the rule statement with a role specification for this rule, the rule becomes a process rule.
 
 ### Label?
 The optional label can be a single word or a string (enclosed by double brackets) followed by a colon (`:`). 
@@ -82,3 +81,5 @@ A rule is violated by a pair of atoms (source, target). In a  violation message 
 
 `VIOLATION ( TXT "Project '", SRC projectName, TXT "' does not have a projectleader")`
 
+## ROLE
+tbd 
