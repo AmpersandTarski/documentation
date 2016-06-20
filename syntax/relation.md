@@ -42,12 +42,12 @@ The source and the target of the relation are represented with two double quotes
 PRAGMA "" " lives in " ""
 ```
 
-### MEANING
+### MEANING*
 
 The meaning of a relation can be written in natural language in the MEANING part of the RELATION statement. For more details see [MEANING](meaning.md).
 
 
-### Population
+### POPULATION*
 You can define an initial population for the relation. This is still in the syntax for historical reasons. Today it is more common to define your population in .xlsx files. 
 
 
