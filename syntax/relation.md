@@ -51,7 +51,7 @@ The `<text>` part is where the the meaning is written down. We support both:
 
 If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. 
 
-The meaning is optional, and gives the semantics of the relation in natural language. It is a good habit to specify the meaning!
+The meaning is optional, and gives the semantics of the relation in natural language. It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
 
 ### Population
 You can define an initial population for the relation. This is still in the syntax for historical reasons. Today it is more common to define your population in .xlsx files. 
