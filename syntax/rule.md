@@ -11,6 +11,7 @@ A rule statement defines something that should be true. It does not define the e
 
 ### Label?
 The optional label can be a single word or a string (enclosed by double brackets) followed by a colon (`:`). 
+
 ### Expression
 An expression can be any of:
 * Expression BinaryOperator Expression
@@ -47,7 +48,7 @@ The following operators are available to build expressions:
 
 
 
-### Meaning*
+### MEANING*
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement:
 
 ```
