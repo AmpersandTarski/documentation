@@ -44,7 +44,7 @@ PRAGMA "" " lives in " ""
 
 ### MEANING
 
-The meaning of a relation can be written in natural language in the MEANING part of the RELATION statement
+The meaning of a relation can be written in natural language in the MEANING part of the RELATION statement. For more details see [MEANING](meaning.md).
 
 
 ### Population
