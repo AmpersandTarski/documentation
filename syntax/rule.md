@@ -49,22 +49,7 @@ The following operators are available to build expressions:
 
 
 ### MEANING*
-The meaning of a rule can be written in natural language in the Meaning part of the RULE statement:
-
-```
-MEANING Language? Markup? <text>
-```
-The optional Markup is one of :
- * `REST` (Restructured text)
- * `HTML`
- * `LATEX` 
- * `MARKDOWN`
-
-The `<text>` part is where the the meaning is written down. We support both:
-* a simple string, enclosed by double quotes
-* any text, starting with `{+` and ending with `-}` 
-
-If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
+The meaning of a rule can be written in natural language in the Meaning part of the RULE statement
 
 ### Message*
 Messages may be defined to give feedback whenever the rule is violated. Every message for a rule should be for another Language.
