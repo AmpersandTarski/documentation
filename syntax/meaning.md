@@ -15,5 +15,11 @@ The `<text>` part is where the the meaning is written down. We support both:
 * a simple string, enclosed by double quotes
 * any text, starting with `{+` and ending with `-}` 
 
-If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. 
+The optional Markup is one of :
+ * `REST` (Restructured text)
+ * `HTML`
+ * `LATEX` 
+ * `MARKDOWN`
+
+If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
 
