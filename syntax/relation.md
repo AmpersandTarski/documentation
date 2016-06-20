@@ -11,7 +11,13 @@ RELATION <lower case identifier> Concept * Concept Properties? ('PRAGMA' String+
 <lower case identifier> '::' Concept * Concept Properties? ('PRAGMA' String+)? Meaning* ('=' Content)?
 ```
 ## Semantics
-Both ways define a relation by its name, its source concept and target concept. The name of any relation must start with a lower case character. 
+Both ways define a relation by its name and it's sign. 
+
+Every relation has a name, which is a single word, starting with a lower case character. The name is followed by the sign. The sign holds the source concept and the target concept. It is these three attributes that constitute the unique identifier of the relation. 
+E.g. name[Book*Name] can exist in the same context as name[Person*Name].
+In such a case rules must be made unambigious by adding the concept. E.g. name[Book*Name];name~ |- I. This rule is semantically the same as 
+name;name~ |- I[Book]
+
 
 ### Properties
 The properties of a relation may be defined as a comma separated list (in between brackets `[` `]`) of the following keywords:
