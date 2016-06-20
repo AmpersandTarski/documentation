@@ -37,10 +37,9 @@ In relation algebra, we say that the relation is univalent, which means that eve
 ### PRAGMA
 The optional PRAGMA keyword is followed by a couple of strings, that can be used to construct a sentence for this relation that will be printed as example in the functional specification. The sentence will be based on the actual population.
 The source and the target of the relation are represented with two double quotes with no text between them. The first one will be filled with the source atom, the second with the target atom. These can be place around, before or after the text enclosed with quotes. 
+
 ```
-"" " text " ""
-"" "" " text."
-"Text " "" ""
+PRAGMA "" " lives in " ""
 ```
 
 ### MEANING
