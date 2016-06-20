@@ -56,7 +56,7 @@ Messages may be defined to give feedback whenever the rule is violated. Every me
 ```
 MESSAGE Markup
 ```
-### Violation?
+### VIOLATION?
 A violation message can be constructed for the case that a specific violation is to be signaled:
 
 ```
@@ -66,3 +66,7 @@ Every segment must be of one of the following forms:
 * `TXT` String
 * `SRC` Expression
 * `TGT` Expression
+
+A rule is violated by a pair of atoms (source, target). In a  violation message these atoms can be used:
+`SRC I, TXT " does not live in ", TGT I` kan result in the message "John does not live in New York".
+
