@@ -68,5 +68,5 @@ Every segment must be of one of the following forms:
 * `TGT` Expression
 
 A rule is violated by a pair of atoms (source, target). In a  violation message these atoms can be used:
-`SRC I, TXT " does not live in ", TGT I` kan result in the message "John does not live in New York".
+`SRC I, TXT " does not live in ", TGT I, TXT ", but he was born in ", SRC born_in` can result in the message "John does not live in New York, but he was born in Amsterdam".
 
