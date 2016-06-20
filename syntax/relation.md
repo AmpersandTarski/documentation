@@ -35,7 +35,7 @@ In relation algebra, we say that the relation is univalent, which means that eve
 
 
 ### Pragma
-The optional PRAGMA keyword is followed by a couple of strings, that can be used to construct a sentence for this relation, based on actual population.
+The optional PRAGMA keyword is followed by a couple of strings, that can be used to construct a sentence for this relation that will be printed as example in the functional specification. The sentence will be based on the actual population.
 
 ### Meaning
 
