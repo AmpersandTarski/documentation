@@ -1,6 +1,6 @@
 # Welcome 
 
-This is the documentation for Ampersand. The focus of this site is primarily on how to use it.
+This is the documentation for Ampersand. The focus of this site is primarily on how to use this language and the software that supports it.
 
 <!---
 The purpose of the include here below is that the summary is printed at the front page.
@@ -17,9 +17,9 @@ You can do that by clicking the '+' icon that appears when you hover above the p
 
 
 ## About Ampersand
-The purpose of Ampersand is to develop information systems by means of business rules. In this way, it becomes easier to explain to business-stakeholders how the information system supports compliance to their very own business rules.
+The purpose of Ampersand for you is to develop information systems. Ampersand lets you speak the jargon of the business. It lets you formalize the rules of the business. And it saves you a lot of effort programming this stuff in software, because Ampersand will do that for you. The prize for the business is provable compliance of the software to the rules of the business proper. How cool is that!
 
-The design of the Ampersand language has a particular philosophy. It consists of the following elements:
+The design of the Ampersand language has a particular philosophy. You will work with [business rules](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf). This lets you communicate effectively with users and other business stakeholders. The language Ampersand consists of the following elements:
 1. The language is **strongly and statically typed**. This helps a programmer to write correct code and enables an efficient implementation of that code.
 2. The language is **based on relation algebra**, because relation algebra has two useful interpretations. One interpretation is in natural language. That helps to involve business stakeholders. The other interpretation is working software. That is necessary to generate a web application and its database directly from an Ampersand script.
 3. The language is **declarative**. This yields clarity in the semantics, which do not rely on side effects.
