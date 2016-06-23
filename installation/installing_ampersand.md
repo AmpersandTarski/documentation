@@ -25,11 +25,11 @@ This will build an Ampersand-compiler named "ampersand.exe" and install it into 
 **Notes:**
   1. Do **not** use Hackage to get ampersand. It does not contain all non-haskell files. (See [issue #213](https://github.com/AmpersandTarski/ampersand/issues/213))
 
-### 2) Other software you will need
-* In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend **[MiKTeX](http://miktex.org/)**. Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
-* All graphical output is created using **[GraphViz](http://www.graphviz.org/)**. You need to install it. **Make sure *dot* and *neato* are in your path**. Also, if you compile it from source, make sure you install it with gts support.
-* In order to run the generated prototype, you need the following on the computer that you are using:
- * a working **SQL** database server. You must ensure that this server has an account for localhost, that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents.![](databaseuserconfig.jpg)
- * a working (configured) web server that can run **PHP** (5.6 or higher). The webserver must run on `localhost` and listen on port 80, which is pretty default.
-A practical way to arrange for this in Windows is to install **[XAMPP](https://www.apachefriends.org/download.html)**, and create the `ampersand` database account.
-* For some libraries we use at runtime, you need to install **[Composer](https://getcomposer.org/download/)**. 
+## Other software you will need
+1. In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend **[MiKTeX](http://miktex.org/)**. Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
+2.* All graphical output is created using **[GraphViz](http://www.graphviz.org/)**. You need to install it. **Make sure *dot* and *neato* are in your path**. Also, if you compile it from source, make sure you install it with gts support.
+3. In order to run the generated prototype, you need **Apache** (or another web server) with **SQL** and **PHP v 5.6 or higher**.  A practical way to arrange for this in Windows is to install **[XAMPP](https://www.apachefriends.org/download.html)**
+ * You must create an account in SQL for `localhost`, that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents. If you use phpmyadmin this could look like:![](databaseuserconfig.jpg)
+ * The webserver must run on `localhost` . By default you will use port 80, but you could change that if required. See the documentation of you webserver. 
+
+* You need to install **[Composer](https://getcomposer.org/download/)**, because at runtime, the prototype has dependencies of libraries . Composer will take care of that. 
