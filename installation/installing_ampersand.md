@@ -3,7 +3,7 @@
 
 There are several ways to install an Ampersand compiler on your machine.
 
-###  The easy way: Use a prebuilt executable file
+### The easy way: Use a prebuilt executable file
 
 The easiest way is by use of available executables. We update them frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases).
 
