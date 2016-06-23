@@ -4,7 +4,7 @@
 
 ### The easy way: Use a prebuilt executable file
 
-The easiest way is by use of available executables. We update them frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases).
+The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases).
 
 
 ### The less easy way: Installing from Source
