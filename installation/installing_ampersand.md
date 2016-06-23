@@ -3,19 +3,19 @@
 
 There are several ways to install an Ampersand compiler on your machine.
 
-###  1a) Use a prebuilt executable file
+###  The easy way: Use a prebuilt executable file
 
 The easiest way is by use of available executables. We update them frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases).
 
 
-### 1b) Installing from Source
+### The less easy way: Installing from Source
 
 If there is no executable for your operating system, or if you prefer to build one yourself, follow these steps:
 
 > 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install_and_upgrade.html)
 > 1. Then, have stack install everything you need to compile:
       ```$ stack setup```
-> 1. use [git](https://git-scm.com/) to clone the latest version of Ampersand:  https://github.com/AmpersandTarski/ampersand.git
+> 1. use [git](https://git-scm.com/) to clone the latest version of Ampersand. The code can be found at [github](https://github.com/AmpersandTarski/Ampersand/tree/master). (the master branch is our stable branch)
 > 1. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
 > 1. Issue the following command:
     ````$ stack install```` 
