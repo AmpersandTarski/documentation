@@ -1,7 +1,6 @@
 
 ## Installation instructions
 
-There are several ways to install an Ampersand compiler on your machine.
 
 ### The easy way: Use a prebuilt executable file
 
