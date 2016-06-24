@@ -56,7 +56,7 @@ The following operators are available to build expressions:
 
 
 
-### MEANING
+### MEANING*
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. 
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
 The meaning is optional. 
@@ -83,12 +83,12 @@ The optional Markup is one of :
 
 If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
 
-### MESSAGE
+### MESSAGE*
 Messages may be defined to give feedback whenever the rule is violated. Every message for a rule should be for another Language.
 ```
 MESSAGE Markup
 ```
-### VIOLATION
+### VIOLATION?
 A violation message can be constructed for the case that a specific violation is to be signaled:
 
 ```
