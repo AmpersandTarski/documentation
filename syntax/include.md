@@ -11,7 +11,7 @@ A model is true within a specific context. All code in the included adl-files wi
 
 ## Syntax
 ```
-INCLUDE filename*
+INCLUDE filename+
 ```
 The filename is given in double quotes, including a path that is relative to the position of the main adl-file. 
 
