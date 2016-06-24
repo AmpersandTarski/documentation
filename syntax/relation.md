@@ -46,10 +46,33 @@ The source and the target of the relation are represented with two double quotes
 PRAGMA "" " lives in " ""
 ```
 
+
 ### MEANING*
+The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. 
+It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
+The meaning is optional. 
 
-The meaning of a relation can be written in natural language in the MEANING part of the RELATION statement. For more details see [MEANING](meaning.md).
+#### Syntax
+ 
+```
+MEANING Language? Markup? <text>
+```
 
+The `<text>` part is where the the meaning is written down. We support both:
+* a simple string, enclosed by double quotes
+* any text, starting with `{+` and ending with `-}` 
+
+The optional language is specified as 
+* `IN ENGLISH` or 
+* `IN DUTCH`.
+
+The optional Markup is one of :
+ * `REST` (Restructured text)
+ * `HTML`
+ * `LATEX` 
+ * `MARKDOWN`
+
+If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
 
 ### CONTAINS POPULATION*
 You can define an initial population for the relation. This is still in the syntax for historical reasons. Today it is more common to define your population in .xlsx files. 
