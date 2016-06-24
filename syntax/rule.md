@@ -89,7 +89,7 @@ Messages may be defined to give feedback whenever the rule is violated. Every me
 MESSAGE Markup
 ```
 ### VIOLATION?
-A violation message can be constructed for the case that a specific violation is to be signaled:
+A violation message can be constructed so that it gives information about the specific violation:
 
 ```
 VIOLATION (Segment1,Segment2,... )
@@ -101,9 +101,9 @@ Every segment must be of one of the following forms:
 
 A rule is violated by a pair of atoms (source, target). In a  violation message these atoms can be used to print the atom itself or follow a relation to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name:
 
-`VIOLATION ( TXT "Project '", SRC I, TXT "' does not have a projectleader")`
+`VIOLATION ( TXT "Project ", SRC I, TXT " does not have a projectleader")`
 
-`VIOLATION ( TXT "Project '", SRC projectName, TXT "' does not have a projectleader")`
+`VIOLATION ( TXT "Project ", SRC projectName, TXT " does not have a projectleader")`
 
 ## ROLE
 tbd 
