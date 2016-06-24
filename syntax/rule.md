@@ -83,7 +83,7 @@ The optional Markup is one of :
 
 If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
 
-### MESSAGE
+### MESSAGE*
 
 Messages may be defined to give feedback whenever the rule is violated. The message is a predefined string. Every message for a rule should be for another Language.
 ```
