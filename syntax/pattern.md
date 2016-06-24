@@ -8,7 +8,7 @@ A pattern formalizes the agreement among stakeholders on this particular theme.
 A pattern is a set of rules that describes a theme or a general reusable solution to a commonly occurring problem.
 
 ## Syntax
-A pattern start and finish of a pattern are defined with the statements `PATTERN` and `ENDPATTERN`. There are no arguments in this statement.
+A pattern start and finish of a pattern are defined with the statements `PATTERN` and `ENDPATTERN`. There are no operators in this statement.
 
 A model can have as many patterns as you want.
 It has currently no effect on how the code is processed. 
