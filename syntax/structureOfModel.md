@@ -16,3 +16,4 @@ INCLUDE*
 ENDCONTEXT
 ```
 
+Other models included with the INCLUDE statement become part of the context they are included in.
