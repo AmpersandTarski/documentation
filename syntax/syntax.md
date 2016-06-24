@@ -71,7 +71,7 @@ Keywords in Ampersand are always CAPITAL words.
    * `ROWS`
    * `TABS`
    * `COLS`
- * Keywords for identitys
+ * Keywords for identities
    * `IDENT`
  * Keywords for views
    * `VIEW`
