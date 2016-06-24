@@ -89,7 +89,7 @@ Messages may be defined to give feedback whenever the rule is violated. Every me
 MESSAGE Markup
 ```
 ### VIOLATION?
-A violation message can be constructed so that it gives information about the specific violation:
+A violation message can be constructed so that it gives soecufuc information about the violating atoms:
 
 ```
 VIOLATION (Segment1,Segment2,... )
