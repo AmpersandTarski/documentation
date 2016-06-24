@@ -31,7 +31,6 @@ Keywords in Ampersand are always CAPITAL words.
  * Keywords for [relations](relation.md)
    * `RELATION`
    * `PRAGMA`
-   * `MEANING`
    * `UNI`
    * `INJ`
    * `SUR`
@@ -56,8 +55,9 @@ Keywords in Ampersand are always CAPITAL words.
    * `ONE`
    * `ROLE`
    * `MAINTAINS`
- * Keywords for purposes
+ * Keywords for purposes and meaning
    * `PURPOSE`
+   * `MEANING`
    * `REF`
    * `REST`
    * `HTML`
