@@ -106,5 +106,5 @@ A rule is violated by a pair of atoms (source, target). The source atom is the r
 `VIOLATION ( TXT "Project ", SRC projectName, TXT " does not have a projectleader")`
 
 
-## ROLE
+## ROLE MAINTAINS
 tbd 
