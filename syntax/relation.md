@@ -48,7 +48,7 @@ PRAGMA "" " lives in " ""
 This will result in a printed sentence "John lives in Amsterdam".
 
 ### MEANING*
-The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. 
+The meaning of a rule can be written in natural language in the Meaning part of the RELATION statement. 
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
 The meaning is optional. 
 
