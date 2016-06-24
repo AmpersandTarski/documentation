@@ -55,7 +55,7 @@ Keywords in Ampersand are always CAPITAL words.
    * `ONE`
    * `ROLE`
    * `MAINTAINS`
- * Keywords for [purpose](syntax/purpose.md) and meaning
+ * Keywords for [purpose](purpose.md) and meaning
    * `PURPOSE`
    * `MEANING`
    * `REF`
