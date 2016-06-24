@@ -1,7 +1,11 @@
-# The structure of an Ampersand model
+# The CONTEXT statement
 
-## CONTEXT - ENDCONTEXT
-Any Ampersand model has a context. The model is specified between the keywords CONTEXT and ENDCONTEXT. A context has a name. 
+## Semantics
+Any Ampersand model has one context. 
+The model is true within it's context and there is no knowledge within this context about other contexts.
+
+## Syntax
+The model is specified between the keywords CONTEXT and ENDCONTEXT. A context has a name. 
 
 ```
 CONTEXT MyModel IN ENGLISH
@@ -12,10 +16,3 @@ INCLUDE*
 ENDCONTEXT
 ```
 
-## PATTERN - ENDPATTERN
-A pattern is a section of a model.  A model can have as many patterns as you want.
-It has currently no effect on how the code is processed. You can use it to structure the code. 
-
-
-
-Other elements in a context will be defined on the following pages.
