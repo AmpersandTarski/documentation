@@ -57,7 +57,7 @@ The following operators are available to build expressions:
 
 
 ### MEANING
-The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. For more details see [MEANING](meaning.md).
+The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. For more details see [MEANING](purpose_meaning.md).
 
 ### MESSAGE
 Messages may be defined to give feedback whenever the rule is violated. Every message for a rule should be for another Language.
