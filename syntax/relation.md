@@ -45,7 +45,7 @@ The source and the target of the relation are represented with two double quotes
 ```
 PRAGMA "" " lives in " ""
 ```
-
+This will result in a printed sentence "John lives in Amsterdam".
 
 ### MEANING*
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. 
