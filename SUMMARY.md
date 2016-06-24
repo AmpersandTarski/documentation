@@ -17,6 +17,7 @@
    * [Structure of a model](syntax/structureOfModel.md)
    * [The CONCEPT statement](syntax/concept.md)
    * [The INTERFACE statement](syntax/interface.md)
+   * [The PATTERN statement](syntax/pattern.md)
    * [The POPULATION statement](syntax/population.md)
    * [The PURPOSE statement](syntax/purpose.md)
    * [The RELATION statement](syntax/relation.md)
