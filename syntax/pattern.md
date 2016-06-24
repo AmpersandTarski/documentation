@@ -1,12 +1,22 @@
 # The PATTERN statement
 
 ## Purpose
-Patterns are used to isolate discussions about a specific theme to a particular group of stakeholders,
-who are competent to identify (define, select, invent, etc.) rules that define the theme.
+Patterns are used to isolate discussions about a specific theme to a particular group of stakeholders, who are competent to identify (define, select, invent, etc.) rules that define the theme.
 A pattern formalizes the agreement among stakeholders on this particular theme.
 
 ## Definition
 A pattern is a set of rules that describes a theme or a general reusable solution to a commonly occurring problem.
+
+## Syntax
+A pattern start and finish of a pattern are defined with the statements `PATTERN` and `ENDPATTERN`. There are no arguments to this statement.
+
+A model can have as many patterns as you want.
+It has currently no effect on how the code is processed. 
+
+A pattern contains rules in an arbitrary order.
+The context in which these rules are valid must contain the definition for each of the relations that are used in those rules.
+It is good practice to declare all relations in the pattern itself.
+That practice makes the pattern self-contained and therefore more suitable for reuse.
 
 ## Explanation
 [Design patterns](http://en.wikipedia.org/wiki/Design_pattern) are meant to make solutions reusable.
@@ -16,18 +26,8 @@ A pattern is created when a group of stakeholders is trying to agree on a soluti
 Therefore, they are independent from a particular context.
 
 
-## Example
-The problem of identifying which persons have been using an information system can be solved by making rules
-about log-in, users and sessions. The pattern [[Pattern:Sessions,_Users_and_Login|Sessions]] describes a general reusable solution to this problem.
 
 ## Restrictions
 In the current implementation of Ampersand, patterns are defined within a context. If you want to reuse them, you'll have to cut-and-paste them from one context to another. In the future, there will be a better mechanism for reusing patterns in different contexts.
 
-
-
-
-A pattern contains rules in an arbitrary order.
-The context in which these rules are valid must contain the definition for each of the relations that are used in those rules.
-It is good practice to declare all relations in the pattern itself.
-That practice makes the pattern self-contained and therefore more suitable for reuse.
  
