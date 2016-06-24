@@ -50,9 +50,6 @@ This will result in a printed sentence "John lives in Amsterdam".
 ### MEANING*
 The meaning of a rule is optional and will be specified in natural language in the MEANING part of the RELATION statement. 
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
-
-
-#### Syntax
  
 ```
 MEANING Language? Markup? <text>
