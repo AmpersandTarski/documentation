@@ -58,12 +58,8 @@ The following operators are available to build expressions:
 
 ### MEANING
 The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. 
-
-####Application
-MEANING is used in combination with a RULE or RELATION to add information about the item in natural language. 
-The meaning is optional. 
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
-
+The meaning is optional. 
 
 #### Syntax
  
