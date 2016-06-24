@@ -27,7 +27,7 @@ In the current implementation of Ampersand, patterns are defined within a contex
 
 
 A pattern contains rules in an arbitrary order.
-The [[Context|context]] in which these rules are valid must contain the definition for each of the [[Relation|relations]] that are used in those rules.
+The context in which these rules are valid must contain the definition for each of the relations that are used in those rules.
 It is good practice to declare all relations in the pattern itself.
 That practice makes the pattern self-contained and therefore more suitable for reuse.
  
