@@ -99,11 +99,12 @@ Every segment must be of one of the following forms:
 * `SRC` Expression
 * `TGT` Expression
 
-A rule is violated by a pair of atoms (source, target). In a  violation message these atoms can be used to print the atom itself or follow a relation to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name:
+A rule is violated by a pair of atoms (source, target). The source atom is the root of the violation message. In the message the target atoms are printed. With the Identity relation the root atom itself can be printed. You can use an expression to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name using the relation projectName:
 
 `VIOLATION ( TXT "Project ", SRC I, TXT " does not have a projectleader")`
 
 `VIOLATION ( TXT "Project ", SRC projectName, TXT " does not have a projectleader")`
+
 
 ## ROLE
 tbd 
