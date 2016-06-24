@@ -86,6 +86,7 @@ If you need specific markup, there are several options to do so. The default mar
 ### MESSAGE*
 
 Messages may be defined to give feedback whenever the rule is violated. The message is a predefined string. Every message for a rule should be for another Language.
+
 ```
 MESSAGE Markup
 ```
