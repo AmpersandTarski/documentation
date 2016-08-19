@@ -37,4 +37,5 @@
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * Semantics
    * [Translation to tables (n-ary relations)](translation_to_tables.md)
+* Theory
 
