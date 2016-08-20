@@ -47,6 +47,14 @@ PRAGMA "" " lives in " ""
 ```
 This will result in a printed sentence "John lives in Amsterdam".
 
+The PRAGMA keyword will become obsolete in the future. There will be a more flexible mechanism to model phrases. With the current PRAGMA syntax one can only model phrases that consist of five parts: the second and fourth part of the phrase are placeholders for the source and target instances. 
+
+```
+RELATION accepted[Provider * Order] [INJ] PRAGMA "Provider " " has accepted order "
+```
+tells us that the prase: *Provider Mario's Pizza's has accepted order 12345* has meaning, and can be either true of false.
+
+
 ### MEANING*
 The meaning of a rule is optional and will be specified in natural language in the MEANING part of the RELATION statement. 
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
