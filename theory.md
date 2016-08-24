@@ -19,7 +19,23 @@ The following table compares the language used in the world of information syste
 | store | database | database |
 | interface | interface | interface |
 
+The following theoretical topics are relevant for Ampersand.
 
+1. Relation Algebra [Maddux 2006]<br>
+Ampersand uses heterogeneous relation algebras with specialization as  a language to specify information systems. This is existing theory. It is relevant for people who specify information systems. It allows them to formalize business rules. Thus, they can ensure on design time that an information system complies with business rules.
 
+2. Rewrite systems<br>
+The Ampersand compiler manipulates relation algebra expressions. For this purpose, it uses rewrite systems. This is existing theory. It is relevant for people who make the Ampersand-compiler generate efficient code.
 
+3. Type systems<br>
+The Ampersand compiler ensures that every type-correct specification can be built [1]. For this purpose it has a type system, which signals type-errors in Ampersand-scripts. The Ampersand-compiler generates code only for scripts without type errors.
 
+4. Generating computations<br>
+It is possible to generate code to keep constraints satisfied. The theory for this is under development. It is relevant for automating tasks in information systems.
+
+5. Compiler theory<br>
+Ampersand is a compiler. Its syntax is parsed by the Parsec-module of Haskell. Its semantics are implemented as a generator, which is hand-written. The theory is existing. This subject is relevant for people who wish to change the language of Ampersand.
+
+Each of the following sections treats on of the topics mentioned above (work to be done).
+
+[1] Michels, G., Joosten, S., van der Woude, J., Joosten, S.: Ampersand: ApplyingRelation Algebra in Practice. In: de Swart, H. (ed.) RAMICS 2011. LNCS, vol. 6663,pp. 280–293. Springer, Heidelberg (2011)
