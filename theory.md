@@ -34,7 +34,7 @@ The Ampersand compiler ensures that every type-correct specification can be buil
 It is possible to generate code to keep constraints satisfied. The theory for this is under development. It is relevant for automating tasks in information systems.
 
 5. Compiler theory<br>
-Ampersand is a compiler. Its syntax is parsed by the Parsec-module of Haskell. Its semantics are implemented as a generator, which is hand-written. The theory is existing. This subject is relevant for people who wish to change the language of Ampersand.
+Ampersand is a compiler. Its syntax is parsed by the Parsec-module of Haskell. A hand-written generator embodies the semantics. The theory is existing. This subject is relevant for people who wish to change the language of Ampersand.
 
 Each of the following sections treats on of the topics mentioned above (work to be done).
 
