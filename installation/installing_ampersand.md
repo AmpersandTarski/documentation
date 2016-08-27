@@ -1,6 +1,6 @@
 
 ## Installation instructions
-
+The following instructions presume that you are familiar with the basics of your own computer.
 
 ### The easy way: Use a prebuilt executable file
 
