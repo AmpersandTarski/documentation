@@ -35,7 +35,7 @@
    * [Modules](prototypes/modules.md)
        * [SIAM (Sessions, Identity and Access Management) Module](prototypes/siam_module.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
-* Semantics
+* [Semantics](semantics.md)
    * [Translation to tables (n-ary relations)](translation_to_tables.md)
 * [Theory](theory.md)
 
