@@ -1,5 +1,5 @@
 # The Excel Importer
-The Excel Importer allows you to import data from an Excel file in a (working) prototype, effectively adding it to the population of a running prototype. This text is meant for the Ampersand user who has more population than can be dealt with by `POPULATION` statements. It is also useful if you have existing spreadsheets filled with tables, which you want to use as population in your Ampersand-script. Please note that some editing of your Excel-file may be required, to make Ampersand understand how columns match Ampersand-relations.
+ The Excel Importer allows you to import data from an Excel file in a (working) prototype. It adds the data in the spreadsheet to the population of a running prototype. You can do the same by `POPULATION` statements in your code, but importing from a spreadsheet saves a lot of coding effort. It is also useful if you have existing spreadsheets. In most cases a little effort is sufficient to prepare an existing spreadsheet for import in Ampersand. Please note that some editing of your Excel-file may be required, to make Ampersand understand how columns match Ampersand-relations.
 
 This text applies to the Ampersand tooling in the new framework (as of the March 2016 in branch_#228)
 
