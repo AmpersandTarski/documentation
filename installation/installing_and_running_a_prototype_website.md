@@ -15,12 +15,8 @@ This section is primarily intended to serve those that want a quick and hasslefr
          * Re-type: ampersand
      * In the box `Global privileges`, check the checkbox `Check all`.
      * Click the button `Go` at the bottom of the page to add the new user.
-  5. find your *htdocs* directory (Default is *c:\xampp\htdocs*). This is the place where the generated prototype directory has to be. You could also create a subfolder to store generated prototypes into, e.g. `C:\xampp\htdocs\prototypes`.
-  6. Generate a prototype (e.g. for `MyModel`) and copy the generated directory (`MyModel`) that contains the code into `C:\xampp\htdocs\prototypes`. Thus, your protype files now are in `C:\xampp\htdocs\prototypes\MyModel`
-  6. Open a browser (make sure you have a recent one!) and go to *http://localhost:80/prototypes/MyModel*. This should start the prototype in your browser. Notes:
-     * :80 is the port number of your web server. This defaults to :80, so if it is 80, you can leave it out.
-     * `/prototypes/MyModel` is valid provided you copied the contents of the generated prototype into `c:\xampp\htdocs\prototyes`. If you used another directory structure, then change path accordingly.
-     * MyModel is the name of your context. If you are unsure, it is also the exact name of the generated folder of your prototype.
-  7. The first time, there is no database installed. You will see an error message. Fortunately, there is a button to install it for you. If you want to be sure a database is created you can use phpMyAdmin to inspect the database.
+  5. find your *htdocs* directory (Default is *c:\xampp\htdocs*). This is the place where the generated prototype directory has to be. We urge you to create a subfolder here where you will be storing your prototypes after you have generated them. For the rest of this documentation, we assume that you have created the directory `C:\xampp\htdocs\prototypes`.
+
+Now you are done with the installation part, and you are ready to create your first running prototype.
 
 
