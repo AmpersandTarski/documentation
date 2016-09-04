@@ -1,4 +1,4 @@
-In order to run prototypes, you must have installed a web server (e.g. Apache), a database server ((My)SQL), PHP (5.x, but we're switching to PHP 7). You can organize this by yourself, or read on and follow the instructions.
+In order to deploy and run prototypes, you must have installed a web server (e.g. Apache) that can run PHP7 (ok, most stuff works with PHP 5.4), and a (My)SQL database server. You can organize this by yourself, or read on and follow the instructions.
 
 ## Using Xampp
 This section is primarily intended to serve those that want a quick and hasslefree installation. To do this, we use [XAMPP](https://www.apachefriends.org/index.html), as follows
