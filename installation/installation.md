@@ -5,7 +5,7 @@ The installation of Ampersand depends a bit on what you want to do with it. Ther
 2. generating functional specification documents;
 3. generating (compiling) the ampersand tooling itself (this is for those that want to help develop Ampersand software itself).
 
-**All users** will need the executable file `Ampersand.exe`. The section [Installing Ampersand](./installation/installing_ampersand.html) tells you how you get it.
+**All users** will need the executable file `Ampersand.exe`. The section [Installing Ampersand](/installation/installing_ampersand.html) tells you how you get it.
 
 **For generating and running prototypes** you also need a webserver that can run javascript, PHP7 (often PHP5 will do fine), and a (My)SQL database server. The section [Installing and running a prototype](/installation/installing_and_running_a_prototype_website.html) has the instructions.
 
