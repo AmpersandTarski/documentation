@@ -12,20 +12,20 @@ The easiest way is by use of available executables. We release frequently. Have 
 If there is no executable for your operating system, or if you prefer to build one yourself, follow these steps:
 
 > 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install_and_upgrade.html)
-> 1. use [git](https://git-scm.com/) to clone the latest version of Ampersand. The code can be found at [github](https://github.com/AmpersandTarski/Ampersand/tree/master). (the master branch is our stable branch)
-> 1. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
-> 1. Then, close your command line terminal and reopen another one (this helps to reload the environment variables that the `stack` installation may have added or modified), and have `stack` install everything you need to compile:
+> 2. use [git](https://git-scm.com/) to clone the latest version of Ampersand. The code can be found at [github](https://github.com/AmpersandTarski/Ampersand/tree/master). (the master branch is our stable branch)
+> 3. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
+> 4. Then, close your command line terminal and reopen another one (this helps to reload the environment variables that the `stack` installation may have added or modified), 
+> 5. Let `stack` install everything you need to compile (see the Notes below!) by executing:
       ```$ stack setup```
-      `stack` memory usage may require other applications to be terminated (e.g. on 8GB systems).If things (still) go wrong, re-invoking the command will pick-up where it stopped.
-> 1. Issue the following command:
-    ````$ stack install````
-    `stack` memory usage may require other applications to be terminated (e.g. on 8GB systems).If things (still) go wrong, re-invoking the command will pick-up where it stopped.
+> 6. Build the Ampersand.exe file (see the Notes below!) by executing: ```$ stack install```
 
 This will build an Ampersand-compiler named "ampersand.exe" and install it into your path.
 
 
 **Notes:**
   1. Do **not** use Hackage to get ampersand. It does not contain all non-haskell files. (See [issue #213](https://github.com/AmpersandTarski/ampersand/issues/213))
+  2. `stack` memory usage may require other applications to be terminated (e.g. on 8GB Windows systems). If `stack` terminates prematurely, re-invoking the command will pick-up where it stopped.
+  3. `stack` may terminate on various errors, e.g. that it doesn't have permission to access or rename files. Again, if `stack` terminates prematurely, re-invoking the command will pick-up where it stopped. Users have mentioned having to restart `stack` several times before it would finally complete building Ampersand.exe.
 
 ## Other software you will need 
 1. In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend **[MiKTeX](http://miktex.org/)**. Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
