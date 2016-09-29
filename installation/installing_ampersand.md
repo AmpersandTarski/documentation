@@ -25,7 +25,7 @@ This will build an Ampersand-compiler named "ampersand.exe" and install it into 
 **Notes:**
   1. Do **not** use Hackage to get ampersand. It does not contain all non-haskell files. (See [issue #213](https://github.com/AmpersandTarski/ampersand/issues/213))
   2. `stack` memory usage may require other applications to be terminated (e.g. on 8GB Windows systems). If `stack` terminates prematurely, re-invoking the command will pick-up where it stopped.
-  3. `stack` may terminate on various errors, e.g. that it doesn't have permission to access or rename files. Again, if `stack` terminates prematurely, re-invoking the command will pick-up where it stopped. Users have mentioned having to restart `stack` several times before it would finally complete building Ampersand.exe.
+  3. `stack` may terminate on various errors [(See this issue)](https://github.com/commercialhaskell/stack/issues/2617), e.g. that it doesn't have permission to access or rename files. Again, if `stack` terminates prematurely, re-invoking the command will pick-up where it stopped. Users have mentioned having to restart `stack` several times before it would finally complete building Ampersand.exe.
 
 ## Other software you will need 
 1. In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend **[MiKTeX](http://miktex.org/)**. Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
