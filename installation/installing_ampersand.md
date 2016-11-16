@@ -4,7 +4,7 @@ The following instructions presume that you are familiar with the basics of your
 
 ### The easy way: Use a prebuilt executable file
 
-The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases). For Windows users, there is a file called ampersand.exe in the release. Put is somewhere in your path. That's all. Note however, ampersand.exe is a command line tool. Therefore, it doesn't help if you doubleclick it.  
+The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases). For Windows users, there is a file called ampersand.exe in the release. Put is somewhere in your path. That's all. Note however, `ampersand.exe` is a command line tool. Therefore, it doesn't help if you doubleclick it.  
 
 
 ### The less easy way: Installing from Source
