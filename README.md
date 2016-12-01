@@ -1,6 +1,6 @@
 # Documentation of Ampersand
 
-This repository contains the documentation of Ampersand. Currently, it is far from complete. However, since we use GitBook, it has become easier to add to it.
+This repository contains the documentation of Ampersand. It is far from complete. but, since we use GitBook, it has become easier to add to it.
 
 To try Ampersand, you can use an online Ampersand environment such as RAP. If you do not have access to such an environment, you may want to [install Ampersand](https://ampersandtarski.gitbooks.io/documentation/content/installation/installation.html). You can choose to install Ampersand to use [the command-line interface, which isn't exposed online](https://ampersandtarski.gitbooks.io/documentation/content/command-line-interface/command-line-interface.html).
 
