@@ -1,7 +1,7 @@
 # You are welcome...
 
 ## ... to read the Ampersand documentation
-To actually read the documentation, please click on the green `Read` button at the top right hand of this page. 
+To actually read the documentation, please click on the green `Read` button at the top right hand of this page, or download the PDF. 
 
 Currently, the focus of this documentation is primarily on how to use this language and the software that supports it. While this focus may change over time, we currently do not have such intentions. 
 
