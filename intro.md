@@ -20,7 +20,7 @@ You can do that by clicking the '+' icon that appears when you hover above the p
 
 
 ## About Ampersand
-The purpose of Ampersand for you is to develop information systems. Ampersand lets you speak the jargon of the business. It lets you formalize the rules of the business. And it saves you a lot of effort programming this stuff in software, because Ampersand will do that for you. The prize for the business is provable compliance of the software to the rules of the business proper. How cool is that!
+The purpose of Ampersand is to help you develop information systems that actually do what its intended users want. Ampersand allows you to communicate to such users in their business jargon. It lets you formalize the rules of the business. And it saves you a lot of effort programming this stuff in software, because Ampersand will do that for you. The prize for the business is provable compliance of the software to the rules of the business proper. How cool is that!
 
 The design of the Ampersand language has a particular philosophy. You will work with [business rules](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf). This lets you communicate effectively with users and other business stakeholders. The language Ampersand consists of the following elements:
 1. The language is **strongly and statically typed**. This helps a programmer to write correct code and enables an efficient implementation of that code.
