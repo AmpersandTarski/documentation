@@ -1,6 +1,9 @@
-# Welcome 
+# You are welcome...
 
-This is the documentation for Ampersand. The focus of this site is primarily on how to use this language and the software that supports it.
+## ... to read the Ampersand documentation
+To actually read the documentation, please click on the green `Read` button at the top right hand of this page. 
+
+Currently, the focus of this documentation is primarily on how to use this language and the software that supports it. While this focus may change over time, we currently do not have such intentions. 
 
 <!---
 The purpose of the include here below is that the summary is printed at the front page.
@@ -9,7 +12,7 @@ The purpose of the include here below is that the summary is printed at the fron
 -->
 
 
-## Contributions to the documentation
+## ... to contribute to this documentation
 
 If you have anything to fix or details to add, just post a comment next to the paragraph. We really appreciate if you do so, because our readers know best what it is they are looking for in the docs.
 
