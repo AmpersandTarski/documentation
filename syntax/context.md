@@ -29,4 +29,15 @@ IN <language>
 ```
 Where <language> can be ```ENGLISH``` or ```DUTCH```. 
 
+#### Markup format
+Directly following the optional language definition, you can optionally specify the format of your texts (see PURPOSE statement). Ampersand understands some different markup styles. The default style is REST (Restructured Text) 
+```
+<markupStyle>
+```
+where <markupStyle> can be one of
+  ```REST```, 
+  ```HTML```,
+  ```LATEX```,
+  ```MARKDOWN```.
 
+(For details on these formats, see [pandoc.org](http://pandoc.org/)).
