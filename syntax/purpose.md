@@ -9,7 +9,7 @@ Most things in your model are in it for a reason. To document these, you should 
 
 `PURPOSE` `<type of thing>` `<name>` `<language>?` `<markup>?` `<list of references>?`
 
-`{-` `<anything>` `+}`
+`{+` `<anything>` `+}`
 
 Where `<type of thing>` and `<name>` are the type and name of the thing that is refered to. This could be one of:
   `CONCEPT`, `RELATION`, `RULE`, `IDENT`, `VIEW`, `PATTERN`, `INTERFACE`, `CONTEXT`
