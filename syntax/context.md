@@ -1,9 +1,14 @@
 # The CONTEXT statement
 
+RJ/20161220: the CONTEXT statement is currently being revised. It is expected that this will lead to changes in syntax in the course of 2017. 
+
+## Purpose
+The data contained in a business system represents a view of (a very small part of) the real world. Ideally, this view must be consistent, meaning that there may be no contradictions within that view. Since different business systems have different ways of viewing the real world, and/or look at different parts of the real world, we need to be able to distinguish between such views. We use the term 'Context' to refer to an individual view. Thus, a Context is defined in terms of concepts, relations and rules, and it consists of atoms and links to populate them.
+
 ## Semantics
 
 Any Ampersand model has one context.   
-The model is true within it's context and there is no knowledge in a model about other contexts.
+The model is true within its context and there is no knowledge in a model about other contexts.
 
 ## Syntax
 
