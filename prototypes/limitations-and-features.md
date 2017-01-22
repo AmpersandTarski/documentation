@@ -1,3 +1,5 @@
+## Security 
+
 Even though Ampersand was designed for prototyping, we are taking applications such as RAP2 and RAP3 to production. As the development of Ampersand is going in the direction of production software, we must be prepared for questions. Currently, I can hardly answer any questions about security. This page is for the purpose to discuss security questions, such that we are at least on the same ground wrt security. If any changes to Ampersand emerge from that, we should create separate issues for them. Here is a list of questions.
 
  - [ ] *Access control*
