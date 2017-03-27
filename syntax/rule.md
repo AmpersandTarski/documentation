@@ -1,8 +1,10 @@
 # The RULE statement
-## Semantics
-A rule statement defines something that should be true. It does not define the enforcement. 
 
-By default rules are invariant rules. 
+## Semantics
+
+A rule statement defines something that should be true. It does not define the enforcement.
+
+By default rules are invariant rules.   
 By preceding the rule statement with a role specification for this rule, the rule becomes a process rule.
 
 ## Syntax
@@ -10,29 +12,34 @@ By preceding the rule statement with a role specification for this rule, the rul
 ```
 RULE Label? Expression Meaning* Message* Violation?
 ```
+
 or
 
 ```
 ROLE Name MAINTAINS <rule label>
-RULE Label? Expression Meaning* Message* Violation? 
+RULE Label? Expression Meaning* Message* Violation?
 ```
 
 ### Label?
-The optional label can be a single word or a string (enclosed by double brackets) followed by a colon (`:`). 
+
+The optional label can be a single word or a string \(enclosed by double brackets\) followed by a colon \(`:`\).
 
 ### Expression
+
 An expression can be any of:
+
 * Expression BinaryOperator Expression
 * UnaryOpPre Expression
 * Expression UnaryOpPost
-* a (reference to a) relation (including an optional signature, when required to disambiguate):
- * A relation by name 
- * `I` (the Identity relation)
- * `V` (carthesian product) 
- * A singleton expression (the value of an atom in between single quotes)
+* a \(reference to a\) relation \(including an optional signature, when required to disambiguate\):
+  * A relation by name 
+  * `I` \(the Identity relation\)
+  * `V` \(carthesian product\) Note that this can also be used to denote the empty relation, by using the unary negation operator:  '-v'
+  * A singleton expression \(the value of an atom in between single quotes\)
 * an expression enclosed in brackets.
 
 #### Operators
+
 The following operators are available to build expressions:
 
 * Binary operators
@@ -47,66 +54,73 @@ The following operators are available to build expressions:
   * diamond: `<>`
   * relative addition: `!`
   * cartesian product: `#`
-* Unary operator (pre-operator)
+* Unary operator \(pre-operator\)
   * complement: `-`
-* Unary operators (post-operator)
-  * conversion (flip): `~`
-  * Reflexive, transitive closure: `*` (Kleene star) --currently not implemented
-  * transitive closure: `+` (Kleene plus) --currently not implemented
+* Unary operators \(post-operator\)
+  * conversion \(flip\): `~`
+  * Reflexive, transitive closure: `*` \(Kleene star\) --currently not implemented
+  * transitive closure: `+` \(Kleene plus\) --currently not implemented
 
+### MEANING\*
 
-
-### MEANING*
-The meaning of a rule can be written in natural language in the Meaning part of the RULE statement. 
-It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
-The meaning is optional. 
+The meaning of a rule can be written in natural language in the Meaning part of the RULE statement.   
+It is a good habit to specify the meaning! The meaning will be printed in the functional specification.  
+The meaning is optional.
 
 #### Syntax
- 
+
 ```
 MEANING Language? Markup? <text>
 ```
 
 The `<text>` part is where the the meaning is written down. We support both:
+
 * a simple string, enclosed by double quotes
 * any text, starting with `{+` and ending with `-}` 
 
-The optional language is specified as 
+The optional language is specified as
+
 * `IN ENGLISH` or 
 * `IN DUTCH`.
 
 The optional Markup is one of :
- * `REST` (Restructured text)
- * `HTML`
- * `LATEX` 
- * `MARKDOWN`
+
+* `REST` \(Restructured text\)
+* `HTML`
+* `LATEX` 
+* `MARKDOWN`
 
 If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
 
-### MESSAGE*
+### MESSAGE\*
 
 Messages may be defined to give feedback whenever the rule is violated. The message is a predefined string. Every message for a rule should be for another Language.
 
 ```
 MESSAGE Markup
 ```
+
 ### VIOLATION?
+
 A violation message can be constructed so that it gives specific information about the violating atoms:
 
 ```
 VIOLATION (Segment1,Segment2,... )
 ```
+
 Every segment must be of one of the following forms:
+
 * `TXT` String
 * `SRC` Expression
 * `TGT` Expression
 
-A rule is violated by a pair of atoms (source, target). The source atom is the root of the violation message. In the message the target atoms are printed. With the Identity relation the root atom itself can be printed. You can use an expression to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name using the relation projectName:
+A rule is violated by a pair of atoms \(source, target\). The source atom is the root of the violation message. In the message the target atoms are printed. With the Identity relation the root atom itself can be printed. You can use an expression to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name using the relation projectName:
 
 `VIOLATION ( TXT "Project ", SRC I, TXT " does not have a projectleader")`
 
 `VIOLATION ( TXT "Project ", SRC projectName, TXT " does not have a projectleader")`
 
-
 ## ROLE MAINTAINS
-tbd 
+
+tbd
+
