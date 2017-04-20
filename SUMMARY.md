@@ -37,9 +37,9 @@
   * [Security](prototypes/limitations-and-features.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Semantics](semantics.md)
-  * [Translation to tables \(n-ary relations\)](translation_to_tables.md)
 * [Theory](theory.md)
 * [Tutorial](tutorial.md)
   * [What is an information system?](tutorial/what-is-an-information-system.md)
-  * RAP3
+  * [RAP3](tutorial/rap3.md)
+  * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
 
