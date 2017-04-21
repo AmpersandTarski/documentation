@@ -42,4 +42,5 @@
   * [What is an information system?](tutorial/what-is-an-information-system.md)
   * [RAP3](tutorial/rap3.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
+  * [Rules](tutorial/rules.md)
 
