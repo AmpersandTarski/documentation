@@ -1,17 +1,11 @@
 # Installation
 
-Ampersand can be run in the cloud, but you can also install the software on computers of your own. For different purposes there are different ways of installing Ampersand:  
-1. If you only want to generate and run prototypes, either use the cloud \(no installation required\) or follow the instructions in section [Installing and running a prototype](/installing_and_running_a_prototype_website.html) ;  
-2. generating functional specification documents;  
-3. generating \(compiling\) the ampersand tooling itself \(this is for those that want to help develop Ampersand software itself\).
+Ampersand can be run in the cloud, but you can also install the software on computers of your own. For different purposes there are different ways of installing Ampersand:
 
-**All users** will need the executable file `Ampersand.exe`. The section [Installing Ampersand](/installing_ampersand.html) tells you how you get it.
-
-**For generating and running prototypes** you also need a webserver that can run javascript, PHP7 \(often PHP5.6 or later will do fine\), and a \(My\)SQL database server. The section [Installing and running a prototype](/installing_and_running_a_prototype_website.html) has the instructions.
-
-**For generating functional specification documents** you will need GraphViz \(for generating graphics such as conceptual models and data models\), and LaTeX.
-
-**For compiling the Ampersand software itself** you need access to the source files, and a Haskell development environment. Since this setup is also needed for those for whom no pre-built Ampersand.exe file is available, details on how to set this up can be found in the section [Installing Ampersand](/installing_ampersand.html).
+1. If you just want the executable file `Ampersand.exe`, section [Installing Ampersand](https://www.gitbook.com/book/ampersandtarski/documentation/edit#) tells you how you get it.
+2. If you want to generate and run prototypes, either use the cloud \(no installation required\) or follow the instructions in section [Installing and running a prototype](/installing_and_running_a_prototype_website.html). For running a prototype on your own computer, it needs a webserver that can run javascript, PHP7 \(often PHP5.6 or later will do fine\), and a \(My\)SQL or MariaDB database server.
+3. For generating functional specification documents you will need GraphViz \(for generating graphics such as conceptual models and data models\), and LaTeX.
+4. For compiling the Ampersand software itself you need access to the source files, and a Haskell development environment. Since this setup is also needed for those for whom no pre-built Ampersand.exe file is available. Details on how to set this up can be found in the section [Installing Ampersand](/installing_ampersand.html).
 
 This chapter explains the things you need to get you up and running with Ampersand.
 
