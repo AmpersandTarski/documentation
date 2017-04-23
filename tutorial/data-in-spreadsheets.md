@@ -1,12 +1,12 @@
-In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for bottom-up design of an information system. This has many uses in practice, because people tend to administer a lot in spreadsheets for lack of proper information systems to support them.
+In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for bottom-up design of an information system. This has many uses in practice, because people tend to administer a lot in spreadsheets for lack of proper information systems to support them. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes. 
 
-# Translation to tables \(n-ary relations\)
+# Theory: tables vs. binary relations
 
 We can consider Ampersand as a finite system of relations. Every relation is a set of pairs and each pair contains two atoms. Suppose we want to store that in a relational database. An obvious implementation would be to map every relation to a table. That yields a database filled with two-column tables. This gives rise to the following question: Can we store relations more efficiently?
 
 This chapter studies ways to use database tables wider than two columns. The purpose is to get more efficient code by exploiting the strengths of relational databases. This translation must maintain the semantics of Ampersand in the eyes of its user. She may still perceive the world as a system of relations. All laws of relation algebra remain applicable in this world.
 
-## Example
+### Example
 
 Let us look at an example to get a feeling for this translation. Consider the following table.
 
@@ -44,7 +44,18 @@ POPULATION birth[President*Date] CONTAINS
 
 Notice that the column names in the table correspond with the relation names in Ampersand. In the table we call them "attributes". So it makes sense to say that a relation in Ampersand can correspond with an attribute in a table.
 
-## 
+## Practice: how to prepare a spreadsheet
 
+The population of the Hawaii-script might just as well be given in a spreadsheet. It looks like this:
 
+| Subject | pass | required |
+| :--- | :--- | :--- |
+| \[Subject\] | \[Student\] | \[Destination\] |
+| Surfing | Brown | Hawaii |
+| Surfing | Conway |  |
+| Latin | Brown | Rome |
+| World Religions | Applegate |  |
+| World Religions | Brown | Rome |
+
+In many spreadsheets, it is sufficient to add two lines above each table to inform Ampersand about the relations that are populated. 
 
