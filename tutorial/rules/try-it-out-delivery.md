@@ -87,7 +87,7 @@ MESSAGE "Not all orders have been accepted"
 VIOLATION (TGT I, TXT " has not accepted the order ",SRC I,TXT " by ", SRC orderedBy; clientName)
 
 RULE allPrized: orderAccepted |- (orderTotal;orderTotal~/\I ) ;orderAccepted
-MEANING "the order's total price must be calculated for each accepted order."
+MEANING "The order's total price must be calculated for each accepted order."
 MESSAGE "Not all accepted orders have been priced."
 VIOLATION (SRC I, TXT " has been accepted by ", TGT I, TXT " but hasn't been priced.")
 
