@@ -1,10 +1,10 @@
-In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for bottom-up design of an information system. This has many uses in practice, because people tend to administer a lot in spreadsheets for lack of proper information systems to support them. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes. 
+# Data in spreadsheets
 
-# Theory: tables vs. binary relations
+In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for bottom-up design of an information system. This has many uses in practice, because people tend to administer a lot in spreadsheets for lack of proper information systems to support them. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes.
 
-We can consider Ampersand as a finite system of relations. Every relation is a set of pairs and each pair contains two atoms. Suppose we want to store that in a relational database. An obvious implementation would be to map every relation to a table. That yields a database filled with two-column tables. This gives rise to the following question: Can we store relations more efficiently?
+## Theory: tables vs. binary relations
 
-This chapter studies ways to use database tables wider than two columns. The purpose is to get more efficient code by exploiting the strengths of relational databases. This translation must maintain the semantics of Ampersand in the eyes of its user. She may still perceive the world as a system of relations. All laws of relation algebra remain applicable in this world.
+We can consider Ampersand as a finite system of relations. Every relation is a set of pairs and each pair contains two atoms. However, in the real world we also store information in wider tables, as we do in spreadsheets and relational databases. Here is the trick. If we have two pairs that share the same left atom, e.g. \(1, Abraham\) and \(1, Lincoln\), we can put them in the same row. Using the same trick, we can interpret a row in a spreadsheet as a number of pairs.
 
 ### Example
 
@@ -46,7 +46,7 @@ Notice that the column names in the table correspond with the relation names in 
 
 ## Practice: how to prepare a spreadsheet
 
-The population of the Hawaii-script might just as well be given in a spreadsheet. It looks like this:
+In theory, the population of the Hawaii-script might just as well be given in a spreadsheet. This works in practice too. It looks like this:
 
 | Subject | pass | required |
 | :--- | :--- | :--- |
@@ -57,5 +57,9 @@ The population of the Hawaii-script might just as well be given in a spreadsheet
 | World Religions | Applegate |  |
 | World Religions | Brown | Rome |
 
-In many spreadsheets, it is sufficient to add two lines above each table to inform Ampersand about the relations that are populated. 
+In many spreadsheets, it is sufficient to add two lines above each table to inform Ampersand about the relations that are populated.
+
+## Assignment
+
+Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. Upload that population in the [Hawaii-application](http://52.174.4.78/Trips/#/Overview) and play around with the results. The Excel import button is located on the right in the application's menu bar.![](/assets/Excel upload button.png)
 
