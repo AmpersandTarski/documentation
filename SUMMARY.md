@@ -43,5 +43,6 @@
   * [RAP2](tutorial/rap2.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [Rules](tutorial/rules.md)
+    * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
   * [RAP3](tutorial/rap3.md)
 

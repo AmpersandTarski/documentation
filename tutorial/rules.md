@@ -2,14 +2,14 @@
 
 Rules are useful to turn a heap of data into meaningful information. For that purpose, you must understand how rules help you to determine whether a statement is true. This section deals with formal rules only. The attraction of formal rules is that computers can be used to compute which statements are true. We shall go into the details to understand how this works.
 
-Let us first discuss some words that allow us to talk about rules .These are: true, false, valid, context, stakeholder, statement, and rule. We will use these words in their conventional meaning, but in a more precise way than some people do.
+Let us first discuss some words that allow us to talk about rules .These are: true, false, valid, scope, stakeholder, statement, and rule. We will use these words in their conventional meaning, but in a more precise way than some people do.
 
-A rule is a Statement that must be true in the Context in which it is valid.  
+A rule is a statement that must be true in the context in which it is valid.  
 So, a rule differs from a statement, because a statement can be either true or false.  
 Example:
 
 * The statement "St. Paul street is a one way street." might be either true or false. We just have to check the road signs on St. Paul street to know. If, however, the city council of the City of St. Catharines decides that St. Paul street is a one way street, we have a rule. It is a rule because St. Paul street **must be** a one way street. 
-  The word _must_ implies that there is someone who says so.
+  The word _must_ implies that there is someone who says so: the authority that imposes the rule.
 * In this example, the city council of St. Catharines, by the authority invested upon it by the law, has ordained that St. Paul street must be a one way street.
 * The people who are affected by this are called stakeholders.
 * The City of St. Catharines is the scope of this rule, because that is where this rule is valid.
