@@ -10,7 +10,7 @@ You can start making your very first own Ampersand script in the text area of RA
 
 ![](/assets/RAP2 screen.png)
 
-## Script
+## Script "Hawaii"
 
 ```
 CONTEXT Hawaii IN ENGLISH
@@ -67,5 +67,8 @@ ENDCONTEXT
 
 ## Assignment
 
-Use RAP3 to make changes to "Hawaii". Try for instance to register a teacher for each course. Be sure to compile your script and demonstrate to each other that your change compiles.
+1. Compile the script "Hawaii" in RAP2 and run it. The tutor will show you which sequence of clicks will make it work. In the remainder of this course you will compile and run your own scripts.
+2. Make some changes to "Hawaii" that you can compile and run. Try for instance to register a teacher for each course. Demonstrate your changes to your peers.
+
+
 
