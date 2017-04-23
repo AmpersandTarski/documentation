@@ -4,7 +4,7 @@ In this section you will learn the basic structure of information systems accord
 
 We will study an information system called "Hawaii". The purpose of that system is to let students find out for which trips they qualify. In order to take a trip to \(for example\) Rome, you have to pass the courses "Latin" and "World Religions" first. In the same application, a teacher can register which courses are required for which trip. You can play with the application to see how it works.
 
-Please [click here](http://52.174.4.78/RAP3/scripts/123456/generated/Script_1492691871_00491882/prototype/#/Overview) to try it. Play around a little bit to find out which courses, students and trips there are and try to see what happens if you add or remove information from the system.
+Please [click here](http://52.174.4.78/Trips/#/Overview) to try it. Play around a little bit to find out which courses, students and trips there are and try to see what happens if you add or remove information from the system.
 
 This information system was built by the following code:
 

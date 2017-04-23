@@ -14,5 +14,8 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
 ## Assignment
 
-Use RAP3 to make changes to "Hawaii". Try for instance to register a teacher for each course. Be sure to compile and run your script and demonstrate to each other that your change works.
+1. Compile the script "Hawaii" in RAP3 and run it. The tutor will show you which sequence of clicks will make it work. In the remainder of this course you will compile and run your own scripts.
+2. Make some changes to "Hawaii" that you can compile and run. Try for instance to register a teacher for each course. Demonstrate your changes to your peers.
+
+
 
