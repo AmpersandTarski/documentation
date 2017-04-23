@@ -10,11 +10,9 @@ RAP3 is under development. You can expect to find children's diseases in the sof
 
 ## Making your first Ampersand script
 
-When you click on the blue pluos-sign on the right side in the menu bar in your screen, you get to make a new script. It opens an editor screen in which you can type your very first own Ampersand script. You might for example cut the "Hawaii" script from this tutorial and paste it in the editor. If you scroll downwards, you will get controls to compile and use it. Note that Ampersand is complicated software, so please have a little patience after pushing one of its buttons.![](/assets/your first Ampersand script.png)
+When you click on the blue plus-sign on the right side in the menu bar in your screen, you get to make a new script. It opens an editor screen in which you can type your very first own Ampersand script. You might for example cut the "Hawaii" script from this tutorial and paste it in the editor. If you scroll downwards, you will get controls to compile and use it. Note that Ampersand is complicated software, so please have a little patience after pushing one of its buttons.![](/assets/your first Ampersand script.png)
 
 ## Assignment
 
 Use RAP3 to make changes to "Hawaii". Try for instance to register a teacher for each course. Be sure to compile and run your script and demonstrate to each other that your change works.
-
-
 
