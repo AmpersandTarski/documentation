@@ -81,12 +81,15 @@ orderReceived :: Order * Client [UNI] -- an order may not be received by multipl
 
 RULE orderInAssortment : orderOf |- orderedAt; sells
 
+PURPOSE RULE allAccepted
+{+To remind vendors of orders that are not yet accepted, we introduce a process rule.
+-}
 RULE allAccepted: orderedAt |- (I/\orderAccepted; orderAccepted~); orderedAt -- == TOT extended to allow hyperlinking to vendor in violation
 MEANING "All orders have been accepted"
 MESSAGE "Not all orders have been accepted"
 VIOLATION (TGT I, TXT " has not accepted the order ",SRC I,TXT " by ", SRC orderedBy; clientName)
 
-RULE allPrized: orderAccepted |- (orderTotal;orderTotal~/\I ) ;orderAccepted
+RULE allPriced: orderAccepted |- (orderTotal;orderTotal~/\I ) ;orderAccepted
 MEANING "The order's total price must be calculated for each accepted order."
 MESSAGE "Not all accepted orders have been priced."
 VIOLATION (SRC I, TXT " has been accepted by ", TGT I, TXT " but hasn't been priced.")
@@ -216,6 +219,10 @@ BOX [ "Client"  : orderedBy
 
 ENDCONTEXT
 ```
+
+## Assignment
+
+This script contains a `RULE` called `orderInAssortment`. Describe the meaning and the purpose of this rule. It may help to play with the script and discussing this rule with your peers. Add your meaning and purpose to the script and make sure it compiles and runs.
 
 
 
