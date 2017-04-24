@@ -68,7 +68,11 @@ ENDCONTEXT
 ## Assignment
 
 1. Compile the script "Hawaii" in RAP2 and run it. The tutor will show you which sequence of clicks will make it work. In the remainder of this course you will compile and run your own scripts.
-2. Make some changes to "Hawaii" that you can compile and run. Try for instance to register a teacher for each course. Demonstrate your changes to your peers.
+2. The tutor will explain how the interface definition in the script relates to the application you have built. At the same time you will learn about the ;-operator \(aka "composition-operator"\). Add one line to the script. It gives an overview of all students that have completed at least one subject required for a particular destination. Compile and run it and compare your result to the following screenshot. It contains the result you should achieve. Note the new field "busy" under the heading "Destinations". Also explain why it produces a result that differs from "Qualifying students".
 
+![](/assets/busy.png)
 
+Extra:
+
+Add a field to "Student", that says for which destinations that student has one or more required subjects. Compile and run your change to verify the result.
 
