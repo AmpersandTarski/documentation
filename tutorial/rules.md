@@ -31,5 +31,13 @@ There are multiple ways to handle violations of rules. Based on the way a rule i
 3. **Process rule**. A rule that may be \(temporarily\) violated. A violation of a rule will be signaled to the maintainer of that rule. It simply shows work that has to be done.
 4. **Automated rule**. This is also known as a decision rule or a computational rule. Upon violation, a computer kicks in instantaneously to restore its truth.
 
+# Assignment
+
+There is a script, [Delivery](/tutorial/rules/try-it-out-delivery.md), which describes an information system in which clients and vendors can trade. Clients can place orders, which vendors can accept and deliver. We will use this script to practice with:
+
+1. understanding rules
+2. documenting rules
+3. generating functional specifications.
+
 
 

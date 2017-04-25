@@ -41,8 +41,8 @@
 * [Tutorial](tutorial.md)
   * [What is an information system?](tutorial/what-is-an-information-system.md)
   * [RAP2](tutorial/rap2.md)
-  * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [Rules](tutorial/rules.md)
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
+  * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [RAP3](tutorial/rap3.md)
 

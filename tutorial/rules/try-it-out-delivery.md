@@ -5,9 +5,7 @@ Consider the following script. You can compile and run it in [RAP2](http://is.cs
 ```
 CONTEXT Delivery IN ENGLISH
 
--- Relations and populations
 
--- Client
 
 clientName :: Client -> Name
  =  [ ("Client_1"      , "Martijn")
@@ -223,6 +221,4 @@ ENDCONTEXT
 ## Assignment
 
 This script contains a `RULE` called `orderInAssortment`. Describe the meaning and the purpose of this rule. It may help to play with the script and discussing this rule with your peers. Add your meaning and purpose to the script and make sure it compiles and runs.
-
-
 
