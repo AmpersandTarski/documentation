@@ -7,7 +7,7 @@ CONTEXT Delivery IN ENGLISH
 
 
 
-clientName :: Client -> Name
+clientName :: Client->Name
  =  [ ("Client_1"      , "Martijn")
     ; ("Client_2"      , "Stef")
     ]
@@ -93,7 +93,7 @@ MESSAGE "Not all accepted orders have been priced."
 VIOLATION (SRC I, TXT " has been accepted by ", TGT I, TXT " but hasn't been priced.")
 
 ROLE Vendor MAINTAINS allAccepted
-ROLE OPA MAINTAINS allPrized
+ROLE OPA MAINTAINS allPriced
 
 
 ROLE Client MAINTAINS dummy
