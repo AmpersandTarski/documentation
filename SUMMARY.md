@@ -45,4 +45,5 @@
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [RAP3](tutorial/rap3.md)
+  * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
 
