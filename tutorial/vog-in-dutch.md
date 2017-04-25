@@ -14,5 +14,9 @@ Scope 1: de administratieve afhandeling. Dit betreft hetgeen beschreven is in [p
 
 Scope 2: beoordeling van de aanvraag. Dit betreft hetgeen beschreven is in [paragraaf 3 van de Beleidsregels VOG-NP-RP 2013](http://wetten.overheid.nl/jci1.3:c:BWBR0032949&paragraaf=3). We beperken ons tot aanvragen van natuurlijke personen.
 
+## Opdracht
+
+Bestudeer \(voor zover relevant en voor zover de tijd het toelaat\) de wettelijke bronnen en verwerk deze in een Ampersand-script. Dit werkstuk is bedoeld om te zijner tijd uit te groeien tot een volwaardig prototype voor een systeem dat VOG-aanvragen registreert en afhandelt.
+
 [^1]: [art. 5 lid 1 Organisatiebesluit Dienst Justis 2015](http://wetten.overheid.nl/jci1.3:c:BWBR0036957&paragraaf=2&artikel=5&lid=1): De afdeling Centraal Orgaan Verklaring Omtrent het Gedrag \(COVOG\) is belast met de voorbereiding en uitvoering van beslissingen van de minister aangaande het verlenen, weigeren of intrekken van een verklaring omtrent het gedrag van natuurlijke personen of rechtspersonen als bedoeld in de Wet justitiële en strafvorderlijke gegevens.
 
