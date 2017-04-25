@@ -61,7 +61,7 @@ orderTotal :: Order * Price [UNI]
 
 orderedBy :: Order -> Client
 --  = [ ("Order_1", "Client_2") ]
-orderedAt :: Order -> Vendor
+RELATION orderedAt [Order* Vendor] [UNI,TOT]
 --  = [ ("Order_1", "Vendor_1") ]
 orderOf :: Order * Product [TOT]
 --  = [ ("Order_1", "Product_1") ]
@@ -177,15 +177,6 @@ BOX [ "Name"     : vendorName
          , vendor  :orderedAt;vendorName
          ]
 
-    ]
-INTERFACE Order (orderTotal) FOR OPA : I[Order]
-BOX [ "Client"   : orderedBy
-    , "Vendor"   : orderedAt
-    , "Products" : orderOf
-      BOX [ Product : I
-          , Price : productPrice
-          ]
-    , "Total price" : orderTotal
     ]
 INTERFACE Product (productName, productPrice) FOR Vendor : I[Product]
 BOX [ "Name"    : productName
