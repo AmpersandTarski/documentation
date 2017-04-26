@@ -12,6 +12,7 @@
   * [Context](modeling/context.md)
   * [Relations & Concepts](modeling/relationsand_concepts_md.md)
   * [Rules](modeling/rules.md)
+    * [Violations](modeling/rules/violations.md)
   * [Interfaces](modeling/interfaces.md)
 * [Ampersand Syntax](syntax/syntax.md)
   * [The CONCEPT statement](syntax/concept.md)
@@ -37,6 +38,7 @@
   * [Security](prototypes/limitations-and-features.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Semantics](semantics.md)
+* [Properties](modeling/properties.md)
 * [Theory](theory.md)
 * [Tutorial](tutorial.md)
   * [What is an information system?](tutorial/what-is-an-information-system.md)
@@ -44,6 +46,7 @@
   * [Rules](tutorial/rules.md)
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
+  * [Properties](modeling/properties.md)
   * [RAP3](tutorial/rap3.md)
   * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
 
