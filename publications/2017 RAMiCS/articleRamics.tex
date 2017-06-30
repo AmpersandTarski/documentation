@@ -1,18 +1,18 @@
 \documentclass{svproc}
 \usepackage{graphicx}
-%\usepackage{multicol}
-%\usepackage{footmisc}
+\usepackage{multicol}
+\usepackage{footmisc}
 \usepackage{amstext}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[english]{babel}
-%\usepackage[official,right]{eurosym}
+\usepackage[official,right]{eurosym}
 \selectlanguage{english}
 \include{preamramics}
 \begin{document}
 
-\title{Ampersand uses Relation Algebra as Programming Language}
-\toctitle{Ampersand uses Relation Algebra as Programming Language}
+\title{Software Development in Relation Algebra with Ampersand}
+\toctitle{Software Development in Relation Algebra with Ampersand}
 %\titlerunning{Ampersand} % (for running head)
 \author{Stef Joosten\inst{1,}\inst{2} (0000-0001-8308-0189)}
 %orcid.org/0000-0001-8308-0189
@@ -25,15 +25,14 @@
 \maketitle
 
 \abstract{Relation Algebra can be used as a programming language for building information systems.
-	This paper demonstrates the principle by presenting a case study together with the theory behind programming in Relation Algebra.
-	As a case study, we have developed a database-application for legal reasoning.
-	We discuss a small part of it to illustrate the mechanisms of programming in Relation Algebra.
+	This paper presents a case study to demonstrate this principle.
+	We have developed a database-application for legal reasoning as a case study,
+	of which a small part is discussed in this paper to illustrate the mechanisms of programming in Relation Algebra.
 	Beside being declarative, relation algebra comes with attractive promises for developing big software.
 	The compiler that was used for this case study, Ampersand, is the result of an open source project.
-	Ampersand has been tried and tested in practice and is available as free open source software\footnote{\tt https://github.com/AmpersandTarski/Ampersand}.
-	This article is an extended version of a conference paper presented at RAMiCS-2017 \cite{Joosten2017}.
+	Ampersand has been tried and tested in practice and is available as free open source software.
 \keywords{relation algebra, software development, legal reasoning, information systems design, Ampersand, MirrorMe, big software}
-	}
+	}% abstract contains 102 words
 
 \section{Introduction}
 \label{sct:Introduction}
@@ -47,7 +46,7 @@
 	It stands in the tradition of relation algebra~\cite{Maddux06}, logic programming~\cite{Lloyd1984},
 	database application programming~\cite{Codd70}, and formal specification of software.
 	Ampersand uses these ideas to compile relation algebra to working software, an idea which is also found in RelView~\cite{Berghammer2005} by Berghammer (Univ. of Kiel).
-	Some differences with earlier programming languages are discussed in section~\ref{sct:Reflection}.
+	Some differences with earlier programming languages are discussed in section~\ref{sct:Reflection}, after presenting the case study.
 	
 	The user may regard Ampersand as a programming language, especially suited for designing the back-end of information systems.
 	The axioms of Tarski can be used to manipulate expressions in a way that preserves meaning~\cite{vdWoude2011}.
@@ -58,23 +57,14 @@
 \footnote{A \define{brief} is a document that is meant to summarize a lawsuit for the judge and counterparty.
 	It provides legal reasons for claims in a lawsuit based on regulations, precedents, and other legally acceptable sources.
 	It shows how the reasoning applies to facts from the case.}.
-	To the programmer, this offers the challenge to represent the problem of legal reasoning in relation algebra.
-	This challenge is by no means simple, but outside the scope of this paper.
-	In the Ampersand project at the Open University of the Netherlands,
-	we are studying practical and didactical issues of software development in relation algebra~\cite{Michels2015}.
+	The challenge is to create a program that consists of relation algebra as much as possible.
+	In doing so, we hope to learn more about software development in relation algebra.
 
-	The contribution of this paper is twofold.
-	The case study contributes to the idea that programming can be done in relation algebra.
-	The theory in section~\ref{sct:Code Fragments} contributes a theory to assist in preserving invariants.
-	That theory has been consolidated in the Archive of Formal Proofs\footnote{https://www.isa-afp.org/}~\cite{Joosten-AFP17}.
-	All proofs upon which this paper is based have been checked using the theorem prover Isabelle~\cite{Nipkow2002}.
-
-	Section~\ref{sct:Ampersand} introduces Ampersand and its semantics.
-	Section~\ref{sct:Conceptual analysis} introduces part of a theory of legal reasoning,
+	Section~\ref{sct:Ampersand} introduces Ampersand and its computational semantics.
+	Section~\ref{sct:Conceptual analysis} introduces a theory of legal reasoning,
 	which was developed for argument assistance.
 	Section~\ref{sct:Programming in RA} discusses the programming mechanism in the application,
 	and section~\ref{sct:Programming} visualizes that mechanism.
-	Section~\ref{sct:Code Fragments} presents one way (of infinitely many) to derive code for arbitrary rules in relation algebra.
 	Section~\ref{sct:Reflection} reflects on software development in Ampersand.
 	It also provides an overview of the use of Ampersand in practice and an outlook to its further development.
 
@@ -84,12 +74,10 @@
 	The reader is expected to have sufficient background in relation algebra,
 	in order to understand the remainder of this paper.
 
-	The core of an Ampersand-script is a triple $\la\rules,\rels,\concepts\ra$,
-	which consists of a set of rules $\rules$, relations $\rels$, and concepts $\concepts$.
+	The core of an Ampersand-script is a tuple $\la\rules,\rels,\concepts,\mathfrak{T}\ra$, which consists of a set of rules $\rules$, relations $\rels$, concepts $\concepts$, and a type function $\mathfrak{T}$.
 	Ampersand-scripts are interpreted by the compiler as an information system.
 	The rules constitute a theory in heterogeneous relation algebra.
 	They constrain a body of data that resides in a database.
-
 	The Ampersand-compiler generates a database from relations in the script.
 	A database-application%
 \footnote{Ampersand generates an application that consists of a relational database and interface components.
@@ -102,11 +90,11 @@
 	The phase in which Ampersand takes a script, and turns it into a database, is what we will refer to as \define{compile-time}.
 	The phase in which a user interacts with the database, is what we will refer to as \define{run-time}.
 	At run-time, Ampersand can decide which rules are satisfied by querying the database.
-	The compiler generates all software needed to keep rules satisfied at run-time.
+	The compiler generates all software needed to maintain rules at run-time.
 	If a rule is not satisfied as a result of data that has changed, that change is reverted (rolled back) to
-	preserve a state in which all rules are satisfied.
+	maintain a state in which all rules are satisfied.
 	Changes to the database are not specified by the software developer, but generated by the compiler.
-	Rules in Ampersand are kept satisfied rather than executed directly.
+	Rules in Ampersand are maintained rather than executed directly.
 	
 	Atoms are values that have no internal structure, meant to represent data elements in a database.
 	From a business perspective, atoms are used to represent concrete items of the world,
@@ -120,24 +108,24 @@
         We will use variables $A$, $B$, $C$, $D$ to represent concepts.
 	The term $\ident{A}$ represents the \emph{identity relation} of concept $A$.
 	The expression $a \in A$ means that atom $a$ is an instance of concept $A$.
-	The declaration of $A\isa B$ (pronounce: $A$ is a $B$)
-	in an Ampersand-script states that any instance of $A$ is an instance of $B$ as well.
-	We call this {\em specialization}, but it is also known as {\em generalization} or {\em subtyping}.
+	In the syntax of Ampersand, concepts form a separate syntactic category, allowing a parser to recognize them as concepts.
+%	The declaration of $A\isa B$ (pronounce: $A$ is a $B$)
+%	in an Ampersand-script states that any instance of $A$ is an instance of $B$ as well.
+%	We call this {\em specialization}, but it is also known as {\em generalization} or {\em subtyping}.
+	Ampersand also features specialization.
 	Specialization is needed to allow statements such as: ``An orange is a fruit that ....''.
-	Specialization is not used the remainder of this paper.
+	Specialization is not relevant for the remainder of this paper.
 
-	Relations (from set $\rels$) are used in information systems to store data.
-%	A \define{fact} is a statement that is true in a business context.
-%	Facts are stored and kept as data in a computer.
+	Relations (from set $\rels$) are used in information systems to store facts.
+	A \define{fact} is a statement that is true in a business context.
+	Facts are stored and kept as data in a computer.
 	As data changes over time, so do the contents of these relations.
 	In this paper relations are represented by variables $r$, $s$, and $d$.
-	We represent the declaration of a relation $r$ by $\declare{nm}{A}{B}$,
-	in which \id{nm} is a name and $A$ and $B$ are concepts.
+	We represent the declaration of a relation $r$ by $\declare{nm}{A}{B}$, in which \id{nm} is a name and $A$ and $B$ are concepts.
 	We call $A$ the source concept and $B$ the target concept of the relation.
-	The pair $\pair{A}{B}$ is called the type of the relation.
 	The term $\fullt{A}{B}$ represents the \emph{universal relation} over concepts $A$ and $B$.
 
-    The meaning of relations in Ampersand is defined by an interpretation function $\mathfrak{I}$.
+        The meaning of relations in Ampersand is defined by an interpretation function $\mathfrak{I}$.
 	It maps each relation to a set of facts.
 	Furthermore, it is a run-time requirement that the pairs in $r$ are contained in its type:
 \begin{equation}
@@ -151,56 +139,53 @@
 \item   The set of terms, $\terms$, is the smallest set that satisfies, for all $r,s \in \terms$, $d\in\rels$ and $A,B \in \concepts$: 
 \begin{eqnarray}
 	d&\in&\terms         \quad\quad\text{(every relation is a term)}\\
-	(r \cup s)&\in&\terms\quad\quad\text{(union)}\\
 	(r \cap s)&\in&\terms\quad\quad\text{(intersection)}\\
 	(r-s)&\in&\terms     \quad\quad\text{(difference)}\label{def:difference}\\
 	(r;s)&\in&\terms     \quad\quad\text{(composition)}\\
-	(r\backslash s)&\in&\terms     \quad\quad\text{(right residual)}\\
-	(r\slash s)&\in&\terms     \quad\quad\text{(left residual)}\\
 	\flip r&\in&\terms   \quad\quad\text{(converse)}\\
-	\cmpl{r}&\in&\terms   \quad\quad\text{(complement)}\\
-%	\kleeneplus r&\in&\terms   \quad\quad\text{(Kleene closure)}\\
-%	\kleenestar r&\in&\terms   \quad\quad\text{(Kleene closure)}\\
 	\ident{A}&\in&\terms \quad\quad\text{(identity)}\\
 	\fullt{A}{B}&\in&\terms \quad\quad\text{(full set)}
 \end{eqnarray}
 \end{definition}
 	Throughout the remainder of this paper,	terms are represented by variables $r$, $s$, $d$, and $t$.
-	The \define{type} of a term $r$ is a pair of concepts, given by $\tf{r}$.
+	The \define{type} of a term $r$ is a pair of concepts given by $\tf{r}$.
 	$\mathfrak{T}$ is a partial function that maps terms to types.
-	If a term has one type, it is called \define{type correct}.
-	The Ampersand compiler requires all terms to be type correct.
-	If no type can be assigned, the compiler gives an error message.
-	If multiple types are assignable to a term, the ambiguity is signalled by the compiler.
-	In that case it will also emit an error message and prompt the programmer to disambiguate the term by adding type information.
-	In practice, the derivation of types can disambiguate most terms.
-	So, the programmer experiences some freedom to denote distinct relations by the same name without the obligation to specify their types at all occurrences.
-	The compiler does not generate any code if there is a term that is not type correct.
+	If term $r$ has a type, this term is called \define{type correct}.
+	The Ampersand compiler requires all terms to be type correct, or else it will not generate any code.
 	The type function and the restrictions it suffers are discussed in~\cite{Joosten2015}.
 	However, for the remainder of this paper this is irrelevant.
 
- 	The meaning of terms in Ampersand is given by an interpretation function $\mathfrak{I}$.
+    The meaning of terms in Ampersand is an extension of interpretation function $\mathfrak{I}$.
 	Let $A$ and $B$ be finite sets of atoms, then $\mathfrak{I}$ maps each term to the set of pairs for which that term stands.
 \begin{definition}[interpretation of terms]
 \label{interpretation of terms}
 \item   For every $A,B\in\concepts$ and $r,s\in\terms$
 \begin{eqnarray}
 	\ti{r}		 &=&\{\pair{a}{b}|\ a\ r\ b\}	\\
-	\ti{r \cup s}	 &=&\{\pair{a}{b}|\ \pair{a}{b}\in\ti{r}\ \text{or }\ \pair{a}{b}\in\ti{s}\}	\\
+	%\ti{r \cup s}	 &=&\{\pair{a}{b}|\ \pair{a}{b}\in\ti{r}\ \text{or }\ \pair{a}{b}\in\ti{s}\}	\\
 	\ti{r \cap s}	 &=&\{\pair{a}{b}|\ \pair{a}{b}\in\ti{r}\ \text{and}\ \pair{a}{b}\in\ti{s}\}	\\
 	\ti{r-s}	 &=&\{\pair{a}{b}|\ \pair{a}{b}\in\ti{r}\ \text{and}\ \pair{a}{b}\notin\ti{s}\}	\\
 	\ti{r;s}	 &=&\{\pair{a}{c}|\ \text{for some}\ b,\ \pair{a}{b}\in\ti{r}\ \text{and}\ \pair{b}{c}\in\ti{s}\}	\\
-	\ti{r\backslash s}	 &=&\{\pair{b}{c}|\ \text{for all}\ a,\ \pair{a}{b}\in\ti{r}\ \text{implies}\ \pair{a}{c}\in\ti{s}\}	\\
-	\ti{r\slash s}	 &=&\{\pair{a}{b}|\ \text{for all}\ c,\ \pair{b}{c}\in\ti{s}\ \text{implies}\ \pair{a}{c}\in\ti{r}\}	\\
 	\ti{\flip{r}}	 &=&\{\pair{b}{a}|\ \pair{a}{b}\in\ti{r}    \}	\\
-	\ti{\cmpl{\declare{r}{A}{B}}}	 &=&\fullt{A}{B}-r	\\
-%	\ti{\kleeneplus{r}}	 &=&\text{the smallest set that satisfies }\kleeneplus{r}=r\ \cup\ \kleeneplus{r};\kleeneplus{r}	\\
-%	\ti{\kleenestar{\declare{r}{A}{A}}}	 &=&\ident{A}\cup\kleeneplus{r}\\
 	\ti{\ident{A}} 	 &=&\{\pair{a}{a}|\ a\in A\}	\\
 	\ti{\fullt{A}{B}}&=&\{\pair{a}{b}|\ a\in A, b\in B\}
 \end{eqnarray}
 \end{definition}
-%	The Kleene closure operators (postfix $\kleeneplus{\ }$ and $\kleenestar{\ }$) have been implemented partially in the current Ampersand implementation.
+	Ampersand has more operators than the ones introduced in definition~\ref{interpretation of terms}:
+	the complement (prefix unary $-$),
+	Kleene closure operators (postfix $\kleeneplus{\ }$ and $\kleenestar{\ }$),
+	left- and right residuals (infix $\backslash$ and $/$),
+	relational addition (infix $\dagger$),
+	and product (infix $\times$).
+	These are all expressible in the definitions above,
+	so we have limited this exposition to the operators introduced above.
+
+	The complement operator is defined by means of the binary difference operator (Equation~\ref{def:difference}).
+\begin{equation}
+	\tf{r}=\pair{A}{B}\ \Rightarrow\ \cmpl{r}\ =\ \fullt{A}{B}-r
+\label{eqn:complement}
+\end{equation}
+	This definition is elaborated in~\cite{vdWoude2011}.
 
 	A \define{rule} is a pair of terms $r,s\in\terms$ with $\tf{r}=\tf{s}$, which is syntactically recognizable as a rule.
 \[\text{RULE}\ r = s\]
@@ -224,16 +209,15 @@
 	The set $\ti{(s-r)\cup(r-s)}$ is called the \emph{violation set} of \(\text{RULE}\ r = s\).
 	To \define{resolve} violations means to change the contents of relations such that the rule is satisfied%
 \footnote{To \define{restore invariance} is sometimes used as a synonym to resolving violations.
-	To \define{preserve invariance} is sometimes used as a synonym to keeping a rule satisfied.
 	Consequently, a rule is sometimes called \define{invariant}.}.
 	Each pair in the violation set of a rule is called a violation of that rule.
 
 	The software developer must define how to resolve violations when they occur.
 	She does so by inserting and/or deleting pairs in appropriately chosen relations.
 	Whatever choice she makes, she must ensure that her code yields data that satisfies the rules.
-	When we say: ``rule $r$ specifies this action'' we mean that satisfaction of rule $r$ is a postcondition of any action specified by rule $r$. 
+	When we say: ``rule $r$ specifies this action'' we mean that satisfaction of rule $r$ is the goal of any action specified by rule $r$. 
 
-\section{Software for Legal Reasoning}
+\section{Conceptual Analysis}
 \label{sct:Conceptual analysis}
 	As a case study, an argument assistance system, MirrorMe, was built.
 	We have chosen to implement the ideas of Toulmin \cite{Toulmin1958},
@@ -244,24 +228,20 @@
 	Toulmin's ideas have been implemented before, for example in a tool called ArguMed \cite{Verheij1999}.
 
 	Software systems that support legal arguments have been around for many decades.
-	Legal reasoning differs from logic reasoning because of the human judgments that are involved.
 	Verheij~\cite{Verheij2003} distinguishes between argument assistance systems and automated reasoning systems.
-	An automated reasoning system (ARS) mimics human reasoning in an attempt to automate a decision.
-	An argument assisance system (AAS) helps its user to construct a decision.
+	Automated reasoning has never gained wide acceptance for making legal decisions,
+	because lawyers and judges alike feel that human judgment should be at the core of any legal decision.
+	Attempts to apply mathematical logic to legal judgments have had limited impact for similar reasons~\cite{Prakken2005}.
+	Legal reasoning differs from logic reasoning because of the human judgments that are involved.
 	The literature on legal reasoning~\cite{Lind2007} makes it quite clear why mathematical logic alone does not suffice.
-	Legal reasoning puts a human decision at the root of its notion of truth,
-	whereas mathematical logic eradicates any human influence.
-	Legal reasoning places human judgment in the core of the very notion of truth.
-	For this reason, attempts to apply mathematical logic to legal judgments have had limited impact~\cite{Prakken2005}.
 	Argument assistance systems~\cite{Verheij2005} have been more successful,
 	because they respect the professional freedom of legal professionals to construct their own line of argumentation.
-	AASs offer help in many different ways.
+	Such systems offer help in many different ways.
 	They can help by looking up legal references, jurisdiction from the past, scholarly works etc.
 	They can also help to construct and validate arguments by keeping arguments and evidence organized.
 	They can store, disclose and share legal evidence.
 
-	In software development, logic predominates.
-	We have used it to build an AAS.
+	In our case study we use logic to reason about the correctness of a program.
 	The argumentation principles of Toulmin are \emph{implemented in} logic rather than \emph{replaced by} logic.
 	The structure of MirrorMe was designed by conceptually analysing ideas of Toulmin,
 	such as claim, warrant, argument, and rebuttal. They appear in MirrorMe as relations.
@@ -455,7 +435,7 @@
 	Let us take a closer look at the programming process.
 	Working in relation algebra, a software developer must think about satisfying constraints.
 	She considers how violations arise from changing content of relations.
-	And she thinks about insert and delete actions to resolve these violations.
+	And she thinks about insert and delete actions to restore these violations.
 	In our case study, we have reasoned with the event types: Ins $\la\id{relation}\ra$ and Del $\la\id{relation}\ra$%
 \footnote{Ins and Del are called each others duals.}.
 \begin{table}[htb]
@@ -485,480 +465,14 @@ fill shownPhrase&\small Ins \id{substituted}, Del \id{inStatement}, Del \id{show
 	In general, the software developer must decide how to resolve violations that occur as a result of some event.
 	This can be done by choosing among the duals of the event types from table~\ref{fig:violation of rules}.
 	By systematically swapping Ins for Del and vice-versa,
-	the table shows by which type of events violations can be resolved.
-	To ensure progress, the software developer will pick a different relation.
-	For resolving the violations in the same relation would resolve the violations by undoing the change.
-        Typically, preserving invariance of a rule is done by changing (one or more) different relations than the one that caused the violations.
+	the table shows by which type of events violations can be restored.
+	To ensure progress, the software developer will pick a different relation for restoring than the relation that causes the violation.
 	The software developer can draw a graph that contains all information from table~\ref{fig:violation of rules}
 	and the dual information.
 	Figure~\ref{fig:event flow} shows part of that graph.
 	A circle represents a rule, a rectangle represents an event type, and the arrows connect them.
-	The software developer can work her way through the graph, to write code to resolve violations for every event type that might occur.
+	The software developer can work her way through the graph, to write code to restore invariants for every event type that might cause violations.
 	Figure~\ref{fig:event flow} shows just that part of the graph that corresponds with the case study in this article.
-
-\section{Code Fragments}
-\label{sct:Code Fragments}
-	After the previous section, one question remains open: which code can preserve invariance and can we produce that code for arbitrary rules?
-	We shall provide an answer to this question not just for the case study at hand, but for all conceivable cases.
-	This section derives such code for every term in relation algebra.
-	The problem of generating such code suffers from arbitrariness: there are many ways to generate correct code.
-	We have not explored all possibilities, because there are too many.
-	We do give one implementation for every conceivable term, pointing out where choices are to be made.
-
-	The purpose of the code is to preserve invariance of rules by insertion and deletion into and from relations.
-	Inserting (a set of) pairs $\Delta$ into a relation $r$ yields $r\cup\Delta$.
-	Likewise, deleting pairs $\Delta$ from a relation $r$ yields $r-\Delta$.
-	In this section we derive code for computers,
-	which is built around two basic operations: insert and delete.
-	The insert operation can be represented in terms of pre- and postconditions\footnote{this idea
-	was introduced by Floyd and Hoare~\cite{Floyd1967,Hoare1969}.
-	It is well known for making assertions about computer programs and reasoning about them.}.
-\[\begin{array}{r@{~}l}
-&\{\text{pre: }\code{P}=p\}\\
-\code{INSERT}&\Delta\code{ IN P}\\
-&\{\text{post: }\code{P}=p\cup\Delta\}\\
-\end{array}\]
-
-	The delete operation is introduced similarly:
-\[\begin{array}{r@{~}l}
-&\{\text{pre: }\code{P}=p\}\\
-\code{DELETE}&\Delta\code{ FROM P}\\
-&\{\text{post: }\code{P}=p-\Delta\}\\
-\end{array}\]
-	
-	Let the following example introduce the idea of breaking and restoring invariance.
-	Suppose the rule $\code{P}\subs\code{S}\cup\code{T}$ is to be kept satisfied by a computer,
-	and \code{P}, \code{S}, and \code{T} are variables (memory locations) in that computer,
-	which represent relations.
-	We assume that before executing any code, we have $\code{P}=p$, $\code{S}=s$, and $\code{T}=t$.
-	The following example shows that inserting a set of pairs, $\Delta$, in \code{P}
-	may violate the rule.
-	Inserting the same $\Delta$ in \code{S} restores invariance.
-	In terms of code, we write:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{P}=p$, $\code{S}=s$, $\code{T}=t$ and $\code{P}\subs\code{S}\cup\code{T}$}\}\\
-\code{INSERT}&\Delta\code{ IN P}\\
-&\{\text{$\code{P}=p\cup\Delta$, $\code{S}=s$, and $\code{T}=t$, and invariance is broken: $\code{P}\not\subs\code{S}\cup\code{T}$}\}\\
-\code{INSERT}&\Delta\code{ IN S}\\
-&\{\text{postcondition: $\code{P}=p\cup\Delta$, $\code{S}=s\cup\Delta$, $\code{T}=t$, and $\code{P}\subs\code{S}\cup\code{T}$}\}\\
-\end{array}\]
-	
-	To prove that rule $\code{P}\subs\code{S}\cup\code{T}$ is kept satisfied,
-	we must show that its value afterwards is equal to $\full$,
-	under the condition that its initial value equals $\full$.
-	The initial value is $\cmpl{p}\cup s\cup t$, which we may assume.
-	The final value is $(p\cup\Delta)\subs(s\cup\Delta)\cup t$, which must be proven equal to $\full$:
-\[\begin{array}{cl}
-&(p\cup\Delta)\subs(s\cup\Delta)\cup t\\
-=&\\
-&\cmpl{p\cup\Delta}\ \cup\ s\ \cup\ \Delta\ \cup\ t\\
-=&\hspace{1in}\{\hbox{De Morgan's law}\}\\
-&(\cmpl{p}\cap\cmpl{\Delta})\ \cup\ s\ \cup\ \Delta\ \cup\ t\\
-=&\hspace{1in}\{\hbox{Distribute $\cup$ over $\cap$}\}\\
-&(\cmpl{p}\cup s\cup\Delta\cup t)\ \cap\ (\cmpl{\Delta}\cup s\cup\Delta\cup t)\\
-=&\hspace{1in}\{\cmpl{\Delta}\cup\Delta=\full\}\\
-&\cmpl{p}\cup s\cup\Delta\cup t\\
-=&\hspace{1in}\{\full\ =\ \cmpl{p}\cup s\cup t\}\\
-&\full
-\end{array}\]
-	From this derivation we may conclude that invariance of $\code{P}\subs\code{S}\cup\code{T}$ is restored.
-	From this example, we can see that $\code{INSERT }\Delta\code{ IN T}$ would have worked just as well.
-	In general, there are alternative ways of preserving invariance.
-	This calls for a systematic analysis.
-	The following sections analyze the various terms in Relation Algebra and provides some code to restore invariance of rules containing such terms.
-	We start with an analysis of rules, then we proceed with boolean operators, and finally we arrive at relational operators.
-
-\subsection{Implication Rules}
-\label{ssct:Implication Rules}
-	We will start by studying insertions and deletions in the simplest of rules:
-\begin{equation}
-\code{RULE }r\subs s\label{rule:r subs s}
-\end{equation}
-	Suppose an event occurs, e.g. $\Delta_r$ is inserted in $r$,
-	and a programmer must write code that preserves invariance of rule~\ref{rule:r subs s}.
-	This requires choosing a value for $\Delta_s$, such that equation~\ref{eqn:r subsRS s} holds:
-\begin{eqnarray}
-r\subs s&\Rightarrow&r\cup\Delta_r\subs s\cup \Delta_s\label{eqn:r subsRS s}
-\end{eqnarray}
-	The programmer can choose $\Delta_s=\Delta_r$, and call it just $\Delta$,
-	satisfying equation~\ref{eqn:r subs s} trivially by monotonicity of $\subs$:
-\begin{eqnarray}
-r\subs s&\Rightarrow&r\cup\Delta\subs s\cup \Delta\label{eqn:r subs s}
-\end{eqnarray}
-	A programmer can take the antecedent of equation~\ref{eqn:r subs s}, $r\subs s$, as precondition.
-	The consequent, $r\cup\Delta\subs s\cup \Delta$, is the postcondition.
-	She then writes the following code fragment:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{R}=r$, $\code{S}=s$, and $\code{R}\subs\code{S}$}\}\\
-\code{INSERT}&\Delta\code{ INTO R};\\
-&\{\text{$\code{R}=r\cup\Delta$, $\code{S}=s$, and $\code{R}\subs\code{S}$ is not necessarily true.}\}\\
-\code{INSERT}&\Delta\code{ INTO S}\\
-&\{\text{postcondition: $\code{R}=r\cup\Delta$, $\code{S}=s\cup\Delta$, and $\code{R}\subs\code{S}$}\}
-\end{array}\]
-	The first step, $\code{INSERT }\Delta\code{ INTO R}$, represents the event that may violate invariance of $\code{R}\subs\code{S}$.
-	The second step, $\code{INSERT }\Delta\code{ INTO S}$, represents the reaction.
-
-	A similar line of reasoning can be used for deletion as well:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{R}=r$, $\code{S}=s$, and $\code{R}\subs\code{S}$}\}\\
-\code{DELETE}&\Delta\code{ FROM S};\\
-&\{\text{$\code{R}=r$, $\code{S}=s-\Delta$, and $\code{R}\subs\code{S}$ is not necessarily true.}\}\\
-\code{DELETE}&\Delta\code{ FROM R}\\
-&\{\text{postcondition: $\code{R}=r-\Delta$, $\code{S}=s-\Delta$, and $\code{R}\subs\code{S}$}\}
-\end{array}\]
-	The proof is noteworthy similar and equally trivial:
-\begin{eqnarray}
-r\subs s&\Rightarrow&r-\Delta\subs s-\Delta\label{eqn:r subs s by deletion}
-\end{eqnarray}
-	If the event is a deletion of $\Delta$ from $r$ or an insertion into $s$, no reaction is required.
-	Such events cannot violate the invariance of rule~\ref{rule:r subs s},
-	because equations~\ref{eqn:r subs s delfrom r} and~\ref{eqn:r subs s insinto s} hold for any $\Delta$:
-\begin{eqnarray}
-r\subs s&\Rightarrow&r-\Delta\subs s\label{eqn:r subs s delfrom r}\\
-r\subs s&\Rightarrow&r\subs s\cup\Delta\label{eqn:r subs s insinto s}
-\end{eqnarray}
-
-Summarizing, some code for preserving invariance of rules of form $\code{R}\subs\code{S}$ is:
-\[\begin{array}{|l|l|l|l|}
-\hline
-\text{invariant}&\text{action}&\text{reaction}&\text{eqn.}\\ \hline
-\full=\code{R}\subs\code{S}&\code{INSERT}\ \Delta\code{ INTO R}&\code{INSERT }\Delta\code{ INTO S}&\ref{eqn:r subs s}\\
-\full=\code{R}\subs\code{S}&\code{DELETE}\ \Delta\code{ FROM S}&\code{DELETE }\Delta\code{ FROM R}&\ref{eqn:r subs s by deletion}\\
-\full=\code{R}\subs\code{S}&\code{DELETE}\ \Delta\code{ FROM R}&\code{Nop}&\ref{eqn:r subs s delfrom r}\\
-\full=\code{R}\subs\code{S}&\code{INSERT}\ \Delta\code{ INTO S}&\code{Nop}&\ref{eqn:r subs s insinto s}\\ \hline
-\end{array}\]
-Preserving an invariant of the form $\code{R}=\code{S}$ is equivalent to preserving both $\code{R}\subs\code{S}$ and $\code{S}\subs\code{R}$ simultaneously.
-
-\subsection{Rules with Boolean Operators}
-	To write code for boolean expressions,
-	we revert to the following lemma's:
-\begin{eqnarray}
-r=\cmpl{s}&\Rightarrow&r\cup\Delta=\cmpl{s-\Delta}\label{lbl:Preserve r = -s with Ins Delta into r}\\
-r=\cmpl{s}&\Rightarrow&r-\Delta=\cmpl{s\cup\Delta}\label{lbl:Preserve r = -s with Del Delta from r}\\
-t=r\cap s&\Rightarrow&t\cup\Delta=(r\cup\Delta)\cap(s\cup\Delta)\label{lbl:Preserve t=r inter s with Ins Delta into t}\\
-t=r\cup s&\Rightarrow&t-\Delta=(r-\Delta)\cup(s-\Delta)\label{lbl:Preserve t=r union s with Del Delta from t}\\
-t=r\cap s&\Rightarrow&t-\Delta=(r-\Delta)\cap s\label{lbl:Preserve t=r inter s with Del Delta from t}\\
-t=r\cup s&\Rightarrow&t\cup\Delta=(r\cup\Delta)\cup s\label{lbl:Preserve t=r union s with Ins Delta into t}
-\end{eqnarray}
-	In proof assistant Isabelle, the proof of each of these lemmas is made in zero steps, so we omit these proofs here.
-
-	Equations~\ref{lbl:Preserve r = -s with Ins Delta into r} and~\ref{lbl:Preserve r = -s with Del Delta from r}
-	show that insertion in a term means deletion from its complement and vice versa.
-	So the programmer can write the following code:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{R}=r$, $\code{S}=s$, and $\code{R}=\cmpl{\code{S}}$}\}\\
-\code{INSERT}&\Delta\code{ INTO R};\\
-&\{\text{$\code{R}=r\cup\Delta$, $\code{S}=s$, and $\code{R}=\cmpl{\code{S}}$ is not necessarily true.}\}\\
-\code{DELETE}&\Delta\code{ FROM S}\\
-&\{\text{$\code{R}=r\cup\Delta$ and $\code{S}=s-\Delta$, so by eqn.~\ref{lbl:Preserve r = -s with Ins Delta into r} we have $\code{R}=\cmpl{\code{S}}$}\}
-\end{array}\]
-	Likewise, the reaction on a deletion will be an insertion:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{R}=r$, $\code{S}=s$, and $\code{R}=\cmpl{\code{S}}$}\}\\
-\code{DELETE}&\Delta\code{ FROM R};\\
-&\{\text{$\code{R}=r-\Delta$, $\code{S}=s$, and $\code{R}=\cmpl{\code{S}}$ is not necessarily true.}\}\\
-\code{INSERT}&\Delta\code{ INTO S}\\
-&\{\code{R}=r-\Delta\text{ and }\code{S}=s\cup\Delta\text{, so by eqn.~\ref{lbl:Preserve r = -s with Del Delta from r} we have }\code{R}=\cmpl{\code{S}}\}
-\end{array}\]
-
-	Now consider equations~\ref{lbl:Preserve t=r inter s with Ins Delta into t} and~\ref{lbl:Preserve t=r union s with Del Delta from t}.
-	If \code{T} changes, both \code{R} and \code{S} must be changed accordingly.
-	Since $\cup$ and $\cap$ are associative operators, the arguments can be evaluated with no interaction between them.
-	This allows us to define a primitive, \code{ALL}, without specifying in which order it processes its arguments\footnote{... leaving room to take advantage of parallelism.}.
-	We define \code{ALL} to perform an action on any number of terms:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume }\forall\code{X}\in\code{TERMS}:\code{X}=x\}\\
-\code{ALL}&(\lambda\ x.\code{P}(x))\ \code{TERMS}\\
-&\{\forall\code{X}\in\code{TERMS}:\code{X}=\code{P}(x)\}
-\end{array}\]
-	With this primitive, we can write code for inserting pairs in \code{T},
-	using equation~\ref{lbl:Preserve t=r inter s with Ins Delta into t}:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{T}=t$, $\code{R}=r$, $\code{S}=s$, and $\code{T}=\code{R}\cap\code{S}$}\}\\
-\code{INSERT}&\Delta\code{ INTO T};\\
-&\{\text{$\code{T}=t\cup\Delta$, $\code{R}=r$, $\code{S}=s$ are true, but not necessarily $\code{T}=\code{R}\cap\code{S}$,}\\
-&~~\text{now let us assume }\forall\code{X}\in\{\code{R},\code{S}\}:\code{X}=x\}\\
-\code{ALL}&(\lambda\ x.\code{INSERT}\ \Delta\code{ INTO }x)\ [\code{R},\code{S}]\\
-&\{\forall\code{X}\in\{\code{R},\code{S}\}:\code{X}=x\cup\Delta\\
-&~~\text{so }\code{R}=r\cup\Delta\text{ and }\code{S}=s\cup\Delta\text{, so by eqn.~\ref{lbl:Preserve t=r inter s with Ins Delta into t} we have }\code{T}=\code{R}\cap\code{S}\}
-\end{array}\]
-	Similarly, we can derive code for equation~\ref{lbl:Preserve t=r union s with Del Delta from t}:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{T}=t$, $\code{R}=r$, $\code{S}=s$, and $\code{T}=\code{R}\cup\code{S}$}\}\\
-\code{DELETE}&\Delta\code{ FROM T};\\
-&\{\text{$\code{T}=t-\Delta$, $\code{R}=r$, $\code{S}=s$ are true, but not necessarily $\code{T}=\code{R}\cup\code{S}$,}\}\\
-\code{ALL}&(\lambda\ x.\code{DELETE}\ \Delta\code{ FROM }x)\ [\code{R},\code{S}]\\
-&\{\code{R}=r-\Delta\text{ and }\code{S}=s-\Delta\text{, so by eqn.~\ref{lbl:Preserve t=r union s with Del Delta from t} we have }\code{T}=\code{R}\cup\code{S}\}
-\end{array}\]
-
-	In equations~\ref{lbl:Preserve t=r inter s with Del Delta from t} and~\ref{lbl:Preserve t=r union s with Ins Delta into t},
-	a choice is being made. For that purpose we need a primitive \code{CHC} with the following specification:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume }\forall\code{X}\in\code{TERMS}:\code{X}=x\}\\
-\code{CHC}&(\lambda\ x.\code{P}(x))\ \code{TERMS}\\
-&\{\exists\code{X}\in\code{TERMS}:\code{X}=\code{P}(x)\}
-\end{array}\]
-	Note that this definition leaves open which term is selected.
-	We do know, however, that \code{P} is executed for one of the terms.
-	The following code shows how this works out for equation~\ref{lbl:Preserve t=r inter s with Del Delta from t}:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{T}=t$, $\code{R}=r$, $\code{S}=s$, and $\code{T}=\code{R}\cap\code{S}$}\}\\
-\code{DELETE}&\Delta\code{ FROM T};\\
-&\{\text{$\code{T}=t-\Delta$, $\code{R}=r$, $\code{S}=s$ are true, but not necessarily $\code{T}=\code{R}\cap\code{S}$.}\\
-&~~\text{Assume }\forall\code{X}\in\{\code{R},\code{S}\}:\code{X}=x\}\\
-\code{CHC}&(\lambda\ x.\code{DELETE}\ \Delta\code{ FROM }x)\ [\code{R},\code{S}]\\
-&\{\exists\code{X}\in\{\code{R},\code{S}\}:\code{X}=x-\Delta\\
-&~~\text{Either }\code{R}=r-\Delta\text{ or }\code{S}=s-\Delta\text{, so by eqn.~\ref{lbl:Preserve t=r inter s with Del Delta from t} we have }\code{T}=\code{R}\cap\code{S}\}
-\end{array}\]
-
-	The following code shows how this works out for equation~\ref{lbl:Preserve t=r union s with Ins Delta into t}:
-\[\begin{array}{r@{~}l}
-&\{\text{Assume $\code{T}=t$, $\code{R}=r$, $\code{S}=s$, and $\code{T}=\code{R}\cup\code{S}$}\}\\
-\code{INSERT}&\Delta\code{ INTO T};\\
-&\{\text{$\code{T}=t\cup\Delta$, $\code{R}=r$, $\code{S}=s$ are true, but not necessarily $\code{T}=\code{R}\cup\code{S}$.}\}\\
-\code{CHC}&(\lambda\ x.\code{INSERT}\ \Delta\code{ INTO }x)\ [\code{R},\code{S}]\\
-&\{\text{Either }\code{R}=r\cup\Delta\text{ or }\code{S}=s\cup\Delta\text{, so by eqn.~\ref{lbl:Preserve t=r union s with Ins Delta into t} we have }\code{T}=\code{R}\cup\code{S}\}
-\end{array}\]
-
-	Section~\ref{ssct:Implication Rules} treated rules of the form $\code{R}\subs\code{S}$.
-	Note that this rule can be rewritten to $\cmpl{\code{R}}\cup\code{S}=\full$.
-	Consequently, rules did not have to be treated separately.
-	We could have treated them as a special case of equations with boolean operators only.
-	In fact, every rule with boolean operators $\cup$, $\cap$, and $-$ can be rewritten as a number of rules in disjunctive normal form\footnote{%
-	Normalizing a boolean algebra is existing knowledge, and is considered outside the scope of this paper.} (DNF~\cite{davey1990}).
-	We can represent a rule in DNF informally by:
-\begin{eqnarray}
-\code{RULE }\cmpl{r_0}\cup\ldots\cup\cmpl{r_n}\cup s_0\cup\ldots\cup s_m
-\end{eqnarray}
-	or more formally by
-\begin{eqnarray}
-\full=\cmpl{\bigcap\id{antecedents}}\cup\bigcup\id{consequents}
-\end{eqnarray}
-	in which \id{antecedents} are the complemented (negative) terms and \id{consequents} are the non-complemented (positive) terms.
-
-	Summarizing, we have obtained code to preserve invariants in a boolean algebra:
-\[\begin{array}{|l|l|l|l|}
-\hline
-\text{invariant}&\text{action}&\text{reaction}&\text{eqn.}\\ \hline
-\code{R}=\cmpl{\code{S}}&\code{INSERT}\ \Delta\code{ INTO R}&\code{DELETE }\Delta\code{ FROM S}&\ref{lbl:Preserve r = -s with Ins Delta into r}\\
-\code{R}=\cmpl{\code{S}}&\code{DELETE}\ \Delta\code{ FROM R}&\code{INSERT }\Delta\code{ INTO S}&\ref{lbl:Preserve r = -s with Del Delta from r}\\
-\code{T}=\bigcap\code{TERMS}&\code{INSERT}\ \Delta\code{ INTO T}&\code{ALL }(\lambda\ x.\code{INSERT}\ \Delta\code{ INTO }x)\ \code{TERMS}&\ref{lbl:Preserve t=r inter s with Ins Delta into t}\\
-\code{T}=\bigcup\code{TERMS}&\code{DELETE}\ \Delta\code{ FROM T}&\code{ALL }(\lambda\ x.\code{DELETE}\ \Delta\code{ FROM }x)\ \code{TERMS}&\ref{lbl:Preserve t=r union s with Del Delta from t}\\
-\code{T}=\bigcap\code{TERMS}&\code{DELETE}\ \Delta\code{ FROM T}&\code{CHC }(\lambda\ x.\code{DELETE}\ \Delta\code{ FROM }x)\ \code{TERMS}&\ref{lbl:Preserve t=r inter s with Del Delta from t}\\
-\code{T}=\bigcup\code{TERMS}&\code{INSERT}\ \Delta\code{ INTO T}&\code{CHC }(\lambda\ x.\code{INSERT}\ \Delta\code{ INTO }x)\ \code{TERMS}&\ref{lbl:Preserve t=r union s with Ins Delta into t}\\ \hline
-\end{array}\]
-	Having treated the boolean operators, let us consider code that is needed when relational operators are involved.
-
-\subsection{Rules with relational operators}
-	This section studies how to insert pairs into a term $r;s$.
-	To formulate this precisely, we introduce an auxiliary relation $t$ to represent the term $r;s$.
-	First we will insert pairs in $t$ while preserving invariance of $t=r;s$
-	Then we will insert pairs in $r$ preserving the same rule.
-
-	To insert pairs $\Delta$ into $t$ involves finding relations $\Delta_r$ and $\Delta_s$
-	that satisfy equation~\ref{eqn:t subs r;s}.
-\begin{equation}
-t=r;s\ \Rightarrow\ t\cup\Delta=(r\cup \Delta_r);(s\cup \Delta_s)\label{eqn:t subs r;s}
-\end{equation}
-	Let us define a software primitive to compute both $\Delta_r$ and $\Delta_s$ and call it \code{NEWPAIRS}.
-	It computes $\Delta_r$ and $\Delta_s$ from $r$, $s$, and $\Delta$.
-	We can derive its postconditions from equation~\ref{eqn:t subs r;s} by means of the following derivation:
-\[\begin{array}{r@{~}l}
-&t\cup\Delta\\
-=&\hspace{1in}\{\text{since }t\cup\Delta=t\cup(\Delta-t)\}\\
-&t\cup(\Delta-t)\\
-=&\hspace{1in}\{t=r;s\text{ and let \code{NEWPAIRS} ensure that }\Delta_r;\Delta_s=\Delta-t\}\\
-&r;s\cup\Delta_r;\Delta_s\\
-=&\hspace{1in}\{\text{let \code{NEWPAIRS} ensure that }r;\Delta_s\subs t\cup\Delta\text{ and }\Delta_r;s\subs t\cup\Delta\}\\
-&r;s\cup r;\Delta_s\cup \Delta_r;s\cup \Delta_r;\Delta_s\\
-=&\hspace{1in}\{\text{distributivity}\}\\
-&(r\cup \Delta_r);(s\cup \Delta_s)
-\end{array}\]
-	The conditions in this derivation must be satisfied by \code{NEWPAIRS}. 
-	This yields the following specification of \code{NEWPAIRS}:
-\[\begin{array}{r@{~}l}
-&\{\code{R}=r\text{ and }\code{S}=s\text{ and }\code{DELTA}=\Delta\}\\
-\code{NEWPAIRS}&(\code{R}, \code{S}, \code{DELTA}): (\code{DELTAR}, \code{DELTAS})\\
-&\{\code{DELTAR};\code{DELTAS}=\Delta\text{ and }\code{R};\code{DELTAS}\subs r;s\cup\Delta\text{ and }\code{DELTAR};\code{S}\subs r;s\cup\Delta\}
-\end{array}\]
-	The pre- and postconditions of \code{NEWPAIRS} are sufficient to satisfy equation~\ref{eqn:t subs r;s}.
-	Since $t$ does not occur in the pre- and postconditions, \code{NEWPAIRS} implements equation~\ref{eqn:ins delta r;s}:
-\begin{equation}
-r;s\cup\Delta=(r\cup \Delta_r);(s\cup \Delta_s)\label{eqn:ins delta r;s}
-\end{equation}
-	Note that the specification of \code{NEWPAIRS} does not determine its implementation uniquely.
-	There are multiple ways to implement \code{NEWPAIRS}.
-	If \code{NEWPAIRS} creates one new pair for every pair in $\Delta-t$,
-	we get $r;\Delta_s=\emptyset$ and $\Delta_r;s=\emptyset$.
-	The weaker condition from the derivation, i.e. $r;\Delta_s\subs t\cup\Delta$ and $\Delta_r;s\subs t\cup\Delta$ allows some reuse of existing pairs.
-	However, any implementation that preserves invariance of equation~\ref{eqn:ins delta r;s} will do.
-
-	At this point we have the ingredients for code that preserves invariance of $\code{T}=\code{R};\code{S}$
-\[\begin{array}{l}
-\hspace{0.5in}\{\text{Assume }\code{R}=r\text{ and }\code{S}=s\text{ and }\code{T}=t\text{ and }\code{T}=\code{R};\code{S}\}\\
-\code{INSERT }\Delta\code{ INTO T};\\
-\hspace{0.5in}\{\code{R}=r\text{ and }\code{S}=s\text{ and }\code{T}=t\cup\Delta\text{, so }\code{T}\neq\code{R};\code{S}\}\\
-(\code{DELTAR},\code{DELTAS})\code{ := }\code{NEWPAIRS}(\code{R}, \code{S}, \Delta-\code{T});\\
-\hspace{0.5in}\{\code{R}=r\text{ and }\code{S}=s\text{ and }\code{T}=t\cup\Delta\text{ and }\\
-\hspace{0.575in}\code{DELTAR};\code{DELTAS}=\Delta-\code{T}\text{ and }\\
-\hspace{0.575in}\code{R};\code{DELTAS}\subs\code{T}\text{ and }\code{DELTAR};\code{S}\subs\code{T}\text{, so equation~\ref{eqn:ins delta r;s} is satisfied}\}\\
-\code{INSERT DELTAR INTO R};\\
-\hspace{0.5in}\{\code{R}=r\cup\code{DELTAR}\text{ and }\code{S}=s\text{ and }\code{T}=t\cup\Delta\}\\
-\code{INSERT DELTAS INTO S}\\
-\hspace{0.5in}\{\code{R}=r\cup\code{DELTAR}\text{ and }\code{S}=s\cup\code{DELTAS}\text{ and }\code{T}=t\cup\Delta\text{, so }\code{T}=\code{R};\code{S}\}
-\end{array}\]
-    This shows how to satisfy invariant $\code{T}=\code{R};\code{S}$ when pairs $\Delta$ are inserted into \code{T}.
-
-	Let us now study how to keep $r;s$ constant when $r$ changes.
-	Inserting pairs $\Delta$ into $r$ involves deleting pairs from $s$ such that:
-\begin{equation}
-(r\cup \Delta);(s-\Delta_s)=r;s\label{eqn:ins r del s}
-\end{equation}
-	In order to solve equation~\ref{eqn:ins r del s} towards $\Delta_s$,
-	we derive\footnote{with thanks to Peter Jipsen, who pointed out this line of reasoning.}:
-\begin{eqnarray}
-&&(r\cup \Delta);(s-\Delta_s)\ \subs\ r;s\label{eqn:rs subs t by ins r del s}\\
-&\Leftrightarrow&\nonumber\\
-&&s-\Delta_s\ \subs\ (r\cup \Delta)\backslash(r;s)\nonumber\\
-&\Leftrightarrow&\hspace{1in}\{\text{apply }x-y=z\ \Leftrightarrow\ x=z\cup y\text{ twice.}\}\nonumber\\
-&&s-(r\cup \Delta)\backslash(r;s)\ \subs\ \Delta_s\nonumber
-\end{eqnarray}
-	This derivation shows that every solution $\Delta_s$ contains $s-(r\cup \Delta)\backslash(r;s)$.
-	So the latter, $s-(r\cup \Delta)\backslash(r;s)$, is the smallest solution.
-
-	By using the absorption property
-\begin{equation}
-s-(s\cap x)=s-x\label{absorb x}
-\end{equation}
-	it is obvious that $(r\cup \Delta)\backslash(r;s)$ is a solution too.
-	Even though this solution may contain more pairs, it is equivalent to the minimal solution.
-
-	The smallest solution might not contain all pairs from $r;s$.
-	The missing pairs are $r;s-(r\cup\Delta);(s-(r\cup \Delta)\backslash(r;s))$.
-	Therefore it may be necessary to reintroduce these missing pairs afterwards.
-	Fortunately, we have just shown how to do just that with \code{NEWPAIRS}.
-	This provides us with all the ingredients for code that preserves invariance of $\code{R};\code{S}=\code{T}$
-\[\begin{array}{l}
-\hspace{0.5in}\{\text{Assume }\code{R}=r\text{ and }\code{S}=s\text{ and }\code{T}=r;s\text{, so }\code{R};\code{S}=\code{T}\}\\
-\code{INSERT }\Delta\code{ INTO R};\\
-\hspace{0.5in}\{\code{R}=r\cup\Delta\text{ and }\code{S}=s\text{ and }\code{T}=r;s\text{, so }\code{R};\code{S}\neq\code{T}\}\\
-\code{DELETE R}\backslash\code{T FROM S};\\
-\hspace{0.5in}\{\text{Since }\code{R}=r\cup\Delta\text{ and }\code{T}=r;s\text{, we have }\code{R}\backslash\code{T}=(r\cup \Delta)\backslash(r;s)\\
-\hspace{0.575in}\text{So }\code{S}=s-(r\cup \Delta)\backslash(r;s)\text{ and therefore}\\
-\hspace{0.575in}\code{R};\code{S}\subs r;s\}\\
-(\code{DELTAR},\code{DELTAS})\code{ := }\code{NEWPAIRS}(\code{R},\ \code{S},\ \code{T}-\code{R};\code{S});\\
-\code{INSERT DELTAR INTO R};\\
-\code{INSERT DELTAS INTO S}\\
-\hspace{0.5in}\{\code{R};\code{S}=r;s\cup(\code{T}-\code{R};\code{S})=r;s\\
-\hspace{0.575in}\text{so }\code{R};\code{S}=\code{T}\}
-\end{array}\]
-
-
-	Let us now study how to delete pairs $\Delta$ from $r$ while keeping $r;s$ constant.
-	This involves inserting pairs into $s$ such that:
-\begin{equation}
-(r-\Delta);(s\cup\Delta_s)=r;s\label{eqn:del r ins s}
-\end{equation}
-	The largest solution of equation~\ref{eqn:del r ins s} follows from the law $x;(x\backslash y)\subs y$:
-\begin{eqnarray}
-&&x;(x\backslash y)\ \subs\ y\nonumber\\
-&\Leftrightarrow&\hspace{1in}\{\text{Let }x=r-\Delta\text{ and }y=r;s)\}\nonumber\\
-&&(r-\Delta);((r-\Delta)\backslash(r;s))\ \subs\ r;s\nonumber\\
-&\Leftrightarrow&\hspace{1in}\{\text{Let }\Delta_s\ =\ (r-\Delta)\backslash(r;s)\}\nonumber\\
-&&(r-\Delta);\Delta_s\ \subs\ r;s\nonumber\\
-&\Leftrightarrow&\hspace{1in}\{p;x\subs p;q\ \Leftrightarrow\ p;(q\cup x)\subs p;q\}\nonumber\\
-&&(r-\Delta);(s\cup\Delta_s)\ \subs\ r;s\nonumber
-\end{eqnarray}
-	This derivation shows that $(r-\Delta)\backslash(r;s)$, is the largest solution.
-
-	Once again, we might not have all pairs from $r;s$,
-	so eqn.~\ref{eqn:del r ins s} needs to be completed with the missing pairs.
-	The missing pairs are $r;s-(r-\Delta);(s\cup(r-\Delta)\backslash(r;s))$.
-	In this case too, these missing pairs can be reintroduced afterwards.
-	This provides us with all the ingredients for code that preserves invariance of $\code{R};\code{S}=\code{T}$
-\[\begin{array}{l}
-\hspace{0.5in}\{\text{Assume }\code{R}=r\text{ and }\code{S}=s\text{ and }\code{T}=r;s\text{, so }\code{R};\code{S}=\code{T}\}\\
-\code{DELETE }\Delta\code{ FROM R};\\
-\hspace{0.5in}\{\code{R}=r-\Delta\text{ and }\code{S}=s\text{ and }\code{T}=r;s\text{, so possibly }\code{R};\code{S}\neq\code{T}\}\\
-\code{INSERT R}\backslash\code{T INTO S};\\
-\hspace{0.5in}\{\text{Since }\code{R}=r-\Delta\text{ and }\code{T}=r;s\text{, we have }\code{R}\backslash\code{T}=(r-\Delta)\backslash(r;s)\\
-\hspace{0.575in}\text{So }\code{S}=s\cup(r-\Delta)\backslash(r;s)\text{ and therefore}\\
-\hspace{0.575in}\code{R};\code{S}\subs r;s\}\\
-(\code{DELTAR},\code{DELTAS})\code{ := }\code{NEWPAIRS}(\code{R},\ \code{S},\ \code{T}-\code{R};\code{S});\\
-\code{INSERT DELTAR INTO R};\\
-\code{INSERT DELTAS INTO S}\\
-\hspace{0.5in}\{\code{R};\code{S}=r;s\cup(\code{T}-\code{R};\code{S})=r;s\\
-\hspace{0.575in}\text{so }\code{R};\code{S}=\code{T}\}
-\end{array}\]
-
-	Summarizing, we have obtained some more code to preserve invariants in a relation algebra:
-\[\begin{array}{|l|l|l|l|}
-\hline
-\text{invariants}&\text{action}&\text{reaction}&\text{eqn.}\\ \hline
-\begin{array}{l}
-\code{R};\code{S}\subs\code{T}\\
-\code{S}\subs\code{R}\backslash\code{T}\\
-\code{R}\subs\code{T}\slash\code{S}
-\end{array}&\code{INSERT}\ \Delta\code{ INTO R}&\code{DELETE R}\backslash\code{T FROM S}&\ref{eqn:rs subs t by ins r del s}\\ \hline
-\begin{array}{l}
-\code{R};\code{S}\subs\code{T}\\
-\code{S}\subs\code{R}\backslash\code{T}\\
-\code{R}\subs\code{T}\slash\code{S}
-\end{array}&\code{DELETE}\ \Delta\code{ FROM R}&\code{Nop}&\\ \hline
-\code{T}\subs\code{R};\code{S}&\code{INSERT}\ \Delta\code{ INTO T}&
-\begin{array}{l}
-(\code{DELTAR},\code{DELTAS})\code{:=NEWPAIRS}(\code{R},\ \code{S},\ \Delta-\code{T});\\
-\code{INSERT DELTAR INTO R};\\
-\code{INSERT DELTAS INTO S}
-\end{array}&\ref{eqn:ins delta r;s}\\ \hline
-\code{T}\subs\code{R};\code{S}&\code{DELETE}\ \Delta\code{ FROM T}&\code{Nop}&\\ \hline
-\code{T}\subs\code{R};\code{S}&\code{INSERT}\ \Delta\code{ INTO R}&\code{Nop}&\\ \hline
-\code{T}\subs\code{R};\code{S}&\code{DELETE}\ \Delta\code{ FROM R}&\code{INSERT R}\backslash\code{T INTO S}&\\ \hline
-\code{R};\code{S}=\code{T}&\code{INSERT}\ \Delta\code{ INTO R}&
-\begin{array}{l}
-\code{DELETE R}\backslash\code{T FROM S};\\
-(\code{DELTAR},\code{DELTAS})\code{:=NEWPAIRS}(\code{R},\ \code{S},\ \code{T}-\code{R};\code{S});\\
-\code{INSERT DELTAR INTO R};\\
-\code{INSERT DELTAS INTO S}
-\end{array}&\ref{eqn:ins r del s}\\ \hline
-\code{R};\code{S}=\code{T}&\code{DELETE}\ \Delta\code{ FROM R}&
-\begin{array}{l}
-\code{INSERT R}\backslash\code{T INTO S};\\
-(\code{DELTAR},\code{DELTAS})\code{:=NEWPAIRS}(\code{R},\ \code{S},\ \code{T}-\code{R};\code{S});\\
-\code{INSERT DELTAR INTO R};\\
-\code{INSERT DELTAS INTO S}
-\end{array}&\ref{eqn:del r ins s}\\ \hline
-\end{array}\]
-	The solutions given here are far from being exhaustive.
-	We illustrate this point by giving an example.
-	Suppose we have $\code{T}\subs\code{R};\code{S}$ and action $\code{DELETE}\ \Delta\code{ FROM R}$.
-	So the question is which pairs must be added to $s$ after pairs $\Delta$ have been removed from $r$.
-	In normal circumstances, we might just look it up in the table above, picking $\code{INSERT R}\backslash\code{T INTO S}$ as a reaction.
-	In the circumstance that initially $\code{T}=r;s$, we might reason differently.
-	We must still find a smallest value for $\Delta_s$ that satisfies:
-\begin{equation}
-r;s\ \subs\ (r-\Delta);(s\cup\Delta_s)\label{lbl:nonshrinking r;s when Del from r}
-\end{equation}
-	The following derivation shows that $\flip{(r-\Delta)};(r\cap\Delta);s$ satisfies this requirement,
-	but on one condition: for every pair in $r;s$ there must be a pair remaining behind in $r-\Delta$.
-	Here is the derivation:
-\begin{eqnarray}
-&&\flip{(r-\Delta)};(r\cap\Delta);s\ \subs\ \Delta_s\nonumber\\
-&\Rightarrow\nonumber\\
-&&(r-\Delta);\flip{(r-\Delta)};(r\cap\Delta);s\ \subs\ (r-\Delta);\Delta_s\nonumber\\
-&\Rightarrow&\hspace{1in}\{r;s;\flip{s};\flip{r} \cap\iden\ \ \subs\ (r-\Delta);\flip{(r-\Delta)}\}\nonumber\\
-&&(r\cap\Delta);s\ \subs\ (r-\Delta);\Delta_s\nonumber\\
-&\Leftrightarrow\nonumber\\
-&&(r-(r-\Delta));s\ \subs\ (r-\Delta);\Delta_s\nonumber\\
-&\Rightarrow\nonumber\\
-&&(r;s)-((r-\Delta);s)\ \subs\ (r-\Delta);\Delta_s\nonumber\\
-&\Leftrightarrow\nonumber\\
-&&r;s\ \subs\ (r-\Delta);s \cup (r-\Delta);\Delta_s\nonumber\\
-&\Leftrightarrow\nonumber\\
-&&r;s\ \subs\ (r-\Delta);(s \cup \Delta_s)\nonumber
-\end{eqnarray}
-	This derivation justifies the reaction $\code{INSERT }\flip{(r-\Delta)};(r\cap\Delta);s\code{ INTO S}$,
-	but only if $r;s;\flip{s};\flip{r} \cap\iden\ \ \subs\ (r-\Delta);\flip{(r-\Delta)}$.
 
 \section{Reflection}
 \label{sct:Reflection}

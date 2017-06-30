@@ -1,6 +1,7 @@
 % Ampersand -----------------------------------------------------------
 
 \def\id#1{\text{\em #1\/}}
+\newcommand{\code}[1]{\text{\tt\small #1}}
 \newcommand{\stmtText}[1]{``{\small\tt #1}''}
 \newcommand{\dom}[1]{\id{dom}(#1)}
 \newcommand{\cod}[1]{\id{cod}(#1)}
@@ -12,10 +13,14 @@
 \newcommand{\theCode}{\url{http://cs.ru.nl/~B.Joosten/ampTypes/}}
 \newcommand{\la}{\langle}
 \newcommand{\ra}{\rangle}
-%\newcommand{\full}{\mathbb{V}}
-\newcommand{\fullt}[2]{\mathbb{V}_{[\id{\small #1}\times\id{\small #2}]}}
-%\newcommand{\iden}[1]{\mathbb{I}}
+\newcommand{\full}{\mathbb{V}}
+\newcommand{\declare}[3]{\id{#1}_{\pair{#2}{#3}}}
+\newcommand{\fullt}[2]{\mathbb{V}_{\pair{\small #1}{\small #2}}}
+\newcommand{\iden}[1]{\mathbb{I}}
 \newcommand{\ident}[1]{\mathbb{I}_{\id{\small #1}}}
+\newcommand{\expr}[3]{(#1)_{#2\times #3}}
+\newcommand{\pair}[2]{\la{#1},{#2}\ra}
+\newcommand{\atom}[1]{{\tt\small #1}}
 \newcommand{\atoms}{\mathbb{A}}
 \newcommand{\concepts}{\mathbb{C}}
 \newcommand{\decls}{\mathbb{D}}  %% names of relations
@@ -54,10 +59,6 @@
 \newcommand{\alland}{\bigwedge}
 \newcommand{\mph}[3]{#1_{#2\times #3}}
 \newcommand{\mphu}[1]{#1_{\univ\times\univ}}
-\newcommand{\expr}[3]{(#1)_{#2\times #3}}
-\newcommand{\declare}[3]{\id{#1}_{\pair{#2}{#3}}}
-\newcommand{\pair}[2]{\la{#1},{#2}\ra}
-\newcommand{\atom}[1]{{\tt\small #1}}
 
 %-----------------------------------------
 \newcommand{\kse}{\hspace*{1.7em}}
