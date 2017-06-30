@@ -1,6 +1,7 @@
 chapter AFP
 
-session Invariant_Increments (AFP) = "Main" +
+session Invariant_Increments (AFP) = Main +
+  options [timeout = 300, document = pdf, document_output = "output"]
   theories
     Increments
   document_files
