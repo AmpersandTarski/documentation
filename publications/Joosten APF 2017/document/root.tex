@@ -1,0 +1,57 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsfonts, amsmath, amssymb}
+
+% this should be the last package used
+\usepackage{pdfsetup}
+
+% urls in roman style, theory text in math-similar italics
+\urlstyle{rm}
+\isabellestyle{it}
+
+
+\begin{document}
+\title{Proofs for Preserving Invariant Rules in Relation Algebra}
+\author{Stef Joosten (0000-0001-8308-0189)}
+%orcid.org/0000-0001-8308-0189
+\maketitle
+
+\begin{abstract}
+	Relation Algebra can be used as a programming language for building information systems.
+	This claim was made in a paper~\cite{Joosten2017} at the conference
+	``Relational and Algebraic Methods in Computer Science''.
+	This was demonstrated and presented in Lyon on May 17th of 2017 at the 16th edition of the conference.
+	It has been implemented in a tool called Ampersand,
+	in which programming is done by specifying invariant rules.
+	An invariant is a rule that must remain satisfied as long as it is valid in its context.
+	This paper contains the proofs that are needed to build the code for such software.
+	It is a companion paper to the extended version of the RAMiCS-2017 paper~\cite{Joosten-AFP17}.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+\label{sct:Introduction}
+	This paper presents proofs that are used for programming information systems in relation algebra.
+	A compiler, Ampersand~\cite{Michels2011}, is used to compile concepts, relations and rules into a working database-application.
+	Ampersand is a syntactically sugared version of heterogeneous relation algebra~\cite{Schmidt1997}.
+	
+	The user may regard Ampersand as a programming language, especially suited for designing the back-end of information systems.
+	The axioms of Tarski can be used to manipulate expressions in a way that preserves meaning~\cite{vdWoude2011}.
+	This makes Ampersand a declarative language.
+
+	This paper contributes by publishing the required proofs in the Archive of Formal Proofs\footnote{https://www.isa-afp.org/}.
+	It means that every proof presented here has been validated in the theorem prover Isabelle~\cite{Nipkow2002}.
+	These proofs contribute to a theory to assist in preserving invariants.
+
+\input{session}
+
+\bibliographystyle{abbrv}
+\bibliography{doc}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

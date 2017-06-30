@@ -1,0 +1,8 @@
+chapter AFP
+
+session Invariant_Increments (AFP) = "Main" +
+  theories
+    Increments
+  document_files
+    "root.tex"
+    "root.bib"
