@@ -27,7 +27,7 @@ Using Ampersand allows you to communicate to the business its own jargon in orde
 The design of the Ampersand language has a particular philosophy. You will work with [business rules](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf). This lets you communicate effectively with users and other business stakeholders. The language Ampersand consists of the following elements:
 1. The language is **strongly and statically typed**. This helps a programmer to write correct code and enables an efficient implementation of that code.
 2. The language is **based on relation algebra**, because relation algebra has two useful interpretations. One interpretation is in natural language. That helps to involve business stakeholders. The other interpretation is working software. That is necessary to generate a web application and its database directly from an Ampersand script.
-3. The language is **declarative**. This yields clarity in the semantics, which do not rely on side effects.
+3. The language is **[declarative](/why-declarative.md "Why Declarative?")**. This yields clarity in the semantics.
 4. The language offers **incremental development**. The programmer makes progress by adding restrictions. At any point he can generate software and use that as a working prototype for the definitive information system.
 5. The language offers **compositionality**. Each system is a composition of design patterns. As a result, larger systems can be assembled from parts. Each part can be developed independently and reused.
 6. Documentation can be embedded in the specification.
