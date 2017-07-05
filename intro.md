@@ -12,13 +12,6 @@ The purpose of the include here below is that the summary is printed at the fron
 -->
 
 
-## ... to contribute to this documentation
-
-If you have anything to fix or details to add, just post a comment next to the paragraph. We really appreciate if you do so, because our readers know best what it is they are looking for in the docs.
-
-You can do that by clicking the '+' icon that appears when you hover above the paragraph. Don't be shy! Try it out!
-
-
 ## About Ampersand
 The purpose of Ampersand is to help you develop information systems that actually do what its intended users want them to do. It allows you to offer information systems to the business that provably comply to the rules by which they conduct their business. How cool is that!
 
