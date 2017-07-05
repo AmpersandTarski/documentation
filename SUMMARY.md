@@ -49,4 +49,5 @@
   * [Properties](modeling/properties.md)
   * [RAP3](tutorial/rap3.md)
   * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
+* [Why Declarative?](why-declarative.md)
 
