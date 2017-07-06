@@ -14,3 +14,6 @@ How does it work?
 8. Design subsystems[^2] in isolation, due to _conceptual independence_. Ampersand lets you combine subsystems into larger systems, automating the burden of combining them.  Reuse _design patterns_ to assemble systems, rather than re-invent from scratch. 
 9. Document your design embedded in the specification, so you always have up-to-date _documentation_ which is consistent with your design.
 
+[^1]: A domain language is the business language upon which stakeholders can agree. This is usually a very small subset of the actual business language, because you only use the part that is relevant in your information system.
+
+[^2]: Think of subsystems as in a car: it consists of a fuel-subsystem, a climate-subsystem, a comfort-subsystem, an electrical subsystem, etcetera. Think of subsystems as in a human body: it consists of a circulatory system, a muscle system, a nervous system, etcetera.

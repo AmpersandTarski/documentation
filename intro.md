@@ -20,8 +20,3 @@ Unless otherwise specified, everything in this repository is covered by the foll
 _**Ampersand Documentation**_ by the [the Ampersand team](https://www.gitbook.com/@ampersandtarski) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
 Based on a work at [https://github.com/AmpersandTarski/documentation](https://github.com/AmpersandTarski/documentation)
-
-[^1]: A domain language is the business language upon which stakeholders can agree. This is usually a very small subset of the actual business language, because you only use the part that is relevant in your information system.
-
-[^2]: Think of subsystems as in a car: it consists of a fuel-subsystem, a climate-subsystem, a comfort-subsystem, an electrical subsystem, etcetera. Think of subsystems as in a human body: it consists of a circulatory system, a muscle system, a nervous system, etcetera.
-
