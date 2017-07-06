@@ -1,6 +1,8 @@
-# Installation
+# How to avoid installing Ampersand
+Just go to http://ampersand.tarski.nl/RAP3. Register and get started right away. At no cost (for you, for now).
 
-Ampersand can be run in the cloud, but you can also install the software on computers of your own. For different purposes there are different ways of installing Ampersand:
+# Install Ampersand
+If running in the cloud is not an option, you can also install the software on computers of your own. For different purposes there are different ways of installing Ampersand:
 
 1. If you just want the executable file `Ampersand.exe`, section [Installing Ampersand](https://www.gitbook.com/book/ampersandtarski/documentation/edit#) tells you how you get it.
 2. If you want to generate and run prototypes, either use the cloud \(no installation required\) or follow the instructions in section [Installing and running a prototype](/installing_and_running_a_prototype_website.html). For running a prototype on your own computer, it needs a webserver that can run javascript, PHP7 \(often PHP5.6 or later will do fine\), and a \(My\)SQL or MariaDB database server.
