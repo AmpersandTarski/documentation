@@ -61,5 +61,5 @@ In many spreadsheets, it is sufficient to add two lines above each table to info
 
 ## Assignment
 
-Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. Upload that population in the [Hawaii-application](http://52.174.4.78/Trips/#/Overview) and play around with the results. The Excel import button is located on the right in the application's menu bar.![](/assets/Excel upload button.png)
+Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. Upload that population in the [Hawaii-application](http:ampersand.tarski.nl/Hawaii/#/Overview) and play around with the results. The Excel import button is located on the right in the application's menu bar.![](/assets/Excel upload button.png)
 

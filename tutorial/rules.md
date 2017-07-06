@@ -4,7 +4,7 @@ Rules are useful to turn a heap of data into meaningful information. For that pu
 
 Let us first discuss some words that allow us to talk about rules .These are: true, false, valid, scope, stakeholder, statement, and rule. We will use these words in their conventional meaning, but in a more precise way than some people do.
 
-A rule is a statement that must be true in the context in which it is valid.  
+A rule is a statement that must be true in the context in which it is valid.
 So, a rule differs from a statement, because a statement can be either true or false.  
 Example:
 
