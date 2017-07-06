@@ -6,7 +6,7 @@ RAP3 keeps your work together under a student number. So you have to log in in t
 
 ## Disclaimer
 
-RAP3 is under development. You can expect to find children's diseases in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/Ampersand/issues). Please use the label `component:RAP3`to identify your issue as having to do with RAP3. In this way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
+RAP3 is under development. You can expect to find children's diseases in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). In this way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
 
 ## Making your first Ampersand script
 
@@ -14,8 +14,17 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
 ## Assignment
 
-1. Compile the script "Hawaii" in RAP3 and run it. The tutor will show you which sequence of clicks will make it work. In the remainder of this course you will compile and run your own scripts.
-2. Make some changes to "Hawaii" that you can compile and run. Try for instance to register a teacher for each course. Demonstrate your changes to your peers.
+1. Cut and past the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. The tutor will show you which sequence of clicks will make it work. In the remainder of this course you will compile and run your own scripts.
+2. Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Discuss and demonstrate your changes to your peers.
+
+## What have you learned?
+
+After finishing your assignment, you have learned:
+
+* that specifying relations alone suffices to define the data structure of the "Hawaii" application, because there are only three relations in this example;
+* that a rule of the business, such as "A student who registers for a trip must have passed all subjects that are required for that trip." can be formalized in Ampersand.
+* a business rule can be used to constrain data in a database.
+* an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.a
 
 
 
