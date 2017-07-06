@@ -1,9 +1,14 @@
-# You are welcome...
+# What makes you curious?...
 
-## ... to read the Ampersand documentation
-To actually read the documentation, please click on the green `Read` button at the top right hand of this page, or download the PDF. 
+1. I'm just interested to know who might use Ampersand and for which purposes ![http://ampersand.tarski.nl/CvM](/assets/59951_icon.jpg)
+2. I am a student wanting to use Ampersand in class. ![](/assets/59951_icon.jpg)
+3. I am a computer professional in need of a good method for designing an information system.
+4. I am a scientific researcher and I want to know about the theory behind Ampersand.
+5. I am a software engineer and I want to change Ampersand to suit my needs.
+6. I work in industry and I want to enhance my business by means of Ampersand.
 
-Currently, the focus of this documentation is primarily on how to use this language and the software that supports it. While this focus may change over time, we do not (yet) have such intentions. 
+# Disclaimer
+Ampersand is a project with no funds. The people who are supporting Ampersand are volunteers with little spare time. This explains why there are omissions in this text. So please condone any shortcomings. We are looking for skilled volunteers to help this project forward, by the way.
 
 <!---
 The purpose of the include here below is that the summary is printed at the front page.
