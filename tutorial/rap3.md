@@ -20,11 +20,15 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 ## What have you learned?
 
 After finishing your assignment, you have learned:
-
 * that specifying relations alone suffices to define the data structure of the "Hawaii" application, because there are only three relations in this example;
-* that a rule of the business, such as "A student who registers for a trip must have passed all subjects that are required for that trip." can be formalized in Ampersand.
-* a business rule can be used to constrain data in a database.
-* an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.a
+* an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
+
+
+
+
+
+
+
 
 
 
