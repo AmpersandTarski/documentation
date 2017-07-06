@@ -1,7 +1,7 @@
 # What makes you curious?...
 
-1. I'm just interested to know who might use Ampersand and for which purposes [![about Ampersand](/assets/59951_icon.jpg)](/RAP3)
-2. I am a student wanting to use Ampersand in class. ![](/assets/59951_icon.jpg)
+1. I'm just interested to know who might use Ampersand and for which purposes. Please continue reading on this page.
+2. I am a student wanting to use Ampersand in class. [Click here for a tutorial](/Tutorial)
 3. I am a computer professional in need of a good method for designing an information system.
 4. I am a scientific researcher and I want to know about the theory behind Ampersand.
 5. I am a software engineer and I want to change Ampersand to suit my needs.
