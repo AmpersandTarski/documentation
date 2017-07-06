@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](intro.md)
+* [Why Ampersand?](why-ampersand.md)
 * [Installation](installation/installation.md)
   * [Installing Ampersand](installation/installing_ampersand.md)
   * [Configuration](installation/configuration.md)
@@ -49,5 +50,5 @@
   * [Properties](modeling/properties.md)
   * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
   * [RAP2](tutorial/rap2.md)
-* [Why Declarative?](why-declarative.md)
+* [Why Ampersand?](why-ampersand.md)
 
