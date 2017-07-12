@@ -1,4 +1,4 @@
-This tutorial is meant for IT-professionals who want to develop information systems. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for use in a classroom, because a tutor is required to explain the theory. This theory is also available in chapter 3 of[ the coursebook](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.127.1930&rep=rep1&type=pdf) It also contains assignments to let you practice.
+documentThis tutorial is meant for IT-professionals who want to develop information systems. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for use in a classroom, because a tutor is required to explain the theory. This theory is also available in chapter 3 of[ the coursebook](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.127.1930&rep=rep1&type=pdf) It also contains assignments to let you practice.
 
 ## Overview
 
