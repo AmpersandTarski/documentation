@@ -30,7 +30,7 @@ This will build an Ampersand-compiler named "ampersand.exe" and install it into 
 ## Other software you will need
 
 1. In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend [**MiKTeX**](http://miktex.org/). Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
-2. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure **_**dot**_** and **_**neato**_** are in your path**. Also, if you compile it from source, make sure you install it with gts support.
+2. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure **_**dot**_** and **_**neato**_** are in your path ** \(set the $PATH environment variable if necessary\). Also, if you compile it from source, make sure you install it with gts support.
 3. In order to run the generated prototype, you need **Apache** \(or another web server\) with **SQL** and **PHP v 5.6 or higher**.  A practical way to arrange for this in Windows is to install [**XAMPP**](https://www.apachefriends.org/download.html)
 
    * You must create an account in SQL for `localhost`, that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents. If you use phpmyadmin this could look like:![](databaseuserconfig.jpg)
