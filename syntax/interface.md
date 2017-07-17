@@ -24,7 +24,7 @@ BOX
   ]
 ```
 
-To understand this interface, take notice of:
+To understand this fragment, take notice of:
 
 1. The name of this interface is `Person`. It follows keyword `INTERFACE`. The interface expression of this interface is `I[Person]`. It follows the colon behind the name `Person`.
 2. The interface applies to any atom from the _domain of the interface expression_. In this example, that would be any atom of type `Person`. In the example, this is `"J. Lovell"`. So, this interface is applied solely to `"J. Lovell"`.
