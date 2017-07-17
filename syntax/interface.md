@@ -4,25 +4,9 @@ Interfaces are meant for interacting with data from a dataset. You define an int
 
 Each interface has a _name_ that is unique for every interface in the same context.
 
-When running your application in your browser, you are watching one user-interface at any given moment in time. To navigate to another user-interface, you can click on any hyperlink on your screen. That hyperlink represents one atom, to which an interface applies[^1].  
-Each interface is applicable to a specific set of atoms.  
-Each interface has an _interface expression_ that determines on which atoms it applies.
+When running an application in your browser, you are watching one user-interface at any given moment in time. Each hyperlink on your screen represents an atom to which some interface applies[^1]. To navigate to that user-interface, just click on the hyperlink. You will see the interface being applied solely to the atom you just clicked. To determine the atom\(s\) to which an interface applies, each interface has an _interface expression_.
 
-To initiate the INTERFACE the standard concept SESSION must be called. This concept has relations to all concepts defined in the model. The code below is the declaration of an interface "People" that shows all atoms in the concept Person:
-
-```ampersand
-INTERFACE "People" : V[SESSION*Person]
-```
-
-The concept Person is the root-concept for this interface. The fields in the interface can show each atom in this concept and all atoms they are related to. These relations can be specified using relation algebra. The code below shows the target of the relation personName from Person to Name:
-
-```ampersand
-“Name” : personName
-```
-
-“Name” is printed on screen as the field prompt. It is a temporary variable and must be unique within the interface.
-
-## An Example
+## Example
 
 The following figure is an example of a user interface, which shows the name, status, e-mail and co-workers of a person called "J. Lovell".
 
@@ -31,7 +15,7 @@ The following figure is an example of a user interface, which shows the name, st
 The specification of this interface is given in the following code fragment
 
 ```ampersand
-INTERFACE "People" : V[SESSION*Person]
+INTERFACE Person : I[Person]
 BOX
   [ "Name"       : personName
   , "Status"     : personStatus
@@ -40,10 +24,14 @@ BOX
   ]
 ```
 
-Notice the following features:  
-1. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.  
-2. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the _field expression_ for that field. The field expression is evaluated with the root atom on the left. All atoms at the right are displayed in the field.  
-3. The interface is subject to type checking. The following relations provide an example for getting a type-correct interface:
+To understand this interface, take notice of the following features:
+
+1. The name of this interface is `Person`. It follows keyword `INTERFACE`. The interface expression of this interface is `I[Person]`. It follows the colon behind the name `Person`.
+2. The interface applies to any atom from the _domain of the interface expression_. In this example, that would be any atom of type `Person`. Let us call this atom `THIS`. In the example, `THIS` is `"J. Lovell"`.
+3. Each pair in the interface expression with `THIS` on the left gets one box in the user interface on your screen. In this example, there is but one of such pairs in `I[Person]`. That pair is  <`"J. Lovell"`, `"J. Lovell"`>. As a result this interface contains one sub-interface. The sub-interface applies to the right element of the pair it obtained from the interface expression. That is `"J. Lovell"` again, in this example.
+4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.  
+5. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the _field expression_ for that field. The field expression is evaluated with the root atom on the left. All atoms at the right are displayed in the field.  
+6. The interface is subject to type checking. The following relations provide an example for getting a type-correct interface:
 
 ```
 RELATION personName :: Person * PersonName [UNI]
