@@ -24,21 +24,23 @@ BOX
   ]
 ```
 
-To understand this interface, take notice of the following features:
+To understand this interface, take notice of:
 
 1. The name of this interface is `Person`. It follows keyword `INTERFACE`. The interface expression of this interface is `I[Person]`. It follows the colon behind the name `Person`.
-2. The interface applies to any atom from the _domain of the interface expression_. In this example, that would be any atom of type `Person`. Let us call this atom `THIS`. In the example, `THIS` is `"J. Lovell"`.
-3. Each pair in the interface expression with `THIS` on the left gets one box in the user interface on your screen. In this example, there is but one of such pairs in `I[Person]`. That pair is  <`"J. Lovell"`, `"J. Lovell"`>. As a result this interface contains one sub-interface. The sub-interface applies to the right element of the pair it obtained from the interface expression. That is `"J. Lovell"` again, in this example.
+2. The interface applies to any atom from the _domain of the interface expression_. In this example, that would be any atom of type `Person`. In the example, this is `"J. Lovell"`. So, this interface is applied solely to `"J. Lovell"`.
 4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.  
-5. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the _field expression_ for that field. The field expression is evaluated with the root atom on the left. All atoms at the right are displayed in the field.  
+5. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the _field expression_ for that field.
+5. Each field expression is evaluated with `"J. Lovell"` on the left. All atoms at the right are displayed in the field.  
 6. The interface is subject to type checking. The following relations provide an example for getting a type-correct interface:
-
 ```
 RELATION personName :: Person * PersonName [UNI]
 RELATION personStatus :: Person * PersonStatus [UNI]
 RELATION personEmail :: Person * Email [UNI,TOT]
 RELATION workswith :: Person * Person
 ```
+7. Looking at the example, we can tell that `"J. Lovell"` has one personName (which is `"J. Lovell"`), it has no personStatus, one personEmail and three persons to work with in `RELATION workswith`.
+
+
 
 ## Nesting
 
