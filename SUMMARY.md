@@ -49,4 +49,5 @@
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Semantics](semantics.md)
 * [Why Ampersand?](why-ampersand.md)
+* [Interfaces](interfaces.md)
 
