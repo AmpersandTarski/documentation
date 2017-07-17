@@ -4,7 +4,7 @@ Interfaces are meant for interacting with data from a dataset. You define an int
 
 Each interface has a _name_ that is unique for every interface in the same context.
 
-When running your application in your browser, you are watching one user-interface at any given moment in time. To navigate to another user-interface, you can click on any hyperlink on your screen. That hyperlink represents one atom, to which an interface applies[^2].  
+When running your application in your browser, you are watching one user-interface at any given moment in time. To navigate to another user-interface, you can click on any hyperlink on your screen. That hyperlink represents one atom, to which an interface applies[^1].  
 Each interface is applicable to a specific set of atoms.  
 Each interface has an _interface expression_ that determines on which atoms it applies.
 
@@ -122,7 +122,5 @@ Notice the following features:
 
 Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above. It is quite likely that you will be trying out your own ideas before you get to the end... Have fun!
 
-[^1]: 
-
-[^1]: Several interfaces may apply to the same atom. That gives you a choice on runtime to which interface you want to navigate.
+[^1] More than one interfaces may apply to the same atom. That gives you a choice on runtime to which interface you want to navigate. If no interface applies, that atom is not navigable.
 
