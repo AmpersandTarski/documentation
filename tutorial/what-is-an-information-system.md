@@ -1,4 +1,4 @@
-## Hawaii
+[](/interfaces.md)## Hawaii
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
@@ -88,4 +88,4 @@ After finishing your assignment, you have learned:
 * a business rule can be used to constrain data in a database.
 
 ## Want to learn more?
-1. How does the interface mechanism work?
+1. How does the [interface mechanism](/interfaces.md) work?
