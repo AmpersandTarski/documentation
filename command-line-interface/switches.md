@@ -1,15 +1,16 @@
-## Switches
+## Command-line options (also known as "switches")
 
-Switches are used at the command line as parameters to ampersand.exe Some of the switches are still experimental, while others are very useful. 
-Since Ampersand-v3.5.3, it is possible to use a configuration file, reducing the need to have a lot of switches every time you use ampersand.exe. A configuration file can be used using the `--config` switch.  
+Command-line options are used to tell the ampersand compiler what to do. Some of the options are still experimental. 
+Since Ampersand-v3.5.3, it is possible to use a configuration file, reducing the need to rewrite the same options every time you use ampersand.exe. A configuration file can be used using the `--config` switch.  
 
 ### Generic Program Information
 
 #### -h, -?, --help
-Print a usage message briefly summarizing these command-line options and the bug-reporting address, then exit.
+Print a usage message briefly summarizing the most common command-line options and the bug-reporting address, then exit.
+When used in combination with `--verbose`, it shows all command-line options.
 
 #### -V, --version
-Print the version number of ampersand to the standard output stream. This version number should be included in all bug reports (see below).
+Print the version number of ampersand to the standard output stream. Please mention this information in every bug report you submit (see below).
 
 ### Other switches
 
@@ -55,7 +56,7 @@ document.
 output directory (dir overrules environment variable
 CCdirOutput).
 ####  --pop-xlsx
-Generate an .xmlx file containing the populations of your script.
+Generate an .xlsx file containing the populations of your script.
 ####  --proto[=DIRECTORY] (-p)
 generate a functional prototype (overrules environment variable
 CCdirPrototype).
