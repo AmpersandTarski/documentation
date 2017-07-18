@@ -1,6 +1,6 @@
 #Installing and running a prototype
 
-In order to deploy and run prototypes, you must have installed a web server (e.g. Apache) that can run PHP7 (ok, most stuff works with PHP 5.6 or higher), and a (My)SQL database server (MySQL version 5.6 or above. MariaDB will do too). You can organize this by yourself, or read on and follow the instructions.
+In order to deploy and run a prototype that you generated, you must have installed a web server (e.g. Apache) that can run PHP (preferrably version 7, but it works with PHP 5.6 or higher), and a (My)SQL database server (MySQL version 5.6 or above. MariaDB will do too). You can organize this by yourself, or read on and follow the instructions.
 
 ## Using Xampp
 This section is primarily intended to serve those that want a quick and hasslefree installation. To do this, we use [XAMPP](https://www.apachefriends.org/index.html), as follows

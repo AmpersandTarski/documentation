@@ -29,9 +29,9 @@ This will build an Ampersand-compiler named "ampersand.exe" and install it into 
 
 ## Other software you will need
 
-1. In order to generate PDF files that contain your functional specification, you need a LaTex compiler. We recomend [**MiKTeX**](http://miktex.org/). Make sure to run [the update wizard](http://miktex.org/howto/update-miktex)! 
+1. In order to generate PDF files that contain your functional specification, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org/)[^1]. On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
 2. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure **_**dot**_** and **_**neato**_** are in your path ** \(set the $PATH environment variable if necessary\). Also, if you compile it from source, make sure you install it with gts support.
-3. In order to run the generated prototype, you need **Apache** \(or another web server\) with **SQL** and **PHP v 5.6 or higher**.  A practical way to arrange for this in Windows is to install [**XAMPP**](https://www.apachefriends.org/download.html)
+3. In order to run the generated prototype, you need **Apache** \(or another web server\) with **SQL** and **PHP v 5.6 or higher**.  In Windows, a practical way is to install [**XAMPP**](https://www.apachefriends.org/download.html)
 
    * You must create an account in SQL for `localhost`, that has a user called `ampersand` with a password `ampersand`, with rights to create/read/update/delete databases as well as their contents. If you use phpmyadmin this could look like:![](databaseuserconfig.jpg)
    * The webserver must run on `localhost` . By default you will use port 80, but you could change that if required. See the documentation of you webserver. 
@@ -39,4 +39,5 @@ This will build an Ampersand-compiler named "ampersand.exe" and install it into 
 4. You need to install [**Composer**](https://getcomposer.org/download/), because at runtime, the prototype has dependencies of libraries . Composer will take care of that.
 
 
-
+####Footnotes
+[^1]: If you haven't run LaTeX for a while, and Ampersand causes LaTeX errors, these errors may be caused by Ampersand using an updated version of LaTeX. run [the update wizard](http://miktex.org/howto/update-miktex) to get the two in sync again.
