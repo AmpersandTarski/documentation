@@ -111,9 +111,18 @@ Notice the following features:
 2. The keyword `COLS` turns the layout 90 degrees into columns.  
 3. The keyword `ROWS` is default for any box. It does not change the effect of `BOX`.
 
-## Experiment on your own.
+## Assignment
 
 Compile and run the script [Project Administration Example](https://github.com/AmpersandTarski/ampersand-models/tree/master/Examples/ProjectAdministration "from AmpersandTarski/ampersand-models"). Start by reproducing everything that is shown above. It is quite likely that you will be trying out your own ideas before you get to the end... Have fun!
+
+## What have you learned?
+After finishing your assignment, you have learned:
+
+- to explain how an interface definition is displayed on the screen of a user.
+2. to predict which data items an interface applies to, if you know which pairs are in an interface expression.
+3. to predict which data items are displayed, if you know which pairs are in a field expression.
+4. to explain which atoms are used in a sub-interface.
+5. to understand what the keywords `TABS`, `COLS`, and `ROWS` do to your display.
 
 [^1] More than one interfaces may apply to the same atom. That gives you a choice on runtime to which interface you want to navigate. If no interface applies, that atom is not navigable.
 
