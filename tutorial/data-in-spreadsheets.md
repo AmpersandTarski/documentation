@@ -66,13 +66,21 @@ In practical applications, you might want to reuse data from existing spreadshee
 You will find the Excel import function in the menu bar on the top right of your screen[^2].  
 ![](/assets/Naamloos.png)  
 
-
-This is what your upload screen looks like:![](/assets/Upload Excel.png)You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green _Upload_ button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
+This is what your upload screen looks like:
+![](/assets/Upload Excel.png)
+You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green _Upload_ button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
 
 ## Assignment
 
-Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. Upload that population in the [Hawaii-application](http:ampersand.tarski.nl/Hawaii/#/Overview) and play around with the results. The Excel import button is located on the right in the application's menu bar.![](/assets/Excel upload button.png)
+Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. As described above. Make sure to delete the population statements from your Hawaii source code, to make sure that you get to see the population from your .xlsx-file. Generate a prototype from your Hawaii-application, upload your population in Excel and play around with the results.
 
+## What have you learned?
+
+After finishing your assignment, you have learned:
+* to upload population to your Ampersand application in the form of a spreadsheet in .xlsx-format;
+* to understand how a `POPULATION`-statement relates to the contents of a spreadsheet;
+* that the contents of the spreadsheet is added to the population of your context, provided this does not lead to any conflict.
+ 
 [^1]: You can have multiple tables on each worksheet. But you can also use multiple worksheets. Whatever is most convenient for you.
 [^2]: If this function is absent, you likely do not have permission to upload Excel sheets. Contact your tutor for assistance.
 
