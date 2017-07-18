@@ -1,11 +1,11 @@
 # Rules
+Rules are useful to turn a heap of data into meaningful information. For that purpose, you must understand how rules help you to determine whether a statement is true. This section deals with formal rules only. The attraction of formal rules is that computers can be used to compute which statements are true. In business terms, these rules are specific. We shall go into the details to understand how this works.
 
-Rules are useful to turn a heap of data into meaningful information. For that purpose, you must understand how rules help you to determine whether a statement is true. This section deals with formal rules only. The attraction of formal rules is that computers can be used to compute which statements are true. We shall go into the details to understand how this works.
+##Some theory
+Let us first discuss some words that allow us to talk about rules .These are: true, false, valid, scope, stakeholder, statement, and rule. We will use these words in their conventional meaning, but in a precise way.
 
-Let us first discuss some words that allow us to talk about rules .These are: true, false, valid, scope, stakeholder, statement, and rule. We will use these words in their conventional meaning, but in a more precise way than some people do.
-
-A rule is a statement that must be true in the context in which it is valid.
-So, a rule differs from a statement, because a statement can be either true or false.  
+A _rule_ is a statement that must be true in the context in which it is valid.
+So, a rule differs from a statement, because a statement can be either true or false. A rule, on the contrary, is meant to be true.
 Example:
 
 * The statement "St. Paul street is a one way street." might be either true or false. We just have to check the road signs on St. Paul street to know. If, however, the city council of the City of St. Catharines decides that St. Paul street is a one way street, we have a rule. It is a rule because St. Paul street **must be** a one way street. 
@@ -39,5 +39,10 @@ There is a script, [Delivery](/tutorial/rules/try-it-out-delivery.md), which des
 2. documenting rules
 3. generating functional specifications.
 
+## What have you learned?
+After finishing your assignment, you have learned:
 
+* to explain the similarity and the difference between a statement an a rule;
+* to use the words true, false, valid, scope, stakeholder, statement, and rule in a meaningful way;
+* to recall and explain four distinct ways of enforcing rules.
 

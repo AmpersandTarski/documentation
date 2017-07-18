@@ -10,7 +10,6 @@
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
   * [Properties](modeling/properties.md)
   * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
-  * [RAP2](tutorial/rap2.md)
 * [Installation](installation/installation.md)
   * [Installing Ampersand](installation/installing_ampersand.md)
   * [Configuration](installation/configuration.md)
@@ -50,4 +49,5 @@
 * [Semantics](semantics.md)
 * [Why Ampersand?](why-ampersand.md)
 * [Interfaces](interfaces.md)
+* [RAP2](tutorial/rap2.md)
 
