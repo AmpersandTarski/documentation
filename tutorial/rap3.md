@@ -1,3 +1,4 @@
+# RAP3
 This section introduces the tool you will use during the tutorial: [RAP3](http://ampersand.tarski.nl/RAP3). This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and [click here](http://ampersand.tarski.nl/RAP3) to start using it.
 
 ## Identifying yourself
@@ -14,13 +15,14 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
 ## Assignment
 
-1. Cut and past the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. The tutor will show you which sequence of clicks will make it work. In the remainder of this course you will compile and run your own scripts.
+1. Cut and past the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. Otherwise, scroll down to the bottom of the screen and try it out on your own by clicking the buttons. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 2. Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Discuss and demonstrate your changes to your peers.
 
 ## What have you learned?
 
 After finishing your assignment, you have learned:
-* that specifying relations alone suffices to define the data structure of the "Hawaii" application, because there are only three relations in this example;
+* that specifying three relations suffices to define the data structure of the "Hawaii" application;
+* one rule in the business should lead to one rule in the code; 
 * an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
 
 

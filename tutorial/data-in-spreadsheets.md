@@ -4,11 +4,11 @@ In this section we will make an Ampersand script that is based on an existing sp
 
 ## Theory: tables vs. binary relations
 
-We can consider Ampersand as a finite system of relations. Every relation is a set of pairs and each pair contains two atoms. However, in the real world we also store information in wider tables, as we do in spreadsheets and relational databases. Here is the trick. If we have two pairs that share the same left atom, e.g. \(1, Abraham\) and \(1, Lincoln\), we can put them in the same row. Using the same trick, we can interpret a row in a spreadsheet as a number of pairs.
+We can consider Ampersand as a finite system of relations. Every relation is a set of \(ordered\) pairs and each pair contains two atoms. However, in the real world we also store information in wider tables, as we do in spreadsheets and relational databases. Here is the trick. If we have two pairs that share the same left atom, e.g. \(1, Abraham\) and \(1, Lincoln\), we can put them in the same row. Using the same trick, we can interpret a row in a spreadsheet as a number of pairs.
 
 ### Example
 
-Let us look at an example to get a feeling for this translation. Consider the following table.
+Let us look at an example:
 
 |  | firstname | lastname | birth |
 | --- | --- | --- | --- |
@@ -48,18 +48,31 @@ Notice that the column names in the table correspond with the relation names in 
 
 In theory, the population of the Hawaii-script might just as well be given in a spreadsheet. This works in practice too. It looks like this:
 
-| Subject | pass | required |
+| \[Subject\] | pass | required |
 | :--- | :--- | :--- |
-| \[Subject\] | \[Student\] | \[Destination\] |
+| Subject | Student | Destination |
 | Surfing | Brown | Hawaii |
 | Surfing | Conway |  |
 | Latin | Brown | Rome |
 | World Religions | Applegate |  |
 | World Religions | Brown | Rome |
 
-In many spreadsheets, it is sufficient to add two lines above each table to inform Ampersand about the relations that are populated.
+Please copy this in a spreadsheet of your own. The element in the first column with square brackets tells Ampersand that a new table starts[^1]. The first row contains relation names. The second row contains concept names. The rows that follow contain pairs. Ampersand reconstructs those pairs as in the example above.
+
+In practical applications, you might want to reuse data from existing spreadsheets. It helps when that data in that spreadsheet is organized per row, which is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated.
+
+## Uploading your spreadsheet
+
+You will find the Excel import function in the menu bar on the top right of your screen[^2].  
+![](/assets/Naamloos.png)  
+
+
+This is what your upload screen looks like:![](/assets/Upload Excel.png)You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green _Upload_ button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
 
 ## Assignment
 
 Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. Upload that population in the [Hawaii-application](http:ampersand.tarski.nl/Hawaii/#/Overview) and play around with the results. The Excel import button is located on the right in the application's menu bar.![](/assets/Excel upload button.png)
+
+[^1]: You can have multiple tables on each worksheet. But you can also use multiple worksheets. Whatever is most convenient for you.
+[^2]: If this function is absent, you likely do not have permission to upload Excel sheets. Contact your tutor for assistance.
 
