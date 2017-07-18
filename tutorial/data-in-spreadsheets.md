@@ -1,6 +1,6 @@
 # Data in spreadsheets
 
-In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for bottom-up design of an information system. This has many uses in practice, because people tend to administer a lot in spreadsheets for lack of proper information systems to support them. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes.
+In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for quickly adding population to an information system. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes.
 
 ## Theory: tables vs. binary relations
 
@@ -58,8 +58,8 @@ In theory, the population of the Hawaii-script might just as well be given in a 
 | World Religions | Brown | Rome |
 
 Please copy this in a spreadsheet of your own. The element in the first column with square brackets tells Ampersand that a new table starts[^1]. The first row contains relation names. The second row contains concept names. The rows that follow contain pairs. Ampersand reconstructs those pairs as in the example above.
-
-In practical applications, you might want to reuse data from existing spreadsheets. It helps when that data in that spreadsheet is organized per row, which is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated.
+## Reusing existing data
+In practical applications, you might want to reuse data from existing spreadsheets. People tend to have lots of "informal administration" in spreadsheets, which gives you access to authentic population. Surely you need that data organized in rows, but fortunately that is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated. In other cases, you have some work organizing the spreadsheet for importing it.
 
 ## Uploading your spreadsheet
 
@@ -80,7 +80,7 @@ After finishing your assignment, you have learned:
 * to upload population to your Ampersand application in the form of a spreadsheet in .xlsx-format;
 * to understand how a `POPULATION`-statement relates to the contents of a spreadsheet;
 * that the contents of the spreadsheet is added to the population of your context, provided this does not lead to any conflict.
- 
+
 [^1]: You can have multiple tables on each worksheet. But you can also use multiple worksheets. Whatever is most convenient for you.
 [^2]: If this function is absent, you likely do not have permission to upload Excel sheets. Contact your tutor for assistance.
 
