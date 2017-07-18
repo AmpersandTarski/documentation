@@ -26,19 +26,21 @@ BOX
 
 To understand this fragment, take notice of:
 
-1. The name of this interface is `Person`. It follows keyword `INTERFACE`. The interface expression of this interface is `I[Person]`. It follows the colon behind the name `Person`.
-2. The interface applies to any atom from the _domain of the interface expression_. In this example, that would be any atom of type `Person`. In the example, this is `"J. Lovell"`. So, this interface is applied solely to `"J. Lovell"`.
+1. The name of this interface is `Person`. This name immediately follows the keyword `INTERFACE`.
+2. The expression following the colon, `I[Person]`, is the interface expression of this interface.
+2. The interface can be applied to any atom from the _domain of the interface expression_. So this particular interface is applicable to any atom of type `Person`. In the screenshot, it applies to `"J. Lovell"`.
 4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.  
-5. Each expression at the right of the semicolon specifies which data is presented in the field. For this reason it is called the _field expression_ for that field.
-5. Each field expression is evaluated with `"J. Lovell"` on the left. All atoms at the right are displayed in the field.  
-6. The interface is subject to type checking. The following relations provide an example for getting a type-correct interface:
+5. Each expression at the right of a field name specifies which data is presented in the field. For this reason it is called the _field expression_ for that field. Field name and field expression are separated by a colon.
+5. Of all pairs `<"J. Lovell", x>` from the field expression, the field displays the right atom `x`. A field expression always works on one specific atom on the left, which is `"J. Lovell"` in this example.
+6. Field expressions are subject to type checking. The following relations provide an example for getting a type-correct interface:
 ```
 RELATION personName :: Person * PersonName [UNI]
 RELATION personStatus :: Person * PersonStatus [UNI]
 RELATION personEmail :: Person * Email [UNI,TOT]
 RELATION workswith :: Person * Person
 ```
-7. Looking at the example, we can tell that `"J. Lovell"` has one personName (which is `"J. Lovell"`), it has no personStatus, one personEmail and three persons to work with in `RELATION workswith`.
+The source concepts of a field expression must match the target concept of the interface expression.
+7. Looking at the screenshot, we can tell that `"J. Lovell"` has one personName (which is `"J. Lovell"`), it has no personStatus, one personEmail and three persons to work with in `RELATION workswith`.
 
 
 
@@ -51,17 +53,17 @@ You can create structure in an interface by nesting. Here is an example:
 The specification of this interface is given in the following code fragment.
 
 ```ampersand
-INTERFACE "Project"  : V[SESSION*Project] ROWS
+INTERFACE "Project"  : I[Project] BOX
   [ "Project"     : I[Project]
   , "Name"        : projectName
   , "Current PL"  : pl
-  , "Administration" : I[Project] TABS
-     [ "Project leaders" : project~;assignee/\pl COLS
+  , "Administration" : I[Project] BOX
+     [ "Project leaders" : project~;assignee/\pl BOX
         [ "Name"      : personName
         , "Status"    : personStatus
         , "Email"     : personEmail
         ]
-     , "Project members" : project~;assignee/\member COLS
+     , "Project members" : project~;assignee/\member BOX
         [ "Name"      : personName
         , "Status"    : personStatus
         , "Email"     : personEmail
@@ -71,10 +73,11 @@ INTERFACE "Project"  : V[SESSION*Project] ROWS
 ```
 
 Notice the following features:  
-1. The structure of an interface is hierarchical. It consists of boxes within a box.  
-2. Each field expressions in a box has a source and a target concept.  
-3. The source concept of a field expression must match with the target concept of the field expression outside the box.  
-4. The target concept of a field expression that has a box, must match with the source concepts of all fields inside that box.
+1. The structure of an interface is hierarchical. It consists of boxes within a box. This is because a field expression may be followed by a `BOX` with a list of subinterfaces. Without it, it is just a field expression.
+2. When a field expression is followed by a `BOX`, every atom in the _codomain of the field expression_ is displayed in a box of its own on the screen. That box behaves like an interface with the field expression serving as interface expression of that subinterface.
+3. By this mechanism, the hierarchical structure of the entire interface translates directly to the hierarchical structure of the web-page in which it is displayed. 
+4. The source concept of a field expression must match with the target concept of the field expression outside the box.  
+5. The target concept of a field expression that has a box, must match with the source concepts of each field inside that box.
 
 ## Formatting
 
