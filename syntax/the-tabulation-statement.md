@@ -27,16 +27,16 @@ RELATION E1[C*C1]
 RELATION E2[C*C2]
 ...
 ```
-Multiplicty annotations are allowed. For example:
+Multiplicity annotations are allowed. For example:
 ```
-TABLE  C (e1:C1[UNI,TOT], e2:C2, e3:C3[ASY], ...)
+TABLE  C (e1:C1[UNI,TOT], e2:C2, e3:C[ASY], ...)
 ```
 translates into the following declarations:
 
 ```
 RELATION E1[C*C1] [UNI,TOT]
 RELATION E2[C*C2]
-RELATION E3[C*C3] [ASY]
+RELATION E3[C*C] [ASY]
 ...
 ```
 ## Practice
