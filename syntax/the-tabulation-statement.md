@@ -32,7 +32,6 @@ Multiplicity annotations are allowed. For example:
 TABLE  C (e1:C1[UNI,TOT], e2:C2, e3:C[ASY], ...)
 ```
 translates into the following declarations:
-
 ```
 RELATION E1[C*C1] [UNI,TOT]
 RELATION E2[C*C2]
