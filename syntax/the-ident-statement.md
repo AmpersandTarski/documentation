@@ -32,7 +32,7 @@ translates into the following rule:
   RULE "Rule Name":  {e1}<>{e1}~ /\ {e2}<>{e2}~ /\ ... |- I[C]
 ```
 
-Note that 
+Note that
 
 * in case every`e`is both univalent and total, `e<>e~` equals `e;e~`, and the rule is equivalent to:
 
@@ -40,13 +40,7 @@ Note that
    RULE "Rule Name":  {e1};{e1}~ /\ {e2};{e2}~ /\ ... |- I[C]
 ```
 
-* in case every `e` is univalent but not total, you should use the `IDENT` statement, because that also works when an `e` is not populated.
-
-  
-
-  
-
-  
+* in case every `e` is univalent but not total, you should use the `IDENT` statement \(or the rule that it implements\), because that also works when an `e` is not populated.
 
 
 
