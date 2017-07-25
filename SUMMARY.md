@@ -32,6 +32,7 @@
   * [The PURPOSE statement](syntax/purpose.md)
   * [The RELATION statement](syntax/relation.md)
   * [The RULE statement](syntax/rule.md)
+  * [The IDENT statement](syntax/the-ident-statement.md)
 * [The Command Line tool](command-line-interface/command-line-interface.md)
   * [switches](command-line-interface/switches.md)
   * [Configuration](command-line-interface/environment_variables.md)
