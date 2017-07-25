@@ -5,8 +5,9 @@
 We would like to be able to make assertions about groups of things that have similar properties. For example, we may want to make assertions about individuals that have identified themselves and have submitted a request for sending them an itemized list of goods. In order to do that efficiently, we want to be able to refer to such individuals using a simple, single term, e.g. 'Customer'. Such a term is called a 'concept' in Ampersand.
 
 ## Syntax:
-
-`'CONCEPT' <Uppercase identifier> String String?`
+~~~
+CONCEPT <Uppercase identifier> <String> <String>?
+~~~
 
 ## Semantics
 
