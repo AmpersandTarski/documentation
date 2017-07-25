@@ -25,7 +25,6 @@ translates into the following declarations:
 ```
 RELATION E1[C*C1]
 RELATION E2[C*C2]
-...
 ```
 Multiplicity annotations are allowed. For example:
 ```
@@ -47,7 +46,6 @@ IDENT Person(ssn)
 IDENT Person(name,birthplace,birthdate)
 ```
 This states that a person is uniquely defined by `ssn`, but also by the combination of `name`, `birthplace`, and `birthdate`.
-
 This statement can also be used to objectify (reify) an expression `e`
 ```
 TABLE T(pi:P, rho:R)
@@ -55,16 +53,12 @@ IDENT T(pi,rho)
 RULE "Create T" : e |- pi~;rho
 RULE "Delete T" : pi~;rho |- e
 ```
-If a user is tempted to replace the Create/Delete pair with a single equivalence, this becomes
-
+If a user is tempted to replace the Create/Delete pair with a single equivalence, this becomes:
 ```
 TABLE T(pi:P, rho:R)
 IDENT T(pi,rho)
 RULE e = pi~;rho
 ```
-
-
-
 
 
 [^1] This statement will be available in Ampersand vs. 4.
