@@ -25,7 +25,7 @@ translates into the following rule:
 ```
   RULE "Rule Name":  {e1}<>{e1}~ /\ {e2}<>{e2}~ /\ ... |- I[C]
 ```
-Note that for every univalent `e`, `e<>e~` equals `e;e~`. So in case `e1`, `e2`, ... are univalent, the rule is equivalent to:
+Note that for every univalent `e`, `e<>e~` equals `e;e~`. So in case all of `e1`, `e2`, ... are univalent, the rule is equivalent to:
 ```
   RULE "Rule Name":  {e1};{e1}~ /\ {e2};{e2}~ /\ ... |- I[C]
 ```
