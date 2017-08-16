@@ -2,16 +2,18 @@
 ## Use `PURPOSE` statements abundantly
 
 ## Distinguish between requirements and specifications
-Managing requirements is difficult when different stakeholders have different concerns, individuals have their own opinions, requirements will shift over time, or users are unable to articulate requirements when you most need it.
+Managing requirements can be difficult when different stakeholders have different concerns, individual users have strong opinions of their own, requirements are changing over time, or users are unable to articulate requirements when you most need it.
 
-Now, let us assume the hurdle is taken and now you have an approved list of requirements. How does this differ from specifications? In Ampersand, you state things as they will be built. A statement in Ampersand specifies your information system precisely. If you generate a system directly from your Ampersand script, the resulting system will help users to keep all rules satisfied. If software engineers build the system to specification, they must guarantee nothing less.
+Now, let us assume that hurdle is taken and you have an approved list of requirements. How does this differ from specifications? In Ampersand, you state things as they will be built. A statement in Ampersand specifies your information system precisely. If you generate a system directly from your Ampersand script, the resulting system will help users to keep all rules satisfied. If software engineers build the system to specification, they must guarantee nothing less.
 
-The pitfall is to mistakenly use the list of requirements as specifications. This is not uncommon, so be warned. Well known consequences are confusion among software engineers, scope creep, and project overruns. Failure to make this distinction is an early warning for your project to fail entirely.
+Requirements tell what users say they want. Specifications define unambiguously what to build. So write prose in your requirements and write Ampersand as your specification.
 
-It is reasonable to say that a working Ampersand prototype proves the completeness of your specifications. Fortunately, requirements articulation takes a while so in many cases you can have your specifications done by the time the list of requirements is approved. It means you make the specifications as requirements are developing.
+The pitfall is to mistakenly use the list of requirements as specifications. This is not uncommon, so be warned. Well known consequences are confusion among software engineers, scope creep, and project overruns. Failure to make this distinction is an early warning for project failure.
+
+A working Ampersand prototype and an understandable specification document are compelling evidence of the completeness of your specification. Especially if both have been generated from the same Ampersand script. Fortunately, requirements articulation takes a while so in many cases you can have your specification done by the time the list of requirements is approved. This means you can make the specifications as requirements are developing, not causing any delays other than needed for the requirements.
 
 ## Work in pairs
-Making an Ampersand model is difficult. Working in pairs increases your speed for a number of reasons:
+Making a good Ampersand script is difficult. Working in pairs increases your speed for a number of reasons:
  - you learn from each other. Switch pairs every now and then, if possible.
  - Developing thoughts works better and faster if you work together. Develop thoughts by discussing, challenging, and trying things in practice.
 
