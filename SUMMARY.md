@@ -8,6 +8,7 @@
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [Rules](tutorial/rules.md)
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
+    * [Types of Rules](types-of-rules.md)
   * [Properties](modeling/properties.md)
   * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
 * [Installation](installation/installation.md)
