@@ -1,7 +1,7 @@
 # How to avoid installing Ampersand
 Just go to http://ampersand.tarski.nl/RAP3. Register and get started right away. At no cost (for you, for now).
 
-# On your own laptop
+# How to install on your own laptop
 You can also install the software on computers of your own. For different purposes there are different ways of installing Ampersand:
 
 1. If you just want the executable file `Ampersand.exe`, section [Installing Ampersand](https://www.gitbook.com/book/ampersandtarski/documentation/edit#) tells you how you get it.
