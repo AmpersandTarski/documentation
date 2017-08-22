@@ -1,37 +1,46 @@
-The prototyping cycle consists of the following steps:
-1. Build the prototype
-2. Copy the generated prototype to the web server
-3. Browse to the web-location where the prototype is being served.
+# How to deploy your prototype
 
-This chapter talks about these steps in a bit more detail.
+Suppose you have made a `.adl`-file and you want to run it as a web-application on the internet. This recipe tells you how to do that.
 
-## Building a prototype
+## Ingredients
 
-This is done by letting ampersand work on your script, using the `-proto` option. We assume your script file is called `myModel.adl`, and your model is called `myModel`. Generation of the prototype is then done by the command
+1. To run your prototype, you need a server that is visible from the web, on which [docker](https://docs.docker.com/engine/installation/) and [docker-compose](/Install Docker Compose | Docker Documentation) are installed. Assume it has domain name `my.server.com`
+2. To get your `.adl`-file on the server, you need a way to transport that file to your server. You can do this for example by SFTP, using an SFTP-client such as FileZilla, but you can also do it by cloning a repository to your server, using `git`.
+3. To execute commands on your server, you need a command line interface \(CLI\). This is typically done by starting an SSH-session, using an SSH-client such as Putty.
 
-```.sh
-ampersand myModel.adl -proto 
-```
-Without any specific configuration, this would result in the directory `myModel.proto` being generated in the same directory as your script is in. This directory contains the files that constitute your prototype.
+## Deploying
 
-## Copy the generated prototype to the web server
-The next step is copying the generated files to the web server. As you will be doing this quite often, you may want to automate this step e.g. by means of a script. Let us assume that
-* *gendir* is the directory that contains the generated prototype files,
-* *webdir* is the directory in which the webserver expects the prototype files.
+The deployment consists of the following steps:
 
-This step consists of copying all files from *gendir* to *webdir*.
+1. Copy your `.adl`-file to a working directory on your server.  
+2. Get two docker-files from internet by executing the following commands:
 
-Notes:
-* if you used `ampersand myModel.adl -proto` to generate the prototype, then *gendir* would be `myModel.proto`.
-* if you use `c:\xampp\htdocs\prototypes` for storing your prototypes on the webserver (as we suggested on the [configuration page](../installation/configuration.html)), then `c:\xampp\htdocs\prototypes\` is *webdir*
-* If you want to be able to run multiple prototypes at the same time, you may want to use a subdirectory for each of them. In that case, *webdir* would become e.g. `c:\xampp\htdocs\prototypes\myModel\`.
-* If you use XAMPP and are unsure about the location where to put your generated files, have a look at [this tutorial](https://blog.udemy.com/xampp-tutorial/).
+   ```
+    wget https://raw.githubusercontent.com/AmpersandTarski/Ampersand/feature/dockerize/docker/sample/Dockerfile
+    wget https://raw.githubusercontent.com/AmpersandTarski/Ampersand/feature/dockerize/docker/sample/docker-compose.yml
+   ```
 
-## Running the prototype 
-Assuming that your webserver and database server are running, all you need to do now is point your browser to the location of the prototype. In the `myModel` example, you would want to browse to [http://localhost/prototypes](http://localhost/prototypes) or [http://localhost/prototypes/myModel](http://localhost/prototypes/myModel).
+   On servers other than Linux, you may need another command than `wget`, but the files are the same.
 
-Notes
-* Be sure to use a recent browser. We recommend to use FireFox or Chrome (Internet Explorer is known to have some issues here and there).
+3. In the file called `docker-compose.yml` you must specify your own `.adl`-file:
+   ![](/assets/CHANGE_ME.png)
+4. Run docker-compose to deploy your prototype by executing the following command:
+   ```
+    docker-compose up
+   ```
 
-## What if...
-* You have trouble with the database (e.g. you cannot login, or do not have the correct authorization)? Check out the [instructions](../installation/configuration.html) for creating a properly authorized user `ampersand` for the database.
+   Alternatively, if you want your prototype to keep running after you have closed your CLI, execute:
+   ```
+    docker-compose up -d
+   ```
+5. Browse to the web-location `my.server.com`, where the prototype is being served.
+
+## In trouble?
+
+* Check if there is a firewall that blocks the port from internet. Make sure that port 80 is open for http-traffic.
+* Check the port settings and adapt `docker-compose.yml` if you must use a port other than port 80.
+* Use a recent browser. We have developed Ampersand on FireFox and tested it on FireFox and Chrome, so you should be fine with one of these two.
+* If you have trouble with the database \(e.g. you cannot login, or do not have the correct authorization\), check out the [instructions](../installation/configuration.html) for creating a properly authorized user `ampersand` for the database. As you can see in `docker-compose.yml`, the database itself is accessible through port 8080.
+
+
+

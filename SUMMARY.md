@@ -15,7 +15,7 @@
   * [Installing Ampersand](installation/installing_ampersand.md)
   * [Configuration](installation/configuration.md)
   * [Installing and running a prototype website](installation/installing_and_running_a_prototype_website.md)
-  * [deploying the prototype](installation/deploying_the_prototype.md)
+  * [deploying your prototype](installation/deploying_the_prototype.md)
   * [Testing your installation](installation/testing_your_installation.md)
   * [Quick start: Build your first prototype](installation/quick_start_build_your_first_prototype.md)
 * [Modeling in Ampersand](modeling/modeling_in_ampersand.md)
