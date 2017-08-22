@@ -9,7 +9,7 @@ You can also install the software on computers of your own. For different purpos
 3. For generating functional specification documents you will need GraphViz \(for generating graphics such as conceptual models and data models\), and LaTeX.
 4. For compiling the Ampersand compiler you need access to the source files, and a Haskell development environment. Since this setup is also needed for those for whom no pre-built Ampersand.exe file is available. Details on how to set this up can be found in the section [Installing Ampersand](/installing_ampersand.html).
 
-## On a server
+## How to install on a server
 If you run a class or have a team at work, you might want a RAP3 clone of your own rather than work from http://ampersand.tarski.nl/RAP3.
 In that case, consult [the tools we use at Ampersand](https://ampersandtarski.gitbooks.io/the-tools-we-use-for-ampersand/content/installation_of_rap.html). This is work in progress.
 
