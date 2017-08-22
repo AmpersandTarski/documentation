@@ -41,6 +41,3 @@ The deployment consists of the following steps:
 * Check the port settings and adapt `docker-compose.yml` if you must use a port other than port 80.
 * Use a recent browser. We have developed Ampersand on FireFox and tested it on FireFox and Chrome, so you should be fine with one of these two.
 * If you have trouble with the database \(e.g. you cannot login, or do not have the correct authorization\), check out the [instructions](../installation/configuration.html) for creating a properly authorized user `ampersand` for the database. As you can see in `docker-compose.yml`, the database itself is accessible through port 8080.
-
-
-
