@@ -214,5 +214,8 @@ ENDCONTEXT
 
 ## Assignment
 
-This script contains a `RULE` called `orderInAssortment`. Describe the meaning and the purpose of this rule. It may help to play with the script and discussing this rule with your peers. Add your meaning and purpose to the script and make sure it compiles and runs.
+This script contains a `RULE` called `orderInAssortment`. By editing fields you can add orders, clients, providers, etc. Find out what `RULE orderInAssortment` means by trying to violate that rule. Why does this rule exist? Describe the meaning and the purpose of this rule. It may help to play with the prototype and discussing this rule with your peers. Add your meaning and purpose to the script and make sure it compiles and runs.
 
+## What have you learned?
+1. By playing with the prototype, you have learned the meaning of `RULE orderInAssortment`. 
+2. You have learned how to include a purpose and a meaning with a rule. Remember that you can add a purpose not just for any rule, but for relations, concepts, interfaces and contexts as well.
