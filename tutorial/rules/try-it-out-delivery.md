@@ -1,80 +1,85 @@
 # Working with rules in RAP3
 
-Consider the following script. You can compile and run it in [RAP3](http://ampersand.tarski.nl/rap3).
+Consider the following script. You can compile and run it in [RAP3](http://ampersand.tarski.nl/RAP3).
 
 ```ampersand
 CONTEXT Delivery IN ENGLISH
 
+RELATION clientName[Client*Name] [UNI,TOT]
+POPULATION clientName CONTAINS
+  [ ("Client_1" , "Martijn")
+  ; ("Client_2" , "Stef")
+  ]
 
+RELATION clientAddress[Client*Address] [UNI,TOT]
+POPULATION clientAddress CONTAINS
+  [ ("Client_1" , "Kerkstraat")
+  ; ("Client_2" , "Dorpsstraat")
+  ]
 
-clientName :: Client->Name
-= [ ("Client_1" , "Martijn")
-; ("Client_2" , "Stef")
-]
-
-clientAddress :: Client -> Address
-= [ ("Client_1" , "Kerkstraat")
-; ("Client_2" , "Dorpsstraat")
-]
-
-clientCity :: Client -> City
-= [ ("Client_1" , "Utrecht")
-; ("Client_2" , "Enschede")
-]
+RELATION clientCity[Client*City] [UNI,TOT]
+POPULATION clientCity CONTAINS
+  [ ("Client_1" , "Utrecht")
+  ; ("Client_2" , "Enschede")
+  ]
 
 -- Vendor
 
-vendorName :: Vendor -> Name
-= [ ("Vendor_1", "Rubber inc.")
-; ("Vendor_2", "Mario's pizzas")
-]
+RELATION vendorName[Vendor*Name] [UNI,TOT]
+POPULATION vendorName CONTAINS
+  [ ("Vendor_1", "Rubber inc.")
+  ; ("Vendor_2", "Mario's pizzas")
+  ]
 
-sells :: Vendor * Product
-= [ ("Vendor_1", "Product_1")
-; ("Vendor_1", "Product_2")
-; ("Vendor_1", "Product_3")
-; ("Vendor_2", "Product_4")
-; ("Vendor_2", "Product_5")
-; ("Vendor_2", "Product_3")
-]
+RELATION sells[Vendor*Product]
+POPULATION sells CONTAINS
+  [ ("Vendor_1", "Product_1")
+  ; ("Vendor_1", "Product_2")
+  ; ("Vendor_1", "Product_3")
+  ; ("Vendor_2", "Product_4")
+  ; ("Vendor_2", "Product_5")
+  ; ("Vendor_2", "Product_3")
+  ]
 
 -- Product
 
-productName :: Product -> Name
-= [ ("Product_1", "Inner tube")
-; ("Product_2", "Bouncing ball")
-; ("Product_3", "Rubber chicken")
-; ("Product_4", "Pizza Margherita")
-; ("Product_5", "Broodje Mario")
-]
+RELATION productName[Product*Name] [UNI,TOT]
+POPULATION productName CONTAINS
+  [ ("Product_1", "Inner tube")
+  ; ("Product_2", "Bouncing ball")
+  ; ("Product_3", "Rubber chicken")
+  ; ("Product_4", "Pizza Margherita")
+  ; ("Product_5", "Broodje Mario")
+  ]
 
-productPrice :: Product -> Price
-= [ ("Product_1", "10,00 euro")
-; ("Product_2", "0,75 euro")
-; ("Product_3", "6,95 euro")
-; ("Product_4", "8,50 euro")
-; ("Product_5", "4,50 euro")
-]
+RELATION productPrice[Product*Price] [UNI,TOT]
+POPULATION productPrice CONTAINS
+  [ ("Product_1", "10,00 euro")
+  ; ("Product_2", "0,75 euro")
+  ; ("Product_3", "6,95 euro")
+  ; ("Product_4", "8,50 euro")
+  ; ("Product_5", "4,50 euro")
+  ]
 
 -- Order
-orderTotal :: Order * Price [UNI]
+RELATION orderTotal[Order*Price] [UNI]
 
-orderedBy :: Order -> Client
--- = [ ("Order_1", "Client_2") ]
-RELATION orderedAt [Order* Vendor] [UNI,TOT]
--- = [ ("Order_1", "Vendor_1") ]
-orderOf :: Order * Product [TOT]
--- = [ ("Order_1", "Product_1") ]
+RELATION orderedBy[Order*Client] [UNI,TOT]
+-- POPULATION orderedBy CONTAINS [ ("Order_1", "Client_2") ]
+RELATION orderedAt[Order* Vendor] [UNI,TOT]
+-- POPULATION orderedAt CONTAINS [ ("Order_1", "Vendor_1") ]
+RELATION orderOf[Order* Product] [TOT]
+-- POPULATION orderOf CONTAINS [ ("Order_1", "Product_1") ]
 
 -- Rules
 
 PROCESS Bestellen
 
-orderAccepted :: Order * Vendor [UNI] -- an order may not be accepted by multiple vendors
--- = [ ("Order_1", "Vendor_1") ]
+RELATION orderAccepted[Order*Vendor] [UNI] -- an order may not be accepted by multiple vendors
+-- POPULATION orderAccepted CONTAINS [ ("Order_1", "Vendor_1") ]
 
-orderReceived :: Order * Client [UNI] -- an order may not be received by multiple clients
--- = [ ("Order_1", "Client_1") ]
+RELATION orderReceived[Order*Client] [UNI] -- an order may not be received by multiple clients
+-- POPULATION orderReceived CONTAINS [ ("Order_1", "Client_1") ]
 
 
 RULE orderInAssortment : orderOf |- orderedAt; sells
@@ -102,109 +107,107 @@ RULE dummy: orderedAt |- orderedAt
 ENDPROCESS
 
 -- Interfaces
-INTERFACE Overview : I[ONE]
-BOX[ "All clients" : V[ONE*Client]
-, "All vendors" : V[ONE*Vendor]
-, "All products" : V[ONE*Product]
-, "All orders" : V[ONE*Order]
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-]
+INTERFACE Overview : '_SESSION'[SESSION]
+ BOX[ "All clients" : V[SESSION*Client]
+    , "All vendors" : V[SESSION*Vendor]
+    , "All products" : V[SESSION*Product]
+    , "All orders" : V[SESSION*Order]
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    ]
 
-INTERFACE Client (clientName, clientAddress, clientCity
-, orderedBy,orderOf,orderedAt
-, orderReceived) FOR Client : I[Client]
+INTERFACE Client FOR Client : I[Client]
 BOX [ "Name" : clientName
-, "Street" : clientAddress
-, "City" : clientCity
-, "All orders" : orderedBy~
-BOX [ vendor :orderedAt
-, product : orderOf
-]
-, "Orders to be accepted by provider" : orderedBy~ /\ -(V; orderAccepted~)
-, "Orders pending delivery" : orderedBy~ /\ (V; orderAccepted~) /\ -orderReceived~
-, "Received orders" : orderReceived~
-]
+    , "Street" : clientAddress
+    , "City" : clientCity
+    , "All orders" : orderedBy~
+      BOX [ vendor :orderedAt
+          , product : orderOf
+          ]
+    , "Orders to be accepted by provider" : orderedBy~ /\ -(V; orderAccepted~)
+    , "Orders pending delivery" : orderedBy~ /\ (V; orderAccepted~) /\ -orderReceived~
+    , "Received orders" : orderReceived~
+    ]
 
-INTERFACE ClientInfo (orderAccepted) FOR Vendor : I[Client]
+INTERFACE ClientInfo FOR Vendor : I[Client]
 BOX [ "Name" : clientName
-, "Street" : clientAddress
-, "City" : clientCity
-, "All orders" : orderedBy~
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-, "Orders to be accepted by provider" : orderedBy~ /\ -(V; orderAccepted~)
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-, "Orders pending delivery" : orderedBy~ /\ (V; orderAccepted~) /\ -orderReceived~
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-, "Received orders" : orderReceived~
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-]
+    , "Street" : clientAddress
+    , "City" : clientCity
+    , "All orders" : orderedBy~
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    , "Orders to be accepted by provider" : orderedBy~ /\ -(V; orderAccepted~)
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    , "Orders pending delivery" : orderedBy~ /\ (V; orderAccepted~) /\ -orderReceived~
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    , "Received orders" : orderReceived~
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    ]
 
-INTERFACE Vendor (vendorName, sells, productName, productPrice, orderAccepted) FOR Vendor: I[Vendor]
-
+INTERFACE Vendor FOR Vendor: I[Vendor]
 BOX [ "Name" : vendorName
-, "Products" : sells
-BOX [ "Name" : productName
-, "Price" : productPrice
-]
-, "Orders to be accepted" : orderedAt~ /\ -orderAccepted~
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-, "Orders to be delivered" : orderAccepted~ /\ -(orderAccepted~;orderReceived;V)
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
-, "Past orders" : orderAccepted~ /\ orderAccepted~;orderReceived;V
-BOX [ product : orderOf;productName
-, client : orderedBy;clientName
-, vendor :orderedAt;vendorName
-]
+    , "Products" : sells
+      BOX [ "Name" : productName
+          , "Price" : productPrice
+          ]
+    , "Orders to be accepted" : orderedAt~ /\ -orderAccepted~
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    , "Orders to be delivered" : orderAccepted~ /\ -(orderAccepted~;orderReceived;V)
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
+    , "Past orders" : orderAccepted~ /\ orderAccepted~;orderReceived;V
+      BOX [ product : orderOf;productName
+          , client : orderedBy;clientName
+          , vendor :orderedAt;vendorName
+          ]
 
-]
+    ]
+
 INTERFACE Product (productName, productPrice) FOR Vendor : I[Product]
 BOX [ "Name" : productName
-, "Price" : productPrice
-, "Vendors" : sells~
-]
+    , "Price" : productPrice
+    , "Vendors" : sells~
+    ]
 
 INTERFACE AcceptOrderByVendor (orderAccepted) FOR Vendor : I[Order] /\ -(orderAccepted;orderAccepted~)
 BOX [ "Client" : orderedBy
-, "Vendor" : orderedAt
-, "Product" : orderOf
-, "sign here to accept" : orderAccepted
-]
+    , "Vendor" : orderedAt
+    , "Product" : orderOf
+    , "sign here to accept" : orderAccepted
+    ]
 
 INTERFACE ViewOrderByVendor FOR Vendor : I[Order]
 BOX [ "Client" : orderedBy
-, "Vendor" : orderedAt
-, "Products" : orderOf
-, "sign here to accept" : orderAccepted
-]
+    , "Vendor" : orderedAt
+    , "Products" : orderOf
+    , "sign here to accept" : orderAccepted
+    ]
 
 INTERFACE OrdersForClient (orderedBy, orderedAt, orderOf, orderReceived) FOR Client : I[Order]
 BOX [ "Client" : orderedBy
-, "Vendor" : orderedAt
-, "Product" : orderOf
-, "accepted by" : orderAccepted
-, "sign here when received" : orderReceived
-]
+    , "Vendor" : orderedAt
+    , "Product" : orderOf
+    , "accepted by" : orderAccepted
+    , "sign here when received" : orderReceived
+    ]
 
 ENDCONTEXT
 ```
