@@ -84,8 +84,7 @@ RELATION accepted[Provider * Order] [INJ] PRAGMA "Provider " " has accepted orde
 The `PRAGMA` tells us that it makes sense to utter the phrase `"Provider Mario's Pizza's has accepted order 12345."`
 
 ## MEANING
-A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation with.
-It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
+A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation with and is printed in the functional specification.
  
 ```
 MEANING Language? Markup? <text>
