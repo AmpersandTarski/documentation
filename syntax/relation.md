@@ -42,9 +42,7 @@ The optional `<properties>`,  `<pragma>`,  and  `<meaning>`-parts are discussed 
 ## Semantics
 A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.
 
-The name, source concept and target concept together identify a relation uniquely within its context. 
-
-This means that the name of a relation does not have to be unique. E.g. `name[Book*Name]` can be specified in the same context as `name[Person*Name]`. Because they have different source concepts, these are different relations.
+The name, source concept and target concept together identify a relation uniquely within its context. As a consequence, the name of a relation does not have to be unique. E.g. `name[Book*Name]` can be specified in the same context as `name[Person*Name]`. Because they have different source concepts, these are different relations.
 
 ## Properties
 The `<properties>`-part is meant for writing multiplicity constraints in a comma separated list between square brackets '[' and ']'. E.g. `[UNI,TOT]`
@@ -84,29 +82,47 @@ RELATION accepted[Provider * Order] [INJ] PRAGMA "Provider " " has accepted orde
 The `PRAGMA` tells us that it makes sense to utter the phrase `"Provider Mario's Pizza's has accepted order 12345."`
 
 ## MEANING
-A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation with and is printed in the functional specification.
- 
+A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation with and is printed in the functional specification. A `<meaning>` has the following form:
 ```
-MEANING Language? Markup? <text>
+MEANING <language>? <markup>? <text>
+```
+The `<text>`-part is where the the meaning is written down. We support both:
+* a string, enclosed by double quotes,
+e.g.
+```
+MEANING "This is an example, which means nothing."```
+* any text, starting with `{+` and ending with `+}`
+e.g.
+```
+MEANING
+{+This is an example that is
+spread over multiple lines. A string cannot
+be multi-line, so we use curly-brackets with plus.
++}
 ```
 
-The `<text>` part is where the the meaning is written down. We support both:
-* a simple string, enclosed by double quotes
-* any text, starting with `{+` and ending with `-}` 
 
-The optional language is specified as 
+The optional `<language>` is specified as 
 * `IN ENGLISH` or 
 * `IN DUTCH`.
 
-The optional Markup is one of :
+Example :
+```
+MEANING IN ENGLISH {+This is a single line example.+}```
+
+This is a way to override the default language. 
+
+Sometimes you need formatting in the meaning, such as dotted lists, italics, or mathematical symbols. For this purpose you have a choice in which syntax you specify the meaning.
+The optional `<markup>` is one of :
  * `REST` (Restructured text)
  * `HTML`
  * `LATEX` 
  * `MARKDOWN`
 
-If you need specific markup, there are several options to do so. The default markup is used, but you can override that here. We rely on [Pandoc](http://pandoc.org/) to read the markup.
-
-### CONTAINS POPULATION*
-You can define an initial population for the relation. This is still in the syntax for historical reasons. Today it is more common to define your population in .xlsx files. 
+Example :
+```
+MEANING LATEX {+This is a {\em mathematical} formula $\frac{3}{x+7}$.+}
+```
+Ampersand uses Pandoc to offer a choice for your markup. See [pandoc.org](http://pandoc.org/) for details.
 
 
