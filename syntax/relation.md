@@ -15,7 +15,7 @@ MEANING "Every Order has a unique ContractID which specifies the legal basis for
 ```
 
 ## Syntax
-A relation statement can have one of the following shapes:
+A relation statement can have one of the following forms:
 
 ```
 RELATION <lower case identifier> '[' <upper case identifier>'*' <upper case identifier>']'
@@ -33,64 +33,58 @@ RELATION <lower case identifier> '[' <upper case identifier>'*' <upper case iden
 ```
 The second and third ways will become obsolete in future versions of Ampersand.
 
-The `<properties>`-part has the form
-```
-'[' <property>* ']'
-```
-It is meant for writing multiplicity constraints such as `UNI`, `PROP`, or `SYM` in a convenient form.
+All three ways define a relation by its name, its source concept and its target concept. The name of a relation is a single word that starts with a lower case letter. The source and target concepts start with an upper case letter.
 
-The  `<pragma>`-part 
-<meaning> 
-('PRAGMA' String+)? Meaning* ('=' Content)?
+A relation statement may occur anywhere inside a context, both inside and outside of a pattern.
 
+The  `<properties>`,  `<pragma>`,  and  `<meaning>`-parts are discussed in the sequel.
 
 ## Semantics
-Both ways define a relation by its name and its sign. 
+A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.
 
-The name of a relation is a single word, starting with a lower case character. The name is followed by the sign. The sign is the combination of the source concept and the target concept. It is these three attributes that constitute the unique identifier of the relation. 
+The name, source concept and target concept together identify a relation uniquely within its context. 
 
-This means that the name of a relation does not have to be unique. E.g. `name[Book*Name]` can be specified in the same context as `name[Person*Name]`. When these relations are used in rules or interfaces it might take extra effort to make sure the expression is unambigious.
+This means that the name of a relation does not have to be unique. E.g. `name[Book*Name]` can be specified in the same context as `name[Person*Name]`. Because they have different source concepts, these are different relations.
 
-### Properties
-The properties of a relation may be defined as a comma separated list (in between brackets `[` `]`) of the following keywords:
+## Properties
+The `<properties>`-part is meant for writing multiplicity constraints in a comma separated list between square brackets '[' and ']'. E.g. `[UNI,TOT]`
+. The following multiplicity constraints are available:
 * `UNI` (univalent)
 * `INJ` (injective)
 * `SUR` (surjective)
 * `TOT` (total)
-* `SYM` (symmetrical)
-* `ASY` (anti symmetrical)
+* `SYM` (symmetric)
+* `ASY` (antisymmetric)
 * `TRN` (transitive)
 * `RFX` (reflexive)
 * `IRF` (irreflexive)
 * `PROP` (property)
 
-Let's assume that we want to express that any person can only live in one city. ie, *Joe Smith lives in New York* and *Joe Smith lives in Denver* cannot both be true at the same time. 
+Let's assume that we want to express that any person can live in one city only. So under this constraint "*Joe Smith lives in New York*" and "*Joe Smith lives in Denver*" cannot both be true at the same time. 
 
 In relation algebra, we say that the relation is univalent, which means that every atom in the source concept can only be paired with a single atom in the target concept. This is modeled as
 
     RELATION lives[Person*City][UNI]
-    MEANING "A person can live in a city."
+    MEANING "A person can live in one city only."
 
 
-### PRAGMA?
-The optional PRAGMA keyword is followed by a couple of strings, that can be used to construct a sentence for this relation that will be printed as example in the functional specification. The sentence will be based on the actual population.
-The source and the target of the relation are represented with two double quotes with no text between them. The first one will be filled with the source atom, the second with the target atom. These can be place around, before or after the text enclosed with quotes. 
-
+## PRAGMA
+A `<pragma>` is optional and is characterized by the reserved word `PRAGMA`. The `PRAGMA` is followed by two or three strings. It is used to construct sentences in natural language, using pairs from the actual population of a relation. A pragma specifies how we speak (in natural language) about any pair in the relation. Ampersand also uses pragmas to generate examples in the functional specification. Example of a pragma with three strings:
 ```
-PRAGMA "" " lives in " ""
+PRAGMA "Student " " flies the flag of " " in top."
 ```
-This will result in a printed sentence "John lives in Amsterdam".
+To use this pragma on the pair `(John,Amsterdam)` results in the sentence `"Student John flies the flag of Amsterdam in top."`. The two atoms are fitted in between the three strings. A pragma with two strings is identical to a pragma in which the third string is empty.
 
-The PRAGMA keyword will become obsolete in the future. There will be a more flexible mechanism to model phrases. With the current PRAGMA syntax one can only model phrases that consist of five parts: the second and fourth part of the phrase are placeholders for the source and target instances. 
+(The `PRAGMA` keyword will become obsolete in a future version of Ampersand. It will be replaced by the `VIEW`-statement which offers more flexibility in composing sentences.)
 
+Example:
 ```
 RELATION accepted[Provider * Order] [INJ] PRAGMA "Provider " " has accepted order "
 ```
-tells us that the prase: *Provider Mario's Pizza's has accepted order 12345* has meaning, and can be either true of false.
+The `PRAGMA` tells us that it makes sense to utter the phrase `"Provider Mario's Pizza's has accepted order 12345."`
 
-
-### MEANING*
-The meaning of a rule is optional and will be specified in natural language in the MEANING part of the RELATION statement. 
+## MEANING
+The meaning of a relation is optional and is specified in natural language in the `MEANING` part of the `RELATION`-statement. 
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
  
 ```
