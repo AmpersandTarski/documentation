@@ -1,7 +1,7 @@
 # The RELATION statement
 
 ## Purpose
-A relation statement defines a relation. Each relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation.
+A relation statement says that there exists a relation in a context. It introduces (defines, declares) the relation in the context. Each relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation.
 
 ## Examples
 ```
@@ -37,7 +37,7 @@ All three ways define a relation by its name, its source concept and its target 
 
 A relation statement may occur anywhere inside a context, both inside and outside of a pattern.
 
-The  `<properties>`,  `<pragma>`,  and  `<meaning>`-parts are discussed in the sequel.
+The optional `<properties>`,  `<pragma>`,  and  `<meaning>`-parts are discussed in the sequel.
 
 ## Semantics
 A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.
@@ -69,7 +69,7 @@ In relation algebra, we say that the relation is univalent, which means that eve
 
 
 ## PRAGMA
-A `<pragma>` is optional and is characterized by the reserved word `PRAGMA`. The `PRAGMA` is followed by two or three strings. It is used to construct sentences in natural language, using pairs from the actual population of a relation. A pragma specifies how we speak (in natural language) about any pair in the relation. Ampersand also uses pragmas to generate examples in the functional specification. Example of a pragma with three strings:
+A pragma is optional and is characterized by the reserved word `PRAGMA`. The `PRAGMA` is followed by two or three strings. It is used to construct sentences in natural language, using pairs from the actual population of a relation. A pragma specifies how we speak (in natural language) about any pair in the relation. Ampersand also uses pragmas to generate examples in the functional specification. Example of a pragma with three strings:
 ```
 PRAGMA "Student " " flies the flag of " " in top."
 ```
@@ -84,7 +84,7 @@ RELATION accepted[Provider * Order] [INJ] PRAGMA "Provider " " has accepted orde
 The `PRAGMA` tells us that it makes sense to utter the phrase `"Provider Mario's Pizza's has accepted order 12345."`
 
 ## MEANING
-The meaning of a relation is optional and is specified in natural language in the `MEANING` part of the `RELATION`-statement. 
+A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation with.
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.
  
 ```
