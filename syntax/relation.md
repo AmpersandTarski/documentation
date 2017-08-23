@@ -1,17 +1,51 @@
 # The RELATION statement
 
-## Syntax
-There are two ways that a relation can be defined:
+## Purpose
+A relation statement defines a relation. Each relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation.
+
+## Examples
+```
+RELATION soldBy[Order*Person]
+```
 
 ```
-RELATION <lower case identifier> Concept * Concept Properties? ('PRAGMA' String+)? Meaning* ('=' Content)?
+RELATION contract[Order*ContractID] [UNI,TOT]
+PRAGMA "Order " " has contract " " as its legal basis."
+MEANING "Every Order has a unique ContractID which specifies the legal basis for that particular order."
+```
+
+## Syntax
+A relation statement can have one of the following shapes:
+
+```
+RELATION <lower case identifier> '[' <upper case identifier>'*' <upper case identifier>']'
+<properties>? <pragma>? <meaning>?
 ```
   
 ```
-<lower case identifier> '::' Concept * Concept Properties? ('PRAGMA' String+)? Meaning* ('=' Content)?
+<lower case identifier> '::' <upper case identifier> '*' <upper case identifier>
+<properties>? <pragma>? <meaning>?
 ```
+  
+```
+<lower case identifier> '::' <upper case identifier> '->' <upper case identifier>
+<properties>? <pragma>? <meaning>?
+```
+The second and third ways will become obsolete in future versions of Ampersand.
+
+The `<properties>`-part has the form
+```
+'[' <property>* ']'
+```
+It is meant for writing multiplicity constraints such as `UNI`, `PROP`, or `SYM` in a convenient form.
+
+The  `<pragma>`-part 
+<meaning> 
+('PRAGMA' String+)? Meaning* ('=' Content)?
+
+
 ## Semantics
-Both ways define a relation by its name and it's sign. 
+Both ways define a relation by its name and its sign. 
 
 The name of a relation is a single word, starting with a lower case character. The name is followed by the sign. The sign is the combination of the source concept and the target concept. It is these three attributes that constitute the unique identifier of the relation. 
 
