@@ -1,7 +1,8 @@
 # The RULE statement
 
-## Semantics
+## Purpose
 
+## Semantics
 A rule statement defines something that should be true. It does not define the enforcement.
 
 By default rules are invariant rules.   
