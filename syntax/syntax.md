@@ -3,29 +3,40 @@
 When writing an Ampersand model, the Ampersand language is used. This chapter contains a reference of the syntax.
 
 ## Learning the syntax
+
 The most effective way to learn Ampersand's syntax is to copy from existing scripts. This is learning by examples. This reference chapter is suitable to check things, and less suitable for learning.
 
 ## Symbols
-Ampersand has *reserved words*, such as `RELATION`, `CONTEXT`, `CONTAINS` all of which are written in capital letters. They are introduced on the fly. You will find an exhaustive list of reserved words at the end of this page.
 
-String atoms are written between double quotes, e.g. `"Peter"` or `"KD-686-D"`.
-Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`
+Ampersand has _reserved words_, such as `RELATION`, `CONTEXT`, `CONTAINS`. All reserved words are written in capital letters. They are introduced on the fly. You will find an exhaustive list of reserved words at the end of this page.
+
+Untyped atoms are written between double quotes, e.g. `"Peter"` or `"KD-686-D"`. If you want to introduce a double quote inside an atom, escape it with a backslash, e.g. `"the symbol \" is called double quote"`.  
+Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`.  
+Dates and timestamps follow the Excel-syntax, e.g. ???
 
 Brackets must always match. For expressions, we use round brackets `(` and `)`. For populations and interfaces we use square brackets `[` and `]`.
 
 Constructs that contain ampersand statements are contexts and patterns. They always come in pairs: `PATTERN` and `ENDPATTERN`, and  `CONTEXT` and `ENDCONTEXT`.
 
-White space characters (spaces, tabs, CRLF) are meaningless. You can use them freely to layout your script in a way that helps you to recognize its structure.
+White space characters \(spaces, tabs, CRLF\) are meaningless. You can use them freely to layout your script in a way that helps you to recognize its structure.
 
 A comment on a single line starts with `--`. Everything after a `--` symbol is ignored until the line ends. Multiline comments are wrapped between comment brackets `{-` and `-}`. Multiline comments may be nested.
 
 Identifiers always start with a letter. Concepts start with a capital letter, as in `Person`, `Case`, `A`, and `Order`. Relation names start with a lower case letter, as in `contains`, `attr`, `sessionLogin`, or `r`.
 
-Operators are used to combine expressions into larger expressions.
+## Expressions
+With operators expressions can be combined. To save writing unneccessary brackets, some precedence rules are in place.
 
-| operator category | operators |
-| --- | --- |
-| boolean | `\/` (union), `/\` (intersect)  |
+| operator category | precedence | operators |
+| :--- | :--- | :--- |
+| logic | 1 \(weakest\) | \|-  \(subset\),  `=` \(equal\) |
+| binary boolean | 2 | `\/` \(union\), `/\` \(intersect\), `-` \(difference\) |
+| binary relational | 3 | `;` \(composition\), `\` \(right residual\), `/` \(left residual\) |
+| unary prefix, unary postfix | 4 \(strongest\) | `-` \(complement\), `~` \(converse\) |
+Within an operator category, you must place brackets to disambiguate. E.g. `r/\s\/t` is not allowed. You have to write either `(r/\s)\/t` or `r/\(s\/t)`.
+Across categories, you may omit brackets because a higher precedence binds stronger. So `r;s\/t` means `(r;s)\/t`. (Note that `(r;s)\/t` and `r;(s\/t)` have different meanings).
+Associative operators (`\/`, `/\`, `;`) need not be disambiguated with brackets. So `r\/s\/t` and `(r\/s)\/t` and `r\/(s\/t)` all mean exactly the same.
+
 
 ## How to read the syntax statements used in this chapter
 
