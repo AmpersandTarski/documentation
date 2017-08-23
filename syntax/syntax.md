@@ -52,7 +52,7 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
 
 ## List of reserved words
 
-Keywords in Ampersand are always CAPITAL words.
+Keywords in Ampersand are always written in CAPITALS.
 
 * Keywords for the [main structure](structureOfModel.md)
   * `CONTEXT`
