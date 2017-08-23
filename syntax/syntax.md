@@ -11,8 +11,10 @@ The most effective way to learn Ampersand's syntax is to copy from existing scri
 Ampersand has _reserved words_, such as `RELATION`, `CONTEXT`, `CONTAINS`. All reserved words are written in capital letters. They are introduced on the fly. You will find an exhaustive list of reserved words at the end of this page.
 
 Untyped atoms are written between double quotes, e.g. `"Peter"` or `"KD-686-D"`. If you want to introduce a double quote inside an atom, escape it with a backslash, e.g. `"the symbol \" is called double quote"`.  
-Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`.  
+Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`.
+The boolean atoms are `TRUE` and `FALSE`.
 Dates and timestamps follow the Excel-syntax, e.g. ???
+The atom `_SESSION` indicates the current user session, and is an instance of concept `SESSION`. It is used in interfaces.
 
 Brackets must always match. For expressions, we use round brackets `(` and `)`. For populations and interfaces we use square brackets `[` and `]`.
 
@@ -137,16 +139,20 @@ Keywords in Ampersand are always written in CAPITALS.
   * `INTEGER`
   * `FLOAT`
   * `AUTOINCREMENT`
-* Keywords for values of atoms:
+* Reserved words for values of atoms:
   * `TRUE`
   * `FALSE` --for booleans
-* Experimental stuff:
+  * `_SESSION`
+* Reserved words for concepts
+  * `ONE`
+  * `SESSION`
+* Experimental keywords:
   * `BYPLUG`
   * `SQLPLUG`
   * `PHPPLUG`
   * `SERVICE`
   * `EDITS`
-* Depreciated keywords:
+* Deprecated keywords:
   * `SPEC`
   * `KEY`
   * `PROCESS`
