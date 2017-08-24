@@ -6,8 +6,9 @@ How does it work?
 
 1. Communicate with the business in their own language. Define a _domain language_[^1] to consolidate agreement of terms among stakeholders. 
 2. Formalize the agreements that are relevant for the information system using Ampersand-script.  
-3. Generate a real and working _prototype_ of your information system at the push of a button. Use this prototype for walking through user stories, acceptance testing, requirements elicitations, to name just some of its uses.
-4. Ampersand also gives you a documented ontology that people can review and comment on.
+3. Generate a real and working _prototype_ of your information system at the push of a button. 
+4. Use this prototype for walking through user stories, acceptance testing, requirements elicitations, to name just some of its uses.
+5. Use the documented ontology that Ampersand generates for a cross-check on the agreed rules.
 
 The advantages of developing with Ampersand :
 
