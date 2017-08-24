@@ -12,6 +12,7 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
   * Note that this information is visible in all three tabs, but organized differently.
 * Are there required subjects for going to `Amsterdam?`
   * Add, in the tab destinations, the subject "Dutch language" for Amsterdam. The system sees that the subject is unknown, and provides a green plus-sign to add it.
+  * Don't forget to press "Save" after each change you have made.
   * Note that immediately the students qualified for Amsterdam change.
 * Now register student `Brown` for going to `Rome`.
 * Now register student `Applegate` for going to `Hawaii`
