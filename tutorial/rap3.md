@@ -32,7 +32,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
   * Save, compile and see the result.
 
-* Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Demonstrate your changes to your peers and discuss the results.
+* Try to understand what you see in the script by making other changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Demonstrate your changes to your peers and discuss the results.
 
 ## What have you learned?
 
