@@ -17,7 +17,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 ## Assignment
 
 1. Copy and paste the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. Otherwise, scroll down to the bottom of the screen and try it out on your own by clicking the buttons. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
-2. Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Discuss and demonstrate your changes to your peers.
+2. Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Discuss and demonstrate your changes with your peers.
 
 ## What have you learned?
 
