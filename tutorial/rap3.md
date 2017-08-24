@@ -32,14 +32,16 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
   * Save, compile and see the result.
 
+  * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
+
 * Try to understand what you see in the script by making other changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Demonstrate your changes to your peers and discuss the results.
 
 ## What have you learned?
 
 After finishing your assignment, you have learned:
 
-* that specifying three relations suffices to define the data structure of the "Hawaii" application;
-* one rule in the business should lead to one rule in the code; 
+* how to use RAP3 to write, save and compile code.
+* the first basic keywords of Ampersand script and their effect on the prototype.
 * an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
 
 
