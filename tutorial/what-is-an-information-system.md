@@ -96,9 +96,9 @@ During this part of the course, you will learn about the structure of an informa
 
 After finishing your assignment, you have learned:
 
-* to explain how details in the source code of your information system relate to the operational system that you have been playing with;
+* to recognize details in the source code of your information system and relate them to the operational system that you have been playing with;
 * that a rule of the business, such as "A student who registers for a trip must have passed all subjects that are required for that trip." can be formalized in Ampersand.
-* a business rule can be used to constrain data in a database.
+* that such a business rule can be used to constrain data in a database.
 
 ## Want to learn more?
 
