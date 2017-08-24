@@ -4,7 +4,14 @@ In this section you will learn the basic structure of information systems accord
 
 We will study an information system called "Hawaii". The purpose of that system is to let students find out for which trips they qualify. In order to take a trip to \(for example\) Rome, you have to pass the courses "Latin" and "World Religions" first. In the same application, a teacher can register which courses are required for which trip. You can play with the application to see how it works.
 
-Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. Play around a little bit to find out which courses, students and trips there are and try to see what happens if you add or remove information from the system.
+Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click is on the button "overview" \(the top of the page\) and then you can browse through the data in this system. Find out which courses, students and trips there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
+
+## Assignment
+
+* * Suppose there are no requirements for going to `Amsterdam`. Is this the case in [the application](http://ampersand.tarski.nl/Hawaii)? If such requirements for `Amsterdam`exist, remove them. Which students qualify for going to that destination?
+* Now register student `Brown` for going to `Rome`.
+* Now register student `Applegate` for going to `Hawaii`
+* Now require `Dutch` for going to `Amsterdam`.
 
 This information system was built by the following code:
 
@@ -70,15 +77,6 @@ ENDCONTEXT
 ```
 
 During this part of the course, you will learn about the structure of an information system. You will also learn how this system has been defined in Ampersand.
-
-## Assignment
-
-Play with the information system and discuss what you see with your fellow students and your tutor. For example:
-
-* Suppose there are no requirements for going to `Amsterdam`. Is this the case in [the application](http://ampersand.tarski.nl/Hawaii)? If such requirements for `Amsterdam`exist, remove them. Which students qualify for going to that destination?
-* Now register student `Brown` for going to `Rome`.
-* Now register student `Applegate` for going to `Hawaii`.
-* Now require `Dutch` for going to `Amsterdam`.
 
 ## What have you learned?
 
