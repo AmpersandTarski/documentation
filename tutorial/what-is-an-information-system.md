@@ -8,10 +8,13 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
 
 ## Assignment
 
-* * Suppose there are no requirements for going to `Amsterdam`. Is this the case in [the application](http://ampersand.tarski.nl/Hawaii)? If such requirements for `Amsterdam`exist, remove them. Which students qualify for going to that destination?
+* Who are the three students and what are the courses \(subjects\) they passed?
+  * Note that this information is visible in all three tabs, but organized differently.
+* Are there required subjects for going to `Amsterdam?`
+  * Add, in the tab destinations, the subject "Dutch language" for Amsterdam. The system sees that the subject is unknown, and provides a green plus-sign to add it.
+  * Note that immediately the students qualified for Amsterdam change.
 * Now register student `Brown` for going to `Rome`.
 * Now register student `Applegate` for going to `Hawaii`
-* Now require `Dutch` for going to `Amsterdam`.
 
 This information system was built by the following code:
 
