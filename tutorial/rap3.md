@@ -16,9 +16,20 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
 ## Assignment
 
-1. Copy and paste the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. 
-   * Otherwise, scroll down to the bottom of the screen and try it out on your own by clicking the buttons. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
-2. Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Demonstrate your changes to your peers and discuss the results.
+* Copy and paste the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. 
+  * Scroll down to the bottom of the screen and try it out on your own by clicking the buttons. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
+* Let's add the possibility to register teachers in this system. Add the code somewhere above the INTERFACE definition:
+  * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`
+  * Define the relation between Subject and Teacher with the keyword RELATION: 
+    `RELATION provided_by[Subject*Teacher]`
+    `MEANING "the course for a subject is provided by a teacher"`
+
+  * You can define an initial set of teachers and link them to a subject following the examples you see in the code. But you can also add the data using the prototype.
+  * Add an interface for the teachers in the tab for Subjects, below the line for "students that passed":
+    `, "teachers" : provided_by  CRUD`
+
+  * Save, compile and see the result.
+* Try to understand what you see in the script by making changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Demonstrate your changes to your peers and discuss the results.
 
 ## What have you learned?
 
