@@ -1,4 +1,4 @@
-This tutorial is meant for IT-professionals who want to develop information systems. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for use in a classroom, because a tutor is required to explain details that are missing in this tutorial. The required theory is also available in chapter 3 of[ the coursebook](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.127.1930&rep=rep1&type=pdf) of [a course given at the Open University of the Netherlands](http://portal.ou.nl/web/rule-based-design-for-cs/cursusinformatie). This tutorial also contains assignments to let you practice.
+This tutorial is meant for Business- or IT-professionals who want to learn about information systems development. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for use in a classroom, because a tutor is required to explain details that are missing in this tutorial. The required theory is also available in chapter 3 of[ the coursebook](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.127.1930&rep=rep1&type=pdf) of [a course given at the Open University of the Netherlands](http://portal.ou.nl/web/rule-based-design-for-cs/cursusinformatie). This tutorial also contains assignments to let you practice.
 
 ## Overview
 
@@ -10,5 +10,8 @@ This tutorial is meant for IT-professionals who want to develop information syst
 ## What have you learned so far?
 
 * Ampersand is meant to develop information systems.
-* This tutorial will get you going with Ampersand. However, it not (yet) complete. Consult your tutor with questions.
+* This tutorial will get you going with Ampersand. However, it not \(yet\) complete. Consult your tutor with questions.
 * You have a tool to experiment with.
+
+
+
