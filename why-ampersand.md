@@ -1,19 +1,24 @@
-# Ten reasons for Ampersand
+# Reasons for Ampersand
 
-The purpose of Ampersand is to help business architects deliver. Ampersand lets you design information systems that actually do what users want. It allows you to offer information systems to the business that comply provably to the rules by which they conduct their business. And it lets you work fast. How cool is that!
+The purpose of Ampersand is to help business architects deliver. Ampersand lets you design information systems that actually do what users want. It allows you to offer information systems to the business that comply provably to the rules by which they conduct their business.  How cool is that!
 
 How does it work?
 
-1. Communicate with the business in their own language. Define a _domain language_[^1] to consolidate agreement of terms among stakeholders. Ampersand formalizes part of the business language  that is used in the information system. Ampersand gives you a \(documented\) ontology.  
-2. Generate a real and working _prototype_ of your information system at the push of a button. Use this prototype for walking through user stories, acceptance testing, requirements elicitations, to name just some of its uses.
-3. Express your design in [_business rules_](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf) to let anyone concerned convince herself that the system supports the right rules.
-4. Define your information system in a [_declarative_](/why-declarative.md "Why Declarative?") language. Why specify all the steps towards your goal when you can specify that goal directly?
-5. Enjoy the benefits of _strong and static typing_. Several scientific studies[^2,][^3] show significant effects of strong and static typing on the total cost of ownership of your design. Besides, it enables Ampersand to generate efficient code.  
-6. Use _relation algebra_[^4] to align the IT-system to the business, by exploiting its natural language interpretation alongside its technical interpretation as working software. Your claim that business stakeholders understand \(solely in natural language\) what the computer does \(in software\) can't be made more convincingly.
-7. Develop in _small increments_. Add constraints, user-interfaces, relations, and other design elements one at a time. Generate a prototype at any intermediate stage, to visualize your design long before it is finished.  
-8. Design subsystems[^5] in isolation, due to [_conceptual independence_](http://dl.acm.org/citation.cfm?id=2946158.2946405). Ampersand lets you combine subsystems into larger systems, automating the burden of combining them.  Reuse _design patterns_ to assemble systems, rather than re-invent from scratch. 
-9. Document your design embedded in the specification, so you always have up-to-date _documentation_ which is consistent with your design.
-10. Specify with mathematical rigor, without being a mathematician. Ampersand gives you correctness and consistency in return, with mathematical provability to back it up.
+1. Communicate with the business in their own language. Define a _domain language_[^1] to consolidate agreement of terms among stakeholders. 
+2. Formalize the agreements that are used in the information system using Ampersand-script.  
+3. Generate a real and working _prototype_ of your information system at the push of a button. Use this prototype for walking through user stories, acceptance testing, requirements elicitations, to name just some of its uses.
+4. Ampersand also gives you a documented ontology that people can review and comment on.
+
+The advantages of developing with Ampersand :
+
+1. Express your design in [_business rules_](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf) to let anyone concerned convince herself that the system supports the right rules.
+2. Define your information system in a [_declarative_](/why-declarative.md "Why Declarative?") language. It is not necessary to specify all business process steps, it is enough to specify the process goals.
+3. Enjoy the benefits of _strong and static typing_. Several scientific studies[^2,][^3] show significant effects of strong and static typing on the total cost of ownership of your design. Besides, it enables Ampersand to generate efficient code.  
+4. Use _relation algebra_[^4] to align the IT-system to the business, by exploiting its natural language interpretation alongside its technical interpretation as working software. Your claim that business stakeholders understand \(solely in natural language\) what the computer does \(in software\) can't be made more convincingly.
+5. Develop in _small increments_. Add constraints, user-interfaces, relations, and other design elements one at a time. Generate a prototype at any intermediate stage, to visualize your design long before it is finished.  
+6. Design subsystems[^5] in isolation, due to [_conceptual independence_](http://dl.acm.org/citation.cfm?id=2946158.2946405). Ampersand lets you combine subsystems into larger systems, automating the burden of combining them.  Reuse _design patterns_ to assemble systems, rather than re-invent from scratch. 
+7. Document your design embedded in the specification, so you always have up-to-date _documentation_ which is consistent with your design.
+8. Specify with mathematical rigor, without being a mathematician. Ampersand gives you correctness and consistency in return, with mathematical provability to back it up.
 
 #### Footnotes
 
