@@ -1,4 +1,5 @@
 # RAP3
+
 This section introduces the tool you will use during the tutorial: [RAP3](http://ampersand.tarski.nl/RAP3). This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and [click here](http://ampersand.tarski.nl/RAP3) to start using it.
 
 ## Identifying yourself
@@ -7,7 +8,7 @@ RAP3 keeps your work together under a student number. So you have to log in in t
 
 ## Disclaimer
 
-RAP3 is under development. You can expect to find children's diseases in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). In this way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
+RAP3 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
 
 ## Making your first Ampersand script
 
@@ -21,16 +22,10 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 ## What have you learned?
 
 After finishing your assignment, you have learned:
+
 * that specifying three relations suffices to define the data structure of the "Hawaii" application;
 * one rule in the business should lead to one rule in the code; 
 * an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
-
-
-
-
-
-
-
 
 
 
