@@ -3,7 +3,7 @@
 * [Introduction](intro.md)
 * [Why Ampersand?](why-ampersand.md)
 * [Tutorial](tutorial.md)
-  * [What is an information system?](tutorial/what-is-an-information-system.md)
+  * [Example system: Hawaii](tutorial/what-is-an-information-system.md)
   * [Your tool: RAP3](tutorial/rap3.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [Rules](tutorial/rules.md)

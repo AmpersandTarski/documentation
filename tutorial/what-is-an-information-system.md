@@ -83,10 +83,15 @@ Play with the information system and discuss what you see with your fellow stude
 ## What have you learned?
 
 After finishing your assignment, you have learned:
+
 * to explain how details in the source code of your information system relate to the operational system that you have been playing with;
 * that a rule of the business, such as "A student who registers for a trip must have passed all subjects that are required for that trip." can be formalized in Ampersand.
 * a business rule can be used to constrain data in a database.
 
 ## Want to learn more?
+
 1. How does the [interface mechanism](/syntax/interface.md) work?
 2. How can I upload [bulk data](/tutorial/data-in-spreadsheets.md) from spreadsheets into my application?
+
+
+
