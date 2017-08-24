@@ -15,7 +15,17 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
   * Don't forget to press "Save" after each change you have made.
   * Note that immediately the students qualified for Amsterdam change.
 * Now register student `Brown` for going to `Rome`.
-* Now register student `Applegate` for going to `Hawaii`
+* Now register student `Applegate` for going to `Hawaii`.
+  * This will trigger a message because this student does not qualify.
+  * Click on the message to see details.
+  * Look-up in the code below where this message is defined \(you don't have to understand the syntax\).
+  * Click cancel.
+* Note the three icons on the top-right of the screen and click on the middle icon \(two arrows\).
+  * Click on 'Reinstall database'
+  * An "are-you-sure?" screen comes up, click on the big red button and wait for it to turn green.
+  * Click on 'overview' and the initial data is back.
+  * Note in the code below, where the initial data is defined.
+* Compare the code-part called INTERFACE and compare it with the screen. Note which parts you recognize. The syntax of the code will be discussed in the course.
 
 This information system was built by the following code:
 
