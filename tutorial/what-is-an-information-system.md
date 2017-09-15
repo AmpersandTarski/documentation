@@ -1,4 +1,4 @@
-## Hawaii
+# Hawaii
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
