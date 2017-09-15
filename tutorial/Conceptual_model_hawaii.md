@@ -55,7 +55,8 @@ Try to reason about the answers to the following questions based on the conceptu
 
 ## What have you learned?
 
-an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
+* an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
+* a rule engine executes the rules on all data regularly
 
 
 
