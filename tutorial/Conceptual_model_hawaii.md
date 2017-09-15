@@ -53,9 +53,9 @@ Try to reason about the answers to the following questions based on the conceptu
 
 **Question 4**: Think of an entry you can do in the system to generate a violation message and try it out in the system.
 
+## What have you learned?
 
-
-What have you learned?
+an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
 
 
 

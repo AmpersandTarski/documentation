@@ -25,7 +25,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
     `RELATION provided_by[Subject*Teacher]`  
     `MEANING "the course for a subject is provided by a teacher"`
 
-  * You can define an initial set of teachers and relate them to a subject following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial. 
+  * You can define an initial set of teachers and relate them to a subject following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
 
   * Add an interface for the teachers in the tab for Subjects, below the line for "students that passed":  
     `, "teachers" : provided_by  CRUD`
@@ -42,7 +42,6 @@ After finishing your assignment, you have learned:
 
 * how to use RAP3 to write, save and compile code.
 * the first basic keywords of Ampersand script and their effect on the prototype.
-* an information system may be seen as a system of relations and rules that governs data, supplemented by user-interfaces that give access to that data.
-
+* 
 
 
