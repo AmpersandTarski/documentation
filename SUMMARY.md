@@ -24,6 +24,7 @@
   * [Rules](modeling/rules/intro_rules.md)
     * [Violations](modeling/rules/violations.md)
   * [Interfaces](modeling/interfaces.md)
+  * [Best Practices](modeling/best-practices.md)
 * [Ampersand Syntax](syntax/intro-syntax.md)
   * [The CONCEPT statement](syntax/concept.md)
   * [The RELATION statement](syntax/relation.md)
@@ -50,7 +51,4 @@
     * [SIAM \(Sessions, Identity and Access Management\) Module](prototypes/siam_module.md)
   * [Security](prototypes/limitations-and-features.md)
 * [Troubleshooting](Main-level/troubleshooting.md)
-* [Semantics](semantics.md)
-* [Why Ampersand?](why-ampersand.md)
-* [Best Practices](best-practices.md)
 
