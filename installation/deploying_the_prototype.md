@@ -23,7 +23,7 @@ The deployment consists of the following steps:
    On servers other than Linux, you may need another command than `wget`, but the files are the same.
 
 3. In the file called `docker-compose.yml` you must specify your own `.adl`-file:
-   ![](/assets/CHANGE_ME.png)
+   ![](/assets/screenshot-docker-compose.png)
 4. Run docker-compose to deploy your prototype by executing the following command:
    ```
     docker-compose up
