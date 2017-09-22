@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](intro.md)
-* [Why Ampersand?](why-ampersand.md)
+* [Introduction](Main-level/intro.md)
+* [Why Ampersand?](Main-level/why-ampersand.md)
 * [Tutorial RAP3](tutorial.md)
   * [Example system: Hawaii](tutorial/what-is-an-information-system.md)
   * [Your tool: RAP3](tutorial/rap3.md)
