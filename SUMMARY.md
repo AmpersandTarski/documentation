@@ -54,4 +54,5 @@
 * [Interfaces](interfaces.md)
 * [RAP2](tutorial/rap2.md)
 * [Best Practices](best-practices.md)
+* [etest](etest.md)
 
