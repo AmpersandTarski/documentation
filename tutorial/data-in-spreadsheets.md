@@ -67,7 +67,7 @@ You will find the Excel import function in the menu bar on the top right of your
 ![](/assets/screenshot-import.png)  
 
 This is what your upload screen looks like:
-![](/assets/Upload Excel.png)
+![](/assets/screenshot-upload-excel.png)
 You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green _Upload_ button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
 
 ## Assignment
