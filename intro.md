@@ -2,8 +2,8 @@
 Want to avoid reading too much? Take a moment to think about this:
 # What makes you curious?...
 
-1. I'm just interested to know who might use Ampersand and for which purposes. [Click here](/why-ampersand.md) to learn why you want Ampersand.
-2. I am a _student_ wanting to use Ampersand in class. [This tutorial](/tutorial.md) was made just for you.
+1. I'm just interested to know who might use Ampersand and for which purposes. [Click here](/Main-level/why-ampersand.md) to learn why you want Ampersand.
+2. I am a _student_ wanting to use Ampersand in class. [This tutorial](/tutorial/intro_tutorial.md) was made just for you.
 3. I am a _computer professional_ in need of a good method for designing an information system.
 4. I am a _scientific researcher_ and I want to know about the theory behind Ampersand.
 5. I am a _software engineer_ and I want to change Ampersand to suit my needs.

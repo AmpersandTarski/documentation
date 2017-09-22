@@ -21,8 +21,6 @@
 * [Modeling in Ampersand](modeling/intro_modeling.md)
   * [Context](modeling/context.md)
   * [Relations & Concepts](modeling/relationsand_concepts_md.md)
-  * [Rules](modeling/rules/intro_rules.md)
-    * [Violations](modeling/rules/violations.md)
   * [Interfaces](modeling/interfaces.md)
   * [Best Practices](modeling/best-practices.md)
 * [Ampersand Syntax](syntax/intro-syntax.md)
