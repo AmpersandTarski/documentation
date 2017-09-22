@@ -51,7 +51,5 @@
 * [Troubleshooting](troubleshooting/troubleshooting.md)
 * [Semantics](semantics.md)
 * [Why Ampersand?](why-ampersand.md)
-* [Interfaces](interfaces.md)
-* [RAP2](tutorial/rap2.md)
 * [Best Practices](best-practices.md)
 

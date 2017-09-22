@@ -42,6 +42,6 @@ After finishing your assignment, you have learned:
 
 * how to use RAP3 to write, save and compile code.
 * the first basic keywords of Ampersand script and their effect on the prototype.
-* 
+
 
 
