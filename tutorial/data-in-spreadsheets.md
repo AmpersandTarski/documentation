@@ -64,7 +64,7 @@ In practical applications, you might want to reuse data from existing spreadshee
 ## Uploading your spreadsheet
 
 You will find the Excel import function in the menu bar on the top right of your screen[^2].  
-![](/assets/Naamloos.png)  
+![](/assets/screenshot-import.png)  
 
 This is what your upload screen looks like:
 ![](/assets/Upload Excel.png)
