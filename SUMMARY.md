@@ -5,6 +5,7 @@
 * [Tutorial](tutorial.md)
   * [Example system: Hawaii](tutorial/what-is-an-information-system.md)
   * [Your tool: RAP3](tutorial/rap3.md)
+  * [Conceptual Model: Hawaii](tutorial/Conceptual_model_hawaii.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [Rules](tutorial/rules.md)
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
@@ -54,5 +55,6 @@
 * [Interfaces](interfaces.md)
 * [RAP2](tutorial/rap2.md)
 * [Best Practices](best-practices.md)
-* [etest](etest.md)
+
+
 

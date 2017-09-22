@@ -33,6 +33,8 @@ In the code you can find the MEANING of each relation in natural English. In the
 
 ## The rule
 
+_THIS PART IS INCORRECT, WILL BE FIXED...._
+
 So let’s finally go to the one rule that governs this information system: `attends |- pass~;required`
 
 The rule consists of two parts with the `|-` as separator. On each side of the separator you find a relation. On the left the relation `attends` and on the right-hand side you see a relation that is not explicitly defined in the model, but it is constructed from two relations that are in the model: `pass~`\(pronounced as “pass-flip”, indicating the relation in opposite direction\) and `required`. This constructed relation consists of \(student, destination\)-pairs where the student has passed the subject and that same subject is required for that destination. Let’s call this new relation qualifies\_for.
