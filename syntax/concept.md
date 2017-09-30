@@ -1,7 +1,7 @@
 # The CONCEPT statement
 
 ## Purpose:
-A concept is a name for similar things. For example: `Peter`, `John`, and `Barack` are things you might want to call `Person`, whereas `45-NP-88` and `KD-686-D` could be instances of the concept `LicensePlate`.
+A concept statement defines a concept in natural language. A concept is a name for similar things. For example: `Peter`, `John`, and `Barack` are things you might want to call `Person`, whereas `45-NP-88` and `KD-686-D` could be instances of the concept `LicensePlate`.
 
 ## Syntax:
 ~~~
@@ -33,8 +33,9 @@ CONCEPT Criterion "A criterion is a standard on which a judgment or decision may
 
 ## Miscellaneous
 * The name of a concept starts with an uppercase.
-* The description will be printed in the functional specification.
-* Concepts need not be defined. If you use a concept without a definition, Ampersand defines it for you (without a definition).
+* A concept should be used for immutable concepts. E.g. use a concept `Person` to express that a person will always be a person and will not change in, let us say, a table. However, don't use `Employee`, because termination of an employee's contract causes a person to be an employee no longer. So employees are not immutable. To be an employee is a dynamic property, so model it as a relation.
+* The description will be printed in the functional specification, so please check that your definition is a complete sentence.
+* Concepts need not be defined. If you use a concept without a definition, Ampersand defines it for you (regardless of whether you defined it or not).
 
 
 
