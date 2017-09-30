@@ -1,10 +1,18 @@
+# Domain language
+To analyse, discuss and solve problems, everybody uses language. And so will you, when solving your specific problem. This is called a *domain language*, because it is specific for a problem (or class of problems) you are trying to solve.
+
+In Ampersand, you make that language explicit by defining relations between concepts. This language consists of relations and concepts. These are used to express facts.
+
 # Relations & Concepts
+A fact is a statement that is true. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
 
-A fact is a statement that is True. _Joe Smith lives in New York_ could be a fact. In this example, _Joe Smith_ could be seen as an instance of _a Person_ and _New York_ as an instance of _a City_. The following Ampersand terminology applies here:
+Let us consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
 
-* _Person_ and _City_ are **concepts**
-* _Joe Smith_ is an **atom** of the concept _Person_
-* _lives in_ is the **relation name** of a **relation** with the **sign** \[Person, City\] 
+* Let `Person` and `City` be **concepts**
+* `Joe Smith` is an **atom** of the concept `Person` and `New York` is an **atom** of the concept `City`.
+* Let us use the **relation** `livesIn[Person*City]` to contain our fact.
+* `livesIn` is the **relation name** and `[Person*City]` is the **signature** of this relation.
+* If the pair `(Joe Smith,New York)` is an element of this relation, Ampersand considers the statement Joe Smith livesIn New York to be true. So all pairs in a relation represent facts.
 
 ## Properties of relations
 

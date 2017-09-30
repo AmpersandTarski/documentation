@@ -1,5 +1,5 @@
 # Modeling in Ampersand (work in progress)
-There can be many reasons for making an Ampersand model:
+There can be many reasons for making an Ampersand model. Just a few examples are:
 * You want to study the conceptual structure of something, to gain a better understanding or to acquire the jargon of a topic. Business analysts do it when starting on a new assignment. In a new environment with new people, unknown habits and a lot of catching up to do, they pick some documentation, courseware, legislature or other jargon-laden documentation and make an Ampersand model. Making sense of piles of new material goes much faster if you try to make an Ampersand model on the side.
 * You want to design persistent store (a database) for use in an application. You make a model of the data, the rules and make one interface for every service your store provides.
 * You want to detect flaws in an architecture. Make an ampersand model of that architecture, and model every rule you want checked. Populate your model with data from the real architecture, and you can measure every flaw as it occurs.
