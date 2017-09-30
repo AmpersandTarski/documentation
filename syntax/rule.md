@@ -1,29 +1,19 @@
 # The RULE statement
 
 ## Purpose
+The purpose of a rule is to constrain data. Refer to the [chapter about rules](/tutorial/rules/intro_rules.md) in the tutorial for examples and a practice oriented explanation.
 
-## Semantics
 A rule statement defines something that should be true. It does not define the enforcement.
 
-By default rules are invariant rules.   
-By preceding the rule statement with a role specification for this rule, the rule becomes a process rule.
-
-## Syntax
-
+## Syntax of rules
+A `<rule>` has the following syntax:
 ```
-RULE Label? Expression Meaning* Message* Violation?
+RULE <label>? <expression> <meaning>* <message>* <violation>?
 ```
 
-or
+## Syntax of labels
+A `<label>` is optional. It can be a single word or a string \(enclosed by double brackets\) followed by a colon \(`:`\).
 
-```
-ROLE Name MAINTAINS <rule label>
-RULE Label? Expression Meaning* Message* Violation?
-```
-
-### Label?
-
-The optional label can be a single word or a string \(enclosed by double brackets\) followed by a colon \(`:`\).
 
 ### Expression
 
@@ -122,6 +112,10 @@ A rule is violated by a pair of atoms \(source, target\). The source atom is the
 `VIOLATION ( TXT "Project ", SRC projectName, TXT " does not have a projectleader")`
 
 ## ROLE MAINTAINS
+
+By default rules are invariant rules.   
+By preceding the rule statement with a role specification for this rule, the rule becomes a process rule.
+
 
 tbd
 
