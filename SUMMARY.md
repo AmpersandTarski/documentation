@@ -35,6 +35,7 @@
   * [The PURPOSE statement](syntax/purpose.md)
   * [The IDENT statement](syntax/ident.md)
   * [The TABLE statement](syntax/table.md)
+  * [Language support](syntax/languages.md)
 * [The Command Line tool](command-line-interface/intro-command-line.md)
   * [switches](command-line-interface/switches.md)
   * [Configuration](command-line-interface/environment-variables.md)

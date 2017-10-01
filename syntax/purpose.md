@@ -14,6 +14,6 @@ Most things in your model are in it for a reason. To document these, you should 
 Where `<type of thing>` and `<name>` are the type and name of the thing that is refered to. This could be one of:
   `CONCEPT`, `RELATION`, `RULE`, `IDENT`, `VIEW`, `PATTERN`, `INTERFACE`, `CONTEXT`
 
-The optional <language> and <markup> can be used to override the settings for language and markup. If omitted, these are inherrited from the pattern of context where the PURPOSE statement is specified in. 
+The optional <language> and <markup> can be used to override the settings for language and markup. If omitted, these are inherited from the pattern of context where the PURPOSE statement is specified in. 
 
 

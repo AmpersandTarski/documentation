@@ -27,7 +27,7 @@ Other models included with the INCLUDE statement become part of the context they
 
 ### Optional parts
 #### Language definition
-It is possible to specify what language your model is in. Currently English and Dutch are supported. To do so, directly following the name of your context, you can specify
+To tell Ampersand what language your context is in, you can append a language directive to your context. Currently English and Dutch are supported. To do so, directly following the name of your context, you can specify
 
 ```
 IN <language>
