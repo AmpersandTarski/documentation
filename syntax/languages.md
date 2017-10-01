@@ -31,7 +31,7 @@ PURPOSE CONCEPT Person IN DUTCH
 This means that the contents of this purpose statement is written in `DUTCH`.
  
 ## Additional information
-Ampersand assumes that whatever is written is written in the language denoted in the language directive. It doesn't check whether that language is actually used.
+Ampersand assumes that whatever is written is written in the language denoted in the language directive. It doesn't check whether that language is actually used, because it cannot recognize languages.
 
 If a `CONTEXT` has no language directive, `IN ENGLISH` is used by default. If a `CONTEXT` has a language directive, that language will be the default language of all natural language items within that context.
 
