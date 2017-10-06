@@ -12,11 +12,14 @@ RAP3 is under development. You can expect to find teething problems \(kinderziek
 
 ## Making your first Ampersand script
 
-When you click on the blue plus-sign on the right side in the menu bar in your screen, you get to make a new script. It opens an editor screen in which you can type your very first Ampersand script. ![](/assets/your first Ampersand script.png)
+When you click on the blue plus-sign on the right side in the menu bar in your screen, you get to make a new script. It opens an editor screen in which you can type your very first Ampersand script.
+
+![](/assets/Schermafdruk 2017-10-06 15.52.13.png)
 
 ## Assignment
 
-* Copy and paste the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. 
+* Copy the script from [the first page of this tutorial](//tutorial/what-is-an-information-system.md),  paste the script in the editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
+* Checkbox "compile" and click on the orange "Save" button in top of the screen. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. 
   * Scroll down to the bottom of the screen and try it out on your own by clicking the buttons. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 * Let's add the possibility to register teachers in this system. The interface code needs to be at the end, other information can be added anywhere above that:
 
