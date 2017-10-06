@@ -34,7 +34,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
   * Add an interface for the teachers in the tab for Modules, right above the line for "Course":  
     `, "Teacher" : providedBy  CRUD`
 
-  * Save, compile, create protype and see the result.
+  * Save, compile, create protype, reinstall database and see the result.
 
   * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
 
