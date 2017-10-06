@@ -4,18 +4,18 @@ In this section you will learn the basic structure of information systems accord
 
 We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll for any module that is part of the course they take.
 
-Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click is on the button "overview" \(the top of the page\) and then you can browse through the data in this system. Find out which courses, students and trips there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
+Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click is on the button "overview" \(the top of the page\) and then you can browse through the data in this system. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
 ## Assignment
 
 * Who are the three students and what are the courses they they take?
-* Are there required subjects for going to `Amsterdam?`
-  * Add, in the tab destinations, the subject "Dutch language" for Amsterdam. The system sees that the subject is unknown, and provides a green plus-sign to add it.
+* Is there a module `HRM`?
+  * Add, in the tab Course, the module HRM to the Management course. The system sees that the subject is unknown, and provides a green plus-sign to add it.
   * Don't forget to press "Save" after each change you have made.
-  * Note that immediately the students qualified for Amsterdam change.
-* Now register student `Brown` for going to `Rome`.
-* Now register student `Applegate` for going to `Hawaii`.
-  * This will trigger a message because this student does not qualify.
+  * Note that this change is also visible in the tab Modules.
+* Now enroll student `John` for the module `Business Rules`.
+* Now enroll student `Peter` for the module `Business Rules`.
+  * This will trigger a message because this student does not take the course Business IT.
   * Click on the message to see details.
   * Look-up in the code below where this message is defined \(you don't have to understand the syntax\).
   * Click cancel.
