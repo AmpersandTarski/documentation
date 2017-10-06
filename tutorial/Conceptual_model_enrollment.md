@@ -11,7 +11,7 @@ We have three ingredients:
 Before we discuss these three main ingredients, we will discuss the other keywords you see in the code:
 
 * INTERFACE is not crucial for the conceptual model, but still crucial for the web application. It uses the conceptual model to define the tabs and fields displayed. We will come back to this later.
-* The test after MEANING and PURPOSE is printed in the documentation that RAP3 can generate. 
+* The text after MEANING and PURPOSE is printed in the documentation that RAP3 can generate. 
 * MESSAGE and VIOLATION are used to display messages on screen to the user about rule violations. 
 * POPULATION provides the web application with actual data to test the rules with. Adding data to the system can also be done with an excel sheet. The data consist of elements that populate the concepts and whether or not these elements are connected to each other in a specific relation. 
 
@@ -19,25 +19,25 @@ Before we discuss these three main ingredients, we will discuss the other keywor
 
 The goal of the model is to define rules that will govern the behavior of the system. Rules are about relations and relations link elements of one concept with elements of another concept. So we need all three ingredients to define the model. Deciding about these ingredients, their name and their attributes is exactly the modeling that you will learn in this course.
 
-The conceptual model of Hawaii can be represented with a diagram:
+The conceptual model of Enrollment can be represented with a diagram:
 
-![](/assets/Model Hawaii.png)
+![](/assets/BR course  - Pagina 1.png)
 
-In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation pass is filled with \(subject, student\)-pairs that each specify a specific subject that has been passed by a specific student. The same student can appear in more pairs and the same subject can appear in more pairs. A specific pair \(x,y\) can only appear in the set once.
+In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that the student is taking. The same student can appear in more pairs and the same course can appear in more pairs. A specific pair \(x,y\) can only appear in the set once.
+
+In the code you see the keyword `[TOT]` with the definition of the relation `takes`. This means that eacht student must take at least one course.
 
 ### Assignment
 
-**Question 1**: given the initial dataset in the source-code of Hawaii, what pairs are in the relation requires?
+**Question 1**: given the initial dataset in the source-code of Enrollment, what pairs are in the relation `isPartOf`?
 
-**Question 2**: given the initial dataset in the source-code of Hawaii, which students will attend which destinations?
+**Question 2**: given the initial dataset in the source-code of Enrollment, which students are enrolled for which modules?
 
 ## The rule
 
-_THIS PART IS INCORRECT, WILL BE FIXED...._
+So let’s finally go to the one rule that governs this information system: `isEnrolledFor |- takes ; isPartOf~`
 
-So let’s finally go to the one rule that governs this information system: `attends |- pass~;required`
-
-The rule consists of two parts with the `|-` as separator. On each side of the separator you find a relation. On the left the relation `attends` and on the right-hand side you see a relation that is not explicitly defined in the model, but it is constructed from two relations that are in the model: `pass~`\(pronounced as “pass-flip”, indicating the relation in opposite direction\) and `required`. This constructed relation consists of \(student, destination\)-pairs where the student has passed the subject and that same subject is required for that destination. Let’s call this new relation qualifies\_for.
+The rule consists of two parts with the `|-` as separator. On each side of the separator you find a relation. On the left-hand side we have the relation `isEnrolledFor` and on the right-hand side you see a relation that is not explicitly defined in the model. This relation is constructed from two relations that are in the model: `takes `and `isPartOf~` \(pronounced as “isPartOf-flip”, indicating the relation in opposite direction\). This constructed relation consists of \(`Student`, `Module`\)-pairs where the student is following a course that contains the module. Let’s call this new relation `can_enroll`.
 
 Now we have the following rule: "attends implies qualifies\_for".
 
