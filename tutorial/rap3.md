@@ -20,16 +20,16 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
 * Copy the script from [the first page of this tutorial](//tutorial/what-is-an-information-system.md),  paste the script in the editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
 * Next, checkbox "compile" and click on the orange "Save" button in top of the screen. The script is now compiled. When this is done the compiler message below the checkbox should read "Finished processing your model". And four bluw buttons should be visible below that.
-  ![](/assets/Schermafdruk 2017-10-06 16.11.34.png) 
+  ![](/assets/Schermafdruk 2017-10-06 16.15.05.png) 
 * Try out the buttons: click a button and then again on the orange "save" button. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 * Let's add the possibility to register teachers in this system. The interface code needs to be at the end, other information can be added anywhere above that:
 
-  * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`
-  * Define the relation between Subject and Teacher with the keyword RELATION:  
-    `RELATION provided_by[Subject*Teacher]`  
-    `MEANING "the course for a subject is provided by a teacher"`
+  * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`with a short description.
+  * Define the relation between Module and Teacher with the keyword RELATION:  
+    `RELATION providedBy[Module*Teacher]`  
+    `MEANING "A module is provided by a teacher"`
 
-  * You can define an initial set of teachers and relate them to a subject following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
+  * You can define an initial set of teachers and relate them to a module following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
 
   * Add an interface for the teachers in the tab for Subjects, below the line for "students that passed":  
     `, "teachers" : provided_by  CRUD`
