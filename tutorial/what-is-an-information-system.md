@@ -29,60 +29,62 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
 This information system was built by the following code:
 
 ```
-CONTEXT Hawaii IN ENGLISH
-PURPOSE CONTEXT Hawaii
-{+Once in their school career, students get to go on a field trip abroad.
-However, the organizer of the field trip may require that you have completed specific courses.
-This application gives overviews of students and the trips for which they qualify.
-The application illustrates the use of residuals.
+CONTEXT Enrollment IN DUTCH
+PURPOSE CONTEXT Enrollement
+{+ A complete course consists of several modules.
+Students of a course can enroll for any module that is part of the course.
 +}
 
-RELATION required[Subject*Destination]
-MEANING "A subject that you must have passed to qualify for the school trip to a destination"
+-- The concepts
+CONCEPT Student "Someone who wants to study at this institute"
+CONCEPT Course "A complete course that prepares for a diploma"
+CONCEPT Module "An educational entity with a single exam"
 
-POPULATION required CONTAINS
-   [ ("Surfing", "Hawaii")
-   ; ("Latin", "Rome")
-   ; ("World Religions", "Rome")
+-- The relations and the initial population
+RELATION takes [Student*Course]
+MEANING "A student takes a complete course"
+
+POPULATION takes CONTAINS
+   [ ("Peter", "Management")
+   ; ("Susan", "Business IT")
+   ; ("John", "Business IT")
    ]
 
-RELATION pass[Subject*Student]
-MEANING "The subjects that have been passed by specific students"
+RELATION isPartOf [Module*Course]
+MEANING "A module part of a complete course"
 
-POPULATION pass CONTAINS
-   [ ("Surfing", "Brown")
-   ; ("Surfing", "Conway")
-   ; ("Latin", "Brown")
-   ; ("World Religions", "Applegate")
-   ; ("World Religions", "Brown")
+POPULATION isPartOf CONTAINS
+   [ ("Finance", "Management")
+   ; ("Business Rules", "Business IT")
+   ; ("Business Analytics", "Business IT")
+   ; ("IT-Governance", "Business IT")
+   ; ("IT-Governance", "Management")
    ]
 
-RELATION attends[Student*Destination]
---  attends;required |- pass
-RULE attends |- pass~/required~
-MEANING "A student who registers for a trip must have passed all subjects that are required for that trip."
-MESSAGE "Attempt to register student(s) for a trip without the proper qualification."
-VIOLATION (TXT "Student ", SRC I, TXT " cannot go to ", TGT I, TXT " without passing ", TGT required~)
+RELATION isEnrolledFor [Student*Module]
+MEANING "Students enroll for each module in the course separately"
 
-POPULATION Destination CONTAINS  [ "Amsterdam" ]
+-- The one rule in this model
+RULE ModuleEnrollment: isEnrolledFor |- takes;isPartOf~
+MEANING "A student can enroll for any module that is part of the course the student takes"
+MESSAGE "Attempt to enroll student(s) for a module that is not part of the student's course."
+VIOLATION (TXT "Student ", SRC I, TXT " enrolled for the module ", TGT I, TXT " which is not part of the course ", SRC I[Student];takes)
 
-INTERFACE Overview : '_SESSION'                     cRud
-TABS [ Students     : V[SESSION*Student]            cRuD
-       COLS [ "Student" : I[Student]                cRud
-            , "passed" : pass~                      CRUD
-            , "Qualify for" : pass~/required~       cRud
-            , "registered" : attends                cRUd
+
+INTERFACE Overview : '_SESSION'                 cRud
+TABS [ Students     : V[SESSION*Student]        cRuD
+       COLS [ "Student" : I[Student]            CRUD 
+            , "Enrolled for" : isEnrolledFor    cRUD
+            , "Course" : takes                  CRUD 
             ]
-     , Subjects     : V[SESSION*Subject]            cRuD
-       COLS [ "Subject" : I                         cRud
-            , "required for trip" : required        CRUD
-            , "students that passed" : pass         CRUD
+     , Course     : V[SESSION*Course]           cRuD
+       COLS [ "Course" : I                      cRud
+            , "Modules" : isPartOf~             CRUD
             ]
-     , Destinations : V[SESSION*Destination]        cRuD
-       COLS [ "Destination" : I                     cRud
-            , "required subject" : required~        CRUD
-            , "Qualifying students" : required\pass cRud
-            , "registered" : attends~               cRUd
+     , Modules : V[SESSION*Module]              cRud
+       COLS [ "Modules" : I                     cRuD
+            , "Course" : isPartOf               cRud
+            , "Students" : isEnrolledFor~       CRUD
             ]
      ]
 
