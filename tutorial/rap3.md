@@ -38,7 +38,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
   * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
 
-* Try to understand what you see in the script by making other changes to the program. Compile and run your changes, to learn by doing. Try for instance to register a teacher for each course. Demonstrate your changes to your peers and discuss the results.
+* Try to understand what you see in the script by making other changes to the program. Compile and run your changes, to learn by doing. Try for instance to create a new course with modules and teachers. Demonstrate your changes to your peers and discuss the results.
 
 ## What have you learned?
 
