@@ -31,10 +31,10 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
   * You can define an initial set of teachers and relate them to a module following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
 
-  * Add an interface for the teachers in the tab for Subjects, below the line for "students that passed":  
-    `, "teachers" : provided_by  CRUD`
+  * Add an interface for the teachers in the tab for Modules, right above the line for "Course":  
+    `, "Teacher" : providedBy  CRUD`
 
-  * Save, compile and see the result.
+  * Save, compile, create protype and see the result.
 
   * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
 
