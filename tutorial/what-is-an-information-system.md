@@ -19,6 +19,8 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
   * Click on the message to see details.
   * Look-up in the code below where this message is defined \(you don't have to understand the syntax\).
   * Click cancel.
+* Now remove the course `Business IT `from` Susan`in  the tab Students. 
+  * This also will trigger a message because student must be taking at least one course.
 * Note the three icons on the top-right of the screen and click on the middle icon \(two arrows\).
   * Click on 'Reinstall database'
   * An "are-you-sure?" screen comes up, click on the big red button and wait for it to turn green.
