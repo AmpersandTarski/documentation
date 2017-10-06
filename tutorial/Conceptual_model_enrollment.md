@@ -53,9 +53,9 @@ Try to reason about the answers to the following questions based on the conceptu
 
 **Question 3**: Think of an entry you can do in the system to generate a violation message and try it out in the system.
 
-**Question 4**: John is a hard working student and he want to take the Management course next to the Business IT course. Will the system allow this? Why? 
+**Question 4**: John is a hard working student and he wants to take a second course, Management. Will the system allow this? Why?
 
-**Question 5**: The multiplicity \[TOT\] seem to work as a rule. What is the difference between a multiplicity, like `TOT`, and a rule, like `isEnrolledFor |- takes ; isPartOf~ `?
+**Question 5**: The multiplicity \[TOT\] seem to work as a rule. What is the difference between a multiplicity, like `TOT`, and a rule, like `isEnrolledFor |- takes ; isPartOf~`?
 
 ## What have you learned?
 
