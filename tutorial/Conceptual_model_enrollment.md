@@ -37,11 +37,11 @@ In the code you see the keyword `[TOT]` with the definition of the relation `tak
 
 So let’s finally go to the one rule that governs this information system: `isEnrolledFor |- takes ; isPartOf~`
 
-The rule consists of two parts with the `|-` as separator. On each side of the separator you find a relation. On the left-hand side we have the relation `isEnrolledFor` and on the right-hand side you see a relation that is not explicitly defined in the model. This relation is constructed from two relations that are in the model: `takes `and `isPartOf~` \(pronounced as “isPartOf-flip”, indicating the relation in opposite direction\). This constructed relation consists of \(`Student`, `Module`\)-pairs where the student is following a course that contains the module. Let’s call this new relation `can_enroll`.
+The rule consists of two parts with the `|-` as separator. On each side of the separator you find a relation. On the left-hand side we have the relation `isEnrolledFor` and on the right-hand side you see a relation that is not explicitly defined in the model. This relation is constructed from two relations that are in the model: `takes`and `isPartOf~` \(pronounced as “isPartOf-flip”, indicating the relation in opposite direction\). This constructed relation consists of \(`Student`, `Module`\)-pairs where the student is following a course that contains the module. Let’s call this new relation `canEnrollFor`.
 
-Now we have the following rule: "attends implies qualifies\_for".
+Now we have the following rule: "isEnrolledFor implies canEnrollFor".
 
-Everytime the user tries to add a destination for a student, the rule checks whether the rule will turn out to be true for this \(student, destination\)-pair. If not, the rule produces a violation message. In fact, with each ‘save’ in the database, all information in the database is checked against this rule.
+Everytime the user of the system tries to enroll a student for a module, the rule checks whether this student can be enrolled for this module based on the course the student is taking. If this enrollement is not allowed, the rule produces a violation message. In fact, with each ‘save’ in the database, all information in the database is checked against this rule.
 
 ### Assignment
 
