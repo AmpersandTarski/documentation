@@ -1,15 +1,14 @@
-# Hawaii
+# Enrollment
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Hawaii". The purpose of that system is to let students find out for which trips they qualify. In order to take a trip to \(for example\) Rome, you have to pass the courses "Latin" and "World Religions" first. In the same application, a teacher can register which courses are required for which trip. You can play with the application to see how it works.
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll for any module that is part of the course they take.
 
 Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click is on the button "overview" \(the top of the page\) and then you can browse through the data in this system. Find out which courses, students and trips there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
 ## Assignment
 
-* Who are the three students and what are the courses \(subjects\) they passed?
-  * Note that this information is visible in all three tabs, but organized differently.
+* Who are the three students and what are the courses they they take?
 * Are there required subjects for going to `Amsterdam?`
   * Add, in the tab destinations, the subject "Dutch language" for Amsterdam. The system sees that the subject is unknown, and provides a green plus-sign to add it.
   * Don't forget to press "Save" after each change you have made.
