@@ -47,13 +47,15 @@ Everytime the user of the system tries to enroll a student for a module, the rul
 
 Try to reason about the answers to the following questions based on the conceptual model and the rule. After that, try it out in the system.
 
-**Question 1**: Suppose the user has added to the database that students Brown and Conway will attend the trip to Hawaii. Will this cause a violation message?
+**Question 1**: Suppose the user adds to the database that student Peter is enrolled for the module IT-Governance. Will this cause a violation message?
 
-**Question 2**:  Next, what will happen when “English” is added as required subject for Hawaii? Why?
+**Question 2**: Next, what will happen when the module IT-Governance is no longer a part of the course Business IT. Why?
 
-**Question 3**: Next, what will happen when the user adds “Dutch” as required subject for Amsterdam? Why?
+**Question 3**: Think of an entry you can do in the system to generate a violation message and try it out in the system.
 
-**Question 4**: Think of an entry you can do in the system to generate a violation message and try it out in the system.
+**Question 4**: John is a hard working student and he want to take the Management course next to the Business IT course. Will the system allow this? Why? 
+
+**Question 5**: The multiplicity \[TOT\] seem to work as a rule. What is the difference between a multiplicity, like `TOT`, and a rule, like `isEnrolledFor |- takes ; isPartOf~ `?
 
 ## What have you learned?
 
