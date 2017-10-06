@@ -23,7 +23,7 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
   * Click on 'Reinstall database'
   * An "are-you-sure?" screen comes up, click on the big red button and wait for it to turn green.
   * Click on 'overview' and the initial data is back.
-  * Note in the code below, where the initial data is defined.
+  * Have a look at the code below, to find where the initial data is defined.
 * Compare the code-part called INTERFACE and compare it with the screen. Note which parts you recognize. The syntax of the code will be discussed in the course.
 
 This information system was built by the following code:
