@@ -14,7 +14,6 @@ To make it more difficult to use an other person's `Account`, the system registe
 To isolate a data space for one specific user, we use the notion of session. A `SESSION` corresponds with the notion of session as used in browsers. Ampersand links the session called `'_SESSION'` to the current browser session, which results in the behaviour one would expect of a browser session.
 
 ## How the service works
-
 A login service allows a user to log in and log out of the system. Here is what it looks like in a browser:  
 ![login service in browser](/assets/ssh1.png)  
 Wonder what the 25al1rdkdfvmapkkqvuf5sroc5 means? Well this is the session number of the actual browser session. It is the value for which the atom `'_SESSION'` stands in your script.
@@ -24,6 +23,7 @@ When you type your name, it shows up in the field Userid, but when you type in t
 When we then type `<enter>`, the login functionality disappears and the logout functionality appears:  
 ![](/assets/ssh3.png)  
 When you click the checkbox, you have logged out and will return to the first screen[^1]  
+## What the Ampersand code looks like
 To understand how it all works, let us discuss the code for this service:
 
 ```
@@ -53,7 +53,23 @@ That explains why the `"Login"` subbox is shown when nobody is logged in and the
 So let us do the following experiment: change the `<HROWS>` annotation to `<ROWS>`. Then we will see both boxes:![](/assets/ssh4.png) Notice that both subboxes have the `H` in their annotations, so in the screeshot above the `"Logout"` subbox remains empty. However, when logged in, the other subbox remains empty:
 ![](/assets/ssh5.png)
 
+## List of annotations
+A number of annotations are already available in Ampersand. These are enumerated below:
 
+SUPPORTED BOX <xxx> where xxx =
+
+    ROWS, COLS or TABS (equivalent to the available keywords)
+
+    SCOLS - sortable columns
+
+    HCOLS, or HROWS - hidden columns/rows, i.e.: shows '---' if there is no population.
+
+    SHCOLS - sortable hidden columns
+
+    SPCOLS - sortable paged columns. (i.e. a limited nr. of entries on a page)
+
+    SPHCOLS - sortable paged hidden columns
+    COLSNL, or ROWSNL - COLS/ROWS NoLabels (labels are not shown)
 
 [^1]: Sometimes, you will have to refresh your screen \(button F5 on most browsers\).
 
