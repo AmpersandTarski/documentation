@@ -50,7 +50,9 @@ Similarly, which elements are there to make the  the `"Logout"` subbox appear? T
 
 That explains why the `"Login"` subbox is shown when nobody is logged in and the `"Logout"` subbox is shown when someone is logged in.
 
-So let us do the following experiment: change the `<HROWS>` annotation to `<ROWS>`. Then we will see both boxes:![](/assets/ssh4.png) Notice that both subboxes have the `H` in their annotations, so in the screeshot above the `"Logout"` subbox remains empty. However, when logged in, the other subbox remains empty:
+So let us do the following experiment: change the `<HROWS>` annotation to `<ROWS>`. Then we will see both boxes:
+![](/assets/ssh4.png)
+Notice that both subboxes have the `H` in their annotations, so in the screeshot above the `"Logout"` subbox remains empty. However, when logged in, the other subbox remains empty:
 ![](/assets/ssh5.png)
 
 ## List of annotations
