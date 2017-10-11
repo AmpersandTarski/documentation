@@ -1,11 +1,11 @@
 # Login/Logout service
 
 This example defines a login/logout service,  
-because it is familiar.
+because it is familiar. We show this example to demonstrate how to get different interfaces under varying condition.
 
 ## Preliminaries
 
-To link system activities to a person or organisation, we use the notion of `Account`. To log in means to associate a session with the `Account` of the user. To log out means to break that link. When logging in, it is customary that the user identifies herself. In this example we do this with a `UserID` and `Password`.
+To link system activities to a person or organisation, we use the notion of `Account`. To log in means to associate a session with the `Account` of the user. This association is made in the relation `sessionAccount`. To log out means to break that link, i.e. to remove the session/account pair from relation `sessionAccount`. When logging in, it is customary that the user identifies herself. In this example we do this with a `UserID` and `Password`.
 
 A `UserId` is used to identify the user by a unique name. In this way, the \(system generated\) key of the user in the database is kept within the database.
 
