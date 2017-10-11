@@ -1,7 +1,7 @@
 # Login/Logout service
 
 This example defines a login/logout service,  
-because it is familiar. We show this example to demonstrate how to get different interfaces under varying condition.
+because it is familiar. We show this example to demonstrate how to get different interface structures under varying conditions.
 
 ## Preliminaries
 
