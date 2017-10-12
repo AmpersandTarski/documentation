@@ -19,9 +19,9 @@ A login service allows a user to log in and log out of the system. Here is what 
 Wonder what the 25al1rdkdfvmapkkqvuf5sroc5 means? Well this is the session number of the actual browser session. It is the value for which the atom `'_SESSION'` stands in your script.
 
 When you type your name, it shows up in the field Userid, but when you type in the password it is obscured by dots \(as we would expect\):  
-![](/assets/ssh2.png)  
+![passwd remains invisible](/assets/ssh2.png)  
 When we then type `<enter>`, the login functionality disappears and the logout functionality appears:  
-![](/assets/ssh3.png)  
+![interface swap](/assets/ssh3.png)  
 When you click the checkbox, you have logged out and will return to the first screen[^1]  
 ## What the Ampersand code looks like
 To understand how it all works, let us discuss the code for this service:
