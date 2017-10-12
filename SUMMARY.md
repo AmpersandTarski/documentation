@@ -24,6 +24,7 @@
   * [Interfaces](modeling/interfaces.md)
   * [Best Practices](modeling/best-practices.md)
 * [Defining Services](services.md)
+  * [Example: Client](services/example-client.md)
   * [Example: Login](services/example-login.md)
 * [Ampersand Syntax](syntax/intro-syntax.md)
   * [The CONCEPT statement](syntax/concept.md)
