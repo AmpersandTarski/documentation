@@ -10,7 +10,6 @@
   * [Rules](tutorial/rules/intro_rules.md)
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
     * [Types of Rules](tutorial/rules/types-of-rules.md)
-  * [VOG \(in Dutch\)](tutorial/vog-in-dutch.md)
 * [Installation Ampersand](installation/intro_installation.md)
   * [Installing the tool](installation/installing_ampersand.md)
   * [Configuration](installation/configuration.md)
@@ -52,4 +51,6 @@
   * [Modules](prototypes/modules.md)
     * [SIAM \(Sessions, Identity and Access Management\) Module](prototypes/siam_module.md)
   * [Security](prototypes/limitations-and-features.md)
+* [Exercises](exercises.md)
+  * [VOG \(in Dutch\)](vog-in-dutch.md)
 
