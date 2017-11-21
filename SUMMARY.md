@@ -5,7 +5,7 @@
 * [Tutorial RAP3](tutorial/intro_tutorial.md)
   * [Example system: Enrollment](tutorial/what-is-an-information-system.md)
   * [Your tool: RAP3](tutorial/rap3.md)
-  * [Conceptual Model: Enrollement](tutorial/Conceptual_model_enrollment.md)
+  * [Conceptual Model: Enrollment](tutorial/Conceptual_model_enrollment.md)
   * [Data in spreadsheets](tutorial/data-in-spreadsheets.md)
   * [Rules](tutorial/rules/intro_rules.md)
     * [Try it out: Delivery](tutorial/rules/try-it-out-delivery.md)
