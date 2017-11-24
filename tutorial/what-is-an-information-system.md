@@ -17,7 +17,7 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
 * Now enroll student `Peter` for the module `Business Rules`.
   * This will trigger a message because this student does not take the course Business IT.
   * Click on the message to see details.
-  * Look-up in the code below where this message is defined \(you don't have to understand the syntax\).
+  * Look-up in the code below where this message is defined. It is the line that starts with `RULE`. You don't have to understand the syntax at this point.
   * Click cancel.
 * Now remove the course `Business IT`from`Susan`in  the tab Students. 
   * This also will trigger a message because student must be taking at least one course.
