@@ -23,15 +23,17 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 * Copy the script from [the first page of this tutorial](/tutorial/what-is-an-information-system.md). The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP3 editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
 * Next, click on the blue Compile button. When RAP3 is finished compiling your script, the compiler message should read "Finished processing your model" and three blue buttons should be visible below that.
 
+![](/assets/Finished processing your model.png)
 
-   ![](/assets/Finished processing your model.png)
+* Try out the buttons: Click on the button Diagnosis. When RAP3 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can have a better look there.
+* For now: move on to the Prototype button: Click the button and then click the new link "Launch Prototype".
+* Now you see the information system you have just compiled from the code. You are already familiar with the look and feel. Click the Overview button in the top-left of the screen and have a look around.
 
+During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it. **A note of caution: currently a new release of RAP3 will destroy all that is in the database, also your scripts. So save a copy of you script locally at the end of each working session.**
 
+You are now going to change the code and view the results in RAP3. Close the browser-tab with the running prototype and go back to the browser-tab RAP3 with the editor. 
 
-* Try out the buttons: Click on the button Diagnosis. When RAP3 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can look into them.
-* For now: move on to the Prototyp button. Click the button and then click the new link "Launch Prototype".
-
-During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
+* If you want to save the original script, go to Myscripts, create a new script and copy the same code in there.
 
 * Let's add the possibility to register teachers in this system. The interface code needs to be at the end, other information can be added anywhere above that:
 
