@@ -5,9 +5,8 @@ This section introduces the tool you will use during the course: [RAP3](http://a
 ## Identifying yourself
 
 RAP3 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
-Register with your own student number and e-mail. Note that this application has no connection with the OU database, so be careful to fill in the right number this time and next times.
-
-
+Register with your own student number and e-mail. Note that this application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.
+This login-screen is also the screen to logout later.
 
 ## Disclaimer
 
