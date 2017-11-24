@@ -20,7 +20,7 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
   * Look-up in the code below where this message is defined. It is the line that starts with `RULE`. You don't have to understand the syntax at this point.
   * Click cancel.
 * Now remove the course `Business IT`from`Susan`in  the tab Students. 
-  * This also will trigger a message because student must be taking at least one course.
+  * This also will trigger a message because each student must be taking at least one course.
   * Look up in the code the definition of the RELATION `takes`. The keyword `[TOT]` is responsible for this message.
 * Note the three icons on the top-right of the screen and click on the middle icon \(two arrows\).
   * Click on 'Reinstall database'
