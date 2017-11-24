@@ -20,6 +20,7 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 
 ## Assignment
 
+* Take this script. ![](/assets/Enrollment.adl)
 * Copy the script from [the first page of this tutorial](/tutorial/what-is-an-information-system.md). The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP3 editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
 * Next, click on the blue Compile button. When RAP3 is finished compiling your script, the compiler message should read "Finished processing your model" and three blue buttons should be visible below that.
 
@@ -31,7 +32,7 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 
 During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it. **A note of caution: currently a new release of RAP3 will destroy all that is in the database, also your scripts. So save a copy of you script locally at the end of each working session.**
 
-You are now going to change the code and view the results in RAP3. Close the browser-tab with the running prototype and go back to the browser-tab RAP3 with the editor. 
+You are now going to change the code and view the results in RAP3. Close the browser-tab with the running prototype and go back to the browser-tab RAP3 with the editor.
 
 * If you want to save the original script, go to Myscripts, create a new script and copy the same code in there.
 
