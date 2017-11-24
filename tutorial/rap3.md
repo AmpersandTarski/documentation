@@ -41,12 +41,12 @@ You are now going to change the code and view the results in RAP3. Close the bro
   * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`with a short description. Note that concept names start with an Uppercase and that all quotes need to be double quotes.
   * Define the relation between Module and Teacher with the keyword RELATION:  
     `RELATION providedBy[Module*Teacher]`  
-    `MEANING "A module is provided by a teacher"`
+    `MEANING "A module is provided by a teacher"`  
     Note that relation names start with lowercase.
 
   * You can define an initial set of teachers and relate them to a module following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
 
-  * Add an interface for the teachers in the tab for Modules, right above the line for "Course":  
+  * Add an interface for the teachers in the third tab, the one for Modules. Below the codelines for "Modules" and above the line for "Course":  
     `, "Teacher" : providedBy  CRUD`
 
   * Save, compile, create protype, reinstall database and see the result.
