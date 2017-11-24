@@ -20,7 +20,7 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 
 ## Assignment
 
-* Take [this script](/assets/Enrollment.adl) and copy it.  The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP3 editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
+* Copy the code for the system enrollment from [this page](/tutorial/what-is-an-information-system.md). The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP3 editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
 
 * Next, click on the blue Compile button. When RAP3 is finished compiling your script, the compiler message should read "Finished processing your model" and three blue buttons should be visible below that.
 
