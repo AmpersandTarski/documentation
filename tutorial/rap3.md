@@ -20,7 +20,7 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 
 ## Assignment
 
-* Copy the script from [the first page of this tutorial](//tutorial/what-is-an-information-system.md),  paste the script in the editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
+* Copy the script from [the first page of this tutorial](/tutorial/what-is-an-information-system.md),  paste the script in the editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
 * Next, checkbox "compile" and click on the orange "Save" button in top of the screen. The script is now compiled. When this is done the compiler message below the checkbox should read "Finished processing your model". And four bluw buttons should be visible below that.
   ![](/assets/Schermafdruk 2017-10-06 16.15.05.png) 
 * Try out the buttons: click a button and then again on the orange "save" button. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
