@@ -2,7 +2,7 @@
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll (or be enrolled) for any module that is part of the course they take.
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take.
 
 Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click is on the button "overview" \(the top of the page\) and then you can browse through the data in this system. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
@@ -34,7 +34,7 @@ This information system was built by the following code:
 
 ```
 CONTEXT Enrollment IN DUTCH
-PURPOSE CONTEXT Enrollement
+PURPOSE CONTEXT Enrollment
 {+ A complete course consists of several modules.
 Students of a course can enroll for any module that is part of the course.
 +}
