@@ -74,7 +74,7 @@ MESSAGE "Attempt to enroll student(s) for a module that is not part of the stude
 VIOLATION (TXT "Student ", SRC I, TXT " enrolled for the module ", TGT I, TXT " which is not part of the course ", SRC I[Student];takes)
 
 
-INTERFACE Overview : '_SESSION'                 cRud
+INTERFACE Overview : "_SESSION"                 cRud
 TABS [ Students     : V[SESSION*Student]        cRuD
        COLS [ "Student" : I[Student]            CRUD 
             , "Enrolled for" : isEnrolledFor    cRUD
