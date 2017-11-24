@@ -2,7 +2,7 @@
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll for any module that is part of the course they take.
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll (or be enrolled) for any module that is part of the course they take.
 
 Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click is on the button "overview" \(the top of the page\) and then you can browse through the data in this system. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
@@ -11,9 +11,9 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
 * Who are the three students and what are the courses they they take?
 * Is there a module `HRM`?
   * Add, in the tab Course, the module HRM to the Management course. The system sees that the subject is unknown, and provides a green plus-sign to add it.
-  * Don't forget to press "Save" after each change you have made.
+  * Each change will be saved automatically.
   * Note that this change is also visible in the tab Modules.
-* Now enroll student `John` for the module `Business Rules`.
+* Now enroll student `John` for the module `Business Rules`. You can do this either in the tab Students or the tab Modules. We will later see why this is the case.
 * Now enroll student `Peter` for the module `Business Rules`.
   * This will trigger a message because this student does not take the course Business IT.
   * Click on the message to see details.
