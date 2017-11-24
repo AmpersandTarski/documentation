@@ -22,6 +22,7 @@ Please [click here](http://ampersand.tarski.nl/Hawaii) to try it. The next click
 * Now remove the course `Business IT`from`Susan`in  the tab Students. 
   * This also will trigger a message because each student must be taking at least one course.
   * Look up in the code the definition of the `RELATION takes`. The keyword `[TOT]` is responsible for this message.
+  * Click cancel.
 * Note the three icons on the top-right of the screen and click on the middle icon \(two arrows\).
   * Click on 'Reinstall database'
   * An "are-you-sure?" screen comes up, click on the big red button and wait for it to turn green.
