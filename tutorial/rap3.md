@@ -14,7 +14,7 @@ RAP3 is under development. You can expect to find teething problems \(kinderziek
 
 ## Making your first Ampersand script
 
-When you click on the blue plus-sign on the right side in the menu bar in your screen, you get to make a new script. It opens an editor screen in which you can type your very first Ampersand script.
+When you click on the blue plus-sign on the top-right side in the menu bar in your screen, you can make a new script. Clicking this opens an editor screen in which you can type your very first Ampersand script.
 
 ![](/assets/Schermafdruk 2017-10-06 15.52.13.png)
 
