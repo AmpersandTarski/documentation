@@ -4,8 +4,8 @@ This section introduces the tool you will use during the course: [RAP3](http://a
 
 ## Identifying yourself
 
-RAP3 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
-Register with your own student number and e-mail. Note that this application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.
+RAP3 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.  
+Register with your own student number and e-mail. Note that this application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.  
 This login-screen is also the screen to logout later.
 
 ## Disclaimer
@@ -16,14 +16,16 @@ RAP3 is under development. You can expect to find teething problems \(kinderziek
 
 When you click on the blue plus-sign on the top-right side in the menu bar in your screen, you can make a new script. Clicking this opens an editor screen in which you can type your very first Ampersand script.
 
-![](/assets/Schermafdruk 2017-10-06 15.52.13.png)
+![](/assets/Script editor new script.png)
 
 ## Assignment
 
-* Copy the script from [the first page of this tutorial](/tutorial/what-is-an-information-system.md),  paste the script in the editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
-* Next, checkbox "compile" and click on the orange "Save" button in top of the screen. The script is now compiled. When this is done the compiler message below the checkbox should read "Finished processing your model". And four bluw buttons should be visible below that.
-  ![](/assets/Schermafdruk 2017-10-06 16.15.05.png) 
-* Try out the buttons: click a button and then again on the orange "save" button. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
+* Copy the script from [the first page of this tutorial](/tutorial/what-is-an-information-system.md). The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP3 editor and click on the big blue button "beware to save your work before leaving the editer field!". The script is now saved in RAP3.
+* Next, click on the blue Compile button. When RAP3 is finished compiling your script, the compiler message should read "Finished processing your model" and three blue buttons should be visible below that.
+   ![](/assets/Finished processing your model.png)
+* * Try out the buttons: Click on the button Diagnosis. When RAP3 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can look into them.
+
+* During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 * Let's add the possibility to register teachers in this system. The interface code needs to be at the end, other information can be added anywhere above that:
 
   * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`with a short description.
