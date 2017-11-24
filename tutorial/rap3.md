@@ -49,7 +49,8 @@ You are now going to change the code and view the results in RAP3. Close the bro
   * Add an interface for the teachers in the third tab, the one for Modules. Below the codelines for "Modules" and above the line for "Course":  
     `, "Teacher" : providedBy  CRUD`
 
-  * Save, compile, create protype, reinstall database and see the result.
+  * Save, compile, create protype, launch prototype, reinstall database and see the result in the third tab called "Modules".   
+    Note that you need to reinstall the database because the old database is still there, but the database structure has changed in the application. 
 
   * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
 
