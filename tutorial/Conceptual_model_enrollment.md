@@ -39,9 +39,11 @@ Check your answer in the web application Enrollment.
 
 So let’s finally go to the one rule that governs this information system: `isEnrolledFor |- takes ; isPartOf~`
 
-The rule consists of two parts with `|-` as separator. On each side of the separator you find a relation. On the left-hand side we have the relation `isEnrolledFor` and on the right-hand side you see a relation that is not explicitly defined in the model. This relation is constructed with two relations that are in the model: `takes` and `isPartOf~` \(pronounced as “isPartOf-flip”, indicating the relation in opposite direction\). This constructed relation consists of \(`Student`, `Module`\)-pairs with **a specific student** that is taking **a course** that contains (among others) **this specific module**. Try to trace this description in the model and note that although the result is a pair of elements, there are actually three concepts involved. Let’s call this new relation `canEnrollFor`.
+The rule consists of two parts with `|-` as separator. On each side of the separator you find a relation. On the left-hand side we have the relation `isEnrolledFor` and on the right-hand side you see a relation that is not explicitly defined in the model. This relation is constructed with two relations that are in the model: `takes` and `isPartOf~` \(pronounced as “isPartOf-flip”, indicating the relation in opposite direction\). This constructed relation consists of \(`Student`, `Module`\)-pairs with **a specific student** that is taking **a course** that contains (among others) **this specific module**. 
+Try to trace this last description in the model and note that although the result is a pair of elements, there are actually three concepts involved. 
+Let’s call this new relation `canEnrollFor`.
 
-Now we have the following rule: "isEnrolledFor implies canEnrollFor".
+Now we can pronounce the rule in more or less natural language: "isEnrolledFor implies canEnrollFor".
 
 Everytime the user of the system tries to enroll a student for a module, the rule checks whether this student can be enrolled for this module based on the course the student is taking. If this enrollement is not allowed, the rule produces a violation message. In fact, with each ‘save’ in the database, all information in the database is checked against this rule.
 
