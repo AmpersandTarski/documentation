@@ -12,9 +12,9 @@ This login-screen is also the screen to logout later.
 
 RAP3 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
 
-> **Important note:   
-> RAP3 is being improved constantly, new releases can be done daily.   
-> Currently all account information and scripts will be deleted with each new release.   
+> **Important note:  
+> RAP3 is being improved constantly, new releases can be done daily.  
+> Currently all account information and scripts will be deleted with each new release.  
 > So:  keep a local copy of your scripts and if you cannot login anymore, just re-create your account.**
 
 ## Making your first Ampersand script
@@ -49,7 +49,7 @@ You are now going to change the code and view the results in RAP3. Close the bro
     `MEANING "A module is provided by a teacher"`  
     Note that relation names start with lowercase.
 
-  * You can define an initial set of teachers and relate them to a module following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
+  * You can define an initial set of teachers and relate them to a module following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is another topic in this tutorial.
 
   * Add an interface for the teachers in the third tab, the one for Modules. Below the codelines for "Modules" and above the line for "Course":  
     `, "Teacher" : providedBy  CRUD`
@@ -59,7 +59,7 @@ You are now going to change the code and view the results in RAP3. Close the bro
 
   * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
 
-* Try to understand what you see in the script by making other changes to the program. Compile and inspect the changes, to learn by doing. Try for instance to create a new course with modules and teachers. Demonstrate your changes to your peers and discuss the results.
+* Try to understand what you see in the script by making other changes, compile and inspect the changes; learn by doing. Try for instance to create a new course with modules and teachers. Demonstrate your changes to your peers and discuss the results.
 
 ## What have you learned?
 
