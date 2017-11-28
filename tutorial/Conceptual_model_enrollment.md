@@ -17,7 +17,7 @@ Before we discuss these three main ingredients, we will discuss the other keywor
 
 ## The core of the model
 
-The goal of the model is to define rules that will govern the behavior of the system. Rules are about relations and relations link elements of one concept with elements of another concept. So we need all three ingredients to define the model. Deciding about these ingredients, their name and their attributes is exactly the modeling that you will learn in this course.
+The goal of the model is to define rules that will govern the behavior of the system. Rules are about relations and relations link elements of one concept with elements of another concept. So we need all three ingredients (concept, relation and rule) to define the model. Deciding about these ingredients, their name and their attributes is exactly the modeling that you will learn in this course.
 
 The conceptual model of Enrollment can be represented with a diagram:
 
