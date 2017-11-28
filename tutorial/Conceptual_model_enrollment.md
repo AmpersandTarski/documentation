@@ -33,6 +33,8 @@ In the code you see the keyword `[TOT]` in the definition of the relation `takes
 
 **Question 2**: given the initial dataset in the source-code of Enrollment, which students are enrolled for which modules?
 
+Check your answer in the web application Enrollment.
+
 ## The rule
 
 So let’s finally go to the one rule that governs this information system: `isEnrolledFor |- takes ; isPartOf~`
