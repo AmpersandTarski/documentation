@@ -13,7 +13,7 @@ How does it work?
 The advantages of developing with Ampersand :
 
 1. Express your design in [_business rules_](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf) to let anyone concerned convince herself that the system supports the right rules.
-2. Define your information system in a [declarative](/Conceptual/why-declarative.md) language. It is not necessary to specify all business process steps, it is enough to specify the process goals.
+2. Define your information system in a [declarative](/Main-level/why-declarative.md) language. It is not necessary to specify all business process steps, it is enough to specify the process goals.
 3. Enjoy the benefits of _strong and static typing_. Several scientific studies[^2,][^3] show significant effects of strong and static typing on the total cost of ownership of your design. Besides, it enables Ampersand to generate efficient code.  
 4. Use _relation algebra_[^4] to align the IT-system to the business, by exploiting its natural language interpretation alongside its technical interpretation as working software. Your claim that business stakeholders understand \(solely in natural language\) what the computer does \(in software\) can't be made more convincingly.
 5. Develop in _small increments_. Add constraints, user-interfaces, relations, and other design elements one at a time. Generate a prototype at any intermediate stage, to visualize your design long before it is finished.  
