@@ -23,9 +23,9 @@ The conceptual model of Enrollment can be represented with a diagram:
 
 ![](/assets/BR course  - Pagina 1.png)
 
-In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that the student is taking. The same student can appear in more pairs and the same course can appear in more pairs. A specific pair \(x,y\) can only appear in the set once.
+In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that that specific student is taking. The same student can appear in more pairs and the same course can appear in more pairs. But each combination is unique, a specific pair \(x,y\) can only appear in the set once.
 
-In the code you see the keyword `[TOT]` with the definition of the relation `takes`. This means that eacht student must take at least one course.
+In the code you see the keyword `[TOT]` in the definition of the relation `takes`. This means that each student must take at least one course.
 
 ### Assignment
 
