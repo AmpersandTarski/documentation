@@ -25,7 +25,7 @@ The conceptual model of Enrollment can be represented with a diagram:
 
 In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that that specific student is taking. The same student can appear in more pairs and the same course can appear in more pairs. But each combination is unique, a specific pair \(x,y\) can only appear in the set once.
 
-In the code you see the keyword `[TOT]` in the definition of the relation `takes`. This means that each student must take at least one course.
+In the code you see the keyword `[TOT]` in the definition of the relation `takes`. It is called a multiplicity. The multiplicity 'total' means that each student must take at least one course. 
 
 ### Assignment
 
@@ -43,7 +43,7 @@ The rule consists of two parts with `|-` as separator. On each side of the separ
 Try to trace this last description in the model and note that although the result is a pair of two elements, there are actually three concepts involved. 
 Let’s call this new relation `canEnrollFor`.
 
-Now we can pronounce the rule in more or less natural language: "isEnrolledFor implies canEnrollFor".
+Now we can pronounce the rule in more or less natural language: "isEnrolledFor implies canEnrollFor". If the first is true than the second must also be true.
 
 Everytime the user of the system tries to enroll a student for a module, the rule checks whether this student can be enrolled for this module based on the course the student is taking. If this enrollement is not allowed, the rule produces a violation message. In fact, with each ‘save’ in the database, all information in the database is checked against this rule.
 
