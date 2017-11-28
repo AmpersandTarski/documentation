@@ -12,6 +12,11 @@ This login-screen is also the screen to logout later.
 
 RAP3 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
 
+> **Important note:   
+> RAP3 is being improved constantly, new releases can be done daily.   
+> Currently all account information and scripts will be deleted with each new release.   
+> So:  keep a local copy of your scripts and if you cannot login anymore, just re-create your account.**
+
 ## Making your first Ampersand script
 
 When you click on the blue plus-sign on the top-right side in the menu bar in your screen, you can make a new script. Clicking this opens an editor screen in which you can type your very first Ampersand script.
