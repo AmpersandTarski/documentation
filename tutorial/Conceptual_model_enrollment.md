@@ -10,10 +10,10 @@ We have three ingredients:
 
 Before we discuss these three main ingredients, we will discuss the other keywords you see in the code.
 
-* [INTERFACE](/syntax/interface.md) is not crucial for the conceptual model, but still crucial for the web application. It uses the conceptual model to define the tabs and fields displayed. We will come back to this later.
-* The text after MEANING and [PURPOSE](/syntax/purpose.md) is printed in the documentation that RAP3 can generate. 
+* INTERFACE is not crucial for the conceptual model, but still crucial for the web application. It uses the conceptual model to define the tabs and fields displayed. We will come back to this later.
+* The text after MEANING and PURPOSE is printed in the documentation that RAP3 can generate. 
 * MESSAGE and VIOLATION are used to display messages on screen to the user about rule violations. 
-* [POPULATION](/syntax/population.md) provides the web application with actual data to test the rules with. Adding data to the system can also be done with an excel sheet. The data consist of elements that populate the concepts and whether or not these elements are connected to each other in a specific relation. 
+* POPULATION provides the web application with actual data to test the rules with. Adding data to the system can also be done with an excel sheet. The data specifies elements that populate the concepts and whether or not these elements are connected to each other in a specific relation. 
 
 ## The core of the model
 
