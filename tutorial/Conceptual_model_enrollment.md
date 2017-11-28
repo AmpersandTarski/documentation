@@ -1,6 +1,6 @@
 # The conceptual model
 
-You have seen the webapplication Enrollment in action. You have seen the code that defines the system in such a way that Ampersand can generate the webapplication. Now we will have a look at the conceptual model that is defined in that code. In this tutorial we will only describe the example to make you a more familiar with the terminology. Just try to recognize what is described in the code and in the working system.
+You have seen the webapplication Enrollment in action. You have seen the code that defines the system in such a way that Ampersand can generate the web application. Now we will have a look at the conceptual model that is defined in that code. In this tutorial we will only describe the example to make you more familiar with the terminology. Just try to recognize what is described in the code and in the working system. 
 
 We have three ingredients:
 
