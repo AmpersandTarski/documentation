@@ -68,5 +68,10 @@ After finishing your assignment, you have learned:
 * how to use RAP3 to write, save and compile code.
 * the first basic keywords of Ampersand script and their effect on the prototype.
 
+## Want to learn more?
+
+1. How to describe functionality in a [conceptual model](//tutorial/Conceptual_model_enrollment.md)?
+2. How can I upload [bulk data](/tutorial/data-in-spreadsheets.md) from spreadsheets into my application?
+
 
 
