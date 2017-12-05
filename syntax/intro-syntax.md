@@ -59,7 +59,7 @@ Keywords in Ampersand are always written in CAPITALS.
 * Keywords for the main structure of the code
   * [`CONTEXT`](/syntax/context.md)
   * `ENDCONTEXT`
-  * `IN`
+  * [`IN`](/syntax/languages.md)
   * `ENGLISH`
   * `DUTCH`
   * [`INCLUDE`](/syntax/include.md)
@@ -69,7 +69,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ENDPATTERN`
   * [`CONCEPT`](/syntax/concept.md)
 * Keywords for [relations](/syntax/relation.md)
-  * `RELATION`
+  * [`RELATION`](/syntax/relation.md)
   * `PRAGMA`
   * `UNI`
   * `INJ`
@@ -95,7 +95,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ONE`
   * `ROLE`
   * `MAINTAINS`
-* Keywords for [purpose](purpose.md) and meaning
+* Keywords for [purpose](purpose.md) and [meaning](/syntax/relation.md)
   * `PURPOSE`
   * `MEANING`
   * `REF`
