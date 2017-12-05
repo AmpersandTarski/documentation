@@ -68,7 +68,7 @@ Try to reason about the answers to the following questions based on the conceptu
 
 ## What's next?
 
-Next step is to have a closer look at [rules](//tutorial/rules/intro_rules.md).
+Next step is to have a closer look at [rules](/tutorial/rules/intro_rules.md).
 
 
 
