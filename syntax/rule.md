@@ -1,19 +1,22 @@
 # The RULE statement
 
 ## Purpose
+
 The purpose of a rule is to constrain data. Refer to the [chapter about rules](/tutorial/rules/intro_rules.md) in the tutorial for examples and a practice oriented explanation.
 
 A rule statement defines something that should be true. It does not define the enforcement.
 
 ## Syntax of rules
+
 A `<rule>` has the following syntax:
+
 ```
 RULE <label>? <expression> <meaning>* <message>* <violation>?
 ```
 
 ## Syntax of labels
-A `<label>` is optional. It can be a single word or a string \(enclosed by double brackets\) followed by a colon \(`:`\).
 
+A `<label>` is optional. It can be a single word or a string \(enclosed by double brackets\) followed by a colon \(`:`\).
 
 ### Expression
 
@@ -26,7 +29,7 @@ An expression can be any of:
   * A relation by name 
   * `I` \(the Identity relation\)
   * `V` \(carthesian product\) Note that this can also be used to denote the empty relation, by using the unary negation operator:  '-v'
-  * A singleton expression \(the value of an atom in between single quotes\)
+  * A singleton expression \(the value of an atom\)
 * an expression enclosed in brackets.
 
 #### Operators
@@ -54,7 +57,7 @@ The following operators are available to build expressions:
 
 ### MEANING\*
 
-The meaning of a rule can be written in natural language in the Meaning part of the RULE statement.   
+The meaning of a rule can be written in natural language in the Meaning part of the RULE statement.  
 It is a good habit to specify the meaning! The meaning will be printed in the functional specification.  
 The meaning is optional.
 
@@ -113,9 +116,8 @@ A rule is violated by a pair of atoms \(source, target\). The source atom is the
 
 ## ROLE MAINTAINS
 
-By default rules are invariant rules.   
+By default rules are invariant rules.  
 By preceding the rule statement with a role specification for this rule, the rule becomes a process rule.
-
 
 tbd
 
