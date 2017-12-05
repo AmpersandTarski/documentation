@@ -95,9 +95,9 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ONE`
   * `ROLE`
   * `MAINTAINS`
-* Keywords for [purpose](purpose.md) and [meaning](/syntax/relation.md)
-  * `PURPOSE`
-  * `MEANING`
+* Keywords for documentation
+  * [`PURPOSE`](/syntax/purpose.md)
+  * [`MEANING`](/syntax/relation.md)
   * `REF`
   * `REST`
   * `HTML`
