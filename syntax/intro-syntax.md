@@ -83,8 +83,8 @@ Keywords in Ampersand are always written in CAPITALS.
   * `PROP`
   * [`POPULATION`](/syntax/population.md)
   * `CONTAINS`
-* Keywords for rules
-  * [`RULE`](/syntax/rule.md)
+* Keywords for [rules](/syntax/rule.md)
+  * `RULE`
   * `MESSAGE`
   * `VIOLATION`
   * `TXT`
@@ -112,7 +112,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `TABS`
   * `COLS`
 * Keywords for identities
-  * `IDENT`
+  * [`IDENT`](/syntax/ident.md)
 * Keywords for views
   * `VIEW`
   * `ENDVIEW`
