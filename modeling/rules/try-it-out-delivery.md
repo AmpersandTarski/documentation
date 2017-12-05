@@ -107,7 +107,7 @@ RULE dummy: orderedAt |- orderedAt
 ENDPROCESS
 
 -- Interfaces
-INTERFACE Overview : '_SESSION'[SESSION]
+INTERFACE Overview : "_SESSION"[SESSION]
  BOX[ "All clients" : V[SESSION*Client]
     , "All vendors" : V[SESSION*Vendor]
     , "All products" : V[SESSION*Product]
