@@ -68,8 +68,8 @@ Keywords in Ampersand are always written in CAPITALS.
   * [`PATTERN`](/syntax/pattern.md)
   * `ENDPATTERN`
   * [`CONCEPT`](/syntax/concept.md)
-* Keywords for relations
-  * [`RELATION`](/syntax/relation.md)
+* Keywords for [relations](/syntax/relation.md)
+  * `RELATION`
   * `PRAGMA`
   * `UNI`
   * `INJ`
