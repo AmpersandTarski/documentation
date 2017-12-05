@@ -1,4 +1,4 @@
-# Ampersand Syntax
+[](/syntax/context.md)# Ampersand Syntax
 
 When writing an Ampersand model, the Ampersand language is used. This chapter contains a reference of the syntax.
 
@@ -56,20 +56,20 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
 
 Keywords in Ampersand are always written in CAPITALS.
 
-* Keywords for the [main structure](structureOfModel.md)
-  * `CONTEXT`
+* Keywords for the main structure of the code
+  * [`CONTEXT`](/syntax/context.md)
   * `ENDCONTEXT`
   * `IN`
   * `ENGLISH`
   * `DUTCH`
-  * `INCLUDE`
+  * [`INCLUDE`](/syntax/include.md)
   * `META`
   * `THEMES`
-  * `PATTERN`
+  * [`PATTERN`](/syntax/pattern.md)
   * `ENDPATTERN`
-  * `CONCEPT`
-* Keywords for [relations](relation.md)
-  * `RELATION`
+  * [`CONCEPT`](/syntax/concept.md)
+* Keywords for relations
+  * [`RELATION`](/syntax/relation.md)
   * `PRAGMA`
   * `UNI`
   * `INJ`
@@ -81,10 +81,10 @@ Keywords in Ampersand are always written in CAPITALS.
   * `RFX`
   * `IRF`
   * `PROP`
-  * `POPULATION`
+  * [`POPULATION`](/syntax/population.md)
   * `CONTAINS`
-* Keywords for [rules](rule.md)
-  * `RULE`
+* Keywords for rules
+  * [`RULE`](/syntax/rule.md)
   * `MESSAGE`
   * `VIOLATION`
   * `TXT`
