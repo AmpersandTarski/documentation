@@ -33,7 +33,7 @@ There are multiple ways to handle violations of rules. Based on the way a rule i
 
 # Assignment
 
-There is a script, [Delivery](/tutorial/rules/try-it-out-delivery.md), which describes an information system in which clients and vendors can trade. Clients can place orders, which vendors can accept and deliver. We will use this script to practice with:
+There is a script, [Delivery](/modeling/rules/try-it-out-delivery.md), which describes an information system in which clients and vendors can trade. Clients can place orders, which vendors can accept and deliver. We will use this script to practice with:
 
 1. understanding rules
 2. documenting rules
