@@ -14,9 +14,3 @@ By far the easiest way is to use the online editor that goes with Gitbook. How t
 
 If you are in doubt on how to use it, or you would like a demo of gitbook, ask [Han](mailto://han.joosten@ordina.nl)!
 
-
-
-
-
-dit is een test
-
