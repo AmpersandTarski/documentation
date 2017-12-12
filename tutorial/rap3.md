@@ -2,11 +2,18 @@
 
 This section introduces the tool you will use during the course: [RAP3](http://ampersand.tarski.nl/RAP3). This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here](http://rap.cs.ou.nl/RAP3) to start using it.
 
-## Identifying yourself
+## Login/Create account
 
 RAP3 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.  
-Register with your own student number and e-mail. Note that this application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.  
+
+Register with your own student number and e-mail. Create a password. Your student number is your account, but you can fill in a name. This name should not exist yet, so a green plus-sign will appear. Click on it and your name is added to the database.
+
+Notes:
+* About the user interface: Each time you change fields (e.g. using Tab), the form is updated. But you will not see what is the next active field.
+* This application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.  
 This login-screen is also the screen to logout later.
+* When RAP3 is updated, probably your account will be reset. You need to register again.
+
 
 ## Disclaimer
 
