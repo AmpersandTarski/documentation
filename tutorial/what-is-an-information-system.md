@@ -2,7 +2,7 @@
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take.
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take. (Alternatively, you can copy the code below and paste it in your Ampersand editor and run it.)
 
 Please [click here](http://rap.cs.ou.nl/Enroll/#/Overview) to try it. Try it out! Browse through the data and change things. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
