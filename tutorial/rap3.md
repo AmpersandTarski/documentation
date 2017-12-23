@@ -38,9 +38,10 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 
 ![](/assets/Finished processing your model.png)
 
-* Try out the buttons: Click on the button Diagnosis. When RAP3 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can have a better look there.
-* For now: move on to the Prototype button: Click the button and then click the new link "Launch Prototype".
+* Generate a Prototype: Click the blu button "Prototype" and when RAP3 has finished loading you will see a new link "Launch Prototype". Click the link.
 * Now you see the information system you have just compiled from the code. You are already familiar with the look and feel. Click the Overview button in the top-left of the screen and have a look around.
+* Try to generate documentation: Click on the button Diagnosis. When RAP3 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can have a better look there.
+
 
 During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it. **A note of caution: currently a new release of RAP3 will destroy all that is in the database, also your scripts. So save a copy of you script locally at the end of each working session.**
 
