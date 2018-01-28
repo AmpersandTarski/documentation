@@ -2,11 +2,10 @@
 
 In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take. 
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take.
 
->** Note: Until beginning of January, the compiled version of this application is not available. This means that you need to compile it yourself in RAP3.
-So first go to the [next step RAP3](/tutorial/rap3.md) and when the prototype is working, come back here.**
-
+> ** Note: Until beginning of January, the compiled version of this application is not available. This means that you need to compile it yourself in RAP3.  
+> So first go to the **[**next step RAP3**](/tutorial/rap3.md)** and when the prototype is working, come back here.**
 
 Try it out! Browse through the data and change things. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
@@ -43,6 +42,7 @@ PURPOSE CONTEXT Enrollment
 Students of a course can enroll for any module that is part of the course.
 +}
 
+PATTERN Courses
 -- The concepts
 CONCEPT Student "Someone who wants to study at this institute"
 CONCEPT Course "A complete course that prepares for a diploma"
@@ -77,7 +77,7 @@ RULE ModuleEnrollment: isEnrolledFor |- takes;isPartOf~
 MEANING "A student can enroll for any module that is part of the course the student takes"
 MESSAGE "Attempt to enroll student(s) for a module that is not part of the student's course."
 VIOLATION (TXT "Student ", SRC I, TXT " enrolled for the module ", TGT I, TXT " which is not part of the course ", SRC I[Student];takes)
-
+ENDPATTERN
 
 INTERFACE Overview : "_SESSION"                 cRud
 TABS [ Students     : V[SESSION*Student]        cRuD
