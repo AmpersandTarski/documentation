@@ -6,6 +6,9 @@ Each interface has a _name_ that is unique for every interface in the same conte
 
 When running an application in your browser, you are watching one user-interface at any given moment in time. Each hyperlink on your screen represents an atom to which some interface applies[^1]. To navigate to that user-interface, just click on the hyperlink. You will see the interface being applied solely to the atom you just clicked. To determine the atom\(s\) to which an interface applies, each interface has an _interface expression_.
 
+Note: The interface definition must be outside a pattern
+
+
 ## Example
 
 The following figure is an example of a user interface, which shows the name, status, e-mail and co-workers of a person called "J. Lovell".
