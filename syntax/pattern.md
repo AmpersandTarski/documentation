@@ -11,7 +11,11 @@ A pattern is a set of rules that describes a theme or a general reusable solutio
 
 ## Syntax
 
-A pattern start and finish of a pattern are defined with the statements `PATTERN` and `ENDPATTERN`. There are no operators in this statement.
+~~~
+PATTERN <Uppercase identifier> 
+...
+ENDPATTERN
+~~~
 
 A model can have as many patterns as you want.  
 It has currently no effect on how the code is processed.
