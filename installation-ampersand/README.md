@@ -1,4 +1,4 @@
-# Installation Ampersand
+# Installing Ampersand
 
 For different purposes there are different ways of installing Ampersand.
 
