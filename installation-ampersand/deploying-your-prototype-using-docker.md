@@ -7,7 +7,7 @@ description: >-
 
 # Deploying your Prototype using Docker
 
-Please watch [this video](https://youtu.be/XqHTJfTVnoQ).
+Please watch [this video](https://youtu.be/XqHTJfTVnoQ) \(8 minutes\). It discusses what Docker does to bring up your program as a web application on your own machine.
 
 ## Prerequisites
 
