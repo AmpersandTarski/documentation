@@ -1,4 +1,4 @@
-# Installing the tool
+# Installing the tools manually
 
 ## Installing an Ampersand compiler
 

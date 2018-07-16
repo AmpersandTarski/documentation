@@ -4,24 +4,21 @@ For different purposes there are different ways of installing Ampersand.
 
 ## How to avoid installing Ampersand
 
-Just go to [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). Register and get started right away. At no cost \(for you, for now\).
+Go to [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). Just register and get started right away. At no cost \(for you, for now\). This lets you run your Ampersand scripts and generate functional specifications.
 
-## How to install Ampersand on your own laptop
+## How to use Ampersand on your own laptop
 
-If you want to be independent and use Ampersand offline, you can install it on your own laptop. Section [Installing Ampersand](installing-the-tool.md) tells you how. Here is an overview:
+If you want to be independent and use Ampersand on your own laptop, use Docker. Section [Deploying your Prototype](deploying-your-prototype-using-docker.md) tells you how. Here is an overview:
 
-1. You need an Ampersand compiler. It exists as an executable file `Ampersand.exe` for Windows.
-2. For generating functional specification documents you will need GraphViz \(for generating graphics such as conceptual models and data models\), and LaTeX.
+1. Make sure Docker runs on your laptop or install it if it doesn't.
+2. Copy the files `Dockerfile` and `docker-compose.yml` and adapt them for your own Ampersand prototype.
+3. Run your `.adl`-file on the Docker platform.
 
-### How to run your prototype on your own computer
+### How to compile Ampersand programs manually
 
-Ampersand is great for rapid prototyping. If you want to run prototypes on your own computer, follow the instructions in section [Installing and running a prototype](installing-and-running-a-prototype-website.md). For running a prototype on your own computer, it needs a webserver that can run javascript, PHP7 \(often PHP5.6 or later will do fine\), the PHP composer, and a \(My\)SQL or MariaDB database server.
+Ampersand is great for rapid prototyping. If you want to run prototypes on your own computer, follow the instructions in section [Installing the tools manually](installing-the-tool.md). For running a prototype on your own computer, it needs a webserver that can run javascript, PHP7, the PHP composer, and a \(My\)SQL or MariaDB database server. For generating functional specifications, you might use LaTeX, Markdown, Word .docx and other formats. This chapter gives an overview of the Ampersand production line for whoever needs to circumvent the automated process.
 
-### How to install your prototype on the web
-
-When your prototype takes a more definitive shape, you might want to run it as a web-application on the internet. Grab your Ampersand-script and follow the instructions in [deploying your prototype](deploying-your-prototype.md).
-
-### How to install RAP3 on a server
+### How to install your own copy of RAP3 on a server of your own choosing
 
 RAP3 is an Ampersand repository, in which multiple users can store and use their Ampersand scripts. If you run a class or have a team at work, you might want a RAP3 clone of your own rather than work from [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). In that case, consult [the tools we use at Ampersand](https://ampersandtarski.gitbooks.io/the-tools-we-use-for-ampersand/content/installation_of_rap.html). This is work in progress.
 
