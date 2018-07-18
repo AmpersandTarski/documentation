@@ -1,15 +1,15 @@
 ---
 description: >-
   You can deploy your Ampersand program on any system that runs Docker. That
-  could be in the cloud, on your own laptop, on a server in a data center, on
+  could be the cloud, your Windows laptop, your Macbook, a server in a data center,
   your smartphone, you name it.
 ---
 
 # Deploying your Prototype
 
-## What is the purpose of using Docker?
+## What do you need to understand?
 
-Docker does everything needed to make your program run. It does that automatically, based on recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it needs from Docker Hub and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
+We use Docker to make your program run on virtually any computer. Docker is a popular, automated platform on which your application runs. It works with recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com) and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
 
 Programs run in [_**containers**_](https://docs.docker.com/get-started/#docker-concepts). A container is a virtual computer that runs an image. Your application may consist of one or more containers.
 
@@ -77,6 +77,16 @@ The deployment consists of the following steps:
 
 5. Browse to the web-location `my.server.com`, where the prototype is being served.
 
+## Redeploying
+After you deploy the first time, you may want to edit your program.
+Just save the results and redeploy with the command:
+```text
+docker-compose up -d --build
+```
+If you want to see which images are stored on your local computer, type
+```text
+docker images
+```
 ## In trouble?
 
 * Check if there is a firewall that blocks the port from internet. Make sure that port 80 is open for http-traffic.
