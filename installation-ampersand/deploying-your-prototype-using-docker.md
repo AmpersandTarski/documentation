@@ -9,7 +9,7 @@ description: >-
 
 ## What do you need to understand?
 
-We use Docker to make your program run on virtually any computer. Docker is a popular, automated platform on which your application runs. It works with recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com) and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
+To make your program run on virtually any computer we use Docker. Docker is a popular, automated platform on which your application runs. It works with recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com) and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
 
 Programs run in [_**containers**_](https://docs.docker.com/get-started/#docker-concepts). A container is a virtual computer that runs an image. Your application may consist of one or more containers.
 
