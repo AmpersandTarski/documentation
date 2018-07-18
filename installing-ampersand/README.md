@@ -1,6 +1,6 @@
 # Installing Ampersand
 
-For different purposes there are different ways of installing Ampersand.
+Ampersand is great for rapid prototyping. So how do you run your prototypes? For different purposes there are different ways of doing that. This chapter shows you how.
 
 ## How to avoid installing Ampersand
 
@@ -8,7 +8,7 @@ Go to [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). Just r
 
 ## How to use Ampersand on your own laptop
 
-If you want to be independent and use Ampersand on your own laptop, use Docker. Section [Deploying your Prototype](deploying-your-prototype-using-docker.md) tells you how. Here is an overview:
+Using Ampersand offline does not require you to install Ampersand. Ampersand runs in Docker so you can use it independently and on almost any platform. Read section [Deploying your Prototype](deploying-your-prototype.md) if you want to know how. Here is the summary:
 
 1. Make sure Docker runs on your laptop or install it if it doesn't.
 2. Copy the files `Dockerfile` and `docker-compose.yml` and adapt them for your own Ampersand prototype.
@@ -16,7 +16,7 @@ If you want to be independent and use Ampersand on your own laptop, use Docker. 
 
 ### How to compile Ampersand programs manually
 
-Ampersand is great for rapid prototyping. If you want to run prototypes on your own computer, follow the instructions in section [Installing the tools manually](installing-the-tool.md). For running a prototype on your own computer, it needs a webserver that can run javascript, PHP7, the PHP composer, and a \(My\)SQL or MariaDB database server. For generating functional specifications, you might use LaTeX, Markdown, Word .docx and other formats. This chapter gives an overview of the Ampersand production line for whoever needs to circumvent the automated process.
+DIY-engineers will find instructions in section [Installing the tools manually](installing-the-tools-manually.md). You need a webserver that can run javascript, PHP7, the PHP composer, and a \(My\)SQL or MariaDB database server. For generating functional specifications, you might use LaTeX, Markdown, Word .docx and other formats. This chapter gives an overview of the Ampersand production line for whoever needs to circumvent the automated process.
 
 ### How to install your own copy of RAP3 on a server of your own choosing
 
@@ -24,7 +24,7 @@ RAP3 is an Ampersand repository, in which multiple users can store and use their
 
 ### How to change Ampersand itself
 
-If you want to change the Ampersand compiler for your own purposes, you need access to the source files, and a Haskell development environment. Section [Installing Ampersand](installing-the-tool.md) tells you how.
+If you want to change the Ampersand compiler for your own purposes, you need access to the source files, and a Haskell development environment. This section still has to be written. It will describe the software process for developing Ampersand itself.
 
 The remainder of this chapter explains in detail all the things you need to get you up and running with Ampersand. The instructions presume that you are familiar with your own computers.
 

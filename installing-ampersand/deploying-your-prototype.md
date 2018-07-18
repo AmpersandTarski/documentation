@@ -1,15 +1,15 @@
 ---
 description: >-
   You can deploy your Ampersand program on any system that runs Docker. That
-  could be the cloud, your Windows laptop, your Macbook, a server in a data center,
-  your smartphone, you name it.
+  could be the cloud, your Windows laptop, your Macbook, a server in a data
+  center, your smartphone, you name it.
 ---
 
 # Deploying your Prototype
 
 ## What do you need to understand?
 
-To make your program run on virtually any computer we use Docker. Docker is a popular, automated platform on which your application runs. It works with recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com) and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
+To make your program run on virtually any computer we use Docker. Docker is a popular, automated platform on which your application runs. It works with recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com/u/ampersandtarski/) and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
 
 Programs run in [_**containers**_](https://docs.docker.com/get-started/#docker-concepts). A container is a virtual computer that runs an image. Your application may consist of one or more containers.
 
@@ -35,8 +35,6 @@ Then from you command line interface run:
 
 Sit back and watch. Don't worry, the second time around Docker downloads much less as it builds up its local image repository.
 
-
-
 ## Deploying
 
 The deployment consists of the following steps:
@@ -51,15 +49,15 @@ The deployment consists of the following steps:
 
    On servers other than Linux, you may need another command than `wget`, but the files are the same.
 
-3. In the file called 
+3. In the file called
 
    `docker-compose.yml`
 
-    you must specify your own 
+   you must specify your own
 
    `.adl`
 
-   -file: 
+   -file:
 
    ![](../.gitbook/assets/screenshot-docker-compose.png)
 
@@ -78,19 +76,23 @@ The deployment consists of the following steps:
 5. Browse to the web-location `my.server.com`, where the prototype is being served.
 
 ## Redeploying
-After you deploy the first time, you may want to edit your program.
-Just save the results and redeploy with the command:
+
+After you deploy the first time, you may want to edit your program. Just save the results and redeploy with the command:
+
 ```text
 docker-compose up -d --build
 ```
+
 If you want to see which images are stored on your local computer, type
+
 ```text
 docker images
 ```
+
 ## In trouble?
 
 * Check if there is a firewall that blocks the port from internet. Make sure that port 80 is open for http-traffic.
 * Check the port settings and adapt `docker-compose.yml` if you must use a port other than port 80.
 * Use a recent browser. We have developed Ampersand on FireFox and tested it on FireFox and Chrome, so you should be fine with one of these two.
-* If you have trouble with the database \(e.g. you cannot login, or do not have the correct authorization\), check out the [instructions](installing-the-tool.md) for creating a properly authorized user `ampersand` for the database. As you can see in `docker-compose.yml`, the database itself is accessible through port 8080.
+* If you have trouble with the database \(e.g. you cannot login, or do not have the correct authorization\), check out the [instructions](installing-the-tools-manually.md) for creating a properly authorized user `ampersand` for the database. As you can see in `docker-compose.yml`, the database itself is accessible through port 8080.
 

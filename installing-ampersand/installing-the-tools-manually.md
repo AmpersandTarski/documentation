@@ -103,7 +103,7 @@ Don't worry if you do not understand what everything in this script means. That 
  ampersand --proto myModel.adl
 ```
 
-This creates a directory `myModel.proto` \(in the current directory\), that contains the prototype website. Obviously, you will need a web server and a database server to run the prototype. This is discussed at [Installing Ampersand](installing-the-tool.md).
+This creates a directory `myModel.proto` \(in the current directory\), that contains the prototype website. Obviously, you will need a web server and a database server to run the prototype. This is discussed at [Installing Ampersand](installing-the-tools-manually.md).
 
 Usually, you would have some demands regarding particulars of the generation. For example, you may want to generate the website in a specific directory, specify a particular CSS file for this website, etc. For the complete syntax of the Ampersand executable, see the chapter about the [command line interface](../the-command-line-tool/)\*\*\*\*
 
