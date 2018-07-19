@@ -21,5 +21,7 @@ The advantages of developing with Ampersand :
 7. Document your design embedded in the specification, so you always have up-to-date _documentation_ which is consistent with your design.
 8. Specify with mathematical rigor, without being a mathematician. Ampersand gives you correctness and consistency in return, with mathematical provability to back it up.
 
+Ampersand adheres closely to the concept of business rule as defined by the Business Rules Group. The [following section](business-rules-in-ampersand.md) explains the correspondence between the Business Rules Manifesto and Ampersand.
+
 ## Footnotes
 
