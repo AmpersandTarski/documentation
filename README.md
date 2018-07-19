@@ -12,5 +12,5 @@ We have an automatic tool chain in use. It updates a [site with the documentatio
 
 By far the easiest way is to use the online editor that goes with Gitbook. How to use it and how to get going with it can be found in the [this document](https://www.gitbook.com/book/ampersandtarski/the-tools-we-use-for-ampersand).
 
-If you are in doubt on how to use it, or you would like a demo of gitbook, ask [Han](mailto://han.joosten@ordina.nl)!
+If you are in doubt on how to use it, or you would like a demo of gitbook, ask [Han](mailto://han.joosten.han@gmail.com)!
 
