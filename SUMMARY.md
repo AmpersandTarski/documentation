@@ -49,4 +49,5 @@
   * [Security](prototypes/security.md)
 * [Exercises](exercises/README.md)
   * [VOG \(in Dutch\)](exercises/vog-in-dutch.md)
+* [Business Rules in Ampersand](business-rules-in-ampersand.md)
 
