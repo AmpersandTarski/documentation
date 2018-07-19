@@ -2,7 +2,12 @@
 
 ## Purpose
 
-Contexts exist in Ampersand for the purpose of dealing with truth. Within one context there can be no contradictions. The Ampersand way of dealing with a contradiction is either to resolve it or to separate them in different contexts.
+Contexts exist in Ampersand for the purpose of dealing with truth. Within one context there may be no contradictions. The Ampersand way of dealing with a contradiction is either to resolve it or to separate them in different contexts. Examples of contexts are:
+
+* a single lawsuit in which all case data is contained;
+* the financial administration of a repair shop;
+* the life insurance department of a bank;
+* the same bank as a whole
 
 ## Ampersand Definition
 
