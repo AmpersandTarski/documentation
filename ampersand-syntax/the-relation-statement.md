@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A relation statement says that there exists a relation in a context. It introduces \(defines, declares\) the relation in the context. Each relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation.
+A relation statement says that there exists a relation. It introduces \(defines, declares\) the relation in the context that uses the relation statement. A relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation, for example by a user typing data into an Ampersand application. So the contents of a relation are dynamically changing .
 
 ## Examples
 
