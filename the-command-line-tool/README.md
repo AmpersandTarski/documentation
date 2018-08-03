@@ -13,9 +13,9 @@ ampersand [SWITCHES] [FILE]
 ## Examples
 
 ```bash
-ampersand -fl --verbose Hawaii.adl
-ampersand Delivery.adl
-ampersand --proto="D:\htdocs\CvM\" Contracts.adl
+ampersand -fdocx --verbose Hawaii.adl             # generates a specification document for Hawaii.adl
+ampersand Delivery.adl                            # just check Delivery.adl for errors
+ampersand --proto="D:\htdocs\CvM\" Contracts.adl  # generate a prototype from Contracts.adl
 ampersand --help
 ampersand --help --verbose
 ampersand --version

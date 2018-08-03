@@ -23,5 +23,5 @@ Make sure to include the adl-files before including xlsx-files.
 
 Files can be nested. Nested adl-files can have their own xlsx-files included.
 
-For formatting your excel-file see the text on [the Excel Importer](../prototypes/extensions/the-excel-importer.md).
+For formatting your excel-file see the text on [the Excel Importer](../modules/extensions/the-excel-importer.md).
 
