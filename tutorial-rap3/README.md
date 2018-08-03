@@ -13,6 +13,6 @@ This tutorial is meant for Business- or IT-professionals who want to learn about
 ## What have you learned so far?
 
 * Ampersand is meant to develop information systems.
-* This tutorial will get you going with Ampersand. However, it not \(yet\) complete. Consult your tutor with questions.
+* This tutorial will get you going with Ampersand. Consult your tutor with questions.
 * You have a tool to experiment with.
 
