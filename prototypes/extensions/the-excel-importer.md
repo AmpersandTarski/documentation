@@ -38,7 +38,7 @@ If you want to specify data elements in an Excel file in order to populate such 
 Here is an example of such a 'block' \(note: all blocks must start in the leftmost column; if not, they are disregarded\):
 
 | \[A's\] | rAA | rAB | rAC | rAC | rAC | sAB | tAD | uBA~ |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | A | A | B | C | C | C | B | Delta | B |
 | alfa1 | alfa1 | beta1 | char1 | char2 | char3 | beta2 | d1 | beta1 |
 |  | CMT |  |  |  |  |  |  | beta2 |

@@ -25,7 +25,7 @@ In many cases, there can be restrictions on the population of a relation, called
 The following properties can be specified on any relation `r[A*B]`
 
 | & | property | semantics |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | UNI | univalent | For any `a` in `A` there can only be one `b` in `B` in the population of `r`. |
 | INJ | injective | For any `b` in `B` there can only be one `a` in `A` in the population of `r`. |
 | SUR | surjective | For any `b` in `B` there must be \(at least\) one `a` in `A` in the population of 'r\`. |
@@ -34,7 +34,7 @@ The following properties can be specified on any relation `r[A*B]`
 There are additional relations that can be specified on endo relations. An endo relation is a relation where the source and target concepts are equal. `r[A*A]`.
 
 | & | property | semantics |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | SYM | symmetric | For each \(`a`,`b`\) in `r`, \(`b`,`a`\) is in `r`. |
 | ASY | antisymmetric | If \(`a`,`b`\) and \(`b`,`a`\) are both in `r`, then `a` = `b` |
 | TRN | transitive | If \(`a`,`b`\) and \(`b`,`c`\) are both in `r`, then \(`a`,`c`\) is in `r`. |

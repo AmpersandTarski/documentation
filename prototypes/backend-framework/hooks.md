@@ -11,7 +11,7 @@ Hookpoint use the following naming convention:
 Current list of hookpoints:
 
 | Hookpoint | Extensions that use it |
-| --- | --- |
+| :--- | :--- |
 | postDatabaseReinstallDB | ExecEngine |
 | postDatabaseUpdate | Mutation \(experimental\), Mqtt \(experimental\) |
 | postDatabaseInsert | Mutation \(experimental\), Mqtt \(experimental\) |

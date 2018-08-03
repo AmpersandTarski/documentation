@@ -9,7 +9,7 @@ description: >-
 Ampersand lets you use business rules as intended in the [Business Rules Manifesto](http://www.businessrulesgroup.org/brmanifesto/BRManifesto.pdf) \(by the Business Rules Group, 2003\). This chapter quotes each article from the manifesto verbatim. Besides, it describes how Ampersand implements it,
 
 | **Primary Requirements, Not Secondary** |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- |
 | 1.1. | Rules are a first-class citizen of the requirements world. |
 | Ampersand says: | Agreed! First-class means that every requirement is a rule and every rule is a requirement. An Ampersand-engineer makes a requirement concrete by specifying a constraint. At design time, these constraints must be consistent and Ampersand's type system helps out by signalling those inconsistencies. At runtime violations of constraints are signalled the moment they occur. |
 | 1.2. | Rules are essential for, and a discrete part of, business models and technology models. |

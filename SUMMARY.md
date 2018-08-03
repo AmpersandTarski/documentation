@@ -38,7 +38,7 @@
 * [The Command Line tool](the-command-line-tool/README.md)
   * [switches](the-command-line-tool/switches.md)
   * [Configuration](the-command-line-tool/configuration.md)
-* [Prototypes](prototypes/README.md)
+* [Reusing Available Modules](prototypes/README.md)
   * [Backend framework](prototypes/backend-framework/README.md)
     * [Architecture of an Ampersand Application](prototypes/backend-framework/architecture-of-an-ampersand-application.md)
     * [Hooks](prototypes/backend-framework/hooks.md)

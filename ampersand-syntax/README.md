@@ -43,7 +43,7 @@ Within an operator category, you must place brackets to disambiguate. E.g. `r/\s
 Sometimes, in describing the syntax, EBNF-like notation is used, with the following meaning:
 
 | Operator | meaning |
-| --- | --- |
+| :--- | :--- |
 | `<foo>`? | Zero or one occurrence of `<foo>` |
 | `<foo>`+ | One or more occurrences of `<foo>` |
 | `<foo>`\* | Zero or more occurrences of `<foo>` |

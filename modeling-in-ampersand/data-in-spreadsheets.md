@@ -11,7 +11,7 @@ We can consider Ampersand as a finite system of relations. Every relation is a s
 Let us look at an example:
 
 |  | firstname | lastname | birth |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | 1 | Abraham | Lincoln | February 12, 1809 |
 | 2 | Barack | Obama | August 4, 1961 |
 | 3 | Calvin | Coolidge | July 4, 1872 |
