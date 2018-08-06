@@ -19,11 +19,11 @@ The purpose of Ampersand is to help business engineers deliver correct informati
 Ampersand is a way of designing information systems for enterprises, supported by a method, a tool, and a course.
 
 1. Communicate with the business solely _**in their own language**_, being natural language.
-2. Define a domain language (in Ampersand) to consolidate agreement of terms among stakeholders and document it in natural language. 
-2. _**Formalize**_ the agreements that are relevant for the information system using Ampersand-script.  
-3. Generate a real and working _**prototype**_ of your information system at the push of a button. 
-4. Use this prototype for _**walking through**_ user stories, acceptance testing, requirements elicitations, to name just some of its uses.
-5. Use the documented ontology that Ampersand generates to _**validate**_ the agreed rules.
+2. Define a domain language (in Ampersand) to consolidate _**agreement of terms**_ among stakeholders and document it in natural language. 
+3. _**Formalize**_ the agreements that are relevant for the information system using Ampersand-script.  
+4. Generate a real and working _**prototype**_ of your information system at the push of a button. 
+5. Use this prototype to _**walk through**_ user stories, test user acceptance, elicit requirements, to name just some of its uses.
+6. Use the documented ontology that Ampersand generates to _**validate**_ the agreed rules.
 
 ## Benefits
 
