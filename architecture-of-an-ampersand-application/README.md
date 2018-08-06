@@ -28,7 +28,7 @@ Let us look at the software architecture of a system that Ampersand generates.
 
 ![Architecture diagram](../.gitbook/assets/architectuur-ampersand-fw.png)
 
-The architecture shows an Ampersand framework, which is a database application with services on top. It is encapsulated by an application programming interface \(API\), which exports the functionality in a standardized way. Every application that interfaces through that API preserves the integrity of data.
+The architecture shows an Ampersand framework \(the green area\), which is a database application that serves as a stateful service. It guarantees that each view can rest assured that all Ampersand invariants are satisfied. The Ampersand framework also guarantees that a view can only commit a change in the database if the database satisfies all invariants after committing that change. The Ampersand framework is encapsulated by an application programming interface \(API\), which exports the functionality in a standardized way. Every application that interfaces through that API preserves the integrity of data.
 
 On top of the API, the application comes with a front-end application. This web-application has a conventional structure, based on the Model-View-Control \(MVC\) pattern used in many web-applications.
 
