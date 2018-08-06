@@ -10,9 +10,9 @@ The purpose of Ampersand is to help business engineers deliver correct informati
 
 ## Some examples of information systems built in Ampersand
 
-* [Medications](http://www.ssi-lab.nl/CZ/#/), a demonstrator built by TNO in Ampersand to showcase attestation on the internet.
-* [SETU standards](https://setu.t4smm.nl/), a site to disclose standards for electronic messaging in the sector of flexible labour.
-* [RAP3](http://rap.cs.ou.nl/RAP3), a tool for students to learn how to work with Ampersand.
+* [Medications](http://www.ssi-lab.nl/CZ/#/), a demonstrator built by TNO in Ampersand to showcase attestation on the internet. This example is undocumented.
+* [SETU standards](https://setu.t4smm.nl/), a site to disclose standards for electronic messaging in the sector of flexible labour. This example is undocumented.
+* [RAP3](http://rap.cs.ou.nl/RAP3), a tool for students to learn how to work with Ampersand. This project is documented in https://github.com/AmpersandTarski/RAP.
 
 ## How does it work?
 
