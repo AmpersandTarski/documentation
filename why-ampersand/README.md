@@ -12,14 +12,14 @@ The purpose of Ampersand is to help business engineers deliver correct informati
 
 * [Medications](http://www.ssi-lab.nl/CZ/#/), a demonstrator built by TNO in Ampersand to showcase attestation on the internet. This example is undocumented.
 * [SETU standards](https://setu.t4smm.nl/), a site to disclose standards for electronic messaging in the sector of flexible labour. This example is undocumented.
-* [RAP3](http://rap.cs.ou.nl/RAP3), a tool for students to learn how to work with Ampersand. This project is documented in https://github.com/AmpersandTarski/RAP.
+* [RAP3](http://rap.cs.ou.nl/RAP3), a tool for students to learn how to work with Ampersand. This project is documented in [https://github.com/AmpersandTarski/RAP](https://github.com/AmpersandTarski/RAP).
 
 ## How does it work?
 
 Ampersand is a way of designing information systems for enterprises, supported by a method, a tool, and a course.
 
 1. Communicate with the business solely _**in their own language**_, being natural language.
-2. Define a domain language (in Ampersand) to consolidate _**agreement of terms**_ among stakeholders and document it in natural language. 
+2. Define a domain language \(in Ampersand\) to consolidate _**agreement of terms**_ among stakeholders and document it in natural language. 
 3. _**Formalize**_ the agreements that are relevant for the information system using Ampersand-script.  
 4. Generate a real and working _**prototype**_ of your information system at the push of a button. 
 5. Use this prototype to _**walk through**_ user stories, test user acceptance, elicit requirements, to name just some of its uses.
@@ -45,5 +45,5 @@ The Open University of the Netherlands has a [course in Rule Based Design](https
 
 ## Licenses
 
-Ampersand is freely available as an [open source project in GitHub](https://github.com/AmpersandTarski). 
+Ampersand is freely available as an [open source project in GitHub](https://github.com/AmpersandTarski).
 

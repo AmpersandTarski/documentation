@@ -1,9 +1,3 @@
----
-description: >-
-  Reusing code of others. That is what modules are designed for. This chapter
-  documents the code you can reuse in your own projects.
----
-
 # Modules
 
 An Ampersand Module is a coherent set of Ampersand scripts that:
