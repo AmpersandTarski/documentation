@@ -1,4 +1,11 @@
-# Tutorial RAP3
+---
+description: >-
+  This tutorial gets you started fast with Ampersand, using the web-based tool
+  RAP3. No prerequiste knowledge required. Just generate and run your first
+  information system and fiddle around with it.
+---
+
+# Tutorial
 
 This tutorial is meant for Business- or IT-professionals who want to learn about information systems development. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for individual study, but you can always ask your tutor is you things are unclear.The required theory is also available in Learning Unit 3 of the coursebook of [a course given at the Open University of the Netherlands](https://www.ou.nl/-/IM0403_Rule-Based-Design).
 

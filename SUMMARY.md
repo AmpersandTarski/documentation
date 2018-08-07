@@ -3,7 +3,7 @@
 * [Introduction](intro.md)
 * [Why Ampersand?](why-ampersand/README.md)
   * [The Business Rules Manifesto and Ampersand](why-ampersand/business-rules-in-ampersand.md)
-* [Tutorial RAP3](tutorial-rap3/README.md)
+* [Tutorial](tutorial-rap3/README.md)
   * [Example system: Enrollment](tutorial-rap3/example-system-enrollment.md)
   * [Your tool: RAP3](tutorial-rap3/your-tool-rap3.md)
   * [Conceptual Model: Enrollment](tutorial-rap3/conceptual-model-enrollment.md)
