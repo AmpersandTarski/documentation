@@ -38,6 +38,7 @@
 * [The Command Line tool](the-command-line-tool/README.md)
   * [switches](the-command-line-tool/switches.md)
   * [Configuration](the-command-line-tool/configuration.md)
+* [Configuring your application](configuring-your-application.md)
 * [Reusing Available Modules](modules/README.md)
   * [Modules](modules/modules.md)
   * [SIAM \(Sessions, Identity and Access Management\) Module](modules/siam-sessions-identity-and-access-management-module.md)
