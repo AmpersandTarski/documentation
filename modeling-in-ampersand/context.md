@@ -17,7 +17,7 @@ A context is a set of Statements in the language of this context, which are true
 
 The world is full of contradictions. Examples:
 
-* Bob's personal income over March 2013 according to Bob's employer differs from Bob's personal income over March 2013 according to the National Tax Authority.
+* Bob's personal income over March 2013 according to Bob's employer differs from Bob's personal income over March 2013 according to the National Tax Authority. \(To resolve this, we must distinguish between the context of Bob's employer and the context of the National Tax Authority.\)
 * The police can be convinced that Peter X commited the crime, yet his attorney is convinced he is innocent.
 * One computer system can tell that the person with social security number 721-07-4426 was born on April 27th, 1943, while at the same time another computer system tells me this person was born on May 3rd, 1952.
 

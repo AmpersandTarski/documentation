@@ -1,4 +1,11 @@
-# Modeling in Ampersand
+---
+description: >-
+  Ampersand speaks of rules, relations, patterns, and much more. What do all
+  these words mean? If you want to understand Ampersand, don't forget this
+  "dictionary".
+---
+
+# Ampersand's own language
 
 There can be many reasons for making an Ampersand model. Just a few examples are:
 
