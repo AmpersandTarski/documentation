@@ -1,7 +1,8 @@
 ---
 description: >-
-  What is the purpose of Ampersand? What do you gain by using it? This chapter
-  helps you to assess whether Ampersand is worth your while.
+  Designing information systems is a difficult task, which requires a conceptual
+  mind, sharp reasoning skills and the right tools. Read on if you are up to
+  that challenge...
 ---
 
 # Why Ampersand?
@@ -14,15 +15,19 @@ The purpose of Ampersand is to help business engineers deliver correct informati
 * [SETU standards](https://setu.t4smm.nl/), a site to disclose standards for electronic messaging in the sector of flexible labour. This example is undocumented.
 * [RAP3](http://rap.cs.ou.nl/RAP3), a tool for students to learn how to work with Ampersand. This project is documented in [https://github.com/AmpersandTarski/RAP](https://github.com/AmpersandTarski/RAP).
 
-## How does it work?
+## Why rule based?
 
-Ampersand is a way of designing information systems for enterprises, supported by a method, a tool, and a course.
+Only few can design and build good information systems. It is a difficult task. Ampersand makes your life easier by automating tedious coding tasks and preventing scores of errors you might make. Use it to create this wonderful festival organisation platform, your very own web shop for pedigree poodles, or the trip organiser for hiking expeditions in the Andes. It's all up to you.
 
-1. Communicate with the business solely _**in their own language**_, being natural language.
+Ampersand is different because of its focus on business rules. These rules embody agreements of people who pursue a common goal. Naturally such rules are to be respected by every information system that supports their business. The value of Ampersand is this: once you have a precise set of rules, you have your information system. The coding of software is automated by Ampersand. So if a rule changes, you have altered it in your code in a breeze. That is why Ampersand focuses on rules.
+
+Ampersand is a way of designing information systems for enterprises, supported by a method, a tool, and a course. These are the things you do:
+
+1. Communicate with the business solely _**in their own language**_, which is a natural language.
 2. Define a domain language \(in Ampersand\) to consolidate _**agreement of terms**_ among stakeholders and document it in natural language. 
 3. _**Formalize**_ the agreements that are relevant for the information system using Ampersand-script.  
 4. Generate a real and working _**prototype**_ of your information system at the push of a button. 
-5. Use this prototype to _**walk through**_ user stories, test user acceptance, elicit requirements, to name just some of its uses.
+5. Use this prototype to _**walk through**_ user stories, test user acceptance, elicit requirements, or otherwise gain more assurance that your design is what your audience wants.
 6. Use the documented ontology that Ampersand generates to _**validate**_ the agreed rules.
 
 ## Benefits
