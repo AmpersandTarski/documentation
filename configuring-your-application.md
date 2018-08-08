@@ -1,10 +1,3 @@
----
-description: >-
-  Once you have your information system generated, which parameters can you set
-  to influence its behaviour in practice? This chapter contains the
-  possibilities.
----
-
 # Configuring your application
 
 ## Local Settings for the client-side application

@@ -1,8 +1,16 @@
-# The Command Line tool
+---
+description: >-
+  When you need to run the Ampersand compiler from a command line, this chapter
+  gives you the required instructions.
+---
+
+# Running the Ampersand compiler
 
 ## NAME
 
-ampersand.exe
+`ampersand`
+
+Runs the Ampersand compiler from the command line in Windows, MacOS, and Linux.
 
 ## SYNOPSIS
 
@@ -12,12 +20,13 @@ ampersand [OPTIONS] [FILE]
 
 ## DESCRIPTION
 
-**ampersand** takes a file as input. It must contain a valid ampersand script that complies to the [syntax](../ampersand-syntax/) of ampersand.
+**ampersand** takes a file as input. It must contain a valid ampersand script, i.e. a script that complies to the [syntax](../ampersand-syntax/) and semantics of ampersand. The compiler will not generate any output unless the script is valid.
 
-When used without any [options](options.md), it will check if the input is valid. If so, it will do nothing, if not, it will tell you what is wrong.
+When used without any [options](https://github.com/AmpersandTarski/documentation/tree/5c45435a2b5cdd69129ba6ee9401819331fb531e/the-command-line-tool/options.md), it will check if the input is valid. If so, it will do nothing, if not, it will tell you what is wrong.
 
 ## OPTIONS
-The [list of options](options.md) contains all compiler options.
+
+The [list of options](https://github.com/AmpersandTarski/documentation/tree/5c45435a2b5cdd69129ba6ee9401819331fb531e/the-command-line-tool/options.md) contains all compiler options.
 
 ## EXAMPLES
 
@@ -38,11 +47,7 @@ We are happy to receive [bug reports at AmpersandTarski](https://github.com/Ampe
 
 ## SEE ALSO
 
-
-
 \*\*\*\*
 
 ## Exit status
-
-
 

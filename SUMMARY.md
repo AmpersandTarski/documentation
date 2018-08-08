@@ -35,7 +35,7 @@
   * [The IDENT statement](ampersand-syntax/the-ident-statement.md)
   * [The TABLE statement](ampersand-syntax/the-table-statement.md)
   * [Language support](ampersand-syntax/language-support.md)
-* [The Command Line tool](the-command-line-tool/README.md)
+* [Running the Ampersand compiler](the-command-line-tool/README.md)
   * [switches](the-command-line-tool/switches.md)
   * [Configuration](the-command-line-tool/configuration.md)
 * [Configuring your application](configuring-your-application.md)
