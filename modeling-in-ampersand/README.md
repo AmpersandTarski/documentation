@@ -1,38 +1,26 @@
 ---
 description: >-
   Ampersand speaks of rules, relations, patterns, and much more. What do all
-  these words mean? If you want to understand Ampersand, don't forget this
+  these words mean? If you want to understand Ampersand, use this chapter as
   "dictionary".
 ---
 
 # Ampersand's own language
 
-There can be many reasons for making an Ampersand model. Just a few examples are:
-
-* You want to study the conceptual structure of something, to gain a better understanding or to acquire the jargon of a topic. Business analysts do it when starting on a new assignment. In a new environment with new people, unknown habits and a lot of catching up to do, they pick some documentation, courseware, legislature or other jargon-laden documentation and make an Ampersand model. Making sense of piles of new material goes much faster if you try to make an Ampersand model on the side.
-* You want to design persistent store \(a database\) for use in an application. You make a model of the data, the rules and make one interface for every service your store provides.
-* You want to detect flaws in an architecture. Make an ampersand model of that architecture, and model every rule you want checked. Populate your model with data from the real architecture, and you can measure every flaw as it occurs.
-* Your build-team wants clear working instructions, but there is no time to make a functional specification. You make your Ampersand model and derive the work instructions from the functional specification and the prototype that you have made.
-* You need correct software. Develop your software in Ampersand and use the rules to establish correctness.
-* Your assignment is to cleanse a polluted database. Try to find the rules that define what clean data is, and run your data through Ampersand.
-
-There are most certainly other reasons for making an Ampersand model, because a good conceptual analysis precedes practically every problem that is worth solving.
-
-## Model
-
-An information system is modeled by designing every subsystem separately.
-
-## Steps
-
-To specify an information system, take the following steps:  
-1. Agreement on the domain language;  
-2. Agreement on rules;  
-3. Validate rules;  
-4. Define interfaces.
-
-## What is a model about?
-
-An ampersand model describes the rules, relations and concepts that define a business system. Using this specification, a software system can be built that can hold structured information as a set of facts. Based on the rules, the set of facts can be checked automatically to detect violations of rules.
-
-In an Ampersand model, interfaces can be defined too, enabling the definition of changes to the set of facts.
+| word | meaning | example | purpose |
+| :--- | :--- | :--- | :--- |
+| Atom | an indivisible item | "Peter" | to represent a thing |
+| Pair | two atoms: a source and a target atom | \("Ida",5\) | to state that two atoms are related |
+| Relation | a set of pairs that is identifyable in a context by its name and type | r\[A\*B\] | to build true statements and store pairs persistently in an application |
+| Rule | a constraint, which is supposed to remain satisfied. | r;s⊆t  | to provide meaning in a given context |
+| Pattern | a set of rules | PATTERN $$a = b$$$$ r;s⊆t$$ ENDPATTERN | to gather rules that belong together for reusing them in different contexts |
+|  |  |  |  |
+| Population | a set of pairs in a context |  | to represent the facts \(i.e. true statements\) in an information system |
+| Context | a population together a set of rules that are satisfied by the population. |  | to maintain a consistent representation of a real life situation |
+| View | A set of pairs that can be shown to users in a particular formulation. |  | to represent facts |
+| Interface | A structure meant for "the outside world" to communicate with the system and possibly change the population. |  | to let "the outside world" communicate with the system in a given context and possibly change its population  |
+| Multiplicity | A predefined property of a relation |  | to constrain a relation with predefined properties |
+| Term | A combination of relations and operators that satisfy the Ampersand Syntax |  | to express rules |
+| Operator | one of $$−, ⌣, ∪, ∩, ;, ∖, /, ⊆, =$$  |  | creating terms by combining smaller terms into larger ones |
+| Role | A name for a group of people |  | to talk about users without having any |
 
