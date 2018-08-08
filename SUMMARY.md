@@ -36,7 +36,7 @@
   * [The TABLE statement](ampersand-syntax/the-table-statement.md)
   * [Language support](ampersand-syntax/language-support.md)
 * [Running the Ampersand compiler](the-command-line-tool/README.md)
-  * [switches](the-command-line-tool/switches.md)
+  * [Options](the-command-line-tool/options.md)
   * [Configuration](the-command-line-tool/configuration.md)
 * [Configuring your application](configuring-your-application.md)
 * [Reusing Available Modules](modules/README.md)
