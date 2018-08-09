@@ -23,14 +23,15 @@ The syntax of atoms is largely taken from [ISO8601](https://www.iso.org/iso-8601
 * If necessary for a particular application, the standard supports the addition of a decimal fraction to the smallest time value in the representation.
 
 ## Atomic types
-Atoms are represented in an SQL database. For this purpose every atom has a type (sometimes called the *technical type*). The representation in SQL is given in the following table. Some of these types cannot be compared for equality. This implies that they cannot have interfaces defined for them. Nor can complements be computed for such types. Violations are currently signaled at runtime, but future versions of Ampersand will signal these violations at compile time.
+
+Atoms are represented in an SQL database. For this purpose every atom has a type \(sometimes called the _technical type_\). The representation in SQL is given in the following table. Some of these types cannot be compared for equality. This implies that they cannot have interfaces defined for them. Nor can complements be computed for such types. Violations are currently signaled at runtime, but future versions of Ampersand will signal these violations at compile time.
 
 | type | purpose | SQL | eq |
 | :--- | :--- | :--- | :--- |
-| ALPHANUMERIC | to represent strings of short length | VARCHAR(255) | yes |
+| ALPHANUMERIC | to represent strings of short length | VARCHAR\(255\) | yes |
 | BIGALPHANUMERIC | to represent large strings of limited length | TEXT | no |
 | HUGEALPHANUMERIC | to represent strings of arbitrary length | MEDIUMTEXT | no |
-| PASSWORD | to represent passwords in a secure way | VARCHAR(255) | no |
+| PASSWORD | to represent passwords in a secure way | VARCHAR\(255\) | no |
 | BINARY | to represent uninterpreted binary data of short length | BLOB | no |
 | BIGBINARY | to represent large binaray data of limited length | MEDIUMBLOB | no |
 | HUGEBINARY | to represent large binarey data of arbitrary length | LONGBLOB | no |
@@ -39,17 +40,22 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
 | BOOLEAN | to represent True and False values | BOOLEAN | yes |
 | INTEGER | to represent positive and negative whole numbers | BIGINT | yes |
 | FLOAT | to represent floating point numbers compatible with ISO8601 | FLOAT | no |
-| Object | to represent a key value for objects; it is not meant to be visible to end users. | VARCHAR(255) | yes |
+| Object | to represent a key value for objects; it is not meant to be visible to end users. | VARCHAR\(255\) | yes |
 
 ## Properties
 
 1. Any two atoms, whose concepts share a least generic concept, have the same atomic type. For example: `"Xandra"[Person]` and `"Acme Ltd."[Company]` must have the same atomic type if Person and Company share a least generic concept such as `"LegalEntity"`.
 2. The following Ampersand statement declares the atomic type of a concept:
-```
-REPRESENT <Concepts> TYPE <Atomic type>
-```
-e.g. 
-```
-REPRESENT LegalEntity TYPE ALPHANUMERIC
-```
-If `Person` and `Company` are both `LegalEntity`, then both of them will be implicitly declared as `ALPHANUMERIC` too.
+
+   ```text
+   REPRESENT <Concepts> TYPE <Atomic type>
+   ```
+
+   e.g. 
+
+   ```text
+   REPRESENT LegalEntity TYPE ALPHANUMERIC
+   ```
+
+   If `Person` and `Company` are both `LegalEntity`, then both of them will be implicitly declared as `ALPHANUMERIC` too.
+

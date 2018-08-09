@@ -1,4 +1,4 @@
-# The RELATION statement
+# Relations
 
 ## Purpose
 
@@ -70,8 +70,6 @@ There are additional relations that can be specified on endo relations. An endo 
 | RFX | reflexive | For each `a` in `A`, the pair \(`a`,`a`\) is in the population of `r` |
 | IRF | irreflexive | For each `a` in `A`, the pair \(`a`,`a`\) is _not_ in the population of `r` |
 | PROP | - | shortcut for the combination of symmetric and antisymmetric. |
-
-
 
 Let's assume that we want to express that any person can live in one city only. So under this constraint "_Joe Smith lives in New York_" and "_Joe Smith lives in Denver_" cannot both be true at the same time.
 

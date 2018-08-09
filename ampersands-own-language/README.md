@@ -4,7 +4,7 @@
 | :--- | :--- | :--- | :--- |
 | [Atom](atoms.md) | an indivisible item | "Peter" | to represent a thing |
 | Pair | two atoms: a source and a target atom | \("Ida",5\) | to state that two atoms are related |
-| Relation | a set of pairs that is identifyable in a context by its name and type | r\[A\*B\] | to build true statements and store pairs persistently in an application |
+| [Relation](relations.md) | a set of pairs that is identifyable in a context by its name and type | r\[A\*B\] | to build true statements and store pairs persistently in an application |
 | Rule | a constraint, which is supposed to remain satisfied. | r;s⊆t  | to provide meaning in a given context |
 | Pattern | a set of rules | PATTERN  ...ENDPATTERN | to gather rules that belong together for reusing them in different contexts |
 | Population | a set of pairs in a context | POPULATION r\[A\*B\] CONTAINS \[ \("Ida",5\), \("Bob",1\) \] | to represent the facts \(i.e. true statements\) in an information system |
