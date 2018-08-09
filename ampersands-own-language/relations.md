@@ -51,18 +51,27 @@ The name, source concept and target concept together identify a relation uniquel
 
 ## Properties
 
-The `<properties>`-part is meant for writing multiplicity constraints in a comma separated list between square brackets '\[' and '\]'. E.g. `[UNI,TOT]` . The following multiplicity constraints are available:
+The `<properties>`-part is meant for writing multiplicity constraints in a comma separated list between square brackets '\[' and '\]'. E.g. `[UNI,TOT]` . The following properties can be specified on any relation `r[A*B]`
 
-* `UNI` \(univalent\)
-* `INJ` \(injective\)
-* `SUR` \(surjective\)
-* `TOT` \(total\)
-* `SYM` \(symmetric\)
-* `ASY` \(antisymmetric\)
-* `TRN` \(transitive\)
-* `RFX` \(reflexive\)
-* `IRF` \(irreflexive\)
-* `PROP` \(property\)
+| & | property | semantics |
+| :--- | :--- | :--- |
+| UNI | univalent | For any `a` in `A` there can only be one `b` in `B` in the population of `r`. |
+| INJ | injective | For any `b` in `B` there can only be one `a` in `A` in the population of `r`. |
+| SUR | surjective | For any `b` in `B` there must be \(at least\) one `a` in `A` in the population of 'r\`. |
+| TOT | total | For any `a` in `A` there must be \(at least\) one `b` in `B` in the population of 'r\`. |
+
+There are additional relations that can be specified on endo relations. An endo relation is a relation where the source and target concepts are equal. `r[A*A]`.
+
+| & | property | semantics |
+| :--- | :--- | :--- |
+| SYM | symmetric | For each \(`a`,`b`\) in `r`, \(`b`,`a`\) is in `r`. |
+| ASY | antisymmetric | If \(`a`,`b`\) and \(`b`,`a`\) are both in `r`, then `a` = `b` |
+| TRN | transitive | If \(`a`,`b`\) and \(`b`,`c`\) are both in `r`, then \(`a`,`c`\) is in `r`. |
+| RFX | reflexive | For each `a` in `A`, the pair \(`a`,`a`\) is in the population of `r` |
+| IRF | irreflexive | For each `a` in `A`, the pair \(`a`,`a`\) is _not_ in the population of `r` |
+| PROP | - | shortcut for the combination of symmetric and antisymmetric. |
+
+
 
 Let's assume that we want to express that any person can live in one city only. So under this constraint "_Joe Smith lives in New York_" and "_Joe Smith lives in Denver_" cannot both be true at the same time.
 

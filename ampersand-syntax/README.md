@@ -66,8 +66,8 @@ Keywords in Ampersand are always written in CAPITALS.
   * [`PATTERN`](../ampersands-own-language/the-pattern-statement.md)
   * `ENDPATTERN`
   * [`CONCEPT`](../ampersands-own-language/the-concept-statement.md)
-* Keywords for [relations](../ampersands-own-language/the-relation-statement.md)
-  * [`RELATION`](../ampersands-own-language/the-relation-statement.md)
+* Keywords for [relations](../ampersands-own-language/relations.md)
+  * [`RELATION`](../ampersands-own-language/relations.md)
   * `PRAGMA`
   * `UNI`
   * `INJ`
@@ -95,7 +95,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `MAINTAINS`
 * Keywords for documentation
   * [`PURPOSE`](../ampersands-own-language/the-purpose-statement.md)
-  * [`MEANING`](../ampersands-own-language/the-relation-statement.md)
+  * [`MEANING`](../ampersands-own-language/relations.md)
   * `REF`
   * `REST`
   * `HTML`

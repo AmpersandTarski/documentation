@@ -13,7 +13,7 @@
 * [Ampersand's own language](ampersands-own-language/README.md)
   * [Truth](ampersands-own-language/truth.md)
   * [Atoms](ampersands-own-language/atoms.md)
-  * [The RELATION statement](ampersands-own-language/the-relation-statement.md)
+  * [The RELATION statement](ampersands-own-language/relations.md)
   * [Relations & Concepts](ampersands-own-language/relations-and-concepts.md)
   * [The CONCEPT statement](ampersands-own-language/the-concept-statement.md)
   * [The RULE statement](ampersands-own-language/the-rule-statement.md)
