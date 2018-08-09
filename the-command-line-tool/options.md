@@ -42,7 +42,7 @@ generate crowfoot notation in conceptual models. This is used to better match th
 
 ### `--crud-defaults=CRUD`
 
-Set the default CRUD function for interfaces. This function is explained in [interface expressions](../modeling-in-ampersand/interfaces.md). This feature is used temporarily to gain experience with CRUD and learn about its semantics.
+Set the default CRUD function for interfaces. This function is explained in [interface expressions](../Ampersands-own-language/interfaces.md). This feature is used temporarily to gain experience with CRUD and learn about its semantics.
 
 ### `--customizations=DIRECTORY [, DIRECTORY]*`
 

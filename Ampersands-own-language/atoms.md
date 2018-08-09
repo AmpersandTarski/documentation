@@ -26,7 +26,19 @@ The syntax of atoms is largely taken from [ISO8601](https://www.iso.org/iso-8601
 
 Atoms come in the following types:
 
-|  |  |  |
+| type | purpose |  |
 | :--- | :--- | :--- |
-|  |  |  |
+| ALPHANUMERIC |  |  |
+| BIGALPHANUMERIC |  |  |
+| HUGEALPHANUMERIC |  |  |
+| PASSWORD |  |  |
+| BINARY |  |  |
+| BIGBINARY |  |  |
+| HUGEBINARY |  |  |
+| DATE |  |  |
+| DATETIME |  |  |
+| BOOLEAN |  |  |
+| INTEGER |  |  |
+| FLOAT |  |  |
+
 
