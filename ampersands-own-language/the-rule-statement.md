@@ -6,7 +6,11 @@ The purpose of a rule is to constrain data. Refer to the [chapter about rules](h
 
 A rule statement defines something that should be true. It does not define the enforcement.
 
-## Syntax of rules
+## Description
+
+## Examples
+
+## Syntax
 
 A `<rule>` has the following syntax:
 
