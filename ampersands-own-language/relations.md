@@ -55,8 +55,8 @@ The `<properties>`-part is meant for writing multiplicity constraints in a comma
 
 | & | property | semantics |
 | :--- | :--- | :--- |
-| UNI | univalent | For any `a` in `A` there can only be one `b` in `B` in the population of `r`. |
-| INJ | injective | For any `b` in `B` there can only be one `a` in `A` in the population of `r`. |
+| UNI | univalent | For any `a` in `A` there can only be one `b` in `B` in the population of `r`. This implies that every `a` occurs only once \(is unique\) in the domain of `r`. |
+| INJ | injective | For any `b` in `B` there can only be one `a` in `A` in the population of `r`. So, every `b` occurs only once in the codomain of `r`. |
 | SUR | surjective | For any `b` in `B` there must be \(at least\) one `a` in `A` in the population of 'r\`. |
 | TOT | total | For any `a` in `A` there must be \(at least\) one `b` in `B` in the population of 'r\`. |
 
