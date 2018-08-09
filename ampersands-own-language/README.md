@@ -1,10 +1,3 @@
----
-description: >-
-  Ampersand speaks of rules, relations, patterns, and much more. What do all
-  these words mean? If you want to understand Ampersand, use this chapter as
-  "dictionary".
----
-
 # Ampersand's own language
 
 | Word | Meaning | Example | Purpose |

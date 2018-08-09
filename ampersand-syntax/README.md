@@ -55,19 +55,19 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
 Keywords in Ampersand are always written in CAPITALS.
 
 * Keywords for the main structure of the code
-  * [`CONTEXT`](../Ampersands-own-language/the-context-statement.md)
+  * [`CONTEXT`](../ampersands-own-language/the-context-statement.md)
   * `ENDCONTEXT`
   * [`IN`](language-support.md)
   * `ENGLISH`
   * `DUTCH`
-  * [`INCLUDE`](../Ampersands-own-language/the-include-statement.md)
+  * [`INCLUDE`](../ampersands-own-language/the-include-statement.md)
   * `META`
   * `THEMES`
-  * [`PATTERN`](../Ampersands-own-language/the-pattern-statement.md)
+  * [`PATTERN`](../ampersands-own-language/the-pattern-statement.md)
   * `ENDPATTERN`
-  * [`CONCEPT`](../Ampersands-own-language/the-concept-statement.md)
-* Keywords for [relations](../Ampersands-own-language/the-relation-statement.md)
-  * [`RELATION`](../Ampersands-own-language/the-relation-statement.md)
+  * [`CONCEPT`](../ampersands-own-language/the-concept-statement.md)
+* Keywords for [relations](../ampersands-own-language/the-relation-statement.md)
+  * [`RELATION`](../ampersands-own-language/the-relation-statement.md)
   * `PRAGMA`
   * `UNI`
   * `INJ`
@@ -79,9 +79,9 @@ Keywords in Ampersand are always written in CAPITALS.
   * `RFX`
   * `IRF`
   * `PROP`
-  * [`POPULATION`](../Ampersands-own-language/the-population-statement.md)
+  * [`POPULATION`](../ampersands-own-language/the-population-statement.md)
   * `CONTAINS`
-* Keywords for [rules](../Ampersands-own-language/the-rule-statement.md)
+* Keywords for [rules](../ampersands-own-language/the-rule-statement.md)
   * `RULE`
   * `MESSAGE`
   * `VIOLATION`
@@ -94,8 +94,8 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ROLE`
   * `MAINTAINS`
 * Keywords for documentation
-  * [`PURPOSE`](../Ampersands-own-language/the-purpose-statement.md)
-  * [`MEANING`](../Ampersands-own-language/the-relation-statement.md)
+  * [`PURPOSE`](../ampersands-own-language/the-purpose-statement.md)
+  * [`MEANING`](../ampersands-own-language/the-relation-statement.md)
   * `REF`
   * `REST`
   * `HTML`
@@ -110,7 +110,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `TABS`
   * `COLS`
 * Keywords for identities
-  * [`IDENT`](../Ampersands-own-language/the-ident-statement.md)
+  * [`IDENT`](../ampersands-own-language/the-ident-statement.md)
 * Keywords for views
   * `VIEW`
   * `ENDVIEW`

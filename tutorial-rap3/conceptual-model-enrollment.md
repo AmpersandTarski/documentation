@@ -68,5 +68,5 @@ Try to reason about the answers to the following questions based on the conceptu
 
 ## What's next?
 
-This concludes your first steps to get acquainted with Ampersand script en RAP3. The Open University Coursebook contains all theoretical background you need to start understanding and creating your own model. This Gitbook offers more practical and up to date information about the language Ampersand script. For the syntax [click here](../ampersand-syntax/). For more in depth information about modeling in Ampersand [click here](../Ampersands-own-language/). For the rest...have a look around and feel free to ask questions.
+This concludes your first steps to get acquainted with Ampersand script en RAP3. The Open University Coursebook contains all theoretical background you need to start understanding and creating your own model. This Gitbook offers more practical and up to date information about the language Ampersand script. For the syntax [click here](../ampersand-syntax/). For more in depth information about modeling in Ampersand [click here](../ampersands-own-language/). For the rest...have a look around and feel free to ask questions.
 

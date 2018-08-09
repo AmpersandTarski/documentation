@@ -1,8 +1,7 @@
 ---
 description: >-
-  Designing information systems is a difficult task, which requires a conceptual
-  mind, sharp reasoning skills and the right tools. Read on if you are up to
-  that challenge...
+  What is the purpose of Ampersand? What do you gain by using it? This chapter
+  helps you to assess whether Ampersand is worth your while.
 ---
 
 # Why Ampersand?

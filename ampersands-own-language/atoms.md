@@ -22,23 +22,24 @@ The syntax of atoms is largely taken from [ISO8601](https://www.iso.org/iso-8601
 * For reduced accuracy, any number of values may be dropped from any of the date and time representations, but in the order from the least to the most significant. For example, "2004-05" is a valid ISO 8601 date, which indicates May \(the fifth month\) 2004. This format will never represent the 5th day of an unspecified month in 2004, nor will it represent a time-span extending from 2004 into 2005.
 * If necessary for a particular application, the standard supports the addition of a decimal fraction to the smallest time value in the representation.
 
-## Semantics
-
-Atoms come in the following types:
+## Atomic types
 
 | type | purpose |  |
 | :--- | :--- | :--- |
-| ALPHANUMERIC |  |  |
-| BIGALPHANUMERIC |  |  |
-| HUGEALPHANUMERIC |  |  |
-| PASSWORD |  |  |
-| BINARY |  |  |
-| BIGBINARY |  |  |
-| HUGEBINARY |  |  |
-| DATE |  |  |
-| DATETIME |  |  |
-| BOOLEAN |  |  |
-| INTEGER |  |  |
-| FLOAT |  |  |
+| ALPHANUMERIC | to represent strings of limited length that can be compared for equality. |  |
+| BIGALPHANUMERIC | to represent large strings of limited length |  |
+| HUGEALPHANUMERIC | to represent strings of arbitrary length |  |
+| PASSWORD | to represent passwords in a secure way |  |
+| BINARY | to represent uninterpreted binary data of short length, which can be compared for equality |  |
+| BIGBINARY | to represent large binaray data of limited length |  |
+| HUGEBINARY | to represent large binarey data of arbitrary length |  |
+| DATE | to represent dates compatible with ISO8601 |  |
+| DATETIME | to represent time stamps compatible with ISO8601 |  |
+| BOOLEAN | to represent True and False values |  |
+| INTEGER | to represent positive and negative whole numbers |  |
+| FLOAT | to represent floating point numbers compatible with ISO8601 |  |
 
+## Properties
+
+1. Any two atoms, whose concepts share a least generic concept, have the same type. For example: `"Xandra"[Person]` and `"Acme Ltd."[Company]` must have the same type if Person and Company share a least generic concept such as `"LegalEntity"`.
 

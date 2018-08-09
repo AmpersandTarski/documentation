@@ -1,9 +1,3 @@
----
-description: >-
-  An information system is about registering true statements. Ampersand allows
-  you to be precise about this. This section tells more...
----
-
 # Truth
 
 
