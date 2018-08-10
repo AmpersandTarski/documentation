@@ -1,9 +1,3 @@
----
-description: >-
-  Rules provide meaning. That makes rules a useful instrument for semantic
-  business engineering.
----
-
 # Rules
 
 ## Purpose

@@ -1,9 +1,3 @@
----
-description: >-
-  Every information problem starts with an analysis of the concepts involved. To
-  do a conceptual analysis right, you need to know about concepts...
----
-
 # Concepts
 
 ## Purpose

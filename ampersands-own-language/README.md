@@ -1,9 +1,3 @@
----
-description: >-
-  In talking about Ampersand, we need to know the concepts on which Ampersand
-  itself is built. This chapter contains the details...
----
-
 # Ampersand's own language
 
 Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation. Below is a list of other words with a specific meaning in Ampersand. 

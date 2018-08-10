@@ -1,10 +1,3 @@
----
-description: >-
-  Centuries ago, logicians discovered relations as a foundation for human
-  language and understanding. Today we find them useful for defining software as
-  well...
----
-
 # Relations
 
 ## Purpose

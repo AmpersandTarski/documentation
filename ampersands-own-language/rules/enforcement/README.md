@@ -1,9 +1,3 @@
----
-description: >-
-  What good are rules if they are not enforced? Ampersand supports different
-  ways to support rules. This chapter explains ...
----
-
 # Enforcement
 
 

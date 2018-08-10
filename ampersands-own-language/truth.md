@@ -1,8 +1,8 @@
 ---
 description: >-
-  An enterprise information system should store "the truth" of the business it
-  supports. If you want to design and build such systems, you should know a few
-  things about truth ...
+  An information system should store "the truth" about the business it supports.
+  If you want to design and build such systems, you should know a few things
+  about truth ...
 ---
 
 # Truth
