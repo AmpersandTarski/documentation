@@ -1,12 +1,18 @@
+---
+description: >-
+  Rules provide meaning by defining consequences. That makes rules the ultimate
+  instrument for semantic business engineering.
+---
+
 # The RULE statement
 
 ## Purpose
 
-The purpose of a rule is to give meaning to data.
+The purpose of a rule is to give meaning to data. Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/UqXPVqC) for an example to see how that translates to your business process.
 
 ## Description
 
-A rule is a constraint that should be kept satisfied.
+A rule is a constraint that should be kept satisfied. 
 
 
 
