@@ -1,15 +1,15 @@
 ---
 description: >-
-  An information system should store "the truth" about the business it supports.
-  If you want to design and build such systems, you should know a few things
-  about truth ...
+  An enterprise information system should store "the truth" of the business it
+  supports. If you want to design and build such systems, you should know a few
+  things about truth ...
 ---
 
 # Truth
 
 First, consider the distinction between [sensible and senseless statements](https://player.ou.nl/wowzaportlets/#!production/VDvSFqQ). A sensible statement is one that we can consider either true or false. \(we can say: it makes sense\).
 
-Ampersand lets you describe a set of sensible statements. That constitutes your [_language_](https://player.ou.nl/wowzaportlets/#!production/xqW5z2v). True statements in that language are called _facts_. These are the ones that are stored in the system you define. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
+Ampersand lets you describe sensible statements. The set of those statements constitutes your _language_. True statements in that language are called _facts_. These are the ones that are stored in the system you define. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
 
 Let us consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
 

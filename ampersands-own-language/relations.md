@@ -1,8 +1,19 @@
+---
+description: >-
+  Centuries ago, logicians discovered relations as a foundation for human
+  language and understanding. Today we find them useful for defining software as
+  well...
+---
+
 # Relations
 
 ## Purpose
 
-A relation statement says that there exists a relation. It introduces \(defines, declares\) the relation in the context that uses the relation statement. A relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation, for example by a user typing data into an Ampersand application. So the contents of a relation are dynamically changing .
+A relation statement says that there exists a relation. It introduces \(defines, declares\) the relation in the context that uses the relation statement.
+
+## Description
+
+A relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation, for example by a user typing data into an Ampersand application. So the contents of a relation are changing over time.
 
 ## Examples
 
@@ -16,9 +27,9 @@ PRAGMA "Order " " has contract " " as its legal basis."
 MEANING "Every Order has a unique ContractID which specifies the legal basis for that particular order."
 ```
 
-## Syntax
+## Syntax and meaning
 
-A relation statement can have one of the following forms:
+Each relation used in Ampersand has to be declared. This means that the user tells the system that this particular relation exists. A relation declaration can have one of the following forms:
 
 ```text
 RELATION <lower case identifier> '[' <upper case identifier>'*' <upper case identifier>']'
@@ -37,15 +48,13 @@ RELATION <lower case identifier> '[' <upper case identifier>'*' <upper case iden
 
 The second and third ways will become obsolete in future versions of Ampersand.
 
-All three ways define a relation by its name, its source concept and its target concept. The name of a relation is a single word that starts with a lower case letter. The source and target concepts start with an upper case letter.
+All three ways define a relation by its name, its source concept and its target concept. By convention, the name of a relation is a single word that starts with a lower case letter. The source and target concepts start with an upper case letter. This convention avoids confusion between concepts and relations.
+
+A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.
 
 A relation statement may occur anywhere inside a context, both inside and outside of a pattern.
 
 The optional `<properties>`, `<pragma>`, and `<meaning>`-parts are discussed in the sequel.
-
-## Semantics
-
-A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.
 
 The name, source concept and target concept together identify a relation uniquely within its context. As a consequence, the name of a relation does not have to be unique. E.g. `name[Book*Name]` can be specified in the same context as `name[Person*Name]`. Because they have different source concepts, these are different relations.
 
@@ -157,4 +166,8 @@ MEANING LATEX {+This is a {\em mathematical} formula $\frac{3}{x+7}$.+}
 ```
 
 Ampersand uses Pandoc to offer a choice for your markup. See [pandoc.org](http://pandoc.org/) for details.
+
+## Miscellaneous
+
+* Relations names start with a lower case character, to avoid confusion with concept names.
 

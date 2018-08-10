@@ -1,3 +1,9 @@
+---
+description: >-
+  In talking about Ampersand, we need to know the concepts on which Ampersand
+  itself is built. This chapter contains the details...
+---
+
 # Ampersand's own language
 
 Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation. Below is a list of other words with a specific meaning in Ampersand. 
@@ -8,7 +14,8 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | Concept | a name to categorize similar items | Person |  |
 | Pair | two atoms: a source and a target atom | \("Ida",5\) | to state that two atoms are related |
 | [Relation](relations.md) | a set of pairs that is identifyable in a context by its name and type | r\[A\*B\] | to build true statements and store pairs persistently in an application |
-| Rule | a constraint, which is supposed to remain satisfied. | r;s⊆t  | to provide meaning in a given context |
+| [Rule](rules/) | a constraint, which is supposed to remain satisfied. | r;s⊆t  | to provide meaning in a given context |
+| satisfy | A rule is satisfied \(in a context\) if the data \(in that context\) do not cause any violation of that rule. |  | to calculate violations at run-time helps users do the right things |
 | Pattern | a set of rules | PATTERN  ...ENDPATTERN | to gather rules that belong together for reusing them in different contexts |
 | Population | a set of pairs in a context | POPULATION r\[A\*B\] CONTAINS \[ \("Ida",5\), \("Bob",1\) \] | to represent the facts \(i.e. true statements\) in an information system |
 | Context | a population together with a set of rules that are satisfied by the population. | CONTEXT ...ENDCONTEXT | to maintain a consistent representation of a real life situation |

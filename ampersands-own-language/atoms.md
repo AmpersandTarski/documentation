@@ -12,7 +12,7 @@ An atom refers to an individual object in the real world, such as the student ca
 
 `"Caroline"`, `5`, `1917-11-07` `48`, `10.34`, `2.`, `.001`, `-125`, `+5.33333`, `2.5E2`, `5E-3`
 
-## Syntax
+## Syntax and meaning
 
 The syntax of atoms is largely taken from [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) and corresponds to the syntax of [SQL](https://www.w3schools.com/sql/func_sqlserver_convert.asp) and [Excel](https://support.office.com/en-us/article/format-numbers-as-dates-or-times-418bd3fe-0577-47c8-8caa-b4d30c528309). \(Acknowledgement: the following text was [adapted from Wikipedia](https://en.wikipedia.org/wiki/ISO_8601)\)
 
