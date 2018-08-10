@@ -8,7 +8,7 @@ description: >-
 # Truth
 
 First, consider the distinction between sensible and senseless statements. 
-
+<iframe title='OU' width='1261' height='746' src='https://player.ou.nl/wowzaportlets/#!production/VDvSFqQ' frameborder='0' allowfullscreen></iframe>
 This chapter is about true and false statements. A fact is a statement that is true. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
 
 Let us consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
