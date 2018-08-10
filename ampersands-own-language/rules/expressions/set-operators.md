@@ -1,8 +1,4 @@
 # Set operations applied to relations
-
-
-
-```text
 A relation is by definition a subset of the Cartesian Product of the
 source and target sets. Hence, if two different relations r and s are
 defined on the same source X and target Y, then the ordinary set
@@ -33,5 +29,4 @@ relations: the Cartesian Product serves the purpose.
 
 -   complement : -r or rc or r is the set of all tuples in the Cartesian
     Product that are not contained in r.
-```
 
