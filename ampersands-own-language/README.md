@@ -1,8 +1,11 @@
 # Ampersand's own language
 
+Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation. Below is a list of other words with a specific meaning in Ampersand. 
+
 | Word | Meaning | Example | Purpose |
 | :--- | :--- | :--- | :--- |
 | [Atom](atoms.md) | an indivisible item | "Peter" | to represent a thing |
+| Concept | a name to categorize similar items | Person |  |
 | Pair | two atoms: a source and a target atom | \("Ida",5\) | to state that two atoms are related |
 | [Relation](relations.md) | a set of pairs that is identifyable in a context by its name and type | r\[A\*B\] | to build true statements and store pairs persistently in an application |
 | Rule | a constraint, which is supposed to remain satisfied. | r;s⊆t  | to provide meaning in a given context |

@@ -8,18 +8,7 @@ The purpose of a rule is to give meaning to data.
 
 A rule is a constraint that should be kept satisfied.
 
-Example:
 
-* The statement "St. Paul street is a one way street." might be either true or false. We just have to check the road signs on St. Paul street to know. If, however, the city council of the City of St. Catharines decides that St. Paul street is a one way street, we have a rule. It is a rule because St. Paul street **must be** a one way street. 
-
-  The word _must_ implies that there is someone who says so: the authority that imposes the rule.
-
-* In this example, the city council of St. Catharines, by the authority invested upon it by the law, has ordained that St. Paul street must be a one way street.
-* The people who are affected by this are called stakeholders.
-* The City of St. Catharines is the scope of this rule, because that is where this rule is valid.
-* Outside the City of St. Catharines \(the scope\), this rule has no meaning.
-
-  For example, in Smalltown, NY , this rule is meaningless. There, the rule doesn't even make sense because Smalltown, NY , does not even have a St. Paul street.
 
 ## Syntax
 
