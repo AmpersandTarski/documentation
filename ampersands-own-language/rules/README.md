@@ -8,18 +8,7 @@ Rules are useful to turn a heap of data into meaningful information. For that pu
 
 Let us first discuss some words that allow us to talk about rules .These are: true, false, valid, scope, stakeholder, statement, and rule. We will use these words in their conventional meaning, but in a precise way.
 
-A _rule_ is a statement that must be true in the context in which it is valid. So, a rule differs from a statement, because a statement can be either true or false. A rule, on the contrary, is meant to be true. Example:
-
-* The statement "St. Paul street is a one way street." might be either true or false. We just have to check the road signs on St. Paul street to know. If, however, the city council of the City of St. Catharines decides that St. Paul street is a one way street, we have a rule. It is a rule because St. Paul street **must be** a one way street. 
-
-  The word _must_ implies that there is someone who says so: the authority that imposes the rule.
-
-* In this example, the city council of St. Catharines, by the authority invested upon it by the law, has ordained that St. Paul street must be a one way street.
-* The people who are affected by this are called stakeholders.
-* The City of St. Catharines is the scope of this rule, because that is where this rule is valid.
-* Outside the City of St. Catharines \(the scope\), this rule has no meaning.
-
-  For example, in Smalltown, NY , this rule is meaningless. There, the rule doesn't even make sense because Smalltown, NY , does not even have a St. Paul street.
+A _rule_ is a statement that must be true in the context in which it is valid. So, a rule differs from a statement, because a statement can be either true or false. A rule, on the contrary, is meant to be true. 
 
 Every rule is denoted in Ampersand both as a statement in natural language \(i.e. free text\) as well as a formal expression. The Ampersand modeler is responsible that the semantics of both ways to express a rule is equivalent.
 
