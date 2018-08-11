@@ -35,24 +35,33 @@ V <signature>?
 
 The following operators are available to build expressions:
 
-| :--- | -:- | -:- | :--- |
-| Operators that form rules |
-| equivalence | `=` | $$=$$ | Binary |
+
+* Operators that form rules
+| :--- | :--- | :--- | :--- |
+| equivalence (equal)| `=` | $$=$$ | Binary |
 | inclusion | `|-` | $$⊆$$ | Binary |
 * Set operators
-| intersection | `/\` | $$∩$$ | Binary |
+| :--- | :--- | :--- | :--- |
+| intersect | `/\` | $$∩$$ | Binary |
 | union | `\/` | $$∪$$ | Binary |
-| difference | `-` | $$-$$ | Binary |
+| difference (minus) | `-` | $$-$$ | Binary |
 | complement | `-` | $$-$$ | Overline |
+
 * Relation operators
-| composition | `;` | $$;$$ | Binary |
+| :--- | :--- | :--- | :--- |
+| compose | `;` | $$;$$ | Binary |
+| converse \(flip\) | `~` | $$\tilde$$ | Postfix |
+| :--- |
+* Residual operators
+| :--- | :--- | :--- | :--- |
 | left residual | `/` | $$/$$ | Binary |
 | right residual | `\` | $$\\$$ | Binary |
 | diamond | `<>` | $$♢$$ | Binary |
+* Product operator
+| :--- | :--- | :--- | :--- |
 | cartesian product | `#` | $$\times$$ | Binary |
-* Unary prefix operators
-* Unary postfix operators \(`<UnaryOpPost>`\)
-| conversion \(flip\) | `~` | $$\tilde$$ | Postfix |
+* Kleene closures (not implemented)
+| :--- | :--- | :--- | :--- |
 | Reflexive, transitive closure | `*`  | $$∗$$ | Postfix |\(Kleene star\) --currently not implemented
 | transitive closure | `+`  | $$+$$ | Postfix |\(Kleene plus\) --currently not implemented
 
