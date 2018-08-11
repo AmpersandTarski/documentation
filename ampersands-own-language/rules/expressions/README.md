@@ -35,24 +35,26 @@ V <signature>?
 
 The following operators are available to build expressions:
 
-* Binary operators \(`<BinaryOperator>`\)
-  * equivalence: `=`
-  * composition: `;`
-  * inclusion: `|-`
-  * intersection: `/\`
-  * union: `\/`
-  * difference: `-`
-  * left residual: `/`
-  * right residual: `\`
-  * diamond: `<>`
-  * relative addition: `!`
-  * cartesian product: `#`
-* Unary prefix operators \(`<UnaryOpPre>`\)
-  * complement: `-`
+| :--- | -:- | -:- | :--- |
+| Operators that form rules |
+| equivalence | `=` | $$=$$ | Binary |
+| inclusion | `|-` | $$⊆$$ | Binary |
+* Set operators
+| intersection | `/\` | $$∩$$ | Binary |
+| union | `\/` | $$∪$$ | Binary |
+| difference | `-` | $$-$$ | Binary |
+| complement | `-` | $$-$$ | Overline |
+* Relation operators
+| composition | `;` | $$;$$ | Binary |
+| left residual | `/` | $$/$$ | Binary |
+| right residual | `\` | $$\\$$ | Binary |
+| diamond | `<>` | $$♢$$ | Binary |
+| cartesian product | `#` | $$\times$$ | Binary |
+* Unary prefix operators
 * Unary postfix operators \(`<UnaryOpPost>`\)
-  * conversion \(flip\): `~`
-  * Reflexive, transitive closure: `*` \(Kleene star\) --currently not implemented
-  * transitive closure: `+` \(Kleene plus\) --currently not implemented
+| conversion \(flip\) | `~` | $$\tilde$$ | Postfix |
+| Reflexive, transitive closure | `*`  | $$∗$$ | Postfix |\(Kleene star\) --currently not implemented
+| transitive closure | `+`  | $$+$$ | Postfix |\(Kleene plus\) --currently not implemented
 
 ### 
 
