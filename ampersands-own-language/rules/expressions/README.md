@@ -6,7 +6,7 @@ The purpose of an expression is to compute pairs that constitute a relation.
 
 ## Description
 
-An expression is a combination of operators and relations whose meaning is a set of pairs.
+An expression is a combination of operators and relations. Its meaning is a set of pairs.
 
 ## Examples
 
