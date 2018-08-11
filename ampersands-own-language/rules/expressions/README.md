@@ -38,7 +38,7 @@ The following operators are available to build expressions:
 | operator | code | math | position | category |  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |  |
-| inclusion | \|- |  $$⊆$$  |  | Binary | rule forming |
+| inclusion | \|- | $$⊆$$ | Binary | rule forming |
 | intersect | `/\` | $$∩$$ | Binary | boolean |  |
 | union | `\/` | $$∪$$ | Binary | boolean |  |
 | difference \(minus\) | `-` | $$-$$ | Binary | boolean |  |
