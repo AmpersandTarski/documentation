@@ -35,20 +35,20 @@ V <signature>?
 
 The following operators are available to build expressions:
 
-| operator | code | math | position | category |  |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |  |
+| operator | code | math | position | category |
+| :--- | :---: | :---: | :--- | :--- |
+| equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |
 | inclusion | \|- | $$⊆$$ | Binary | rule forming |
-| intersect | `/\` | $$∩$$ | Binary | boolean |  |
-| union | `\/` | $$∪$$ | Binary | boolean |  |
-| difference \(minus\) | `-` | $$-$$ | Binary | boolean |  |
-| complement | `-` | $$-$$ | Overline | boolean |  |
-| compose | `;` | $$;$$ | Binary | relation |  |
-| converse \(flip\) | `~` | $$\tilde\$$ | Postfix | relation |  |
-| left residual | `/` | $$/$$ | Binary | residual |  |
-| right residual | `\` | $$\backslash$$  | Binary | residual |  |
-| diamond | `<>` | $$♢$$ | Binary | residual |  |
-| cartesian product | `#` | $$\times$$ | Binary |  |  |
-| reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene |  |
-| transitive closure | `+` | $$+$$ | Postfix | Kleene |  |
+| intersect | `/\` | $$∩$$ | Binary | boolean |
+| union | `\/` | $$∪$$ | Binary | boolean |
+| difference \(minus\) | `-` | $$-$$ | Binary | boolean |
+| complement | `-` | $$-$$ | Overline | boolean |
+| compose | `;` | $$;$$ | Binary | relation |
+| converse \(flip\) | `~` | $$\tilde\$$ | Postfix | relation |
+| left residual | `/` | $$/$$ | Binary | residual |
+| right residual | `\` | $$\backslash$$ | Binary | residual |
+| diamond | `<>` | $$♢$$ | Binary | residual |
+| cartesian product | `#` | $$\times$$ | Binary |  |
+| reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene \(not yet implemented\) |
+| transitive closure | `+` | $$+$$ | Postfix | Kleene \(not yet implemented\) |
 
