@@ -6,13 +6,13 @@ The purpose of an expression is to compute pairs that constitute a relation.
 
 ## Description
 
-An expression is a combination of operators and relations whose meaning is a set of pairs. 
+An expression is a combination of operators and relations whose meaning is a set of pairs.
 
 ## Examples
 
 `owner`
 
- `r;s~`
+`r;s~`
 
 `I /\ goalkeeper;goalkeeper~`
 
@@ -35,23 +35,20 @@ V <signature>?
 
 The following operators are available to build expressions:
 
-
-| operator | code | math | position | category |
-| :--- | :--- | :--- | :--- |
-| equivalence (equal)| `=` | $$=$$ | Binary | rule forming |
-| inclusion | `|-` | $$⊆$$ | Binary | rule forming |
-| intersect | `/\` | $$∩$$ | Binary | boolean |
-| union | `\/` | $$∪$$ | Binary | boolean |
-| difference (minus) | `-` | $$-$$ | Binary | boolean |
-| complement | `-` | $$-$$ | Overline | boolean |
-| compose | `;` | $$;$$ | Binary | relation |
-| converse \(flip\) | `~` | $$\tilde$$ | Postfix | relation |
-| left residual | `/` | $$/$$ | Binary | residual |
-| right residual | `\` | $$\\$$ | Binary | residual |
-| diamond | `<>` | $$♢$$ | Binary | residual |
-| cartesian product | `#` | $$\times$$ | Binary |  |
-| Reflexive, transitive closure | `*`  | $$∗$$ | Postfix | Kleene
-| transitive closure | `+`  | $$+$$ | Postfix | Kleene
-
-### 
+| operator | code | math | position | category |  |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |  |
+| inclusion | \|- |  $$⊆$$  |  | Binary | rule forming |
+| intersect | `/\` | $$∩$$ | Binary | boolean |  |
+| union | `\/` | $$∪$$ | Binary | boolean |  |
+| difference \(minus\) | `-` | $$-$$ | Binary | boolean |  |
+| complement | `-` | $$-$$ | Overline | boolean |  |
+| compose | `;` | $$;$$ | Binary | relation |  |
+| converse \(flip\) | `~` | $$\tilde\$$ | Postfix | relation |  |
+| left residual | `/` | $$/$$ | Binary | residual |  |
+| right residual | `\` | $$\backslash$$  | Binary | residual |  |
+| diamond | `<>` | $$♢$$ | Binary | residual |  |
+| cartesian product | `#` | $$\times$$ | Binary |  |  |
+| reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene |  |
+| transitive closure | `+` | $$+$$ | Postfix | Kleene |  |
 
