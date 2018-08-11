@@ -36,34 +36,22 @@ V <signature>?
 The following operators are available to build expressions:
 
 
-* Operators that form rules
+| operator | code | math | position | category |
 | :--- | :--- | :--- | :--- |
-| equivalence (equal)| `=` | $$=$$ | Binary |
-| inclusion | `|-` | $$⊆$$ | Binary |
-* Set operators
-| :--- | :--- | :--- | :--- |
-| intersect | `/\` | $$∩$$ | Binary |
-| union | `\/` | $$∪$$ | Binary |
-| difference (minus) | `-` | $$-$$ | Binary |
-| complement | `-` | $$-$$ | Overline |
-
-* Relation operators
-| :--- | :--- | :--- | :--- |
-| compose | `;` | $$;$$ | Binary |
-| converse \(flip\) | `~` | $$\tilde$$ | Postfix |
-| :--- |
-* Residual operators
-| :--- | :--- | :--- | :--- |
-| left residual | `/` | $$/$$ | Binary |
-| right residual | `\` | $$\\$$ | Binary |
-| diamond | `<>` | $$♢$$ | Binary |
-* Product operator
-| :--- | :--- | :--- | :--- |
-| cartesian product | `#` | $$\times$$ | Binary |
-* Kleene closures (not implemented)
-| :--- | :--- | :--- | :--- |
-| Reflexive, transitive closure | `*`  | $$∗$$ | Postfix |\(Kleene star\) --currently not implemented
-| transitive closure | `+`  | $$+$$ | Postfix |\(Kleene plus\) --currently not implemented
+| equivalence (equal)| `=` | $$=$$ | Binary | rule forming |
+| inclusion | `|-` | $$⊆$$ | Binary | rule forming |
+| intersect | `/\` | $$∩$$ | Binary | boolean |
+| union | `\/` | $$∪$$ | Binary | boolean |
+| difference (minus) | `-` | $$-$$ | Binary | boolean |
+| complement | `-` | $$-$$ | Overline | boolean |
+| compose | `;` | $$;$$ | Binary | relation |
+| converse \(flip\) | `~` | $$\tilde$$ | Postfix | relation |
+| left residual | `/` | $$/$$ | Binary | residual |
+| right residual | `\` | $$\\$$ | Binary | residual |
+| diamond | `<>` | $$♢$$ | Binary | residual |
+| cartesian product | `#` | $$\times$$ | Binary |  |
+| Reflexive, transitive closure | `*`  | $$∗$$ | Postfix | Kleene
+| transitive closure | `+`  | $$+$$ | Postfix | Kleene
 
 ### 
 
