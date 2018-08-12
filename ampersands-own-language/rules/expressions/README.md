@@ -1,3 +1,10 @@
+---
+description: >-
+  This page introduces you to the meaning of the symbols that constitute
+  relation algebra. The time you spend getting acquainted with this will pay off
+  in designing correct software...
+---
+
 # Expressions
 
 ## Purpose
@@ -48,7 +55,21 @@ The following operators are available to build expressions:
 | left residual | `/` | $$/$$ | Binary | residual |
 | right residual | `\` | $$\backslash$$ | Binary | residual |
 | diamond | `<>` | $$♢$$ | Binary | residual |
-| cartesian product | `#` | $$\times$$ | Binary |  |
+| relational product | `!` | $$†$$ | Binary | product |
+| cartesian product | `#` | $$\times$$ | Binary | product |
 | reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene \(not yet implemented\) |
 | transitive closure | `+` | $$+$$ | Postfix | Kleene \(not yet implemented\) |
+
+## Semantics
+
+The semantics are discussed in terms of sets. The following table shows the way. We advise novices to study only the categories rules, boolean and relational:
+
+| Category | set |
+| :--- | :--- |
+| rules | $$=$$ and $$\subseteq\$$ |
+| boolean | $$\cup$$, $$\cap$$, and $$-$$ |
+| relational | $$;$$ and $$\tilde\$$ |
+| residual | $$\backslash$$, $$/$$, and $$♢$$ |
+| Kleene | $$∗$$ and $$+$$ |
+| Products | $$\times$$ and $$†$$ |
 
