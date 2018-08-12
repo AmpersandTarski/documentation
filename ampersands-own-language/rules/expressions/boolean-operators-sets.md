@@ -2,8 +2,8 @@
 
 A relation is by definition a subset of the Cartesian Product of the source and target sets. So, if two different relations r and s are defined on the same source A and target B, then the ordinary set operators can be applied to produce a new relation.
 
-* intersection : $$a\ r\ b\ ∧\ a\ s\ b\ \Leftrightarrow\ a\ (r ∩ s)\ b$$ . In words: if pair $$(a,b)$$ is both in relation $$r$$ and $$s$$, then it is in the intersection of $$r$$ and $$s$$.
-* union : $$a\ r\ b\ \vee\ a\ s\ b\ \Leftrightarrow\ a\ (r ∪ s)\ b$$ . In words: if pair $$(a,b)$$ is in relation $$r$$ or in $$s$$, then it is in the union of $$r$$ and $$s$$.
+* intersection : $$r ∩ s$$ is the set that contains the elements that are contained in relation $$r$$ as well as in $$s$$, or $$r ∩ s\ =\ \{ (x,y)\ |\ (x,y) ∈ r ∧ (x,y) ∈ s \}$$
+* union : $$r ∪ s$$ is the set that contains all elements that are contained either in relation $$r$$ or in $$s$$, or $$r ∪ s\ =\ \{ (x,y)\ |\ (x,y) ∈ r ∨ (x,y) ∈ s \}$$
 * difference : $$r - s$$ is the set that contains the elements of relation $$r$$ that are not contained in $$s$$, or $$r - s\ =\ \{ (x,y)\ |\ (x,y) ∈ r ∧ (x,y) ∉ s \}$$
 
 The complement \(or negation\) of a relation $$r[A x B$$ can be calculated as the difference from the cartesian product:
