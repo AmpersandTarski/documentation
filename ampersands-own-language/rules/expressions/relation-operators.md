@@ -2,13 +2,13 @@
 
 ## Converse
 
-A relation that contains pairs of the form $$(a, b)$$ can be altered by swapping the elements of every pair in the relation. Mathematically, $$(a, b)$$ is a different from $$(b,a)$$. This operation is called the converse operator. It produces a new relation from an existing one. It is denoted by writing $$\tilde\$$ \(pronounced ’tilde’ or ’flip’\) after the relation name. This is how converse is defined:
+A relation that contains pairs of the form $$(a, b)$$ can be altered by swapping the elements of every pair in the relation. Mathematically, $$(a, b)$$ is a different from $$(b,a)$$. This operation is called the converse operator. It produces a new relation from an existing one. It is denoted by writing $$\smallsmile\$$ \(pronounced 'wok' or ’flip’\) after the relation name. This is how converse is defined:
 
 $$
-r\tilde\ =\ \{ (b, a) | (a, b)∈r \}
+r\smallsmile\ =\ \{ (b, a) | (a, b)∈r \}
 $$
 
-If $$r$$ has signature$$[A\times B]$$, then $$r\tilde\$$ has type $$[B\times A]$$.
+If $$r$$ has signature$$[A\times B]$$, then $$r\smallsmile\$$ has type $$[B\times A]$$.
 
 ## Composition
 

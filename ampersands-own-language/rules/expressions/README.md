@@ -68,7 +68,7 @@ The semantics are discussed in terms of sets. The following table shows the way.
 | :--- | :--- |
 | rules | $$=$$ and $$\subseteq\$$ |
 | boolean | $$\cup$$, $$\cap$$, and $$-$$ |
-| relational | $$;$$ and $$\tilde\$$ |
+| relational | $$;$$ and $$\smallsmile\$$ |
 | residual | $$\backslash$$, $$/$$, and $$♢$$ |
 | Kleene | $$∗$$ and $$+$$ |
 | Products | $$\times$$ and $$†$$ |
