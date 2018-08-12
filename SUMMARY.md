@@ -14,7 +14,7 @@
   * [Relations](ampersands-own-language/relations.md)
   * [Rules](ampersands-own-language/rules/README.md)
     * [Expressions](ampersands-own-language/rules/expressions/README.md)
-      * [Set operators applied to relations](ampersands-own-language/rules/expressions/boolean-operators.md)
+      * [Boolean operators applied to relations](ampersands-own-language/rules/expressions/boolean-operators.md)
       * [Relation operators](ampersands-own-language/rules/expressions/relation-operators.md)
       * [Residual operators](ampersands-own-language/rules/expressions/residual-operators.md)
     * [Enforcement](ampersands-own-language/rules/enforcement/README.md)
