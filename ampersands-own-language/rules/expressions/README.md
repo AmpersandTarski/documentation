@@ -66,10 +66,10 @@ The semantics are discussed in terms of sets. The following table shows the way.
 
 | Category | set |
 | :--- | :--- |
-| rules | $$=$$ and $$\subseteq\$$ |
-| boolean | $$\cup$$, $$\cap$$, and $$-$$ |
-| relational | $$;$$ and $$\smallsmile\$$ |
-| residual | $$\backslash$$, $$/$$, and $$♢$$ |
-| Kleene | $$∗$$ and $$+$$ |
-| Products | $$\times$$ and $$†$$ |
+| [rules](rule-operators.md) | $$=$$ and $$\subseteq\$$ |
+| [boolean](boolean-operators.md) | $$\cup$$, $$\cap$$, and $$-$$ |
+| [relational](relational-operators.md) | $$;$$ and $$\smallsmile\$$ |
+| [residual](residual-operators.md) | $$\backslash$$, $$/$$, and $$♢$$ |
+| [Kleene](lleene-operators.md) | $$∗$$ and $$+$$ |
+| [Products](product-operators.md) | $$\times$$ and $$†$$ |
 
