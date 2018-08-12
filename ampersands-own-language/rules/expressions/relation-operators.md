@@ -1,12 +1,16 @@
 # Relation operators
 
-Earlier, we pointed out that the Cartesian Product of a set $$A$$ and a set $$B$$ is $$A\times B$$, and this is not the same as $$B\times A$$ \(except if $$A=B$$\). However, a relation that contains pairs of the form $$(a, b)$$ can easily be altered by changing the order of the elements. Mathematically, it is a different pair. This operation, producing a new relation from an existing one, is called the converse operator. It is denoted by writing $$\tilde\$$ \(pronounced ’tilde’ or ’flip’\) after the relation name. This is how converse is defined:
+## Converse
+
+A relation that contains pairs of the form $$(a, b)$$ can be altered by swapping the elements of every pair in the relation. Mathematically, $$(a, b)$$ is a different from $$(b,a)$$. This operation is called the converse operator. It produces a new relation from an existing one. It is denoted by writing $$\tilde\$$ \(pronounced ’tilde’ or ’flip’\) after the relation name. This is how converse is defined:
 
 $$
 r\tilde\ =\ \{ (b, a) | (a, b)∈r \}
 $$
 
-As the converse operator merely swaps the left hand side and the right hand side of each tuple, it is easy to write down the extension of the new relation, if given the extension of the old one. In a tabular form, the inverse operator merely swaps columns.
+If $$r$$ has signature$$[A\times B]$$, then $$r\tilde\$$ has type $$[B\times A]$$.
+
+## Composition
 
 The composition operator is denoted by a semicolon ; between two expressions. It is pronounced as 'composed with', in this case: $$r$$ composed with $$s$$.
 

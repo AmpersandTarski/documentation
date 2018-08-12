@@ -6,7 +6,11 @@ To classify things is the main purpose of concepts. For instance, we might class
 
 ## Description
 
-A concept statement explains a concept in natural language. A concept is a name for similar things. For example: `"Peter"`, `"John"`, and `"Barack"` are things \(atoms\) you might want to call `Person` \(a concept\), whereas `"45-NP-88"` and `"KD-686-D"` could be instances of the concept `LicensePlate`.
+A _**concept**_ is a name for similar things. For example: `"Peter"`, `"John"`, and `"Barack"` are things \([atoms](atoms.md)\) you might want to call `Person` \(a concept\). We call `"Peter"`, `"John"`, and `"Barack"` instances of the concept `Person`, whereas `"45-NP-88"` and `"KD-686-D"` could be instances of the concept `LicensePlate`.
+
+A _**concept statement**_ is used to explain a concept in natural language to a business stakeholder.
+
+A _**classification statement**_ is used to specialize concepts.
 
 ## Examples
 
@@ -44,7 +48,7 @@ A classification statement allows us to make atoms instances of several concepts
 CLASSIFY <Concept> ISA <Concept>
 ```
 
-This is also known as _generalization_ or _specialization_. The first concept is called the specific concept and the last one is called the generic concept. A generalization means that each instance of a specific concept is an instance of the generic concept as well. For instance, every thing that is a sedan is a car as well, assuming we have `CLASSIFY Sedan ISA Car`.
+This is also known as _generalization_ or _specialization_. The first concept is called the specific concept and the last one is called the generic concept. A generalization means that each instance of a specific concept is an instance of the generic concept as well. For instance, every thing \(atom\) that is a sedan is a car as well, assuming we have `CLASSIFY Sedan ISA Car`.
 
 ## Miscellaneous
 
@@ -52,4 +56,5 @@ This is also known as _generalization_ or _specialization_. The first concept is
 * A concept should be used for immutable things. E.g. use a concept `Person` to express that a person will always be a person and will not change in, let us say, a table. However, don't use `Employee`, because termination of an employee's contract causes a person to be an employee no longer. So employees are not immutable. To be an employee is a dynamic property, so model it as a relation.
 * The description part of a concept statement will be printed in the functional specification, so please check that your definition is a complete sentence.
 * A concept-statement is not required. If you use a concept without a concept-statement, Ampersand defines it for you \(regardless of whether you defined it or not\).
+* Any two atoms, whose concepts share a least generic concept, have the same atomic type. For example: `"Xandra"[Person]` and `"Acme Ltd."[Company]` must have the same atomic type if `Person` and `Company` share a least generic concept such as `"LegalEntity"`.
 

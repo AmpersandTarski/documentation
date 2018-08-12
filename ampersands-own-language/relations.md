@@ -2,11 +2,15 @@
 
 ## Purpose
 
-A relation statement says that there exists a relation. It introduces \(defines, declares\) the relation in the context that uses the relation statement.
+A _**relation statement**_ says that a relation exists. It introduces \(defines, declares\) the relation in the context that uses the relation statement.
+
+A _**population statement**_ specifies which pairs \(of atoms\) are in a relation. 
 
 ## Description
 
 A relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation, for example by a user typing data into an Ampersand application. So the contents of a relation are changing over time.
+
+When discussing relations, an arbitrary relation is referred to as $$r$$, $$s$$, or $$t$$. To say that a pair $$(a,b)$$ belongs to a relation $$r$$, we write $$a\ r\ b$$ or alternatively $$(a,b)\in r$$.
 
 ## Examples
 
@@ -162,5 +166,5 @@ Ampersand uses Pandoc to offer a choice for your markup. See [pandoc.org](http:/
 
 ## Miscellaneous
 
-* Relations names start with a lower case character, to avoid confusion with concept names.
+* Relation names start with a lower case character, to avoid confusion with concept names.
 

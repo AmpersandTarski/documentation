@@ -26,7 +26,7 @@ An expression can be any of:
 <Expression> <BinaryOperator> <Expression>
 <UnaryOpPre> <Expression>
 <Expression> <UnaryOpPost>
-<RelationRef>
+<RelationRef> <signature>?
 I <signature>?
 V <signature>?
 <atom>

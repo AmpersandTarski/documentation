@@ -42,20 +42,20 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
 | FLOAT | to represent floating point numbers compatible with ISO8601 | FLOAT | no |
 | Object | to represent a key value for objects; it is not meant to be visible to end users. | VARCHAR\(255\) | yes |
 
-## Properties
+## Miscellaneous
 
-1. Any two atoms, whose concepts share a least generic concept, have the same atomic type. For example: `"Xandra"[Person]` and `"Acme Ltd."[Company]` must have the same atomic type if Person and Company share a least generic concept such as `"LegalEntity"`.
-2. The following Ampersand statement declares the atomic type of a concept:
+* Every atom whose atomic type is marked "yes" in the column "eq" can be compared for equality. For all other atoms, equality is not defined.
+* The following Ampersand statement declares the atomic type of a [concept](concepts.md):
 
-   ```text
-   REPRESENT <Concepts> TYPE <Atomic type>
-   ```
+  ```text
+  REPRESENT <Concepts> TYPE <Atomic type>
+  ```
 
-   e.g. 
+  e.g. 
 
-   ```text
-   REPRESENT LegalEntity TYPE ALPHANUMERIC
-   ```
+  ```text
+  REPRESENT LegalEntity TYPE ALPHANUMERIC
+  ```
 
-   If `Person` and `Company` are both `LegalEntity`, then both of them will be implicitly declared as `ALPHANUMERIC` too.
+  If `Person` and `Company` are both `LegalEntity`, then both of them will be implicitly declared as `ALPHANUMERIC` too.
 
