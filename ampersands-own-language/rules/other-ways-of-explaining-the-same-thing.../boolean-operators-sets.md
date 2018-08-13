@@ -1,3 +1,9 @@
+---
+description: >-
+  This page discusses the meaning of operators ∩, ∪, and -. These are the
+  well-known Boolean operators and they behave accordingly.
+---
+
 # Boolean operators in set theory
 
 A relation is by definition a subset of the Cartesian Product of the source and target sets. So, if two different relations r and s are defined on the same source A and target B, then the ordinary set operators can be applied to produce a new relation.
@@ -12,5 +18,5 @@ The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means
 
 Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different signature may have different complements.
 
-Would you like a different explanation of the boolean operators? [This page](boolean-operators.md) explains the boolean operators in terms of logic.
+Would you like a different explanation of the boolean operators? [This page](../expressions/boolean-operators.md) explains the boolean operators in terms of logic.
 
