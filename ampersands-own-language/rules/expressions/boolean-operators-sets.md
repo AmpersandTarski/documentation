@@ -6,9 +6,10 @@ A relation is by definition a subset of the Cartesian Product of the source and 
 * union : $$r ∪ s$$ is the set that contains all elements that are contained either in relation $$r$$ or in $$s$$, or $$r ∪ s\ =\ \{ (x,y)\ |\ (x,y) ∈ r ∨ (x,y) ∈ s \}$$
 * difference : $$r - s$$ is the set that contains the elements of relation $$r$$ that are not contained in $$s$$, or $$r - s\ =\ \{ (x,y)\ |\ (x,y) ∈ r ∧ (x,y) ∉ s \}$$
 
-The complement \(or negation\) of a relation $$r[A x B$$ can be calculated as the difference from the cartesian product:
+The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means of the difference operator:
 
-* complement : If $$r$$ is defined as $$r_{A\times B}$$, then $$-r$$ is the set of all tuples in the Cartesian product that are not contained in $$r$$. So $$-r = V_{[A\times B]} - r$$
+* complement : If $$r$$ is defined as $$r_{A\times B}$$, then $$\overline{r}$$ is the set of all tuples in $$A\times B$$ \(the Cartesian product\) that are not contained in $$r$$. So $$\overline{r} = V_{[A\times B]} - r$$
 
 Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different signature may have different complements.
 
+Would you like a different explanation of the boolean operators? [This page](boolean-operators.md)! explains the boolean operators in terms of logic.
