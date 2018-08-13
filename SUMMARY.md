@@ -15,6 +15,7 @@
   * [Rules](ampersands-own-language/rules/README.md)
     * [Expressions](ampersands-own-language/rules/expressions/README.md)
       * [Boolean operators](ampersands-own-language/rules/expressions/boolean-operators.md)
+      * [Boolean operators in set theory](ampersands-own-language/rules/expressions/boolean-operators-sets.md)
       * [Relation operators](ampersands-own-language/rules/expressions/relation-operators.md)
       * [Residual operators](ampersands-own-language/rules/expressions/residual-operators.md)
     * [Enforcement](ampersands-own-language/rules/enforcement/README.md)
