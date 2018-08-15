@@ -4,7 +4,7 @@
 
 Every relation you declare contains pairs of atoms. If you declare `RELATION owner[Person*Building]`, Ampersand will know that this relation exists throughout the entire context. It will know that the concepts `Person` and `Building` exist, even when you have not [introduced them explicitly](../../concepts.md).
 
-When a relation is used in an expression, it stands for all pairs it contains at the moment it is evaluated. Those pairs \(also referred to as the contents of the relation\) can change over time as users add or delete pairs from it. So when you define the relation, you cannot really tell which pairs it contains.
+When a relation is used in an expression, it stands for all pairs it contains at the moment it is evaluated. Those pairs \(also referred to as the _**contents**_ of the relation\) can change over time as users add or delete pairs from it. So when you define the relation, you cannot really tell which pairs it contains.
 
 In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_ and `[Person*Building]` is the _**signature**_ of the relation. The left hand concept, `Person`, is called the _**source**_ of the relation and the right concept, `Building`, is called the _**target**_.
 

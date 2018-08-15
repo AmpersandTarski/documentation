@@ -11,7 +11,7 @@ Contexts exist in Ampersand for the purpose of dealing with truth. Within one co
 
 ## Ampersand Definition
 
-A context is a set of Statements in the language of this context, which are true within the context.
+A context is a set of [statements in a given language](truth.md), which are true within this context. The context contains [relations](relations.md) that define the language and contain the pairs that determine which statements are true. The [contents](rules/expressions/primitive-expressions.md) of  all relations is the _**population**_ of the context.
 
 ## Explanation
 
