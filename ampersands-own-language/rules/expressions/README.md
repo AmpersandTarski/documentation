@@ -9,7 +9,7 @@ description: >-
 
 ## Purpose
 
-The purpose of an expression is to compute pairs that constitute a relation.
+The purpose of an expression is to compute pairs that constitute a relation. We use relation operators to assemble expressions from smaller ones, to let the result correspond closely to the natural language of the business.
 
 ## Description
 
