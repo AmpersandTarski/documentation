@@ -6,7 +6,7 @@ description: >-
 
 # Boolean operators
 
-Recall that the notation $$a\ r\ b$$ means that the pair \(a,b\) is in relation $$r$$. This page defines when pair \(a,b\) is in relation $$r ∩ s$$ \(the intersection of $$r$$ and $$s$$\),  $$r ∪ s$$ \(the union of $$r$$ and $$s$$\),  $$r-s$$ \(the difference of $$r$$ and $$s$$\).
+Recall that the notation $$a\ r\ b$$ means that the pair \(a,b\) is in relation $$r$$. This page defines when pair \(a,b\) is in relation $$r ∩ s$$ \(the intersection of $$r$$ and $$s$$\), $$r ∪ s$$ \(the union of $$r$$ and $$s$$\), $$r-s$$ \(the difference of $$r$$ and $$s$$\).
 
 * intersection : $$a\ (r ∩ s)\ b\ \Leftrightarrow\ a\ r\ b\ ∧\ a\ s\ b$$ . In other words: if pair $$(a,b)$$ is both in relation $$r$$ and $$s$$, then it is in the intersection of $$r$$ and $$s$$.
 * union : $$a\ (r ∪ s)\ b\ \Leftrightarrow\ a\ r\ b\ \vee\ a\ s\ b$$ . In words: if pair $$(a,b)$$ is in relation $$r$$ or in $$s$$, then it is in the union of $$r$$ and $$s$$.
@@ -19,3 +19,4 @@ The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means
 Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different signature may have different complements.
 
 Would you like a different explanation of the boolean operators? [This page](../other-ways/boolean-operators-sets.md) explains the boolean operators in terms of set theory.
+

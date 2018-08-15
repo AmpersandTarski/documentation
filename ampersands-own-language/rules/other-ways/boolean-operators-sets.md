@@ -1,9 +1,3 @@
----
-description: >-
-  This page discusses the meaning of operators ∩, ∪, and -. These are the
-  well-known Boolean operators and they behave accordingly.
----
-
 # Boolean operators in set theory
 
 A relation is by definition a subset of the Cartesian Product of the source and target sets. So, if two different relations r and s are defined on the same source A and target B, then the ordinary set operators can be applied to produce a new relation.

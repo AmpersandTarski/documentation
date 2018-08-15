@@ -1,15 +1,16 @@
 ---
 description: >-
-  An information system should store "the truth" about the business it supports.
-  If you want to design and build such systems, you should know a few things
-  about truth ...
+  An information system should represent the truth. So, as a designer you must
+  know a thing or two about truth.
 ---
 
 # Truth
 
-If an information system should represent the truth, its designer must know a thing or two about truth. There is much to be said about that, but Ampersand takes a pragmatic stance on this issue. Only sensible statements can be true or false. So, please consider the distinction between [sensible and senseless statements](https://player.ou.nl/wowzaportlets/#!production/VDvSFqQ). Sentences that are not sensible \(we can say: it is non-sense\) must be avoided by the designer. A sensible statement is one that we can consider either true or false. \(we can say: it makes sense\).
+An information system should represent the truth. So, as a designer you must know a thing or two about truth.
 
-What makes sense to the business are things you can describe in Ampersand. The set of sensible statements constitutes your _language_. True statements in that language are called _facts_. These are the ones that are stored in the system you define. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
+Ampersand takes a pragmatic stance on truth: You model only things that make sense to the business. So, please consider the distinction between [sensible and senseless statements](https://player.ou.nl/wowzaportlets/#!production/VDvSFqQ). A sensible statement \(we say: "It makes sense."\) is a statement that can be true or false. Sentences that are not sensible \(we can say: it is non-sense\) are to be avoided.
+
+The set of sensible statements constitutes your _language_. True statements in that language are called _facts_. These are the ones that are stored in the system you define. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
 
 Let us introduce some terms. Consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
 

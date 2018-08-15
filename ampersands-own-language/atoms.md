@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An atom represents a real-world thing in an information system context.
+To represent a real-world thing in an information system context, you use atoms.
 
 ## Description
 
