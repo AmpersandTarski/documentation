@@ -1,4 +1,8 @@
-# Relation operators
+# Relational operators in set theory
+
+## Purpose of relational operators
+
+To say things such as "the name of the owner", we want to string together multiple relations \(viz. `name` and `owner`\). Relational operators allow us to make such statements.
 
 ## Converse
 
@@ -15,4 +19,6 @@ If $$r$$ has signature$$[A\times B]$$, then $$r\smallsmile\$$ has type $$[B\time
 The composition operator is denoted by a semicolon ; between two expressions. It is pronounced as 'composed with', in this case: $$r$$ composed with $$s$$.
 
 The composition operation is defined as follows: Let $$r_{[A\times B]}$$ and $$s_{[B\times C]}$$ be two relations, with the target of r being the same as the source of s. Then the composition of $$r$$ and $$s$$, is a relation with signature $$(r;s)_{[A\times C]}\ =\ \{ (a, c) | ∃ b∈B\ ∙\ a\ r\ b ∧ b\ s\ c \}$$
+
+Would you like a different explanation of the relational operators? [This page](../expressions/relational-operators.md) explains the relational operators in logic.
 
