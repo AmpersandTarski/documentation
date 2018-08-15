@@ -16,7 +16,7 @@ The purpose of Ampersand is to help business engineers deliver [correct informat
 
 ## Why rule based?
 
-Only few can design and build good information systems. It is a difficult task. Ampersand makes your life easier by automating tedious coding tasks and preventing scores of errors you might make. Use it to create this wonderful festival organisation platform, your very own web shop for pedigree poodles, or the trip organiser for hiking expeditions in the Andes. It's all up to you.
+Not many people can design and build good information systems. It is a difficult task. Ampersand makes your life easier by automating tedious coding tasks and preventing scores of errors you might make. Use it to create this wonderful festival organisation platform, your very own web shop for pedigree poodles, or the trip organiser for hiking expeditions in the Andes. It's all up to you.
 
 Ampersand is different because of its focus on business rules. These rules embody agreements of people who pursue a common goal. Naturally such rules are to be respected by every information system that supports their business. The value of Ampersand is this: once you have a precise set of rules, you have your information system. The coding of software is automated by Ampersand. So if a rule changes, you have altered it in your code in a breeze. That is why Ampersand focuses on rules.
 

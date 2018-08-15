@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page discusses the meaning of operators ∩, ∪, and -. These are the
-  well-known Boolean operators and they behave accordingly.
+  This page discusses the meaning of operators ∩, ∪, and - in terms of logic.
+  These are the well-known Boolean operators and they behave accordingly.
 ---
 
 # Boolean operators
