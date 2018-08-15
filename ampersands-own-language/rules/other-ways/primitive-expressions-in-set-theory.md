@@ -20,7 +20,7 @@ $$
 I_{[C]}\ =\ \{(c,c) |\ c\in C\}
 $$
 
-The signature of $$I_{[C]}$$ is $$[C*C]$$.
+The signature of $$I_{[C]}$$ is $$[C*C]$$. In Ampersand code you write `I[C]`.
 
 ## Complete relation
 
@@ -30,7 +30,7 @@ $$
 V_{[A*B]}\ =\ \{(a,b) |\  a\in A\ \wedge\ b\in B\}
 $$
 
-The signature of $$V_{[A*B]}$$ is $$[A*B]$$.
+The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
 Would you like a different explanation of the primitive expressions? [This page](../expressions/primitive-expressions.md) explains the primitive expressions in logic.
 

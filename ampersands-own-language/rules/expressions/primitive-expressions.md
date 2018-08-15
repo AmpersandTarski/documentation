@@ -20,7 +20,7 @@ $$
 a = b\ \Leftrightarrow\ a\ I_{[C]}\ b
 $$
 
-The signature of $$I_{[C]}$$ is $$[C*C]$$. 
+The signature of $$I_{[C]}$$ is $$[C*C]$$.  In Ampersand code you write `I[C]`.
 
 ## Complete relation
 
@@ -30,7 +30,7 @@ $$
 a\ V_{[A*B]}\ b
 $$
 
-The signature of $$V_{[A*B]}$$ is $$[A*B]$$. 
+The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
 Would you like a different explanation of the primitive expressions? [This page](../other-ways/primitive-expressions-in-set-theory.md) explains the primitive expressions in terms of set theory.
 
