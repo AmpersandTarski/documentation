@@ -13,6 +13,6 @@ Interfaces are meant for interacting with data from a [context](../context.md).
 An interface specification has the following structure
 
 ```text
-INTERFACE <name> <forRoles>? : <expression> <crud>? <subinterface>
+INTERFACE <name> <forRoles>? : <term> <crud>? <subinterface>
 ```
 

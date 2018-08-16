@@ -6,13 +6,13 @@ The purpose of a rule is to give meaning to data by defining consequences. Watch
 
 ## Description
 
-A rule is a constraint that should be kept satisfied. Keeping a rule satisfied is the topic of [enforcement](enforcement/). Every rule is denoted in Ampersand in two ways: as a statement in natural language \(i.e. free text\) and as a formal [expression](expressions/) \(in relation algebra\). The information system you define is based on the formal rules only. The documentation you generate uses the natural language representation of your rules as well. As a modeler, you are responsible that the natural language meaning is equivalent to the formal meaning.
+A rule is a constraint that should be kept satisfied. Keeping a rule satisfied is the topic of [enforcement](enforcement/). Every rule is denoted in Ampersand in two ways: as a statement in natural language \(i.e. free text\) and as a formal [term](terms/) \(in relation algebra\). The information system you define is based on the formal rules only. The documentation you generate uses the natural language representation of your rules as well. As a modeler, you are responsible that the natural language meaning is equivalent to the formal meaning.
 
-The formal expression of a rule uses relations that must be declared in the model. Ampersand will make sure that the types of the relations used in a rule are logically correct. Whenever the relations are populated with data, Ampersand will detect violations of any rule in the model.
+The formal term of a rule uses relations that must be declared in the model. Ampersand will make sure that the types of the relations used in a rule are logically correct. Whenever the relations are populated with data, Ampersand will detect violations of any rule in the model.
 
 ## Examples
 
-In its simplest form, a _**rule**_ is an expression that is designated to be a rule. Ampersand uses the reserved word `RULE` for this purpose
+In its simplest form, a _**rule**_ is an term that is designated to be a rule. Ampersand uses the reserved word `RULE` for this purpose
 
 ```text
 RULE wages~;wages |- I
@@ -46,12 +46,12 @@ A rule is a statement that must be true. Let us see how that works in practice:
 A `<rule>` has the following syntax:
 
 ```text
-RULE <label>? <expression> <meaning>* <message>* <violation>?
+RULE <label>? <term> <meaning>* <message>* <violation>?
 ```
 
-The [expression](expressions/) in a rule must be kept true, whether by human intervention or by compute power.
+The [term](terms/) in a rule must be kept true, whether by human intervention or by compute power.
 
-The meaning of a rule is a statement in natural language, which must be consistent with the expression. This is to be verified in the business.
+The meaning of a rule is a statement in natural language, which must be consistent with the term. This is to be verified in the business.
 
 The message of a rule is shown to the user when one or more violations exist.
 
@@ -114,7 +114,7 @@ Every segment must be of one of the following forms:
 * `SRC` Expression
 * `TGT` Expression
 
-A rule is violated by a pair of atoms \(source, target\). The source atom is the root of the violation message. In the message the target atoms are printed. With the Identity relation the root atom itself can be printed. You can use an expression to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name using the relation projectName:
+A rule is violated by a pair of atoms \(source, target\). The source atom is the root of the violation message. In the message the target atoms are printed. With the Identity relation the root atom itself can be printed. You can use an term to print other atoms. Below two examples reporting a violation of the rule that each project must have a project leader. The first prints the project's ID, the second the project's name using the relation projectName:
 
 `VIOLATION ( TXT "Project ", SRC I, TXT " does not have a projectleader")`
 

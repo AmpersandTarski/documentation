@@ -14,7 +14,7 @@ The following table compares the language used in the world of information syste
 | -- | -- | -- | -- |
 | rules | script | program | theory |
 | data | population | state | model |
-| formal statement | expression | condition | term |
+| formal statement | term | condition | term |
 | generator | generator | compiler |
 | store | database | database |
 | interface | interface | interface |
@@ -25,7 +25,7 @@ The following theoretical topics are relevant for Ampersand.
 Ampersand uses heterogeneous relation algebras with specialization as  a language to specify information systems. This is existing theory. It is relevant for people who specify information systems. It allows them to formalize business rules. Thus, they can ensure on design time that an information system complies with business rules.
 
 2. Rewrite systems<br>
-The Ampersand compiler manipulates relation algebra expressions. For this purpose, it uses rewrite systems. This is existing theory. It is relevant for people who make the Ampersand-compiler generate efficient code.
+The Ampersand compiler manipulates relation algebra terms. For this purpose, it uses rewrite systems. This is existing theory. It is relevant for people who make the Ampersand-compiler generate efficient code.
 
 3. Type systems<br>
 The Ampersand compiler ensures that every type-correct specification can be built [1]. For this purpose it has a type system, which signals type-errors in Ampersand-scripts. The Ampersand-compiler generates code only for scripts without type errors.

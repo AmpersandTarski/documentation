@@ -16,7 +16,7 @@ If $$r$$ has signature$$[A\times B]$$, then $$r\smallsmile\$$ has signature $$[B
 
 ## Composition
 
-The composition operator is denoted by a semicolon $$;$$ between two expressions. It is pronounced as 'composed with'. Let us take a look at $$r$$ composed with $$s$$. Let $$r_{[A\times B]}$$ and $$s_{[B\times C]}$$ be two relations, with the target of r being the same as the source of s. Then the composition of $$r$$ and $$s$$ is defined by:
+The composition operator is denoted by a semicolon $$;$$ between two terms. It is pronounced as 'composed with'. Let us take a look at $$r$$ composed with $$s$$. Let $$r_{[A\times B]}$$ and $$s_{[B\times C]}$$ be two relations, with the target of r being the same as the source of s. Then the composition of $$r$$ and $$s$$ is defined by:
 
 $$
 a(r;s)c\ \Leftrightarrow\ ∃ b∈B\ ∙\ a\ r\ b ∧ b\ s\ c

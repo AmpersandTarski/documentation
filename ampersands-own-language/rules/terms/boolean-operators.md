@@ -10,7 +10,7 @@ Recall that the notation $$a\ r\ b$$ means that the pair \(a,b\) is in relation 
 
 * intersection : $$a\ (r ∩ s)\ b\ \Leftrightarrow\ a\ r\ b\ ∧\ a\ s\ b$$ . In other words: if pair $$(a,b)$$ is both in relation $$r$$ and $$s$$, then it is in the intersection of $$r$$ and $$s$$.
 * union : $$a\ (r ∪ s)\ b\ \Leftrightarrow\ a\ r\ b\ \vee\ a\ s\ b$$ . In words: if pair $$(a,b)$$ is in relation $$r$$ or in $$s$$, then it is in the union of $$r$$ and $$s$$.
-* difference : $$a\ (r-s)\ b\ \Leftrightarrow\ a\ r\ b\ ∧\ \neg(a\ s\ b)$$. In other words, expression $$r-s$$ contains all pairs from $$r$$ that are not in $$s$$.
+* difference : $$a\ (r-s)\ b\ \Leftrightarrow\ a\ r\ b\ ∧\ \neg(a\ s\ b)$$. In other words, term $$r-s$$ contains all pairs from $$r$$ that are not in $$s$$.
 
 The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means of the difference operator:
 

@@ -4,7 +4,7 @@ Interfaces are meant for interacting with data from a dataset. You define an int
 
 Each interface has a _name_ that is unique for every interface in the same context.
 
-When running an application in your browser, you are watching one user-interface at any given moment in time. Each hyperlink on your screen represents an atom to which some interface applies. To navigate to that user-interface, just click on the hyperlink. You will see the interface being applied solely to the atom you just clicked. To determine the atom\(s\) to which an interface applies, each interface has an _interface expression_.
+When running an application in your browser, you are watching one user-interface at any given moment in time. Each hyperlink on your screen represents an atom to which some interface applies. To navigate to that user-interface, just click on the hyperlink. You will see the interface being applied solely to the atom you just clicked. To determine the atom\(s\) to which an interface applies, each interface has an _interface term_.
 
 Note: The interface definition must be outside a pattern
 
@@ -29,12 +29,12 @@ BOX
 To understand this fragment, take notice of:
 
 1. The name of this interface is `Person`. This name immediately follows the keyword `INTERFACE`.
-2. The expression following the colon, `I[Person]`, is the interface expression of this interface.
-3. The interface can be applied to any atom from the _domain of the interface expression_. So this particular interface is applicable to any atom of type `Person`. In the screenshot, it applies to `"J. Lovell"`.
+2. The term following the colon, `I[Person]`, is the interface term of this interface.
+3. The interface can be applied to any atom from the _domain of the interface term_. So this particular interface is applicable to any atom of type `Person`. In the screenshot, it applies to `"J. Lovell"`.
 4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.  
-5. Each expression at the right of a field name specifies which data is presented in the field. For this reason it is called the _field expression_ for that field. Field name and field expression are separated by a colon.
-6. Of all pairs `<"J. Lovell", x>` from the field expression, the field displays the right atom `x`. A field expression always works on one specific atom on the left, which is `"J. Lovell"` in this example.
-7. Field expressions are subject to type checking. The following relations provide an example for getting a type-correct interface:
+5. Each term at the right of a field name specifies which data is presented in the field. For this reason it is called the _field term_ for that field. Field name and field term are separated by a colon.
+6. Of all pairs `<"J. Lovell", x>` from the field term, the field displays the right atom `x`. A field term always works on one specific atom on the left, which is `"J. Lovell"` in this example.
+7. Field terms are subject to type checking. The following relations provide an example for getting a type-correct interface:
 
    ```text
    RELATION personName :: Person * PersonName [UNI]
@@ -43,7 +43,7 @@ To understand this fragment, take notice of:
    RELATION workswith :: Person * Person
    ```
 
-   The source concepts of a field expression must match the target concept of the interface expression.
+   The source concepts of a field term must match the target concept of the interface term.
 
 8. Looking at the screenshot, we can tell that `"J. Lovell"` has one personName \(which is `"J. Lovell"`\), it has no personStatus, one personEmail and three persons to work with in `RELATION workswith`.
 
@@ -76,8 +76,8 @@ INTERFACE "Project"  : I[Project] BOX
 ```
 
 Notice the following features:  
-1. The structure of an interface is hierarchical. It consists of boxes within a box. This is because a field expression may be followed by a `BOX` with a list of subinterfaces. Without it, it is just a field expression. 2. When a field expression is followed by a `BOX`, every atom in the _codomain of the field expression_ is displayed in a box of its own on the screen. That box behaves like an interface with the field expression serving as interface expression of that subinterface. 3. By this mechanism, the hierarchical structure of the entire interface translates directly to the hierarchical structure of the web-page in which it is displayed. 4. The source concept of a field expression must match with the target concept of the field expression outside the box.  
-5. The target concept of a field expression that has a box, must match with the source concepts of each field inside that box.
+1. The structure of an interface is hierarchical. It consists of boxes within a box. This is because a field term may be followed by a `BOX` with a list of subinterfaces. Without it, it is just a field term. 2. When a field term is followed by a `BOX`, every atom in the _codomain of the field term_ is displayed in a box of its own on the screen. That box behaves like an interface with the field term serving as interface term of that subinterface. 3. By this mechanism, the hierarchical structure of the entire interface translates directly to the hierarchical structure of the web-page in which it is displayed. 4. The source concept of a field term must match with the target concept of the field term outside the box.  
+5. The target concept of a field term that has a box, must match with the source concepts of each field inside that box.
 
 ## Formatting
 
@@ -121,8 +121,8 @@ Compile and run the script [Project Administration Example](https://github.com/A
 After finishing your assignment, you have learned:
 
 * to explain how an interface definition is displayed on the screen of a user.
-* to predict which data items an interface applies to, if you know which pairs are in an interface expression.
-* to predict which data items are displayed, if you know which pairs are in a field expression.
+* to predict which data items an interface applies to, if you know which pairs are in an interface term.
+* to predict which data items are displayed, if you know which pairs are in a field term.
 * to explain which atoms are used in a sub-interface.
 * to understand what the keywords `TABS`, `COLS`, and `ROWS` do to your display.
 

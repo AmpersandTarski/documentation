@@ -7,14 +7,14 @@ This statement provides syntactic sugar for defining tabular information conveni
 ## Syntax
 
 ```text
-`TABLE` <Concept> `(` (<expression> `:` <Concept> <Multiplicities>?)* `)`
+`TABLE` <Concept> `(` (<term> `:` <Concept> <Multiplicities>?)* `)`
 ```
 
 where:
 
 * `<label>` is the name of the rule. It can be a single word or a string \(enclosed by double brackets\). It is followed by a colon \(`:`\) to distinguish the label from the concept that follows.
 * `<Concept>` is the name of the Concept for atoms of which the rule specifies an identity
-* Between brackets are expressions whose source concept must be `<Concept>`. This is enforced by the type system.
+* Between brackets are terms whose source concept must be `<Concept>`. This is enforced by the type system.
 
 ## Semantics by example
 
@@ -54,7 +54,7 @@ IDENT Person(ssn)
 IDENT Person(name,birthplace,birthdate)
 ```
 
-This states that a person is uniquely defined by `ssn`, but also by the combination of `name`, `birthplace`, and `birthdate`. This statement can also be used to objectify \(reify\) an expression `e`
+This states that a person is uniquely defined by `ssn`, but also by the combination of `name`, `birthplace`, and `birthdate`. This statement can also be used to objectify \(reify\) an term `e`
 
 ```text
 TABLE T(pi:P, rho:R)

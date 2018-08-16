@@ -34,7 +34,7 @@ The following rule defines coworkers. Two different persons are coworker if they
 RULE coworker = (pl\/member)~;(pl\/member)-I
 ```
 
-This rule basically says that `coworker` is shorthand for the much more complicated expression `(pl\/member)~;(pl\/member)-I`. Quite useful indeed. Now suppose this rule is satisfied in the system. Then some manager assigns a new person, Harry, to the project Zeus-III. To administer that fact in the system, he adds a pair `("Zeus-III", "Harry")` to the relation `member`. Now there is a problem. The prototype will not accept this input, because our rule is violated. For all present workers in the project now have Harry as a new coworker. That should be administered in the relation `coworker` in order to satisfy the rule.
+This rule basically says that `coworker` is shorthand for the much more complicated term `(pl\/member)~;(pl\/member)-I`. Quite useful indeed. Now suppose this rule is satisfied in the system. Then some manager assigns a new person, Harry, to the project Zeus-III. To administer that fact in the system, he adds a pair `("Zeus-III", "Harry")` to the relation `member`. Now there is a problem. The prototype will not accept this input, because our rule is violated. For all present workers in the project now have Harry as a new coworker. That should be administered in the relation `coworker` in order to satisfy the rule.
 
 One way to do that is to allow the manager to edit the relation coworker. This is not very convenient for that manager. He will be irritated, as he is forced to enter a number of pairs into the relation `coworker` that is equal to the number of persons in the project plus the number of projectleaders of that project. This rule is typically a candidate for automation.
 
@@ -65,8 +65,8 @@ Note that the violations of rule `r1` are precisely the pairs the ExecEngine mus
 
 **Notes**:
 
-* The examples use `SRC I` or `TGT I` to produce atoms that are to be inserted or deleted. However, `I` may be any expression whose source concept is the same as that of the preceeding `SRC` or `TGT`. 
-* The `SRC <expression>` and `TGT <expression>` is a set of pairs \(a,b\), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<expression>`. In the examples given, this set of atoms has cardinality 1 \(which is most often the case\). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality &gt; 1, then `InsPair` will insert them all whereas `DelPair` will produce an error. 
+* The examples use `SRC I` or `TGT I` to produce atoms that are to be inserted or deleted. However, `I` may be any term whose source concept is the same as that of the preceeding `SRC` or `TGT`. 
+* The `SRC <term>` and `TGT <term>` is a set of pairs \(a,b\), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<term>`. In the examples given, this set of atoms has cardinality 1 \(which is most often the case\). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality &gt; 1, then `InsPair` will insert them all whereas `DelPair` will produce an error. 
 
 ## Example \(`NewStruct`\)
 
@@ -174,7 +174,7 @@ Of course, if the SRC or TGT atom is a text that contains the characters `_;`, t
 
 ## Example \(`TransitiveClosure`\)
 
-Consider the `r :: A * A [IRF,ASY]`. In relation algebra, expressions such as `r+` or `r*` are allowed, designating the transitive closure of `r`. The `+` and `*` operators are currently not supported in Ampersand.
+Consider the `r :: A * A [IRF,ASY]`. In relation algebra, terms such as `r+` or `r*` are allowed, designating the transitive closure of `r`. The `+` and `*` operators are currently not supported in Ampersand.
 
 This section describes a workaround that allows you to use transitive closures.To do so, we simply define a relation `rPlus :: A * A` and/or `rStar :: A * A`, and define the following automated rules to populate these relations:
 
@@ -210,7 +210,7 @@ While this works \(certainly in theory\), a practical issue is that it quickly b
 
 What this does is the following. Any time that `r` is being \(de\)populated, the rule `Warshall on r` is violated. This calls the \(predefined\) function `TransitiveClosure` with its four arguments, the result of which is that 1. the relation `rPlus` is computed as the \(smallest\) transitive closure of `r` \(using the Warshall algorithm\); 2. the relation `rCopy` is made to have the same population as `r`, thereby resolving all violations of the rule.
 
-Note that if you want to use \(the equivalent of\) `r*` somewhere in an expression, the most practical way is to use the expression `(I \/ rPlus)` at that spot.
+Note that if you want to use \(the equivalent of\) `r*` somewhere in an term, the most practical way is to use the term `(I \/ rPlus)` at that spot.
 
 ### HELP! I got errors!
 

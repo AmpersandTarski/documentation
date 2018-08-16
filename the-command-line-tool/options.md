@@ -24,9 +24,9 @@ The metamodel in Formal-ampersand is loaded together with your own model. Use th
 
 generate graphics in an alternate way. \(you may experiment with this option to see the differences for yourself\)
 
-### `--atlas-without-expressions`
+### `--atlas-without-terms`
 
-Temporary option to create an Atlas without expressions. This feature is used in RAP3 for performance reasons.
+Temporary option to create an Atlas without terms. This feature is used in RAP3 for performance reasons.
 
 ### `--blackWhite`
 
@@ -42,7 +42,7 @@ generate crowfoot notation in conceptual models. This is used to better match th
 
 ### `--crud-defaults=CRUD`
 
-Set the default CRUD function for interfaces. This function is explained in [interface expressions](../ampersands-own-language/interfaces.md). This feature is used temporarily to gain experience with CRUD and learn about its semantics.
+Set the default CRUD function for interfaces. This function is explained in [interface terms](../ampersands-own-language/interfaces.md). This feature is used temporarily to gain experience with CRUD and learn about its semantics.
 
 ### `--customizations=DIRECTORY [, DIRECTORY]*`
 

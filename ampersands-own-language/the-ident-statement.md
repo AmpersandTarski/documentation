@@ -13,14 +13,14 @@ As the IDENT statement defines a rule, it can be in the same places as any other
 ## Syntax
 
 ```text
-`IDENT` (<label> `:`)? <Concept> `(` <expression>* `)`
+`IDENT` (<label> `:`)? <Concept> `(` <term>* `)`
 ```
 
 where:
 
 * `<label>` is the name of the rule. It can be a single word or a string \(enclosed by double brackets\). It is followed by a colon \(`:`\) to distinguish the label from the concept that follows.
 * `<Concept>` is the name of the Concept for atoms of which the rule specifies an identity
-* Between brackets are expressions whose source concept must be `<Concept>`. This is enforced by the type system.
+* Between brackets are terms whose source concept must be `<Concept>`. This is enforced by the type system.
 
 ## Informal Semantics
 

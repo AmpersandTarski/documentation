@@ -96,7 +96,7 @@ ROWS[ "Name your new sequence here:" : insSeq
 ENDCONTEXT
 ~~~~~~~~
 
-The Ampersand-compiler can translate binary relations together with multiplicity restrictions into the data model of a MySQL-database. Relation algebra expressions are used in rules and interfaces. Rules are constraints on the data stored in the relations. Each interface is a “window” on the data set, in which data to be displayed is described in terms of relation algebra expressions. The example in Figure 1 is reasonably small: it contains 8 relations with 13 multiplicity restrictions, 6 rules, and one interface. Every rule in Ampersand is a constraint, but the enforcement of constraints by the software can be one of the following options:
+The Ampersand-compiler can translate binary relations together with multiplicity restrictions into the data model of a MySQL-database. Relation algebra terms are used in rules and interfaces. Rules are constraints on the data stored in the relations. Each interface is a “window” on the data set, in which data to be displayed is described in terms of relation algebra terms. The example in Figure 1 is reasonably small: it contains 8 relations with 13 multiplicity restrictions, 6 rules, and one interface. Every rule in Ampersand is a constraint, but the enforcement of constraints by the software can be one of the following options:
 
 1.  A rule has to be satisfied at all times. Such rules are called invariants. When violated, the system produces an error message and blocks the transaction in which the violation has occurred.
 
@@ -111,7 +111,7 @@ The Ampersand-script of figure 1 contains six automated rules. The problem is th
 > > How can the code, which is specified in the violation of an automated rule, be derived automatically, if necessary with a little help of the programmer?
 
 ## Observations
-Experience from practice about automated rules is accumulating. We are learning from writing code manually for the ExecEngine. Some observations inspire to automate that writing process. Negative observations, such as difficult debugging, create a sense of urgency to replace ExecEngine rules by something better. Positive observations, such as the very simple expressions that we use in the Exec-Engine code (I occurs frequently), inspires us that it might be quite doable.
+Experience from practice about automated rules is accumulating. We are learning from writing code manually for the ExecEngine. Some observations inspire to automate that writing process. Negative observations, such as difficult debugging, create a sense of urgency to replace ExecEngine rules by something better. Positive observations, such as the very simple terms that we use in the Exec-Engine code (I occurs frequently), inspires us that it might be quite doable.
 In this chapter we have documented some of our observations.
 ###	Multiplicity rules are simple to automate
 Consider the following fragment from the example application:
@@ -121,7 +121,7 @@ Consider the following fragment from the example application:
     ROLE ExecEngine MAINTAINS delValue
 
 This rule describes the surjectivity of relation value. In this particular application, surjectivity can be violated when a user deletes a variable. Needless to say that deleting the corresponding Value-atom is an appropriate reaction to restore surjectivity.
-###	Once rules work, expressions are often simple
+###	Once rules work, terms are often simple
 Consider the following fragment from the example application:
 
     RULE InsSeq: insSeq |- madeIn~;name
@@ -133,7 +133,7 @@ Consider the following fragment from the example application:
               )
     ROLE ExecEngine MAINTAINS InsSeq
 
-This rule describes how a new Sequence is made. It simply states that a pair in relation insSeq should lead to a new sequence. At the same time, some “attributes” of Sequence are filled. Notice that only I-expressions are used in the violations. We consider that a happy circumstance, because its simplicity gives much insight and therefore better predictability as to what happens at runtime.
+This rule describes how a new Sequence is made. It simply states that a pair in relation insSeq should lead to a new sequence. At the same time, some “attributes” of Sequence are filled. Notice that only I-terms are used in the violations. We consider that a happy circumstance, because its simplicity gives much insight and therefore better predictability as to what happens at runtime.
 ###	Debugging is hard
 In practice, debugging in Ampersand has proven to be hard. We are uncertain why this is. It may be that the level of abstraction works against easy debugging. It may equally well be caused by our own lack of experience, which results in failing intuition when confronted with mistakes. We are in great need of tools and of ways to prevent debugging in the first place.
 ###	Exec-Engine rules are similar to process algebra rules

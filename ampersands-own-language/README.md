@@ -16,7 +16,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | View | A set of pairs that can be shown to users in a particular formulation. |  | to represent facts |
 | [Interface](interfaces-2/) | A structure meant for "the outside world" to communicate with the system and possibly change the population. | INTERFACE Request FOR Customer | to let "the outside world" communicate with the system in a given context and possibly change its population  |
 | Multiplicity | A predefined property of a relation | UNI, TOT, SUR, INJ | to constrain a relation with predefined properties |
-| [Term](rules/expressions/) | A combination of relations and operators that satisfy the Ampersand Syntax | r;s-t | to express rules |
+| [Term](rules/terms/) | A combination of relations and operators that satisfy the Ampersand Syntax | r;s-t | to express rules |
 | Operator | a symbol used in combining terms into other terms.  | −, ⌣, ∪, ∩, ;, ∖, /, ⊆, = | to express more complex rules. |
 | Role | A name for a group of people | ROLE Customer MAINTAINS paymentObligation | to talk about users without having any users |
 

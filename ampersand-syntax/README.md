@@ -15,7 +15,7 @@ Ampersand has _reserved words_, such as `RELATION`, `CONTEXT`, `CONTAINS`. All r
 Untyped atoms are written between double quotes, e.g. `"Peter"` or `"KD-686-D"`. If you want to introduce a double quote inside an atom, escape it with a backslash, e.g. `"the symbol \" is called double quote"`.  
 Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`. The boolean atoms are `TRUE` and `FALSE`. Dates and timestamps follow the Excel-syntax, e.g. ??? The atom `_SESSION` indicates the current user session, and is an instance of concept `SESSION`. It is used in interfaces.
 
-Brackets must always match. For expressions, we use round brackets `(` and `)`. For populations and interfaces we use square brackets `[` and `]`.
+Brackets must always match. For terms, we use round brackets `(` and `)`. For populations and interfaces we use square brackets `[` and `]`.
 
 Constructs that contain ampersand statements are contexts and patterns. They always come in pairs: `PATTERN` and `ENDPATTERN`, and `CONTEXT` and `ENDCONTEXT`.
 

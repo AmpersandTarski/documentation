@@ -9,11 +9,11 @@ description: >-
 
 ## Purpose
 
-The purpose of an expression is to compute pairs that constitute a relation. We use relation operators to assemble expressions from smaller ones, to let the result correspond closely to the natural language of the business.
+The purpose of an term is to compute pairs that constitute a relation. We use relation operators to assemble terms from smaller ones, to let the result correspond closely to the natural language of the business.
 
 ## Description
 
-An expression is a combination of operators and relations. Its meaning is a set of pairs.
+An term is a combination of operators and relations. Its meaning is a set of pairs.
 
 ## Examples
 
@@ -27,7 +27,7 @@ An expression is a combination of operators and relations. Its meaning is a set 
 
 ## Syntax
 
-Every expression is built out of relations, which are combined by operators. An expression has one of the following 8 syntactic structures
+Every term is built out of relations, which are combined by operators. An term has one of the following 8 syntactic structures
 
 ```text
 <Expression> <BinaryOperator> <Expression>
