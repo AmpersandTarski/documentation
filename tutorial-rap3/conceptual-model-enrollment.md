@@ -21,7 +21,7 @@ The goal of the model is to define rules that will govern the behavior of the sy
 
 The conceptual model of Enrollment can be represented with a diagram:
 
-![](https://github.com/ampersandtarski/documentation/tree/662a3e7bdf67bf950cfc029e4c51efc919c0bf53/assets/BR%20course%20-%20Pagina%201.png)
+![conceptual model of Enrollment](https://github.com/AmpersandTarski/documentation/blob/master/assets/BR%20course%20%20-%20Pagina%201.png)
 
 In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that that specific student is taking. The same student can appear in more pairs and the same course can appear in more pairs. But each combination is unique, a specific pair \(x,y\) can only appear in the set once.
 
