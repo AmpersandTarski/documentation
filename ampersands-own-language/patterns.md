@@ -1,13 +1,18 @@
-# The PATTERN statement
+# Patterns
 
 ## Purpose
 
-Patterns are used to isolate discussions about a specific theme to a particular group of stakeholders, who are competent to identify \(define, select, invent, etc.\) rules that define the theme.  
-A pattern formalizes the agreement among stakeholders on this particular theme.
+Patterns are meant to isolate discussions and make solutions reusable.
 
-## Definition
+## Description
 
 A pattern is a set of rules that describes a theme or a general reusable solution to a commonly occurring problem.
+
+For instance, if specific concerns about security arise, you might want to discuss this with stakeholders in security. With them you can discuss which rules in particular constitute your solution. Divide your problem in smaller pieces and discuss each piece with just the right stakeholders. This allows you to go deeper by talking to the right people. It saves time as well by freeing others from having to participate. An even larger benefit arises if you reuse patterns that have been discussed and scrutinized before. The best thing comes once your stakeholders agree. By that time, your pattern represents their agreement formally in Ampersand, so you can use it in the larger context of the information system.
+
+## Examples
+
+
 
 ## Syntax
 

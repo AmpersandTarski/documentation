@@ -55,7 +55,7 @@ To keep this chapter as readable as possible, we have chosen to omit some detail
 Keywords in Ampersand are always written in CAPITALS.
 
 * Keywords for the main structure of the code
-  * [`CONTEXT`](../ampersands-own-language/the-context-statement.md)
+  * [`CONTEXT`]()
   * `ENDCONTEXT`
   * [`IN`](language-support.md)
   * `ENGLISH`
@@ -63,7 +63,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * [`INCLUDE`](../ampersands-own-language/the-include-statement.md)
   * `META`
   * `THEMES`
-  * [`PATTERN`](../ampersands-own-language/the-pattern-statement.md)
+  * [`PATTERN`](../ampersands-own-language/patterns.md)
   * `ENDPATTERN`
   * [`CONCEPT`](../ampersands-own-language/concepts.md)
 * Keywords for [relations](../ampersands-own-language/relations.md)

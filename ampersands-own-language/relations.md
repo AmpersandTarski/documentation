@@ -29,8 +29,9 @@ MEANING "Every Order has a unique ContractID which specifies the legal basis for
 Each relation used in Ampersand has to be declared. This means that the user tells the system that this particular relation exists. A relation declaration can have one of the following forms:
 
 ```text
-RELATION <lower case identifier> '[' <upper case identifier>'*' <upper case identifier>']'
-<properties>? <pragma>? <meaning>?
+RELATION <lower case identifier>
+         '[' <upper case identifier> '*' <upper case identifier> ']'
+         <properties>? <pragma>? <meaning>?
 ```
 
 ```text
