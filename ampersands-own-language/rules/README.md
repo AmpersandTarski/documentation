@@ -6,7 +6,7 @@ The purpose of a rule is to give meaning to data by defining consequences. Watch
 
 ## Description
 
-A rule is a constraint that should be kept satisfied. Keeping a rule satisfied is the topic of [enforcement](enforcement/). Every rule is denoted in Ampersand in two ways: as a statement in natural language \(i.e. free text\) and as a formal [term](terms/) \(in relation algebra\). The information system you define is based on the formal rules only. The documentation you generate uses the natural language representation of your rules as well. As a modeler, you are responsible that the natural language meaning is equivalent to the formal meaning.
+A rule is a constraint that should be kept satisfied. Keeping a rule satisfied is the topic of [enforcement](enforcement/). Every rule is denoted in Ampersand in two ways: as a statement in natural language \(i.e. free text\) and as a formal [term](../terms/) \(in relation algebra\). The information system you define is based on the formal rules only. The documentation you generate uses the natural language representation of your rules as well. As a modeler, you are responsible that the natural language meaning is equivalent to the formal meaning.
 
 The formal term of a rule uses relations that must be declared in the model. Ampersand will make sure that the types of the relations used in a rule are logically correct. Whenever the relations are populated with data, Ampersand will detect violations of any rule in the model.
 
@@ -25,7 +25,6 @@ A rule can be more complicated. It may have a name, a meaning, and much more:
     MEANING "All orders have been accepted"
     MESSAGE "Not all orders have been accepted"
     VIOLATION (TGT I, TXT " has not accepted the order ",SRC I,TXT " by ", SRC orderedBy; clientName)
-
 ```
 
 A rule is a statement that must be true. Let us see how that works in practice:
@@ -49,7 +48,7 @@ A `<rule>` has the following syntax:
 RULE <label>? <term> <meaning>* <message>* <violation>?
 ```
 
-The [term](terms/) in a rule must be kept true, whether by human intervention or by compute power.
+The [term](../terms/) in a rule must be kept true, whether by human intervention or by compute power.
 
 The meaning of a rule is a statement in natural language, which must be consistent with the term. This is to be verified in the business.
 
@@ -119,6 +118,4 @@ A rule is violated by a pair of atoms \(source, target\). The source atom is the
 `VIOLATION ( TXT "Project ", SRC I, TXT " does not have a projectleader")`
 
 `VIOLATION ( TXT "Project ", SRC projectName, TXT " does not have a projectleader")`
-
-
 

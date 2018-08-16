@@ -1,9 +1,3 @@
----
-description: >-
-  Ampersand is explicit about context to ensure semantic integrity. Your user
-  experiences this as consistency.
----
-
 # Context
 
 ## Purpose

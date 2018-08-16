@@ -1,7 +1,8 @@
 ---
 description: >-
-  An information system should represent the truth. So, as a designer you must
-  know a thing or two about truth.
+  An information system should store "the truth" about the business it supports.
+  If you want to design and build such systems, you should know a few things
+  about truth ...
 ---
 
 # Truth

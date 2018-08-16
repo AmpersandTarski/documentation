@@ -53,27 +53,25 @@ The operators are categorized. We advise novices to study only the categories ru
 | residual | $$\backslash$$, $$/$$, and $$♢$$ |
 | Kleene | $$∗$$ and $$+$$ |
 
-
-
 When coding in Ampersand, these operators are typed with characters on the keyboard. The following correspondence exists between the operators in code and in math:
 
-| operator | code | math | position | category |
-| :--- | :---: | :---: | :--- | :--- |
-| equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |
-| inclusion | `|-` | $$\subseteq$$ | Binary | rule forming |
-| intersect | `/\` | $$∩$$ | Binary | boolean |
-| union | `\/` | $$∪$$ | Binary | boolean |
-| difference \(minus\) | `-` | $$-$$ | Binary | boolean |
-| complement | `-` | $$-$$ | Overline | boolean |
-| compose | `;` | $$;$$ | Binary | relational |
-| converse \(flip\) | `~` | $$\smallsmile$$ | Postfix | relational |
-| left residual | `/` | $$/$$ | Binary | residual |
-| right residual | `\` | $$\backslash$$ | Binary | residual |
-| diamond | `<>` | $$♢$$ | Binary | residual |
-| relational product | `!` | $$†$$ | Binary | product |
-| cartesian product | `#` | $$\times$$ | Binary | product |
-| reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene \(not yet implemented\) |
-| transitive closure | `+` | $$+$$ | Postfix | Kleene \(not yet implemented\) |
+| operator | code | math | position | category |  |
+| :--- | :---: | :---: | :--- | :--- | :--- |
+| equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |  |
+| inclusion | \` | -\` | $$\subseteq$$ | Binary | rule forming |
+| intersect | `/\` | $$∩$$ | Binary | boolean |  |
+| union | `\/` | $$∪$$ | Binary | boolean |  |
+| difference \(minus\) | `-` | $$-$$ | Binary | boolean |  |
+| complement | `-` | $$-$$ | Overline | boolean |  |
+| compose | `;` | $$;$$ | Binary | relational |  |
+| converse \(flip\) | `~` | $$\smallsmile$$ | Postfix | relational |  |
+| left residual | `/` | $$/$$ | Binary | residual |  |
+| right residual | `\` | $$\backslash$$ | Binary | residual |  |
+| diamond | `<>` | $$♢$$ | Binary | residual |  |
+| relational product | `!` | $$†$$ | Binary | product |  |
+| cartesian product | `#` | $$\times$$ | Binary | product |  |
+| reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene \(not yet implemented\) |  |
+| transitive closure | `+` | $$+$$ | Postfix | Kleene \(not yet implemented\) |  |
 
 ## Semantics
 

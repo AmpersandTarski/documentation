@@ -71,5 +71,5 @@ IDENT T(pi,rho)
 RULE e = pi~;rho
 ```
 
- This statement will be available in Ampersand vs. 4.
+This statement will be available in Ampersand vs. 4.
 

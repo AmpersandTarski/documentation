@@ -19,13 +19,13 @@ A login service allows a user to log in and log out of the system. Here is what 
 
 ![login service in browser](../.gitbook/assets/ssh1.png)
 
-Wonder what the 25al1rdkdfvmapkkqvuf5sroc5 means? Well this is the session number of the actual browser session. It is the value for which the atom 
+Wonder what the 25al1rdkdfvmapkkqvuf5sroc5 means? Well this is the session number of the actual browser session. It is the value for which the atom
 
 `'_SESSION'`
 
- stands in your script.
+stands in your script.
 
-When you type your name, it shows up in the field Userid, but when you type in the password it is obscured by dots 
+When you type your name, it shows up in the field Userid, but when you type in the password it is obscured by dots
 
 \(
 
@@ -37,7 +37,7 @@ as we would expect
 
 ![passwd remains invisible](../.gitbook/assets/ssh2.png)
 
-When we then type 
+When we then type
 
 `<enter>`
 
@@ -46,8 +46,6 @@ When we then type
 ![interface swap](../.gitbook/assets/ssh3.png)
 
 When you click the checkbox, you have logged out and will return to the first screen
-
-
 
 ## What the Ampersand code looks like
 
@@ -78,27 +76,27 @@ We would expect to see two subboxes, one labeled `"Login"` and another labeled `
 
 That explains why the `"Login"` subbox is shown when nobody is logged in and the `"Logout"` subbox is shown when someone is logged in.
 
-So let us do the following experiment: change the 
+So let us do the following experiment: change the
 
 `<HROWS>`
 
- annotation to 
+annotation to
 
 `<ROWS>`
 
-. Then we will see both boxes: 
+. Then we will see both boxes:
 
 ![without hiding](../.gitbook/assets/ssh4.png)
 
- Notice that both subboxes have the 
+Notice that both subboxes have the
 
 `H`
 
- in their annotations, so in the screeshot above the 
+in their annotations, so in the screeshot above the
 
 `"Logout"`
 
- subbox remains empty. However, when logged in, the other subbox remains empty: 
+subbox remains empty. However, when logged in, the other subbox remains empty:
 
 ![without hiding](../.gitbook/assets/ssh5.png)
 
@@ -106,7 +104,7 @@ So let us do the following experiment: change the
 
 A number of annotations are already available in Ampersand. These are enumerated below:
 
-SUPPORTED BOX  where xxx =
+SUPPORTED BOX where xxx =
 
 ```text
 ROWS, COLS or TABS (equivalent to the available keywords)

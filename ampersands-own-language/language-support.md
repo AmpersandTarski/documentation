@@ -1,6 +1,14 @@
 # Language support
 
-To tell Ampersand what language you use, you can append a language directive to a context, a meaning, and to a purpose statement. Currently English and Dutch are supported.
+## Purpose
+
+To generate documentation, Ampersand is language aware.
+
+## Description
+
+Ampersand assigns a language to every text written as documentation, whether it is a `MEANING`, `PURPOSE` or other text except comment.
+
+Ampersand does not recognize any language, so you must tell which language is meant. To tell Ampersand what language you use, you can append a language directive to a context, a meaning, and to a purpose statement. Currently English and Dutch are supported.
 
 ## Syntax
 

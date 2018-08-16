@@ -82,7 +82,7 @@ POPULATION tAD CONTAINS [ ("alfa2"), ("d2") ]
 POPULATION tAD CONTAINS [ ("alfa3"), ("d1") ] 
 
 POPULATION uBA CONTAINS [ ("beta1"), ("alfa1") ] 
-POPULATION uBA CONTAINS [ ("beta3"), ("alfa2") ] 
+POPULATION uBA CONTAINS [ ("beta3"), ("alfa2") ]
 ```
 
 ## NOTES

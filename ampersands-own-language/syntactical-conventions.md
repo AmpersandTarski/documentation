@@ -1,8 +1,8 @@
-# Ampersand Syntax
+# Syntactical Conventions
 
-\# Ampersand Syntax
+## Purpose
 
-When writing an Ampersand model, the Ampersand language is used. This chapter contains a reference of the syntax.
+This page is meant as a reference for syntactical details and conventions, reserved words, etc.
 
 ## Learning the syntax
 
@@ -38,36 +38,26 @@ terms are combined with operators. Binary operators may require brackets to avoi
 
 Within an operator category, you must place brackets to disambiguate. E.g. `r/\s\/t` is not allowed. You have to write either `(r/\s)\/t` or `r/\(s\/t)`. Across categories, you may omit brackets because a higher precedence binds stronger. So `r;s\/t` means `(r;s)\/t`. \(Note that `(r;s)\/t` and `r;(s\/t)` have different meanings\). Associative operators \(`\/`, `/\`, `;`\) need not be disambiguated with brackets. So `r\/s\/t` and `(r\/s)\/t` and `r\/(s\/t)` all mean exactly the same.
 
-## How to read the syntax statements used in this chapter
-
-Sometimes, in describing the syntax, EBNF-like notation is used, with the following meaning:
-
-| Operator | meaning |
-| :--- | :--- |
-| `<foo>`? | Zero or one occurrence of `<foo>` |
-| `<foo>`+ | One or more occurrences of `<foo>` |
-| `<foo>`\* | Zero or more occurrences of `<foo>` |
-
-To keep this chapter as readable as possible, we have chosen to omit some details that are irrelevant for practically all &-modelers. In the very rare case that these technicalities are of interest, the reader could have a look in [the sourcecode of the parser](https://github.com/AmpersandTarski/Ampersand/blob/master/src/Database/Design/Ampersand/Input/ADL1/Parser.hs), where all EBNF statements are in comments.
+## 
 
 ## List of reserved words
 
 Keywords in Ampersand are always written in CAPITALS.
 
 * Keywords for the main structure of the code
-  * [`CONTEXT`]()
+  * [`CONTEXT`](syntactical-conventions.md)
   * `ENDCONTEXT`
   * [`IN`](language-support.md)
   * `ENGLISH`
   * `DUTCH`
-  * [`INCLUDE`](../ampersands-own-language/the-include-statement.md)
+  * [`INCLUDE`](the-include-statement.md)
   * `META`
   * `THEMES`
-  * [`PATTERN`](../ampersands-own-language/patterns.md)
+  * [`PATTERN`](patterns.md)
   * `ENDPATTERN`
-  * [`CONCEPT`](../ampersands-own-language/concepts.md)
-* Keywords for [relations](../ampersands-own-language/relations.md)
-  * [`RELATION`](../ampersands-own-language/relations.md)
+  * [`CONCEPT`](concepts.md)
+* Keywords for [relations](relations.md)
+  * [`RELATION`](relations.md)
   * `PRAGMA`
   * `UNI`
   * `INJ`
@@ -79,9 +69,9 @@ Keywords in Ampersand are always written in CAPITALS.
   * `RFX`
   * `IRF`
   * `PROP`
-  * [`POPULATION`](../ampersands-own-language/the-population-statement.md)
+  * [`POPULATION`](the-population-statement.md)
   * `CONTAINS`
-* Keywords for [rules](../ampersands-own-language/rules/)
+* Keywords for [rules](rules/)
   * `RULE`
   * `MESSAGE`
   * `VIOLATION`
@@ -94,8 +84,8 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ROLE`
   * `MAINTAINS`
 * Keywords for documentation
-  * [`PURPOSE`](../ampersands-own-language/the-purpose-statement.md)
-  * [`MEANING`](../ampersands-own-language/relations.md)
+  * [`PURPOSE`](the-purpose-statement.md)
+  * [`MEANING`](relations.md)
   * `REF`
   * `REST`
   * `HTML`
@@ -110,7 +100,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `TABS`
   * `COLS`
 * Keywords for identities
-  * [`IDENT`](../ampersands-own-language/the-ident-statement.md)
+  * [`IDENT`](the-ident-statement.md)
 * Keywords for views
   * `VIEW`
   * `ENDVIEW`

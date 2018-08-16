@@ -1,10 +1,12 @@
-# Interfaces
+---
+description: >-
+  There is a lot of detail in interfaces. This page elaborates on those details,
+  so you can make your own interface.
+---
 
-Interfaces are meant for interacting with data from a dataset. You define an interface to control precisely which data is presented to which users. You have to declare each interface individually.
+# Explanation
 
-Each interface has a _name_ that is unique for every interface in the same context.
-
-When running an application in your browser, you are watching one user-interface at any given moment in time. Each hyperlink on your screen represents an atom to which some interface applies. To navigate to that user-interface, just click on the hyperlink. You will see the interface being applied solely to the atom you just clicked. To determine the atom\(s\) to which an interface applies, each interface has an _interface term_.
+Interfaces are meant for interacting with data from a dataset. 
 
 Note: The interface definition must be outside a pattern
 
@@ -126,5 +128,5 @@ After finishing your assignment, you have learned:
 * to explain which atoms are used in a sub-interface.
 * to understand what the keywords `TABS`, `COLS`, and `ROWS` do to your display.
 
- More than one interfaces may apply to the same atom. That gives you a choice on runtime to which interface you want to navigate. If no interface applies, that atom is not navigable.
+  More than one interfaces may apply to the same atom. That gives you a choice on runtime to which interface you want to navigate. If no interface applies, that atom is not navigable.
 
