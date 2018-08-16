@@ -13,7 +13,7 @@
   * [Concepts](ampersands-own-language/concepts.md)
   * [Relations](ampersands-own-language/relations.md)
   * [Rules](ampersands-own-language/rules/README.md)
-    * [Expressions](ampersands-own-language/rules/terms/README.md)
+    * [Terms](ampersands-own-language/rules/terms/README.md)
       * [Primitive terms](ampersands-own-language/rules/terms/primitive-terms.md)
       * [Boolean operators](ampersands-own-language/rules/terms/boolean-operators.md)
       * [Relational operators](ampersands-own-language/rules/terms/relational-operators.md)

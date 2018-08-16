@@ -25,9 +25,9 @@ A comment on a single line starts with `--`. Everything after a `--` symbol is i
 
 Identifiers always start with a letter. Concepts start with a capital letter, as in `Person`, `Case`, `A`, and `Order`. Relation names start with a lower case letter, as in `contains`, `attr`, `sessionLogin`, or `r`.
 
-## Expressions
+## terms
 
-Expressions are combined with operators. Binary operators may require brackets to avoid ambiguity. To save writing unneccessary brackets, some precedence rules are in place.
+terms are combined with operators. Binary operators may require brackets to avoid ambiguity. To save writing unneccessary brackets, some precedence rules are in place.
 
 | operator category | precedence | operators |
 | :--- | :--- | :--- |

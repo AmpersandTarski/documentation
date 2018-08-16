@@ -5,7 +5,7 @@ description: >-
   in designing correct software...
 ---
 
-# Expressions
+# Terms
 
 ## Purpose
 
@@ -30,14 +30,14 @@ An term is a combination of operators and relations. Its meaning is a set of pai
 Every term is built out of relations, which are combined by operators. An term has one of the following 8 syntactic structures
 
 ```text
-<Expression> <BinaryOperator> <Expression>
-<UnaryOpPre> <Expression>
-<Expression> <UnaryOpPost>
+<Term> <BinaryOperator> <Term>
+<UnaryOpPre> <Term>
+<Term> <UnaryOpPost>
 <RelationRef> <signature>?
 I <signature>?
 V <signature>?
 <atom>
-( <Expression> )
+( <Term> )
 ```
 
 ## `Operators`
