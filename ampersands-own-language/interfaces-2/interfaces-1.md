@@ -1,4 +1,4 @@
-# The INTERFACE statement
+# Interfaces
 
 Interfaces are meant for interacting with data from a dataset. You define an interface to control precisely which data is presented to which users. You have to declare each interface individually.
 
