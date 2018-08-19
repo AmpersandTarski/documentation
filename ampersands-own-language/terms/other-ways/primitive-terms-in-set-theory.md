@@ -32,5 +32,5 @@ $$
 
 The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
-Would you like a different explanation of the primitive terms? [This page](../primitive-terms.md) explains the primitive terms in logic.
+Would you like a different explanation of the primitive terms? [This page](../semantics-in-logic/primitive-terms.md) explains the primitive terms in logic.
 

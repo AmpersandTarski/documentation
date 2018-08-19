@@ -18,5 +18,5 @@ The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means
 
 Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different signature may have different complements.
 
-Would you like a different explanation of the boolean operators? [This page](other-ways/boolean-operators-sets.md) explains the boolean operators in terms of set theory.
+Would you like a different explanation of the boolean operators? [This page](../other-ways/boolean-operators-sets.md) explains the boolean operators in terms of set theory.
 

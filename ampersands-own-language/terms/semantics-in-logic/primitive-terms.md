@@ -2,7 +2,7 @@
 
 ## Relations
 
-Every relation you declare contains pairs of atoms. If you declare `RELATION owner[Person*Building]`, Ampersand will know that this relation exists throughout the entire context. It will know that the concepts `Person` and `Building` exist, even when you have not [introduced them explicitly](../concepts.md).
+Every relation you declare contains pairs of atoms. If you declare `RELATION owner[Person*Building]`, Ampersand will know that this relation exists throughout the entire context. It will know that the concepts `Person` and `Building` exist, even when you have not [introduced them explicitly](../../concepts.md).
 
 When a relation is used in an term, it stands for all pairs it contains at the moment it is evaluated. Those pairs \(also referred to as the _**contents**_ of the relation\) can change over time as users add or delete pairs from it. So when you define the relation, you cannot really tell which pairs it contains.
 
@@ -32,5 +32,5 @@ $$
 
 The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
-Would you like a different explanation of the primitive terms? [This page](other-ways/primitive-terms-in-set-theory.md) explains the primitive terms in terms of set theory.
+Would you like a different explanation of the primitive terms? [This page](../other-ways/primitive-terms-in-set-theory.md) explains the primitive terms in terms of set theory.
 

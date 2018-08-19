@@ -1,4 +1,4 @@
-# Other ways of explaining the same thing...
+# Semantics in sets
 
 
 

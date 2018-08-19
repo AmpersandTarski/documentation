@@ -20,5 +20,5 @@ The composition operator is denoted by a semicolon ; between two terms. It is pr
 
 The composition operation is defined as follows: Let $$r_{[A\times B]}$$ and $$s_{[B\times C]}$$ be two relations, with the target of r being the same as the source of s. Then the composition of $$r$$ and $$s$$, is a relation with signature $$(r;s)_{[A\times C]}\ =\ \{ (a, c) | ∃ b∈B\ ∙\ a\ r\ b ∧ b\ s\ c \}$$
 
-Would you like a different explanation of the relational operators? [This page](../../relational-operators.md) explains the relational operators in logic.
+Would you like a different explanation of the relational operators? [This page](../semantics-in-logic/relational-operators.md) explains the relational operators in logic.
 
