@@ -32,5 +32,5 @@ $$
 
 The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
-Would you like a different explanation of the primitive terms? [This page](../rules/other-ways/primitive-terms-in-set-theory.md) explains the primitive terms in terms of set theory.
+Would you like a different explanation of the primitive terms? [This page](other-ways/primitive-terms-in-set-theory.md) explains the primitive terms in terms of set theory.
 

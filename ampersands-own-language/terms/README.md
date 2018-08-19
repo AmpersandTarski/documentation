@@ -9,7 +9,7 @@ description: >-
 
 ## Purpose
 
-The purpose of an term is to compute pairs that constitute a relation. We use relation operators to assemble terms from smaller ones, to let the result correspond closely to the natural language of the business.
+The purpose of an term is to compute pairs that constitute a relation. We use operators to assemble terms from smaller ones, to express in formal language precisely what is meant in the natural language of the business.
 
 ## Description
 
@@ -42,38 +42,57 @@ V <signature>?
 
 ## `Operators`
 
-The operators are categorized. We advise novices to study only the categories rules, boolean and relational, because there is a wealth of things you can express in only these categories.
+The operators come in categories. We advise novices to study only the categories rules, boolean and relational. There is a wealth of things you can express in only these categories. The category residual seems a lot harder to learn and the category Kleene is not fully implemented yet.
 
-| Category | set |
-| :--- | :--- |
-| rules | $$=$$ and $$\subseteq\$$ |
-| boolean | $$\cup$$, $$\cap$$, and $$-$$ |
-| relational | $$;$$ and $$\smallsmile\$$ |
-| product | $$\times$$ and $$\dagger$$ |
-| residual | $$\backslash$$, $$/$$, and $$♢$$ |
-| Kleene | $$∗$$ and $$+$$ |
+| Category | binary operators | binding power | unary operators | binding power |
+| :--- | ---: | :--- | ---: | :--- |
+| rules | $$=$$ and $$\subseteq\$$ | 1 \(weakest\) |  |  |
+| boolean | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | 5 |
+| relational | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | 5 |
+| residual | $$\backslash$$, $$/$$, and $$♢$$ | 3 |  |  |
+| Kleene |  |  | $$∗ $$ and $$+$$ | 5 |
 
-When coding in Ampersand, these operators are typed with characters on the keyboard. The following correspondence exists between the operators in code and in math:
+## Brackets
 
-| operator | code | math | position | category |  |
-| :--- | :---: | :---: | :--- | :--- | :--- |
-| equivalence \(equal\) | `=` | $$=$$ | Binary | rule forming |  |
-| inclusion | \` | -\` | $$\subseteq$$ | Binary | rule forming |
-| intersect | `/\` | $$∩$$ | Binary | boolean |  |
-| union | `\/` | $$∪$$ | Binary | boolean |  |
-| difference \(minus\) | `-` | $$-$$ | Binary | boolean |  |
-| complement | `-` | $$-$$ | Overline | boolean |  |
-| compose | `;` | $$;$$ | Binary | relational |  |
-| converse \(flip\) | `~` | $$\smallsmile$$ | Postfix | relational |  |
-| left residual | `/` | $$/$$ | Binary | residual |  |
-| right residual | `\` | $$\backslash$$ | Binary | residual |  |
-| diamond | `<>` | $$♢$$ | Binary | residual |  |
-| relational product | `!` | $$†$$ | Binary | product |  |
-| cartesian product | `#` | $$\times$$ | Binary | product |  |
-| reflexive transitive closure | `*` | $$∗$$ | Postfix | Kleene \(not yet implemented\) |  |
-| transitive closure | `+` | $$+$$ | Postfix | Kleene \(not yet implemented\) |  |
+Operators with different binding power may be used in the same term without brackets, because the binding power tells how it is interpreted. For example $$r\cap s;t$$ means $$r\cap(s;t)$$ because $$;$$ has a higher binding power than $$\cap$$. 
+
+Operators with the same binding power must be used unambiguously. For example: $$r\cap(s-t)$$ means something different than $$(r\cap s)-t$$. In such cases Ampersand insists on the use of brackets, so readers without knowledge of the binding powers of the operators can read a term unambiguously.
+
+Repeated uses of an associative operator does not require brackets. So $$r\cap s \cap t$$ is allowed because $$\cap$$ is associative.
+
+## Notation on the keyboard
+
+When coding in Ampersand, these operators are typed with characters on the keyboard. The correspondence between the operators in code and in math is given in the following table:
+
+| operator name | code | math | remark |
+| :--- | :---: | :---: | :--- |
+| equivalence \(equal\) | `=` | $$=$$ |  |
+| inclusion | `|-` | $$\subseteq$$ |  |
+| intersect | `/\` | $$∩$$ | associative |
+| union | `\/` | $$∪$$ | associative |
+| difference \(minus\) | `-` | $$-$$ |  |
+| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; In math: Overline |
+| compose | `;` | $$;$$ | associative |
+| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |
+| left residual | `/` | $$/$$ |  |
+| right residual | `\` | $$\backslash$$ |  |
+| diamond | `<>` | $$♢$$ |  |
+| relational product | `!` | $$†$$ | associative |
+| cartesian product | `#` | $$\times$$ |  |
+| reflexive transitive closure | `*` | $$∗$$ | postfix |
+| transitive closure | `+` | $$+$$ | postfix |
 
 ## Semantics
 
-The semantics are discussed in terms of sets. The following table shows the way. :
+The semantics of the operators can be discussed in many different ways. We want to include  a number of different ways of explaining in the following table. The advice to novice is to study one way of explaining, whichever one suits the prior knowledge best.
+
+| Category | Logic | Sets | Axioms | Graphical |
+| :--- | :--- | :--- | :--- | :--- |
+| boolean | [logic](boolean-operators.md) | [sets](other-ways/boolean-operators-sets.md) | axioms | graphical |
+| relational | [logic](relational-operators.md) | [sets](other-ways/relational-operators-in-set-theory.md) | axioms | graphical |
+| residual | [logic](residual-operators.md) | sets | axioms | graphical |
+| products | logic | sets | axioms | graphical |
+| primitive terms | [logic](primitive-terms.md) | [sets](other-ways/primitive-terms-in-set-theory.md) | axioms | graphical |
+
+\(the pages without hyperlinks are yet to be made\).
 

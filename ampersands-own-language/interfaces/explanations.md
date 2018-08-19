@@ -1,9 +1,3 @@
----
-description: >-
-  There is a lot of detail in interfaces. This page elaborates on those details,
-  so you can make your own interface.
----
-
 # Explanation
 
 Interfaces are meant for interacting with data from a dataset. 
