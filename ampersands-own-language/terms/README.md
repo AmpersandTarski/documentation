@@ -71,7 +71,7 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | intersect | `/\` | $$∩$$ | associative |
 | union | `\/` | $$∪$$ | associative |
 | difference \(minus\) | `-` | $$-$$ |  |
-| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; In math: Overline |
+| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |
 | compose | `;` | $$;$$ | associative |
 | converse \(flip\) | `~` | $$\smallsmile$$ | postfix |
 | left residual | `/` | $$/$$ |  |
@@ -84,12 +84,12 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 
 ## Semantics
 
-The semantics of the operators can be discussed in many different ways. We want to include  a number of different ways of explaining in the following table. The advice to novice is to study one way of explaining, whichever one suits the prior knowledge best.
+The semantics of the operators can be discussed in many different ways. We want to include  a number of different ways of explaining in the following table: one explanation in terms of logic, one in set theory, one in terms of axioms \(algebraically\) and one visual explanation. The advice to a novice is to learn just one way of explaining, whichever one suits the prior knowledge best.
 
 | Category | Logic | Sets | Axioms | Graphical |
 | :--- | :--- | :--- | :--- | :--- |
 | boolean | [logic](boolean-operators.md) | [sets](other-ways/boolean-operators-sets.md) | axioms | graphical |
-| relational | [logic](relational-operators.md) | [sets](other-ways/relational-operators-in-set-theory.md) | axioms | graphical |
+| relational | [logic](relational-operators.md) | [sets](other-ways/relational-operators-in-set-theory/) | axioms | graphical |
 | residual | [logic](residual-operators.md) | sets | axioms | graphical |
 | products | logic | sets | axioms | graphical |
 | primitive terms | [logic](primitive-terms.md) | [sets](other-ways/primitive-terms-in-set-theory.md) | axioms | graphical |
