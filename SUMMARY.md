@@ -25,6 +25,7 @@
       * [Relational operators in set theory](ampersands-own-language/terms/other-ways/relational-operators-in-set-theory.md)
     * [Semantics in algebra](ampersands-own-language/terms/semantics-in-algebra/README.md)
       * [Boolean operators in algebra](ampersands-own-language/terms/semantics-in-algebra/boolean-operators-in-algebra.md)
+      * [Relational operators in algebra](ampersands-own-language/terms/semantics-in-algebra/relational-operators-in-algebra.md)
   * [Rules](ampersands-own-language/rules/README.md)
     * [Enforcement](ampersands-own-language/rules/enforcement/README.md)
       * [Types of Rules](ampersands-own-language/rules/enforcement/types-of-rules.md)
