@@ -38,5 +38,5 @@ $$
 I_A;r\ =\ r\ \ \ \text{and}\ \ \ r;I_B\ =\ r
 $$
 
-Would you like an explanation of the semantics of the relational operators? [Click here](../other-ways/relational-operators-in-set-theory.md) for an explanation in sets. [This page](../semantics-in-logic/relational-operators.md) explains the relational operators in logic.
+Would you like a different explanation of the semantics of the relational operators? [Click here](../other-ways/relational-operators-in-set-theory.md) for an explanation in sets. [This page](../semantics-in-natural-language/relational-operators-in-natural-language.md) explains them in natural language. [This page](../semantics-in-logic/relational-operators.md) explains the relational operators in logic.
 
