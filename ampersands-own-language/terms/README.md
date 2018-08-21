@@ -42,14 +42,14 @@ V <signature>?
 
 ## `Operators`
 
-The operators come in categories. We advise novices to study only the categories rules, boolean and relational. There is a wealth of things you can express in only these categories. The category residual seems a lot harder to learn and the category Kleene is not fully implemented yet.
+The operators come in families. We advise novices to study only the rule operators, boolean operators and relational operators. There is a wealth of things you can express with just these operators. The residual operators seem a lot harder to learn and the Kleene operators are not fully implemented yet. You can click the hyperlink to navigate to the semantics of each family.
 
-| Category | binary operators | binding power | unary operators | binding power |
+| Family | binary operators | binding power | unary operators | binding power |
 | :--- | ---: | :--- | ---: | :--- |
 | rules | $$=$$ and $$\subseteq\$$ | 1 \(weakest\) |  |  |
-| boolean | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | 5 |
-| relational | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | 5 |
-| residual | $$\backslash$$, $$/$$, and $$♢$$ | 3 |  |  |
+| [boolean](semantics-in-logic/boolean-operators.md) | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | 5 |
+| [relational](semantics-in-logic/relational-operators.md) | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | 5 |
+| [residual](semantics-in-logic/residual-operators.md) | $$\backslash$$, $$/$$, and $$♢$$ | 3 |  |  |
 | Kleene |  |  | $$∗ $$ and $$+$$ | 5 |
 
 ## Brackets
