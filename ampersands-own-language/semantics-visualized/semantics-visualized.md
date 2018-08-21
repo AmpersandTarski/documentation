@@ -1,9 +1,3 @@
----
-description: >-
-  Residuals are not easy to grasp. Visualizing simple examples have helped on
-  various occasions. So we hope this page helps you too ...
----
-
 # Semantics of residuals visualized
 
 Consider two relations: `traveler[Trip*Person]` and `dest[Trip*Destination]`. The first relation tells which persons have traveled on which trip. The diagram shows this as red dashed lines. The second relation links trips to destinations. It is depicted by dotted blue lines in the diagram.

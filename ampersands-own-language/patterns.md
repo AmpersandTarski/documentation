@@ -50,7 +50,7 @@ A pattern consists of any number of pattern elements in an arbitrary order. The 
 | `<relation>` | a declaration of a relation, stating the existence of a [relation](relations.md) within the context |
 | `<conceptDef>` | a description of a [concept](concepts.md), to document its meaning |
 | `<representation>` | a statement that defines the atomic type of a [concept](../tutorial-rap3/conceptual-model-enrollment.md) |
-|  `<roleRule>` | a statement that makes a role responsible for satisfying a rule |
+| `<roleRule>` | a statement that makes a role responsible for satisfying a rule |
 | `<ident>` | a rule that defines an identity on a concept |
 | `<viewDef>` | a statement for presenting facts in a readable sentence |
 | `<purpose>` | a statement to describe the purpose of a pattern or a pattern element |

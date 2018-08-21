@@ -2,7 +2,7 @@
 
 ## A Client service
 
-In a delivery-hub that distributes orders over vendors and registers the subsequent deliveries, we define a service for clients. This service allows clients to change their name and address and shows them status information of their orders.
+Suppose we have a delivery-hub that distributes orders over vendors and registers the subsequent deliveries. Let us define a service for clients, to allow clients to change their name and address and display their orders.
 
 ```text
 INTERFACE ClientInfo FOR Client,Vendor : I[Client]

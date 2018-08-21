@@ -14,7 +14,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | Population | a set of pairs in a context | POPULATION r\[A\*B\] CONTAINS \[ \("Ida",5\), \("Bob",1\) \] | to represent the facts \(i.e. true statements\) in an information system |
 | [Context](context.md) | a population together with a set of rules that are satisfied by the population. | CONTEXT ...ENDCONTEXT | to maintain a consistent representation of a real life situation |
 | View | A set of pairs that can be shown to users in a particular formulation. |  | to represent facts |
-| [Interface](services/) | A structure meant for "the outside world" to communicate with the system and possibly change the population. | INTERFACE Request FOR Customer | to let "the outside world" communicate with the system in a given context and possibly change its population |
+| [Interface](https://github.com/AmpersandTarski/documentation/tree/57d76aa18cb0f9eca10ebd5c3badd84f2c80b5d1/ampersands-own-language/services/README.md) | A structure meant for "the outside world" to communicate with the system and possibly change the population. | INTERFACE Request FOR Customer | to let "the outside world" communicate with the system in a given context and possibly change its population |
 | Multiplicity | A predefined property of a relation | UNI, TOT, SUR, INJ | to constrain a relation with predefined properties |
 | [Term](terms/) | A combination of relations and operators that satisfy the Ampersand syntax | r;s-t | to express rules |
 | Operator | a symbol used in combining terms into other terms. | −, ⌣, ∪, ∩, ;, ∖, /, ⊆, = | to express more complex rules. |

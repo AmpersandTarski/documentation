@@ -24,7 +24,6 @@ A sub-interface may be defined on the spot \(by `<boxKey> <box>`\) or it may lin
 ```text
 <subinterface> ::= <boxKey> <box>
                  | LINKTO ( INTERFACE | API ) <name>
-
 ```
 
 The box key is meant to tell the front-end application what the service looks like. The flavours `ROWS`, `COLS`, and `TABS` are standard. Nonstandard HTML is specified by `BOX`.
@@ -36,7 +35,7 @@ The box key is meant to tell the front-end application what the service looks li
            | TABS
 ```
 
-A box is simply a list of service items \(`ifcItem`\)  separated by commas. Each service item specifies a field in the service or a sub-interface.
+A box is simply a list of service items \(`ifcItem`\) separated by commas. Each service item specifies a field in the service or a sub-interface.
 
 ```text
 <box> ::= '[' <ifcItem> ( ',' <ifcItem> )* ']'
@@ -48,6 +47,4 @@ Each service item has a label that must be unique within the box. After the colo
 <ifcItem> ::= <label> ':' <term> <crud>? <view>? <subinterface>?
             | <label> ':' <text>
 ```
-
-
 

@@ -29,7 +29,7 @@ The world is full of contradictions. Examples:
 CONTEXT <name> <language>? <markup>? <context element>* ENDCONTEXT
 ```
 
-A context is specified by the context elements between the keywords `CONTEXT` and `ENDCONTEXT`. A context has a name. You can optionally specify the language and markup \(see below\). 
+A context is specified by the context elements between the keywords `CONTEXT` and `ENDCONTEXT`. A context has a name. You can optionally specify the language and markup \(see below\).
 
 A context represents a set of [true statements in a given language](truth.md), which is the meaning of that context.
 
@@ -43,9 +43,9 @@ IN <language>
 
 Where `<language>` can be `ENGLISH` or `DUTCH`.
 
-### Markup 
+### Markup
 
-Directly following the optional language definition, you can optionally specify the format of texts in your `PURPOSE` statements and `MEANING` blocks. This allows you to use your favourite markup language within Ampersand, as long as it is one of `REST`  \(Restructured Text\), `HTML`, `LATEX` or `MARKDOWN`. If you specify one of these words in your `CONTEXT` definition, that value will be the default markup of all purposes and meanings in your context.
+Directly following the optional language definition, you can optionally specify the format of texts in your `PURPOSE` statements and `MEANING` blocks. This allows you to use your favourite markup language within Ampersand, as long as it is one of `REST` \(Restructured Text\), `HTML`, `LATEX` or `MARKDOWN`. If you specify one of these words in your `CONTEXT` definition, that value will be the default markup of all purposes and meanings in your context.
 
 \(For details on these formats, see [pandoc.org](http://pandoc.org/)\).
 
@@ -62,12 +62,10 @@ A context may contain different types of statements. The order of statements in 
 | `<relation>` | a declaration of a relation, stating the existence of a [relation](relations.md) within the context |
 | `<conceptDef>` | a description of a [concept](concepts.md), to document its meaning |
 | `<representation>` | a statement that defines the atomic type of a [concept](../tutorial-rap3/conceptual-model-enrollment.md) |
-|  `<roleRule>` | a statement that makes a role responsible for satisfying a rule |
+| `<roleRule>` | a statement that makes a role responsible for satisfying a rule |
 | `<viewDef>` | a statement for presenting facts in a readable sentence |
 | `<service>` | a unit of code that can be run independently and specifies interaction with a user or a computer |
 | `<purpose>` | a statement to describe the purpose of a context or a context element |
 | `<population>` | a statement that sums up the initial population of a relation |
 | `<include>` | a statement to include another file in the context |
-
-
 

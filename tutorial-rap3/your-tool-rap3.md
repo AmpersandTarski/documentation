@@ -11,7 +11,7 @@ Register with your own student number and e-mail. Create a password. Your studen
 Notes:
 
 * About the user interface: Each time you change fields \(e.g. using Tab\), the form is updated. But you will not see what is the next active field.
-* This application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.  
+* This application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.
 
   This login-screen is also the screen to logout later.
 

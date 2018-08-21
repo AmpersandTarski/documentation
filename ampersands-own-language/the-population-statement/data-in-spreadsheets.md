@@ -1,9 +1,3 @@
----
-description: >-
-  For getting larger quantities of data into Ampersand, importing spreadsheets
-  is a convenient option. This section explains how to do it ...
----
-
 # Population in spreadsheets
 
 In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for quickly adding population to an information system. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes.

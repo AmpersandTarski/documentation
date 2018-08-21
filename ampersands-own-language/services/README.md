@@ -29,7 +29,6 @@ TABS [ Students : V[SESSION*Student]             cRuD
                 , "Students" : isEnrolledFor~    CRUD
                 ]
      ]
-
 ```
 
 This service specifies three tabs. One shows students, one shows courses and one shows modules. This is what it looks like when run in a browser:
@@ -46,10 +45,8 @@ On the user screen atoms are being displayed as data. If these atoms are display
 
 When running an application in your browser, you are watching one user interface at any given moment in time. Each hyperlink on your screen represents an atom to which some service applies. To navigate to that user interface, you click on the hyperlink. You will see the service being applied solely to the atom you just clicked. To determine the atom\(s\) to which a service applies, each service has an _interface term_.
 
-The next sections contain two examples: 
+The next sections contain two examples:
 
 * a [client service](example-client.md) to allow clients of a web shop to change their name and address and show them status information of their orders;
 * a [login service](example-login.md) to demonstrate how to get different interface structures under varying conditions.
-
-
 

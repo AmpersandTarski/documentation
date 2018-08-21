@@ -1,6 +1,6 @@
 # Explanation
 
-Interfaces are meant for interacting with data from a dataset. 
+Interfaces are meant for interacting with data from a dataset.
 
 Note: The service definition must be outside a pattern
 
@@ -10,7 +10,7 @@ The following figure is an example of a user interface, which shows the name, st
 
 ![Example of a user interface](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceLovellRaw.jpg?raw=true)
 
-The specification of this service is given in the following code fragment
+The specification of this user interface is given in the following service definition:
 
 ```text
 INTERFACE Person : I[Person]
@@ -77,7 +77,7 @@ Notice the following features:
 
 ## Formatting
 
-Especially in more complicated services, you will find it nice to adapt the layout of the fields of your service. For this purpose, you can substitute the word `BOX` by `COLS`, `ROWS`, or `TABS`, as in the following code fragment.
+Especially in more complicated services, you will find it nice to adapt the layout of the fields in the user interface. For this purpose, you can substitute the word `BOX` by `COLS`, `ROWS`, or `TABS`, as in the following code fragment. Note that these annotation have no meaning other than to change what the user interface looks like.
 
 ```text
 INTERFACE "Project"  : V[SESSION*Project] ROWS

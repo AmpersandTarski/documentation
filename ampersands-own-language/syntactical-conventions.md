@@ -44,8 +44,6 @@ terms are combined with operators. Binary operators may require brackets to avoi
 
 Within an operator category, you must place brackets to disambiguate. E.g. `r/\s\/t` is not allowed. You have to write either `(r/\s)\/t` or `r/\(s\/t)`. Across categories, you may omit brackets because a higher precedence binds stronger. So `r;s\/t` means `(r;s)\/t`. \(Note that `(r;s)\/t` and `r;(s\/t)` have different meanings\). Associative operators \(`\/`, `/\`, `;`\) need not be disambiguated with brackets. So `r\/s\/t` and `(r\/s)\/t` and `r\/(s\/t)` all mean exactly the same.
 
-## 
-
 ## List of reserved words
 
 Keywords in Ampersand are always written in CAPITALS.

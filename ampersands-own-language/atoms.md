@@ -51,7 +51,7 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
   REPRESENT <Concepts> TYPE <Atomic type>
   ```
 
-  e.g. 
+  e.g.
 
   ```text
   REPRESENT LegalEntity TYPE ALPHANUMERIC
