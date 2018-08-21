@@ -22,5 +22,17 @@ A relation can be altered by swapping the elements of every pair in the relation
 
 The sentence "A _contract with a blue label is stored in cabinet 42_." can be represented as `"blue" (label~;stored) "cabinet 42"`.  Literally it says: There is a contract that has a blue label and is stored in cabinet 42.
 
+## Natural language templates
+
+There is a pattern to this. A computer can generate a literal translation from the formula to natural language. However, that translation looks clumsy, verbose and elaborate. It is up to you to turn that in normal language. For examples [click here](https://ampersandtarski.gitbook.io/documentation/~/drafts/-LKR7o8ALsxT8aQfWugs/primary/ampersands-own-language/semantics-visualized/semantics-visualized). The systematic translation is given in the following table:
+
+| Formally | Natural language template |
+| :--- | :--- |
+| `a (r\s) b` | For every `x`: if `x r a`then `x s b`. |
+| `a (r/s) b` | For every `x`: if `b s x` then `a r x`. |
+| `a (r<>s) b` | For every `x`: if `a r x` then `x s b` and if `x s b` then `a r x`. |
+
+## Other explanation
+
 Would you like a different explanation of the relational operators? [This page](../other-ways/relational-operators-in-set-theory.md) explains the relational operators in terms of set theory. An explanation in logic is given [here](relational-operators-in-natural-language.md). [Click here](../semantics-in-algebra/relational-operators-in-algebra.md) for some algebraic rules about relational operators.
 

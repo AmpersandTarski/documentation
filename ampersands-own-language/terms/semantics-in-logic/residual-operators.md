@@ -11,5 +11,7 @@
 
 * diamond: $$a (r♢s) b\ \Leftrightarrow\ \forall x: a\ r\ x\ =\ x\ s\ b$$. In words: For every $$x$$, both $$a\ r\ x$$ and $$x\ s\ b$$ are true   or both are false.
 
+## Other explanation
 
+Would you like a different explanation of the residual operators? [This page](../semantics-in-natural-language/residual-operators.md) explains them in natural language. [Click here](../../semantics-visualized/semantics-visualized.md) for visualized examples about residual operators.
 

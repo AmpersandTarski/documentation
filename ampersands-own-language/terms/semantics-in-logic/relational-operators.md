@@ -24,5 +24,7 @@ $$
 
 If $$r$$ has signature$$[A\times B]$$and $$s$$has signature$$[B\times C]$$, then $$r;s$$ has signature $$[A\times C]$$.
 
+## Other explanation
+
 Would you like a different explanation of the relational operators? [This page](../other-ways/relational-operators-in-set-theory.md) explains the relational operators in terms of set theory. [This page](../semantics-in-natural-language/relational-operators-in-natural-language.md) explains them in natural language. [Click here](../semantics-in-algebra/relational-operators-in-algebra.md) for some algebraic rules about relational operators.
 
