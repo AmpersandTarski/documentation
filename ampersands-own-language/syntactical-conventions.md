@@ -1,3 +1,9 @@
+---
+description: >-
+  Scattered across this documentation, syntax is defined. This file explains the
+  conventions used in the syntax definitions.
+---
+
 # Syntactical Conventions
 
 ## Purpose
