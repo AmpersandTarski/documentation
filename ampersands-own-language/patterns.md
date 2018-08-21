@@ -61,7 +61,7 @@ A pattern consists of any number of pattern elements in an arbitrary order. The 
 A model can have as many patterns as you want.  
 It has no effect on how the code is processed.
 
-The interface definition must be outside a pattern
+The service definition must be outside a pattern
 
 A pattern contains rules in an arbitrary order.  
 The context in which these rules are valid must contain the definition for each of the relations that are used in those rules.  

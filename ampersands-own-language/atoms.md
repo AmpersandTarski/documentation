@@ -24,7 +24,7 @@ The syntax of atoms is largely taken from [ISO8601](https://www.iso.org/iso-8601
 
 ## Atomic types
 
-Atoms are represented in an SQL database. For this purpose every atom has a type \(sometimes called the _technical type_\). The representation in SQL is given in the following table. Some of these types cannot be compared for equality. This implies that they cannot have interfaces defined for them. Nor can complements be computed for such types. Violations are currently signaled at runtime, but future versions of Ampersand will signal these violations at compile time.
+Atoms are represented in an SQL database. For this purpose every atom has a type \(sometimes called the _technical type_\). The representation in SQL is given in the following table. Some of these types cannot be compared for equality. This implies that they cannot have services defined for them. Nor can complements be computed for such types. Violations are currently signaled at runtime, but future versions of Ampersand will signal these violations at compile time.
 
 | type | purpose | SQL | eq |
 | :--- | :--- | :--- | :--- |

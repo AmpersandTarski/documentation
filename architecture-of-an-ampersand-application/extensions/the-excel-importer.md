@@ -14,9 +14,9 @@ If the user has the required access rights to import a population \(by default n
 
 When you have a prototype running for an Ampersand context, you can import data for that prototype from an Excel file, which effectively adds the population specified in the Excel file to the population that is currently already in the database. This section describes how to construct an Excel file that can be used to do this.
 
-There are 2 specifications possible 1 Using an interface definition \(automatically detected based on sheet name equals interface name\) 2 Using the \[import block\] syntax
+There are 2 specifications possible 1 Using a service definition \(automatically detected based on sheet name equals service name\) 2 Using the \[import block\] syntax
 
-### Using an interface defintion
+### Using a service defintion
 
 To be specified. Functionality is already implemented
 

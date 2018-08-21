@@ -17,7 +17,7 @@ The following table compares the language used in the world of information syste
 | formal statement | term | condition | term |
 | generator | generator | compiler |
 | store | database | database |
-| interface | interface | interface |
+| service | service | service |
 
 The following theoretical topics are relevant for Ampersand.
 

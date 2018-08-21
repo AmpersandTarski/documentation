@@ -102,7 +102,7 @@ After finishing your assignment, you have learned:
 
 ## Want to learn more?
 
-1. How does the [interface mechanism](/syntax/interface.md) work?
+1. How does the [service mechanism](/syntax/interface.md) work?
 2. How can I upload [bulk data](/tutorial/data-in-spreadsheets.md) from spreadsheets into my application?
 
 

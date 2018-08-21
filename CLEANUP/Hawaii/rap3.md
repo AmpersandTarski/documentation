@@ -18,7 +18,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
 * Copy and paste the script "[Hawaii.adl](https://github.com/AmpersandTarski/ampersand-models/blob/master/Hawaii/Hawaii.adl)" \(from GitHub\) and run it. If you have a tutor, she will undoubtedly show you which sequence of clicks will make it work. 
   * Scroll down to the bottom of the screen and try it out on your own by clicking the buttons. During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
-* Let's add the possibility to register teachers in this system. The interface code needs to be at the end, other information can be added anywhere above that:
+* Let's add the possibility to register teachers in this system. The service code needs to be at the end, other information can be added anywhere above that:
 
   * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`
   * Define the relation between Subject and Teacher with the keyword RELATION:  
@@ -27,7 +27,7 @@ When you click on the blue plus-sign on the right side in the menu bar in your s
 
   * You can define an initial set of teachers and relate them to a subject following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is the next topic in this tutorial.
 
-  * Add an interface for the teachers in the tab for Subjects, below the line for "students that passed":  
+  * Add a service for the teachers in the tab for Subjects, below the line for "students that passed":  
     `, "teachers" : provided_by  CRUD`
 
   * Save, compile and see the result.

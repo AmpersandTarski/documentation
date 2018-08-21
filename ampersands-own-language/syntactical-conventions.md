@@ -19,9 +19,9 @@ The most effective way to learn Ampersand's syntax is to copy from existing scri
 Ampersand has _reserved words_, such as `RELATION`, `CONTEXT`, `CONTAINS`. All reserved words are written in capital letters. They are introduced on the fly. You will find an exhaustive list of reserved words at the end of this page.
 
 Untyped atoms are written between double quotes, e.g. `"Peter"` or `"KD-686-D"`. If you want to introduce a double quote inside an atom, escape it with a backslash, e.g. `"the symbol \" is called double quote"`.  
-Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`. The boolean atoms are `TRUE` and `FALSE`. Dates and timestamps follow the Excel-syntax, e.g. ??? The atom `_SESSION` indicates the current user session, and is an instance of concept `SESSION`. It is used in interfaces.
+Numeric atoms always start with a digit, e.g. `4711` or `75.88E3`. The boolean atoms are `TRUE` and `FALSE`. Dates and timestamps follow the Excel-syntax, e.g. ??? The atom `_SESSION` indicates the current user session, and is an instance of concept `SESSION`. It is used in services.
 
-Brackets must always match. For terms, we use round brackets `(` and `)`. For populations and interfaces we use square brackets `[` and `]`.
+Brackets must always match. For terms, we use round brackets `(` and `)`. For populations and services we use square brackets `[` and `]`.
 
 Constructs that contain ampersand statements are contexts and patterns. They always come in pairs: `PATTERN` and `ENDPATTERN`, and `CONTEXT` and `ENDCONTEXT`.
 
@@ -97,7 +97,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `HTML`
   * `LATEX`
   * `MARKDOWN`
-* Keywords for [interfaces](https://github.com/ampersandtarski/documentation/tree/662a3e7bdf67bf950cfc029e4c51efc919c0bf53/syntax/the_interface_statement.md)
+* Keywords for [services](https://github.com/ampersandtarski/documentation/tree/662a3e7bdf67bf950cfc029e4c51efc919c0bf53/syntax/the_interface_statement.md)
   * `INTERFACE`
   * `FOR`
   * `LINKTO`

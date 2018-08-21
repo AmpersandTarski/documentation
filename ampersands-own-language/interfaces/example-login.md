@@ -9,7 +9,7 @@ To link system activities to a person or organisation, we use the notion of `Acc
 
 A `UserId` is used to identify the user by a unique name. In this way, the \(system generated\) key of the user in the database is kept within the database.
 
-To make it more difficult to use an other person's `Account`, the system registers passwords. A `Password` is a string of characters known to the user only. For this reason, the login interface must not expose the password while the user is typing it.
+To make it more difficult to use an other person's `Account`, the system registers passwords. A `Password` is a string of characters known to the user only. For this reason, the login service must not expose the password while the user is typing it.
 
 To isolate a data space for one specific user, we use the notion of session. A `SESSION` corresponds with the notion of session as used in browsers. Ampersand links the session called `'_SESSION'` to the current browser session, which results in the behaviour one would expect of a browser session.
 

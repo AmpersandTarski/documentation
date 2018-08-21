@@ -48,11 +48,11 @@ During the remainder of this course you will compile and run your own scripts in
 You are now going to change the code and view the results in RAP3. Close the browser-tab with the running prototype and go back to the browser-tab RAP3 with the editor.
 
 * If you want to save the original script, go to Myscripts, create a new script and copy the same code in there.
-* Let's add the possibility to register teachers in this system. The interface code needs to be at the end, other information can be added anywhere above that:
+* Let's add the possibility to register teachers in this system. The service code needs to be at the end, other information can be added anywhere above that:
   * Define a new concept with the keyword CONCEPT: `CONCEPT Teacher`with a short description. Note that concept names start with an Uppercase and that all quotes need to be double quotes.
   * Define the relation between Module and Teacher with the keyword RELATION: `RELATION providedBy[Module*Teacher]` `MEANING "A module is provided by a teacher"` Note that relation names start with lowercase.
   * You can define an initial set of teachers and relate them to a module following the examples already available in the script. But you can also add the data later using the prototype. Adding initial data in the script is a lot of work. There is another method, using spreadsheets. This is another topic in this tutorial.
-  * Add an interface for the teachers in the third tab, the one for Modules. Below the codelines for "Modules" and above the line for "Course": `, "Teacher" : providedBy CRUD`
+  * Add a service for the teachers in the third tab, the one for Modules. Below the codelines for "Modules" and above the line for "Course": `, "Teacher" : providedBy CRUD`
   * Save, compile, create protype, launch prototype, reinstall database and see the result in the third tab called "Modules". Note that you need to reinstall the database because the old database is still there, but the database structure has changed in the application.
   * Note that we have not defined any rules about teachers, so anything you fill in, is OK for this system.
 * Try to understand what you see in the script by making other changes, compile and inspect the changes; learn by doing. Try for instance to create a new course with modules and teachers. Demonstrate your changes to your peers and discuss the results.

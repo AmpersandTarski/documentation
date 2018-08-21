@@ -86,7 +86,7 @@ MEANING "My name can be known in the current session."
 
 ROLE User MAINTAINS "Please specify your name"
 RULE "Please specify your name": '_SESSION'[SESSION] |- sessionMyName;sessionMyName~
-VIOLATION (TXT "You can use the 'Registration' interface to do so.")
+VIOLATION (TXT "You can use the 'Registration' service to do so.")
 
 INTERFACE Registration (sessionMyName) FOR User: '_SESSION'[SESSION]
 BOX[ "My name is" : sessionMyName

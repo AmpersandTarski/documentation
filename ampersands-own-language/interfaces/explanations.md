@@ -2,7 +2,7 @@
 
 Interfaces are meant for interacting with data from a dataset. 
 
-Note: The interface definition must be outside a pattern
+Note: The service definition must be outside a pattern
 
 ## Example
 
@@ -10,7 +10,7 @@ The following figure is an example of a user interface, which shows the name, st
 
 ![Example of a user interface](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceLovellRaw.jpg?raw=true)
 
-The specification of this interface is given in the following code fragment
+The specification of this service is given in the following code fragment
 
 ```text
 INTERFACE Person : I[Person]
@@ -24,13 +24,13 @@ BOX
 
 To understand this fragment, take notice of:
 
-1. The name of this interface is `Person`. This name immediately follows the keyword `INTERFACE`.
-2. The term following the colon, `I[Person]`, is the interface term of this interface.
-3. The interface can be applied to any atom from the _domain of the interface term_. So this particular interface is applicable to any atom of type `Person`. In the screenshot, it applies to `"J. Lovell"`.
+1. The name of this service is `Person`. This name immediately follows the keyword `INTERFACE`.
+2. The term following the colon, `I[Person]`, is the interface term of this service.
+3. The service can be applied to any atom from the _domain of the interface term_. So this particular service is applicable to any atom of type `Person`. In the screenshot, it applies to `"J. Lovell"`.
 4. The labels "Name", "Status", "Email", and "Works with" correspond to field names in the user interface.  
 5. Each term at the right of a field name specifies which data is presented in the field. For this reason it is called the _field term_ for that field. Field name and field term are separated by a colon.
 6. Of all pairs `<"J. Lovell", x>` from the field term, the field displays the right atom `x`. A field term always works on one specific atom on the left, which is `"J. Lovell"` in this example.
-7. Field terms are subject to type checking. The following relations provide an example for getting a type-correct interface:
+7. Field terms are subject to type checking. The following relations provide an example for getting a type-correct service:
 
    ```text
    RELATION personName :: Person * PersonName [UNI]
@@ -45,11 +45,11 @@ To understand this fragment, take notice of:
 
 ## Nesting
 
-You can create structure in an interface by nesting. Here is an example:
+You can create structure in a service by nesting. Here is an example:
 
 ![Example of a nested user interface](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceAlphaBoardNested.jpg?raw=true)
 
-The specification of this interface is given in the following code fragment.
+The specification of this service is given in the following code fragment.
 
 ```text
 INTERFACE "Project"  : I[Project] BOX
@@ -72,12 +72,12 @@ INTERFACE "Project"  : I[Project] BOX
 ```
 
 Notice the following features:  
-1. The structure of an interface is hierarchical. It consists of boxes within a box. This is because a field term may be followed by a `BOX` with a list of subinterfaces. Without it, it is just a field term. 2. When a field term is followed by a `BOX`, every atom in the _codomain of the field term_ is displayed in a box of its own on the screen. That box behaves like an interface with the field term serving as interface term of that subinterface. 3. By this mechanism, the hierarchical structure of the entire interface translates directly to the hierarchical structure of the web-page in which it is displayed. 4. The source concept of a field term must match with the target concept of the field term outside the box.  
+1. The structure of a service is hierarchical. It consists of boxes within a box. This is because a field term may be followed by a `BOX` with a list of subservices. Without it, it is just a field term. 2. When a field term is followed by a `BOX`, every atom in the _codomain of the field term_ is displayed in a box of its own on the screen. That box behaves like a service with the field term serving as interface term of that subservice. 3. By this mechanism, the hierarchical structure of the entire service translates directly to the hierarchical structure of the web-page in which it is displayed. 4. The source concept of a field term must match with the target concept of the field term outside the box.  
 5. The target concept of a field term that has a box, must match with the source concepts of each field inside that box.
 
 ## Formatting
 
-Especially in more complicated interfaces, you will find it nice to adapt the layout of the fields of your interface. For this purpose, you can substitute the word `BOX` by `COLS`, `ROWS`, or `TABS`, as in the following code fragment.
+Especially in more complicated services, you will find it nice to adapt the layout of the fields of your service. For this purpose, you can substitute the word `BOX` by `COLS`, `ROWS`, or `TABS`, as in the following code fragment.
 
 ```text
 INTERFACE "Project"  : V[SESSION*Project] ROWS
@@ -116,11 +116,11 @@ Compile and run the script [Project Administration Example](https://github.com/A
 
 After finishing your assignment, you have learned:
 
-* to explain how an interface definition is displayed on the screen of a user.
-* to predict which data items an interface applies to, if you know which pairs are in an interface term.
+* to explain how a service definition is displayed on the screen of a user.
+* to predict which data items a service applies to, if you know which pairs are in an interface term.
 * to predict which data items are displayed, if you know which pairs are in a field term.
 * to explain which atoms are used in a sub-interface.
 * to understand what the keywords `TABS`, `COLS`, and `ROWS` do to your display.
 
-  More than one interfaces may apply to the same atom. That gives you a choice on runtime to which interface you want to navigate. If no interface applies, that atom is not navigable.
+  More than one service may apply to the same atom. That gives you a choice on runtime to which service you want to navigate. If no service applies, that atom is not navigable.
 

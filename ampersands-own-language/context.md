@@ -64,7 +64,7 @@ A context may contain different types of statements. The order of statements in 
 | `<representation>` | a statement that defines the atomic type of a [concept](../tutorial-rap3/conceptual-model-enrollment.md) |
 |  `<roleRule>` | a statement that makes a role responsible for satisfying a rule |
 | `<viewDef>` | a statement for presenting facts in a readable sentence |
-| `<interface>` | a block of code that specifies interaction with a user or a computer |
+| `<service>` | a unit of code that can be run independently and specifies interaction with a user or a computer |
 | `<purpose>` | a statement to describe the purpose of a context or a context element |
 | `<population>` | a statement that sums up the initial population of a relation |
 | `<include>` | a statement to include another file in the context |
