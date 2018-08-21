@@ -1,3 +1,9 @@
+---
+description: >-
+  Please make sure you have a good reason to do this manually. Using the
+  automated procedures is much easier...
+---
+
 # Installing the tools manually
 
 ## Installing an Ampersand compiler

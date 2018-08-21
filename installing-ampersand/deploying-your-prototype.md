@@ -9,17 +9,15 @@ description: >-
 
 ## What do you need to understand?
 
-To make your program run on virtually any computer we use Docker. Docker is a popular, automated platform on which your application runs. It works with recipes and configurations you provide. Docker loads the [_**images**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com/u/ampersandtarski/) and cashes them in a local Docker repository to prevent reloading every time you compile a new version.
+To make your program run on virtually any computer we use Docker. Docker is a popular, automated platform to run application on. You provide \(once\) a recipe for building \(Dockerfile\) and a description of the configuration \(docker-compose.yml\). We'll provide examples for you to adapt. That's all you need.
 
-Programs run in [_**containers**_](https://docs.docker.com/get-started/#docker-concepts). A container is a virtual computer that runs an image. Your application may consist of one or more containers.
+Your program runs in a [_**container**_](https://docs.docker.com/get-started/#docker-concepts). This is a virtual machine, designed to run in the cloud. To run a container, docker loads the [_**image**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com/u/ampersandtarski/) and cashes it in a local Docker repository. Thus it reloads things from Docker Hub only when necessary.
 
 Please watch [this video](https://youtu.be/XqHTJfTVnoQ) \(8 minutes\) to see what Docker does to bring up your Ampersand program as a web application on your own machine.
 
 ## What do you need up front?
 
-You need a computer that runs Docker and that has an internet connection. That lets you generate a Docker image from your Ampersand source code.
-
-You need a computer that runs Docker to run your program on. That can be the same computer \(localhost\).
+You need a computer that runs Docker and that has an internet connection. That lets you generate a Docker image from your Ampersand source code. Then run your program on Docker on localhost.
 
 ## What do you do to run your Ampersand program?
 

@@ -1,4 +1,10 @@
-# Data in spreadsheets
+---
+description: >-
+  For getting larger quantities of data into Ampersand, importing spreadsheets
+  is a convenient option. This section explains how to do it ...
+---
+
+# Population in spreadsheets
 
 In this section we will make an Ampersand script that is based on an existing spreadsheet. This technique is useful for quickly adding population to an information system. Ampersand has a facility that allows you to import existing .xlsx files with minimal changes.
 
@@ -71,11 +77,11 @@ You will find the Excel import function in the menu bar on the top right of your
 
 .
 
-![](../.gitbook/assets/screenshot-import.png)
+![](../../.gitbook/assets/screenshot-import.png)
 
 This is what your upload screen looks like: 
 
-![](../.gitbook/assets/screenshot-upload-excel.png)
+![](../../.gitbook/assets/screenshot-upload-excel.png)
 
  You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green 
 
