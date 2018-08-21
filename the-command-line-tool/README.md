@@ -14,7 +14,7 @@ ampersand [OPTIONS] [FILE]
 
 ## DESCRIPTION
 
-**ampersand** takes a file as input. It must contain a valid ampersand script, i.e. a script that complies to the [syntax](../ampersands-own-language/syntactical-conventions.md) and semantics of ampersand. The compiler will not generate any output unless the script is valid.
+**ampersand** takes a file as input. It must contain a valid ampersand script, i.e. a script that complies to the [syntax](../the-language-ampersand/syntactical-conventions.md) and semantics of ampersand. The compiler will not generate any output unless the script is valid.
 
 When used without any [options](https://github.com/AmpersandTarski/documentation/tree/5c45435a2b5cdd69129ba6ee9401819331fb531e/the-command-line-tool/options.md), it will check if the input is valid. If so, it will do nothing, if not, it will tell you what is wrong.
 

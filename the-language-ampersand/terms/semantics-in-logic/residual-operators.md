@@ -13,5 +13,5 @@
 
 ## Other explanation
 
-Would you like a different explanation of the residual operators? [This page](../semantics-in-natural-language/residual-operators.md) explains them in natural language. [Click here](../../semantics-visualized/semantics-visualized.md) for visualized examples about residual operators.
+Would you like a different explanation of the residual operators? [This page](../semantics-in-natural-language/residual-operators.md) explains them in natural language. [Click here](../semantics-visualized/semantics-visualized.md) for visualized examples about residual operators.
 

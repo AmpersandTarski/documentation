@@ -1,4 +1,4 @@
-# Ampersand's own language
+# The language Ampersand
 
 Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation. Below is a list of other words with a specific meaning in Ampersand.
 
@@ -20,15 +20,9 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | Operator | a symbol used in combining terms into other terms. | −, ⌣, ∪, ∩, ;, ∖, /, ⊆, = | to express more complex rules. |
 | Role | A name for a group of people | ROLE Customer MAINTAINS paymentObligation | to talk about users without having any users |
 
-## How to read the syntax statements used in this chapter
+## Reading guide
 
-Sometimes, in describing the syntax, EBNF-like notation is used, with the following meaning:
+Syntactic definitions are given where the underlying notions \(e.g. rule, relation, pattern, etc.\) are discussed. The metasyntax is singled out [on a separate page](how-to-read-syntax-statements.md). Because [terms](terms/) are defined in relation algebra, their semantics are explained in various ways to suit the background of each individual reader. Terms are the only algebraically defined things.
 
-| Operator | meaning |
-| :--- | :--- |
-| `<foo>?` | Zero or one occurrence of `<foo>` |
-| `<foo>+` | One or more occurrences of `<foo>` |
-| `<foo>*` | Zero or more occurrences of `<foo>` |
-
-To keep this chapter as readable as possible, we have chosen to omit some details that are irrelevant for practically all &-modelers. In the very rare case that these technicalities are of interest, the reader could have a look in [the sourcecode of the parser](https://github.com/AmpersandTarski/Ampersand/blob/master/src/Database/Design/Ampersand/Input/ADL1/Parser.hs), where all EBNF statements are in comments.
+This section is organized by discussing each notion in isolation. Hyperlinks are added in the text to let the reader navigate on her own. The text is suitable for reference purposes, so there is no preferred order in reading.
 

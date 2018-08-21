@@ -12,7 +12,7 @@ Also assume another relation `stored[Contract*Location]`, which gives the locati
 
 ## Natural language templates
 
-There is a pattern to this. A computer can generate a literal translation from the formula to natural language. However, that translation looks clumsy, verbose and elaborate. It is up to you to turn that in normal language. For examples [click here](../../semantics-visualized/semantics-visualized.md). The systematic translation is given in the following table:
+There is a pattern to this. A computer can generate a literal translation from the formula to natural language. However, that translation looks clumsy, verbose and elaborate. It is up to you to turn that in normal language. For examples [click here](../semantics-visualized/semantics-visualized.md). The systematic translation is given in the following table:
 
 | Formally | Natural language template |
 | :--- | :--- |
@@ -22,5 +22,5 @@ There is a pattern to this. A computer can generate a literal translation from t
 
 ## Other explanation
 
-Would you like a different explanation of the residual operators? [This page](../semantics-in-logic/residual-operators.md) explains them in logic. [Click here](../../semantics-visualized/semantics-visualized.md) for visualized examples about residual operators.
+Would you like a different explanation of the residual operators? [This page](../semantics-in-logic/residual-operators.md) explains them in logic. [Click here](../semantics-visualized/semantics-visualized.md) for visualized examples about residual operators.
 
