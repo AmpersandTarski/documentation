@@ -20,5 +20,5 @@ Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relatio
 
 ## Other explanation
 
-Would you like a different explanation of the boolean operators? [This page](../other-ways/boolean-operators-sets.md) explains the boolean operators in terms of set theory.
+Would you like a different explanation of the boolean operators? [This page](../semantics-in-sets/boolean-operators-sets.md) explains the boolean operators in terms of set theory.
 

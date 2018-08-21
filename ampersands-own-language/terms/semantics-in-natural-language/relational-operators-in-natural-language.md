@@ -34,5 +34,5 @@ There is a pattern to this. A computer can generate a literal translation from t
 
 ## Other explanation
 
-Would you like a different explanation of the relational operators? [This page](../other-ways/relational-operators-in-set-theory.md) explains the relational operators in terms of set theory. An explanation in logic is given [here](relational-operators-in-natural-language.md). [Click here](../semantics-in-algebra/relational-operators-in-algebra.md) for some algebraic rules about relational operators.
+Would you like a different explanation of the relational operators? [This page](../semantics-in-sets/relational-operators-in-set-theory.md) explains the relational operators in terms of set theory. An explanation in logic is given [here](relational-operators-in-natural-language.md). [Click here](../semantics-in-algebra/relational-operators-in-algebra.md) for some algebraic rules about relational operators.
 
