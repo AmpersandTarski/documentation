@@ -42,6 +42,7 @@
     * [Example: Login](the-language-ampersand/services/example-login.md)
     * [Syntax and meaning](the-language-ampersand/services/syntax-of-interface-statements.md)
     * [Explanation](the-language-ampersand/services/explanations.md)
+    * [CRUD](the-language-ampersand/services/crud.md)
   * [The INCLUDE statement](the-language-ampersand/the-include-statement.md)
   * [The POPULATION statement](the-language-ampersand/the-population-statement/README.md)
     * [Population in spreadsheets](the-language-ampersand/the-population-statement/data-in-spreadsheets.md)
