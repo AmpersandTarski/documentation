@@ -42,6 +42,8 @@
     * [Example: Login](the-language-ampersand/services/example-login.md)
     * [Syntax and meaning](the-language-ampersand/services/syntax-of-interface-statements.md)
     * [Explanation](the-language-ampersand/services/explanations.md)
+    * [Layout of user interfaces](the-language-ampersand/services/layout-of-user-interfaces/README.md)
+      * [Your own widgets \(HTML and CSS\)](the-language-ampersand/services/layout-of-user-interfaces/your-own-widgets-html-and-css.md)
     * [CRUD](the-language-ampersand/services/crud.md)
   * [The INCLUDE statement](the-language-ampersand/the-include-statement.md)
   * [The POPULATION statement](the-language-ampersand/the-population-statement/README.md)
