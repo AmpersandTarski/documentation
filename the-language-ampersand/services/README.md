@@ -12,6 +12,8 @@ A service specifies which data is presented to which users. For every different 
 
 ## Example
 
+Please note that the keyword `INTERFACE` is still used. That is confusing, because that should be `SERVICE`instead. In a future release of Ampersand the keyword `INTERFACE` will become obsolete.
+
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
 TABS [ Students : V[SESSION*Student]             cRuD

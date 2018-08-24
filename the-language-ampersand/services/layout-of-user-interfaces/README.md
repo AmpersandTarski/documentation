@@ -1,7 +1,7 @@
 ---
 description: >-
-  How do you get data organized on your screen? This section offers some quick
-  solutions.
+  Ever wondered what COLS, ROWS or TABS means in an INTERFACE declaration? This
+  section offers some quick solutions.
 ---
 
 # Layout of user interfaces

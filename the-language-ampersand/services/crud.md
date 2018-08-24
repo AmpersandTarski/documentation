@@ -13,14 +13,16 @@ INTERFACE "ifc A"  : expr cRud   -- used for a box
         ]
 ```
 
-The semantics for CRUD as implemented are listed here. 
+The run time semantics for CRUD as implemented are listed here. 
 
 | Operation | CRUD for boxes | CRUD for fields |
 | :--- | :--- | :--- |
-| C | Not possible | Creating new atom \(concept = tgt of expr\) is allowed if expr is editable |
+| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | Enter a new atom and a `+` button appears that lets you create it. If you enter an existing atom, you can select it. |
 | R | Read is allowed | Read is allowed |
 | U | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable.  |
 | D | Not possible | Delete atom \(tgt\) and all pairs in which it is used. |
+
+![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)
 
 A top-level Update or Create are common in my own scripts, e.g. to create an overview of People and be able to create a new Person: `INTERFACE "People" : V[SESSION*Person] CRud COLS []`. And update is also possible.
 
