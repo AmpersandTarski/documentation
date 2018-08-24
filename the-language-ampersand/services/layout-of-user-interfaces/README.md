@@ -1,9 +1,3 @@
----
-description: >-
-  Ever wondered what COLS, ROWS or TABS means in an INTERFACE declaration? This
-  section offers some quick solutions.
----
-
 # Layout of user interfaces
 
 Ampersand is meant for back-end design. Front-end design has been kept out of Ampersand, because that is covered much better in contemporary web-based design tools. However, we do want to build prototypes with roughly a good design. For this purpose Ampersand offers some features that let you get acceptable results in no time.

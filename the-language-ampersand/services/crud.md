@@ -13,28 +13,36 @@ INTERFACE "ifc A"  : expr cRud   -- used for a box
         ]
 ```
 
-The run time semantics for CRUD as implemented are listed here. 
+The run time semantics for CRUD as implemented are listed here.
 
-| Create | CRUD for boxes | | CRUD for fields |
+## Create
+
+| Create | CRUD for boxes |  | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png) <!-- .element height="40%" width="40%" --> | Enter a new atom and a `+` button appears that lets you create it. If you enter an existing atom, you can select it. |
-| c | Atoms cannot be created | Atoms cannot be created |
+| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  | Enter a new atom and a `+` button appears that lets you create it. If you enter an existing atom, you can select it. |
+| c | Atoms cannot be created |  | Atoms cannot be created |
 
-| Read | CRUD for boxes | | CRUD for fields |
+## Read
+
+| Read | CRUD for boxes |  | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| R | Read is allowed | | Read is allowed |
-| r | Read is not allowed | | Read is not allowed |
+| R | Read is allowed |  | Read is allowed |
+| r | Read is not allowed |  | Read is not allowed |
 
-| Update | CRUD for boxes | | CRUD for fields |
+## Update
+
+| Update | CRUD for boxes | CRUD for fields | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| U | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/CRUD-buttons.png) <!-- .element height="40%" width="40%" --> | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable.  |
-| u | Update is not allowed | | Update is not allowed |
+| U | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/crud-buttons.png)  | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable. |
+|  |  | Removing and/or adding |  |
+| u | Update is not allowed |  | Update is not allowed |
 
-| Delete | CRUD for boxes | | CRUD for fields |
+## Delete
+
+| Delete | CRUD for boxes |  | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| D | Not possible | | Delete atom \(tgt\) and all pairs in which it is used. |
-| D | Not possible | | Delete atom \(tgt\) and all pairs in which it is used. |
-
+| D | Not possible |  | Delete atom \(tgt\) and all pairs in which it is used. |
+| D | Not possible |  | Delete atom \(tgt\) and all pairs in which it is used. |
 
 A top-level Update or Create are common in my own scripts, e.g. to create an overview of People and be able to create a new Person: `INTERFACE "People" : V[SESSION*Person] CRud COLS []`. And update is also possible.
 
@@ -51,5 +59,5 @@ Keep in mind that the crud rights are about the relation\(expression\) and not t
 | D | Remove link by deleting tgt atom. All other links from/to tgt atom are also removed | NA Warning: Not possible, use update |
 | d | Remove link by deleting tgt atom not allowed | NA |
 
-Motivations for CRUD-functionality are found in the [GitHub discussions on CRUD](https://github.com/AmpersandTarski/Ampersand/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Acrud+) functionality.
+Motivations for CRUD-functionality are found in the [GitHub discussions on CRUD](https://github.com/AmpersandTarski/Ampersand/issues?utf8=✓&q=is%3Aissue+label%3Acrud+) functionality.
 
