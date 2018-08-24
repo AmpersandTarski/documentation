@@ -17,10 +17,10 @@ The run time semantics for CRUD as implemented are listed here.
 
 ## Create
 
-| Create | CRUD for boxes |  | CRUD for fields |
-| :--- | :--- | :--- | :--- |
-| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  | Enter a new atom and a `+` button appears that lets you create it. If you enter an existing atom, you can select it. |
-| c | Atoms cannot be created |  | Atoms cannot be created |
+| Create | CRUD for boxes | CRUD for fields |
+| :--- | :--- | :---  |
+| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  Enter a new atom and a `+` button appears that lets you create it. If you enter an existing atom, you can select it. |
+| c | Atoms cannot be created | Atoms cannot be created |
 
 ## Read
 
