@@ -17,13 +17,11 @@ The run time semantics for CRUD as implemented are listed here.
 
 ## CRUD for boxes
 
-## 
-
 ## Create
 
 | Create | CRUD for boxes | CRUD for fields |
 | :--- | :--- | :--- |
-| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  Enter a new atom and a `+` button appears. Click the + to add that atom to the listed set of atoms. If you enter an atom that exists \(Peter\), you can select it. |
+| C | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/box-crud-create.png)  A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  Enter a new atom and a `+` button appears. Click the + to add that atom to the listed set of atoms. If you enter an atom that exists \(Peter\), you can select it. |
 | c | Atoms cannot be created | Atoms cannot be created |
 
 ## Read
@@ -64,4 +62,3 @@ Keep in mind that the crud rights are about the relation\(expression\) and not t
 | d | Remove link by deleting tgt atom not allowed | NA |
 
 Motivations for CRUD-functionality are found in the [GitHub discussions on CRUD](https://github.com/AmpersandTarski/Ampersand/issues?utf8=✓&q=is%3Aissue+label%3Acrud+) functionality.
-
