@@ -1,27 +1,48 @@
 # CRUD
 
-CRUD annotations are used in services to constrain the functionality of fields and boxes in an `INTERFACE`-statement. This allows you to avoid redundant functionality.
+CRUD annotations are used in services to constrain the functionality of fields and boxes in an `INTERFACE`-statement. This allows you to minimize the functionality for your users, to design for easy learning. Inside a service.
 
-After each expression in an interface you will be able to specify CRUD rights. Capital = allowed, Non-capital = not allowed. CRUD is the default, so if you specify nothing, everything is allowed.
-
-The following example shows how crud annotations are used. On line 1 it is used with a box and on lines 2 and 3 it is used with fields. The CRUD annotation always follows an expression within a service.
+Each CRUD annotation comes right after a [term](../terms/). The annotation constrains the things your user can do with the target atoms and the pairs of that term.
 
 ```text
-INTERFACE "ifc A"  : expr cRud   -- used for a box
-    BOX [ "label1" : expr cRUd   -- used for a field
-        , "label2" : expr        -- CRUD is default
+INTERFACE "ifc A"  : <term> cRud   -- used for a box
+    BOX [ "label1" : <term> cRUd   -- used for a field
+        , "label2" : <term>        -- CRUD is default
         ]
 ```
 
-The run time semantics for CRUD as implemented are listed here.
+The CRUD-annotation specifies Create, Read, Update, and Delete rights for the term it follows. Capital = allowed, Non-capital = not allowed. CRUD is the default, so if you specify nothing, everything is allowed. The following service illustrates this.
 
-## CRUD for boxes
+```text
+INTERFACE Overview : "_SESSION"                  cRud
+COLS [ Students : V[SESSION*Student]             crud
+        COLS    [ "Student" : I[Student]         CRUD
+                , "Enrolled for" : isEnrolledFor cRUD
+                , "Course" : takes               CRUD
+                ]
+     , Course : V[SESSION*Course]                CRUD
+        COLS    [ "Course" : I                   cRud
+                , "Modules" : isPartOf~          CRUD
+                ]
+     , Modules : V[SESSION*Module]               cRud
+        COLS    [ "Modules" : I                  cRuD
+                , "Course" : isPartOf            cRud
+                , "Students" : isEnrolledFor~    CRUD
+                ]
+     ]
+```
+
+The user interface defined by this service is shown as a screenshot below. Notice that the lowercase r in the annotation of the Students box prevents showing the underlying box. The full CRUD functionality in Course yields 'create' functionality \(the green plus-button\), 'remove pair' functionality \(red minus button\), and 'delete atom' functionality \(the red trash can button\). The lowercase c, u, and d in the Modules box prevents displaying that functionality in the user interface.
+
+![Column-oriented layout of a user interface with columns in each row](../../.gitbook/assets/cols-layout-example.png)
+
+The next sections give some more detailed information on the run time semantics for CRUD annotations as implemented in Ampersand.
 
 ## Create
 
-| Create | CRUD for boxes | CRUD for fields |
+| CRUD | for a box | for a field. |
 | :--- | :--- | :--- |
-| C | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/box-crud-create.png)  A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  Enter a new atom and a `+` button appears. Click the + to add that atom to the listed set of atoms. If you enter an atom that exists \(Peter\), you can select it. |
+| C | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/box-crud-create.png)  A + \(plus\) button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png) Enter a new atom and a `+` button appears. Click the + to add that atom to the listed set of atoms. If you enter an atom that exists \(Peter\), you can select it. |
 | c | Atoms cannot be created | Atoms cannot be created |
 
 ## Read
@@ -35,7 +56,7 @@ The run time semantics for CRUD as implemented are listed here.
 
 | Update | CRUD for boxes | CRUD for fields |
 | :--- | :--- | :--- |
-| U | ![Deleting a pair is done with the - button](../../.gitbook/assets/box-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted.| ![Deleting a pair is done with the - button](../../.gitbook/assets/field-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted.|
+| U | ![Deleting a pair is done with the - button](https://github.com/AmpersandTarski/documentation/tree/8768d4d79aa1d6afabd673b6de02448907085b41/.gitbook/assets/box-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted. | ![Deleting a pair is done with the - button](../../.gitbook/assets/field-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted. |
 | u | Update is not allowed | Update is not allowed |
 
 ## Delete
@@ -61,3 +82,4 @@ Keep in mind that the crud rights are about the relation\(expression\) and not t
 | d | Remove link by deleting tgt atom not allowed | NA |
 
 Motivations for CRUD-functionality are found in the [GitHub discussions on CRUD](https://github.com/AmpersandTarski/Ampersand/issues?utf8=✓&q=is%3Aissue+label%3Acrud+) functionality.
+
