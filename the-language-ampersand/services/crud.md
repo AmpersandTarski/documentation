@@ -35,7 +35,7 @@ The run time semantics for CRUD as implemented are listed here.
 
 | Update | CRUD for boxes | CRUD for fields | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| U | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/crud-buttons.png) | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable. |
+| U | ![Deleting a pair is done with the - button](../../.gitbook/assets/box-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted.| ![Creating atoms is done by pressing the + button](../../.gitbook/assets/crud-buttons.png) | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable. |
 |  |  | Removing and/or adding |  |
 | u | Update is not allowed |  | Update is not allowed |
 
