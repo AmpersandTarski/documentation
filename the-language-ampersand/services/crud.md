@@ -15,11 +15,15 @@ INTERFACE "ifc A"  : expr cRud   -- used for a box
 
 The run time semantics for CRUD as implemented are listed here.
 
+## CRUD for boxes
+
+## 
+
 ## Create
 
 | Create | CRUD for boxes | CRUD for fields |
-| :--- | :--- | :---  |
-| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  Enter a new atom and a `+` button appears that lets you create it. If you enter an existing atom, you can select it. |
+| :--- | :--- | :--- |
+| C | A `+` button is displayed that lets you create a new atom, but only if the box-expression is editable. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/create-field.png)  Enter a new atom and a `+` button appears. Click the + to add that atom to the listed set of atoms. If you enter an atom that exists \(Peter\), you can select it. |
 | c | Atoms cannot be created | Atoms cannot be created |
 
 ## Read
@@ -33,7 +37,7 @@ The run time semantics for CRUD as implemented are listed here.
 
 | Update | CRUD for boxes | CRUD for fields | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| U | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/crud-buttons.png)  | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable. |
+| U | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. | ![Creating atoms is done by pressing the + button](../../.gitbook/assets/crud-buttons.png) | Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable. |
 |  |  | Removing and/or adding |  |
 | u | Update is not allowed |  | Update is not allowed |
 
