@@ -49,14 +49,14 @@ The next sections give some more detailed information on the run time semantics 
 
 | Update | CRUD for boxes | CRUD for fields |
 | :--- | :--- | :--- |
-| U | ![Deleting a pair is done with the - button](https://github.com/AmpersandTarski/documentation/tree/8768d4d79aa1d6afabd673b6de02448907085b41/.gitbook/assets/box-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted. | ![Deleting a pair is done with the - button](../../.gitbook/assets/field-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted. |
+| U | ![Deleting a pair is done with the - button](https://github.com/AmpersandTarski/documentation/tree/.gitbook/assets/box-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted. | ![Deleting a pair is done with the - button](../../.gitbook/assets/field-crud-update.png) Removing and/or adding a pair \(src,tgt\) is allowed if expr is editable and the atom exists. Deleting a pair is done with the - button; the atom will NOT be deleted. |
 | u | Update is not allowed | Update is not allowed |
 
 ## Delete
 
 | Delete | CRUD for boxes |  | CRUD for fields |
 | :--- | :--- | :--- | :--- |
-| D | Not possible |  | Delete atom \(tgt\) and all pairs in which it is used. |
+| D | ![Deleting a pair is done with the - button](https://github.com/AmpersandTarski/documentation/tree/.gitbook/assets/box-crud-delete.png)  Deleting a pair is done with the - (minus) button. Deleting an atom is done with the trash bin.|  | Delete atom \(tgt\) and all pairs in which it is used. |
 | D | Not possible |  | Delete atom \(tgt\) and all pairs in which it is used. |
 
 A top-level Update or Create are common in my own scripts, e.g. to create an overview of People and be able to create a new Person: `INTERFACE "People" : V[SESSION*Person] CRud COLS []`. And update is also possible.
