@@ -1,13 +1,25 @@
-# The POPULATION statement
+---
+description: >-
+  An information system stores data. How do you get the initial data into your
+  Ampersand application? This section tells you how.
+---
 
-## Semantics
+# Population
+
+## Purpose
+
+To store data in a database corresponds to populating the relations in a context. Atoms are the data and pairs of atoms are inserted and deleted during the lifetime of a relation. 
+
+## Description
+
+All pairs in a relation are called the population of that relation. All atoms in a concept constitute the population of that concept. The population of all relations and concepts in a context make the population of that context.
 
 There are two ways to populate a concept with atoms:
 
-* The POPULATION statement in the adl-file
-* The INCLUDE statement to include an xlsx-file
+* A `POPULATION` statement defines the initial population of a  concept or a relation.
+* An `INCLUDE` statement defines the initial population from an xlsx-file \(i.e. an Excel speadsheet\)
 
-The first method is laborious, so when you intend to change the population several times, the xlsx-method is easier.
+[Using spreadsheets](data-in-spreadsheets.md) to define an initial population allows you to work with larger populations. Often you can use an existing spreadsheet and adapt it to become acceptable as Ampersand input.
 
 ## Syntax
 
@@ -15,8 +27,7 @@ You can define atoms separately and you can define the pairs in a relation. Both
 
 ```text
 POPULATION Tree CONTAINS
-    [ 
-      ("Oak")
+    [ ("Oak")
     , ("Birch")
     , ("Willow")
     ]
@@ -24,8 +35,7 @@ POPULATION Tree CONTAINS
 
 ```text
 POPULATION personBank[Person*Bank] CONTAINS
-    [ 
-      ("John", "ING")
+    [ ("John", "ING")
     , ("Jane", "TRIODOS")
     ]
 ```

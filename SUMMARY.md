@@ -46,7 +46,7 @@
       * [Your own widgets \(HTML and CSS\)](the-language-ampersand/services/layout-of-user-interfaces/your-own-widgets-html-and-css.md)
     * [CRUD](the-language-ampersand/services/crud.md)
   * [The INCLUDE statement](the-language-ampersand/the-include-statement.md)
-  * [The POPULATION statement](the-language-ampersand/the-population-statement/README.md)
+  * [Population](the-language-ampersand/the-population-statement/README.md)
     * [Population in spreadsheets](the-language-ampersand/the-population-statement/data-in-spreadsheets.md)
   * [The PURPOSE statement](the-language-ampersand/the-purpose-statement.md)
   * [The IDENT statement](the-language-ampersand/the-ident-statement.md)
