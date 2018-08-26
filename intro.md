@@ -1,6 +1,6 @@
 # Introduction
 
-Want to avoid reading too much? Take a moment to think about this:
+Do you want to avoid unnecessary reading? Take a moment to think about this:
 
 ## What makes you curious?...
 
