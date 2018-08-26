@@ -27,7 +27,7 @@ The service has a **header**, which is the first line in this example:
 INTERFACE ClientInfo FOR Client,Vendor : I[Client]
 ```
 
-The word `ClientInfo` is the **name** of this service. This name identifies the service throughout the entire context, so it must be unique.
+The word `ClientInfo` is the **name** of this service. This name identifies the service , so it must be unique throughout the entire context.
 
 This service is shown only to users with roles `Client` or `Vendor`. That is indicated by the restriction `FOR Client,Vendor`. Without that restriction, the service is available for every user in any role.
 

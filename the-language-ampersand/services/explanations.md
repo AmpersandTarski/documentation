@@ -1,6 +1,6 @@
 # Explanation
 
-Interfaces are meant for interacting with data from a dataset.
+Services are meant to expose functionality and data from a [context](../context.md), to let users or information systems interact with the system by creating, reading, updating, and deleting data.
 
 Note: The service definition must be outside a pattern
 

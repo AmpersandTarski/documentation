@@ -1,17 +1,10 @@
 # CRUD
 
-CRUD annotations are used in services to constrain the functionality of fields and boxes in an `INTERFACE`-statement. This allows you to minimize the functionality for your users, to design for easy learning. Inside a service.
+CRUD annotations are used in services to constrain the functionality of fields and boxes in an `INTERFACE`-statement. This allows you to minimize the functionality for your users, to design for easy learning.
 
-Each CRUD annotation comes right after a [term](../terms/). The annotation constrains the things your user can do with the target atoms and the pairs of that term.
+Each CRUD annotation comes right after a [term](../terms/), so we can always refer to "the term" to which a CRUD annotation belongs. A CRUD annotation constrains the things your user can do with the target atoms and the pairs of its term.
 
-```text
-INTERFACE "ifc A"  : <term> cRud   -- used for a box
-    BOX [ "label1" : <term> cRUd   -- used for a field
-        , "label2" : <term>        -- CRUD is default
-        ]
-```
-
-The CRUD-annotation specifies Create, Read, Update, and Delete rights for the term it follows. Capital = allowed, Non-capital = not allowed. CRUD is the default, so if you specify nothing, everything is allowed. The following service illustrates this.
+The CRUD-annotation specifies Create, Read, Update, and Delete rights for the term it follows. Capital = allowed, Non-capital = not allowed. CRUD is the default, so if you specify nothing, everything is allowed. The following service definition illustrates this.
 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
@@ -20,9 +13,9 @@ COLS [ Students : V[SESSION*Student]             crud
                 , "Enrolled for" : isEnrolledFor cRUD
                 , "Course" : takes               CRUD
                 ]
-     , Course : V[SESSION*Course]                CRUD
-        COLS    [ "Course" : I                   cRud
-                , "Modules" : isPartOf~          CRUD
+     , Course : V[SESSION*Course]                CRUD   -- used for a box
+        COLS    [ "Course" : I                   cRud   -- used for a field
+                , "Modules" : isPartOf~                 -- CRUD is default
                 ]
      , Modules : V[SESSION*Module]               cRud
         COLS    [ "Modules" : I                  cRuD

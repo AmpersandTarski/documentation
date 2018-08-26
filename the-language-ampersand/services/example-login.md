@@ -21,7 +21,7 @@ A login service allows a user to log in and log out of the system. Here is what 
 
 Wonder what the 25al1rdkdfvmapkkqvuf5sroc5 means? Well this is the session number of the actual browser session. It is the value for which the atom
 
-`'_SESSION'`
+`"_SESSION"`
 
 stands in your script.
 
@@ -68,7 +68,7 @@ INTERFACE Login : '_SESSION'[SESSION] cRud BOX <HROWS>
 
 If you analyse this code, notice the nested structure of `BOX`-es. The service is a box on the top level with two sub-boxes labeled `"Login"` and `"Logout"`.
 
-The top-level box has `'_SESSION'[SESSION]` as its box-term. What you must remember is that the every atom of the codomain of that term causes one contain \(HTML: `<div>`\). In this example, the codomain of `'_SESSION'[SESSION]` is just one atom, which is the session identifier. That is shown in the title of the outmost box in the browser.
+The top-level box has `"_SESSION"[SESSION]` as its box-term. What you must remember is that the every atom of the codomain of that term causes one contain \(HTML: `<div>`\). In this example, the codomain of `"_SESSION"[SESSION]` is just one atom, which is the session identifier. That is shown in the title of the outmost box in the browser.
 
 ### Selectively showing subboxes by `<HROWS>`
 

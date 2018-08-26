@@ -1,8 +1,8 @@
 # Layout of user interfaces
 
-Ampersand is meant for back-end design. Front-end design has been kept out of Ampersand, because that is covered much better in contemporary web-based design tools. However, we do want to build prototypes with roughly a good design. For this purpose Ampersand offers some features that let you get acceptable results in no time.
+Ampersand is meant for back-end design. It offers no features for front-end design. For that purpose we advise you use contemporary front-end tools for web-based applications. Your Ampersand application is [designed to be adaptable](../../../architecture-of-an-ampersand-application/), especially for this purpose.
 
-Ampersand has three built-in layout options, [colums](./#column-layout), [rows](./#row-layout) and [tabs](./#tabular-layout), which you can mix freely.
+However, Ampersand offers a few layout features that let you place items. It has three built-in layout options, [colums](./#column-layout), [rows](./#row-layout) and [tabs](./#tabular-layout), which you can mix freely.
 
 ## Column layout
 
