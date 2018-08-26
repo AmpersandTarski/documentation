@@ -61,18 +61,12 @@ The next sections give some more detailed information on the run time semantics 
 
 A top-level Update or Create are common in my own scripts, e.g. to create an overview of People and be able to create a new Person: `INTERFACE "People" : V[SESSION*Person] CRud COLS []`. And update is also possible.
 
-Keep in mind that the crud rights are about the relation\(expression\) and not the root atom. In \#141 we described the semantics of the CRUD syntax. In short:
+## Things to remember
 
-| CRUD | Tgt concept ISA Object | Tgt concept ISA Scalar |
-| :--- | :--- | :--- |
-| C | Be able to add a new link by creating a new atom \(concept = tgt of expr\). If expr is not a relation, the atom is created, but not the link. Depending on the expression, the newly created atom might appear or not. | NA Warning: Not possible, use update |
-| c | Not allowed to create new tgt atom | NA |
-| R | Read allowed | Read allowed |
-| r | Read not allowed | Read not allowed |
-| U | Add and/or remove link from src atom to existing atoms \(concept = tgt of expr\). When expr is not a relation -&gt; Warning: Update not possible | Add and/or remove link from src atom to tgt atom. Tgt atom does not have to exists \(because it is a scalar\). When expr is not a relation -&gt; Warning: Update not possible |
-| u | Add/remove links not allowed | Add/remove links not allowed |
-| D | Remove link by deleting tgt atom. All other links from/to tgt atom are also removed | NA Warning: Not possible, use update |
-| d | Remove link by deleting tgt atom not allowed | NA |
+1. The red minus is enabled by `U`. It unlinks an atom \(by deleting a pair from a relation\) and leaves the atom alone.
+2. The red trash bin is enabled by `D`. It removes an atom and all pairs in which that atom is used.
+
+## Background
 
 Motivations for CRUD-functionality are found in the [GitHub discussions on CRUD](https://github.com/AmpersandTarski/Ampersand/issues?utf8=✓&q=is%3Aissue+label%3Acrud+) functionality.
 

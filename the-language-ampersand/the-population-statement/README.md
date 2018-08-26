@@ -1,9 +1,3 @@
----
-description: >-
-  An information system stores data. How do you get the initial data into your
-  Ampersand application? This section tells you how.
----
-
 # Population
 
 ## Purpose
