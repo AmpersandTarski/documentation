@@ -19,7 +19,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | [Term](terms/) | A combination of relations and operators that satisfy the Ampersand syntax | `r;s-t` | to express rules |
 | Operator | a symbol used in combining terms into other terms. | `-`, `~`, `\/`, `/\`, `-`, `;`, `\`, `/`, `|-`, `=` | to express more complex rules. |
 |  |  |  |  |
-| Role | A name for a group of people | ROLE Customer MAINTAINS paymentObligation | to talk about users without having any users |
+| Role | A name for a group of people | `ROLE Customer MAINTAINS paymentObligation` | to talk about users without having any users |
 
 ## Reading guide
 
