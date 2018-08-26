@@ -56,9 +56,7 @@ The next sections give some more detailed information on the run time semantics 
 
 | Delete | CRUD for boxes | CRUD for fields |
 | :--- | :--- | :--- |
-| D | ![Deleting a pair is done with the - button](../../.gitbook/assets/box-crud-delete.png) 
-Deleting a pair is done with the - \(minus\) button. Deleting an atom is done with the trash bin. | ![Deleting a pair is done with the - button](../../.gitbook/assets/field-crud-delete.png)
-Delete atom \(tgt\) and all pairs in which it is used. |
+| D | ![Deleting a pair is done with the - button](../../.gitbook/assets/box-crud-delete.png) Deleting a pair is done with the - \(minus\) button. Deleting an atom is done with the trash bin. | ![Deleting a pair is done with the - button](../../.gitbook/assets/field-crud-delete.png) Delete atom \(tgt\) and all pairs in which it is used. |
 | d | delete not allowed | delete not allowed |
 
 A top-level Update or Create are common in my own scripts, e.g. to create an overview of People and be able to create a new Person: `INTERFACE "People" : V[SESSION*Person] CRud COLS []`. And update is also possible.
