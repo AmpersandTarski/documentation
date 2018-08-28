@@ -60,6 +60,8 @@
   * [Installing the tools manually](installing-ampersand/installing-the-tools-manually.md)
 * [Modeling](modeling/README.md)
   * [Domain modeling](modeling/conceptual-modeling.md)
+  * [Legal modeling](modeling/legal-modeling.md)
+  * [Architecture](modeling/architecture.md)
 * [Running the Ampersand compiler](the-command-line-tool/README.md)
   * [Options](the-command-line-tool/options.md)
   * [Configuration](the-command-line-tool/configuration.md)
