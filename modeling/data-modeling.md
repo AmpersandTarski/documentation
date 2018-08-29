@@ -71,7 +71,7 @@ This table is similar with respect to the interpretation of a row: here too, eac
 However, the presidents aren't numbered in this table, so we have to add these numbers.
 
 | | \[State\] | capital | president |
-| | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | 3 | Vermont | Plymouth | Coolidge |
 | 2 | Hawaii | Honolulu | Obama |
 | 1 | Kentucky | Frankfort | Lincoln |
