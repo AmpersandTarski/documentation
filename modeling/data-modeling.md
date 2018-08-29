@@ -1,15 +1,10 @@
-# Data modeling based on real-life data
+# Data modeling
 
-When a data model serves to build an information system,
-it must ensure that all data that is needed in practice can be represented in the database.
-So you need a practical modeling technique based on actual data.
-By using real-life samples of data, you can decide which data elements to include or leave out in the new model and be reasonably confident
-that you don't leave any gaps.
+When a data model serves to build an information system, it must ensure that all data that is needed in practice can be represented in the database. So you need a practical modeling technique based on actual data. By using real-life samples of data, you can decide which data elements to include or leave out in the new model and be reasonably confident that you don't leave any gaps.
 
-In this section we will systematically extract concepts and relations based on data from a spreadsheet.
-The result of this analysis is an Ampersand model, which you can use to generate a data model for you.
+In this section we will systematically extract concepts and relations based on data from a spreadsheet. The result of this analysis is an Ampersand model, which you can use to generate a data model for you.
 
-### Example
+## Example
 
 Let us start by looking at an example:
 
@@ -45,17 +40,13 @@ POPULATION birth[President*Date] CONTAINS
   ]
 ```
 
-## Modeling principle: extract relations from tables
+## Extract relations from tables
 
-In our example, each row in the spreadsheet represents a president. So, the source concept of each relation is `President`.
-Each column represents a different relation. So we can use the name of each column as relation name.
-Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`. 
+In our example, each row in the spreadsheet represents a president. So, the source concept of each relation is `President`. Each column represents a different relation. So we can use the name of each column as relation name. Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`.
 
-When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done:
-![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.png)
-This drawing shows every relation als a line, drawn from source to target. The arrowhead in the middle is only to remind the reader of which is the source and which is the target concept. If you point the arrowhead from source to target, you will always know how the relation is defined.
+When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done: ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.png) This drawing shows every relation als a line, drawn from source to target. The arrowhead in the middle is only to remind the reader of which is the source and which is the target concept. If you point the arrowhead from source to target, you will always know how the relation is defined.
 
-## Modeling principle: adapt as needed
+## Adapt as needed
 
 Suppose we have a second table, which also has information
 
@@ -67,10 +58,9 @@ Suppose we have a second table, which also has information
 | New York | New York | Roosevelt |
 | Georgia | Atlanta | Carter |
 
-This table is similar with respect to the interpretation of a row: here too, each row represents a president.
-However, the presidents aren't numbered in this table, so we have to add these numbers.
+This table is similar with respect to the interpretation of a row: here too, each row represents a president. However, the presidents aren't numbered in this table, so we have to add these numbers.
 
-| | \[State\] | capital | president |
+|  | \[State\] | capital | president |
 | :--- | :--- | :--- | :--- |
 | 3 | Vermont | Plymouth | Coolidge |
 | 2 | Hawaii | Honolulu | Obama |
@@ -78,7 +68,7 @@ However, the presidents aren't numbered in this table, so we have to add these n
 | 5 | New York | New York | Roosevelt |
 | 6 | Georgia | Atlanta | Carter |
 
-Numbering rows has the advantage that it is easier to recognise a president. 
+Numbering rows has the advantage that it is easier to recognise a president.
 
 ```text
 POPULATION state[President*State] CONTAINS
@@ -107,16 +97,9 @@ POPULATION capital[President*City] CONTAINS
   ]
 ```
 
-Notice that this deviates slightly from the previous recipe.
-Instead of making a new relation `president[President*President]`, we have reused the relation `lastname`.
-By doing so, we have interpreted the third column of the spreadsheet as the last name of the president.
-More importantly, we have reused an earlier relation.
-The drawing can also be extended:
-![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-2.png)
+Notice that this deviates slightly from the previous recipe. Instead of making a new relation `president[President*President]`, we have reused the relation `lastname`. By doing so, we have interpreted the third column of the spreadsheet as the last name of the president. More importantly, we have reused an earlier relation. The drawing can also be extended: ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-2.png)
 
-There seems to be something funny about the relation `capital`.
-In the model this relation pairs presidents to capital cities of the state in which they were born.
-This meaning can be made more obvious, by redefining relations somewhat:
+There seems to be something funny about the relation `capital[President*City]`. In the model this relation pairs presidents to capital cities of the state in which they were born. This meaning can be made more obvious, by redefining one relation somewhat:
 
 ```text
 POPULATION capital[State*City] CONTAINS
@@ -130,40 +113,98 @@ POPULATION capital[State*City] CONTAINS
 
 ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-3.png)
 
-## Reusing existing data
+Obviously, the relation `capital[State*City]` feels more natural. The reason is obvious: a capital city belongs more to the state than it belongs to a president who happens to have been born in that state.
 
-In practical applications, you might want to reuse data from existing spreadsheets.
-People tend to have lots of "informal administration" in spreadsheets, which gives you access to authentic population. Surely you need that data organized in rows, but fortunately that is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated. In other cases, you have some work organizing the spreadsheet for importing it.
+This example illustrates that you may find "strange things" in your data samples. You can fix them as you go, as we did with the relation `capital` in this example.
 
-## Uploading your spreadsheet
+So far, we have looked at relations that can be extracted from existing spreadsheet data. With some practice, you will soon learn to do larger and more realistic problems. The essence of this technique is to break down knowledge in relations, to get to the bottom of the conceptual structure.
 
-You will find the Excel import function in the menu bar on the top right of your screen
+## Add Meaning
 
+More often than not, the meaning of data in a spreadsheet is obvious. For instance, in the relation `firstname`  it hardly needs to be said that it contains the first name of each president. But it is not always that obvious. In the second example we saw that the meaning of the relation `capital[President*City]` was far from obvious. It relates a president to the capital city of the state in which he was born. There are two things we need to do about it:
 
+1. replace a relation with a complicated meaning for a simpler one;
+2. document the meaning of each relation.
 
+The second thing, to document each relation, is necessary to ensure consensus and support. To make the meaning of every relation explicit is meant to trigger stakeholders to stand up and voice any different insights.
 
+```text
+RELATION firstname[President*Name]
+MEANING "The first name of a president is registered in this relation."
 
-![](../.gitbook/assets/screenshot-import.png)
+RELATION lastname[President*Surname]
+MEANING "The first name of a president is registered in this relation."
 
-This is what your upload screen looks like: 
+RELATION birth[President*Date]
+MEANING "The date of birth of a president is registered in this relation."
 
-![](../.gitbook/assets/screenshot-upload-excel.png)
+RELATION state[President*State]
+MEANING "The state in which a president was born is registered in this relation."
 
- You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green 
+RELATION capital[State*City]
+MEANING "The capital of a state is registered in this relation."
+```
 
-_Upload_
+The meaning of a relation gives guidance to the reader in the way we should speak about the contents of the relation. For instance, if the pair $$(p,s)$$ is a pair from `RELATION birth[President*State]`,  the reader should interpret that as "President $$p$$ was born in $$s$$."
 
- button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
+## Add multiplicity constraints
+
+For making a data model, you need to do one more thing: decide which relations must be constrained to unique elements. Consider for example the fact that anyone is born in at most one state. A duplicate state of birth therefore considered a mistake. President Van Buren cannot have been born both in New York and in Maine. We can impose that on a data model by stating that `RELATION birth[President*State]`  must be univalent:
+
+```text
+RELATION birth[President*State] [UNI]
+```
+
+Two properties are relevant for the data model: univalent \(`UNI`\) and injective \(`INJ`\):
+
+* Relation `r[A*B] [UNI]` means that there is at most one pair $$(a,b)$$ in the relation for every $$a$$ in `A`.
+* Relation `r[A*B] [INJ]` means that there is at most one pair $$(a,b)$$ in the relation for every $$b$$ in B.
+* Relation `r[A*B] [UNI,INJ]` means the relation is both univalent and injective.
+
+We have to do this for every relation:
+
+```text
+CONTEXT Presidents
+
+RELATION firstname[President*Name] [UNI]
+MEANING "The first name of a president is registered in this relation."
+
+RELATION lastname[President*Surname]
+MEANING "The first name of a president is registered in this relation."
+
+RELATION birth[President*Date] [UNI]
+MEANING "The date of birth of a president is registered in this relation."
+
+RELATION state[President*State] [UNI]
+MEANING "The state in which a president was born is registered in this relation."
+
+RELATION capital[State*City] [UNI,INJ]
+MEANING "The capital of a state is registered in this relation."
+
+ENDCONTEXT
+```
+
+Five decisions have been made here:
+
+1. We will register only one first name for every president.
+2. The system may register multiple last names.
+3. Only one date of birth will be registered.
+4. Only one state of birth will be registered.
+5. Every state has only one capital city and every city is capital to only one state.
+
+Note that we can envelop the relation definition in a `CONTEXT` and run it on RAP3.
 
 ## Assignment
 
-Make a population of your own for the Hawaii-script and put it in a .xlsx spreadsheet. As described above. Make sure to delete the population statements from your Hawaii source code, to make sure that you get to see the population from your .xlsx-file. Generate a prototype from your Hawaii-application, upload your population in Excel and play around with the results.
+Generate a functional specification from this script, open the generated document, and look up what your data model looks like.
 
 ## What have you learned?
 
 After finishing your assignment, you have learned:
 
-* to upload population to your Ampersand application in the form of a spreadsheet in .xlsx-format;
-* to understand how a `POPULATION`-statement relates to the contents of a spreadsheet;
-* that the contents of the spreadsheet is added to the population of your context, provided this does not lead to any conflict.
+* why it makes sense to analyse actual data samples for creating a data model;
+* how to analyze spreadsheet data and produce relations from it;
+* why it is necessary to document meaning for each relation;
+* how to constrain relations with univalence and injectivity;
+* how to make Ampersand create a data model based on your data analysis.
 

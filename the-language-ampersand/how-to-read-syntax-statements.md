@@ -6,8 +6,6 @@ description: >-
 
 # How to read syntax statements
 
-## 
-
 Sometimes, in describing the syntax, EBNF-like notation is used, with the following meaning:
 
 | Operator | meaning |
