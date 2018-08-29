@@ -4,5 +4,5 @@ description: >-
   resolve those issues, try it with Ampersand...
 ---
 
-# Architecture
+# Architecture modeling
 
