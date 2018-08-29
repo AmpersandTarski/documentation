@@ -107,17 +107,33 @@ POPULATION capital[President*City] CONTAINS
   ]
 ```
 
-Notice that this does deviates slightly from the previous recipe.
-Instead of making a relation `president[President*President]`, we have reused the relation `lastname`.
+Notice that this deviates slightly from the previous recipe.
+Instead of making a new relation `president[President*President]`, we have reused the relation `lastname`.
 By doing so, we have interpreted the third column of the spreadsheet as the last name of the president.
 More importantly, we have reused an earlier relation.
 The drawing can also be extended:
 ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-2.png)
 
+There seems to be something funny about the relation `capital`.
+In the model this relation pairs presidents to capital cities of the state in which they were born.
+This meaning can be made more obvious, by redefining relations somewhat:
+
+```text
+POPULATION capital[State*City] CONTAINS
+  [ ("Kentucky", "Frankfort")
+  , ("Hawaii", "Honolulu")
+  , ("Vermont", "Plymouth")
+  , ("New York", "New York")
+  , ("Georgia", "Atlanta")
+  ]
+```
+
+![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-3.png)
 
 ## Reusing existing data
 
-In practical applications, you might want to reuse data from existing spreadsheets. People tend to have lots of "informal administration" in spreadsheets, which gives you access to authentic population. Surely you need that data organized in rows, but fortunately that is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated. In other cases, you have some work organizing the spreadsheet for importing it.
+In practical applications, you might want to reuse data from existing spreadsheets.
+People tend to have lots of "informal administration" in spreadsheets, which gives you access to authentic population. Surely you need that data organized in rows, but fortunately that is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated. In other cases, you have some work organizing the spreadsheet for importing it.
 
 ## Uploading your spreadsheet
 
