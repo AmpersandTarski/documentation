@@ -47,32 +47,73 @@ POPULATION birth[President*Date] CONTAINS
 
 ## Modeling principle: extract relations from tables
 
-Since every relation is a set of \(ordered\) pairs, we have to extract pairs from the spreadsheet.
 In our example, each row in the spreadsheet represents a president. So, the source concept of each relation is `President`.
 Each column represents a different relation. So we can use the name of each column as relation name.
 Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`. 
 
 When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done:
 ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.png)
+This drawing shows every relation als a line, drawn from source to target. The arrowhead in the middle is only to remind the reader of which is the source and which is the target concept. If you point the arrowhead from source to target, you will always know how the relation is defined.
 
+## Modeling principle: adapt as needed
 
+Suppose we have a second table, which also has information
 
-Notice that the column names in the table correspond with the relation names in Ampersand. In the table we call them "attributes". So it makes sense to say that a relation in Ampersand can correspond with an attribute in a table.
-
-## Practice: how to prepare a spreadsheet
-
-In theory, the population of the Hawaii-script might just as well be given in a spreadsheet. This works in practice too. It looks like this:
-
-| \[Subject\] | pass | required |
+| \[State\] | capital | president |
 | :--- | :--- | :--- |
-| Subject | Student | Destination |
-| Surfing | Brown | Hawaii |
-| Surfing | Conway |  |
-| Latin | Brown | Rome |
-| World Religions | Applegate |  |
-| World Religions | Brown | Rome |
+| Vermont | Plymouth | Coolidge |
+| Hawaï | Honolulu | Obama |
+| Kentucky | Frankfort | Lincoln |
+| New York | New York | Roosevelt |
+| Georgia | Atlanta | Carter |
 
-Please copy this in a spreadsheet of your own. The element in the first column with square brackets tells Ampersand that a new table starts. The first row contains relation names. The second row contains concept names. The rows that follow contain pairs. Ampersand reconstructs those pairs as in the example above.
+This table is similar with respect to the interpretation of a row: here too, each row represents a president.
+However, the presidents aren't numbered in this table, so we have to add these numbers.
+
+| | \[State\] | capital | president |
+| | :--- | :--- | :--- |
+| 3 | Vermont | Plymouth | Coolidge |
+| 2 | Hawaii | Honolulu | Obama |
+| 1 | Kentucky | Frankfort | Lincoln |
+| 5 | New York | New York | Roosevelt |
+| 6 | Georgia | Atlanta | Carter |
+
+Numbering rows has the advantage that it is easier to recognise a president. 
+
+```text
+POPULATION state[President*State] CONTAINS
+  [ ("1", "Kentucky")
+  , ("2", "Hawaii")
+  , ("3", "Vermont")
+  , ("5", "New York")
+  , ("6", "Georgia")
+  ]
+
+POPULATION lastname[President*Surname] CONTAINS
+  [ ("1", "Lincoln")
+  , ("2", "Obama")
+  , ("3", "Coolidge")
+  , ("4", "Eisenhower")
+  , ("5", "Roosevelt")
+  , ("6", "Carter")
+  ]
+
+POPULATION capital[President*City] CONTAINS
+  [ ("1", "Frankfort")
+  , ("2", "Honolulu")
+  , ("3", "Plymouth")
+  , ("5", "New York")
+  , ("6", "Atlanta")
+  ]
+```
+
+Notice that this does deviates slightly from the previous recipe.
+Instead of making a relation `president[President*President]`, we have reused the relation `lastname`.
+By doing so, we have interpreted the third column of the spreadsheet as the last name of the president.
+More importantly, we have reused an earlier relation.
+The drawing can also be extended:
+![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-2.png)
+
 
 ## Reusing existing data
 
