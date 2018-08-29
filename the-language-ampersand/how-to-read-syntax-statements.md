@@ -1,3 +1,9 @@
+---
+description: >-
+  If you wonder how to read the syntax definitions throughout this manual, this
+  page contains the answer...
+---
+
 # How to read syntax statements
 
 ## 

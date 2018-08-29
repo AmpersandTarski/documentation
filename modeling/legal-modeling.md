@@ -7,5 +7,3 @@ description: >-
 
 # Legal modeling
 
-
-

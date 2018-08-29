@@ -1,3 +1,10 @@
+---
+description: >-
+  Most information problems in practice require analysis. Domain modeling is a
+  conceptual analysis technique that helps you explore problems you don't
+  understand yet.
+---
+
 # Domain modeling
 
 ## Why bother?

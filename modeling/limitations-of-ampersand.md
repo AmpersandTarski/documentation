@@ -1,4 +1,2 @@
 # Limitations of Ampersand
 
-
-
