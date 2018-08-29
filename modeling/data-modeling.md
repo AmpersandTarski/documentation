@@ -193,6 +193,9 @@ Five decisions have been made here:
 5. Every state has only one capital city and every city is capital to only one state.
 
 Note that we can envelop the relation definition in a `CONTEXT` and run it on RAP3.
+Ampersand will produce the following data model:
+![Data model for presidents](../.gitbook/assets/presidents-data-model.png)
+
 
 ## Assignment
 
