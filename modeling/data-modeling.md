@@ -53,7 +53,7 @@ Each column represents a different relation. So we can use the name of each colu
 Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`. 
 
 When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done:
-![Relation diagram for presidents](../../.gitbook/assets/concepts-presidents.svg)
+![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.svg)
 
 
 
@@ -86,11 +86,11 @@ You will find the Excel import function in the menu bar on the top right of your
 
 
 
-![](../../.gitbook/assets/screenshot-import.png)
+![](../.gitbook/assets/screenshot-import.png)
 
 This is what your upload screen looks like: 
 
-![](../../.gitbook/assets/screenshot-upload-excel.png)
+![](../.gitbook/assets/screenshot-upload-excel.png)
 
  You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green 
 
