@@ -48,3 +48,11 @@ Here is a summary of the things you do.
 
 4. draw boundaries to define bounded contexts. Identify reusable patterns. Identify entities, attributes, aggregates and services for each bounded context. Assign developers, stakeholders, product-owners to develop each bounded context further.
 
+## Informal analysis
+
+## Formalize concepts and relations
+
+## Use and maintain the model
+
+## Drawing boundaries
+

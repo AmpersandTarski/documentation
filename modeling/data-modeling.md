@@ -121,7 +121,7 @@ So far, we have looked at relations that can be extracted from existing spreadsh
 
 ## Add Meaning
 
-More often than not, the meaning of data in a spreadsheet is obvious. For instance, in the relation `firstname`  it hardly needs to be said that it contains the first name of each president. But it is not always that obvious. In the second example we saw that the meaning of the relation `capital[President*City]` was far from obvious. It relates a president to the capital city of the state in which he was born. There are two things we need to do about it:
+More often than not, the meaning of data in a spreadsheet is obvious. For instance, in the relation `firstname` it hardly needs to be said that it contains the first name of each president. But it is not always that obvious. In the second example we saw that the meaning of the relation `capital[President*City]` was far from obvious. It relates a president to the capital city of the state in which he was born. There are two things we need to do about it:
 
 1. replace a relation with a complicated meaning for a simpler one;
 2. document the meaning of each relation.
@@ -145,11 +145,11 @@ RELATION capital[State*City]
 MEANING "The capital of a state is registered in this relation."
 ```
 
-The meaning of a relation gives guidance to the reader in the way we should speak about the contents of the relation. For instance, if the pair $$(p,s)$$ is a pair from `RELATION birth[President*State]`,  the reader should interpret that as "President $$p$$ was born in $$s$$."
+The meaning of a relation gives guidance to the reader in the way we should speak about the contents of the relation. For instance, if the pair $$(p,s)$$ is a pair from `RELATION birth[President*State]`, the reader should interpret that as "President $$p$$ was born in $$s$$."
 
 ## Add multiplicity constraints
 
-For making a data model, you need to do one more thing: decide which relations must be constrained to unique elements. Consider for example the fact that anyone is born in at most one state. A duplicate state of birth therefore considered a mistake. President Van Buren cannot have been born both in New York and in Maine. We can impose that on a data model by stating that `RELATION birth[President*State]`  must be univalent:
+For making a data model, you need to do one more thing: decide which relations must be constrained to unique elements. Consider for example the fact that anyone is born in at most one state. A duplicate state of birth therefore considered a mistake. President Van Buren cannot have been born both in New York and in Maine. We can impose that on a data model by stating that `RELATION birth[President*State]` must be univalent:
 
 ```text
 RELATION birth[President*State] [UNI]
@@ -192,10 +192,7 @@ Five decisions have been made here:
 4. Only one state of birth will be registered.
 5. Every state has only one capital city and every city is capital to only one state.
 
-Note that we can envelop the relation definition in a `CONTEXT` and run it on RAP3.
-Ampersand will produce the following data model:
-![Data model for presidents](../.gitbook/assets/presidents-data-model.png)
-
+Note that we can envelop the relation definition in a `CONTEXT` and run it on RAP3. Ampersand will produce the following data model: ![Data model for presidents](../.gitbook/assets/presidents-data-model.png)
 
 ## Assignment
 
