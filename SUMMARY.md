@@ -60,6 +60,7 @@
   * [Installing the tools manually](installing-ampersand/installing-the-tools-manually.md)
 * [Modeling](modeling/README.md)
   * [Domain modeling](modeling/conceptual-modeling.md)
+  * [Data modeling](modeling/data-modeling.md)
   * [Legal modeling](modeling/legal-modeling.md)
   * [Architecture modeling](modeling/architecture.md)
   * [Metamodeling](modeling/metamodeling.md)
