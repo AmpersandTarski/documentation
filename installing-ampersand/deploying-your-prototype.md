@@ -1,7 +1,8 @@
 ---
 description: >-
-  If you want to deploy your application in the cloud, you want to have basic
-  knowledge of Docker. This instruction lets you deploy on your own laptop.
+  You can deploy your Ampersand program on any system that runs Docker. That
+  could be the cloud, your Windows laptop, your Macbook, a server in a data
+  center, your smartphone, you name it.
 ---
 
 # Deploying your Prototype

@@ -1,13 +1,8 @@
-# Data modeling based on real-life data
+# Data modeling
 
-When a data model serves to build an information system,
-it must ensure that all data that is needed in practice can be represented in the database.
-So you need a practical modeling technique based on actual data.
-By using real-life samples of data, you can decide which data elements to include or leave out in the new model and be reasonably confident
-that you don't leave any gaps.
+When a data model serves to build an  information system, it must ensure that all data that is needed in practice can be represented in the database. So you need a practical modeling technique based on actual data. By using real-life samples of data, you can decide which data elements to include or leave out in the new model and be reasonably confident that you don't leave any gaps.
 
-In this section we will systematically extract concepts and relations based on data from a spreadsheet.
-The result of this analysis is an Ampersand model, which you can use to generate a data model for you.
+In this section we will systematically extract concepts and relations based on data from a spreadsheet. The result of this analysis is an Ampersand model, which you can use to generate a data model for you.
 
 ### Example
 
@@ -47,13 +42,9 @@ POPULATION birth[President*Date] CONTAINS
 
 ## Modeling principle: extract relations from tables
 
-In our example, each row in the spreadsheet represents a president. So, the source concept of each relation is `President`.
-Each column represents a different relation. So we can use the name of each column as relation name.
-Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`. 
+In our example, each row in the spreadsheet represents a president. So, the source concept of each relation is `President`. Each column represents a different relation. So we can use the name of each column as relation name. Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`.
 
-When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done:
-![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.png)
-This drawing shows every relation als a line, drawn from source to target. The arrowhead in the middle is only to remind the reader of which is the source and which is the target concept. If you point the arrowhead from source to target, you will always know how the relation is defined.
+When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done: ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.png) This drawing shows every relation als a line, drawn from source to target. The arrowhead in the middle is only to remind the reader of which is the source and which is the target concept. If you point the arrowhead from source to target, you will always know how the relation is defined.
 
 ## Modeling principle: adapt as needed
 
@@ -67,10 +58,9 @@ Suppose we have a second table, which also has information
 | New York | New York | Roosevelt |
 | Georgia | Atlanta | Carter |
 
-This table is similar with respect to the interpretation of a row: here too, each row represents a president.
-However, the presidents aren't numbered in this table, so we have to add these numbers.
+This table is similar with respect to the interpretation of a row: here too, each row represents a president. However, the presidents aren't numbered in this table, so we have to add these numbers.
 
-| | \[State\] | capital | president |
+|  | \[State\] | capital | president |
 | :--- | :--- | :--- | :--- |
 | 3 | Vermont | Plymouth | Coolidge |
 | 2 | Hawaii | Honolulu | Obama |
@@ -78,7 +68,7 @@ However, the presidents aren't numbered in this table, so we have to add these n
 | 5 | New York | New York | Roosevelt |
 | 6 | Georgia | Atlanta | Carter |
 
-Numbering rows has the advantage that it is easier to recognise a president. 
+Numbering rows has the advantage that it is easier to recognise a president.
 
 ```text
 POPULATION state[President*State] CONTAINS
@@ -107,53 +97,27 @@ POPULATION capital[President*City] CONTAINS
   ]
 ```
 
-Notice that this deviates slightly from the previous recipe.
-Instead of making a new relation `president[President*President]`, we have reused the relation `lastname`.
-By doing so, we have interpreted the third column of the spreadsheet as the last name of the president.
-More importantly, we have reused an earlier relation.
-The drawing can also be extended:
-![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-2.png)
-
-There seems to be something funny about the relation `capital`.
-In the model this relation pairs presidents to capital cities of the state in which they were born.
-This meaning can be made more obvious, by redefining relations somewhat:
-
-```text
-POPULATION capital[State*City] CONTAINS
-  [ ("Kentucky", "Frankfort")
-  , ("Hawaii", "Honolulu")
-  , ("Vermont", "Plymouth")
-  , ("New York", "New York")
-  , ("Georgia", "Atlanta")
-  ]
-```
-
-![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-3.png)
+Notice that this does deviates slightly from the previous recipe. Instead of making a relation `president[President*President]`, we have reused the relation `lastname`. By doing so, we have interpreted the third column of the spreadsheet as the last name of the president. More importantly, we have reused an earlier relation. The drawing can also be extended: ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents-2.png)
 
 ## Reusing existing data
 
-In practical applications, you might want to reuse data from existing spreadsheets.
-People tend to have lots of "informal administration" in spreadsheets, which gives you access to authentic population. Surely you need that data organized in rows, but fortunately that is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated. In other cases, you have some work organizing the spreadsheet for importing it.
+In practical applications, you might want to reuse data from existing spreadsheets. People tend to have lots of "informal administration" in spreadsheets, which gives you access to authentic population. Surely you need that data organized in rows, but fortunately that is reasonably common. In such cases, you just add two lines above each table to inform Ampersand about the relations that are populated. In other cases, you have some work organizing the spreadsheet for importing it.
 
 ## Uploading your spreadsheet
 
 You will find the Excel import function in the menu bar on the top right of your screen
 
-
-
-
-
 ![](../.gitbook/assets/screenshot-import.png)
 
-This is what your upload screen looks like: 
+This is what your upload screen looks like:
 
 ![](../.gitbook/assets/screenshot-upload-excel.png)
 
- You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green 
+You can upload one or more .xlsx-files by dropping them in the drop zone or by selecting them. You have to upload the population with the green
 
 _Upload_
 
- button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
+button. At that time, all population from the .xlsx-file is added to the context and checked for inconsistencies. As a result, you may get errors when uploading. Only error-free spreadsheets will be uploaded successfully. As long as an error remains, the population in your context will not change.
 
 ## Assignment
 

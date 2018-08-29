@@ -1,7 +1,3 @@
----
-description: Why is Ampersand the way it is? This chapter documents the reasons.
----
-
 # Design considerations
 
 The design considerations of Ampersand are treated as principles, not as laws. In case of conflicting design considerations, choices have been made. In some cases, the Ampersand distribution contains obvious aberrations which will be fixed some time in the future. However, none of that degrades the value of the considerations and the passion of the Ampersand team to implement them all. 
