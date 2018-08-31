@@ -133,7 +133,7 @@ RELATION firstname[President*Name]
 MEANING "The first name of a president is registered in this relation."
 
 RELATION lastname[President*Surname]
-MEANING "The first name of a president is registered in this relation."
+MEANING "The last name of a president is registered in this relation."
 
 RELATION birth[President*Date]
 MEANING "The date of birth of a president is registered in this relation."
@@ -170,7 +170,7 @@ RELATION firstname[President*Name] [UNI]
 MEANING "The first name of a president is registered in this relation."
 
 RELATION lastname[President*Surname]
-MEANING "The first name of a president is registered in this relation."
+MEANING "The last name of a president is registered in this relation."
 
 RELATION birth[President*Date] [UNI]
 MEANING "The date of birth of a president is registered in this relation."
@@ -186,17 +186,18 @@ ENDCONTEXT
 
 Five decisions have been made here:
 
-1. We will register only one first name for every president.
-2. The system may register multiple last names.
-3. Only one date of birth will be registered.
-4. Only one state of birth will be registered.
-5. Every state has only one capital city and every city is capital to only one state.
+1. We will register only one first name for every president, as a result of constraining the relation `firstname` to be univalent.
+2. The system may register multiple last names, as a result of not imposing any constraints on the relation `lastname`.
+3. Only one date of birth will be registered, as a result of constraining the relation `birth` to be univalent
+4. Only one state of birth will be registered, as a result of constraining the relation `state` to be univalent
+5. Every state has only one capital city and every city is capital to only one state, as a result of constraining the relation `capital` to be univalent and injective.
 
 Note that we can envelop the relation definition in a `CONTEXT` and run it on RAP3. Ampersand will produce the following data model: ![Data model for presidents](../.gitbook/assets/presidents-data-model.png)
 
 ## Assignment
 
-Generate a functional specification from this script, open the generated document, and look up what your data model looks like.
+1. Generate a functional specification from this script, open the generated document, and look up what your data model looks like.
+2. Make a data analysis of a small problem of your own choosing; then generate a functional specification from that script.
 
 ## What have you learned?
 
@@ -206,5 +207,7 @@ After finishing your assignment, you have learned:
 * how to analyze spreadsheet data and produce relations from it;
 * why it is necessary to document meaning for each relation;
 * how to constrain relations with univalence and injectivity;
+* how easily mistakes are made \(by using the Ampersand compiler in the assignment\);
+* how Ampersand's messages help you fix mistakes;
 * how to make Ampersand create a data model based on your data analysis.
 
