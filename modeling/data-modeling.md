@@ -15,7 +15,7 @@ Let us start by looking at an example:
 | 3 | Calvin | Coolidge | July 4, 1872 |
 | 4 | Dwight | Eisenhower | October 14, 1890 |
 
-Since Ampersand works with relations, it must represent this table as relations. Three relations can do the job in the following manner:
+Since Ampersand works with [relations](../the-language-ampersand/relations.md), it must represent this table as relations. Three relations can do the job in the following manner:
 
 ```text
 POPULATION firstname[President*Name] CONTAINS
@@ -42,7 +42,7 @@ POPULATION birth[President*Date] CONTAINS
 
 ## Extract relations from tables
 
-In our example, each row in the spreadsheet represents a president. So, the source concept of each relation is `President`. Each column represents a different relation. So we can use the name of each column as relation name. Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`.
+In our example, each row in the spreadsheet represents a president. So, the [source concept](../the-language-ampersand/relations.md#examples) of each relation is `President`. Each column represents a different relation. So we can use the name of each column as relation name. Then, we invent names to describe the content of each column: `Name`, `Surname`, `Date`.
 
 When things get bigger, it is useful to draw the relations, so you keep overview. Here is how it is done: ![Relation diagram for presidents](../.gitbook/assets/concepts-presidents.png) This drawing shows every relation als a line, drawn from source to target. The arrowhead in the middle is only to remind the reader of which is the source and which is the target concept. If you point the arrowhead from source to target, you will always know how the relation is defined.
 

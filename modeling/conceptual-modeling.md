@@ -1,11 +1,11 @@
 ---
 description: >-
-  Most information problems in practice require analysis. Domain modeling is a
-  conceptual analysis technique that helps you explore problems you don't
-  understand yet.
+  If you want to design for users, you and your team must understand their
+  domain language. Focus your time and attention to that domain and let
+  Ampersand do the boring hard work that follows...
 ---
 
-# Domain modeling
+# Domain Driven Design
 
 ## Why bother?
 

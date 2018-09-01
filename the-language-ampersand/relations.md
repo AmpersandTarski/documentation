@@ -24,6 +24,13 @@ PRAGMA "Order " " has contract " " as its legal basis."
 MEANING "Every Order has a unique ContractID which specifies the legal basis for that particular order."
 ```
 
+In this example:
+
+* `contract` is the _**name**_ of the relation,
+* `Order` is the _**source concept**_ of the relation,
+* `ContractID` is the _**target concept**_ of this relation, and
+* `UNI` and `TOT` are _**constraints**_ of this relation.
+
 ## Syntax and meaning
 
 Each relation used in Ampersand has to be declared. This means that the user tells the system that this particular relation exists. A relation declaration can have one of the following forms:
