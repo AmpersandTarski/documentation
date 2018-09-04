@@ -23,6 +23,8 @@ The conceptual model of Enrollment can be represented with a diagram:
 
 ![conceptual model of Enrollment](https://github.com/AmpersandTarski/documentation/blob/master/assets/BR%20course%20%20-%20Pagina%201.png)
 
+Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation.
+
 In the code you can find the MEANING of each relation in natural English. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that that specific student is taking. The same student can appear in more pairs and the same course can appear in more pairs. But each combination is unique, a specific pair \(x,y\) can only appear in the set once.
 
 In the code you see the keyword `[TOT]` in the definition of the relation `takes`. It is called a multiplicity. The multiplicity 'total' means that each student must take at least one course.
