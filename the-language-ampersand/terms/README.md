@@ -9,11 +9,11 @@ description: >-
 
 ## Purpose
 
-The purpose of an term is to compute pairs that constitute a relation. We use operators to assemble terms from smaller ones, to express in formal language precisely what is meant in the natural language of the business.
+The purpose of an term is to compute pairs that constitute a relation. We use operators to assemble terms from smaller terms, to express in formal language precisely what is meant in the natural language of the business. The smallest term is a single relation.
 
 ## Description
 
-An term is a combination of operators and relations. Its meaning is a set of pairs.
+An term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation.
 
 ## Examples
 
@@ -62,7 +62,7 @@ Repeated uses of an associative operator does not require brackets. So $$r\cap s
 
 ## Notation on the keyboard
 
-When coding in Ampersand, these operators are typed with characters on the keyboard. The correspondence between the operators in code and in math is given in the following table:
+When coding in Ampersand, these operators are typed with characters on the keyboard. The following table shows the operators in math and their equivalent in code:
 
 | operator name | code | math | remark |
 | :--- | :---: | :---: | :--- |
