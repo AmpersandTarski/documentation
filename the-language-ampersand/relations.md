@@ -8,7 +8,7 @@ A _**population statement**_ specifies which pairs \(of atoms\) are in a relatio
 
 ## Description
 
-A relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation, for example by a user typing data into an Ampersand application. So the contents of a relation are changing over time.
+A relation is a set that contains pairs of atoms. Over time, pairs can be inserted into or deleted from a relation, for example by a user typing data into an Ampersand application. So the content of a relation is changing over time.
 
 When discussing relations, an arbitrary relation is referred to as $$r$$, $$s$$, or $$t$$. To say that a pair $$(a,b)$$ belongs to a relation $$r$$, we write $$a\ r\ b$$ or alternatively $$(a,b)\in r$$.
 
@@ -33,7 +33,7 @@ In this example:
 
 ## Syntax and meaning
 
-Each relation used in Ampersand has to be declared. This means that the user tells the system that this particular relation exists. A relation declaration can have one of the following forms:
+Each relation used in Ampersand has to be declared. This means that the developer tells the system that this particular relation exists. A relation declaration can have one of the following formats:
 
 ```text
 RELATION <lower case identifier>
@@ -51,13 +51,13 @@ RELATION <lower case identifier>
 <properties>? <pragma>? <meaning>?
 ```
 
-The second and third ways will become obsolete in future versions of Ampersand.
+The second and third alternative will become obsolete in future versions of Ampersand.
 
-All three ways define a relation by its name, its source concept and its target concept. By convention, the name of a relation is a single word that starts with a lower case letter. The source and target concepts start with an upper case letter. This convention avoids confusion between concepts and relations.
+All three formats define a relation by its name, its source concept and its target concept. By convention, the name of a relation is a single word that starts with a lower case letter. The source and target concepts start with an upper case letter. This convention avoids confusion between concepts and relations.
 
 A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.
 
-A relation statement may occur anywhere inside a context, both inside and outside of a pattern.
+A relation statement may occur anywhere inside a context, both inside and outside a pattern.
 
 The optional `<properties>`, `<pragma>`, and `<meaning>`-parts are discussed in the sequel.
 
@@ -69,10 +69,10 @@ The `<properties>`-part is meant for writing multiplicity constraints in a comma
 
 | & | property | semantics |
 | :--- | :--- | :--- |
-| UNI | univalent | For any `a` in `A` there can only be one `b` in `B` in the population of `r`. This implies that every `a` occurs only once \(is unique\) in the domain of `r`. |
-| INJ | injective | For any `b` in `B` there can only be one `a` in `A` in the population of `r`. So, every `b` occurs only once in the codomain of `r`. |
-| SUR | surjective | For any `b` in `B` there must be \(at least\) one `a` in `A` in the population of 'r\`. |
-| TOT | total | For any `a` in `A` there must be \(at least\) one `b` in `B` in the population of 'r\`. |
+| UNI | univalent | For any `a` in `A` there can be not more than one `b` in `B` in the population of `r`. This implies that every `a` occurs not more than once \(is unique\) in the domain of `r`. |
+| INJ | injective | For any `b` in `B` there can be not more than one `a` in `A` in the population of `r`. So, every `b` occurs not more than once in the domain of `r`. |
+| SUR | surjective | For any `b` in `B` there must be at least one `a` in `A` in the population of `r`. |
+| TOT | total | For any `a` in `A` there must be at least one `b` in `B` in the population of `r`. |
 
 There are additional relations that can be specified on endo relations. An endo relation is a relation where the source and target concepts are equal. `r[A*A]`.
 
@@ -116,7 +116,7 @@ The `PRAGMA` tells us that it makes sense to utter the phrase `"Provider Mario's
 
 ## MEANING
 
-A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation with and is printed in the functional specification. A `<meaning>` has the following form:
+A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation and is printed in the functional specification. A `<meaning>` has the following form:
 
 ```text
 MEANING <language>? <markup>? <text>
