@@ -1,6 +1,6 @@
 # Tutorial
 
-This tutorial is meant for Business- or IT-professionals who want to learn about [information systems](https://player.ou.nl/wowzaportlets/#!production/BDAXK2L) development. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for individual study, but you can always ask your tutor is you things are unclear.The required theory is also available in Learning Unit 3 of the coursebook of [a course given at the Open University of the Netherlands](https://www.ou.nl/-/IM0403_Rule-Based-Design).
+This tutorial is meant for Business- or IT-professionals who want to learn about [information systems](https://player.ou.nl/wowzaportlets/#!production/BDAXK2L) development. Knowledge about Ampersand is not presumed. The text offers pointers for you to find out many things on your own. This tutorial is intended for individual study, but you can always ask your tutor if things are unclear.The required theory is also available in Learning Unit 3 of the coursebook of [a course given at the Open University of the Netherlands](https://www.ou.nl/-/IM0403_Rule-Based-Design).
 
 ## Overview
 
