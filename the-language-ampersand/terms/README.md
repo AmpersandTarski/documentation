@@ -50,11 +50,11 @@ The operators come in families. We advise novices to study only the rule operato
 | [boolean](semantics-in-logic/boolean-operators.md) | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | 5 |
 | [relational](semantics-in-logic/relational-operators.md) | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | 5 |
 | [residual](semantics-in-logic/residual-operators.md) | $$\backslash$$, $$/$$, and $$♢$$ | 3 |  |  |
-| Kleene |  |  | $$∗ $$ and $$+$$ | 5 |
+| Kleene |  |  | $$∗$$ and $$+$$ | 5 |
 
 ## Brackets
 
-Operators with different binding power may be used in the same term without brackets, because the binding power tells how it is interpreted. For example $$r\cap s;t$$ means $$r\cap(s;t)$$ because $$;$$ has a higher binding power than $$\cap$$. 
+Operators with different binding power may be used in the same term without brackets, because the binding power tells how it is interpreted. For example $$r\cap s;t$$ means $$r\cap(s;t)$$ because $$;$$ has a higher binding power than $$\cap$$.
 
 Operators with the same binding power must be used unambiguously. For example: $$r\cap(s-t)$$ means something different than $$(r\cap s)-t$$. In such cases Ampersand insists on the use of brackets, so readers without knowledge of the binding powers of the operators can read a term unambiguously.
 
@@ -64,23 +64,21 @@ Repeated uses of an associative operator does not require brackets. So $$r\cap s
 
 When coding in Ampersand, these operators are typed with characters on the keyboard. The following table shows the operators in math and their equivalent in code:
 
-| operator name | code | math | remark |
-| :--- | :---: | :---: | :--- |
-| equivalence \(equal\) | `=` | $$=$$ |  |
-| inclusion | `|-` | $$\subseteq$$ |  |
-| intersect | `/\` | $$∩$$ | associative |
-| union | `\/` | $$∪$$ | associative |
-| difference \(minus\) | `-` | $$-$$ |  |
-| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |
-| compose | `;` | $$;$$ | associative |
-| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |
-| left residual | `/` | $$/$$ |  |
-| right residual | `\` | $$\backslash$$ |  |
-| diamond | `<>` | $$♢$$ |  |
-| relational product | `!` | $$†$$ | associative |
-| cartesian product | `#` | $$\times$$ |  |
-| reflexive transitive closure | `*` | $$∗$$ | postfix |
-| transitive closure | `+` | $$+$$ | postfix |
-
-## 
+| operator name | code | math | remark |  |
+| :--- | :---: | :---: | :--- | :--- |
+| equivalence \(equal\) | `=` | $$=$$ |  |  |
+| inclusion | \` | -\` | $$\subseteq$$ |  |
+| intersect | `/\` | $$∩$$ | associative |  |
+| union | `\/` | $$∪$$ | associative |  |
+| difference \(minus\) | `-` | $$-$$ |  |  |
+| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |
+| compose | `;` | $$;$$ | associative |  |
+| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |
+| left residual | `/` | $$/$$ |  |  |
+| right residual | `\` | $$\backslash$$ |  |  |
+| diamond | `<>` | $$♢$$ |  |  |
+| relational product | `!` | $$†$$ | associative |  |
+| cartesian product | `#` | $$\times$$ |  |  |
+| reflexive transitive closure | `*` | $$∗$$ | postfix |  |
+| transitive closure | `+` | $$+$$ | postfix |  |
 

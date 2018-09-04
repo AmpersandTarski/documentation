@@ -4,7 +4,7 @@
 
 A _**relation statement**_ says that a relation exists. It introduces \(defines, declares\) the relation in the context that uses the relation statement.
 
-A _**population statement**_ specifies which pairs \(of atoms\) are in a relation. 
+A _**population statement**_ specifies which pairs \(of atoms\) are in a relation.
 
 ## Description
 

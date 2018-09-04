@@ -139,9 +139,6 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ONE`
   * `SESSION`
 * Experimental keywords:
-  * `BYPLUG`
-  * `SQLPLUG`
-  * `PHPPLUG`
   * `SERVICE`
   * `EDITS`
 * Deprecated keywords:
