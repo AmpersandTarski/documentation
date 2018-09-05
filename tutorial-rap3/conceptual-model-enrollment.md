@@ -21,7 +21,7 @@ The goal of the model is to define rules that will govern the behavior of the sy
 
 The conceptual model of Enrollment can be represented with a diagram:
 
-![conceptual model of Enrollment](https://github.com/AmpersandTarski/documentation/blob/master/assets/BR%20course%20%20-%20Pagina%201.png)
+![](../.gitbook/assets/br-course-pagina-1.png)
 
 Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation.
 
