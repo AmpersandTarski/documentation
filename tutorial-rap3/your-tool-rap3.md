@@ -38,7 +38,7 @@ When you click on the blue plus-sign on the top-right side in the menu bar in yo
 * Now you see the information system you have just compiled from the code. You are already familiar with the look and feel. Click the Overview button in the top-left of the screen and have a look around.
 * Try to generate documentation: Click on the button Diagnosis. When RAP3 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can have a better look there.
 
-During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it. **A note of caution: currently a new release of RAP3 will destroy all that is in the database, also your scripts. So save a copy of you script locally at the end of each working session.**
+During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 
 You are now going to change the code and view the results in RAP3. Close the browser-tab with the running prototype and go back to the browser-tab RAP3 with the editor.
 
