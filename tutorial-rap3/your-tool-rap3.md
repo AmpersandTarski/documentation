@@ -15,16 +15,11 @@ Notes:
 
   This login-screen is also the screen to logout later.
 
-* When RAP3 is updated, probably your account will be reset. You need to register again.
+* When RAP3 is updated, probably your account will be reset. You need to register again. We will inform you in the unlikely event that this happens during a course.
 
 ## Disclaimer
 
 RAP3 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
-
-> **Important note:  
-> RAP3 is being improved constantly, new releases can be done daily.  
-> Currently all account information and scripts will be deleted with each new release.  
-> So: keep a local copy of your scripts and if you cannot login anymore, just re-create your account.**
 
 ## Making your first Ampersand script
 
