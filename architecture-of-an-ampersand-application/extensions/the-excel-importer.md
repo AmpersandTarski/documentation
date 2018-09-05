@@ -8,17 +8,38 @@ Nothing special is required for installation; this extension is enabled by defau
 
 ## Importing Excel files in a running prototype
 
-If the user has the required access rights to import a population \(by default no login/roles are required\), the excel import is available via the menu bar.
+If the user has the required access rights to import a population \(by default no login/roles are required\), the excel import is available via the Applications icon in the right half of the menu bar.
 
 ## How to create importable Excel files
 
 When you have a prototype running for an Ampersand context, you can import data for that prototype from an Excel file, which effectively adds the population specified in the Excel file to the population that is currently already in the database. This section describes how to construct an Excel file that can be used to do this.
 
-There are 2 specifications possible 1 Using a service definition \(automatically detected based on sheet name equals service name\) 2 Using the \[import block\] syntax
+There are 2 ways to import an Excel file. One is by using an appropriate INTERFACE definition \(automatically detected based on sheet name equals INTERFACE name\). The benefit of using this method is that you do not have to change your Excel files when you modify the names of relations in your amperand model. It is also more readable for third parties. The other is the \(traditional\) \[import block\] syntax.
 
-### Using a service defintion
+### Using an INTERFACE defintion
 
-To be specified. Functionality is already implemented
+To be further specified. Functionality is already implemented.
+
+This method is used to import data from a page in a spreadsheet document whenever the title of the page is the name of an INTERFACE that you have defined in your script. So if your page is called `Accounts`, and you have defined
+
+```
+INTERFACE "Accounts": I[Account] cRud BOX
+   [ "Username": accUserid cRUd
+   , "Password": accPassword cRUd
+   , "Role": accAllowedRoles cRUd
+   ]
+```
+your page could look like this:
+
+| Account | Username | Password | Role |
+| :--- | :--- | :--- | :--- |
+| \_NEW | Student1 | Stud1PW | Student |
+| \_NEW | S2 | Stud2PW | Student |
+
+Impoprting this page will create two accounts, one for Student1 and another for S2.
+
+As you can see, the first cell must have the concept of the INTERFACE \(`Account`\), and subsequent header fields have the names of the labels in the INTERFACE. You can change the order of the columns, as long as the first column is left as is.
+
 
 ### Using the \[import block\] syntax
 
