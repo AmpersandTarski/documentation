@@ -194,6 +194,10 @@ Five decisions have been made here:
 
 Note that we can envelop the relation definition in a `CONTEXT` and run it on RAP3. Ampersand will produce the following data model: ![Data model for presidents](../.gitbook/assets/presidents-data-model.png)
 
+## Bonus
+
+In [this video](https://youtu.be/ruO4UgjA11E) you sit in in a private lecture in Dutch on data modeling. In 32 minutes, most of the above is being discussed. It may help you to get a different perspective on the theory above.
+
 ## Assignment
 
 1. Generate a functional specification from this script, open the generated document, and look up what your data model looks like.

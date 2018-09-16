@@ -22,13 +22,14 @@ To be further specified. Functionality is already implemented.
 
 This method is used to import data from a page in a spreadsheet document whenever the title of the page is the name of an INTERFACE that you have defined in your script. So if your page is called `Accounts`, and you have defined
 
-```
+```text
 INTERFACE "Accounts": I[Account] cRud BOX
    [ "Username": accUserid cRUd
    , "Password": accPassword cRUd
    , "Role": accAllowedRoles cRUd
    ]
 ```
+
 your page could look like this:
 
 | Account | Username | Password | Role |
@@ -39,7 +40,6 @@ your page could look like this:
 Impoprting this page will create two accounts, one for Student1 and another for S2.
 
 As you can see, the first cell must have the concept of the INTERFACE \(`Account`\), and subsequent header fields have the names of the labels in the INTERFACE. You can change the order of the columns, as long as the first column is left as is.
-
 
 ### Using the \[import block\] syntax
 
