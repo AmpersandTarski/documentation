@@ -1,8 +1,5 @@
 ---
-description: >-
-  Most information problems in practice require analysis. Domain modeling is a
-  conceptual analysis technique that helps you explore problems you don't
-  understand yet.
+description: This page is under construction
 ---
 
 # Domain Driven Design

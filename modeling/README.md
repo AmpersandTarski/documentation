@@ -9,7 +9,9 @@ There can be many reasons for making an Ampersand model. Just a few examples are
 * You need correct software. Develop your software in Ampersand and use the rules to establish correctness.
 * Your assignment is to cleanse a polluted database. Try to find the rules that define what clean data is, and run your data through Ampersand.
 
-There are most certainly other reasons for making an Ampersand model, because a good conceptual analysis precedes practically every problem that is worth solving.
+This chapter about modeling discusses different ways of using Ampersand. Each section serves a different purpose \(e.g. how to make a data model, how to make a legal analysis, etc.\), using the same tool \(Ampersand\). These sections can be used as study material.
+
+The ways of using Ampersand are not exhaustive. There are most certainly other reasons for making an Ampersand model, because a good conceptual analysis precedes practically every problem that is worth solving.
 
 ## Model
 
