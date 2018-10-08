@@ -54,6 +54,7 @@
   * [The TABLE statement](the-language-ampersand/the-table-statement.md)
   * [Language support](the-language-ampersand/language-support.md)
   * [Syntactical Conventions](the-language-ampersand/syntactical-conventions.md)
+  * [The Preprocessor](the-language-ampersand/the-preprocessor.md)
   * [Best Practices](the-language-ampersand/best-practices.md)
   * [Design considerations](the-language-ampersand/design-considerations.md)
 * [Installing Ampersand](installing-ampersand/README.md)
