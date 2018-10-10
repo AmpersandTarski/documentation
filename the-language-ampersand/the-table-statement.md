@@ -1,5 +1,9 @@
 # The TABLE statement
 
+## Disclaimer
+
+This statement will be available in Ampersand vs. 4.
+
 ## Purpose
 
 This statement provides syntactic sugar for defining tabular information conveniently. It introduces a number of relations and rules in a single statement, to simplify a script.
@@ -70,6 +74,3 @@ TABLE T(pi:P, rho:R)
 IDENT T(pi,rho)
 RULE e = pi~;rho
 ```
-
-This statement will be available in Ampersand vs. 4.
-
