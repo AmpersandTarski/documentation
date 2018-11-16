@@ -68,7 +68,8 @@ Note that the violations of rule `r1` are precisely the pairs the ExecEngine mus
 * The examples use `SRC I` or `TGT I` to produce atoms that are to be inserted or deleted. However, `I` may be any term whose source concept is the same as that of the preceeding `SRC` or `TGT`. 
 * The `SRC <term>` and `TGT <term>` is a set of pairs \(a,b\), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<term>`. In the examples given, this set of atoms has cardinality 1 \(which is most often the case\). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality &gt; 1, then `InsPair` will insert them all whereas `DelPair` will produce an error. 
 
-## Example \(`NewStruct`\)
+
+## Example \(`InsAtom`\) and \(`{EX}`\)
 
 Consider the following example:
 
@@ -84,45 +85,46 @@ The following rule states that for every project leader, an assignment must exis
 RULE "Require Assignment" : pl |- project~;assignee
 ```
 
-This calls for the automated creation of an atom in the concept `Assignment`, followed by the population of relations `project` and `assignee` using this newly created atom. This is specified as follows:
+This calls for two different things: first, the automated creation of an atom in the concept `Assignment`, and second the consecutive population of relations `project` and `assignee` using this newly created atom.
+
+This is specified as follows:
 
 ```text
 ROLE "ExecEngine" MAINTAINS "Create Assignment"
 RULE "Create Assignment" : pl |- project~;assignee
-VIOLATION (TXT "NewStruct;Assignment"
-             , TXT ";project;Assignment;_NEW;Project;", SRC I
-             , TXT ";assignee;Assignment;_NEW;Person;", TGT I
+VIOLATION (TXT "{EX} InsAtom;Assignment"
+          ,TXT "{EX} InsPair;project;Assignment;_NEW;Project;", SRC I
+          ,TXT "{EX} InsPair;assignee;Assignment;_NEW;Person;", TGT I
           )
 ```
 
-The first statement assigns the rule `Create Assignment` to the ExecEngine. The prototype will send all violations of this rule to the ExecEngine. The rule says that for every project with a project leader, there must be an assignment. Without that assignment, the rule is violated. The `VIOLATION` statement specifies that a new `Assignment` must be made for each violation. For that purpose, we use the predefined function `NewStruct`. Its arguments are separated by semicolons.
+First, note that we have three consecutive statements: an `InsAtom` command followed by two `InsPair`s. Using the phrase `{EX}` in front of each statement allows the interpreter of the violation texts to recognize each individual command and its arguments. In order to ensure that you do not forget about this, you may want to consider habituating yourself to _always_ use {EX} before any function.
 
-The first argument specifies the concept in which a new atom must be generated \(`Assignment` in the example\). The first argument is followed by any number of 5-tuples \(a 5-tuple is a sequence of 5 arguments\). This means that the total number of arguments of `NewStruct` is 5k+1, where k is the number of 5-tuples. We make this explicit here because it is our experience that lacking or superfluous semicolons are often causing erroneous calls `to NewStruct`.
+The first statement assigns the rule `Create Assignment` to the ExecEngine. The prototype will send all violations of this rule to the ExecEngine. The rule says that for every project with a project leader, there must be an assignment. Without that assignment, the rule is violated. The `VIOLATION` statement specifies that a new `Assignment` must be made for each violation. For that purpose, we use the predefined function `InsAtom`. This function takes a single argument, being the concept within which an atom has to be generated \(`Assignment` in the example\).
 
-Every 5-tuple consists of the following elements:
-
-1. The name of a relation into which a pair is to be added;
-2. the source-concept of that relation;
-3. the source-atom of the pair to be added;
-4. the target-concept of that relation;
-5. the target-atom of the pair to be added.
+The second statement calls the `InsPair` function in order to populate the relation `project`, in the manner we described above. Note that at the position where we want to specify the newly created Assignment atom, we use the phrase `_NEW`. The third statement calls the `InsPair` function in a similar fashion, and thus populates the relation `assignee`.
 
 Note that
 
-* a 5-tuple has the same structure as that of `InsPair` \(and `DelPair`\), and indeed, internally the function `InsPair` is called. This implies that the notes provided in the `InsPair` section also apply to these 5-tuples.
-* the source-atom or the target-atom \(or both\) can be the keyword `_NEW`, which refers to the atom created by `NewStruct`; in this case, the corresponding concept \(obviously\) MUST be the same as the first argument in `NewStruct`.
-* if you use a relation that has a \(source or target\) concept that is a specialization or generalization of the concept of the `_NEW`ly generated atom, you MUST use the concept of the `NEW`ly generated atom as concept-argument, rather than the concept by which the \(source or target\) of the to-be-populated relation was defined.
+* in an `InsPair` \(or `DelPair`\), the source-atom or the target-atom \(or both\) can be the keyword `_NEW`.
+* the keyword `_NEW` refers to the last atom that was created by the (last) `InsAtom` statement that was executed in the violation.
+* when using `_NEW`, the corresponding concept \(obviously\) MUST be the same as the concept as specified in the `InsAtom` statement.
 
 Here is how it works. Suppose the pair `("Zeus-III", "Rhea")` is added to the relation `pl`, meaning that `Rhea` is being made a project leader of project `Zeus-III`. This produces a violation `("Zeus-III", "Rhea")` of the rule `Create Assignment`. The associated VIOLATION statement produces the text
 
 ```text
- NewStruct;Assignment;project;Assignment;_New;Project;Zeus-III;assignee;Assignment;_NEW;Person;Rhea
+ {EX} InsAtom;Assignment{EX} InsPair;project;Assignment;_New;Project;Zeus-III{EX} InsPair;assignee;Assignment;_NEW;Person;Rhea
 ```
 
-which is passed to the ExecEngine, which executes the function `NewStruct`, the result of which is that
+which is passed to the ExecEngine, which splits the text in three statements 
 
-* a new atom in concept `Assignment` is created \(let's say it is `Assignment_3495812395`;
-* every 5-tuple is preprocessed, meaning that any keyword `_NEW` is replaced with the value of the newly created atom. Then, the result is passed to the function `InsPair`, as defined above, which means \(for the given example\) that `("Assignment_3495812395", "Zeus-III")` is inserted into relation `project[Assignment*Project]`, and  `("Assignment_3495812395", "Rhea")` is inserted into relation `assignee[Assignment*Person]`.
+```text
+ InsAtom;Assignment
+ InsPair;project;Assignment;_New;Project;Zeus-III
+ InsPair;assignee;Assignment;_NEW;Person;Rhea
+```
+
+and subsequently executes them. Executing the `InsAtom` statement creates a new atom in concept `Assignment` \(let's say it is `Assignment_3495812395`. The keywords `_NEW` in the InsPair statements are then replaced by `Assignment_3495812395`, so that `("Assignment_3495812395", "Zeus-III")` is inserted into relation `project[Assignment*Project]`, and  `("Assignment_3495812395", "Rhea")` is inserted into relation `assignee[Assignment*Person]`.
 
 ## Example \(`DelAtom`\)
 
@@ -137,30 +139,6 @@ VIOLATION ( TXT "DelAtom;Assignment;", SRC I)
 The function 'DelAtom' is predefined, and takes two arguments: 1. the concept from which an atom is to be deleted; 2. the actual atom to be deleted.
 
 Note that when an atom is deleted, also every pair \(in any relation\) is deleted if either its source atom or target atom is the deleted atom.
-
-## Example \(`{EX}`\)
-
-Sometimes, resolving a violation may require multiple function calls, e.g. multiple `InsPair`s, combinations of `InsPair`s and `DelPair`s, etc.
-
-Inserting the tag `{EX}` before each function will do the trick. Here is an example:
-
-```text
-r1 :: A * B
-r2 :: A * C
-newA :: B * C
-
-ROLE ExecEngine MAINTAINS "Create an A"
-RULE "Create an A": newA |- (r1~;r2)-newA
-VIOLATION (TXT "{EX} NewStruct;A"
-                     , TXT ";r1;A;_NEW;B;", SRC I
-                     , TXT ";r2;A;_NEW;C;", TGT I
-           TXT "{EX} DelPair;newA;B;", SRC I, TXT ";C;", TGT I
-          )
-```
-
-This does the following: Whenever `newA` is populated with pair `("b","c")`, the rule is violated \(as the rule is only true when `newA` has an empty population\). The ExecEngine then creates a new atom in concept A \(say, `a`\), and uses it to populate relations `r1` and `r2` with pairs `("a","b")` and `("a","c")` respectively. Then, the pair `("b","c")` is removed from relation `newA`, thus reverting the violation.
-
-You may want to consider habituating yourself to _always_ use {EX} before any function.
 
 ## Example \(`_;`\)
 
