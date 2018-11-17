@@ -68,7 +68,6 @@ Note that the violations of rule `r1` are precisely the pairs the ExecEngine mus
 * The examples use `SRC I` or `TGT I` to produce atoms that are to be inserted or deleted. However, `I` may be any term whose source concept is the same as that of the preceeding `SRC` or `TGT`. 
 * The `SRC <term>` and `TGT <term>` is a set of pairs \(a,b\), where a is the source atom or target atom of the violation and b is a set of atoms that is the result of `<term>`. In the examples given, this set of atoms has cardinality 1 \(which is most often the case\). However, if it is empty, that is considered regular behaviour, and this will hence not result in an error. Also, if it has a cardinality &gt; 1, then `InsPair` will insert them all whereas `DelPair` will produce an error. 
 
-
 ## Example \(`InsAtom`\) and \(`{EX}`\)
 
 Consider the following example:
@@ -107,7 +106,7 @@ The second statement calls the `InsPair` function in order to populate the relat
 Note that
 
 * in an `InsPair` \(or `DelPair`\), the source-atom or the target-atom \(or both\) can be the keyword `_NEW`.
-* the keyword `_NEW` refers to the last atom that was created by the (last) `InsAtom` statement that was executed in the violation.
+* the keyword `_NEW` refers to the last atom that was created by the \(last\) `InsAtom` statement that was executed in the violation.
 * when using `_NEW`, the corresponding concept \(obviously\) MUST be the same as the concept as specified in the `InsAtom` statement.
 
 Here is how it works. Suppose the pair `("Zeus-III", "Rhea")` is added to the relation `pl`, meaning that `Rhea` is being made a project leader of project `Zeus-III`. This produces a violation `("Zeus-III", "Rhea")` of the rule `Create Assignment`. The associated VIOLATION statement produces the text
@@ -116,7 +115,7 @@ Here is how it works. Suppose the pair `("Zeus-III", "Rhea")` is added to the re
  {EX} InsAtom;Assignment{EX} InsPair;project;Assignment;_New;Project;Zeus-III{EX} InsPair;assignee;Assignment;_NEW;Person;Rhea
 ```
 
-which is passed to the ExecEngine, which splits the text in three statements 
+which is passed to the ExecEngine, which splits the text in three statements
 
 ```text
  InsAtom;Assignment
@@ -124,7 +123,7 @@ which is passed to the ExecEngine, which splits the text in three statements
  InsPair;assignee;Assignment;_NEW;Person;Rhea
 ```
 
-and subsequently executes them. Executing the `InsAtom` statement creates a new atom in concept `Assignment` \(let's say it is `Assignment_3495812395`. The keywords `_NEW` in the InsPair statements are then replaced by `Assignment_3495812395`, so that `("Assignment_3495812395", "Zeus-III")` is inserted into relation `project[Assignment*Project]`, and  `("Assignment_3495812395", "Rhea")` is inserted into relation `assignee[Assignment*Person]`.
+and subsequently executes them. Executing the `InsAtom` statement creates a new atom in concept `Assignment` \(let's say it is `Assignment_3495812395`. The keywords `_NEW` in the InsPair statements are then replaced by `Assignment_3495812395`, so that `("Assignment_3495812395", "Zeus-III")` is inserted into relation `project[Assignment*Project]`, and `("Assignment_3495812395", "Rhea")` is inserted into relation `assignee[Assignment*Person]`.
 
 ## Example \(`DelAtom`\)
 

@@ -15,7 +15,7 @@ The preprocessor syntax has been designed in such a way that scripts that use th
 
 ## Examples
 
-Here is an example of how preprocesoor variables can be used within a script. In this example, a list of usernames and passwords is shown when the preprocessor variable `Developing` is true. If that variable is false, all texts between the `--#IF` and `--#ENDIF` are treated as comments \(ignored\)
+Here is an example of how preprocessor variables can be used within a script. In this example, a list of usernames and passwords is shown when the preprocessor variable `Developing` is true. If that variable is false, all texts between the `--#IF` and `--#ENDIF` are treated as comments \(ignored\)
 
 ```text
 INTERFACE "Login": I[LoginForm] BOX
