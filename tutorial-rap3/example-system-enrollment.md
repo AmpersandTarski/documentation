@@ -4,7 +4,7 @@ In this section you will learn the basic structure of information systems accord
 
 We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take.
 
-[Try it out](http://ampersand.tarski.nl/Enroll)! Browse through the data and change things. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
+[Try it out](http://ampersand.tarski.nl/Enroll)! Click on the link, and then click on the icob "Overview" in the top-left of the screen. The application will start. Browse through the data and change things. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
 ## Assignment
 
