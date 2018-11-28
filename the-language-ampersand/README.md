@@ -31,7 +31,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
     <tr>
       <td style="text-align:left">Pair</td>
       <td style="text-align:left">two atoms: a source and a target atom</td>
-      <td style="text-align:left"><code>(&quot;Ida&quot;,5)</code>
+      <td style="text-align:left"><code>(&quot;Ida&quot;, 5)</code>
       </td>
       <td style="text-align:left">to state that two atoms are related</td>
     </tr>

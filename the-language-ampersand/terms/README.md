@@ -64,21 +64,21 @@ Repeated uses of an associative operator does not require brackets. So $$r\cap s
 
 When coding in Ampersand, these operators are typed with characters on the keyboard. The following table shows the operators in math and their equivalent in code:
 
-| operator name | code | math | remark |  |
-| :--- | :---: | :---: | :--- | :--- |
-| equivalence \(equal\) | `=` | $$=$$ |  |  |
-| inclusion | `|-` | $$\subseteq$$ |  |  |
-| intersect | `/\` | $$∩$$ | associative |  |
-| union | `\/` | $$∪$$ | associative |  |
-| difference \(minus\) | `-` | $$-$$ |  |  |
-| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |
-| compose | `;` | $$;$$ | associative |  |
-| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |
-| left residual | `/` | $$/$$ |  |  |
-| right residual | `\` | $$\backslash$$ |  |  |
-| diamond | `<>` | $$\diamond$$ |  |  |
-| relational product | `!` | $$†$$ | associative |  |
-| cartesian product | `#` | $$\times$$ |  |  |
-| reflexive transitive closure | `*` | $$∗$$ | postfix |  |
-| transitive closure | `+` | $$+$$ | postfix |  |
+| operator name | code | math | remark |  |  |
+| :--- | :---: | :---: | :--- | :--- | :--- |
+| equivalence \(equal\) | `=` | $$=$$ |  |  |  |
+| inclusion | \` | -\` | \subseteq |  |  |
+| intersect | `/\` | $$∩$$ | associative |  |  |
+| union | `\/` | $$∪$$ | associative |  |  |
+| difference \(minus\) | `-` | $$-$$ |  |  |  |
+| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |  |
+| compose | `;` | $$;$$ | associative |  |  |
+| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |  |
+| left residual | `/` | $$/$$ |  |  |  |
+| right residual | `\` | $$\backslash$$ |  |  |  |
+| diamond | `<>` | $$♢$$ |  |  |  |
+| relational product | `!` | $$†$$ | associative |  |  |
+| cartesian product | `#` | $$\times$$ |  |  |  |
+| reflexive transitive closure | `*` | $$∗$$ | postfix |  |  |
+| transitive closure | `+` | $$+$$ | postfix |  |  |
 
