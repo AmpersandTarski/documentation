@@ -39,7 +39,7 @@ terms are combined with operators. Binary operators may require brackets to avoi
 | :--- | :--- | :--- |
 | logic | 1 \(weakest\) | \|-  \(subset\),  `=` \(equal\) |
 | binary boolean | 2 | `\/` \(union\), `/\` \(intersect\), `-` \(difference\) |
-| binary relational | 3 | `;` \(composition\), `\` \(right residual\), `/` \(left residual\) |
+| binary relational | 3 | `;` \(composition\), `!` \(relational addition\), `\` \(right residual\), `/` \(left residual\), `<>` \(diamond operator\) |
 | unary prefix, unary postfix | 4 \(strongest\) | `-` \(complement\), `~` \(converse\) |
 
 Within an operator category, you must place brackets to disambiguate. E.g. `r/\s\/t` is not allowed. You have to write either `(r/\s)\/t` or `r/\(s\/t)`. Across categories, you may omit brackets because a higher precedence binds stronger. So `r;s\/t` means `(r;s)\/t`. \(Note that `(r;s)\/t` and `r;(s\/t)` have different meanings\). Associative operators \(`\/`, `/\`, `;`\) need not be disambiguated with brackets. So `r\/s\/t` and `(r\/s)\/t` and `r\/(s\/t)` all mean exactly the same.
