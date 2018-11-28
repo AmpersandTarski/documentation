@@ -28,8 +28,8 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
 
 | type | purpose | SQL | eq |
 | :--- | :--- | :--- | :--- |
-| ALPHANUMERIC | to represent strings of short length | VARCHAR\(255\) | yes |
-| BIGALPHANUMERIC | to represent large strings of limited length | TEXT | no |
+| ALPHANUMERIC | to represent strings of short length, i.e. less than 255 characters | VARCHAR\(255\) | yes |
+| BIGALPHANUMERIC | to represent large strings of limited length, i.e. less than 64 kb | TEXT | no |
 | HUGEALPHANUMERIC | to represent strings of arbitrary length | MEDIUMTEXT | no |
 | PASSWORD | to represent passwords in a secure way | VARCHAR\(255\) | no |
 | BINARY | to represent uninterpreted binary data of short length | BLOB | no |
@@ -38,7 +38,7 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
 | DATE | to represent dates compatible with ISO8601 | DATE | yes |
 | DATETIME | to represent time stamps compatible with ISO8601 | DATETIME | yes |
 | BOOLEAN | to represent True and False values | BOOLEAN | yes |
-| INTEGER | to represent positive and negative whole numbers | BIGINT | yes |
+| INTEGER | to represent positive and negative whole numbers in the range -2^31 and 2^31 -1 | BIGINT | yes |
 | FLOAT | to represent floating point numbers compatible with ISO8601 | FLOAT | no |
 | Object | to represent a key value for objects; it is not meant to be visible to end users. | VARCHAR\(255\) | yes |
 
