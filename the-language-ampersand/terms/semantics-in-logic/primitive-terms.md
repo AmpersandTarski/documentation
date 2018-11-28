@@ -6,9 +6,9 @@ Every relation you declare contains pairs of atoms. If you declare `RELATION own
 
 When a relation is used in an term, it stands for all pairs it contains at the moment it is evaluated. Those pairs \(also referred to as the _**contents**_ of the relation\) can change over time as users add or delete pairs from it. So when you define the relation, you cannot really tell which pairs it contains.
 
-In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_ and `[Person*Building]` is the _**signature**_ of the relation. The left hand concept, `Person`, is called the _**source**_ of the relation and the right concept, `Building`, is called the _**target**_.
+In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_, `[Person*Building]` is the _**type**_, and `owner[Person*Building]` is the _**signature**_ of the relation. The left hand concept, `Person`, is called the _**source**_ of the relation and the right concept, `Building`, is called the _**target**_.
 
-When a relation is used in an term, we can simply use its name if that is unambiguous. For instance, in this paragraph the name `owner` obviously refers to `RELATION owner[Person*Building]`. In some cases, however the name alone is ambiguous. For example if there are two relations with the same name and different signatures. In such cases Ampersand will try to infer the signature from the context. That however does not always succeed. In such cases, Ampersand generates an error message that asks you to remove the ambiguity by adding the correct signature.
+When a relation is used in an term, we can simply use its name if that is unambiguous. For instance, in this paragraph the name `owner` obviously refers to `RELATION owner[Person*Building]`. In some cases, however the name alone is ambiguous. For example if there are two relations with the same name and different types. In such cases Ampersand will try to infer the type from the context. That however does not always succeed. In such cases, Ampersand generates an error message that asks you to remove the ambiguity by adding the correct type.
 
 If a pair $$(a,b)$$ is an element of a relation $$r$$, we write $$a\ r\ b$$. Alternatively we may write $$(a,b)\in r$$ , since we know that $$r$$ is a set.
 
@@ -20,7 +20,7 @@ $$
 a = b\ \Leftrightarrow\ a\ I_{[C]}\ b
 $$
 
-The signature of $$I_{[C]}$$ is $$[C*C]$$. In Ampersand code you write `I[C]`.
+The type of $$I_{[C]}$$ is $$[C*C]$$. In Ampersand code you write `I[C]`.
 
 ## Complete relation
 
@@ -30,7 +30,7 @@ $$
 a\ V_{[A*B]}\ b
 $$
 
-The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
+The type of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
 ## Other explanation
 
