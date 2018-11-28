@@ -67,7 +67,7 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | operator name | code | math | remark |  |
 | :--- | :---: | :---: | :--- | :--- |
 | equivalence \(equal\) | `=` | $$=$$ |  |  |
-| inclusion | `|-` | \subseteq |  |  |
+| inclusion | `|-` | $$\subseteq$$ |  |  |
 | intersect | `/\` | $$∩$$ | associative |  |
 | union | `\/` | $$∪$$ | associative |  |
 | difference \(minus\) | `-` | $$-$$ |  |  |
@@ -76,7 +76,7 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |
 | left residual | `/` | $$/$$ |  |  |
 | right residual | `\` | $$\backslash$$ |  |  |
-| diamond | `<>` | $$♢$$ |  |  |
+| diamond | `<>` | $$\diamond$$ |  |  |
 | relational product | `!` | $$†$$ | associative |  |
 | cartesian product | `#` | $$\times$$ |  |  |
 | reflexive transitive closure | `*` | $$∗$$ | postfix |  |
