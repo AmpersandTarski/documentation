@@ -1,8 +1,8 @@
 ---
 description: >-
-  This page introduces you to the meaning of the symbols that constitute
-  relation algebra. The time you spend getting acquainted with this will pay off
-  in designing correct software...
+  We use operators to manipulate with relations. A term (also known as
+  'expression') represents a set of pairs made up of relations and operators
+  between then.
 ---
 
 # Terms
@@ -33,9 +33,9 @@ Every term is built out of relations, which are combined by operators. An term h
 <Term> <BinaryOperator> <Term>
 <UnaryOpPre> <Term>
 <Term> <UnaryOpPost>
-<RelationRef> <type>?
-I <type>?
-V <type>?
+<RelationRef> <signature>?
+I <signature>?
+V <signature>?
 <atom>
 ( <Term> )
 ```
@@ -67,7 +67,7 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | operator name | code | math | remark |  |
 | :--- | :---: | :---: | :--- | :--- |
 | equivalence \(equal\) | `=` | $$=$$ |  |  |
-| inclusion | \` | -\` | $$\subseteq$$ |  |
+| inclusion | `|-` | \subseteq |  |  |
 | intersect | `/\` | $$∩$$ | associative |  |
 | union | `\/` | $$∪$$ | associative |  |
 | difference \(minus\) | `-` | $$-$$ |  |  |

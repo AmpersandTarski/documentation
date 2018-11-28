@@ -26,7 +26,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
       <td style="text-align:left">a name to categorize similar items</td>
       <td style="text-align:left"><code>Person</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">to classify similar things</td>
     </tr>
     <tr>
       <td style="text-align:left">Pair</td>
@@ -136,10 +136,11 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
       <td style="text-align:left">to express more complex rules.</td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Signature</td>
+      <td style="text-align:left">the name, source and target of a relation</td>
+      <td style="text-align:left"><code>r[A*B]</code>
+      </td>
+      <td style="text-align:left">to identify a set of pairs within a context.</td>
     </tr>
     <tr>
       <td style="text-align:left">Role</td>

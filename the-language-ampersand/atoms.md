@@ -38,7 +38,7 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
 | DATE | to represent dates compatible with ISO8601 | DATE | yes |
 | DATETIME | to represent time stamps compatible with ISO8601 | DATETIME | yes |
 | BOOLEAN | to represent True and False values | BOOLEAN | yes |
-| INTEGER | to represent positive and negative whole numbers in the range [-2^63..2^63 -1] | BIGINT | yes |
+| INTEGER | to represent positive and negative whole numbers in the range \[-2^63..2^63 -1\] | BIGINT | yes |
 | FLOAT | to represent floating point numbers compatible with ISO8601 | FLOAT | no |
 | Object | to represent a key value for objects; it is not meant to be visible to end users. | VARCHAR\(255\) | yes |
 
