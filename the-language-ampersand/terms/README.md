@@ -1,8 +1,8 @@
 ---
 description: >-
-  We use operators to manipulate with relations. A term (also known as
-  'expression') represents a set of pairs made up of relations and operators
-  between then.
+  This page introduces you to the meaning of the symbols that constitute
+  relation algebra. The time you spend getting acquainted with this will pay off
+  in designing correct software...
 ---
 
 # Terms
@@ -33,9 +33,9 @@ Every term is built out of relations, which are combined by operators. An term h
 <Term> <BinaryOperator> <Term>
 <UnaryOpPre> <Term>
 <Term> <UnaryOpPost>
-<RelationRef> <type>?
-I <type>?
-V <type>?
+<RelationRef> <signature>?
+I <signature>?
+V <signature>?
 <atom>
 ( <Term> )
 ```
@@ -64,21 +64,21 @@ Repeated uses of an associative operator does not require brackets. So $$r\cap s
 
 When coding in Ampersand, these operators are typed with characters on the keyboard. The following table shows the operators in math and their equivalent in code:
 
-| operator name | code | math | remark |  |  |
-| :--- | :---: | :---: | :--- | :--- | :--- |
-| equivalence \(equal\) | `=` | $$=$$ |  |  |  |
-| inclusion | \` | -\` | \subseteq |  |  |
-| intersect | `/\` | $$∩$$ | associative |  |  |
-| union | `\/` | $$∪$$ | associative |  |  |
-| difference \(minus\) | `-` | $$-$$ |  |  |  |
-| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |  |
-| compose | `;` | $$;$$ | associative |  |  |
-| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |  |
-| left residual | `/` | $$/$$ |  |  |  |
-| right residual | `\` | $$\backslash$$ |  |  |  |
-| diamond | `<>` | $$♢$$ |  |  |  |
-| relational product | `!` | $$†$$ | associative |  |  |
-| cartesian product | `#` | $$\times$$ |  |  |  |
-| reflexive transitive closure | `*` | $$∗$$ | postfix |  |  |
-| transitive closure | `+` | $$+$$ | postfix |  |  |
+| operator name | code | math | remark |  |
+| :--- | :---: | :---: | :--- | :--- |
+| equivalence \(equal\) | `=` | $$=$$ |  |  |
+| inclusion | \` | -\` | $$\subseteq$$ |  |
+| intersect | `/\` | $$∩$$ | associative |  |
+| union | `\/` | $$∪$$ | associative |  |
+| difference \(minus\) | `-` | $$-$$ |  |  |
+| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |
+| compose | `;` | $$;$$ | associative |  |
+| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |
+| left residual | `/` | $$/$$ |  |  |
+| right residual | `\` | $$\backslash$$ |  |  |
+| diamond | `<>` | $$♢$$ |  |  |
+| relational product | `!` | $$†$$ | associative |  |
+| cartesian product | `#` | $$\times$$ |  |  |
+| reflexive transitive closure | `*` | $$∗$$ | postfix |  |
+| transitive closure | `+` | $$+$$ | postfix |  |
 

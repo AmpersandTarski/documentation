@@ -16,7 +16,7 @@ The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means
 
 * complement : If $$r$$ is defined as $$r_{A\times B}$$, then $$\overline{r}$$ is the set of all tuples in $$A\times B$$ \(the Cartesian product\) that are not contained in $$r$$. So $$\overline{r} = V_{[A\times B]} - r$$
 
-Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different type may have different complements.
+Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different signature may have different complements.
 
 ## Other explanation
 

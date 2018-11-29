@@ -26,12 +26,12 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
       <td style="text-align:left">a name to categorize similar items</td>
       <td style="text-align:left"><code>Person</code>
       </td>
-      <td style="text-align:left">to classify similar things</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Pair</td>
       <td style="text-align:left">two atoms: a source and a target atom</td>
-      <td style="text-align:left"><code>(&quot;Ida&quot;, 5)</code>
+      <td style="text-align:left"><code>(&quot;Ida&quot;,5)</code>
       </td>
       <td style="text-align:left">to state that two atoms are related</td>
     </tr>
@@ -136,11 +136,10 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
       <td style="text-align:left">to express more complex rules.</td>
     </tr>
     <tr>
-      <td style="text-align:left">Signature</td>
-      <td style="text-align:left">the name, source and target of a relation</td>
-      <td style="text-align:left"><code>r[A*B]</code>
-      </td>
-      <td style="text-align:left">to identify a set of pairs within a context.</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Role</td>

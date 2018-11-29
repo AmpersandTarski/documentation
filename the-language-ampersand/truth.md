@@ -14,7 +14,7 @@ Let us introduce some words. Consider a fact "Joe Smith lives in New York." from
 * Let `Person` and `City` be [_**concepts**_](concepts.md)_\*\*\*\*_
 * Let `"Joe Smith"` be an [_**atom**_](atoms.md) of the concept `Person` and `"New York"` an atom of the concept `City`.
 * Let us use the [_**relation**_](relations.md) `livesIn[Person*City]` to contain our fact.
-* `livesIn` is the _**relation name**_ and `[Person*City]` is the _**type**_ of this relation.
+* `livesIn` is the _**relation name**_ and `[Person*City]` is the _**signature**_ of this relation.
 * `Person` is the _**source**_ of this relation and `City` is the _**target**_.
 * If the pair `("Joe Smith","New York")` is an element of this relation, Ampersand considers the statement `"Joe Smith" livesIn "New York"` to be true. So all pairs in a relation represent _**facts**_, i.e. true statements.
 
