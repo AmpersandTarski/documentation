@@ -1,6 +1,6 @@
 # Your tool: RAP3
 
-This section introduces the tool you will use during the course: [RAP3](http://ampersand.tarski.nl/RAP3). This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here](http://rap.cs.ou.nl/RAP3) to start using it.
+This section introduces the tool you will use during the course: RAP3. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here](http://rap.cs.ou.nl/RAP3) to start using it.
 
 ## Login/Create account
 
