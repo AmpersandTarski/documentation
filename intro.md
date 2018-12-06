@@ -9,7 +9,7 @@ Do you want to avoid unnecessary reading? Take a moment to decide which statemen
 3. "I am a _computer professional_ in need of a good method for designing an information system." Computer professionals who like fast results will be thrilled, provided they make the effort of learning.
 4. "I am a _scientific researcher_ and I want to know about the [theory behind Ampersand](the-language-ampersand/terms/)." Scientists who like formal methods will appreciate this particular use of relation algebra.
 5. "I am a _software engineer_ and I want to change Ampersand to suit my needs." You'll be delighted to see that your back-end software is as adaptable as your front-end software, and everything is generated towards proven technology for the sake of maintainable results.
-6. "I _work in an industry, an enterprise, or a government institute_ and I hope Ampersand is the silver bullet that kills all vampires and solves my problems." Alas, Ampersand is not interesting for you. \(Ampersand promises correct data and fast development to those who don't believe in fairy tales and want to make the effort.\)
+6. "I _work in an industry, an enterprise, or a government institute_ and I hope Ampersand is the silver bullet that kills all vampires and solves my problems." Alas, there's no such thing as a free lunch. Ampersand is not interesting for you. \(Ampersand promises correct data and fast development to those who don't believe in fairy tales and do want to make the effort.\)
 
 ## Disclaimer
 
