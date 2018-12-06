@@ -1,15 +1,15 @@
 # Introduction
 
-Do you want to avoid unnecessary reading? Take a moment to think about this:
+Do you want to avoid unnecessary reading? Take a moment to decide which statement describes your curiosity best:
 
 ## What makes you curious?...
 
-1. I'm just interested to know who might use Ampersand and for which purposes. [Click here](why-ampersand/) to learn why you might want Ampersand.
-2. I am a _student_ wanting to use Ampersand in class. [This tutorial](tutorial-rap3/) was made just for you. Students who like something different will love it.
-3. I am a _computer professional_ in need of a good method for designing an information system. Computer professionals who like fast results will be thrilled, provided they make the effort of learning.
-4. I am a _scientific researcher_ and I want to know about the [theory behind Ampersand](the-language-ampersand/terms/). Scientists who like formal methods will appreciate this particular use of relation algebra.
-5. I am a _software engineer_ and I want to change Ampersand to suit my needs. You'll be delighted to see that your back-end software is as adaptable as your front-end software, and everything is generated towards proven technology for the sake of maintainable results.
-6. I _work in an industry, an enterprise, or a government institute_ and I hope Ampersand is the silver bullet that kills all vampires and solves my problems. Alas, Ampersand is not interesting for you, unless you might need correct enterprise software, fast development, and you have smart enough engineers who are business oriented and want to make the effort.
+1. "I'm just interested to know who might use Ampersand and for which purposes." [Click here](why-ampersand/) to learn why you might want Ampersand.
+2. "I am a _student_ wanting to use Ampersand in class." [This tutorial](tutorial-rap3/) was made just for you. Students who like something different will love it.
+3. "I am a _computer professional_ in need of a good method for designing an information system." Computer professionals who like fast results will be thrilled, provided they make the effort of learning.
+4. "I am a _scientific researcher_ and I want to know about the [theory behind Ampersand](the-language-ampersand/terms/)." Scientists who like formal methods will appreciate this particular use of relation algebra.
+5. "I am a _software engineer_ and I want to change Ampersand to suit my needs." You'll be delighted to see that your back-end software is as adaptable as your front-end software, and everything is generated towards proven technology for the sake of maintainable results.
+6. "I _work in an industry, an enterprise, or a government institute_ and I hope Ampersand is the silver bullet that kills all vampires and solves my problems." Alas, Ampersand is not interesting for you. \(Ampersand promises correct data and fast development to those who don't believe in fairy tales and want to make the effort.\)
 
 ## Disclaimer
 
