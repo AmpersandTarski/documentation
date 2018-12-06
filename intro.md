@@ -11,6 +11,10 @@ Do you want to avoid unnecessary reading? Take a moment to decide which statemen
 5. "I am a _software engineer_ and I want to change Ampersand to suit my needs." You'll be delighted to see that your back-end software is as adaptable as your front-end software, and everything is generated towards proven technology for the sake of maintainable results.
 6. "I _work in an industry, an enterprise, or a government institute_ and I hope Ampersand is the silver bullet that kills all vampires and solves my problems." Alas, there's no such thing as a free lunch. Ampersand is not interesting for you. \(Ampersand promises correct data and fast development to those who don't believe in fairy tales and do want to make the effort.\)
 
+## One bite at a time
+
+Rarely does one need to learn everything there is to know about Ampersand. Take one bite at a time, no more than you can chew, and use it in practice immediately. Learn as you go...
+
 ## Disclaimer
 
 Ampersand is a project with no funds. The people who are supporting Ampersand are volunteers with little spare time. This explains why there are omissions in this text. So please condone any shortcomings. We are looking for skilled volunteers to help this project forward, by the way.
