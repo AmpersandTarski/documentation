@@ -17,7 +17,7 @@ The intersection $$\cap$$ is defined as: r\cap s = r-\(r-s\)
 
 ## Complement
 
-The complement operator is defined as $$\overline{t} = V_{[A\times B]} - t$$. The signature $$[A\times B]$$ comes from the term\(s\) in which $$t$$ is embedded. If that signature does not exist or if it is ambiguous, Ampersand will refuse to compile with an appropriate error message.
+The complement operator is defined as $$\overline{t} = V_{[A\times B]} - t$$. The type $$[A\times B]$$ comes from the term\(s\) in which $$t$$ is embedded. If that type does not exist or if it is ambiguous, Ampersand will refuse to compile with an appropriate error message.
 
 ## Other explanation
 

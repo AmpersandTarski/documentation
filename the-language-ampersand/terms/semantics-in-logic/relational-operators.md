@@ -12,7 +12,7 @@ $$
 a(r\smallsmile)b\ \Leftrightarrow\ b\ r\ a
 $$
 
-If $$r$$ has signature$$[A\times B]$$, then $$r\smallsmile\$$ has signature $$[B\times A]$$.
+If $$r$$ has type$$[A\times B]$$, then $$r\smallsmile\$$ has type $$[B\times A]$$.
 
 ## Composition
 
@@ -22,7 +22,7 @@ $$
 a(r;s)c\ \Leftrightarrow\ ∃ b∈B\ ∙\ a\ r\ b ∧ b\ s\ c
 $$
 
-If $$r$$ has signature$$[A\times B]$$and $$s$$has signature$$[B\times C]$$, then $$r;s$$ has signature $$[A\times C]$$.
+If $$r$$ has type$$[A\times B]$$and $$s$$has type$$[B\times C]$$, then $$r;s$$ has type $$[A\times C]$$.
 
 ## Other explanation
 

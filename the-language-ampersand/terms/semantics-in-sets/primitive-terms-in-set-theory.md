@@ -6,7 +6,7 @@ Every relation you declare is a set of pairs. If you declare `RELATION owner[Per
 
 When a relation is used in an term, it stands for the set of pairs it contains at the moment it is evaluated. That set \(also referred to as the contents of the relation\) can change over time as users add or delete pairs from it. So when you define the relation, you cannot really tell which pairs it contains.
 
-In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_ and `[Person*Building]` is the _**signature**_ of the relation. The left hand concept, `Person`, is called the source of the relation and the right concept, `Building`, is called the target.
+In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_ and `[Person*Building]` is the _**type**_ of the relation. The _**signature**_ of this relation is `owner[Person*Building]`. The signature identifies the relation within its context. The left hand concept, `Person`, is called the source of the relation and the right concept, `Building`, is called the target.
 
 When a relation is used in an term, we can simply use its name if that is unambiguous. For instance, in this paragraph the name `owner` obviously refers to `RELATION owner[Person*Building]`. In some cases, however the name alone is ambiguous. For example if there are two relations with the same name and different signatures. In such cases Ampersand will try to infer the signature from the context. That however does not always succeed. In such cases, Ampersand generates an error message that asks you to remove the ambiguity by adding the correct signature.
 
@@ -20,7 +20,7 @@ $$
 I_{[C]}\ =\ \{(c,c) |\ c\in C\}
 $$
 
-The signature of $$I_{[C]}$$ is $$[C*C]$$. In Ampersand code you write `I[C]`.
+The type of $$I_{[C]}$$ is $$[C*C]$$. In Ampersand code you write `I[C]`.
 
 ## Complete relation
 
@@ -30,7 +30,7 @@ $$
 V_{[A*B]}\ =\ \{(a,b) |\  a\in A\ \wedge\ b\in B\}
 $$
 
-The signature of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
+The type of $$V_{[A*B]}$$ is $$[A*B]$$. In Ampersand code you write `V[A*B]`.
 
 ## Other explanation
 
