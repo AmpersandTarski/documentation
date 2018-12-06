@@ -12,7 +12,7 @@ $$
 r\smallsmile\ =\ \{ (b, a) | (a, b)∈r \}
 $$
 
-If $$r$$ has signature$$[A\times B]$$, then $$r\smallsmile\$$ has type $$[B\times A]$$.
+If $$r$$ has type $$[A\times B]$$, then $$r\smallsmile\$$ has type $$[B\times A]$$.
 
 ## Composition
 

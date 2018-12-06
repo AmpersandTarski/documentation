@@ -8,7 +8,7 @@ When a relation is used in an term, it stands for the set of pairs it contains a
 
 In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_ and `[Person*Building]` is the _**type**_ of the relation. The _**signature**_ of this relation is `owner[Person*Building]`. The signature identifies the relation within its context. The left hand concept, `Person`, is called the source of the relation and the right concept, `Building`, is called the target.
 
-When a relation is used in an term, we can simply use its name if that is unambiguous. For instance, in this paragraph the name `owner` obviously refers to `RELATION owner[Person*Building]`. In some cases, however the name alone is ambiguous. For example if there are two relations with the same name and different signatures. In such cases Ampersand will try to infer the signature from the context. That however does not always succeed. In such cases, Ampersand generates an error message that asks you to remove the ambiguity by adding the correct signature.
+When a relation is used in an term, we can simply use its name if that is unambiguous. For instance, in this paragraph the name `owner` obviously refers to `RELATION owner[Person*Building]`. In some cases, however the name alone is ambiguous. For example if there are two relations with the same name and different signatures. In such cases Ampersand will try to infer the type from the context. That however does not always succeed. In such cases, Ampersand generates an error message that asks you to remove the ambiguity by adding the correct type.
 
 If a pair $$(a,b)$$ is an element of a relation $$r$$, we write $$(a,b)\in r$$. Alternatively we may write $$a\ r\ b$$.
 

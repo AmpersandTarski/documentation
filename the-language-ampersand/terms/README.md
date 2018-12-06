@@ -33,9 +33,9 @@ Every term is built out of relations, which are combined by operators. An term h
 <Term> <BinaryOperator> <Term>
 <UnaryOpPre> <Term>
 <Term> <UnaryOpPost>
-<RelationRef> <signature>?
-I <signature>?
-V <signature>?
+<RelationRef> <type>?
+I <type>?
+V <type>?
 <atom>
 ( <Term> )
 ```
