@@ -13,7 +13,7 @@ The difference $$r-s$$ is the smallest relation $$t$$ that satisfies $$s\cup t=r
 
 ## Intersection
 
-The intersection $$\cap$$ is defined as: r\cap s = r-\(r-s\)
+The intersection $$\cap$$ is defined as: $$r \cap s = r-\(r-s\)$$
 
 ## Complement
 
