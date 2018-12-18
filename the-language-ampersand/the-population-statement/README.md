@@ -21,9 +21,9 @@ You can define atoms separately and you can define the pairs in a relation. Both
 
 ```text
 POPULATION Tree CONTAINS
-    [ ("Oak")
-    , ("Birch")
-    , ("Willow")
+    [ "Oak"
+    , "Birch"
+    , "Willow"
     ]
 ```
 
