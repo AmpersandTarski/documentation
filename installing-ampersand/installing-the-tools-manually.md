@@ -12,15 +12,24 @@ The following instructions presume that you are familiar with the basics of your
 
 ### The easy way: Use a prebuilt executable file
 
-The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases). For Windows users, there is a file called ampersand.exe in the release. Put it on your disk on a location of your choice, for example /Ampersand/bin/. Make sure your $PATH environment variable contains this location, so the command "ampersand" is known on the command line. That's all. Note that double-clicking`ampersand.exe`will not work, because it is a command line tool.
+The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases). For Windows users, there is a file called ampersand.exe in the release. Put it on your disk on a location of your choice, for example /Ampersand/bin/. Make sure [your `$PATH`(or: `PATH`) environment variable contains this location](https://www.google.com/search?q=setting+your+path+variable), so the command "ampersand" is known on the command line. That's all. Note that double-clicking`ampersand.exe`will not work, because it is a command line tool.
 
-Now you can compile and check your Ampersand scripts. Most likely, however, you want to generate a functional specification or a prototype you will need some other software as well.
+Here is a way to test whether or not you have succeeded: open a command line tool (e.g. `CMD` on Windows), and type `ampersand -v`. If all is well, the version number of the Ampersand tool is output.
 
-## Other software you will need
+Now you can compile and check your Ampersand scripts. However, you are likely to want to do more with such scripts. Currently it is possible to generate functional specifications and/or functional prototypes from such scrips. You will need to install some additional software in order to do that.
+
+### Additional software for generating functional SPECIFICATIONS:
+
+If you want to generate functional specifications from ampersand scripts, you need the following additional software (if you don't, don't bother installing them):
 
 1. In order to generate PDF files that contain your functional specification, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org/). On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
 2. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure** _**dot**_ **and** _**neato**_ **are in your path**  \(set the $PATH environment variable if necessary\). Also, if you compile it from source, make sure you install it with gts support.
-3. In order to run the generated prototype, you need **Apache** \(or another web server\) with **SQL** and **PHP v 7.0 or higher**. In Windows, a practical way is to install [**XAMPP**](https://www.apachefriends.org/download.html)
+
+### Additional software for generating functional PROTOTYPES
+
+If you want to generate functional prototypes from ampersand scripts, you need the following additional software (if you don't, don't bother installing them):
+
+1. In order to run the generated prototype, you need **Apache** \(or another web server\) with **SQL** and **PHP v 7.1 or higher**. In Windows, a practical way is to install [**XAMPP**](https://www.apachefriends.org/download.html)
    * You must create an account in SQL for
 
      `localhost`
@@ -38,7 +47,8 @@ Now you can compile and check your Ampersand scripts. Most likely, however, you 
      ![](../.gitbook/assets/databaseuserconfig.jpg)
 
    * The webserver must run on `localhost` . By default you will use port 80, but you could change that if required. See the documentation of you webserver.
-4. You need to install [**Composer**](https://getcomposer.org/download/), because at runtime, the prototype has dependencies of libraries . Composer will take care of that.
+
+2. You will also need to install [**Composer**](https://getcomposer.org/download/), because at runtime, the prototype has dependencies of libraries . Composer will take care of that.
 
 ### The less easy way: Installing from Source
 
