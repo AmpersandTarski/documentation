@@ -88,21 +88,21 @@ Suppose you have an ampersand script called `myModel.adl` with the following con
 ```text
 CONTEXT HelloWorld IN ENGLISH
 PURPOSE CONTEXT HelloWorld
-{+This script allows you to check whether or not you can actually use Ampersand.-}
+{+This script allows you to check whether or not you can actually use Ampersand.+}
 
 REPRESENT MyName TYPE ALPHANUMERIC
 sessionMyName :: SESSION * MyName [UNI]
 MEANING "My name can be known in the current session."
 
 ROLE User MAINTAINS "Please specify your name"
-RULE "Please specify your name": '_SESSION'[SESSION] |- sessionMyName;sessionMyName~
+RULE "Please specify your name": "_SESSION"[SESSION] |- sessionMyName;sessionMyName~
 VIOLATION (TXT "You can use the 'Registration' service to do so.")
 
-INTERFACE Registration (sessionMyName) FOR User: '_SESSION'[SESSION]
+INTERFACE Registration (sessionMyName) FOR User: "_SESSION"[SESSION]
 BOX[ "My name is" : sessionMyName
    ]
 
-INTERFACE "Hello, World": '_SESSION'[SESSION]
+INTERFACE "Hello, World": "_SESSION"[SESSION]
 BOX[ "Hello, world. My name is" : sessionMyName 
    ]
 
