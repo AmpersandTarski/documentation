@@ -83,7 +83,7 @@ Testing your installation
 
 Ampersand allows you to generate a working prototype of your ampersand model. An Ampersand prototype is a website that requires a webserver to run on and a \(My\)SQL database server. This chapter describes the prerequisites for getting such prototypes up, and running.
 
-Suppose you have an ampersand script called myModel.adl with the following content:
+Suppose you have an ampersand script called `myModel.adl` with the following content (if you do not have it, then copy the below text and paste it into a document that you save under `myModel.adl` - some browsers (e.g. IE) show line numbers in the below text, which you will need to remove before saving the file):
 
 ```text
 CONTEXT HelloWorld IN ENGLISH
