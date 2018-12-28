@@ -83,7 +83,7 @@ Testing your installation
 
 Ampersand allows you to generate a working prototype of your ampersand model. An Ampersand prototype is a website that requires a webserver to run on and a \(My\)SQL database server. This chapter describes the prerequisites for getting such prototypes up, and running.
 
-Suppose you have an ampersand script called `myModel.adl` with the following content (if you do not have it, then copy the below text and paste it into a document that you save under `myModel.adl` - some browsers (e.g. IE) show line numbers in the below text, which you will need to remove before saving the file):
+First, you should get a working script. Let's assume it is called `myModel.adl` and it contains valid content such as is shown here below: 
 
 ```text
 CONTEXT HelloWorld IN ENGLISH
@@ -113,7 +113,11 @@ RULE "Dummy rule": I[SESSION] |- I[SESSION]
 ENDCONTEXT
 ```
 
-Don't worry if you do not understand what everything in this script means. That isn't important for now. You can generate the prototype website for the script in file `myModel.adl` by typing the command:
+Don't worry if you do not understand what everything in this script means. That isn't important for now.
+
+If you do not have such a script, you can copy the above text, paste it in a text editor and save it. Different novice users have shown that this may present some problems. One is that in some browsers (e.g. IE), copying  the text will include the line numbers. If you see your file has line numbers embedded in the text, you should get rid of them before saving it. Another one is that it may contain characters that are not displayable in the editor - some editors will turn such characters into printable ones, e.g. a question mark. If that's the case with you, you should also get rid of them. You should end up with text in a file that is as is shown above.
+
+Then, you can generate the prototype website for the script in file `myModel.adl` by typing the command:
 
 ```text
  ampersand --proto myModel.adl
