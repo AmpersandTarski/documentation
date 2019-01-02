@@ -24,6 +24,10 @@ $$
 
 If $$r$$ has type$$[A\times B]$$and $$s$$has type$$[B\times C]$$, then $$r;s$$ has type $$[A\times C]$$.
 
+## How to type boolean operators in your script
+
+[This page](../../terms#notation-on-the-keyboard) shows how you can type boolean (and other) operators in your Ampersand script.
+
 ## Other explanation
 
 Would you like a different explanation of the relational operators? [This page](../semantics-in-sets/relational-operators-in-set-theory.md) explains the relational operators in terms of set theory. [This page](../semantics-in-natural-language/relational-operators-in-natural-language.md) explains them in natural language. [Click here](../semantics-in-algebra/relational-operators-in-algebra.md) for some algebraic rules about relational operators.
