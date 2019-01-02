@@ -19,5 +19,9 @@ The intersection $$\cap$$ is defined as: $$r \cap s = r-(r-s)$$
 
 The complement operator is defined as $$\overline{t} = V_{[A\times B]} - t$$. The type $$[A\times B]$$ comes from the term\(s\) in which $$t$$ is embedded. If that type does not exist or if it is ambiguous, Ampersand will refuse to compile with an appropriate error message.
 
+## How to type boolean operators in your script
+
+[This page](../../terms#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
+
 ## Other explanation
 
