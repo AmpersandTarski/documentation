@@ -38,6 +38,10 @@ $$
 I_A;r\ =\ r\ \ \ \text{and}\ \ \ r;I_B\ =\ r
 $$
 
+## How to type relational operators in your script
+
+[This page](../../terms#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
+
 ## Other explanation
 
 Would you like a different explanation of the semantics of the relational operators? [Click here](../semantics-in-sets/relational-operators-in-set-theory.md) for an explanation in sets. [This page](../semantics-in-natural-language/relational-operators-in-natural-language.md) explains them in natural language. [This page](../semantics-in-logic/relational-operators.md) explains the relational operators in logic.
