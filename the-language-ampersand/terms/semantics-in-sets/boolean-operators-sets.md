@@ -12,6 +12,10 @@ The complement \(or negation\) of a relation $$r_{[A x B]}$$ is defined by means
 
 Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relations with the identical population yet a different type may have different complements.
 
+## How to type boolean operators in your script
+
+[This page](../../terms#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
+
 ## Other explanation
 
 Would you like a different explanation of the boolean operators? [This page](../semantics-in-logic/boolean-operators.md) explains the boolean operators in logic.
