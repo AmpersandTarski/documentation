@@ -67,7 +67,7 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | operator name | code | math | remark |
 | :--- | :---: | :---: | :--- |
 | equivalence \(equal\) | `=` | $$=$$ | use only in a rule |
-| inclusion | `\|-` | $$\subseteq$$ | use only in a rule |
+| inclusion | `|-` | $$\subseteq$$ | use only in a rule |
 | intersect | `/\` | $$∩$$ | associative |
 | union | `\/` | $$∪$$ | associative |
 | difference \(minus\) | `-` | $$-$$ |  |
