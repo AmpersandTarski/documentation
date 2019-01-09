@@ -6,6 +6,10 @@ Ampersand is great for rapid prototyping. So how do you run your prototypes? For
 
 Go to [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). Just register and get started right away. At no cost \(for you, for now\). This lets you run your Ampersand scripts and generate functional specifications.
 
+## How to edit Ampersand scripts
+
+You can use any text editor to create Ampersand scripts. However, for those that use the [Visual Studio Code (vscode)](https://code.visualstudio.com/) editor, there is language support. All you have to do is search for the vscode extension "Ampersand (ADL) language support" and install it, and then choose the coloring theme called "Ampersand".
+
 ## How to use Ampersand on your own laptop
 
 Using Ampersand offline does not require you to install Ampersand. Ampersand runs in Docker so you can use it independently and on almost any platform. [Here is an explanation of how to do this (don't mind the title of that page)](deploying-your-prototype.md). It can be summarized as follows:
