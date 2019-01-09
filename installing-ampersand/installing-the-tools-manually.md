@@ -105,7 +105,9 @@ INTERFACE Registration: "_SESSION"[SESSION] cRud BOX <ROWSNH>
 sayHelloReq :: SESSION * SESSION [PROP]
 ROLE ExecEngine MAINTAINS "Say hello when name is specified"
 RULE "Say hello when name is specified": "_SESSION"[SESSION] /\ sessionMyName;sessionMyName~ |- sayHelloReq
-VIOLATION (TXT "{EX} SetNavToOnCommit;/Hello_44__32_World")
+VIOLATION (TXT "{EX} SetNavToOnCommit;/Hello_44__32_World"
+          ,TXT "{EX} InsPair;sayHelloReq;SESSION;", SRC I, TXT ";SESSION;", TGT I
+          )
 
 INTERFACE "Hello, World": "_SESSION"[SESSION] cRud BOX <ROWSNH>
    [ "Hello, world. My name is" : sessionMyName cRud
