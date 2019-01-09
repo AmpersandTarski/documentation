@@ -94,21 +94,22 @@ REPRESENT MyName TYPE ALPHANUMERIC
 sessionMyName :: SESSION * MyName [UNI]
 MEANING "My name can be known in the current session."
 
-ROLE User MAINTAINS "Please specify your name"
-RULE "Please specify your name": "_SESSION"[SESSION] |- sessionMyName;sessionMyName~
-VIOLATION (TXT "You can use the 'Registration' service to do so.")
+ROLE User MAINTAINS "Please click on 'Registration' to specify your name"
+RULE "Please click on 'Registration' to specify your name": "_SESSION"[SESSION] |- sessionMyName;sessionMyName~
+VIOLATION (TXT "You can find the 'Registration' item in the navigationbar (top of the screen).")
 
 INTERFACE Registration: "_SESSION"[SESSION] cRud BOX <ROWSNH>
-   [ "My name is" : sessionMyName cRUd
+   [ "My name is" : sessionMyName cRUd 
    ]
+
+sayHelloReq :: SESSION * SESSION [PROP]
+ROLE ExecEngine MAINTAINS "Say hello when name is specified"
+RULE "Say hello when name is specified": "_SESSION"[SESSION] /\ sessionMyName;sessionMyName~ |- sayHelloReq
+VIOLATION (TXT "{EX} SetNavToOnCommit;/Hello_44__32_World")
 
 INTERFACE "Hello, World": "_SESSION"[SESSION] cRud BOX <ROWSNH>
    [ "Hello, world. My name is" : sessionMyName cRud
    ]
-
---$The following rule is there for the sole purpose of having the role ExecEngine defined.
-ROLE ExecEngine MAINTAINS "Dummy rule"
-RULE "Dummy rule": I[SESSION] |- I[SESSION]
 
 ENDCONTEXT
 ```
