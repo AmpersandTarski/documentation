@@ -98,12 +98,12 @@ ROLE User MAINTAINS "Please specify your name"
 RULE "Please specify your name": "_SESSION"[SESSION] |- sessionMyName;sessionMyName~
 VIOLATION (TXT "You can use the 'Registration' service to do so.")
 
-INTERFACE Registration (sessionMyName) FOR User: "_SESSION"[SESSION]
-BOX[ "My name is" : sessionMyName
+INTERFACE Registration: "_SESSION"[SESSION] cRud BOX <ROWSNH>
+   [ "My name is" : sessionMyName cRUd
    ]
 
-INTERFACE "Hello, World": "_SESSION"[SESSION]
-BOX[ "Hello, world. My name is" : sessionMyName 
+INTERFACE "Hello, World": "_SESSION"[SESSION] cRud BOX <ROWSNH>
+   [ "Hello, world. My name is" : sessionMyName cRud
    ]
 
 --$The following rule is there for the sole purpose of having the role ExecEngine defined.
