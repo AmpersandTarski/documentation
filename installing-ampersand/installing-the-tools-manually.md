@@ -85,7 +85,7 @@ Ampersand allows you to generate a working prototype of your ampersand model. An
 
 First, you should get a working script. Let's assume it is called `myModel.adl` and it contains valid content such as is shown here below: 
 
-```text
+```
 CONTEXT HelloWorld IN ENGLISH
 PURPOSE CONTEXT HelloWorld
 {+This script allows you to check whether or not you can actually use Ampersand.+}
@@ -122,7 +122,7 @@ If you do not have such a script, you can copy the above text, paste it in a tex
 
 Then, you can generate the prototype website for the script in file `myModel.adl` by typing the command:
 
-```text
+```
  ampersand --proto myModel.adl
 ```
 
