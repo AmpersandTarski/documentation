@@ -21,7 +21,7 @@ The complement operator is defined as $$\overline{t} = V_{[A\times B]} - t$$. Th
 
 ## How to type boolean operators in your script
 
-[This page](../../terms#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
+[This page](../#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
 
 ## Other explanation
 

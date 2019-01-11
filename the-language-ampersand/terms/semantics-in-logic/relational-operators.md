@@ -26,7 +26,7 @@ If $$r$$ has type$$[A\times B]$$and $$s$$has type$$[B\times C]$$, then $$r;s$$ h
 
 ## How to type boolean operators in your script
 
-[This page](../../terms#notation-on-the-keyboard) shows how you can type boolean (and other) operators in your Ampersand script.
+[This page](../#notation-on-the-keyboard) shows how you can type boolean \(and other\) operators in your Ampersand script.
 
 ## Other explanation
 

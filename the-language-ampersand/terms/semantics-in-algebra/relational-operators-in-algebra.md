@@ -4,7 +4,7 @@
 
 To say things such as "the name of the owner", we want to string together multiple relations \(viz. `name` and `owner`\). Relational operators allow us to make such statements.
 
-There are two relational operators: the converse \($$\smallsmile$$\) and the composition \(semicolon  $$;$$ \). This page discusses the most important laws about these operators.
+There are two relational operators: the converse \($$\smallsmile$$\) and the composition \(semicolon $$;$$ \). This page discusses the most important laws about these operators.
 
 ## Converse
 
@@ -40,7 +40,7 @@ $$
 
 ## How to type relational operators in your script
 
-[This page](../../terms#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
+[This page](../#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
 
 ## Other explanation
 

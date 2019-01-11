@@ -14,7 +14,7 @@ Note that the complement is defined in terms of $$A$$ and $$B$$. So, two relatio
 
 ## How to type boolean operators in your script
 
-[This page](../../terms#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
+[This page](../#notation-on-the-keyboard) shows how you can write these things in your Ampersand script.
 
 ## Other explanation
 

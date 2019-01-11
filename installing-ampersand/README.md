@@ -8,11 +8,11 @@ Go to [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). Just r
 
 ## How to edit Ampersand scripts
 
-You can use any text editor to create Ampersand scripts. However, for those that use the [Visual Studio Code (vscode)](https://code.visualstudio.com/) editor, there is language support. All you have to do is search for the vscode extension "Ampersand (ADL) language support" and install it, and then choose the coloring theme called "Ampersand".
+You can use any text editor to create Ampersand scripts. However, for those that use the [Visual Studio Code \(vscode\)](https://code.visualstudio.com/) editor, there is language support. All you have to do is search for the vscode extension "Ampersand \(ADL\) language support" and install it, and then choose the coloring theme called "Ampersand".
 
 ## How to use Ampersand on your own laptop
 
-Using Ampersand offline does not require you to install Ampersand. Ampersand runs in Docker so you can use it independently and on almost any platform. [Here is an explanation of how to do this (don't mind the title of that page)](deploying-your-prototype.md). It can be summarized as follows:
+Using Ampersand offline does not require you to install Ampersand. Ampersand runs in Docker so you can use it independently and on almost any platform. [Here is an explanation of how to do this \(don't mind the title of that page\)](deploying-your-prototype.md). It can be summarized as follows:
 
 1. Make sure Docker runs on your laptop or install it if it doesn't.
 2. Copy the files `Dockerfile` and `docker-compose.yml` and adapt them for your own Ampersand prototype. [Read this](deploying-your-prototype.md) if you don't know where to find them.

@@ -12,22 +12,22 @@ The following instructions presume that you are familiar with the basics of your
 
 ### The easy way: Use a prebuilt executable file
 
-The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases). For Windows users, there is a file called ampersand.exe in the release. Put it on your disk on a location of your choice, for example /Ampersand/bin/. Make sure [your `$PATH`(or: `PATH`) environment variable contains this location](https://www.google.com/search?q=setting+your+path+variable), so the command "ampersand" is known on the command line. That's all. Note that double-clicking`ampersand.exe`will not work, because it is a command line tool.
+The easiest way is by use of available executables. We release frequently. Have a look at [our latest release](https://github.com/AmpersandTarski/Ampersand/releases). For Windows users, there is a file called ampersand.exe in the release. Put it on your disk on a location of your choice, for example /Ampersand/bin/. Make sure [your `$PATH`\(or: `PATH`\) environment variable contains this location](https://www.google.com/search?q=setting+your+path+variable), so the command "ampersand" is known on the command line. That's all. Note that double-clicking`ampersand.exe`will not work, because it is a command line tool.
 
-Here is a way to test whether or not you have succeeded: open a command line tool (e.g. `CMD` on Windows), and type `ampersand -v`. If all is well, the version number of the Ampersand tool is output.
+Here is a way to test whether or not you have succeeded: open a command line tool \(e.g. `CMD` on Windows\), and type `ampersand -v`. If all is well, the version number of the Ampersand tool is output.
 
 Now you can compile and check your Ampersand scripts. However, you are likely to want to do more with such scripts. Currently it is possible to generate functional specifications and/or functional prototypes from such scrips. You will need to install some additional software in order to do that.
 
 ### Additional software for generating functional SPECIFICATIONS:
 
-If you want to generate functional specifications from ampersand scripts, you need the following additional software (if you don't, don't bother installing them):
+If you want to generate functional specifications from ampersand scripts, you need the following additional software \(if you don't, don't bother installing them\):
 
 1. In order to generate PDF files that contain your functional specification, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org/). On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
 2. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure** _**dot**_ **and** _**neato**_ **are in your path**  \(set the $PATH environment variable if necessary\). Also, if you compile it from source, make sure you install it with gts support.
 
 ### Additional software for generating functional PROTOTYPES
 
-If you want to generate functional prototypes from ampersand scripts, you need the following additional software (if you don't, don't bother installing them):
+If you want to generate functional prototypes from ampersand scripts, you need the following additional software \(if you don't, don't bother installing them\):
 
 1. In order to run the generated prototype, you need **Apache** \(or another web server\) with **SQL** and **PHP v 7.1 or higher**. In Windows, a practical way is to install [**XAMPP**](https://www.apachefriends.org/download.html)
    * You must create an account in SQL for
@@ -47,7 +47,6 @@ If you want to generate functional prototypes from ampersand scripts, you need t
      ![](../.gitbook/assets/databaseuserconfig.jpg)
 
    * The webserver must run on `localhost` . By default you will use port 80, but you could change that if required. See the documentation of you webserver.
-
 2. You will also need to install [**Composer**](https://getcomposer.org/download/), because at runtime, the prototype has dependencies of libraries . Composer will take care of that.
 
 ### The less easy way: Installing from Source
@@ -83,9 +82,9 @@ Testing your installation
 
 Ampersand allows you to generate a working prototype of your ampersand model. An Ampersand prototype is a website that requires a webserver to run on and a \(My\)SQL database server. This chapter describes the prerequisites for getting such prototypes up, and running.
 
-First, you should get a working script. Let's assume it is called `myModel.adl` and it contains valid content such as is shown here below: 
+First, you should get a working script. Let's assume it is called `myModel.adl` and it contains valid content such as is shown here below:
 
-```
+```bash
 CONTEXT HelloWorld IN ENGLISH
 PURPOSE CONTEXT HelloWorld
 {+This script allows you to check whether or not you can actually use Ampersand.+}
@@ -118,11 +117,11 @@ ENDCONTEXT
 
 Don't worry if you do not understand what everything in this script means. That isn't important for now.
 
-If you do not have such a script, you can copy the above text, paste it in a text editor and save it. Different novice users have shown that this may present some problems. One is that in some browsers (e.g. IE), copying  the text will include the line numbers. If you see your file has line numbers embedded in the text, you should get rid of them before saving it. Another one is that it may contain characters that are not displayable in the editor - some editors will turn such characters into printable ones, e.g. a question mark. If that's the case with you, you should also get rid of them. You should end up with text in a file that is as is shown above.
+If you do not have such a script, you can copy the above text, paste it in a text editor and save it. Different novice users have shown that this may present some problems. One is that in some browsers \(e.g. IE\), copying the text will include the line numbers. If you see your file has line numbers embedded in the text, you should get rid of them before saving it. Another one is that it may contain characters that are not displayable in the editor - some editors will turn such characters into printable ones, e.g. a question mark. If that's the case with you, you should also get rid of them. You should end up with text in a file that is as is shown above.
 
 Then, you can generate the prototype website for the script in file `myModel.adl` by typing the command:
 
-```
+```text
  ampersand --proto myModel.adl
 ```
 

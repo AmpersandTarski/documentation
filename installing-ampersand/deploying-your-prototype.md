@@ -20,7 +20,7 @@ You need a computer that runs Docker and that has an internet connection. That l
 
 ## What do you do to run your Ampersand program?
 
-First, you create a directory in which you will organize your Ampersand (.adl) files and some other stuff. We will refer to this directory as your working directory. In this working directory, make sure you have:
+First, you create a directory in which you will organize your Ampersand \(.adl\) files and some other stuff. We will refer to this directory as your working directory. In this working directory, make sure you have:
 
 1. A file called `Dockerfile`, which contains the recipe for creating a Docker image
 2. A file called `docker-compose.yml`, which contains the runtime configuration of the containers running your program.
