@@ -24,7 +24,7 @@ Ampersand is a way of designing information systems for enterprises, supported b
 
 1. Communicate with the business solely [in their own _**language**_](https://player.ou.nl/wowzaportlets/#!production/xqW5z2v), which is a natural language.
 2. Define a domain language \(in Ampersand\) to consolidate _**agreement of terms**_ among stakeholders, using it solely for technical purposes. 
-3. _\*\*\*\*_[_**Formalize**_ the agreements](https://player.ou.nl/wowzaportlets/#!production/BDAXK2L) into rules that are relevant for the information system using Ampersand-script.  
+3. [_**Formalize**_ the agreements](https://player.ou.nl/wowzaportlets/#!production/BDAXK2L) into rules that are relevant for the information system using Ampersand-script.  
 4. Generate a [working _**prototype**_](https://player.ou.nl/wowzaportlets/#!production/7qozHDH) of your information system for verification purposes. 
 5. [Use this prototype](https://player.ou.nl/wowzaportlets/#!production/7qozHDH) to _**walk through**_ user stories, test user acceptance, elicit requirements, or otherwise gain more assurance that your design is what your audience wants.
 6. Use the documented ontology that Ampersand generates to _**validate**_ the agreed rules.
