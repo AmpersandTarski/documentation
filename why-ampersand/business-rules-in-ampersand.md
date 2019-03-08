@@ -67,7 +67,7 @@ Ampersand lets you use business rules as intended in the [Business Rules Manifes
 | Ampersand says: | Agreed! The Ampersand-system bears resemblance to reactive programming in this respect. |
 | **Rule-Guided Processes, Not Exception-Based Programming** |  |
 | 7.1. | Rules define the boundary between acceptable and unacceptable business activity. |
-| Ampersand says: | Untrue. A computer can never enforce ethical conduct. Neither can Ampersand. |
+| Ampersand says: | Agreed! A business that can clearly express what is acceptable/desirable and what is not \(given its goals and culture\) is supported by Ampersand's formal rules. When executed, violations will signal transgressions of the boundary. Ampersand will also tell which rule has been violated. Of course, a computer can never enforce ethical conduct. Neither can Ampersand. |
 | 7.2. | Rules often require special or selective handling of detected violations.  Such rule violation activity is activity like any other activity. |
 | Ampersand says: | Agreed! There are enforcement mechanisms to trigger corrective actions, either human action \(process enforcement\) or computer action \(automated enforcement\) or no action \(invariance; the computer blocks and must roll back\) |
 |  |  |
@@ -77,7 +77,7 @@ Ampersand lets you use business rules as intended in the [Business Rules Manifes
 | 8.1. | Rules are about business practice and guidance; therefore, rules are motivated by business goals and objectives and are shaped by various influences. |
 | Ampersand says: | Agreed! Ampersand stimulates to write a purpose with each rule. That is where motivations, business goals and objectives are linked to rules. In the Ampersand way of working, Ampersand-engineers are stimulated to identify stakeholders and discuss with them deeply. |
 | 8.2. | Rules always cost the business something. |
-| Ampersand says: | Disagree. In many cases rules benefit the business. It makes people aware of the things that are necessary to agree upon. If the necessity is doubtful, the Ampersand-engineer will not take that rule into his specification. It means that computers will not help to support that rule, which must then be done manually. |
+| Ampersand says: | Agreed! If the rule is not automated, people have to be educated to enforce them. That costs. Even if the rule is automated, there is a learning curve for people to comply with the rule correctly. That costs. If both cases it has to be documented and validated. That costs. The point is there are no free lunches. So you don't want more rules, you want fewer \(good\) rules. \(… which is Principle 8.4.\) \(thanks to Ron Ross for this paragraph\) |
 | 8.3. | The cost of rule enforcement must be balanced against business risks, and against business opportunities that might otherwise be lost. |
 | Ampersand says: | Agreed! This goes without saying |
 | 8.4. | ‘More rules’ is not better.  Usually fewer ‘good rules’ is better. |
