@@ -10,7 +10,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | :--- | :--- | :--- | :--- |
 
 
-| [Concept](concepts.md) | a name to categorize similar items | `Person` |  |
+| [Concept](syntactical-conventions/the-concept-statement.md) | a name to categorize similar items | `Person` |  |
 | :--- | :--- | :--- | :--- |
 
 
@@ -22,7 +22,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | :--- | :--- | :--- | :--- |
 
 
-| [Rule](rules/) | a constraint, which is supposed to remain satisfied. | `r;s |- t` | to provide meaning in a given context |
+| [Rule](syntactical-conventions/the-rule-statement.md) | a constraint, which is supposed to remain satisfied. | `r;s |- t` | to provide meaning in a given context |
 | :--- | :--- | :--- | :--- |
 
 

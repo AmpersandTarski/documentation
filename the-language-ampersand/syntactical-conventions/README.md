@@ -1,10 +1,6 @@
----
-description: >-
-  Scattered across this documentation, syntax is defined. This file explains the
-  conventions used in the syntax definitions.
----
-
 # Syntactical Conventions
+
+To keep this chapter as readable as possible, we have chosen to omit some details that are irrelevant for practically all &-modelers. In the very rare case that these technicalities are of interest, the reader could have a look in [the sourcecode of the parser](https://github.com/AmpersandTarski/Ampersand/blob/master/src/Ampersand/Input/ADL1/Parser.hs), where all EBNF statements are in comments.
 
 ## Purpose
 
@@ -49,19 +45,19 @@ Within an operator category, you must place brackets to disambiguate. E.g. `r/\s
 Keywords in Ampersand are always written in CAPITALS.
 
 * Keywords for the main structure of the code
-  * [`CONTEXT`](syntactical-conventions.md)
+  * [`CONTEXT`](./)
   * `ENDCONTEXT`
-  * [`IN`](language-support.md)
+  * [`IN`](../language-support.md)
   * `ENGLISH`
   * `DUTCH`
-  * [`INCLUDE`](the-include-statement.md)
+  * [`INCLUDE`](../the-include-statement.md)
   * `META`
   * `THEMES`
-  * [`PATTERN`](patterns.md)
+  * [`PATTERN`](../patterns.md)
   * `ENDPATTERN`
-  * [`CONCEPT`](concepts.md)
-* Keywords for [relations](relations.md)
-  * [`RELATION`](relations.md)
+  * [`CONCEPT`](the-concept-statement.md)
+* Keywords for [relations](../relations.md)
+  * [`RELATION`](../relations.md)
   * `PRAGMA`
   * `UNI`
   * `INJ`
@@ -73,9 +69,9 @@ Keywords in Ampersand are always written in CAPITALS.
   * `RFX`
   * `IRF`
   * `PROP`
-  * [`POPULATION`](the-population-statement/)
+  * [`POPULATION`](../the-population-statement/)
   * `CONTAINS`
-* Keywords for [rules](rules/)
+* Keywords for [rules](the-rule-statement.md)
   * `RULE`
   * `MESSAGE`
   * `VIOLATION`
@@ -88,8 +84,8 @@ Keywords in Ampersand are always written in CAPITALS.
   * `ROLE`
   * `MAINTAINS`
 * Keywords for documentation
-  * [`PURPOSE`](the-purpose-statement.md)
-  * [`MEANING`](relations.md)
+  * [`PURPOSE`](../the-purpose-statement.md)
+  * [`MEANING`](../relations.md)
   * `REF`
   * `REST`
   * `HTML`
@@ -104,7 +100,7 @@ Keywords in Ampersand are always written in CAPITALS.
   * `TABS`
   * `COLS`
 * Keywords for identities
-  * [`IDENT`](the-ident-statement.md)
+  * [`IDENT`](../the-ident-statement.md)
 * Keywords for views
   * `VIEW`
   * `ENDVIEW`

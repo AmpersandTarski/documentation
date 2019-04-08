@@ -6,7 +6,7 @@ Patterns are meant to isolate discussions and make solutions reusable, as known 
 
 ## Description
 
-A pattern is a set of [rules](rules/) that describes a theme or a general reusable solution to a commonly occurring problem.
+A pattern is a set of [rules](syntactical-conventions/the-rule-statement.md) that describes a theme or a general reusable solution to a commonly occurring problem.
 
 For instance, if specific concerns about security arise, you might want to discuss this with stakeholders in security. With them you can discuss which rules in particular constitute your solution. Divide your problem in smaller pieces and discuss each piece with just the right stakeholders. This allows you to go deeper by talking to the right people. It saves time as well by freeing others from having to participate. An even larger benefit arises if you reuse patterns that have been discussed and scrutinized before. The best thing comes once your stakeholders agree. By that time, your pattern represents their agreement formally in Ampersand, so you can use it in the larger context of the information system.
 
@@ -45,10 +45,10 @@ A pattern consists of any number of pattern elements in an arbitrary order. The 
 
 |  |  |
 | :--- | :--- |
-| `<rule>` | a statement that declares a [rule](rules/) |
-| `<classify>` | a statement that specifies generalization/specialization of [concepts](concepts.md) |
+| `<rule>` | a statement that declares a [rule](syntactical-conventions/the-rule-statement.md) |
+| `<classify>` | a statement that specifies generalization/specialization of [concepts](syntactical-conventions/the-concept-statement.md) |
 | `<relation>` | a declaration of a relation, stating the existence of a [relation](relations.md) within the context |
-| `<conceptDef>` | a description of a [concept](concepts.md), to document its meaning |
+| `<conceptDef>` | a description of a [concept](syntactical-conventions/the-concept-statement.md), to document its meaning |
 | `<representation>` | a statement that defines the atomic type of a [concept](../tutorial-rap3/conceptual-model-enrollment.md) |
 | `<roleRule>` | a statement that makes a role responsible for satisfying a rule |
 | `<ident>` | a rule that defines an identity on a concept |
