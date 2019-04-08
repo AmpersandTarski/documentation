@@ -1,5 +1,9 @@
 # Conceptual Model: Enrollment
 
+In the code you can find the MEANING of each relation in natural language. In the model, each relation represents a set of pairs. The relation `takes` is filled with `(Student, Course)` -pairs that each specify a specific course that that specific student is taking. The same student can appear in more pairs and the same course can appear in more pairs. But each combination is unique, a specific pair \(x,y\) can only appear in the set once.
+
+![conceptual model of Enrollment](../.gitbook/assets/br-course-pagina-1.png)
+
 You have seen the web application Enrollment in action. You have seen the code that defines the system in such a way that Ampersand can generate the web application. Now we will have a look at the conceptual model that is defined in that code. In this tutorial we will only describe the example to make you more familiar with the terminology. Just try to recognize what is described in the code and in the working system.
 
 We have three ingredients:
@@ -21,7 +25,7 @@ The goal of the model is to define rules that will govern the behavior of the sy
 
 A conceptual model of Enrollment can be represented with a diagram:
 
-![](../.gitbook/assets/br-course-pagina-1.png)
+![](../.gitbook/assets/br-course-pagina-1%20%281%29.png)
 
 Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation.
 
