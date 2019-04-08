@@ -9,7 +9,7 @@ Runs the Ampersand compiler from the command line in Windows, MacOS, and Linux.
 ## SYNOPSIS
 
 ```bash
-ampersand [OPTIONS] [FILE]
+ampersand [OPTIONS] FILE
 ```
 
 ## DESCRIPTION
