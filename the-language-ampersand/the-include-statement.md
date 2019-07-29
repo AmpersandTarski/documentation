@@ -35,5 +35,5 @@ Make sure to include the adl-files before including xlsx-files.
 
 Included files may contain `INCLUDE`statements themselves. The files mentioned there are treated as though they were included in the main file. So their code is also part of the same context. Nested adl-files can have their own xlsx-files included.
 
-For formatting your excel-file see the text on [the Excel Importer](../architecture-of-an-ampersand-application/extensions/the-excel-importer.md).
+For formatting your excel-file see the text on [the Excel Importer](../the-excel-importer.md).
 

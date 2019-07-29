@@ -94,5 +94,5 @@
   * [Hooks](architecture-of-an-ampersand-application/hooks.md)
   * [Extensions](architecture-of-an-ampersand-application/extensions/README.md)
     * [The ExecEngine](architecture-of-an-ampersand-application/extensions/the-execengine.md)
-    * [The Excel Importer](architecture-of-an-ampersand-application/extensions/the-excel-importer.md)
+* [The Excel Importer](the-excel-importer.md)
 
