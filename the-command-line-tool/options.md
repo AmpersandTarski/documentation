@@ -1,6 +1,16 @@
+---
+description: >-
+  Command-line options are used to tell the ampersand compiler what to do. This
+  page lists the available options.
+---
+
 # Options
 
-Command-line options are used to tell the ampersand compiler what to do. Some of the options are still experimental. Since Ampersand-v3.5.3, it is possible to use a configuration file, reducing the need to rewrite the same options every time you use ampersand.exe. A configuration file can be used using the `--config` option.
+Some of the options are still experimental. Momentarily an effort is made to rationaize the options, so this may change at some point in the near future.
+
+Since Ampersand-v3.5.3, it is possible to use a configuration file, reducing the need to rewrite the same options every time you use ampersand.exe. A configuration file can be used using the `--config` option.
+
+This text may deviate slightly from the Ampersand version you are running, especially as new options are introduced. The command `ampersand --help` will give you the actual list.
 
 ### -h, -?, --help
 
