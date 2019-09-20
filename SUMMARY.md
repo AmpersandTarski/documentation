@@ -69,6 +69,7 @@
   * [The Preprocessor](the-language-ampersand/the-preprocessor.md)
   * [Design considerations](the-language-ampersand/design-considerations.md)
 * [Running the Ampersand compiler](the-command-line-tool/README.md)
+  * [Run Ampersand on Docker](the-command-line-tool/run-ampersand-on-docker.md)
   * [Configuration](the-command-line-tool/configuration.md)
   * [Options](the-command-line-tool/options.md)
 * [Reusing Available Modules](modules/README.md)

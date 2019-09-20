@@ -1,20 +1,14 @@
-# Running the Ampersand compiler
+# Run Ampersand on Docker
+
+
 
 ## NAME
 
 `ampersand`
 
-Runs the Ampersand compiler \(from your command prompt\)
+Runs the Ampersand compiler from a docker image.
 
-## SYNOPSIS \(run from the command line in Windows, MacOS, and Linux.\)
-
-```bash
-ampersand [OPTIONS] FILE
-```
-
-This presumes you have `ampersand` installed on your computer and it can be found \(i.e. the path is set correctly\).
-
-## SYNOPSIS \(run on Docker\)
+## SYNOPSIS
 
 ```bash
 docker run -it -v "$(pwd)":/scripts ampersandtarski/ampersand [OPTIONS] FILE
