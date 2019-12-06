@@ -20,7 +20,7 @@ DIY-engineers will find instructions in section [Installing the tools manually](
 
 ### How to install your own copy of RAP3 on a server of your own choosing
 
-RAP3 is an Ampersand repository, in which multiple users can store and use their Ampersand scripts. If you run a class or have a team at work, you might want a RAP3 clone of your own rather than work from [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). In that case, consult [the tools we use at Ampersand](https://ampersandtarski.gitbooks.io/the-tools-we-use-for-ampersand/content/installation_of_rap.html). This is work in progress.
+RAP3 is an Ampersand repository, in which multiple users can store and use their Ampersand scripts. Consult [the tools we use at Ampersand](https://ampersandtarski.gitbooks.io/the-tools-we-use-for-ampersand/content/installation_of_rap.html). This is work in progress.
 
 ### How to change Ampersand itself
 
