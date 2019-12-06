@@ -2,10 +2,6 @@
 
 Ampersand is great for rapid prototyping. So how do you run your prototypes? For different purposes there are different ways of doing that. This chapter shows you how.
 
-## How to avoid installing Ampersand
-
-Go to [http://ampersand.tarski.nl/RAP3](http://ampersand.tarski.nl/RAP3). Just register and get started right away. At no cost \(for you, for now\). This lets you run your Ampersand scripts and generate functional specifications.
-
 ## How to edit Ampersand scripts
 
 You can use any text editor to create Ampersand scripts. However, for those that use the [Visual Studio Code \(vscode\)](https://code.visualstudio.com/) editor, there is language support. All you have to do is search for the vscode extension "Ampersand \(ADL\) language support" and install it, and then choose the coloring theme called "Ampersand".
