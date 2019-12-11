@@ -6,7 +6,7 @@ description: >-
 
 # Syntax and meaning
 
-The syntax of a service is best [explained by means of examples](explanations.md). However, if you want to understand the syntax in detail, this section is what you are looking for.
+The syntax of a service is best [explained by means of examples](../syntactical-conventions/explanations.md). However, if you want to understand the syntax in detail, this section is what you are looking for.
 
 A service specification has the following structure. It is identical for user interfaces \(`INTERFACE`\) and application programming interfaces \(`API`\).
 

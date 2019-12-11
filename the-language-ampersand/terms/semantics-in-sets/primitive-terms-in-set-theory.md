@@ -2,7 +2,7 @@
 
 ## Relations
 
-Every relation you declare is a set of pairs. If you declare `RELATION owner[Person*Building]`, Ampersand knows that this relation exists throughout the entire context. It infers that the concepts `Person` and `Building` exist, even when you have not [introduced them explicitly](../../syntactical-conventions/the-concept-statement.md).
+Every relation you declare is a set of pairs. If you declare `RELATION owner[Person*Building]`, Ampersand knows that this relation exists throughout the entire context. It infers that the concepts `Person` and `Building` exist, even when you have not [introduced them explicitly](../../the-concept-statement.md).
 
 When a relation is used in an term, it stands for the set of pairs it contains at the moment it is evaluated. That set \(also referred to as the contents of the relation\) can change over time as users add or delete pairs from it. So when you define the relation, you cannot really tell which pairs it contains.
 

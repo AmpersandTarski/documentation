@@ -2,7 +2,7 @@
 
 * Ampersand is meant to develop information systems.
 * This tutorial will get you going with Ampersand. Consult your tutor with questions.
-* You have a [tool](your-tool-rap3.md) to experiment with.
+* You have a [tool](your-tool-rap3.md) to experiment with, supplemented by [this video](https://youtu.be/ZISLjxJqkqw) \(in Dutch\) to make your start even easier.
 
 
 

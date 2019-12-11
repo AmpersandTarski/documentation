@@ -10,7 +10,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | :--- | :--- | :--- | :--- |
 
 
-| [Concept](syntactical-conventions/the-concept-statement.md) | a name to categorize similar items | `Person` |  |
+| [Concept](the-concept-statement.md) | a name to categorize similar items | `Person` |  |
 | :--- | :--- | :--- | :--- |
 
 
@@ -22,7 +22,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | :--- | :--- | :--- | :--- |
 
 
-| [Rule](syntactical-conventions/the-rule-statement.md) | a constraint, which is supposed to remain satisfied. | `r;s |- t` | to provide meaning in a given context |
+| [Rule](the-rule-statement.md) | a constraint, which is supposed to remain satisfied. | `r;s |- t` | to provide meaning in a given context |
 | :--- | :--- | :--- | :--- |
 
 
@@ -33,7 +33,7 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><a href="patterns.md">Pattern</a>
+      <th style="text-align:left"><a href="syntactical-conventions/patterns.md">Pattern</a>
       </th>
       <th style="text-align:left">a set of rules</th>
       <th style="text-align:left">

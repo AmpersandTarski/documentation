@@ -45,7 +45,7 @@ Atoms are represented in an SQL database. For this purpose every atom has a type
 ## Miscellaneous
 
 * Every atom whose atomic type is marked "yes" in the column "eq" can be compared for equality. For all other atoms, equality is not defined.
-* The following Ampersand statement declares the atomic type of a [concept](syntactical-conventions/the-concept-statement.md):
+* The following Ampersand statement declares the atomic type of a [concept](the-concept-statement.md):
 
   ```text
   REPRESENT <Concepts> TYPE <Atomic type>
