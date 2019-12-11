@@ -1,3 +1,9 @@
+---
+description: >-
+  This chapter describes the full language Ampersand. Please use it as a
+  reference rather than an introductory course.
+---
+
 # The language Ampersand
 
 Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to learn how we use the words atom, concept, and relation. Below is a list of other words with a specific meaning in Ampersand.

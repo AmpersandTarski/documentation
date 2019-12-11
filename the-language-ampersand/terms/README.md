@@ -1,19 +1,19 @@
 ---
 description: >-
-  This page introduces you to the meaning of the symbols that constitute
-  relation algebra. The time you spend getting acquainted with this will pay off
-  in designing correct software...
+  This page describes the notion of term (aka expression). Its subpages provide
+  several interpretations of terms, all of which are valid so you can use each
+  interpretation at your own discretion.
 ---
 
 # Terms
 
 ## Purpose
 
-The purpose of an term is to compute pairs that constitute a relation. We use operators to assemble terms from smaller terms, to express in formal language precisely what is meant in the natural language of the business. The smallest term is a single relation.
+The purpose of a term is to compute pairs that constitute a relation. We use operators to assemble terms from smaller terms, to express in formal language precisely what is meant in the natural language of the business. The smallest term is a single relation.
 
 ## Description
 
-An term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation.
+An term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation. The word "expression" may be used as a synonym for term in the context of Ampersand.
 
 ## Examples
 
