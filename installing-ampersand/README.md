@@ -1,6 +1,6 @@
 # Installing Ampersand
 
-Ampersand is great for rapid prototyping. So how do you run your prototypes? For different purposes there are different ways of doing that. This chapter shows you how.
+Ampersand is great for rapid prototyping. We advise you to do that on the web. But sometimes you want to run your prototypes on your own computer\(s\). For different purposes there are different ways of doing that. This chapter shows you how.
 
 ## How to edit Ampersand scripts
 
