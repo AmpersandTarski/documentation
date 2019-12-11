@@ -46,7 +46,7 @@ CONCEPT Course "A complete course that prepares for a diploma"
 CONCEPT Module "An educational entity with a single exam"
 
 -- The relations and the initial population
-RELATION takes [Student*Course]
+RELATION takes [Student*Course] [TOT]
 MEANING "A student takes a complete course"
 
 POPULATION takes CONTAINS
