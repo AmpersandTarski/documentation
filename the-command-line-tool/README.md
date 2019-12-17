@@ -14,14 +14,6 @@ ampersand [OPTIONS] FILE
 
 This presumes you have `ampersand` installed on your computer and it can be found \(i.e. the path is set correctly\).
 
-## SYNOPSIS \(run on Docker\)
-
-```bash
-docker run -it -v "$(pwd)":/scripts ampersandtarski/ampersand [OPTIONS] FILE
-```
-
-This alternative presumes you have `docker` installed on your computer and it can be found \(i.e. the path is set correctly\). If ampersand is not present, docker will get it from [docker hub](https://cloud.docker.com/u/ampersandtarski/repository/docker/ampersandtarski/ampersand). So you need to be connected to internet. The docker image is built as a linux container \(which is relevant if you run docker from Windows 10\)
-
 ## DESCRIPTION
 
 **ampersand** takes a file as input. It must contain a valid ampersand script, i.e. a script that complies to the [syntax](../the-language-ampersand/syntactical-conventions/) and semantics of ampersand. The compiler will not generate any output unless the script is valid.
