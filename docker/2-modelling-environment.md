@@ -1,2 +1,4 @@
-## Modelling environment for Ampersand user (incl. VSCode extensions)
+# Modelling environment
+
 Not yet implemented
+
