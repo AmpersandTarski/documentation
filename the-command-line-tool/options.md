@@ -4,7 +4,7 @@ description: >-
   page lists the available options.
 ---
 
-# Options
+# Options \(up to vs. 3.17.4\)
 
 Some of the options are still experimental. Momentarily an effort is made to rationaize the options, so this may change at some point in the near future.
 
