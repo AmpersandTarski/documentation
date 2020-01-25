@@ -1,7 +1,7 @@
 ---
 description: >-
   How do you get started if you just want to build and run your first prototype?
-  Read this page.
+  Read this page, which is full of hyperlinks to background knowledge.
 ---
 
 # Deploying your Prototype
