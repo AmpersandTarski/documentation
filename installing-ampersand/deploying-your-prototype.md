@@ -1,16 +1,22 @@
 ---
 description: >-
-  If you want to deploy your application in the cloud, you want to have basic
-  knowledge of Docker. This instruction lets you deploy on your own laptop.
+  How do you get started if you just want to build and run your first prototype?
+  Read this page.
 ---
 
 # Deploying your Prototype
 
 ## What do you need to understand?
 
-To make your program run on virtually any computer we use Docker. Docker is a popular, automated platform to run application on. You provide \(once\) a recipe for building \(Dockerfile\) and a description of the configuration \(docker-compose.yml\). We'll provide examples for you to adapt. That's all you need.
+We use a [docker-platform](https://en.wikipedia.org/wiki/Docker_%28software%29) to run your Ampersand program on virtually any computer. So go ahead and [install docker](https://docs.docker.com/install/) if you don't already have it. You provide \(once\) a recipe for building \(Dockerfile\) and a description of the configuration \(docker-compose.yml\). We'll provide examples for you to adapt.
 
-Your program runs in a [_**container**_](https://docs.docker.com/get-started/#docker-concepts). This is a virtual machine, designed to run in the cloud. To run a container, docker loads the [_**image**_](https://docs.docker.com/get-started/#docker-concepts) it requires from [Docker Hub](https://hub.docker.com/u/ampersandtarski/) and cashes it in a local Docker repository. Thus it reloads things from Docker Hub only when necessary.
+1. Your Ampersand prototype will run in a [container](https://www.docker.com/resources/what-container), which is a virtual machine.
+2. The container is started and stopped by `docker-compose`, which uses a[ docker-image](https://docs.docker.com/get-started/#images-and-containers)
+
+    that is built with your Dockerfile and deployed with your docker-compose.yml file.
+
+3. [Run](https://docs.docker.com/engine/reference/run/) your image from your [command-line](https://en.wikipedia.org/wiki/Command-line_interface), using the command `docker-compose up -d`. You can verify that it runs with `docker ps`.
+4. Access your application through your browser, using &lt;TODO: Which URL?&gt;
 
 Please watch [this video](https://youtu.be/XqHTJfTVnoQ) \(8 minutes\) to see what Docker does to bring up your Ampersand program as a web application on your own machine.
 

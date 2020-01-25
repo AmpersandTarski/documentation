@@ -80,7 +80,6 @@
 * [Ampersand and Docker](docker/README.md)
   * [Compiler](docker/1-compiler.md)
   * [Modelling environment](docker/2-modelling-environment.md)
-  * ["Hello World" with Docker](docker/3-prototype-environment.md)
   * [Prototype multi-stage build](docker/4-prototype-multi-stage-build.md)
   * [Prototype database](docker/5-prototype-database.md)
 * [Reusing Available Modules](modules/README.md)
