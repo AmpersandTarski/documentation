@@ -30,7 +30,7 @@ $$
 r;(s;t)\ =\ (r;s);t
 $$
 
-The meaning stays the same, no matter how you place the brackets. So Ampersand lets you omit brackets entirely. You may simply write $$r;s;t$$ instead of $$r;(s;t)$$ or $$(r;s);t$$.
+The meaning stays the same, no matter how you place the brackets. So Ampersand lets you omit brackets entirely. You may write $$r;s;t$$ instead of $$r;(s;t)$$ or $$(r;s);t$$.
 
 Composition has a left and a right identity. Let $$r_{[A\times B]}$$ be a relation, then
 

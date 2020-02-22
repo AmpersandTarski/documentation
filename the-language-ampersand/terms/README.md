@@ -13,7 +13,7 @@ The purpose of a term is to compute pairs that constitute a relation. We use ope
 
 ## Description
 
-An term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation. The word "expression" may be used as a synonym for term in the context of Ampersand.
+A term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation. The word "expression" may be used as a synonym for term in the context of Ampersand.
 
 ## Examples
 
@@ -42,7 +42,7 @@ V <type>?
 
 ## `Operators`
 
-The operators come in families. We advise novices to study only the rule operators, boolean operators and relational operators. There is a wealth of things you can express with just these operators. The residual operators seem a lot harder to learn and the Kleene operators are not fully implemented yet. You can click the hyperlink to navigate to the semantics of each family.
+The operators come in families. We advise novices to study only the rule operators, boolean operators and relational operators. There is a wealth of things you can express with just these operators. The residual operators seem harder to learn and the Kleene operators are not fully implemented yet. You can click the hyperlink to navigate to the semantics of each family.
 
 | Family | binary operators | binding power | unary operators | binding power |
 | :--- | ---: | :--- | ---: | :--- |
@@ -68,8 +68,8 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | :--- | :---: | :---: | :--- | :--- |
 | equivalence \(equal\) | `=` | $$=$$ | use only in a rule |  |
 | inclusion | \` | -\` | $$\subseteq$$ | use only in a rule |
-| intersect | `/\` | $$∩$$ | associative |  |
-| union | `\/` | $$∪$$ | associative |  |
+| intersect | `/\` | $$∩$$ | associative, commutative, idempotent |  |
+| union | `\/` | $$∪$$ | associative, commutative, idempotent |  |
 | difference \(minus\) | `-` | $$-$$ |  |  |
 | complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |
 | compose | `;` | $$;$$ | associative |  |

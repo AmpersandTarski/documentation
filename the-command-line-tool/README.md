@@ -1,18 +1,33 @@
+---
+description: >-
+  If you want to check your script, generate documentation, generate prototypes
+  or use any other feature of Ampersand, you need to run the Ampersand compiler.
+  This page tells you how.
+---
+
 # Running the Ampersand compiler
 
-## NAME
+## COMMAND
 
-`ampersand`
+To run the Ampersand compiler presumes you have `docker` installed on your computer. The following is the base command on linux \(bash syntax\)
+
+```bash
+docker run -it -v "$(pwd)":/scripts ampersandtarski/ampersand
+```
+
+On the Windows-10 command-line this looks slightly different \(todo: check this!\)
+
+```text
+docker run -it -v $PWD:/scripts ampersandtarski/ampersand
+```
 
 Runs the Ampersand compiler \(from your command prompt\)
 
-## SYNOPSIS \(run from the command line in Windows, MacOS, and Linux.\)
+## SYNOPSIS
 
 ```bash
-ampersand [OPTIONS] FILE
+docker run -it -v "$(pwd)":/scripts ampersandtarski/ampersand COMMAND [OPTIONS] FILE
 ```
-
-This presumes you have `ampersand` installed on your computer and it can be found \(i.e. the path is set correctly\).
 
 ## DESCRIPTION
 

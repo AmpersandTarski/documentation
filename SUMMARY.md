@@ -32,6 +32,7 @@
       * [Boolean operators in algebra](the-language-ampersand/terms/semantics-in-algebra/boolean-operators-in-algebra.md)
       * [Relational operators in algebra](the-language-ampersand/terms/semantics-in-algebra/relational-operators-in-algebra.md)
     * [Semantics visualized](the-language-ampersand/terms/semantics-visualized/README.md)
+      * [Semantics of boolean operators visualized](the-language-ampersand/terms/semantics-visualized/semantics-of-boolean-operators-visualized.md)
       * [Semantics of residuals visualized](the-language-ampersand/terms/semantics-visualized/semantics-visualized.md)
   * [The RULE statement](the-language-ampersand/the-rule-statement.md)
   * [Context](the-language-ampersand/context.md)

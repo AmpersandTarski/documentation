@@ -2,10 +2,11 @@
 
 ## Union
 
-The operator $$\cup$$ \(union\) is commutative and associative:
+The operator $$\cup$$ \(union\) is commutative, associative, and idempotent:
 
 1. \(commutativity of $$\cup$$\)     $$r\cup s\ =\ s\cup r$$
 2. \(associativity of $$\cup$$\)        $$r\cup (s\cup t)\ =\ (r\cup s)\cup t$$
+3. \(idempotence of $$\cup$$\)        $$r\cup r\ =\ r$$
 
 ## Difference
 
