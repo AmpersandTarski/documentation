@@ -22,3 +22,32 @@ By combining the relations `authorized` and `beneficiary`, we can derive the fol
 | `"RS746620" (authorized\/beneficiary) "Ann"` | Ann is authorized for or stands to benefit from account RS746620. |
 | `"DE9382991" (authorized\/beneficiary) "Bob"` | Bob is authorized for or stands to benefit from account DE9382991. |
 
+
+
+A different way to state the same is:
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code> authorized/\beneficiary = {(&quot;RS746620&quot;, &quot;Ann&quot;)}</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><code>authorized\/beneficiary = </code>
+        </p>
+        <p><code>  { (&quot;NL19RABO03992844&quot;, &quot;Carl&quot;)</code>
+        </p>
+        <p><code>  , (&quot;RS746620&quot;, &quot;Ann&quot;)</code>
+        </p>
+        <p><code>  , (&quot;DE9382991&quot;, &quot;Bob&quot;) }</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
