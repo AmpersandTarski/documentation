@@ -53,6 +53,8 @@ RELATION <lower case identifier>
 
 The second and third alternative will become obsolete in future versions of Ampersand.
 
+In the _**declaration**_ `RELATION owner[Person*Building]`, `owner` is the _**name**_ and `[Person*Building]` is the _**type**_ of the relation. The _**signature**_ of this relation is `owner[Person*Building]`. The signature identifies the relation within its context. The left hand concept, `Person`, is called the _**source**_ of the relation and the right concept, `Building`, is called the _**target**_.
+
 All three formats define a relation by its name, its source concept and its target concept. By convention, the name of a relation is a single word that starts with a lower case letter. The source and target concepts start with an upper case letter. This convention avoids confusion between concepts and relations.
 
 A relation statement means that there exists a relation in the current context with the specified name, source concept and target concept.

@@ -8,8 +8,6 @@ From this diagram, we can tell which statements are true \(i.e. facts\). The sta
 
 | Formal statement | Elaborate natural language | Ordinary natural language |
 | :--- | :--- | :--- |
-| `"Peter" (traveler~;dest) "Rome"` | There is a trip that Peter has made, which has Rome as destination. | Peter has made a trip to Rome. |
-| `"Peter" (traveler~;dest) "Paris"` | There is a trip that Peter has made, which has Paris as destination. | Peter has made a trip to Paris |
 | `"Peter" (traveler~/dest~) "Rome"` | For each trip, if it has destination Rome, then it has been made by Peter. | Every trip to Rome has been made by Peter. |
 
 The following statements do _**NOT**_  follow from the population shown in the diagram:

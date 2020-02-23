@@ -47,10 +47,10 @@ The operators come in families. We advise novices to study only the rule operato
 | Family | binary operators | binding power | unary operators | binding power |
 | :--- | ---: | :--- | ---: | :--- |
 | rules | $$=$$ and $$\subseteq\$$ | 1 \(weakest\) |  |  |
-| [boolean](semantics-in-logic/boolean-operators.md) | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | 5 |
-| [relational](semantics-in-logic/relational-operators.md) | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | 5 |
+| [boolean](semantics-in-logic/boolean-operators.md) | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | prefix |
+| [relational](semantics-in-logic/relational-operators.md) | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | postfix |
 | [residual](semantics-in-logic/residual-operators.md) | $$\backslash$$, $$/$$, and $$♢$$ | 3 |  |  |
-| Kleene |  |  | $$∗$$ and $$+$$ | 5 |
+| Kleene |  |  | $$∗$$ and $$+$$ | postfix |
 
 ## Brackets
 
@@ -67,7 +67,7 @@ When coding in Ampersand, these operators are typed with characters on the keybo
 | operator name | code | math | remark |  |
 | :--- | :---: | :---: | :--- | :--- |
 | equivalence \(equal\) | `=` | $$=$$ | use only in a rule |  |
-| inclusion | \` | -\` | $$\subseteq$$ | use only in a rule |
+| inclusion | `|-` | $$\subseteq$$ |  | use only in a rule |
 | intersect | `/\` | $$∩$$ | associative, commutative, idempotent |  |
 | union | `\/` | $$∪$$ | associative, commutative, idempotent |  |
 | difference \(minus\) | `-` | $$-$$ |  |  |

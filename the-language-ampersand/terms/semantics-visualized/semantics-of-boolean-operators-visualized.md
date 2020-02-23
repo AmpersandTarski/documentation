@@ -50,4 +50,7 @@ A different way to state the same is:
       </td>
     </tr>
   </tbody>
-</table>
+</table>## Other explanations
+
+Would you like a different explanation of the boolean operators? [This page](../semantics-in-sets/boolean-operators-sets.md) explains them in set theory. [Click here](../semantics-in-algebra/boolean-operators-in-algebra.md) for the semantics of the boolean operators in algebra. [Here](../semantics-in-logic/boolean-operators.md) you get their definitions in logic.
+

@@ -28,9 +28,10 @@ There is a pattern to this. A computer can generate a literal translation from t
 
 | Formally | Natural language template |
 | :--- | :--- |
-| `a (r\s) b` | For every `x`: if `x r a`then `x s b`. |
-| `a (r/s) b` | For every `x`: if `b s x` then `a r x`. |
-| `a (r<>s) b` | For every `x`: if `a r x` then `x s b` and if `x s b` then `a r x`. |
+| `a (r;s) b` | There exists an x : if `a r x`then `x s b`. |
+| `b r~ a` | `a r b`. |
+
+The natural language translation for `b r~ a`is the same as language translation for `a r b`.
 
 ## Other explanation
 
