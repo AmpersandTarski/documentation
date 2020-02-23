@@ -1,13 +1,10 @@
 ---
 description: >-
-  An information system should store "the truth" about the business it supports.
-  If you want to design and build such systems, you should know a few things
-  about truth ...
+  An information system should represent the truth. So, as a designer you must
+  know a thing or two about truth.
 ---
 
 # Truth
-
-An information system should represent the truth. So, as a designer you must know a thing or two about truth.
 
 Let us introduce some words. Consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
 
