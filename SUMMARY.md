@@ -105,4 +105,10 @@
   * [Limitations of Ampersand](modeling/limitations-of-ampersand.md)
 * [Configuring your application](configuring-your-application.md)
 * [The Excel Importer](the-excel-importer.md)
+* [Plans](plans/README.md)
+  * [Current State](plans/current-state.md)
+  * [NoSQL storage](plans/nosql-storage.md)
+  * [API documentation](plans/api-documentation.md)
+  * [OWL and RDFS input](plans/owl-and-rdfs-input.md)
+  * [Refactor the front-end](plans/refactor-the-front-end.md)
 
