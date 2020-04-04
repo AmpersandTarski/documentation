@@ -78,7 +78,7 @@ ENDPATTERN
 
 INTERFACE Overview : "_SESSION"                 cRud
 TABS [ Students     : V[SESSION*Student]        cRuD
-       COLS [ "Student" : I[Student]            CRUD 
+       COLS [ "Student" : I[Student]            cRuD 
             , "Enrolled for" : isEnrolledFor    cRUD
             , "Course" : takes                  CRUD 
             ]
