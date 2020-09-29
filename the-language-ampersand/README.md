@@ -54,7 +54,9 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
     </tr>
   </thead>
   <tbody></tbody>
-</table>| Population | a set of pairs in a context | `POPULATION r[A*B] CONTAINS [ ("Ida",5), ("Bob",1) ]` | to represent the facts \(i.e. true statements\) in an information system |
+</table>
+
+| Population | a set of pairs in a context | `POPULATION r[A*B] CONTAINS [ ("Ida",5), ("Bob",1) ]` | to represent the facts \(i.e. true statements\) in an information system |
 | :--- | :--- | :--- | :--- |
 
 
@@ -77,7 +79,9 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
     </tr>
   </thead>
   <tbody></tbody>
-</table>| View | A set of pairs that can be shown to users in a particular formulation. |  | to represent facts |
+</table>
+
+| View | A set of pairs that can be shown to users in a particular formulation. |  | to represent facts |
 | :--- | :--- | :--- | :--- |
 
 
