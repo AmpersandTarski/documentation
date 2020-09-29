@@ -46,9 +46,7 @@ The following statements do _**NOT**_  follow from the population shown in the d
       style="text-align:left">Every trip to Paris has been made by Peter.</td>
     </tr>
   </tbody>
-</table>
-
-## Other explanation
+</table>## Other explanation
 
 Would you like a different explanation of the residual operators? [This page](../semantics-in-natural-language/residual-operators.md) explains them in natural language. [Click here](../semantics-in-logic/residual-operators.md) for the explanation of residual operators in logic.
 
