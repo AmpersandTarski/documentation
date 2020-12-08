@@ -58,7 +58,7 @@ POPULATION takes CONTAINS
 RELATION isPartOf [Module*Course]
 MEANING "A module part of a complete course"
 
-POPULATION isPartOf CONTAINS
+POPULATION isPartOf [Module*Course] CONTAINS
    [ ("Finance", "Management")
    ; ("Business Rules", "Business IT")
    ; ("Business Analytics", "Business IT")
