@@ -1,8 +1,6 @@
 # Delivery
 
-Consider the following script. You can compile and run it in [RAP3](http://ampersand.tarski.nl/RAP3).
-
-test
+Consider the following script. You can compile and run it op een RAP server.
 
 ```text
 CONTEXT Delivery IN ENGLISH
@@ -75,8 +73,6 @@ RELATION orderOf[Order* Product] [TOT]
 
 -- Rules
 
-PROCESS Bestellen
-
 RELATION orderAccepted[Order*Vendor] [UNI] -- an order may not be accepted by multiple vendors
 -- POPULATION orderAccepted CONTAINS [ ("Order_1", "Vendor_1") ]
 
@@ -105,8 +101,6 @@ ROLE Vendor MAINTAINS allAccepted
 
 ROLE Client MAINTAINS dummy
 RULE dummy: orderedAt |- orderedAt
-
-ENDPROCESS
 
 -- Interfaces
 INTERFACE Overview : "_SESSION"[SESSION]
