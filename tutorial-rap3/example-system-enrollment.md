@@ -33,7 +33,7 @@ Try it out on an Ampersand implementation. Copy this example code, make a new sc
 This information system was built by the following code:
 
 ```text
-CONTEXT Enrollment IN DUTCH
+CONTEXT Enrollment IN ENGLISH
 PURPOSE CONTEXT Enrollment
 {+ A complete course consists of several modules.
 Students of a course can enroll for any module that is part of the course.
@@ -42,29 +42,35 @@ Students of a course can enroll for any module that is part of the course.
 PATTERN Courses
 -- The concepts
 CONCEPT Student "Someone who wants to study at this institute"
+PURPOSE CONCEPT Student 
+{+We have to know what person studies at this institute, so the system needs to keep track of them.+}
 CONCEPT Course "A complete course that prepares for a diploma"
+PURPOSE CONCEPT Course 
+{+We have to know what courses there are, so the system needs to keep track of them.+}
 CONCEPT Module "An educational entity with a single exam"
+PURPOSE CONCEPT Module 
+{+We have to know what modules exist, so the system needs to keep track of them.+}
 
 -- The relations and the initial population
-RELATION takes [Student*Course] [TOT]
+RELATION takes [Student*Course]
 MEANING "A student takes a complete course"
 
 POPULATION takes CONTAINS
-   [ ("Peter", "Management")
-   ; ("Susan", "Business IT")
-   ; ("John", "Business IT")
-   ]
+[ ("Peter", "Management")
+; ("Susan", "Business IT")
+; ("John", "Business IT")
+]
 
-RELATION isPartOf [Module*Course]
+RELATION isPartOf[Module*Course]
 MEANING "A module part of a complete course"
 
-POPULATION isPartOf [Module*Course] CONTAINS
-   [ ("Finance", "Management")
-   ; ("Business Rules", "Business IT")
-   ; ("Business Analytics", "Business IT")
-   ; ("IT-Governance", "Business IT")
-   ; ("IT-Governance", "Management")
-   ]
+POPULATION isPartOf[Module*Course] CONTAINS
+[ ("Finance", "Management")
+; ("Business Rules", "Business IT")
+; ("Business Analytics", "Business IT")
+; ("IT-Governance", "Business IT")
+; ("IT-Governance", "Management")
+]
 
 RELATION isEnrolledFor [Student*Module]
 MEANING "Students enroll for each module in the course separately"
@@ -76,21 +82,25 @@ MESSAGE "Attempt to enroll student(s) for a module that is not part of the stude
 VIOLATION (TXT "Student ", SRC I, TXT " enrolled for the module ", TGT I, TXT " which is not part of the course ", SRC I[Student];takes)
 ENDPATTERN
 
-INTERFACE Overview : "_SESSION"                 cRud
-TABS [ Students     : V[SESSION*Student]        cRuD
-       COLS [ "Student" : I[Student]            cRuD 
-            , "Enrolled for" : isEnrolledFor    cRUD
-            , "Course" : takes                  CRUD 
-            ]
-     , Course     : V[SESSION*Course]           cRuD
-       COLS [ "Course" : I                      cRud
-            , "Modules" : isPartOf~             CRUD
-            ]
-     , Modules : V[SESSION*Module]              cRud
-       COLS [ "Modules" : I                     cRuD
-            , "Course" : isPartOf               cRud
-            , "Students" : isEnrolledFor~       CRUD
-            ]
+INTERFACE Overview : "_SESSION"                  cRud
+BOX <TABS>
+     [ Students : V[SESSION*Student]             cRuD
+       BOX <TABLE>
+                [ "Student" : I[Student]         cRud
+                , "Enrolled for" : isEnrolledFor cRUD
+                , "Course" : takes CRUD
+                ]
+     , Course : V[SESSION*Course]                cRuD
+       BOX <TABLE>
+                [ "Course" : I                   cRud
+                , "Modules" : isPartOf~          CRUD
+                ]
+     , Modules : V[SESSION*Module]               cRud
+       BOX <TABLE>
+                [ "Modules" : I                  cRuD
+                , "Course" : isPartOf            cRUd
+                , "Students" : isEnrolledFor~    CRUD
+                ]
      ]
 
 ENDCONTEXT

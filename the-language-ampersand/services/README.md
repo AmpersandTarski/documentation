@@ -18,18 +18,22 @@ Please note that the keyword `INTERFACE` is still used. That may be confusing. I
 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
-TABS [ Students : V[SESSION*Student]             cRuD
-        COLS    [ "Student"      : I[Student]    CRUD
+BOX <TABS>
+     [ Students : V[SESSION*Student]             cRuD
+       BOX <TABLE>
+                [ "Student" : I[Student]         cRud
                 , "Enrolled for" : isEnrolledFor cRUD
-                , "Course"       : takes         CRUD
+                , "Course" : takes CRUD
                 ]
      , Course : V[SESSION*Course]                cRuD
-        COLS    [ "Course"  : I                  cRud
+       BOX <TABLE>
+                [ "Course" : I                   cRud
                 , "Modules" : isPartOf~          CRUD
                 ]
      , Modules : V[SESSION*Module]               cRud
-        COLS    [ "Modules"  : I                 cRuD
-                , "Course"   : isPartOf          cRud
+       BOX <TABLE>
+                [ "Modules" : I                  cRuD
+                , "Course" : isPartOf            cRUd
                 , "Students" : isEnrolledFor~    CRUD
                 ]
      ]
