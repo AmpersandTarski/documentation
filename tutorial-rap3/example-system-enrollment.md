@@ -1,14 +1,14 @@
 # Example system: Enrollment
 
-In this section you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
+In this section, you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Student can enroll \(or be enrolled\) for any module that is part of the course they take.
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Students can enroll \(or be enrolled\) for any module that is part of the course they take.
 
-Try it out on an Ampersand implementation. Copy this example code, make a new script on an Ampersand system, compile it, and generate a prototype implementation from it. Run the prototype and then click on the icon "Overview" in the top-left of the screen. The application will start. Browse through the data and change things. Find out which courses, students and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
+Try it out on an Ampersand implementation. Copy this example code, make a new script on an Ampersand system, compile it, and generate a prototype implementation from it. Run the prototype and then click on the icon "Overview" in the top-left of the screen. The application will start. Browse through the data and change things. Find out which courses, students, and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
 ## Assignment
 
-* Who are the three students and what are the courses they they take?
+* Who are the three students and what are the courses they take?
 * Is there a module `HRM`?
   * Add, in the tab Course, the module HRM to the Management course. The system sees that the subject is unknown, and provides a green plus-sign to add it.
   * Each change will be saved automatically.
@@ -19,16 +19,15 @@ Try it out on an Ampersand implementation. Copy this example code, make a new sc
   * Click on the message to see details.
   * Look-up in the code below where this message is defined. It is the line that starts with `RULE`. You don't have to understand the syntax at this point.
   * Click cancel.
-* Now remove the course `Business IT`from`Susan`in  the tab Students. 
-  * This also will trigger a message because each student must be taking at least one course.
+* Use the trash can icon to remove the course `Business IT` from`Susan` in the tab Students. 
+  * This also will trigger an error message because each student can only enroll for a module in courses he has registered in. Get rid of the message by going to the "List all interfaces" in the menu bar and navigate back to the overview.
   * Look up in the code the definition of the `RELATION takes`. The keyword `[TOT]` is responsible for this message.
-  * Click cancel.
-* Note the three icons on the top-right of the screen and click on the middle icon \(two arrows\).
+* Note the four icons on the top-right of the screen and click on the second icon \(nine dots\).
   * Click on 'Reinstall database'
   * The Installer screen comes up. Click on the big red button and wait for it to turn green.
   * Click on 'overview' and the initial data is back.
   * Have a look at the code below, to find where the initial data is defined.
-* Have a look at the code-part at the end called INTERFACE and compare it with the screen. Note which parts you recognize. The syntax of the code will be discussed in the course.
+* Have a look at the code-part at the end called INTERFACE and compare it with the screen. Note which parts you recognize. The syntax of the code is discussed in the documentation.
 
 This information system was built by the following code:
 
@@ -106,19 +105,19 @@ BOX <TABS>
 ENDCONTEXT
 ```
 
-During this part of the course, you will learn about the structure of an information system. You will also learn how this system has been defined in Ampersand.
+
 
 ## What have you learned?
 
 After finishing your assignment, you have learned:
 
-* to recognize details in the source code of your information system and relate them to the operational system that you have been playing with;
+* to recognize details in the source code of your information system and relate them to the information system "Enrollment" that you have been playing with;
 * that a rule of the business, such as "A student can only enroll for a module that is in the course the student takes" can be formalized in Ampersand.
 * that such a business rule can be used to constrain data in a database.
 
 ## Want to learn more?
 
 1. How can I create my own information system in RAP4? Go to [Your tool: RAP4](your-tool-rap3.md).
-2. What is the conceptual model behind an Amersand model? Go to [Conceptual Model: Enrollment.](conceptual-model-enrollment.md)
+2. What is the conceptual model behind an Ampersand model? Go to [Conceptual Model: Enrollment.](conceptual-model-enrollment.md)
 3. How can I upload [bulk data](https://github.com/ampersandtarski/documentation/tree/662a3e7bdf67bf950cfc029e4c51efc919c0bf53/tutorial/data-in-spreadsheets.md) from spreadsheets into my application?
 

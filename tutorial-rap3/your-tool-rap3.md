@@ -4,7 +4,7 @@ RAP4 is under development. New releases can be done daily. If you find problems 
 
 During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 
-This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here if you are a student of the Open University](http://rap.cs.ou.nl/RAP3) or [here if you are not](http://ampersand.tarski.nl/RAP3/#/Login) to start using it.
+This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here if you are a student of the Open University](https://rap.cs.ou.nl) or [here if you are not](https://rap.cs.ou.nl) to start using it.
 
 ## Login/Create account
 
