@@ -6,7 +6,7 @@
 * [Tutorial](tutorial-rap3/README.md)
   * [Example system: Enrollment](tutorial-rap3/example-system-enrollment.md)
   * [Conceptual Model: Enrollment](tutorial-rap3/conceptual-model-enrollment.md)
-  * [Your tool: RAP3](tutorial-rap3/your-tool-rap3.md)
+  * [Your tool: RAP4](tutorial-rap3/your-tool-rap3.md)
   * [Making your first Ampersand script](tutorial-rap3/making-your-first-ampersand-script.md)
 * [The language Ampersand](the-language-ampersand/README.md)
   * [How to read syntax statements](the-language-ampersand/how-to-read-syntax-statements.md)

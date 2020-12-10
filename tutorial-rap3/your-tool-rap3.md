@@ -1,14 +1,14 @@
-# Your tool: RAP3
+# Your tool: RAP4
 
-RAP3 is under development. New releases can be done daily. If you find problems in the software, please notify your tutor. If the software is to blame, we will ask you to [make an issue in RAP's issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
+RAP4 is under development. New releases can be done daily. If you find problems in the software, please notify your tutor. If the software is to blame, we will ask you to [make an issue in RAP's issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
 
 During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 
-This section introduces the tool you will use during the course: RAP3. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here if you are a student of the Open University](http://rap.cs.ou.nl/RAP3) or [here if you are not](http://ampersand.tarski.nl/RAP3/#/Login) to start using it.
+This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here if you are a student of the Open University](http://rap.cs.ou.nl/RAP3) or [here if you are not](http://ampersand.tarski.nl/RAP3/#/Login) to start using it.
 
 ## Login/Create account
 
-RAP3 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
+RAP4 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
 
 Register with your own student number and e-mail. Create a password. Your student number is your account, but you can fill in a name. This name should not exist yet, so a green plus-sign will appear. Click on it and your name is added to the database.
 
@@ -19,11 +19,11 @@ Notes:
 
   This login-screen is also the screen to logout later.
 
-* When RAP3 is updated, probably your account will be reset. You need to register again. We will inform you in the unlikely event that this happens during a course.
+* When RAP4 is updated, probably your account will be reset. You need to register again. We will inform you in the unlikely event that this happens during a course.
 
 ## Use the system
 
-After logging in, you will see your login name or student number in the RAP3 window.
+After logging in, you will see your login name or student number in the RAP4 window.
 
 ![](../.gitbook/assets/afbeelding.png)
 
@@ -36,7 +36,7 @@ In the menu bar you will find:
 
 Notes:
 
-* After a period of not using RAP3, you will be logged out automatically. In the current system, you may get errors or weird behaviour. Please navigate back to the login screen to check whether you are still logged in.
+* After a period of not using RAP4, you will be logged out automatically. In the current system, you may get errors or weird behaviour. Please navigate back to the login screen to check whether you are still logged in.
 
 ## Want to learn more?
 
@@ -46,10 +46,10 @@ Notes:
 
 ## What have you learned?
 
-* where to find the Repository for Ampersand Projects \(RAP3\)
-* to register yourself in RAP3
+* where to find the Repository for Ampersand Projects \(RAP4\)
+* to register yourself in RAP4
 
 ## Disclaimer
 
-RAP3 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
+RAP4 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
 

@@ -118,7 +118,7 @@ After finishing your assignment, you have learned:
 
 ## Want to learn more?
 
-1. How can I create my own information system in RAP3? Go to [Your tool: RAP3](your-tool-rap3.md).
+1. How can I create my own information system in RAP4? Go to [Your tool: RAP4](your-tool-rap3.md).
 2. What is the conceptual model behind an Amersand model? Go to [Conceptual Model: Enrollment.](conceptual-model-enrollment.md)
 3. How can I upload [bulk data](https://github.com/ampersandtarski/documentation/tree/662a3e7bdf67bf950cfc029e4c51efc919c0bf53/tutorial/data-in-spreadsheets.md) from spreadsheets into my application?
 
