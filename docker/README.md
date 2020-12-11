@@ -24,6 +24,8 @@ A docker-compose file is available to deploy prototype, database and supporting 
 
 ## Deploy your local environment to run Ampersand prototypes
 
+Detailed technical instructions are at https://github.com/AmpersandTarski/RAP under the directory listing. This page provides more general and summarized information as context.
+
 The [project-template repository](https://github.com/AmpersandTarski/project-template) contains a docker-compose and Dockerfile to generate, build and run a prototype application.
 
 Run: `docker-compose up -d` to deploy the following services:
