@@ -35,4 +35,24 @@ Run: `docker-compose up -d` to deploy the following services:
   * Available in the browser at `http://localhost:8080`
 * MariaDB database
   * Not directly exposed on host
+  
+## Install instructions for Windows
+  
+* Install Docker from https://docs.docker.com/install/ and start the desktop app
+* Go to https://github.com/AmpersandTarski/RAP
+* Click on the green “Code” button and pull down to “Download ZIP”
+* Download the zip and copy the directory on your laptop 
+* With a command line interface:
+  * docker-compose up –d
+  * you may need to enter “docker network create proxy” and repeat “docker-compose up –d”. The second time is a lot faster
+* Go to the Docker desktop app
+  * Find rap-master or the name you gave this docker app
+  * Click the play button (the triangle)
+* Go to “localhost” on your browser and RAP should be running there as it does on the course server
+  * If that doesn’t work then to back to docker and stop and restart rap4 but enter “2020” as the port and go on the browser to “localhost:2020”
+  
+RAP's GitHub site has more technical install instructions at https://github.com/AmpersandTarski/RAP/blob/master/README.md 
+
+  
+
 
