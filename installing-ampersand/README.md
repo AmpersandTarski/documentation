@@ -18,9 +18,9 @@ Using Ampersand offline does not require you to install Ampersand. Ampersand run
 
 DIY-engineers will find instructions in section [Installing the tools manually](installing-the-tools-manually.md). You need a webserver that can run javascript, PHP7, the PHP composer, and a \(My\)SQL or MariaDB database server. For generating functional specifications, you might use LaTeX, Markdown, Word .docx and other formats. This chapter gives an overview of the Ampersand production line for whoever needs to circumvent the automated process.
 
-### How to install your own copy of RAP3 on a server of your own choosing
+### How to install your own copy of RAP4 on a server of your own choosing
 
-RAP3 is an Ampersand repository, in which multiple users can store and use their Ampersand scripts. Consult [the tools we use at Ampersand](https://ampersandtarski.gitbooks.io/the-tools-we-use-for-ampersand/content/installation_of_rap.html). This is work in progress.
+RAP4 is an Ampersand repository, in which multiple users can store and use their Ampersand scripts. Consult [the tools we use at Ampersand](https://ampersandtarski.gitbooks.io/the-tools-we-use-for-ampersand/content/installation_of_rap.html). This is work in progress.
 
 ### How to change Ampersand itself
 

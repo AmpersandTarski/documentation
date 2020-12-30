@@ -6,14 +6,14 @@
 
 When you click on the blue plus-sign on the top-right side in the menu bar in your screen, you can make a new script. Clicking this opens an editor screen in which you can type your very first Ampersand script.
 
-![](../.gitbook/assets/script-editor-new-script.png)
+![](../.gitbook/assets/Script%20editor%20new%20script.png)
 
 ## Assignment
 
 * Copy the code for the system enrollment from [this page](example-system-enrollment.md) or take it from the OU course-site. The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP3 editor \(On rap.cs.ou.nl only:  you now have to click on the big blue button "beware to save your work before leaving the editer field!"\). The script is now saved in RAP3.
 * Next, click on the blue Compile button. When RAP3 is finished compiling your script, the compiler message should read "Finished processing your model" and three blue buttons should be visible below that.
 
-![](../.gitbook/assets/finished-processing-your-model.png)
+![](../.gitbook/assets/Finished%20processing%20your%20model.png)
 
 * Generate a Prototype: Click the blu button "Prototype" and when RAP3 has finished loading you will see a new link "Launch Prototype". Click the link.
 * Now you see the information system you have just compiled from the code. You are already familiar with the look and feel. Click the Overview button in the top-left of the screen and have a look around.

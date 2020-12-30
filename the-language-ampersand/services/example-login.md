@@ -1,9 +1,15 @@
+---
+description: 'TODO: This example is subject to bitrot. It has to be redone.'
+---
+
 # Example: Login
 
 This example defines a login/logout service,  
 because it is familiar. We show this example to demonstrate how to get different interface structures under varying conditions.
 
 ## Preliminaries
+
+The compiler uses templates to adapt an interface to specific needs regarding its HTML structure. Please read the [documentation of templates](https://github.com/AmpersandTarski/prototype/tree/master/templates) first for details.
 
 To link system activities to a person or organisation, we use the notion of `Account`. To log in means to associate a session with the `Account` of the user. This association is made in the relation `sessionAccount`. To log out means to break that link, i.e. to remove the session/account pair from relation `sessionAccount`. When logging in, it is customary that the user identifies herself. In this example we do this with a `UserID` and `Password`.
 
@@ -100,24 +106,5 @@ subbox remains empty. However, when logged in, the other subbox remains empty:
 
 ![without hiding](../../.gitbook/assets/ssh5.png)
 
-## List of available annotations
-
-A number of annotations are already available in Ampersand. These are enumerated below:
-
-SUPPORTED BOX where xxx =
-
-```text
-ROWS, COLS or TABS (equivalent to the available keywords)
-
-SCOLS - sortable columns
-
-HCOLS, or HROWS - hidden columns/rows, i.e.: shows '---' if there is no population.
-
-SHCOLS - sortable hidden columns
-
-SPCOLS - sortable paged columns. (i.e. a limited nr. of entries on a page)
-
-SPHCOLS - sortable paged hidden columns
-COLSNL, or ROWSNL - COLS/ROWS NoLabels (labels are not shown)
-```
+## 
 

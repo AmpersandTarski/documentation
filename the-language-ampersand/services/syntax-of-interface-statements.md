@@ -26,14 +26,14 @@ A sub-interface may be defined on the spot \(by `<boxKey> <box>`\) or it may lin
                  | LINKTO ( INTERFACE | API ) <name>
 ```
 
-The box key is meant to tell the front-end application what the service looks like. The flavours `ROWS`, `COLS`, and `TABS` are standard. Nonstandard HTML is specified by `BOX`.
+The boxKey is meant to tell the front-end application what the service looks like. The compiler uses templates to adapt an interface to specific needs regarding its HTML structure. Please read the [documentation of templates](https://github.com/AmpersandTarski/prototype/tree/master/templates) for details.
 
 ```text
 <boxKey> ::= BOX '<' <htmlname> '>'
-           | ROWS
-           | COLS
-           | TABS
+           | BOX
 ```
+
+If no htmlname is specified, Ampersand uses `BOX <FORM>` by default.
 
 A box is simply a list of service items \(`ifcItem`\) separated by commas. Each service item specifies a field in the service or a sub-interface.
 

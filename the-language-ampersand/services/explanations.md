@@ -80,17 +80,21 @@ Notice the following features:
 Especially in more complicated services, you will find it nice to adapt the layout of the fields in the user interface. For this purpose, you can substitute the word `BOX` by `COLS`, `ROWS`, or `TABS`, as in the following code fragment. Note that these annotation have no meaning other than to change what the user interface looks like.
 
 ```text
-INTERFACE "Project"  : V[SESSION*Project] ROWS
+INTERFACE "Project"  : V[SESSION*Project]
+BOX <TABLE>
   [ "Project"     : I[Project]
   , "Name"        : projectName
   , "Current PL"  : pl
-  , "Administration" : I[Project] TABS
-     [ "Project leaders" : project~;assignee/\pl COLS
+  , "Administration" : I[Project]
+    BOX <TABS>
+     [ "Project leaders" : project~;assignee/\pl
+       BOX <TABLE>
         [ "Name"      : personName
         , "Status"    : personStatus
         , "Email"     : personEmail
         ]
-     , "Project members" : project~;assignee/\member COLS
+     , "Project members" : project~;assignee/\member
+       BOX <TABLE>
         [ "Name"      : personName
         , "Status"    : personStatus
         , "Email"     : personEmail
@@ -104,9 +108,9 @@ Notice the effect that these changes have on the user interface.
 ![Example of formatting by COLS, ROWS, or TABS](https://github.com/AmpersandTarski/documentation/blob/master/Figures/InterfaceAlphaBoardFormatted.jpg?raw=true)
 
 Notice the following features:  
-1. The keyword `TABS` turns the box into a tabulated layout.  
-2. The keyword `COLS` turns the layout 90 degrees into columns.  
-3. The keyword `ROWS` is default for any box. It does not change the effect of `BOX`.
+1. The keyword `BOX <TABS>` turns the box into a layout with tabs.  
+2. The keyword `BOX <TABLE>` turns the layout 90 degrees into columns.  
+3. The keyword `BOX <FORM>` is default for any box. It does not change the effect of `BOX`.
 
 ## Assignment
 

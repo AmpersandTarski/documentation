@@ -31,29 +31,32 @@ BOX <TABS>
      ]
 ```
 
-This service shows three columns in the user interface, **Students**, **Course** and **Modules**. The first column is not readable, because the [CRUD annotation](../crud.md) blocks this column for reading. It would have shown students in each row, because the target of `V[SESSION*Student]`is `Student`. The second column shows courses in two columns, **Course** and **Modules**. The third column shows modules in three columns. This is what the user will see on the screen. 
+This service shows three columns in the user interface, **Students**, **Course** and **Modules**. The first column is not readable, because the [CRUD annotation](../crud.md) blocks this column for reading. It would have shown students in each row, because the target of `V[SESSION*Student]`is `Student`. The second column shows courses in two columns, **Course** and **Modules**. The third column shows modules in three columns. This is what the user will see on the screen.
 
 ![Column-oriented layout of a user interface with columns in each row](../../../.gitbook/assets/cols-layout-example.png)
 
 ## ROW layout
 
-The row layout uses the keyword `ROWS` to instruct the front-end application to layout the user interface row by row. Here is an example of a service, which uses the row layout on the top level.
+The row layout uses  `BOX <FORM>` to instruct the front-end application to layout the user interface row by row. Here is an example of a service, which uses the row layout on the top level.
 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
-ROWS [ Students : V[SESSION*Student]             cRuD
-        ROWS    [ "Student" : I[Student]         CRUD
+BOX <FORM>
+     [ Students : V[SESSION*Student]             cRuD
+        BOX <FORM>
+                [ "Student" : I[Student]         CRUD
                 , "Enrolled for" : isEnrolledFor cRUD
-                , "Course" : takes CRUD
+                , "Course" : takes               CRUD
                 ]
      , Course : V[SESSION*Course]                CRUD
-        ROWS    [ "Course" : I                   cRud
+        BOX <FORM>
+                [ "Course" : I                   cRud
                 , "Modules" : isPartOf~          CRUD
                 ]
      ]
 ```
 
-This service shows three rows in the user interface, **Students**, **Course** and **Modules**. The first column shows students in each of its rows. Each student is shown in the column layout. The second row shows courses in two columns, **Course** and **Modules**. Please read the [explanation of CRUD annotations](../crud.md) if you are curious about that. This is what the user will see on the screen. 
+This service shows three rows in the user interface, **Students**, **Course** and **Modules**. The first column shows students in each of its rows. Each student is shown in the column layout. The second row shows courses in two columns, **Course** and **Modules**. Please read about [templates](https://github.com/AmpersandTarski/prototype/tree/master/templates) if you are curious which other ways of displaying information there are besides `BOX <FORM>`.  Please read the [explanation of CRUD annotations](../crud.md) if you are curious about the CRUD annotations. This is what the user will see on the screen.
 
 ![Row-oriented layout of a user interface with columns in each row](../../../.gitbook/assets/rows-layout-example.png)
 
