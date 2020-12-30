@@ -69,18 +69,21 @@ POPULATION Destination CONTAINS  [ "Amsterdam" ]
 
 INTERFACE Overview : '_SESSION'                     cRud
 TABS [ Students     : V[SESSION*Student]            cRuD
-       COLS [ "Student" : I[Student]                cRud
+       BOX <TABLE>
+            [ "Student" : I[Student]                cRud
             , "passed" : pass~                      CRUD
             , "Qualify for" : pass~/required~       cRud
             , "registered" : attends                cRUd
             ]
      , Subjects     : V[SESSION*Subject]            cRuD
-       COLS [ "Subject" : I                         cRud
+       BOX <TABLE>
+            [ "Subject" : I                         cRud
             , "required for trip" : required        CRUD
             , "students that passed" : pass         CRUD
             ]
      , Destinations : V[SESSION*Destination]        cRuD
-       COLS [ "Destination" : I                     cRud
+       BOX <TABLE>
+            [ "Destination" : I                     cRud
             , "required subject" : required~        CRUD
             , "Qualifying students" : required\pass cRud
             , "registered" : attends~               cRUd

@@ -96,9 +96,6 @@ Keywords in Ampersand are always written in CAPITALS.
   * `FOR`
   * `LINKTO`
   * `BOX`
-  * `ROWS`
-  * `TABS`
-  * `COLS`
 * Keywords for identities
   * [`IDENT`](the-ident-statement.md)
 * Keywords for views

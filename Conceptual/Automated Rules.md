@@ -81,10 +81,12 @@ ENDPATTERN
 INTERFACE overview(insSeq, seq, seqHead, madeIn) : '_SESSION'
 ROWS[ "Name your new sequence here:" : insSeq
     , Sequences : V[SESSION*Sequence]
-      COLS[ sequence : name
+      BOX <TABLE>
+          [ sequence : name
           , "Name your items here:" : seqHead
           , items : seq~
-            COLS[ value  : value
+            BOX <TABLE>
+                [ value  : value
                 , seq    : seq
                 , succ   : succ
                 , pred   : succ~

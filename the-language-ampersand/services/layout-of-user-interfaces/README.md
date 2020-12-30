@@ -4,24 +4,28 @@ Ampersand is meant for back-end design. It offers no features for front-end desi
 
 However, Ampersand offers a few layout features that let you place items. It has three built-in layout options, [colums](./#column-layout), [rows](./#row-layout) and [tabs](./#tabular-layout), which you can mix freely.
 
-## Column layout
+## Table layout
 
-The column layout uses the keyword `COLS` to instruct the front-end application to use a columnar layout in user interfaces. Here is an example of a service, which uses the column layout.
+The column layout uses `BOX <TABLE>` to instruct the front-end application to use a tabular layout in user interfaces. Here is an example of a service, which uses the table layout.
 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
-COLS [ Students : V[SESSION*Student]             crud
-        COLS    [ "Student" : I[Student]         CRUD
+BOX <TABS>
+     [ Students : V[SESSION*Student]             cRuD
+       BOX <TABLE>
+                [ "Student" : I[Student]         cRud
                 , "Enrolled for" : isEnrolledFor cRUD
                 , "Course" : takes CRUD
                 ]
-     , Course : V[SESSION*Course]                CRUD
-        COLS    [ "Course" : I                   cRud
+     , Course : V[SESSION*Course]                cRuD
+       BOX <TABLE>
+                [ "Course" : I                   cRud
                 , "Modules" : isPartOf~          CRUD
                 ]
      , Modules : V[SESSION*Module]               cRud
-        COLS    [ "Modules" : I                  cRuD
-                , "Course" : isPartOf            cRud
+       BOX <TABLE>
+                [ "Modules" : I                  cRuD
+                , "Course" : isPartOf            cRUd
                 , "Students" : isEnrolledFor~    CRUD
                 ]
      ]
@@ -38,12 +42,12 @@ The row layout uses the keyword `ROWS` to instruct the front-end application to 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
 ROWS [ Students : V[SESSION*Student]             cRuD
-        COLS    [ "Student" : I[Student]         CRUD
+        ROWS    [ "Student" : I[Student]         CRUD
                 , "Enrolled for" : isEnrolledFor cRUD
                 , "Course" : takes CRUD
                 ]
      , Course : V[SESSION*Course]                CRUD
-        COLS    [ "Course" : I                   cRud
+        ROWS    [ "Course" : I                   cRud
                 , "Modules" : isPartOf~          CRUD
                 ]
      ]
@@ -53,23 +57,27 @@ This service shows three rows in the user interface, **Students**, **Course** an
 
 ![Row-oriented layout of a user interface with columns in each row](../../../.gitbook/assets/rows-layout-example.png)
 
-## Tabular layout
+## Tabs layout
 
-The column layout uses the keyword `TABS` to instruct the front-end application to tabs in the user interface. Here is an example of a service, which uses the column layout.
+The column layout uses `BOX <TABS>` to instruct the front-end application to tabs in the user interface. Here is an example of a service, which uses the column layout.
 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
-TABS [ Students : V[SESSION*Student]             cRuD
-        COLS    [ "Student" : I[Student]         CRUD
+BOX <TABS>
+     [ Students : V[SESSION*Student]             cRuD
+        BOX <TABLE>
+                [ "Student" : I[Student]         CRUD
                 , "Enrolled for" : isEnrolledFor cRUD
                 , "Course" : takes CRUD
                 ]
      , Course : V[SESSION*Course]                CRUD
-        COLS    [ "Course" : I                   cRud
+        BOX <TABLE>
+                [ "Course" : I                   cRud
                 , "Modules" : isPartOf~          CRUD
                 ]
      , Modules : V[SESSION*Module]               cRud
-        COLS    [ "Modules" : I                  cRuD
+        BOX <TABLE>
+                [ "Modules" : I                  cRuD
                 , "Course" : isPartOf            cRud
                 , "Students" : isEnrolledFor~    CRUD
                 ]

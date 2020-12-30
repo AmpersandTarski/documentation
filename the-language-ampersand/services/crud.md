@@ -8,18 +8,22 @@ The CRUD-annotation specifies Create, Read, Update, and Delete rights for the te
 
 ```text
 INTERFACE Overview : "_SESSION"                  cRud
-COLS [ Students : V[SESSION*Student]             crud
-        COLS    [ "Student" : I[Student]         CRUD
+BOX <TABS>
+     [ Students : V[SESSION*Student]             cRuD
+       BOX <TABLE>
+                [ "Student" : I[Student]         cRud
                 , "Enrolled for" : isEnrolledFor cRUD
-                , "Course" : takes               CRUD
+                , "Course" : takes CRUD
                 ]
-     , Course : V[SESSION*Course]                CRUD   -- used for a box
-        COLS    [ "Course" : I                   cRud   -- used for a field
+     , Course : V[SESSION*Course]                cRuD   -- used for a box
+       BOX <TABLE>
+                [ "Course" : I                   cRud   -- used for a field
                 , "Modules" : isPartOf~                 -- CRUD is default
                 ]
      , Modules : V[SESSION*Module]               cRud
-        COLS    [ "Modules" : I                  cRuD
-                , "Course" : isPartOf            cRud
+       BOX <TABLE>
+                [ "Modules" : I                  cRuD
+                , "Course" : isPartOf            cRUd
                 , "Students" : isEnrolledFor~    CRUD
                 ]
      ]

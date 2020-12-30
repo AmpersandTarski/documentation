@@ -43,21 +43,25 @@ MESSAGE "Attempt to enroll student(s) for a module that is not part of the stude
 VIOLATION (TXT "Student ", SRC I, TXT " enrolled for the module ", TGT I, TXT " which is not part of the course ", SRC I[Student];takes)
 PURPOSE RULE ModuleEnrollment {+ This rule checks whether the module of choice is part of the course the student is taking +}
 
-INTERFACE Overview : "_SESSION" cRud
-TABS [ Students : V[SESSION*Student] cRuD
-        COLS [ "Student" : I[Student] CRUD
-            , "Enrolled for" : isEnrolledFor cRUD
-            , "Course" : takes CRUD
-            ]
-    , Course : V[SESSION*Course] cRuD
-        COLS [ "Course" : I cRud
-            , "Modules" : isPartOf~ CRUD
-            ]
-    , Modules : V[SESSION*Module] cRud
-        COLS [ "Modules" : I cRuD
-        , "Course" : isPartOf cRud
-        , "Students" : isEnrolledFor~ CRUD
-        ]
-    ]
+INTERFACE Overview : "_SESSION"                  cRud
+BOX <TABS>
+     [ Students : V[SESSION*Student]             cRuD
+       BOX <TABLE>
+                [ "Student" : I[Student]         cRud
+                , "Enrolled for" : isEnrolledFor cRUD
+                , "Course" : takes CRUD
+                ]
+     , Course : V[SESSION*Course]                cRuD
+       BOX <TABLE>
+                [ "Course" : I                   cRud
+                , "Modules" : isPartOf~          CRUD
+                ]
+     , Modules : V[SESSION*Module]               cRud
+       BOX <TABLE>
+                [ "Modules" : I                  cRuD
+                , "Course" : isPartOf            cRUd
+                , "Students" : isEnrolledFor~    CRUD
+                ]
+     ]
 
 ENDCONTEXT
