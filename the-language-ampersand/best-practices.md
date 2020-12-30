@@ -21,7 +21,7 @@ Making a good Ampersand script is difficult. Working in pairs increases your spe
 * you learn from each other. Switch pairs every now and then, if possible.
 * Developing thoughts works better and faster if you work together. Develop thoughts by discussing, challenging, and trying things in practice.
 
-## Feel free to change your ontology frequently
+## Change your ontology frequently
 
 The ontology serves to codify language. Don't hesitate to change it as insights develop. Especially database builders who are careful to change their data models might have to acquire new reflexes, as for them the ontology may feel like a data model.
 

@@ -11,49 +11,14 @@ A rule statement defines something that should be true. It does not define the e
 A `<rule>` has the following syntax:
 
 ```text
-RULE <label>? <expression> <meaning>* <message>* <violation>?
+RULE <label>? <term> <meaning>* <message>* <violation>?
 ```
+
+Terms and operators are discussed in [a separate section](terms/):
 
 ## Syntax of labels
 
 A `<label>` is optional. It can be a single word or a string \(enclosed by double brackets\) followed by a colon \(`:`\).
-
-### Expression
-
-An expression can be any of:
-
-* Expression BinaryOperator Expression
-* UnaryOpPre Expression
-* Expression UnaryOpPost
-* a \(reference to a\) relation \(including an optional signature, when required to disambiguate\):
-  * A relation by name 
-  * `I` \(the Identity relation\)
-  * `V` \(carthesian product\) Note that this can also be used to denote the empty relation, by using the unary negation operator:  '-v'
-  * A singleton expression \(the value of an atom\)
-* an expression enclosed in brackets.
-
-#### Operators
-
-The following operators are available to build expressions:
-
-* Binary operators
-  * equivalence: `=`
-  * composition: `;`
-  * inclusion: `|-`
-  * intersection: `/\`
-  * union: `\/`
-  * difference: `-`
-  * left residual: `/`
-  * right residual: `\`
-  * diamond: `<>`
-  * relative addition: `!`
-  * cartesian product: `#`
-* Unary operator \(pre-operator\)
-  * complement: `-`
-* Unary operators \(post-operator\)
-  * conversion \(flip\): `~`
-  * Reflexive, transitive closure: `*` \(Kleene star\) --currently not implemented
-  * transitive closure: `+` \(Kleene plus\) --currently not implemented
 
 ### MEANING\*
 
