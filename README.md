@@ -1,10 +1,6 @@
 # Documentation of Ampersand
 
-This repository contains the documentation of Ampersand. It is far from complete. but, since we use GitBook, it has become easier to add to it.
-
-To try Ampersand, you can use an online Ampersand environment such as [RAP3](/ampersand.tarski.nl/RAP3). If you do not have access to such an environment, you may want to [install Ampersand](https://ampersandtarski.gitbooks.io/documentation/content/installation). You can choose to install Ampersand to use [the command-line interface, which isn't exposed online](https://ampersandtarski.gitbook.io/documentation/the-command-line-tool/commands-vs.-4.0.0-and-later).
-
-Do you already have access to Ampersand? Or do you not wish to install it? Then read [about modeling in Ampersand](https://ampersandtarski.gitbooks.io/documentation/content/modeling).
+This repository contains the documentation of Ampersand. You can read it [here](https://ampersandtarski.gitbook.io/documentation).
 
 ## How to modify this documentation
 
