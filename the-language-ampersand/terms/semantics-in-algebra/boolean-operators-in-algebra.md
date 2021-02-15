@@ -10,7 +10,7 @@ The operator $$\cup$$ \(union\) is commutative, associative, and idempotent:
 
 ## Difference
 
-The difference $$r-s$$ is the smallest relation $$t$$ that satisfies $$s\cup t=r$$. Smallest means: If there is a $$t'$$ for which $$s\cup t'=r$$, this implies that $$t\cup t'=t'$$.
+The difference $$r-s$$ is the smallest relation $$t$$ that satisfies $$r\ \subseteq\ s\cup t$$. Smallest means: If there is a $$t'$$ for which $$s\cup t'=r$$, this implies that $$t\cup t'=t'$$.
 
 ## Intersection
 
