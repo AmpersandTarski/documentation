@@ -24,23 +24,34 @@ The syntax of atoms is largely taken from [ISO8601](https://www.iso.org/iso-8601
 
 ## Atomic types
 
-Atoms are represented in an SQL database. For this purpose every atom has a type \(sometimes called the _technical type_\). The representation in SQL is given in the following table. Some of these types cannot be compared for equality. This implies that they cannot have services defined for them. Nor can complements be computed for such types. Violations are currently signaled at runtime, but future versions of Ampersand will signal these violations at compile time.
+Atoms are represented in an SQL database. For this purpose, every atom has a type \(sometimes called the _technical type_\). The representation in SQL is given in the following table.
 
-| type | purpose | SQL | eq |
-| :--- | :--- | :--- | :--- |
-| ALPHANUMERIC | to represent strings of short length, i.e. less than 255 characters | VARCHAR\(255\) | yes |
-| BIGALPHANUMERIC | to represent large strings of limited length, i.e. less than 64 kb | TEXT | no |
-| HUGEALPHANUMERIC | to represent strings of arbitrary length | MEDIUMTEXT | no |
-| PASSWORD | to represent passwords in a secure way | VARCHAR\(255\) | no |
-| BINARY | to represent uninterpreted binary data of short length | BLOB | no |
-| BIGBINARY | to represent large binaray data of limited length | MEDIUMBLOB | no |
-| HUGEBINARY | to represent large binarey data of arbitrary length | LONGBLOB | no |
-| DATE | to represent dates compatible with ISO8601 | DATE | yes |
-| DATETIME | to represent time stamps compatible with ISO8601 | DATETIME | yes |
-| BOOLEAN | to represent True and False values | BOOLEAN | yes |
-| INTEGER | to represent positive and negative whole numbers in the range \[-2^63..2^63 -1\] | BIGINT | yes |
-| FLOAT | to represent floating point numbers compatible with ISO8601 | FLOAT | no |
-| Object | to represent a key value for objects; it is not meant to be visible to end users. | VARCHAR\(255\) | yes |
+| type | purpose | SQL | closed | eq |
+| :--- | :--- | :--- | :--- | :--- |
+| ALPHANUMERIC | to represent strings of short length, i.e. less than 255 characters | VARCHAR\(255\) | yes | yes |
+| BIGALPHANUMERIC | to represent large strings of limited length, i.e. less than 64 kb | TEXT | no | yes |
+| HUGEALPHANUMERIC | to represent strings of arbitrary length | MEDIUMTEXT | no | no |
+| PASSWORD | to represent passwords in a secure way | VARCHAR\(255\) | no | yes |
+| BINARY | to represent uninterpreted binary data of short length | BLOB | no | no |
+| BIGBINARY | to represent large binary data of limited length | MEDIUMBLOB | no | no |
+| HUGEBINARY | to represent large binary data of arbitrary length | LONGBLOB | no | no |
+| DATE | to represent dates compatible with ISO8601 | DATE | yes | yes |
+| DATETIME | to represent timestamps compatible with ISO8601 | DATETIME | yes | yes |
+| BOOLEAN | to represent True and False values | BOOLEAN | yes | yes |
+| INTEGER | to represent positive and negative whole numbers in the range \[-2^63..2^63 -1\] | BIGINT | yes | yes |
+| FLOAT | to represent floating-point numbers compatible with ISO8601 | FLOAT | no | no |
+| Object | to represent a key value for objects; it is not meant to be visible to end-users. | VARCHAR\(255\) | yes | yes |
+|  | all other atoms | VARCHAR\(255\) | yes | yes |
+
+The last column, eq, tells whether Ampersand implements equality on these types. If equality is not defined, the operators `\/`, `/\`, `-`, `\`, `/`, `;`, and `<>` cannot be used.
+
+The distinction between closed and open types is relevant in the following situations:
+
+* The complement of a relation, `-r[A*B]`, is defined only if both `A` and `B` are closed.
+* The full relation, `V[A*B]` is defined only if both `A` and `B` are closed. 
+* A service `INTERFACE X : e` requires that the target of `e` is closed.
+
+Violations are currently signaled at runtime, but future versions of Ampersand will signal these violations at compile time.
 
 ## Miscellaneous
 
