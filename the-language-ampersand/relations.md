@@ -21,10 +21,7 @@ RELATION soldBy[Order*Person]
 ```text
 RELATION contract[Order*ContractID] [UNI,TOT]
 PRAGMA "Order " " has contract " " as its legal basis."
-MEANING
-{+ Every Order has a unique ContractID which specifies the legal basis
-   for that particular order.
-+}
+MEANING "Every Order has a unique ContractID which specifies the legal basis for that particular order."
 ```
 
 In this example:
@@ -64,7 +61,7 @@ A relation statement means that there exists a relation in the current context w
 
 A relation statement may occur anywhere inside a context, both inside and outside a pattern.
 
-The optional `<properties>` and `<pragma>`-parts are discussed in the sequel. The `<meaning>`-part is discussed [here](meaning-statements.md).
+The optional `<properties>`, `<pragma>`, and `<meaning>`-parts are discussed in the sequel.
 
 The name, source concept and target concept together identify a relation uniquely within its context. As a consequence, the name of a relation does not have to be unique. E.g. `name[Book*Name]` can be specified in the same context as `name[Person*Name]`. Because they have different source concepts, these are different relations.
 
@@ -121,7 +118,61 @@ The `PRAGMA` tells us that it makes sense to utter the phrase `"Provider Mario's
 
 ## MEANING
 
-For a full discussion of meaning, we refer to [`this page`](meaning-statements.md).
+A meaning is optional and is characterized by the reserved word `MEANING`. It specifies the meaning of a relation in natural language. It is meant to say in natural language what it means for a pair to be in the relation. The meaning is used to generate documentation and is printed in the functional specification. A `<meaning>` has the following form:
+
+```text
+MEANING <language>? <markup>? <text>
+```
+
+The `<text>`-part is where the the meaning is written down. We support both:
+
+* a string, enclosed by double quotes,
+
+  e.g.
+
+  ```text
+  MEANING "This is an example, which means nothing."
+  ```
+
+* any text, starting with `{+` and ending with `+}`
+
+  e.g.
+
+  ```text
+  MEANING
+  {+This is an example that is
+  spread over multiple lines. A string cannot
+  be multi-line, so we use curly-brackets with plus.
+  +}
+  ```
+
+The optional `<language>` is specified as
+
+* `IN ENGLISH` or 
+* `IN DUTCH`.
+
+Example :
+
+```text
+MEANING IN ENGLISH {+This is a single line example.+}
+```
+
+This is a way to override the default language.
+
+Sometimes you need formatting in the meaning, such as dotted lists, italics, or mathematical symbols. For this purpose you have a choice in which syntax you specify the meaning. The optional `<markup>` is one of :
+
+* `REST` \(Restructured text\)
+* `HTML`
+* `LATEX` 
+* `MARKDOWN`
+
+Example :
+
+```text
+MEANING LATEX {+This is a {\em mathematical} formula $\frac{3}{x+7}$.+}
+```
+
+Ampersand uses Pandoc to offer a choice for your markup. See [pandoc.org](http://pandoc.org/) for details.
 
 ## Miscellaneous
 
