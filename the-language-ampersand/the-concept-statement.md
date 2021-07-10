@@ -12,13 +12,20 @@ CONCEPT <Uppercase identifier> MEANING {+ <String> +}
 
 This statement may occur anywhere within a context, either inside or outside a pattern.
 
+NOTE: Currently in RAP \(rap.cs.ou.nl\) this does not work yet. Use:
+
+```text
+CONCEPT <Uppercase identifier> "<string>"
+```
+
+instead. So in RAP you cannot use the markup described below. This will occur in a next release.
+
 ## Semantics
 
 This statement means that there exists a concept called `<Uppercase identifier>` in the current context.
 
 * `<Uppercase identifier>` specifies the name of the concept.
-* `String` contains a definition of the concept. This definition is used by the documentation generator, which expects it to be a grammatically correct and complete sentence.
-* `String?` is an \(optional\) reference to the source of the definition. It is meant for traceability.
+* `String` defines the concept. This definition is used by the documentation generator, which expects it to be a grammatically correct and complete sentence.
 
 ## Examples
 
@@ -43,10 +50,10 @@ MEANING
 
 ## Miscellaneous
 
-* The name of a concept starts with an uppercase.
+* The name of a concept starts with an uppercase character.
 * A concept should be used for immutable concepts. E.g. use a concept `Person` to express that a person will always be a person and will not change in, let us say, a table. However, don't use `Employee`, because termination of an employee's contract causes a person to be an employee no longer. So employees are not immutable. To be an employee is a dynamic property, so model it as a relation.
 * The description will be printed in the functional specification, so please check that your definition is a complete sentence.
-* Concepts need not be defined. If you use a concept without a definition, Ampersand defines it for you \(regardless of whether you defined it or not\).
+* Concepts need not be defined. If you use a concept without a definition, Ampersand makes it for you.
 
 ## Markup
 
@@ -74,4 +81,6 @@ MEANING IN ENGLISH LATEX
    \cite{Merriam-Webster}
 +}
 ```
+
+
 
