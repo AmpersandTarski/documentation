@@ -7,7 +7,7 @@ A concept statement defines a concept in natural language. A concept is a name f
 ## Syntax:
 
 ```text
-CONCEPT <Uppercase identifier> <String> <String>?
+CONCEPT <Uppercase identifier> MEANING {+ <String> +}
 ```
 
 This statement may occur anywhere within a context, either inside or outside a pattern.
@@ -23,15 +23,22 @@ This statement means that there exists a concept called `<Uppercase identifier>`
 ## Examples
 
 ```text
-CONCEPT Person "A person is a human creature." "Ventroli1997"
+CONCEPT Person MEANING {+ A person is a human creature. +}
 ```
 
 ```text
-CONCEPT Organization "An organization is a collection of persons that work together to achieve specific objectives."
+CONCEPT Organization MEANING
+{+ An organization is a collection of persons that work together
+   to achieve specific objectives.
++}
 ```
 
 ```text
-CONCEPT Criterion "A criterion is a standard on which a judgment or decision may be based." "Merriam-Webster"
+CONCEPT Criterion
+MEANING
+{+ A criterion is a standard on which a judgment or decision may be based.
+   [Merriam-Webster]
++}
 ```
 
 ## Miscellaneous
@@ -40,4 +47,31 @@ CONCEPT Criterion "A criterion is a standard on which a judgment or decision may
 * A concept should be used for immutable concepts. E.g. use a concept `Person` to express that a person will always be a person and will not change in, let us say, a table. However, don't use `Employee`, because termination of an employee's contract causes a person to be an employee no longer. So employees are not immutable. To be an employee is a dynamic property, so model it as a relation.
 * The description will be printed in the functional specification, so please check that your definition is a complete sentence.
 * Concepts need not be defined. If you use a concept without a definition, Ampersand defines it for you \(regardless of whether you defined it or not\).
+
+## Markup
+
+For the purpose of documentation, you may state the language in which the meaning is written. You may also state in which markup you have written your meaning. Examples:
+
+```text
+CONCEPT Person MEANING IN ENGLISH {+ A person is a human creature. +}
+```
+
+If you specify the language, Ampersand can restrict the documentation for the language you choose. Currently, you can only choose `DUTCH` or `ENGLISH`. The default language is English
+
+```text
+CONCEPT Organization MEANING MARKDOWN
+{+ An organization is a **collection of persons** that work together
+   to achieve specific objectives.
++}
+```
+
+By specifying a markup language, Ampersand interprets the text as specified. If you do not specify the markup language, your text is interpreted as restructured text. The available markup languages are `LATEX`, `MARKDOWN`, `HTML`, and `REST`. The default markup language is REStructured Text \(REST\).
+
+```text
+CONCEPT Criterion
+MEANING IN ENGLISH LATEX
+{+ A criterion is a standard on which a judgment or decision may be based.
+   \cite{Merriam-Webster}
++}
+```
 
