@@ -1,6 +1,8 @@
 # Best Practices
 
-## Use `PURPOSE` statements abundantly
+## Use `PURPOSE`-statements abundantly
+
+The purpose of a `PURPOSE`-statement is to explain why something exists. Readers of your script will understand the script ten times better if they know why things exist. A good practice is not to cut corners and specify your purposes carefully and for as many things as you can.
 
 ## Distinguish between requirements and specifications
 
@@ -10,7 +12,7 @@ Now, let us assume that hurdle is taken and you have an approved list of require
 
 Requirements tell what users say they want. Specifications define unambiguously what to build. So write prose in your requirements and write Ampersand as your specification.
 
-The pitfall is to mistakenly use the list of requirements as specifications. This is not uncommon, so be warned. Well known consequences are confusion among software engineers, scope creep, and project overruns. Failure to make this distinction is an early warning for project failure.
+The pitfall is to mistakenly use the list of requirements as specifications. This is not uncommon, so be warned. Well-known consequences are confusion among software engineers, scope creep, and project overruns. Failure to make this distinction is an early warning for project failure.
 
 A working Ampersand prototype and an understandable specification document are compelling evidence of the completeness of your specification. Especially if both have been generated from the same Ampersand script. Fortunately, requirements articulation takes a while so in many cases you can have your specification done by the time the list of requirements is approved. This means you can make the specifications as requirements are developing, not causing any delays other than needed for the requirements.
 
@@ -35,11 +37,11 @@ Work towards things that work in every situation without exception. Leave out fr
 
 ## Concern with maintenance
 
-Consider each choice and every decision you make carefully from a maintainer's perspective. Will your code be adaptable in five years time, when you, your team, and all other stakeholders have been replaced by others?
+Consider each choice and every decision you make carefully from a maintainer's perspective. Will your code be adaptable in five years' time, when you, your team, and all other stakeholders have been replaced by others?
 
 ## Careful with generalization
 
-More general solutions are more widely applicable, but also more abstract. More specific solutions are easier to understand, because they are more concrete. Choose the right abstraction level, keeping your audience in mind.
+More general solutions are more widely applicable, but also more abstract. More specific solutions are easier to understand because they are more concrete. Choose the right abstraction level, keeping your audience in mind.
 
 ## Avoid quick fixes
 
