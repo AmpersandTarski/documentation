@@ -1,23 +1,23 @@
 # Your tool: RAP4
 
+This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs on the internet, so all you need is a browser. [Click here if you are a student of the Open University](https://rap.cs.ou.nl) or [here if you are not](https://rap.cs.ou.nl) to start using it.
+
 RAP4 is under development. New releases can be done daily. If you find problems with the software, please notify your tutor. If the software is to blame, we will ask you to [make an issue in RAP's issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand team is very grateful.
 
-During the remainder of this course, you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
-
-This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs in the cloud, so all you need is a browser and to [click here if you are a student of the Open University](https://rap.cs.ou.nl) or [here if you are not](https://rap.cs.ou.nl) to start using it.
+During the remainder of this course, you will compile and run your own scripts in this way, so it pays to familiarize yourself with RAP4.
 
 ## Login/Create account
 
 RAP4 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
 
-Register with your own student number and e-mail. Create a password. Your student number is your account, but you can fill in a name. This name should not exist yet, so a green plus-sign will appear. Click on it and your name is added to the database.
+Register with your own student number and e-mail. Create a password. Your student number is your account, but you can fill in a name. This name should not exist yet, so a green plus sign will appear. Click on it and your name is added to the database.
 
 Notes:
 
 * About the user interface: Each time you change fields \(e.g. using Tab\), the form is updated. But you will not see what is the next active field. You may have to click again to ensure that your cursor is in the right field.
 * This application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.
 
-  This login-screen is also the screen to logout later.
+  This login screen is also the screen to log out later.
 
 * When RAP4 is updated, probably your account will be reset. You need to register again. We will inform you in the unlikely event that this happens during a course.
 
