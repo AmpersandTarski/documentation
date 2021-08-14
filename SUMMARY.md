@@ -112,4 +112,5 @@
   * [API documentation](plans/api-documentation.md)
   * [OWL and RDFS input](plans/owl-and-rdfs-input.md)
   * [Refactor the front-end](plans/refactor-the-front-end.md)
+* [Research](research.md)
 
