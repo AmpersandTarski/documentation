@@ -68,6 +68,7 @@
     * [Population in spreadsheets](the-language-ampersand/the-population-statement/data-in-spreadsheets.md)
   * [MEANING statements](the-language-ampersand/meaning-statements.md)
   * [The PURPOSE statement](the-language-ampersand/the-purpose-statement.md)
+  * [The ENFORCE statement](the-language-ampersand/the-enforce-statement.md)
   * [The IDENT statement](the-language-ampersand/the-ident-statement.md)
   * [The TABLE statement](the-language-ampersand/the-table-statement.md)
   * [Language support](the-language-ampersand/language-support.md)
