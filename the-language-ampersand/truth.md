@@ -17,7 +17,9 @@ Let us introduce some words. Consider a fact "Joe Smith lives in New York." from
 
 ## Language that makes sense to the business
 
-Ampersand takes a pragmatic stance on truth: You model only things that make sense to the business. This [video clip](https://player.ou.nl/wowzaportlets/#!production/VDvSFqQ) illustrates the distinction between sensible and senseless statements. A sensible statement \(we say: "It makes sense."\) is a statement that can be true or false. Sentences that are not sensible \(we can say: it is non-sense\) are to be avoided. The Ampersand type system helps you to make sensible statements only.
+Ampersand takes a pragmatic stance on truth: You model only things that make sense to the business. So, please consider the distinction between [sensible and senseless statements](https://player.ou.nl/wowzaportlets/#!production/VDvSFqQ). A sensible statement \(we say: "It makes sense."\) is a statement that can be true or false. Sentences that are not sensible \(we can say: it is non-sense\) are to be avoided.
+
+The set of sensible statements constitutes your _**language**_. True statements in that language are called _**facts**_. These are the ones that are stored in the system you define. This [video clip](https://player.ou.nl/wowzaportlets/#!production/An9G5DT) illustrates the idea.
 
 ## Truth in context
 
