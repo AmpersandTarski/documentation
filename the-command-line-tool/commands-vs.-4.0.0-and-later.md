@@ -67,7 +67,7 @@ The general structure of commands is `ampersand [options]* COMMAND`. The followi
 
 ## Filename
 
-The `filename` in a command typically has suffix `.adl` \(which stands for Ampersand Description Language\). If you omit the suffix `.adl`, Ampersand adds it for you. The filename conventions of your operating system apply \(whether you have Windows, macOS, or Linux\).
+The `filename` in a command typically has suffix `.adl` \(which stands for Ampersand Description Language\). If you omit the suffix `.adl`, Ampersand does NOT add it for you. The filename conventions of your operating system apply \(whether you have Windows, macOS, or Linux\).
 
 ## Options
 

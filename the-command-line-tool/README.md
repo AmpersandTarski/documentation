@@ -7,17 +7,9 @@ description: >-
 
 # Running the Ampersand compiler
 
-## Purpose
-
-In many situations, you can avoid running the Ampersand compiler from the command line. For instance, by using a system such as [RAP](https://rap.cs.ou.nl). However, in situations that you run Ampersand from the command line, this page is the place to be. 
-
-## Prerequisites
-
-We assume you have `docker` running on your computer and that you are connected to the internet. In that case you don't have to install anything.
-
 ## COMMAND
 
-The following is the base command on Linux \(bash syntax\)
+To run the Ampersand compiler presumes you have `docker` installed on your computer. The following is the base command on linux \(bash syntax\)
 
 ```bash
 docker run -it -v "$(pwd)":/scripts ampersandtarski/ampersand
@@ -29,7 +21,7 @@ On the Windows-10 command-line this looks slightly different \(todo: check this!
 docker run -it -v $PWD:/scripts ampersandtarski/ampersand
 ```
 
-This runs the Ampersand compiler \(from your command prompt\). The first time you do this, docker will take some time to download the images it needs.
+Runs the Ampersand compiler \(from your command prompt\)
 
 ## SYNOPSIS
 
@@ -56,9 +48,9 @@ The standard behavior of **ampersand** is affected by the following environment 
 ## EXAMPLES
 
 ```bash
-ampersand documentation --format docx --verbose Hawaii.adl  # generates a specification document for Hawaii.adl
-ampersand check Delivery.adl                                # just check Delivery.adl for errors
-ampersand proto --proto-dir "D:\htdocs\CvM\" Contracts.adl  # generate a prototype from Contracts.adl and write the application to the specified directory.
+ampersand -fdocx --verbose Hawaii.adl             # generates a specification document for Hawaii.adl
+ampersand Delivery.adl                            # just check Delivery.adl for errors
+ampersand --proto="D:\htdocs\CvM\" Contracts.adl  # generate a prototype from Contracts.adl
 ampersand --help
 ampersand --help --verbose
 ampersand --version
