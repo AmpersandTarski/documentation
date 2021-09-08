@@ -20,26 +20,20 @@ This statement may occur anywhere within a context, either inside or outside a p
 
 ## Semantics
 
-This statement means the population of the relation will automatically be kept respectively equal \( **`:=`**\), a subset \(`:<`\) or a superset \(`>:`\) of the population of the given term. 
+This statement means the the population of the relation should automatically be kept respectively equal \( **`:=`**\), a subset \(`:<`\) or a superset \(`>:`\)of the population of the given term. 
 
 ## Examples
 
 ```text
 ENFORCE r := s;t
-{- Ampersand will keep the population of the relation r equal to the population
-   of the expression s;t . It will do so by changing the contents of r
-   without affecting the contents of s;t .
-   The effect can be observed in the prototype.
+{- The population of the relation r must be kept equal to the population
+   of the expression s;t . The effect can be observed in the prototype.
 -}
 ```
 
 ```text
 ENFORCE canDrive :< hasCar /\ hasDriverLicence
-{- Ampersand will keep the population of the relation canDrive smaller than
-   the population of the expression hasCar /\ hasDriverLicence .
-   It will do so by deleting pairs from the contents of canDrive
-   without affecting the contents of hasCar /\ hasDriverLicence .
-   So, whenever a person can drive, that person needs to have a car and a driver licence.
+{- Whenever a person can drive, that person needs to have a car and a driver licence.
    However, if that person has both these assets, it is still possible that he/she 
    cannot drive. 
 -}
