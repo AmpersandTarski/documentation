@@ -6,7 +6,7 @@ description: >-
 
 # Options \(up to vs. 3.17.4\)
 
-Some of the options are still experimental. Momentarily an effort is made to rationaize the options, so this may change at some point in the near future.
+Some of the options are still experimental. Momentarily an effort is made to rationalize the options, so this may change at some point in the near future.
 
 Since Ampersand-v3.5.3, it is possible to use a configuration file, reducing the need to rewrite the same options every time you use ampersand.exe. A configuration file can be used using the `--config` option.
 
@@ -18,7 +18,7 @@ Print a usage message briefly summarizing the most common command-line options a
 
 ### -V, --version
 
-Print the version number of ampersand to the standard output stream. Please mention this information in every bug report you submit \(see below\).
+Print the version number of Ampersand to the standard output stream. Please mention this information in every bug report you submit \(see below\).
 
 ## Other options
 
@@ -40,11 +40,11 @@ Temporary option to create an Atlas without terms. This feature is used in RAP3 
 
 ### `--blackWhite`
 
-do not use colours in generated graphics. Use this feature if you must print in black and white, to obtain better results than printing a coloured source on a black-and-white pringer.
+do not use colors in generated graphics. Use this feature if you must print in black and white, to obtain better results than printing a colored source on a black-and-white printer.
 
 ### `--config=config.yaml`
 
-By default the Ampersand compiler looks in the working directory for a config file \(`.yaml`\) with the same filename as the Ampersand script. Use this feature to redirect to another file. Use `--sampleConfigFile` to get a template.
+By default, the Ampersand compiler looks in the working directory for a config file \(`.yaml`\) with the same filename as the Ampersand script. Use this feature to redirect to another file. Use `--sampleConfigFile` to get a template.
 
 ### `--crowfoot`
 
@@ -60,15 +60,15 @@ copy one or more directories into the generated prototype. This overrules the de
 
 ### `--dbName=NAME (-d)`
 
-database name. Use this for choosing the name of the SQL-database. This overrules environment variable `CCdbName`. It defaults to the filename of your Ampersand script.
+database name. Use this for choosing the name of the SQL database. This overrules the environment variable `CCdbName`. It defaults to the filename of your Ampersand script.
 
 ### `--dev, --ignore-invariant-violations`
 
-Allow to build a prototype, even if there are invariants that are being violated. \(See [issue 728](https://github.com/AmpersandTarski/Ampersand/issues/728) on Github\)
+Allow building a prototype, even if there are invariants that are being violated. \(See [issue 728](https://github.com/AmpersandTarski/Ampersand/issues/728) on Github\)
 
 ### `--diagnosis`
 
-diagnose your Ampersand script. Use this if you wish to generate a document containing only the diagnosis chapter .
+diagnose your Ampersand script. Use this if you wish to generate a document containing only the diagnosis chapter.
 
 ### `--do-not-trim-cellvalues`
 
@@ -112,11 +112,11 @@ generate services. This feature does not work properly at the moment.
 
 ### `--language=LANG`
 
-Pick 'NL' for Dutch or 'EN' for English, as the language to be used in your output. Without this option, output is written in the language of your context. Text snippets in other languages than the one specified are ignored. Use this to get a functional specification in the language of your choice.
+Pick 'NL' for Dutch or 'EN' for English, as the language to be used in your output. Without this option, the output is written in the language of your context. Text snippets in other languages than the one specified are ignored. Use this to get a functional specification in the language of your choice.
 
 ### `--meta-file`
 
-Generate an .adl file that contains the relations of formal-ampersand, populated with the the meta-population of your own .adl model.
+Generate a .adl file that contains the relations of formal-ampersand, populated with the meta-population of your own .adl model.
 
 ### `--meta-tables`
 
@@ -136,7 +136,7 @@ omit the diagnosis chapter from the functional design document.
 
 ### `--noGraphics`
 
-omit the generation of graphics during generation of the functional design document.
+omit the generation of graphics during the generation of the functional design document.
 
 ### `--oldNormalizer`
 
@@ -144,11 +144,11 @@ use the old optimizer at your own risk. Used for research purposes.
 
 ### `--outputDir=DIR (-o)`
 
-output directory. Use this if you want the Ampersand compiler to redirect the output to a location of your choice. This overrules environment variable `CCdirOutput`.
+output directory. Use this if you want the Ampersand compiler to redirect the output to a location of your choice. This overrules the environment variable `CCdirOutput`.
 
 ### `--pop-xlsx`
 
-Generate an .xmlx file containing the populations of your script. Meant to be used as an Excel-file in which you can add bulk data and reuse that for loading the data into your application.
+Generate a .xmlx file containing the populations of your script. Meant to be used as an Excel-file in which you can add bulk data and reuse that for loading the data into your application.
 
 ### `--proofs`
 
@@ -156,7 +156,7 @@ generate derivations in HTML-format. Use this to see how Ampersand derives compu
 
 ### `--proto[=DIRECTORY] (-p)`
 
-generate an information system. Use this to verify your analysis or to obtain a working prototype from your Ampersand script. In some cases, the result will be good enough for production. This option overrules environment variable `CCdirPrototype`.
+generate an information system. Use this to verify your analysis or to obtain a working prototype from your Ampersand script. In some cases, the result will be good enough for production. This option overrules the environment variable `CCdirPrototype`.
 
 ### `--prototype-framework-version=VERSION`
 
@@ -172,11 +172,11 @@ write a sample configuration file \(sampleconfig.yaml\). Use this to save yourse
 
 ### `--sql-bin-tables`
 
-generate binary tables only in SQL database. Use this to verify that the generated system works with binary tables as well as with wide tables.
+generate binary tables only in the SQL database. Use this to verify that the generated system works with binary tables as well as with wide tables.
 
 ### `--sqlHost=HOSTNAME`
 
-set SQL host name \(Defaults to \`localhost\`\). Use this to let the generated system know which database to connect to.
+set SQL hostname \(Defaults to \`localhost\`\). Use this to let the generated system know which database to connect to.
 
 ### `--sqlLogin=USER`
 
@@ -196,7 +196,7 @@ Used for test purposes only.
 
 ### `--testRule=RULE`
 
-Show contents and violations of specified rule. Use this for diagnostic purposes.
+Show contents and violations of specified rules. Use this for diagnostic purposes.
 
 ### `--uml`
 
@@ -204,7 +204,7 @@ Use this to generate conceptual models as a UML 2.0 data model.
 
 ### `--validate`
 
-Compare results of rule evaluation in Haskell and SQL. Use this to debug the SQL code generator to validate the meaning of all rules, which are evaluated both in the compiler and in the database. This option requires command line php with MySQL support.
+Compare results of rule evaluation in Haskell and SQL. Use this to debug the SQL code generator to validate the meaning of all rules, which are evaluated both in the compiler and in the database. This option requires command-line PHP with MySQL support.
 
 ### `--verbose (-V)`
 
