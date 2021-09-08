@@ -1,6 +1,6 @@
 # Making your first Ampersand script
 
-## Open your editor, copy a correct script into it, and enjoy...
+## Open your editor, copy a correct script into it, and have some fun...
 
 When you click on the blue plus-sign on the top-right side in the menu bar in your screen, you can make a new script. Clicking this opens an editor screen in which you can type your very first Ampersand script.
 
@@ -40,6 +40,7 @@ After finishing your assignment, you have learned:
 
 * how to use RAP4 to write, save and compile code.
 * the first basic keywords of Ampersand script and their effect on the prototype.
+* how to add and make changes to your Ampersand script.
 
 ## Want to learn more?
 
