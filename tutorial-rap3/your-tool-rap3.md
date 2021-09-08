@@ -1,3 +1,7 @@
+---
+description: This page has been updated in September 2021
+---
+
 # Your tool: RAP4
 
 This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs on the internet, so all you need is a browser. [Click here if you are a student of the Open University](https://rap.cs.ou.nl) or [here if you are not](https://rap.cs.ou.nl) to start using it.
@@ -10,7 +14,11 @@ During the remainder of this course, you will compile and run your own scripts i
 
 RAP4 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
 
+![](../.gitbook/assets/login-button.png)
+
 Register with your own student number and e-mail. Create a password. Your student number is your account, but you can fill in a name. This name should not exist yet, so a green plus sign will appear. Click on it and your name is added to the database.
+
+![](../.gitbook/assets/register-button.png)
 
 Notes:
 
@@ -20,19 +28,22 @@ Notes:
   This login screen is also the screen to log out later.
 
 * When RAP4 is updated, probably your account will be reset. You need to register again. We will inform you in the unlikely event that this happens during a course.
+* Passwords are not stored securely. Don't reuse an existing password and do not store sensitive information in RAP.
+
+![](../.gitbook/assets/insecure-password.png)
 
 ## Use the system
 
-After logging in, you will see your login name or student number in the RAP4 window.
+After logging in, you will see a list of your Ampersand scripts in the RAP4 window. Initially it is empty. To create a new script, click the plus \(+\) symbol.
 
-![](../.gitbook/assets/afbeelding.png)
+![](../.gitbook/assets/create-script-button.png)
 
 In the menu bar you will find:
 
 * A horn symbol. Just ignore that for now, because it contains debug settings.
 * a 3x3 grid, which contains some Ampersand extensions.
 * a plus \(+\) symbol. That is important, because it lets you create a new Ampersand script.
-* a person-like symbol. It lets you switch on/off some role dependent functionalities. If you have more than one role, just try it out and watch functionalities appear and disappear from the menu bar.
+* a person-like symbol. It lets you switch on/off some role dependent functionalities. If you have more than one role, just try it out and watch functionalities appear and disappear from the menu bar. As a student you typically have just one role \(User\) so this button is not very relevant for you.
 
 Notes:
 
