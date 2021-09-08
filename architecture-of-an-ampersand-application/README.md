@@ -50,7 +50,7 @@ The structure described above is reflected in the directory structure generated 
 
 So if you look in your directory, the generated application will look like this:
 
-![File structure of an Ampersand Application](../.gitbook/assets/directory-structure.png)
+![File structure of an Ampersand Application](../.gitbook/assets/Directory%20structure.png)
 
 The following figure shows the view-files to the left, the controller-files in the middle, and the services used by the controllers to the right.
 
