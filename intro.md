@@ -1,39 +1,31 @@
-# Welcome 
+# Introduction
 
-This is the documentation for Ampersand. The focus of this site is primarily on how to use it.
+Do you want to avoid unnecessary reading? Take a moment to decide which statement describes your curiosity best:
 
-<!---
-The purpose of the include here below is that the summary is printed at the front page.
--->
-{% include "./SUMMARY.md" %}
+## What makes you curious?...
 
-## Contributions
+1. "I'm just interested to know who might use Ampersand and for which purposes." [Click here](why-ampersand/) to learn why you might want Ampersand.
+2. "I am a _student_ wanting to use Ampersand in class." [This tutorial](tutorial-rap3/) was made just for you. Students who like something different will love it.
+3. "I am a _computer professional_ in need of a good method for designing an information system." Computer professionals who like fast results will be thrilled, provided they make the effort of learning.
+4. "I am a _scientific researcher_ and I want to learn more about the [research behind Ampersand](research.md)." Scientists who like formal methods will appreciate this particular use of relation algebra.
+5. "I am a _software engineer_ and I want to change Ampersand to suit my needs." You'll be delighted to see that your back-end software is as adaptable as your front-end software, and everything is generated towards proven technology for the sake of maintainable results.
+6. "I _work in an industry, an enterprise, or a government institute_ and I hope Ampersand is the silver bullet that kills all vampires and solves my problems." Alas, there's no such thing as a free lunch. Ampersand is not interesting for you. \(Ampersand promises correct data and fast development to those who don't believe in fairy tales and do want to make the effort.\)
 
-If you have anything to fix or details to add, first [file an issue](http://github.com/AmpersandTarski/documentation/issues) on GitHub to see if it is likely to be accepted, then file a pull request with your change (one PR per issue).
+## One bite at a time
 
-This is not intended to be an open wiki; we want to keep it concise and minimal but will accept fixes and suitable additions.
+Rarely does one need to learn everything there is to know about Ampersand. Take one bite at a time, no more than you can chew, and use it in practice immediately. Learn as you go...
 
+## Disclaimer
 
+Ampersand is a project with no funds. The people who are supporting Ampersand are volunteers with little spare time. This explains why there are omissions in this text. So please condone any shortcomings. We are looking for skilled volunteers to help this project forward, by the way.
 
-## About Ampersand
-The purpose of Ampersand is to develop information systems by means of business rules. In this way, it becomes easier to explain to business-stakeholders how the information system supports compliance to their very own business rules.
-
-The design of the Ampersand language has a particular philosophy. It consists of the following elements:
-1. The language is strongly and statically typed. This helps a programmer to write correct code and enables an efficient implementation of that code.
-2. The language is based on relation algebra, because relation algebra has two useful interpretations. One interpretation is in natural language. That helps to involve business stakeholders. The other interpretation is working software. That is necessary to generate a web application and its database directly from an Ampersand script.
-3. The language is declarative. This yields clarity in the semantics, which do not rely on side effects.
-4. The language offers incremental development. The programmer makes progress by adding restrictions. At any point he can generate software and use that as a working prototype for the definitive information system.
-5. The language offers compositionality. Each system is a composition of design patterns. As a result, larger systems can be assembled from parts. Each part can be developed independently and reused.
-6. Documentation can be embedded in the code.
-
-
-
-## Licence
+### Licence
 
 Unless otherwise specified, everything in this repository is covered by the following licence:
 
-[![Creative Commons Attribution-ShareAlike 4.0 International](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+![Creative Commons Attribution-ShareAlike 4.0 International](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
-***Ampersand Documentation*** by the [the Ampersand team](http://tarski.nl/) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
+_**Ampersand Documentation**_ by the [the Ampersand team](https://www.gitbook.com/@ampersandtarski) is licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/AmpersandTarski/documentation
+Based on a work at [https://github.com/AmpersandTarski/documentation](https://github.com/AmpersandTarski/documentation)
+
