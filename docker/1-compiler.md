@@ -17,20 +17,23 @@ docker tag docker.pkg.github.com/ampersandtarski/ampersand/ampersand ampersand
 
 Different tags are available, e.g.:
 
-* :latest -&gt; development branch It contains the most recent developments that have passed the automated test sets.
-* :stable -&gt; master branche This contains the latest stable release of ampersand. Use it for the lowest risk.
-* :\[branch\] -&gt; specific branch This allows you to pick a version yourself
-* :v3.17 -&gt; specific tags/releases To use a specific previous version.
+* :latest -> development branch\
+  It contains the most recent developments that have passed the automated test sets.
+* :stable -> master branche\
+  This contains the latest stable release of ampersand. Use it for the lowest risk.
+* :\[branch] -> specific branch\
+  This allows you to pick a version yourself
+* :v3.17 -> specific tags/releases\
+  To use a specific previous version.
 
 ```bash
 docker run -it -v "$(pwd)":/usr/local/project ampersand [OPTIONS] FILE
 ```
 
-This alternative presumes you have `docker` installed on your computer and it can be found \(i.e. the path is set correctly\).
+This alternative presumes you have `docker` installed on your computer and it can be found (i.e. the path is set correctly).
 
 If you experience problems downloading from `docker.pkg.github.com`, you may first have to log in with an appropriate token. Generate a token [on github](https://github.com/settings/tokens) and be sure to switch on all repo-rights and the `read:packages`-right. With that token log in:
 
-```text
+```
 docker login -u <GITHUB USERNAME> -p <TOKEN> docker.pkg.github.com
 ```
-

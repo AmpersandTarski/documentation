@@ -72,6 +72,7 @@
   * [The IDENT statement](the-language-ampersand/the-ident-statement.md)
   * [The TABLE statement](the-language-ampersand/the-table-statement.md)
   * [Language support](the-language-ampersand/language-support.md)
+  * [Current date](the-language-ampersand/current-date.md)
   * [The Preprocessor](the-language-ampersand/the-preprocessor.md)
   * [Design considerations](the-language-ampersand/design-considerations.md)
 * [Running the Ampersand compiler](the-command-line-tool/README.md)

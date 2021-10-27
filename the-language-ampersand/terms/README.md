@@ -29,7 +29,7 @@ A term is a combination of operators and relations. Its meaning is a set of pair
 
 Every term is built out of relations, which are combined by operators. An term has one of the following 8 syntactic structures
 
-```text
+```
 <Term> <BinaryOperator> <Term>
 <UnaryOpPre> <Term>
 <Term> <UnaryOpPost>
@@ -44,13 +44,13 @@ V <type>?
 
 The operators come in families. We advise novices to study only the rule operators, boolean operators and relational operators. There is a wealth of things you can express with just these operators. The residual operators seem harder to learn and the Kleene operators are not fully implemented yet. You can click the hyperlink to navigate to the semantics of each family.
 
-| Family | binary operators | binding power | unary operators | binding power |
-| :--- | ---: | :--- | ---: | :--- |
-| rules | $$=$$ and $$\subseteq\$$ | 1 \(weakest\) |  |  |
-| [boolean](semantics-in-logic/boolean-operators.md) | $$\cup$$, $$\cap$$, and $$-$$ | 2 | $$\overline{\strut}$$ | prefix |
-| [relational](semantics-in-logic/relational-operators.md) | $$;$$, $$\times$$, and $$\dagger$$ | 4 | $$\smallsmile$$ | postfix |
-| [residual](semantics-in-logic/residual-operators.md) | $$\backslash$$, $$/$$, and $$♢$$ | 3 |  |  |
-| Kleene |  |  | $$∗$$ and $$+$$ | postfix |
+| Family                                                   |                   binary operators | binding power |       unary operators | binding power |
+| -------------------------------------------------------- | ---------------------------------: | ------------- | --------------------: | ------------- |
+| rules                                                    |           $$=$$ and $$\subseteq\$$ | 1 (weakest)   |                       |               |
+| [boolean](semantics-in-logic/boolean-operators.md)       |      $$\cup$$, $$\cap$$, and $$-$$ | 2             | $$\overline{\strut}$$ | prefix        |
+| [relational](semantics-in-logic/relational-operators.md) | $$;$$, $$\times$$, and $$\dagger$$ | 4             |       $$\smallsmile$$ | postfix       |
+| [residual](semantics-in-logic/residual-operators.md)     |   $$\backslash$$, $$/$$, and $$♢$$ | 3             |                       |               |
+| Kleene                                                   |                                    |               |       $$∗$$ and $$+$$ | postfix       |
 
 ## Brackets
 
@@ -64,21 +64,20 @@ Repeated uses of an associative operator does not require brackets. So $$r\cap s
 
 When coding in Ampersand, these operators are typed with characters on the keyboard. The following table shows the operators in math and their equivalent in code:
 
-| operator name | code | math | remark |  |
-| :--- | :---: | :---: | :--- | :--- |
-| equivalence \(equal\) | `=` | $$=$$ | use only in a rule |  |
-| inclusion | `|-` | $$\subseteq$$ |  | use only in a rule |
-| intersect | `/\` | $$∩$$ | associative, commutative, idempotent |  |
-| union | `\/` | $$∪$$ | associative, commutative, idempotent |  |
-| difference \(minus\) | `-` | $$-$$ |  |  |
-| complement | `-` | $$\overline{\strut }$$ | in code: Prefix; in math: Overline |  |
-| compose | `;` | $$;$$ | associative |  |
-| converse \(flip\) | `~` | $$\smallsmile$$ | postfix |  |
-| left residual | `/` | $$/$$ |  |  |
-| right residual | `\` | $$\backslash$$ |  |  |
-| diamond | `<>` | $$\Diamond$$ |  |  |
-| relational product | `!` | $$\dagger$$ | associative |  |
-| cartesian product | `#` | $$\times$$ | deprecated |  |
-| reflexive transitive closure | `*` | $$∗$$ | in code: not implemented; in math: Postfix |  |
-| transitive closure | `+` | $$+$$ | in code: not implemented; in math: Postfix |  |
-
+| operator name                |  code |          math          | remark                                     |                    |
+| ---------------------------- | :---: | :--------------------: | ------------------------------------------ | ------------------ |
+| equivalence (equal)          |  `=`  |          $$=$$         | use only in a rule                         |                    |
+| inclusion                    | `\|-` |      $$\subseteq$$     |                                            | use only in a rule |
+| intersect                    |  `/\` |          $$∩$$         | associative, commutative, idempotent       |                    |
+| union                        |  `\/` |          $$∪$$         | associative, commutative, idempotent       |                    |
+| difference (minus)           |  `-`  |          $$-$$         |                                            |                    |
+| complement                   |  `-`  | $$\overline{\strut }$$ | in code: Prefix; in math: Overline         |                    |
+| compose                      |  `;`  |          $$;$$         | associative                                |                    |
+| converse (flip)              |  `~`  |     $$\smallsmile$$    | postfix                                    |                    |
+| left residual                |  `/`  |          $$/$$         |                                            |                    |
+| right residual               |  `\`  |     $$\backslash$$     |                                            |                    |
+| diamond                      |  `<>` |      $$\Diamond$$      |                                            |                    |
+| relational product           |  `!`  |       $$\dagger$$      | associative                                |                    |
+| cartesian product            |  `#`  |       $$\times$$       | deprecated                                 |                    |
+| reflexive transitive closure |  `*`  |          $$∗$$         | in code: not implemented; in math: Postfix |                    |
+| transitive closure           |  `+`  |          $$+$$         | in code: not implemented; in math: Postfix |                    |

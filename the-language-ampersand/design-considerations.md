@@ -1,7 +1,3 @@
----
-description: Why is Ampersand the way it is? This chapter documents the reasons.
----
-
 # Design considerations
 
 The design considerations of Ampersand are treated as principles, not as laws. In case of conflicting design considerations, choices have been made.
@@ -34,7 +30,6 @@ An example is the generation of software by the Ampersand compiler, which makes 
 
 ## Working systems over comprehensive documentation
 
-Every Ampersand script, that passes the compiler without errors yields a working system. This makes it easy to focus on working systems, because partial implementations can be demonstrated and tried. \(prototyping\).
+Every Ampersand script, that passes the compiler without errors yields a working system. This makes it easy to focus on working systems, because partial implementations can be demonstrated and tried. (prototyping).
 
 This principle makes it easy to neglect documentation.
-
