@@ -68,7 +68,7 @@ We are happy to receive [bug reports at AmpersandTarski](https://github.com/Ampe
 
 ## Exit status
 
-In case the Ampersand compiler is called by software and fails, it is useful to have an exit code to give some information about the nature of the failure. The Ampersand compiler [produces the following exit codes](https://github.com/AmpersandTarski/Ampersand/blob/development/src/Ampersand/Basics/Exit.hs):
+In case the Ampersand compiler is called by software and fails, it is useful to have an exit code to give some information about the nature of the failure. The Ampersand compiler [produces the following exit codes](https://github.com/AmpersandTarski/Ampersand/blob/main/src/Ampersand/Basics/Exit.hs):
 
 | Code | Name                 | Meaning                                                                                                                                                                                 |
 | ---- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
