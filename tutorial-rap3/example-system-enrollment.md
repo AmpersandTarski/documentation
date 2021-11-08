@@ -2,7 +2,7 @@
 
 In this section, you will learn the basic structure of information systems according to Ampersand. By studying a simple system, you will learn how Ampersand represents such systems.
 
-We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Students can enroll \(or be enrolled\) for any module that is part of the course they take.
+We will study an information system called "Enrollment". The purpose of that system is to enroll students for modules. Students can enroll (or be enrolled) for any module that is part of the course they take.
 
 Try it out on an Ampersand implementation. Copy this example code, make a new script on an Ampersand system, compile it, and generate a prototype implementation from it. Run the prototype and then click on the icon "Overview" in the top-left of the screen. The application will start. Browse through the data and change things. Find out which courses, students, and modules there are and try to see what happens if you add or remove information from the system. You can use this assignment as a guide:
 
@@ -19,10 +19,10 @@ Try it out on an Ampersand implementation. Copy this example code, make a new sc
   * Click on the message to see details.
   * Look-up in the code below where this message is defined. It is the line that starts with `RULE`. You don't have to understand the syntax at this point.
   * Click cancel.
-* Use the trash can icon to remove the course `Business IT` from`Susan` in the tab Students. 
+* Use the trash can icon to remove the course `Business IT` from`Susan` in the tab Students.&#x20;
   * This also will trigger an error message because each student can only enroll for a module in courses he has registered in. Get rid of the message by going to the "List all interfaces" in the menu bar and navigate back to the overview.
   * Look up in the code the definition of the `RELATION takes`. The keyword `[TOT]` is responsible for this message.
-* Note the four icons on the top-right of the screen and click on the second icon \(nine dots\).
+* Note the four icons on the top-right of the screen and click on the second icon (nine dots).
   * Click on 'Reinstall database'
   * The Installer screen comes up. Click on the big red button and wait for it to turn green.
   * Click on 'overview' and the initial data is back.
@@ -31,7 +31,7 @@ Try it out on an Ampersand implementation. Copy this example code, make a new sc
 
 This information system was built by the following code:
 
-```text
+```
 CONTEXT Enrollment IN ENGLISH
 PURPOSE CONTEXT Enrollment
 {+ A complete course consists of several modules.
@@ -51,7 +51,7 @@ PURPOSE CONCEPT Module
 {+We have to know what modules exist, so the system needs to keep track of them.+}
 
 -- The relations and the initial population
-RELATION takes [Student*Course]
+RELATION takes [Student*Course][TOT]
 MEANING "A student takes a complete course"
 
 POPULATION takes CONTAINS
@@ -120,4 +120,3 @@ After finishing your assignment, you have learned:
 1. How can I create my own information system in RAP4? Go to [Your tool: RAP4](your-tool-rap3.md).
 2. What is the conceptual model behind an Ampersand model? Go to [Conceptual Model: Enrollment.](conceptual-model-enrollment.md)
 3. How can I upload [bulk data](https://github.com/ampersandtarski/documentation/tree/662a3e7bdf67bf950cfc029e4c51efc919c0bf53/tutorial/data-in-spreadsheets.md) from spreadsheets into my application?
-
