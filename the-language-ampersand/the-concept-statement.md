@@ -6,19 +6,9 @@ A concept statement defines a concept in natural language. A concept is a name f
 
 ## Syntax:
 
-```text
+```
 CONCEPT <Uppercase identifier> MEANING {+ <String> +}
 ```
-
-This statement may occur anywhere within a context, either inside or outside a pattern.
-
-NOTE: Currently in RAP \(rap.cs.ou.nl\) this does not work yet. Use:
-
-```text
-CONCEPT <Uppercase identifier> "<string>"
-```
-
-instead. So in RAP you cannot use the markup described below. This will occur in a next release.
 
 ## Semantics
 
@@ -29,18 +19,18 @@ This statement means that there exists a concept called `<Uppercase identifier>`
 
 ## Examples
 
-```text
+```
 CONCEPT Person MEANING {+ A person is a human creature. +}
 ```
 
-```text
+```
 CONCEPT Organization MEANING
 {+ An organization is a collection of persons that work together
    to achieve specific objectives.
 +}
 ```
 
-```text
+```
 CONCEPT Criterion
 MEANING
 {+ A criterion is a standard on which a judgment or decision may be based.
@@ -59,28 +49,26 @@ MEANING
 
 For the purpose of documentation, you may state the language in which the meaning is written. You may also state in which markup you have written your meaning. Examples:
 
-```text
+```
 CONCEPT Person MEANING IN ENGLISH {+ A person is a human creature. +}
 ```
 
 If you specify the language, Ampersand can restrict the documentation for the language you choose. Currently, you can only choose `DUTCH` or `ENGLISH`. The default language is English
 
-```text
+```
 CONCEPT Organization MEANING MARKDOWN
 {+ An organization is a **collection of persons** that work together
    to achieve specific objectives.
 +}
 ```
 
-By specifying a markup language, Ampersand interprets the text as specified. If you do not specify the markup language, your text is interpreted as restructured text. The available markup languages are `LATEX`, `MARKDOWN`, `HTML`, and `REST`. The default markup language is REStructured Text \(REST\).
+By specifying a markup language, Ampersand interprets the text as specified. If you do not specify the markup language, your text is interpreted as restructured text. The available markup languages are `LATEX`, `MARKDOWN`, `HTML`, and `REST`. The default markup language is REStructured Text (REST).
 
-```text
+```
 CONCEPT Criterion
 MEANING IN ENGLISH LATEX
 {+ A criterion is a standard on which a judgment or decision may be based.
    \cite{Merriam-Webster}
 +}
 ```
-
-
 
