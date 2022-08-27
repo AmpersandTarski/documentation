@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page describes the notion of term (aka expression). Its subpages provide
-  several interpretations of terms, all of which are valid so you can use each
+  This page describes the notion of term. Its subpages provide several
+  interpretations of terms, all of which are valid so you can use each
   interpretation at your own discretion.
 ---
 
@@ -11,9 +11,11 @@ description: >-
 
 The purpose of a term is to compute pairs that constitute a relation. We use operators to assemble terms from smaller terms, to express in formal language precisely what is meant in the natural language of the business. The smallest term is a single relation.
 
+We noticed that our readers have different backgrounds. They have different preferences about the way we explain the operators in Ampersand. Some prefer an explanation in logic, others in algebra, and still others in set theory. So we decided to explain the operators in many different ways simultaneously, hoping that one of them suits your preference.
+
 ## Description
 
-A term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation. The word "expression" may be used as a synonym for term in the context of Ampersand.
+A term is a combination of operators and relations. Its meaning is a set of pairs, which is in fact a newly created relation. The word "expression" may be used as a synonym for "term" in the context of Ampersand.
 
 ## Examples
 
@@ -54,7 +56,7 @@ The operators come in families. We advise novices to study only the rule operato
 
 ## Brackets
 
-Operators with different binding power may be used in the same term without brackets, because the binding power tells how it is interpreted. For example $$r\cap s;t$$ means $$r\cap(s;t)$$ because $$;$$ has a higher binding power than $$\cap$$.
+Operators with different binding power may be used in the same term without brackets, because the binding power tells how it is interpreted. For example, $$r\cap s;t$$ means $$r\cap(s;t)$$ because $$;$$ has a higher binding power than $$\cap$$.
 
 Operators with the same binding power must be used unambiguously. For example: $$r\cap(s-t)$$ means something different than $$(r\cap s)-t$$. In such cases Ampersand insists on the use of brackets, so readers without knowledge of the binding powers of the operators can read a term unambiguously.
 

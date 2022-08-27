@@ -6,10 +6,10 @@ description: >-
 
 # Installing the tools manually
 
-1. All graphical output is created using [**GraphViz**](http://www.graphviz.org). You need to install it. **Make sure** _**dot**_ **and** _**neato**_ **are in your path**  (set the $PATH environment variable if necessary). Also, if you compile it from source, make sure you install it with gts support.
+1. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure** _**dot**_ **and** _**neato**_ **are in your path**  (set the $PATH environment variable if necessary). Also, if you compile it from source, make sure you install it with gts support.
 2. There are several formats that you can generate a functional specification document in. Currently, the best results can be obtained in [docx ](https://www.lifewire.com/docx-file-2620750)or [LaTeX (PDF)](https://en.wikipedia.org/wiki/LaTeX). Depending on your taste, you need appropriate software:
    1. For docx, you could of course use Microsoft Word, but there are [other options](https://www.maketecheasier.com/open-docx-file-without-microsoft-office/) as well.
-   2. If you want to generate PDF files, using LaTeX, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org). On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
+   2. If you want to generate PDF files, using LaTeX, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org/). On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
 
 Ampersand models are written as source code files. Hence, you need a text editor in which you can do so. We recomend [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview), which has [a nice extention for Ampersand scripts](https://marketplace.visualstudio.com/items?itemName=AmpersandTarski.language-ampersand). You could however use any text editor that you are familiar with, as long as you make sure it saves files as [UTF8 ](https://en.wikipedia.org/wiki/UTF-8)format.
 
@@ -29,8 +29,8 @@ Now you can compile and check your Ampersand scripts. However, you are likely to
 
 If you want to generate functional specifications from ampersand scripts, you need the following additional software (if you don't, don't bother installing them):
 
-1. In order to generate PDF files that contain your functional specification, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org). On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
-2. All graphical output is created using [**GraphViz**](http://www.graphviz.org). You need to install it. **Make sure** _**dot**_ **and** _**neato**_ **are in your path**  (set the $PATH environment variable if necessary). Also, if you compile it from source, make sure you install it with gts support.
+1. In order to generate PDF files that contain your functional specification, you need a LaTeX compiler. On Windows, we recommend [**MiKTeX**](http://miktex.org/). On Linux and MacOS, we recommend [**texlive**](https://www.tug.org/texlive/).
+2. All graphical output is created using [**GraphViz**](http://www.graphviz.org/). You need to install it. **Make sure** _**dot**_ **and** _**neato**_ **are in your path**  (set the $PATH environment variable if necessary). Also, if you compile it from source, make sure you install it with gts support.
 
 ### Additional software for generating functional PROTOTYPES
 
@@ -60,7 +60,7 @@ If you want to generate functional prototypes from ampersand scripts, you need t
 If there is no executable for your operating system, or if you prefer to build an Ampersand compiler yourself, follow these steps:
 
 > 1. Install stack, the haskell tool stack. [instructions are here](http://docs.haskellstack.org/en/stable/install\_and\_upgrade.html)
-> 2. use [git](https://git-scm.com) to clone the latest version of Ampersand. The code can be found at [github](https://github.com/AmpersandTarski/Ampersand/tree/master). (the master branch is our stable branch)
+> 2. use [git](https://git-scm.com/) to clone the latest version of Ampersand. The code can be found at [github](https://github.com/AmpersandTarski/Ampersand/tree/master). (the master branch is our stable branch)
 > 3. Open a command line terminal, and go to the directory that contains the file named `ampersand.cabal`
 > 4. Then, close your command line terminal and reopen another one (this helps to reload the environment variables that the `stack` installation may have added or modified),&#x20;
 > 5.  Let `stack` install everything you need to compile (see the Notes below!) by executing:

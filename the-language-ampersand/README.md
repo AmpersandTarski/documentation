@@ -53,8 +53,9 @@ Watch [this clip](https://player.ou.nl/wowzaportlets/#!production/Cq0M1nv) to le
 | Operator | a symbol used in combining terms into other terms. | `-`, `~`, `\/`, `/\`, `-`, `;`, `\`, `/`, `\|-`, `=` | to express more complex rules. |
 | -------- | -------------------------------------------------- | ---------------------------------------------------- | ------------------------------ |
 
-|   |   |   |   |
-| - | - | - | - |
+|                                             |                                                                    |                    |                                                             |
+| ------------------------------------------- | ------------------------------------------------------------------ | ------------------ | ----------------------------------------------------------- |
+| [Specialization](the-classify-statement.md) | A rule that defines specialization between two (or more) concepts. | `CLASSIFY A ISA B` | To specify a building block for a classification hierarchy. |
 
 | Role | A name for a group of people | `ROLE Customer MAINTAINS paymentObligation` | to talk about users without having any users |
 | ---- | ---------------------------- | ------------------------------------------- | -------------------------------------------- |

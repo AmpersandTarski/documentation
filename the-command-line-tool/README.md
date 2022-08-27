@@ -17,10 +17,10 @@ We assume you have `docker` running on your computer and that you are connected 
 
 ## COMMAND
 
-The following is the base command on Linux (bash syntax)
+The following is the base command on Linux (works for bash as well as zsh)
 
 ```bash
-docker run -it -v "$(pwd)":/scripts ampersandtarski/ampersand
+docker run -it -v $(pwd):/scripts ampersandtarski/ampersand
 ```
 
 On the Windows-10 command-line this looks slightly different (todo: check this!)

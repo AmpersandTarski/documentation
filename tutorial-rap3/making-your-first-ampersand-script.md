@@ -4,21 +4,18 @@
 
 When you click on the blue plus-sign on the top-right side in the menu bar in your screen, you can make a new script. Clicking this opens an editor screen in which you can type your very first Ampersand script.
 
-![The editor for your Ampersand scripts](<../.gitbook/assets/create-script (1).png>)
+![](<../.gitbook/assets/Script editor new script.png>)
 
 ## Assignment
 
 * Copy the code for the system enrollment from [this page](example-system-enrollment.md) or take it from the OU course-site. The code starts with `CONTEXT` and ends with `ENDCONTEXT`. Paste the script in the RAP4 editor (On rap.cs.ou.nl only:  you now have to click on the big blue button "beware to save your work before leaving the editer field!"). The script is now saved in RAP4.
 * Next, click on the blue Compile button. When RAP4 is finished compiling your script, the compiler message should read "The script of Enrollment contains no type errors" and two blue buttons should be visible below that. Please make it a habit to read the Compiler message carefully each time you compile a script
 
-![](../.gitbook/assets/compiler-messages.png)
+![](<../.gitbook/assets/Finished processing your model.png>)
 
-* Browse through the elements of your script in the Atlas (in the menu bar).
-* Generate a Prototype: Click the blue button "Prototype" and when RAP4 has finished loading you will see a new link "Launch Prototype".
-  * Click the link to run your prototype. It will in a new tab in your browser.
-  * Now you see the information system you have just compiled from the code. You are already familiar with the look and feel. Click the Overview button in the top-left of the screen and have a look around.
-* Try to generate a functional specification: Click on the button Func. spec. When RAP4 is done, a link will be added below the button.
-  * Click the link to download the file. This is a .docx-file suitable for MS-word.
+* Generate a Prototype: Click the blu button "Prototype" and when RAP3 has finished loading you will see a new link "Launch Prototype". Click the link.
+* Now you see the information system you have just compiled from the code. You are already familiar with the look and feel. Click the Overview button in the top-left of the screen and have a look around.
+* Try to generate documentation: Click on the button Diagnosis. When RAP4 is done, a link will be added below the button. Click on the button Func. spec + pictures and again a link will be added. These two functions create pdf-files with information about the code that has been compiled. During the course you can have a better look there.
 
 During the remainder of this course you will compile and run your own scripts in this way, so it pays to familiarize yourself with it.
 
@@ -40,7 +37,6 @@ After finishing your assignment, you have learned:
 
 * how to use RAP4 to write, save and compile code.
 * the first basic keywords of Ampersand script and their effect on the prototype.
-* how to add and make changes to your Ampersand script.
 
 ## Want to learn more?
 

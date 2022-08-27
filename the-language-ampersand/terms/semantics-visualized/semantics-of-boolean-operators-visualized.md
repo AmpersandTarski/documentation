@@ -2,7 +2,7 @@
 
 Consider two relations: `authorized[Account*Person]` and `beneficiary[Account*Person]`. The first relation tells which persons are authorized to which accounts. The diagram shows this as red dashed lines. The second relation tells which persons stand to benefit from which accounts.. It is depicted by dotted blue lines in the diagram.
 
-![](../../../.gitbook/assets/untitled-diagram-2.png)
+![](<../../../.gitbook/assets/Untitled Diagram (2).png>)
 
 This diagram gives an example population of the relations `authorized[Account*Person]` and `beneficiary[Account*Person]`. Bob is authorized for account DE9382991 and Ann is authorized for account RS746620. Carl stands to benefit from account NL19RABO03992844 and Ann stands to benefit from account RS746620. Formally, we say:
 
@@ -28,8 +28,8 @@ A different way to state the same is:
 
 |                                                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ` authorized/\beneficiary = {("RS746620", "Ann")}`                                                                                                                                          |
-| <p><code>authorized\/beneficiary = </code></p><p><code>  { ("NL19RABO03992844", "Carl")</code></p><p><code>  , ("RS746620", "Ann")</code></p><p><code>  , ("DE9382991", "Bob") }</code></p> |
+|  `authorized/\beneficiary = {("RS746620", "Ann")}`                                                                                                                                          |
+| <p><code>authorized\/beneficiary =</code> </p><p>  <code>{ ("NL19RABO03992844", "Carl")</code></p><p>  <code>, ("RS746620", "Ann")</code></p><p>  <code>, ("DE9382991", "Bob") }</code></p> |
 
 ## Other explanations
 

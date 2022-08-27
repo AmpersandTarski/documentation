@@ -20,7 +20,7 @@ A relation can be altered by swapping the elements of every pair in the relation
 
 ## Composition
 
-The sentence "A_ contract with a blue label is stored in cabinet 42_." can be represented as `"blue" (label~;stored) "cabinet 42"`.  Literally it says: There is a contract that has a blue label and is stored in cabinet 42.
+The sentence "A _contract with a blue label is stored in cabinet 42_." can be represented as `"blue" (label~;stored) "cabinet 42"`.  Literally it says: There is a contract that has a blue label and is stored in cabinet 42.
 
 ## Natural language templates
 

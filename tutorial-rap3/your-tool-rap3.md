@@ -1,7 +1,3 @@
----
-description: This page has been updated in September 2021
----
-
 # Your tool: RAP4
 
 This section introduces the tool you will use during the course: RAP4. This tool stores Ampersand-scripts in which you can specify, analyze and build information systems. It runs on the internet, so all you need is a browser. [Click here if you are a student of the Open University](https://rap.cs.ou.nl) or [here if you are not](https://rap.cs.ou.nl) to start using it.
@@ -14,36 +10,34 @@ During the remainder of this course, you will compile and run your own scripts i
 
 RAP4 keeps your work together under a student number. So click on the button 'login' on the left top of the screen.
 
-![](../.gitbook/assets/login-button.png)
+![](<../.gitbook/assets/login button.png>)
 
 Register with your own student number and e-mail. Create a password. Your student number is your account, but you can fill in a name. This name should not exist yet, so a green plus sign will appear. Click on it and your name is added to the database.
 
-![](../.gitbook/assets/register-button.png)
+![](<../.gitbook/assets/Register button.png>)
 
 Notes:
 
-* About the user interface: Each time you change fields \(e.g. using Tab\), the form is updated. But you will not see what is the next active field. You may have to click again to ensure that your cursor is in the right field.
-* This application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.
+* About the user interface: Each time you change fields (e.g. using Tab), the form is updated. But you will not see what is the next active field. You may have to click again to ensure that your cursor is in the right field.
+*   This application has no connection with the OU database, so be careful to fill in the right number on this and future occasions.
 
-  This login screen is also the screen to log out later.
-
+    This login-screen is also the screen to logout later.
 * When RAP4 is updated, probably your account will be reset. You need to register again. We will inform you in the unlikely event that this happens during a course.
-* Passwords are not stored securely. Don't reuse an existing password and do not store sensitive information in RAP.
 
-![](../.gitbook/assets/insecure-password.png)
+![](<../.gitbook/assets/insecure password.png>)
 
 ## Use the system
 
-After logging in, you will see a list of your Ampersand scripts in the RAP4 window. Initially it is empty. To create a new script, click the plus \(+\) symbol.
+After logging in, you will see your login name or student number in the RAP4 window.
 
-![](../.gitbook/assets/create-script-button.png)
+![](../.gitbook/assets/afbeelding.png)
 
 In the menu bar you will find:
 
 * A horn symbol. Just ignore that for now, because it contains debug settings.
 * a 3x3 grid, which contains some Ampersand extensions.
-* a plus \(+\) symbol. That is important, because it lets you create a new Ampersand script.
-* a person-like symbol. It lets you switch on/off some role dependent functionalities. If you have more than one role, just try it out and watch functionalities appear and disappear from the menu bar. As a student you typically have just one role \(User\) so this button is not very relevant for you.
+* a plus (+) symbol. That is important, because it lets you create a new Ampersand script.
+* a person-like symbol. It lets you switch on/off some role dependent functionalities. If you have more than one role, just try it out and watch functionalities appear and disappear from the menu bar. As a student you typically have just one role (User) so this button is not very relevant for you.
 
 Notes:
 
@@ -57,10 +51,9 @@ Notes:
 
 ## What have you learned?
 
-* where to find the Repository for Ampersand Projects \(RAP4\)
+* where to find the Repository for Ampersand Projects (RAP4)
 * to register yourself in RAP4
 
 ## Disclaimer
 
-RAP4 is under development. You can expect to find teething problems \(kinderziektes\) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.
-
+RAP4 is under development. You can expect to find teething problems (kinderziektes) in the software. Please notify us by [making an issue in our issue registration system](https://github.com/AmpersandTarski/RAP/issues). This way you can help improve Ampersand's tooling, for which the Ampersand-team is very grateful.

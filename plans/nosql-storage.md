@@ -12,5 +12,4 @@ Data storage is a diverse landscape of technologies. Triple stores, graph databa
 
 Ampersand is prepared for this by the plug-mechanism.
 
-![Towards multiple types of persistence](../.gitbook/assets/untitled-diagram-10.png)
-
+![Towards multiple types of persistence](<../.gitbook/assets/Untitled Diagram (10).png>)

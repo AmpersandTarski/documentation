@@ -10,5 +10,4 @@ description: >-
 
 The current front-end is based on the Angular-JS framework. To enter the world of reactive programming, we want to refactor the front-end.
 
-![Refactoring the front-end \(pink items\)](../.gitbook/assets/untitled-diagram-6.png)
-
+![Refactoring the front-end (pink items)](<../.gitbook/assets/Untitled Diagram (6).png>)

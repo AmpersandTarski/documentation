@@ -6,7 +6,7 @@ description: >-
 
 # Truth
 
-Let us introduce some words. Consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
+Let us introduce some language to talk about truth. Consider a fact "Joe Smith lives in New York." from an Ampersand perspective. In Ampersand, we can analyse this as follows:
 
 * Let `Person` and `City` be [_**concepts**_](the-concept-statement.md)_\*\*\*\*_
 * Let `"Joe Smith"` be an [_**atom**_](atoms.md) of the concept `Person` and `"New York"` an atom of the concept `City`.

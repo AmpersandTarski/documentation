@@ -7,15 +7,16 @@ A concept statement defines a concept in natural language. A concept is a name f
 ## Syntax:
 
 ```
-CONCEPT <Uppercase identifier> MEANING {+ <String> +}
+CONCEPT <Uppercase identifier>
+MEANING  {+ <Text> +}
 ```
 
 ## Semantics
 
-This statement means that there exists a concept called `<Uppercase identifier>` in the current context.
+This statement means that there exists a concept called `<upper case identifier>` in the current context.
 
-* `<Uppercase identifier>` specifies the name of the concept.
-* `String` defines the concept. This definition is used by the documentation generator, which expects it to be a grammatically correct and complete sentence.
+* `<upper case identifier>` specifies the name of the concept. It starts with an upper case character and may subsequently have any combination of upper case (ABCDEFGHIJKLMNOPQRSTUVWXYZ), lower case (abcdefghijklmnopqrstuvwxyz), digits (0123456789) and underscore (\_).
+* `<String>` defines the concept. Please describe in natural language the conditions that make an atom belong to this concept. Your definition is used by the documentation generator, which expects it to be a grammatically correct and complete sentence.
 
 ## Examples
 
