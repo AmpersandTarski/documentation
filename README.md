@@ -1,4 +1,14 @@
-# Documentation of Ampersand
+# Archived!
+
+This repository is archived. The documentation has been moved from Gitbook to Github-pages, using Docusaurus. 
+In the process, the documentation of the distinct repositories are maintained in those repos themselves, in the `doc` directory. 
+
+The new documentation can be found at [https://ampersandtarski.github.io/](https://ampersandtarski.github.io/).
+
+
+
+
+## ***OLD*** Documentation of Ampersand
 
 This repository contains the documentation of Ampersand. You can read it [here](https://ampersandtarski.gitbook.io/documentation).
 
